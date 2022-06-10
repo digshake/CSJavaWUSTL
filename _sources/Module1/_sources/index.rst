@@ -1,0 +1,420 @@
+=====================
+Module 1 
+=====================
+
+.. Here is were you specify the content and order of your new book.
+
+.. Each section heading (e.g. "SECTION 1: A Random Section") will be
+   a heading in the table of contents. Source files that should be
+   generated and included in that section should be placed on individual
+   lines, with one line separating the first source filename and the
+   :maxdepth: line.
+
+.. Sources can also be included from subfolders of this directory.
+   (e.g. "DataStructures/queues.rst").
+
+Exercise : 1.40. Making change
+:::::::::::::::::::::::::::::::::::::::
+For this exercise it is not so important that you get the exercise exactly right. It is important to work through it as best you can before you look at the solution or continue with other work in this module.
+
+You have some number of pennies, and you would like to determine how to make change for those pennies to obtain the proper number of each of the following currencies:
+
+.. list-table:: 
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Currency
+     - Pennies
+   * - dollar
+     - 100
+   * - quarter
+     - 25
+   * - dime
+     - 10
+   * - nickel
+     - 5
+
+| In making change, we seek the maximum number of each denomination in decreasing order. For example, given **798** pennies, your program should print the following
+
+| ``For 798 pennies:``
+| ``7 dollars``
+| ``3 quarters``
+| ``2 dimes``
+| ``0 nickels``
+| ``3 pennies``
+
+
+**Instructions**
+
+* Add code to prompt users for number of pennies
+
+* Compute and print the output as suggested above.
+
+* Good luck!
+
+
+**Hints**
+
+* You need to use integer division and remainder (%) to complete this exercise.
+
+* Review the video materials as necessary for this module.
+
+* Follow the execution of your code
+
+
+ActiveCode
+----------
+
+.. activecode:: lc1
+   :language: java
+   :stdin: 100
+
+   import java.util.Scanner;
+
+   public class TempConv {
+       public static void main(String[] args) {
+            Double fahr;
+            Double cel;
+            Scanner in;
+
+            in = new Scanner(System.in);
+            System.out.println("Enter the temperature in F: ");
+            fahr = in.nextDouble();
+
+            cel = (fahr - 32) * 5.0/9.0;
+            System.out.println(fahr + " degrees F is: " + cel + " C");
+
+            System.exit(0);
+       }
+
+   }
+
+Studio 1: The Type is Right
+:::::::::::::::::::::::::::::::::::::::
+
+Studio activities should not be started before class! Come to the session and work on the activity with other students!
+ 
+**Studio Sessions Overview**
+
+Studios are a chance to work with other students to learn course material by actively trying to solve problems.
+
+1.Form a group of 2-3 students and find a TA or instructor to work with (TAs/instructors may be working with 2-3 groups at a time)
+
+2.Credit is based on good faith participation:
+
+* The goal is to explore the module’s course topics by working on the given activity. Credit is not based on any specific solution nor do you even need to complete the activity.
+
+* Credit is given based on your active participation in the activity. If you arrive late (more than 15 minutes) or don’t actively contribute to the work, you will not be given credit.
+
+* Be a constructive member of group:
+
+  + Prepare in advance by completing the prep materials.
+
+  + Ask questions and discuss topics. Try to make sure your entire group completely understands the topics being used.
+
+  + Be polite and respectful of your group members!
+
+  + Each member of your team is responsible for ensuring that all members completely understand your work and the topics being used.
+
+
+**Academic Integrity Agreement**
+
+Today, course staff will guide you in completing an Academic Integrity Agreement.
+
+Your group should review and discuss the `Examples <https://wustl.instructure.com/courses/69918/pages/course-policies#Examples>`_ of what you can and can’t do. When everyone is clear about what is allowed, the TA/instructor will tell you to proceed.
+
+**Studio Setup and Procedure**
+
+* All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
+
+* Plan to have one computer at which your team does its work (usually using Eclipse). Initially, one of you will be in charge of typing at that computer.
+
+* Throughout the studio you should trade who is in charge of the keyboard.
+
+**READ THE FOLLOWING FULLY BEFORE PROCEEDING**
+
+
+Studio : The Type is Right
+
+1. Have **one person** in your group create a new team by clicking `here <https://classroom.github.com/assignment-invitations/1b7ca865989ff5264fc197c1a4525b16/status>`_ and going to the ``OR Create a new team`` box at the bottom of the page.
+
+   1. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+
+
+
+2. After the team is created, all *other* members of your team should click on the same link and follow the instructions to join the team.
+
+   1. **Be careful to join the right team!** You won’t be able to change teams yourself and will have to contact instructors if there’s a problem.
+
+   2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
+
+
+3. Finally, one person should import the studio repository into Eclipse, as described in `Assignment 0’s Add the assignment to Eclipse <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment#4-add-the-assignment-to-eclipse>`_
+
+   1.All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
+
+.. _Studio 1:Activity:
+
+**Studio 1: Activity**
+
+* You will complete a series of simple Java programs, and run each program to ensure it performs its task correctly.
+
+* The files for this program are in the ``src/studio1`` package of the repository you loaded.
+
+* To run a program just open the file in a tab and click on the green “Play” button on the menu. The program in the active/open tab will run.
+
+**Some of the following exercises are adapted from Princeton University's** `COS126 course <http://www.cs.princeton.edu/courses/archive/spring12/cos126/precepts.php>`_, based on our text by Sedgewick and Wayne.
+
+For each of the following exercises, find the file in your studio repository and complete it to do the assigned task.
+
+.. _HiOne:
+
+**HiOne**
+
+Say hello to the name supplied as input to this program.
+
+   Sample output: ``Hi Bill. How are you?`` (assuming ``Bill`` was supplied as input) Feel free to end the output with punctuation that indicates the level of enthusiasm associated with your greeting.
+
+.. _HiFour:
+
+**HiFour**
+
+**Switch who is “entering code”; Everyone should have equal time entering code**
+
+Expand your hospitality to the four names supplied to this program.
+
+   Sample output: ``Greetings Cormen, Leiserson, Rivest, and Stein``. Be sure to put in `proper punctuation <http://en.wikipedia.org/wiki/Serial_comma>`_ to separate the names.
+
+.. _Ordered:
+
+**Ordered**
+
+**Switch who is “entering code”; Everyone should have equal time entering code**
+
+Define a ``boolean`` variable ``isOrdered`` whose value is ``true`` if the three values are either in strictly ascending order ``(x < y < z)`` or in strictly descending order ``(x > y > z)``, and ``false`` otherwise. Print out the variable ``isOrdered`` using ``System.out.println(isOrdered)``.
+
+   Some of you may already know some Java. We have not yet covered the if statement. You must use what has been taught so far (simple expressions and assignment) to accomplish this task.
+
+.. _Average:
+
+**Average**
+
+**Switch who is “entering code”; Everyone should have equal time entering code**
+
+We aren’t giving you the class for this one, but we will instruct you how to create your own from scratch:
+
+1. Right- (control-) click on the ``studio1`` package, select ``New > Class``
+
+2. Type the name ``Average`` in the ``Name:`` field
+
+3. Click the box that says ``public static void main(String[] args)``
+
+4. Click the ``Finish button``, which will create the new file
+
+5. At the top of the ``main`` method, you need to insert the ``ArgsProcessor`` code to accept two integers: ``n1`` and ``n2`` .
+
+      Refer to other studio code to see how this is done. Depending on how you add the code referring to the ``ArgsProcessor``, Eclipse may flag your code with an error. If so, you can get Eclipse to solve its own problem by mousing over the error (red underline), and using the first suggestion that pops up, namely to import ``ArgsProcessor``. Try to use meaningful messages to prompt for values.
+
+      **A not so nice prompt:**
+
+      ``int n1 = ap.nextInt("Yo, sup?");``
+
+      **And a nice  prompt:**
+
+      ``int n1 = ap.nextInt("The first of two integers to be averaged?");``
+
+      Run your program and makes sure it prompts you correctly for its values and ask a TA to check your work at this point.
+
+6. Finish the class so it prints out the average of its two integer inputs.
+
+      Sample output:
+
+      ``Average of 5 and 6 is 5.5.``
+
+      Note that the output is a ``double``, because the average of two integers is not necessarily an integer.
+
+.. _Leap Year:
+
+**Leap Year**
+
+You’ll need to make a ``LeapYear class``, just as you made the ``Average`` class in the previous step. You should again insert the ``ArgsProcessor`` code, this time to take in an integer that represents a year.
+
+Your task is to determine whether the given year is a leap year or not. A value is a leap year if it meets the following criteria:
+
+* It is evenly divisible by four
+
+* It is not evenly divisble by 100
+
+* An exception to this rule is if the year is evenly divisble by 400. These years are leap years.
+
+So for example, 2020 is a leap year because it is evenly divisible by 4. The year 1900 is evenly divisible by 4, but since it is also evenly divisible by 100 it is not a leap year. The year 2000 is evenly divisible by 4 and 100 but it is also divisible by 400 so it is a leap year.
+
+Once you have determined whether the given year is a leap year print out a message with the result:
+
+   Sample output: ``2020 is a leap year: true``
+
+   ``2000 is a leap year: true``
+
+
+   Some of you may already know some Java. We have not yet covered the ``if`` statement. You must use what has been taught so far (simple expressions and assignment) to accomplish this task.
+
+.. _Creative Exercise:
+
+**Creative Exercise**
+
+**Ice Cream**
+
+As a group, brainstorm the best data type to represent the following situations:
+
+   Often, there is no *right* or *wrong* answer. Be prepared to defend your choices.
+
+* The number of times you have been to Ted Drewes
+
+* Whether you like Ted Drewes’ vanilla frozen custard or not
+
+* The number of people you can take in your car
+
+* The price of a regular size concrete vanilla frozen custard
+
+* The name of your favorite flavor from Ted Drewes
+
+* The address of the Ted Drewes
+
+* The probability that you will see a friend at Ted Drewes
+
+.. _Demo:
+
+**Demo (get credit for your) your work:**
+
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
+
+To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
+
+Assignment 1: Grade Calculator
+:::::::::::::::::::::::::::::::::::::::
+
+* `Assignment Setup`_
+
+* `Grade Calculator`_
+
+* Procedure_
+
+* Notes_
+
+* `Submitting your work`_
+
+.. _Assignment Setup:
+
+**Assignment Setup**
+
+To create your repository `go here <https://classroom.github.com/a/C7Tn9URj>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
+
+.. _Grade Calculator:
+
+**Grade Calculator**
+
+In this assignment you develop a tool that can help you compute your final course grade. By completing this assignment you demonstrate that you can:
+
+* Create a Java class on your own
+
+* Arrange for the class to take inputs of interest
+
+
+* Compute output values of interest
+
+* Produce meaningful output based on your computations
+
+* Work with Java expressions
+
+.. _Procedure:
+
+**Procedure**
+
+1. Create a ``GradeCalculator`` Java class in the ``assignment01`` package (``assignment01`` is in the ``src`` folder).
+
+   1. The ``assignment01`` package is currently empty, but don’t let that bother you. Right (control) click on ``assignment01`` and create a new class.
+
+   2. Type the name ``GradeCalculator`` in the ``Name:`` field (please use ``GradeCalculator``, capitalized and spelled correctly)
+
+   3. Click the box that says ``public static void main(String[] args)``
+
+   4. Click the ``Finish`` button, which will create the new file
+
+2. Arrange for your program to accept the following inputs:
+
+.. image:: Assignment1Chart.png
+
+You should be thinking about the data types you would use to represent each of the above items. We tell you that the **name** is a ``String``, but what about the other inputs? Use the range of values given to inspire your thinking. To accept the inputs use the same code we used in studio.
+
+Just after the ``main`` method declaration, you should have the line:
+
+``ArgsProcessor ap = new ArgsProcessor(args);``
+
+It shows an error that can be fixed via the approach described in Studio 1.
+
+After that, you should initialize your inputs using code modeled after the code you read and wrote in studio — see the section on ``Average.``
+
+Eclipse will help you out here: If you have typed ``ap``. and Eclipse will show you the possible ways of continuing. For example, ``nextInt(String)`` is one way to keep going. That call will prompt the user for an ``int`` displaying the provided ``String`` as the prompting message.
+
+3. Arrange for your program to produce output such as the following:
+
+
+``CSE131 Grade for: Doug Shook``
+
+``Average assignment grade: 85.4%``
+
+``Weighted assignment grade (out of 40): 34.16%``
+
+``Number of extension points: 37``
+
+``Weighted extension grade (out of 12): 11.1%``
+
+``Number of studios attended: 7``
+
+``Weighted studio grade (out of 13): 11.38%``
+
+``Average quiz grade: 97.3%``
+
+``Weighted quiz grade (out of 2): 1.95%``
+
+``Studio preps completed: 10``
+
+``Weighted studio prep grade (out of 2): 2.0%``
+
+``Average exam grade: 93.5%``
+
+``Weighted exam grade (out of 30): 28.05%``
+	
+``Completed course review: false``
+
+``Total Grade: 89.63%``
+
+.. _Notes:
+
+**Notes**
+
+* This point may seem obscure, but on a computer, multiplying by 0.1 is not the same result as dividing by 10.0. The reason is that 10.0 can be represented exactly, but 0.1, not so well. You may get mathematical surprises if you multiply by 0.1 instead of dividing by 10.0.
+
+* Don’t try to write this all at once. Instead, build one piece at a time and test it. This will make it easier to figure out what’s going wrong when your program doesn’t work as you expect. (This is called `incremental development <https://en.wikipedia.org/wiki/Incremental_build_model>`_ and this approach will serve you well all semester).
+
+* You’ll need the weights for each course component, which can be found on the `course policies page <https://wustl.instructure.com/courses/69918/pages/course-policies>`_.
+
+* Pay close attention to how you compute the final grade in the course. Rounded numbers look better when printed, but which values will lead to a more accurate result?
+
+* For this program you can assume that your users will always type in values within ranges given in the tables above, but in reality there’s nothing stopping someone from typing in values that don’t make sense. In the next module we’ll see how we can address this problem.
+
+* Note that we allow you to miss two studios without penalty. So while there are 10 studios in total, attending more than 8 studios does not have an effect on the overall course grade. Or another way to think about it: two studios are dropped, leading to a maximum studio score of 8.
+
+* The percentages shown for the weighted grades have at most two digits of precision after the decimal point. You should print percentages in exactly this format. You do not have to round any values that are entered through ``ArgsProcessor`` even though they may appear rounded in our example. It’ll take some thought, but it can be done using things that have been covered: ``int`` operations, ``double`` operations, casting, and ``Math.round(..)``. (You are not allowed to use ``printf`` or other functions you may find that would accomplish this task. You have to figure out how to do it using what you have learned in this module.)
+
+* Review how the the random-number generator, ``Math.random()`` works. Define a ``boolean courseReview`` and assign its value by comparing a random number with ``0.5``.
+
+* Your strings can include the character sequences ``\t`` and ``\n,`` within the double quotes, which have the effect of inserting a tab and a newline, respectively. A *tab* will cause the output to shift right to a predetermined position. A *newline* will end the current line of output and begin a new line.
+
+Prepare for demoing your work by trying out various combinations of grade values and making sure that your program computes them correctly.
+
+.. _Submitting your work:
+
+**Submitting your work**
+
+To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
