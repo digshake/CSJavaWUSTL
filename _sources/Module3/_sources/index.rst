@@ -78,7 +78,7 @@ Studio 3: Sieve of Eratosthenes
 
 * `Peer Comparisons`_
 
-* `Demo`
+* `Demo`_
 
 .. _Studio Setup and Procedure:
 
@@ -206,7 +206,7 @@ Assignment 3: Array Puzzles
 
 * `Assignment Setup`_
 
-* Array Puzzles
+* `Array Puzzles`_
 
   * `Bubble Sort`_
 
