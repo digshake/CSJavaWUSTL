@@ -29,10 +29,7 @@ project_name = "csjava"
 #    else:
 #        master_url = 'http://127.0.0.1:8000'
 # new 7/2019 changes
-master_url = None
-
-if master_url is None:
-    master_url = get_master_url()
+master_url = get_master_url()
 
 master_app = 'runestone'
 serving_dir = "./build/csjava"
