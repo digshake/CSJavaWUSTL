@@ -16,7 +16,7 @@ sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
 
-project_name = "CSJavaWUSTL"
+project_name = "csjava"
 
 #master_url = None
 #if master_url is None:

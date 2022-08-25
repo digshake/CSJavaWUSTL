@@ -18,6 +18,7 @@ Getting Started and Primitive Types
    topic-1-10-practice-coding.rst
    Exercises.rst
    topic-1-12-lesson-workspace.rst
+   assignment.rst
 
 
 .. raw:: html

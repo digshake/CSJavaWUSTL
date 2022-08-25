@@ -21,9 +21,9 @@ import sys, os
 #sys.path.insert(0, os.path.abspath('../modules'))
 
 # Changed 5/24/2020: 
-from runestone import runestone_static_dirs, runestone_extensions, script_files, css_files
+#from runestone import runestone_static_dirs, runestone_extensions, script_files, css_files
 #from runestone import runestone_static_dirs, runestone_extensions
-#from runestone import runestone_static_dirs, runestone_extensions, setup
+from runestone import runestone_static_dirs, runestone_extensions, setup
 import pkg_resources
 
 # -- General configuration -----------------------------------------------------
@@ -243,9 +243,9 @@ htmlhelp_basename = 'PythonCoursewareProjectdoc'
 # or fully qualified paths (eg. https://...)
 html_css_files = ['css/custom.css',]
 
-def setup(app):
-    app.add_stylesheet('css/custom.css')
-    for f in script_files:
-        app.add_js_file(f)
-    for f in css_files:
-	    app.add_css_file(f)
+#def setup(app):
+#    app.add_stylesheet('css/custom.css')
+#    for f in script_files:
+#        app.add_js_file(f)
+#    for f in css_files:
+#	    app.add_css_file(f)
