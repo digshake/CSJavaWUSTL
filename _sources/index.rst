@@ -14,28 +14,8 @@ by Beryl Hoffman of Elms College, available at https://runestone.academy/runesto
 CSAwesome is based on  the Java Review ebook written by Barbara Ericson of University of 
 Michigan, https://runestone.academy/runestone/books/published/apcsareview/index.html.
 
-
-To make sure the site saves your answers on questions, 
-please click on the person icon at the top to register or login to your course. 
-As you complete the lesson activities on each page, click the "Mark as completed" button at the bottom. 
-
-Enjoy the course!
-
 .. raw:: html
 
-    <ul>
-    <li><a class="reference internal" href="Unit1-Getting-Started/toctree.html">Unit 1 Getting Started and Primitive Types</a></li>
-    <li><a class="reference internal" href="Unit2-Using-Objects/toctree.html">Unit 2 Using Objects</a></li>
-    <li><a class="reference internal" href="Unit3-If-Statements/toctree.html">Unit 3 If Statements</a></li>
-    <li><a class="reference internal" href="Unit4-Iteration/toctree.html">Unit 4 Iteration/Loops</a></li>
-    <li><a class="reference internal" href="Unit5-Writing-Methods/toctree.html">Unit 5 Writing Methods</a></li>
-    <li><a class="reference internal" href="Unit6-Writing-Classes/toctree.html">Unit 6 Writing Classes</a></li>
-    <li><a class="reference internal" href="Unit7-Arrays/toctree.html">Unit 7 Arrays</a></li>
-    <li><a class="reference internal" href="Unit8-ArrayList/toctree.html">Unit 8 ArrayLists</a></li>
-    <li><a class="reference internal" href="Unit9-2DArray/toctree.html">Unit 9 2D Arrays</a></li>
-    <li><a class="reference internal" href="Unit10-Inheritance/toctree.html">Unit 10 Inheritance</a></li>
-    <li><a class="reference internal" href="Unit11-Recursion/toctree.html">Unit 11 Recursion</a></li>
-   </ul>
 
 .. Here is where you specify the content and order of your new book.
 
@@ -55,26 +35,14 @@ Table of Contents
 
 .. raw:: html
 
-   <ul>
-   <li><a href="/runestone/assignments/chooseAssignment.html">Assignments</a></li>
-   </ul>
-
-
 .. toctree::
    :numbered:
    :maxdepth: 2
 
-   Unit1-Getting-Started/toctree.rst
-   Unit2-Using-Objects/toctree.rst
-   Unit3-If-Statements/toctree.rst
-   Unit4-Iteration/toctree.rst
-   Unit5-Writing-Methods/toctree.rst
-   Unit6-Writing-Classes/toctree.rst
-   Unit7-Arrays/toctree.rst
-   Unit8-ArrayList/toctree.rst
-   Unit9-2DArray/toctree.rst
-   Unit10-Inheritance/toctree.rst
-   Unit11-Recursion/toctree.rst
+   Module0-Introduction/toctree.rst
+   Module1-Types-and-Names/toctree.rst
+   Module2-Choice-and-Iteration
+   Module3-Arrays/toctree.rst
 
 Index
 ::::::::::::::::::

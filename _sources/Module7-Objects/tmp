@@ -1,0 +1,594 @@
+For example, here is a ``Student`` class with a method signature ``public void print()`` 
+which has an empty parameter list with no parameters. 
+Methods are defined after the instance variables (attributes) and constructors in a class.
+
+.. figure:: Figures/StudentClass.png
+    :width: 500px
+    :align: center
+    :alt: A Student class showing instance variables, constructors, and methods
+    :figclass: align-center
+
+    Figure 1: A Student class showing instance variables, constructors, and methods
+
+|Exercise| Check Your Understanding
+
+.. clickablearea:: student_methods
+    :question: Click on the methods headers (signatures) in the following class. Do not click on the constructors.
+    :iscode:
+    :feedback: Methods follow the constructors. The method header is the first line of a method.
+
+    :click-incorrect:public class Student {:endclick:
+
+        :click-incorrect:private String name;:endclick:
+        :click-incorrect:private String email;:endclick:
+
+        :click-incorrect:public Student(String initName, String intEmail) :endclick:
+        :click-incorrect:{:endclick:
+            :click-incorrect:name = initName;:endclick:
+            :click-incorrect:email = initEmail;:endclick:
+         :click-incorrect:}:endclick:
+
+         :click-correct:public String getName() :endclick:
+         :click-incorrect:{:endclick:
+            :click-incorrect:return name;:endclick:
+         :click-incorrect:}:endclick:
+
+         :click-correct:public void print() :endclick:
+         :click-incorrect:{:endclick:
+            :click-incorrect:System.out.println(name + ":" + email);:endclick:
+         :click-incorrect:}:endclick:
+    :click-incorrect:}:endclick:
+
+
+
+
+
+Practice
+------------
+
+.. mchoice:: AP2-3-1
+    :practice: T
+
+    Consider the following class definition.
+
+    .. code-block:: java
+
+        public class Party
+        {
+            private int numInvited;
+            private boolean partyCancelled;
+
+            public Party()
+            {
+                numInvited = 1;
+                partyCancelled = false;
+            }
+
+            public void inviteFriend()
+            {
+                numInvited++;
+            }
+
+            public void cancelParty()
+            {
+                partyCancelled = true;
+            }
+        }
+
+    Assume that a Party object called myParty has been properly declared and initialized in a class other than Party.  Which of the following statements are valid?
+
+    - myParty.cancelParty();
+
+      + Correct!
+
+    - myParty.inviteFriend(2);
+
+      - The method inviteFriend() does not have any parameters.
+
+    - myParty.endParty();
+
+      - There is no endParty() method in the class Party.
+
+    - myParty.numInvited++;
+
+      - This would cause an error because you cannot access the private instance variables of an object outside of the class.
+
+    - System.out.println( myParty.cancelParty() );
+
+      - This would cause an error because the void method cancelParty() does not return a String that could be printed out.
+
+
+.. mchoice:: AP2-3-2
+    :practice: T
+
+    Consider the following class definition.
+
+    .. code-block:: java
+
+        public class Cat
+        {
+            public void meow()
+            {
+                System.out.print("Meow ");
+            }
+
+            public void purr()
+            {
+                System.out.print("purr");
+            }
+
+            public void welcomeHome()
+            {
+                purr();
+                meow();
+            }
+            /* Constructors not shown */
+        }
+
+    Which of the following code segments, if located in a method in a class other than Cat, will cause the message "Meow purr" to be printed?
+
+    - .. code-block:: java
+
+        Cat a = new Cat();
+        Cat.meow();
+        Cat.purr();
+
+      - You must use the object a, not the class name Cat, to call these methods.
+
+    - .. code-block:: java
+
+        Cat a = new Cat();
+        a.welcomeHome();
+
+      - This would print "purrMeow "
+
+    - .. code-block:: java
+
+        Cat a = new Cat();
+        a.meow();
+        a.purr();
+
+      + Correct!
+
+    - .. code-block:: java
+
+         Cat a = new Cat().welcomeHome();
+
+      - This would cause a syntax error.
+
+    - .. code-block:: java
+
+         Cat a = new Cat();
+         a.meow();
+
+      - This would just print "Meow ".
+
+  
+like below. Notice that the **return statement** in a method returns the value that is indicated in the return type back to the calling method. The calling method must save or use or print that value.
+
+|Exercise| **Check your understanding**
+
+.. mchoice:: traceReturnMethods
+   :practice: T
+   :answer_a: 5
+   :answer_b: 7
+   :answer_c: 4 3
+   :answer_d: 2 3
+   :answer_e: Does not compile.
+   :correct: b
+   :feedback_a: Make sure you call both methods and compute the square of 2 and then add the results.
+   :feedback_b: Yes, square(2) returns 4 which is added to divide(6,2) which returns 3. The total of 4 + 3 is 7.
+   :feedback_c: Make sure you add the results before printing it out.
+   :feedback_d: Make sure you square(2) and add the results before printint it out.
+   :feedback_e: Try the code in an active code window.
+   
+   What does the following code print out?
+   
+   .. code-block:: java
+   
+      public class MethodTrace 
+      {
+        public int square(int x)
+        {
+            return x*x;
+        }
+        public int divide(int x, int y)
+        {
+              return x/y;
+        }
+        public static void main(String[] args) {
+            MethodTrace traceObj = new MethodTrace();
+            System.out.println( traceObj.square(2) + traceObj.divide(6,2) );
+        }
+       }
+
+
+
+
+Practice
+-------------
+
+.. mchoice:: AP2-5-1
+    :practice: T
+    
+    Consider the following method.
+
+    .. code-block:: java
+
+        public double calculatePizzaBoxes(int numOfPeople, double slicesPerBox)
+        { /*implementation not shown */}
+
+    Which of the following lines of code, if located in a method in the same class as calculatePizzaBoxes, will compile without an error?
+    
+    - int result = calculatePizzaBoxes(45, 9.0);
+
+      - The method calculatePizzaBoxes returns a double value that cannot be saved into an int variable.
+      
+    - double result = calculatePizzaBoxes(45.0, 9.0);
+    
+      - The method calculatePizzaBoxes has an int parameter that cannot hold a double value 45.0.
+
+    - int result = calculatePizzaBoxes(45.0, 9);
+    
+      - The method calculatePizzaBoxes has an int parameter that cannot hold a double value 45.0. Note that the int 9 can be passed into a double parameter.
+      
+    - double result = calculatePizzaBoxes(45, 9.0);
+    
+      + The method calculatePizzaBoxes has an int and a double parameter and returns a double result.
+      
+    - result = calculatePizzaBoxes(45, 9);
+    
+      - The variable result has not been declared (with an appropriate data type). 
+      
+.. mchoice:: AP2-5-2
+    :practice: T
+
+    Consider the following class definition.
+
+    .. code-block:: java
+
+        public class Liquid
+        {
+            private double boilingPoint;
+            private double freezingPoint;
+            private double currentTemp;
+
+            public Liquid()
+            {
+                currentTemp = 50;
+            }
+
+            public void lowerTemp()
+            {
+                currentTemp -= 10;
+            }
+
+            public double getTemp()
+            {
+                return currentTemp;
+            }
+        }
+
+    Assume that the following code segment appears in a class other than Liquid.
+    
+    .. code-block:: java
+
+        Liquid water = new Liquid();
+        water.lowerTemp();
+        System.out.println(water.getTemp());
+
+    What is printed as a result of executing the code segment?
+    
+    - \-10
+    
+      - The Liquid() constructor sets the currentTemp instance variable to 50 and the lowerTemp() method subtracts 10 from it. 
+    
+    - 50
+    
+      - The Liquid() constructor sets the currentTemp instance variable to 50 and the lowerTemp() method subtracts 10 from it. 
+    
+    - water.getTemp()
+    
+      - The System.out.println will print the value returned from water.getTemp().
+        
+    - The code will not compile.
+    
+      - This code should compile.
+
+    - 40.0
+    
+      + Correct, the Liquid() constructor sets the currentTemp instance variable to 50 and the lowerTemp() method subtracts 10 from it, and getTemp() returns the currentTemp value as a double.
+
+
+
+
+.. mchoice:: qse_5
+   :practice: T
+   :answer_a: new Person john = Person("John", 16);
+   :answer_b: Person john("John", 16);
+   :answer_c: Person john = ("John", 16);
+   :answer_d: Person john = new Person("John", 16);
+   :answer_e: Person john = new Person(16, "John");
+   :correct: d
+   :feedback_a: The new keyword should be placed before the call to the Person constructor.
+   :feedback_b: The new keyword is needed to create an object in Java
+   :feedback_c: The new keyword is needed to create an object in Java
+   :feedback_d: Correct!
+   :feedback_e: The Person constructor expects a String and an int parameter in that order.
+
+   Which of the following code segments will correctly create an instance of a Person object?
+
+   .. code-block:: java
+
+     public class Person
+     {
+          private String name;
+          private int age;
+
+          public Person(String a, int b)
+          {
+             name = a;
+             age = b;
+          }
+     }
+
+
+
+.. mchoice:: AP2-2-5
+   :practice: T
+   :answer_a: Movie one = new Movie("Harry Potter", "Bob");
+   :answer_b: Movie two = new Movie("Sponge Bob");
+   :answer_c: Movie three = new Movie(title, rating, director);
+   :answer_d: Movie four = new Movie("My Cool Movie", "Steven Spielburg", "4.4");
+   :answer_e: Movie five = new Movie(t);
+   :correct: b
+   :feedback_a: There is no Movie constructor with 2 parameters.  
+   :feedback_b: This creates a Movie object with the title "Sponge Bob". 
+   :feedback_c: It is not clear whether the variables title, rating, and director are the correct types or in the correct order.
+   :feedback_d: The third argument "4.4" is a String because it is in quotes, but the constructor expects a double.
+   :feedback_e: It is not clear whether t is the correct type for this constructor.
+
+    Consider the following class.  Which of the following code segments would successfully create a new Movie object?
+
+    .. code-block:: java 
+    
+        public class Movie
+        {
+            private String title;
+            private String director;
+            private double rating;
+            private boolean inTheaters;
+
+            public Movie(String t, String d, double r)
+            {
+                title = t;
+                director = d;
+                rating = r;
+                inTheaters = false;
+            }
+
+            public Movie(String t)
+            {
+                title = t;
+                director = "unknown";
+                rating = 0.0;
+                inTheaters = false;
+            }
+        }
+ 
+
+
+ 
+.. mchoice:: qse_6
+   :practice: T
+   :answer_a: 100.00
+   :answer_b: 110.00
+   :answer_c: 90.00
+   :answer_d: 10.00
+   :correct: b
+   :feedback_a: Remember that we have added and withdrawn money
+   :feedback_b: The constructor sets the total to 100, the withdraw method subtracts 30, and then the deposit method adds 40.
+   :feedback_c: We added more money than we took out
+   :feedback_d: We set the value of total to be 100 first
+
+   Given the BankAccount class definition below, what is the output of the code in the main method?
+
+   .. code-block:: java
+
+    public class BankAccount
+    {
+        private int accountID;
+        private double total;
+
+        public BankAccount(int id, double initialDeposit)
+        {
+            accountID = id;
+            total = initialDeposit;
+        }
+
+        public void deposit(double money)
+        {
+            total = total + money;
+        }
+
+        public void withdraw(double money)
+        {
+            total = total - money;
+        }
+
+        public void printCurrentTotal()
+        {
+            System.out.print(total);
+        }
+    
+        public static void main(String[] args)
+        {
+            BankAccount newAccount = new BankAccount(12345, 100.00);
+            newAccount.withdraw(30.00);
+            newAccount.deposit(40.00);
+            newAccount.printCurrentTotal();
+        }
+    }
+
+
+.. mchoice:: qsm_6
+   :practice: T
+   :answer_a: Hello Bob
+   :answer_b: Hello Hello Bob
+   :answer_c: Hello Bob Hello Bob
+   :answer_d: Hello Bob Hello
+   :correct: b
+   :feedback_a: The constructor is called first and prints out one "Hello ".
+   :feedback_b: The constructor is called first and prints out one "Hello " followed by the printSomething() method which prints out "Hello Bob ".
+   :feedback_c: The constructor is called first and prints out one "Hello ".
+   :feedback_d: The constructor is called first and prints out one "Hello " followed by printSomething().
+
+   Assume that SomeClass and MainClass are properly defined in separate files. What is the output of the code in main()?
+
+   .. code-block:: java
+
+      class SomeClass
+      {
+          public SomeClass()
+          {
+              System.out.print("Hello ");
+          }
+
+          void printSomething(String name)
+          {
+              System.out.print("Hello " + name + " ");
+          }
+      }
+
+      public class MainClass
+      {
+          public static void main(String[] args)
+          {
+              SomeClass someClass = new SomeClass();
+              someClass.printSomething("Bob");
+          }
+      }
+
+
+      
+.. mchoice:: qsm_7
+   :practice: T
+   :answer_a: Woo Hoo Hoo Woo
+   :answer_b: Hoo Woo Hoo
+   :answer_c: Woo Hoo Woo Hoo
+   :answer_d: Woo Woo Hoo Hoo
+   :correct: c
+   :feedback_a: 'Woo Hoo' is what gets passed to someOtherFunc()
+   :feedback_b: 'Woo ' gets printed first.
+   :feedback_c: We first print 'Woo ' then 'Hoo ' then the appended "Woo Hoo"
+   :feedback_d: 'Woo ' gets printed first, then the 'Hoo ' from someOtherFunc().
+
+   What is the output of the following code?
+
+   .. code-block:: java
+
+     public class Test1
+     {
+        String someFunc(String str)
+        {
+            return someOtherFunc(str + " Hoo");
+        }
+
+        String someOtherFunc(String str)
+        {
+            return "Hoo " + str;
+        }
+
+        public static void main(String[] args)
+        {
+            Test x = new Test();
+            System.out.print("Woo " + x.someFunc("Woo"));
+        }
+     }
+
+
+.. mchoice:: qsh_4
+   :practice: T
+   :answer_a: unknown value
+   :answer_b: 0
+   :answer_c: compile error
+   :answer_d: runtime error
+   :correct: c
+   :feedback_a: x needs to be initialized with a call to the SomeClass constructor. 
+   :feedback_b: x and someVar have not been initialized.
+   :feedback_c: This will give an error that x has not been initialized. It needs to be initialized with a call to the SomeClass constructor. 
+   :feedback_d: This code will not run.
+
+   Assume that SomeClass and MainClass are properly defined in separate files. What is the output of main()?
+
+   .. code-block:: java
+
+    class SomeClass
+    {
+        int someVar;
+    }
+
+    public class MainClass
+    {
+        public static void main(String[] args)
+        {
+            SomeClass x;
+            System.out.println(x.someVar);
+        }
+    }
+
+.. mchoice:: qsh_5
+   :practice: T
+   :answer_a: unknown value
+   :answer_b: 0
+   :answer_c: compile error
+   :answer_d: runtime error
+   :correct: b
+   :feedback_a: ints get initialized to 0 by default if not explicitly initialized.
+   :feedback_b: ints get initialized to 0 by default if not explicitly initialized.
+   :feedback_c: This code will compile.
+   :feedback_d: someVar has a value assigned by default.
+
+   Assume that SomeClass and MainClass are properly defined in separate files. What is the output of main()?
+
+   .. code-block:: java
+
+    class SomeClass
+    {
+        int someVar;
+    }
+
+    public class MainClass
+    {
+        public static void main(String[] args)
+        {
+            SomeClass x = new SomeClass();
+            System.out.println(x.someVar);
+        }
+    }
+
+
+|Exercise| **Check your understanding**
+
+.. clickablearea:: date_constructor
+    :practice: T
+    :question: Click on the constructor headers (signatures)
+    :iscode:
+    :feedback: Constructors are public and have the same name as the class. Click on the constructor headers which are the first line of the constructors showing their name and parameters.
+
+    :click-incorrect:public class Date {:endclick:
+
+        :click-incorrect:private int year;:endclick:
+        :click-incorrect:private int month;:endclick:
+        :click-incorrect:private int day;:endclick:
+
+        :click-correct:public Date() :endclick:
+            :click-incorrect:{ /** Implementation not shown */ }:endclick:
+
+        :click-correct:public Date(int year, int month, int day) :endclick:
+            :click-incorrect:{ /** Implementation not shown */ }:endclick:
+
+        :click-incorrect:public void print() :endclick:
+            :click-incorrect:{ /** Implementation not shown */ }:endclick:
+
+    :click-incorrect:}:endclick:
