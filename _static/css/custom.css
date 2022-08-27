@@ -15,6 +15,10 @@ a {
 	display: none
 }
 
+.navbar-right {
+	display: none
+}
+
 .strike {
   text-decoration: line-through;
 }
