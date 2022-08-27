@@ -14,21 +14,6 @@ by Beryl Hoffman of Elms College, available at https://runestone.academy/runesto
 CSAwesome is based on  the Java Review ebook written by Barbara Ericson of University of 
 Michigan, https://runestone.academy/runestone/books/published/apcsareview/index.html.
 
-.. raw:: html
-
-
-.. Here is where you specify the content and order of your new book.
-
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
-
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-
 Table of Contents
 :::::::::::::::::
 
@@ -36,27 +21,17 @@ Table of Contents
 .. raw:: html
 
 .. toctree::
-   :numbered:
    :maxdepth: 2
 
    Module0-Introduction/toctree.rst
    Module1-Types-and-Names/toctree.rst
-   Module2-Choice-and-Iteration
+   Module2-Choice-and-Iteration/toctree.rst
    Module3-Arrays/toctree.rst
 
 Index
 ::::::::::::::::::
 
 * :ref:`genindex`
-* :ref:`search`
-
-.. |errata form| raw:: html
-
-   <a href="https://forms.gle/4gMBsv4W71vG5mNe8" target="_blank" style="text-decoration:underline">errata form</a>
-   
-If you see errors or bugs, please report them with this |errata form|. 
-
-(last revised 7/10/2020)
 
 © Copyright 2015 Barb Ericson, Univ. Michigan, 2019 revised by Beryl Hoffman (Elms College, `Mobile CSP Project <http://mobilecsp.org>`_), 2020 revised by Linda Seiter and Dan Palmer (John Carroll University). 
 Created using `Runestone  <http://runestone.academy>`_.

@@ -62,7 +62,7 @@ options(
                        'appname':master_app,
                        'loglevel': 10,
                        'course_url':master_url,
-                       'use_services': 'false',
+                       'use_services': 'true',
                        'python3': 'false',
                        'dburl': 'postgresql://runestone@localhost/runestone',
                        'basecourse': 'csjava',
