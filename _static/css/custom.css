@@ -15,11 +15,11 @@ a {
 	display: none
 }
 
-.navbar-right {
+.navbar-ex1-collapse {
 	display: none
 }
 
-.scprogresscontainer {
+#scprogresscontainer {
 	display: none
 }
 .dropdown {
