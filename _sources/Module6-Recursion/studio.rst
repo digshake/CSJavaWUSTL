@@ -1,54 +1,11 @@
 =====================
-Module 6 Studio
-=====================
-
 Studio 6: Recursive Puzzles 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+=====================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
-* `Studio Setup and Procedure`_
-
-* `Overview`_
-
-* `Ensure The Iterative Solution Passes Its Tests`_
-
-* `Parts of a Recursive Method`_
-
-  * `Investigate IterativeMethods.geometricSum(n)`_
-
-  * `Implement RecursiveMethods.geometricSum(n)`_
-
-* `Recursion vs. Iteration`_
-
-  * `Investigate IterativeMethods.gcd(p, q)`_
-
-  * `Implement RecursiveMethods.gcd(p, q)`_
-
-* `Recursion with a Helper Method`_
-
-  * `Investigate IterativeMethods.reverse(array)`_
-
-  * `Investigate RecursiveMethods.(array)`_
-
-* `Recursive Drawing, Circles Upon Circles`_
-
-  *  `Draw 1 Level Deep`_
-
-  *  `Draw 2 Levels Deep`_
-
-  *  `Draw 3 Levels Deep`_
-
-  *  `Draw 4 Levels Deep`_
-
-  *  `Draw 5 Levels Deep`_
-
-* `Demo`_
-
-
-.. _Studio Setup and Procedure:
-
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+=====================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -62,7 +19,7 @@ Studio 6: Recursive Puzzles
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `Logo <https://classroom.github.com/g/n3TfYnGC>`_ here and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/m0t03FUN>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -74,9 +31,8 @@ Studio 6: Recursive Puzzles
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Overview:
-
-**Overview**
+Overview
+=====================
 
 In this studio you will explore recursion in various forms:
 
@@ -115,19 +71,14 @@ In preparation for the exercises open the following files, found in the **studio
 Run ``MethodsTestSuite`` as a JUnit Test to ensuring it passes the ``IterativeTestSuite`` portion. If it fails any of the tests within ``IterativeTestSuite`` then there is an unintended error and you should check with your TA on how to fix it.
 
 
-.. _Parts of a Recursive Method:
 
-**Parts of a Recursive Method**
-
-.. _Investigate IterativeMethods.geometricSum(n):
-
-**Investigate IterativeMethods.geometricSum(n)**
+Investigate IterativeMethods.geometricSum(n)
+=====================
 
 Discuss with your group what the provided iterative solution is doing.
 
-.. _Implement RecursiveMethods.geometricSum(n):
-
-**Implement RecursiveMethods.geometricSum(n)**
+Implement RecursiveMethods.geometricSum(n)
+=====================
 
 
 Recall from the prep work that all recursive methods have two main features: a base case and a recursive call. But how do we determine what those pieces should be for a given problem?
@@ -158,19 +109,13 @@ After thinking about these questions, see if you can code up a recursive method 
 
 Be prepared to discuss the base case and recursive substructure with the instructor or TA when demoing this studio.
 
-.. _Recursion vs. Iteration:
-
-**Recursion vs. Iteration**
-
-.. _Investigate IterativeMethods.gcd(p, q):
-
-**Investigate IterativeMethods.gcd(p, q)**
+Investigate IterativeMethods.gcd(p, q)
+=====================
 
 Discuss with your group what the provided iterative solution is doing.
 
-.. _Implement RecursiveMethods.gcd(p, q):
-
-**Implement RecursiveMethods.gcd(p, q)**
+Implement RecursiveMethods.gcd(p, q)
+=====================
 
 Recursion and iteration (loops) share some similarities. In fact, a solution that uses iteration can be rewritten using recursion. For this part, you are tasked with writing a method that computes the greatest common divisor in two different ways: iteratively and recursively.
 
@@ -187,19 +132,13 @@ Take a look at your two implementations: do you see similarities between them? C
 
 Walk through the recursive execution of ``gcdRecursive(48, 14)``. How many recursive calls does it take to get to the answer? Use the debugger to work through this particular problem and verify your answer and be prepared to discuss this when you demo the studio.
 
-.. _Recursion with a Helper Method:
-
-**Recursion with a Helper Method**
-
-.. _Investigate IterativeMethods.reverse(array):
-
-**Investigate IterativeMethods.reverse(array)**
+Investigate IterativeMethods.reverse(array)
+=====================
 
 Discuss with your group what the provided iterative solution is doing.
 
-.. _Implement RecursiveMethods.(array):
-
-**Implement RecursiveMethods.(array)**
+Implement RecursiveMethods.(array)
+=====================
 
 In the previous section we saw how recursion and iteration share some similarities. An important similarity is that recursive methods will repeat, just like iterations through a loop. This repetition is useful, but like iteration there may be things that we don’t want to repeat. With iteration we would put this non-repetitive code outside of the loop, but where can it go with recursion?
 
@@ -212,9 +151,8 @@ Your next task is to develop a recursive solution to reversing the contents of a
 
 Test your work by running ``MethodsTestSuite`` and ensuring it passes the ``RecursiveToReversedTestSuite`` portion. Continue to update your code until it passes these tests and your group is happy with its clarity.
 
-.. _Recursive Drawing, Circles Upon Circles:
-
-**Recursive Drawing, Circles Upon Circles**
+Recursive Drawing, Circles Upon Circles
+=====================
 
 Imagine writing a method to draw the image below:
 
@@ -327,9 +265,8 @@ And so on…
   :align: center
 
 
-.. _Demo:
-
-**Demo**
+Demo
+=====================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

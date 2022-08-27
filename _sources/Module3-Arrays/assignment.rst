@@ -1,65 +1,29 @@
 =====================
-Module 3
+Assignment 3: Array Puzzles 
 =====================
 
-.. Here is were you specify the content and order of your new book.
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+Arrays Bonus Video
+=====================
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-
-!*
-
-
-Assignment 3: Array Puzzles 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-* `Arrays Bonus Video`_
-
-* `Assignment Setup`_
-
-* `Array Puzzles`_
-
-  * `Bubble Sort`_
-
-  * `Frequency Table`_
-
-  * `Symmetrical Image`_
-
-* `Submitting your work`_
-
-
-.. _Arrays Bonus Video:
-
-**Arrays Bonus Vieo**
 
 .. youtube:: jKZ0rF1KHM4
 
 Still a confused about arrays? Watch this bonus demonstration by former 131 TA Amanda Hua on how to create, write to, read from, and get the length of arrays.
 
 
+Assignment Setup
+=====================
 
-.. _Assignment Setup:
+To create your repository go `here <https://classroom.github.com/a/4xludTxl>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`__.
 
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/BjAINj1I>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`__.
-
-.. _Array Puzzels:
-
-**Array Puzzles**
+Array Puzzles
+=====================
 
 You are given three problems to complete below. For each problem we supply you examples of what the output could look like.
 
-.. _Bubble Sort:
-
-**Bubble Sort**
+Bubble Sort
+=====================
 
 `Bubble Sort <https://en.wikipedia.org/wiki/Bubble_sort>`__ is a simple, well known, algorithm that can be used to sort an array. Implementing a simple sorting algorithm such as bubble sort is often seen as a rite of passage for the novice computer scientist.
 
@@ -89,9 +53,8 @@ Example Output:
 
 ``Sorted values: 0 3 5 6 7 8 9``
 
-.. _Frequency Table:
-
-**Frequency Table**
+Frequency Table
+=====================
 
 Make a program called ``FrequencyTable.java`` in the ``assignment3`` package. This program will generate ``x`` integers between 1 and ``n`` where ``x`` and ``n`` are values supplied by the user through ``ArgsProcessor``.
 
@@ -121,9 +84,9 @@ Example Output:
 
 ``10: 8``
 
-.. _Symmetrical Image:
 
-**Symmetrical Image**
+Symmetrical Image
+=====================
 
 Create a program ``SymmetricalImage.java``. This program should create an ``n`` x ``m`` array where ``n`` and ``m`` are values supplied by the user through ``ArgsProcessor``.
 
@@ -144,8 +107,8 @@ Example output:
 .. image:: Example.png
   :alt: Example pseudocode
 
-.. _Submitting your work:
 
-**Submitting your work**
+Submitting your work
+=====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via wustl-cse.help.

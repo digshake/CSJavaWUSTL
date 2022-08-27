@@ -1,75 +1,11 @@
 =====================
-Module 5 Studio
-=====================
-
-
 Studio 5: Writing and testing Methods 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+=====================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
-* `Studio Setup and Procedure`_
-
-* `Overview`_
-
-* `Methods`_
-
-* `A function-like method, distanceBetween()`_
-
-  * `Running Tests, distanceBetween()`_
-
-  * `Finishing the Code, distanceBetween()`_
-
-  * `Finishing Testing, distanceBetween()`_
-
-  * `Adding another test, distanceBetween()`_
-
-* `void methods, drawBullsEye()`_
-
-  * `Finishing the Code, drawBullsEye()`_
-  
-  * `Testing, drawBullsEye()`_
-
-* `A method applicable to a future assignment, substitueAll()`_
-
-  * `Finishing the Code, substitueAll()`_
-  
-  * `Testing, substitueAll()`_
-
-  * `Expected???`_
-
-* `Array's as parameters, arraySum()`_
-
-  * `Finishing the Code, arraySum()`_
-  
-  * `Testing, arraySum()`_
-
-  * `Finishing the Code, arraySum() pt2`_
-
-* `Array's as returned values, filledArray()`_
-
-  * `Finishing the Code, filledArray()`_
-  
-  * `Testing, filledArray()`_
-
-  * `Finishing the Code, filledArray() pt2`_
-
-* `Methods from scratch & re-using methods, arrayMean()`_
-
-  * `JavaDoc-style comment`_
-
-  * `Testing, arrayMean()`_
-
-* `Generate JavaDoc pages`_
-
-* `End of Studio Review`_
-
-* `Demo`_
-
-
-.. _Studio Setup and Procedure:
-
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+=====================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -83,7 +19,7 @@ Studio 5: Writing and testing Methods
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `Logo <https://classroom.github.com/g/n3TfYnGC>`_ here and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/dsdZ9DwE>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -95,9 +31,8 @@ Studio 5: Writing and testing Methods
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Overview:
-
-**Overview**
+Overview
+=====================
 
 In this studio you will explore the following two concepts:
 
@@ -120,9 +55,8 @@ In preparation for the exercises open the following files, found in the **studio
 * ``BullsEyeDebugApp.java`` will be run to investigate the ``drawBullsEye()`` method.
 
 
-.. _Methods:
-
-**Methods**
+Methods
+=====================
 
 In the work you see below you should be asking yourselves the following as you write code:
 
@@ -137,7 +71,8 @@ In the work you see below you should be asking yourselves the following as you w
 .. _A function-like method, distanceBetween():
 
 
-**A function-like method, distanceBetween()**
+A function-like method, distanceBetween()
+=====================
 
 Review the ``distanceBetween`` method in ``Methods.java``. This method is a lot like a function from mathematics (the term “function” is often used for methods like this). It will be provided with four arguments and it will perform a computation to generate a result (compute a distance).
 
@@ -152,9 +87,8 @@ It’s mostly done for you. (*Don’t change it yet*) Read the description and m
 * Imagine a program will often need to compute distance between different points. Can use of this function make code easier to read or avoid duplicating code?
 
 
-.. _Running Tests, distanceBetween():
-
-**Running Tests, distanceBetween()**
+Running Tests, distanceBetween()
+=====================
 
 Open ``DistanceBetweenTest.java`` in ``test_src/studio5/tests``. This file contains several tests to help demonstrate that ``distanceBetween()`` works as expected. You can run all the tests in the file by right-clicking on the file name, selecting ``Run As > JUnit Test``.
 
@@ -180,9 +114,8 @@ Run it. You should see a new tab in Eclipse that should look something like:
 Complete the code for ``distanceBetween()``. Use other methods, like ``Math.sqrt()``. (By the way, click on the link and note the format of each of the descriptions. This style is called JavaDoc. You’ll see it again soon.)
 
 
-.. _Finishing Testing, distanceBetween():
-
-**Finishing Testing, distanceBetween()**
+Finishing Testing, distanceBetween()
+=====================
 
 Re-run the test cases. Do they all pass? Probably not!
 
@@ -195,13 +128,14 @@ Re-run the test cases. Do they all pass? Probably not!
 .. _Adding another test, distanceBetween():
 
 
-**Adding another test, distanceBetween()**
+Adding another test, distanceBetween()
+=====================
 
 Once all tests pass, add one more test named ``testPointsE()`` that will verify that the distance between (8,9) and (5,5) is 5.0.
 
-.. _void methods, drawBullsEye():
 
-**void methods, drawBullsEye()**
+void methods, drawBullsEye()
+=====================
 
   If working with a partner change who is at the keyboard
 
@@ -214,32 +148,30 @@ Imaging you plan to create a simple computer game that allows players to throw f
   :height: 400
   :align: center
 
-.. _Finishing the Code, drawBullsEye():
 
-**Finishing the Code, drawBullsEye()**
+Finishing the Code, drawBullsEye()
+=====================
 
 Review the partial code for ``drawBullsEye()`` in ``Methods.java``. Pay attention to the JavaDoc comment, return type, parameter types, and name. Do they all seem to be reasonable choices? **Notice that the return type is** ``void``. **This method is used to bundle together common work, but it doesn’t create a new piece of information like a mathematical function. The special word** ``void`` **is used to indicate that it doesn’t return anything**. The ``println()`` method you’ve been using all semester is an example of another ``void`` method. ``println`` has a side effect of placing text in the console window, but it doesn’t “return” a result.
 
 Complete the code for ``drawBullsEye()``.
 
-.. _Testing, drawBullsEye():
-
-**Testing, drawBullsEye()**
+Testing, drawBullsEye()
+=====================
 
 Open ``BullsEyeDebugApp.java`` and review the cases. In this case we need to confirm that drawings are correct. This app is used to make a repeatable way to ensure consistently. They require human intervention to confirm if the test was passed or not. (There are ways to truly automate tests like this, but it’s beyond the scope of this class.)
 
 Run ``BullsEyeDebugApp``. If your code does not produce the correct pictures, update it until it does.
 
-.. _A method applicable to a future assignment, substitueAll():
 
-**A method applicable to a future assignment, substitueAll()**
+A method applicable to a future assignment, substituteAll()
+=====================
 
 We will need a method which substitutes characters in a String when we create a `fractal dragon curve <https://en.wikipedia.org/wiki/Dragon_curve>`_ in Assignment 6. It is often worth it to extract functionality into a method even if it is only used once. It is even more satisfying to be able to use the same method from different locations in the same application. Ultimately, generally useful methods can be used in many applications and String manipulation is a common operation.
 
 
-.. _Finishing the Code, substitueAll():
-
-**Finishing the Code, substitueAll()**
+Finishing the Code, substituteAll()
+=====================
 
 Read the Javadoc and the starting code for the ``substituteAll(source, target, replacement)`` method, come up a plan, and execute that plan.
 
@@ -269,17 +201,17 @@ Some methods on String to investigate:
 
 * `toCharArray() <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#toCharArray-->`_
 
-.. _Testing, substitueAll():
 
-**Testing, substitueAll()**
+Testing, substitueAll()
+=====================
 
 Run the ``MethodsTestSuite`` as a JUnit Test and fix any errors in the ``SubstituteAllTestSuite``, if necessary.
 
 **Discussion**: Now that it is passing the tests, are there ways to improve your code?
 
-.. _Expected???:
 
-**Expected???**
+Expected???
+=====================
 
 Investigate ``SubstituteAllTest`` in the ``studio5.tests`` package in the ``test_src`` folder.
 
@@ -293,23 +225,21 @@ Note the use of `assertEquals(expected, actual) <https://junit.org/junit4/javado
 
 **Discussion**: Are the tests reasonably comprehensive? What tests could be added to better ensure your code is working in all cases?
 
-.. _Array's as parameters, arraySum():
 
-**Array's as parameters, arraySum()**
+Array's as parameters, arraySum()
+=====================
 
   If working with a partner change who is at the keyboard
 
 Arrays can be given as parameters to methods. Review the code for ``arraySum()`` in ``Methods.java``. As before, pay attention to the JavaDoc comment, return type, parameter types, and name. Do they all seem to be reasonable choices?
 
-.. _Finishing the Code, arraySum():
-
-**Finishing the Code, arraySum()**
+Finishing the Code, arraySum()
+=====================
 
 Complete the code for arraySum().
 
-.. _Testing, arraySum():
-
-**Testing, arraySum()**
+Testing, arraySum()
+=====================
 
 Run the ``MethodsTestSuite`` and note the ``ArraySumTestSuite`` within. Investigate the ``ArraySumPreliminaryTest.java`` within ``ArraySumTestSuite``.
 
@@ -326,31 +256,28 @@ Review the tests:
 Do these tests appear “complete and concise”?
 
 
-.. _Finishing the code, arraySum() pt2:
-
-**Finishing the code, arraySum() pt2**
+Finishing the code, arraySum() pt2
+=====================
 
 If your code didn’t pass all tests update it until it does. (These test don’t have an intentional flaw for you to fix.)
 
 
-.. _Array's as returned values, filledArray():
-
-**Array's as returned values, filledArray()**
+Array's as returned values, filledArray()
+=====================
 
   If working with a partner change who is at the keyboard
 
 Arrays can also be returned from methods. Review the code for ``filledArray()`` in ``Methods.java``. As before, pay attention to the JavaDoc comment, return type, parameter types, and name. Do they all seem to be reasonable choices?
 
-.. _Finishing the Code, filledArray():
 
-**Finishing the Code, filledArray()**
+Finishing the Code, filledArray()
+=====================
 
 
 Complete the code for ``filledArray()``.
 
-.. _Testing, filledArray():
-
-**Testing, filledArray()**
+Testing, filledArray()
+=====================
 
 Run the ``MethodsTestSuite`` and note the ``FilledArrayTestSuite`` within. Investigate the ``FilledArrayPreliminaryTes``t within ``FilledArrayTestSuite``.
 
@@ -358,15 +285,13 @@ Notice that the ``testArrayLength0()`` case uses ``assertNotNull`` and ``assertA
 
 Notice that ``testArrayLength2`` does two separate tests. **It has a flaw in the first thing it’s testing**. Run the tests and notice the error message printed when it fails. Double Click on the test case that failed in the JUnit tab and it will take you to the line of code where the failure was noticed. Update the test code (in ``testArrayLength2``) to remove the error. Don’t remove the line of code, just update it so it’s checking for the proper value. Also notice that the second part of the method uses a loop to check several items.
 
-.. _Finishing the Code, filledArray() pt2:
-
-**Finishing the Code, filledArray() pt2**
+Finishing the Code, filledArray() pt2
+=====================
 
 If your code didn't pass all tests update it until it does.
 
-.. _Methods from scratch & re-using methods, arrayMean():
-
-**Methods from scratch & re-using methods, arrayMean()**
+Methods from scratch & re-using methods, arrayMean()
+=====================
 
   If working with a partner change who is at the keyboard
 
@@ -390,15 +315,13 @@ Return to ``Methods.java`` and search for ``arrayMean``. You should find the ``T
 
 **Hint this method can be done with just a single line of code in the body. Leverage your prior work on the studio!**
 
-.. _JavaDoc-style comment:
-
-**JavaDoc-style comment**
+JavaDoc-style comment
+=====================
 
 After writing the code for the method create the JavaDoc style comment before it. Type ``/**`` above the method and hit return. It will automatically create a JavaDoc style comment block. Fill it in using the same style as used in the rest of the examples.
 
-.. _Testing, arrayMean():
-
-**Testing, arrayMean()**
+Testing, arrayMean()
+=====================
 
 Run the ``MethodsTestSuite`` and note the ``ArrayMeanTestSuite`` within.
 
@@ -408,17 +331,15 @@ If your code didn’t pass all tests update it until it does.
 
 Notice that these tests don’t perform a test with an empty array. Take a few minutes to consider why such a test may not be appropriate here. Discuss with a TA/instructor.
 
-.. _Generate JavaDoc pages:
-
-**Generate JavaDoc pages**
+Generate JavaDoc pages
+=====================
 
   If working with a partner change who is at the keyboard
 
 JavaDoc style comments are used to easily create documentation that goes along with code. If done correctly, the documentation will allow other people to use code without having to read through all the tedious details or having to guess about its behavior. Create JavaDoc pages for your work by selecting ``Generate JavaDoc...`` from the ``Project`` menu in Eclipse. Click ``Finish``. It will probably ask if you want to use the specificified directory, which should be a ``doc`` folder within your repository. You can select ``Yes to all``. When it’s done you may need to right-click on the repository and select ``Refresh`` to see the updated ``doc`` folder. It should include a ``studio5`` folder, which should include ``Methods.html`` (if it doesn’t include ``Methods.html`` generate them again by using the ``Generate JavaDoc...``). Double click on ``Methods.html`` to see the formatted documentation for your work. In particular look at the documentation that was created for your ``arrayMean()`` method. (*Note: There are multiple Methods.html files. Be sure you get the one immediately in the docs/studio5 directory*)
 
-.. _End of Studio Review:
-
-**End of Studio Review**
+End of Studio Review
+=====================
 
 Major highlights from this studio:
 
@@ -449,9 +370,8 @@ Major highlights from this studio:
 * Testing often involves running code on a specific test cases and making sure it produces the expected results.
 
 
-.. _Demo:
-
-**Demo**
+Demo
+=====================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

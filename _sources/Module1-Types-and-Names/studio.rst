@@ -1,14 +1,11 @@
 =====================
-Module 1 Studio
+Studio 1: The Type is Right
 =====================
 
-
-Studio 1: The Type is Right
-:::::::::::::::::::::::::::::::::::::::
-
-Studio activities should not be started before class! Come to the session and work on the activity with other students!
+**Studio activities should not be started before class! Come to the session and work on the activity with other students!**
  
-**Studio Sessions Overview**
+Studio Sessions Overview
+=====================
 
 Studios are a chance to work with other students to learn course material by actively trying to solve problems.
 
@@ -31,13 +28,16 @@ Studios are a chance to work with other students to learn course material by act
   + Each member of your team is responsible for ensuring that all members completely understand your work and the topics being used.
 
 
-**Academic Integrity Agreement**
+Academic Integrity Agreement
+=====================
+
 
 Today, course staff will guide you in completing an Academic Integrity Agreement.
 
-Your group should review and discuss the `Examples <https://wustl.instructure.com/courses/69918/pages/course-policies#Examples>`_ of what you can and can’t do. When everyone is clear about what is allowed, the TA/instructor will tell you to proceed.
+Your group should review and discuss the `Examples <https://wustl.instructure.com/courses/90796/pages/course-policies#Examples>`_ of what you can and can’t do. When everyone is clear about what is allowed, the TA/instructor will tell you to proceed.
 
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+=====================
 
 * All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
 
@@ -48,9 +48,7 @@ Your group should review and discuss the `Examples <https://wustl.instructure.co
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
 
-Studio : The Type is Right
-
-1. Have **one person** in your group create a new team by clicking `here <https://classroom.github.com/assignment-invitations/1b7ca865989ff5264fc197c1a4525b16/status>`_ and going to the ``OR Create a new team`` box at the bottom of the page.
+1. Have **one person** in your group create a new team by clicking `here <https://classroom.github.com/a/fQdFUNfj>`_ and going to the ``OR Create a new team`` box at the bottom of the page.
 
    1. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
@@ -63,13 +61,13 @@ Studio : The Type is Right
    2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
 
 
-3. Finally, one person should import the studio repository into Eclipse, as described in `Assignment 0’s Add the assignment to Eclipse <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment#4-add-the-assignment-to-eclipse>`_
+3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/setup.html>`_
 
    1.All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Studio 1:Activity:
 
-**Studio 1: Activity**
+Studio 1: Activity
+=====================
 
 * You will complete a series of simple Java programs, and run each program to ensure it performs its task correctly.
 
@@ -77,21 +75,19 @@ Studio : The Type is Right
 
 * To run a program just open the file in a tab and click on the green “Play” button on the menu. The program in the active/open tab will run.
 
-**Some of the following exercises are adapted from Princeton University's** `COS126 course <http://www.cs.princeton.edu/courses/archive/spring12/cos126/precepts.php>`_, based on our text by Sedgewick and Wayne.
+**Some of the following exercises are adapted from Princeton University's** `COS126 course <http://www.cs.princeton.edu/courses/archive/spring12/cos126/precepts.php>`_, based a textbook by Sedgewick and Wayne.
 
 For each of the following exercises, find the file in your studio repository and complete it to do the assigned task.
 
-.. _HiOne:
-
-**HiOne**
+HiOne
+=====================
 
 Say hello to the name supplied as input to this program.
 
    Sample output: ``Hi Bill. How are you?`` (assuming ``Bill`` was supplied as input) Feel free to end the output with punctuation that indicates the level of enthusiasm associated with your greeting.
 
-.. _HiFour:
-
-**HiFour**
+HiFour
+=====================
 
 **Switch who is “entering code”; Everyone should have equal time entering code**
 
@@ -99,9 +95,8 @@ Expand your hospitality to the four names supplied to this program.
 
    Sample output: ``Greetings Cormen, Leiserson, Rivest, and Stein``. Be sure to put in `proper punctuation <http://en.wikipedia.org/wiki/Serial_comma>`_ to separate the names.
 
-.. _Ordered:
-
-**Ordered**
+Ordered
+=====================
 
 **Switch who is “entering code”; Everyone should have equal time entering code**
 
@@ -109,9 +104,8 @@ Define a ``boolean`` variable ``isOrdered`` whose value is ``true`` if the three
 
    Some of you may already know some Java. We have not yet covered the if statement. You must use what has been taught so far (simple expressions and assignment) to accomplish this task.
 
-.. _Average:
-
-**Average**
+Average
+=====================
 
 **Switch who is “entering code”; Everyone should have equal time entering code**
 
@@ -147,9 +141,9 @@ We aren’t giving you the class for this one, but we will instruct you how to c
 
       Note that the output is a ``double``, because the average of two integers is not necessarily an integer.
 
-.. _Leap Year:
 
-**Leap Year**
+Leap Year
+=====================
 
 You’ll need to make a ``LeapYear class``, just as you made the ``Average`` class in the previous step. You should again insert the ``ArgsProcessor`` code, this time to take in an integer that represents a year.
 
@@ -172,11 +166,9 @@ Once you have determined whether the given year is a leap year print out a messa
 
    Some of you may already know some Java. We have not yet covered the ``if`` statement. You must use what has been taught so far (simple expressions and assignment) to accomplish this task.
 
-.. _Creative Exercise:
 
-**Creative Exercise**
-
-**Ice Cream**
+Creative Exercise - Ice Cream
+=====================
 
 As a group, brainstorm the best data type to represent the following situations:
 
@@ -196,9 +188,8 @@ As a group, brainstorm the best data type to represent the following situations:
 
 * The probability that you will see a friend at Ted Drewes
 
-.. _Demo:
-
-**Demo (get credit for your) your work:**
+Demo (get credit for your) your work:
+=====================
 
 **Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

@@ -1,28 +1,9 @@
 =====================
-Module 7 Studio
+Studio 7: Object Design
 =====================
 
-
-Studio 7: Object Design
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-* `Studio Setup and Procedure`_
-
-* `Overview`_
-
-  * `Cautions`_
-
-  * `Design Problems`_
-
-    * `Object Types`_
-
-* `Demo`_
-
-
-
-.. _Studio Setup and Procedure:
-
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+=====================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -36,7 +17,7 @@ Studio 7: Object Design
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `Logo <https://classroom.github.com/g/n3TfYnGC>`_ here and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/8BHBNucJ>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -48,9 +29,8 @@ Studio 7: Object Design
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Overview:
-
-**Overview**
+Overview
+=====================
 
 * This week’s studio is an exercise in design, so get your brains limbered up for some creative thinking.
 
@@ -66,9 +46,8 @@ Studio 7: Object Design
 
 * The design problems are presented to you in the form of a `user story <http://www.extremeprogramming.org/rules/userstories.html>`_.
 
-.. _Cautions:
-
-**Cautions**
+Cautions
+=====================
 
 * Use rich data types where possible, both to document your design and to leverage Java’s type system to avoid bugs in your program.
 
@@ -110,9 +89,9 @@ It is customary to base the name of such methods consistently on the name of the
       this.person = person;
   }
 
-.. _Design Problems:
 
-**Design Problems**
+Design Problems
+=====================
 
 * A number of stories appear below about various object types.
 
@@ -126,9 +105,9 @@ It is customary to base the name of such methods consistently on the name of the
 
 * Repeat this process with another object type until the end of class.
 
-.. _Object Types:
 
-**Object Types**
+Object Types
+=====================
 
 Create and test the following object types in the ``studio7`` folder:
 
@@ -159,9 +138,8 @@ A `complex number <http://en.wikipedia.org/wiki/Complex_number>`_ has a real and
 A hockey player has a name and a jersey number. Most players shoot either right or left, but some can shoot either way. A player can be right- or left-handed, but shoot either right or left. This object should be able to react when a player completes a game, recording how many goals and assists the player earned in that game. A player has a certain number of goals and assists he or she has recorded over all games played. Also, a player has a certain number of **points**, which is the sum of the goals and assists a player has earned. A player has a certain number of games he or she has played.
 
 
-.. _Demo:
-
-**Demo**
+Demo
+=====================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

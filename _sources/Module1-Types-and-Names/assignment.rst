@@ -1,40 +1,14 @@
 =====================
-Module 1 Assignment
+Assignment 1: Grade Calculator
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+To create your repository `go here <https://classroom.github.com/a/82JQvlTV>`_. Then follow the same accept/import process described in `Assignment 0 <../Module0-Introduction/assignment.html>`_.
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-Assignment 1: Grade Calculator
-:::::::::::::::::::::::::::::::::::::::
-
-* `Assignment Setup`_
-
-* `Grade Calculator`_
-
-* Procedure_
-
-* Notes_
-
-* `Submitting your work`_
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository `go here <https://classroom.github.com/a/C7Tn9URj>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
-
-.. _Grade Calculator:
-
-**Grade Calculator**
+Grade Calculator
+================
 
 In this assignment you develop a tool that can help you compute your final course grade. By completing this assignment you demonstrate that you can:
 
@@ -42,16 +16,14 @@ In this assignment you develop a tool that can help you compute your final cours
 
 * Arrange for the class to take inputs of interest
 
-
 * Compute output values of interest
 
 * Produce meaningful output based on your computations
 
 * Work with Java expressions
 
-.. _Procedure:
-
-**Procedure**
+Procedure
+================
 
 1. Create a ``GradeCalculator`` Java class in the ``assignment01`` package (``assignment01`` is in the ``src`` folder).
 
@@ -114,7 +86,8 @@ Eclipse will help you out here: If you have typed ``ap``. and Eclipse will show 
 
 .. _Notes:
 
-**Notes**
+Notes
+================
 
 * This point may seem obscure, but on a computer, multiplying by 0.1 is not the same result as dividing by 10.0. The reason is that 10.0 can be represented exactly, but 0.1, not so well. You may get mathematical surprises if you multiply by 0.1 instead of dividing by 10.0.
 
@@ -136,8 +109,7 @@ Eclipse will help you out here: If you have typed ``ap``. and Eclipse will show 
 
 Prepare for demoing your work by trying out various combinations of grade values and making sure that your program computes them correctly.
 
-.. _Submitting your work:
-
-**Submitting your work**
+Submitting your work
+================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.

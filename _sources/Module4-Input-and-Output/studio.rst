@@ -1,38 +1,11 @@
 =====================
-Module 4 Studio
-=====================
-
-
 Studio 4: Flag Day 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+=====================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
-* `Studio Setup and Procedure`_
-
-* `Overview`_
-
-* `Studio Procedure`_
-
-  * `Reading shape data from a file`_
-
-  * `Individual exercise, create your ideal country`_
-
-  * `Individual exercise, create your country's flag`_
-
-  * `Create your group's flag`_
-
-  * `Interacting with other groups, Share Feedback!`_
-
-  * `Draw your flag`_
-  
-  * `Norway, Mother of all Flags`_
-
-* `Demo`_
-
-.. _Studio Setup and Procedure:
-
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+=====================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -46,7 +19,7 @@ Studio 4: Flag Day
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `Logo <https://classroom.github.com/g/n3TfYnGC>`_ here and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/S8kzP9Lp>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -58,9 +31,8 @@ Studio 4: Flag Day
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Overview:
-
-**Overview**
+Overview
+=====================
 
 * Understanding how to draw things using ``StdDraw``
 
@@ -70,13 +42,8 @@ Studio 4: Flag Day
 
 Design is largely all about communicating your intentions in a way that other people can understand. Human-centered design, a critical concept in computing, means you’re always thinking about the people who will be using or seeing your work. In this case it’s also important to think about technical limitations and restraints on what you can easily draw.
 
-.. _Studio Procedure:
-
-**Procedure**
-
-.. _Reading shape data from a file:
-
-**Reading shape data from a file**
+Reading shape data from a file
+=====================
 
 Your first task is to use ``ArgsProcessor`` and ``StdDraw`` to draw shapes based on data from a file. Do not spend more than 40 minutes on this part before moving on to designing and drawing your own flag!
 
@@ -104,9 +71,8 @@ Once you are able to do this, test your code by editing the rectangle’s ``.txt
 
 * If you finish triangles and have time, discuss how you would need to change your code and the file format to work for any polygon.
 
-.. _Individual exercise, create your ideal country:
-
-**Individual exercise, create your ideal country**
+Individual exercise, create your ideal country
+=====================
 
 Work *individually* on all of the following:
 
@@ -126,9 +92,8 @@ Work *individually* on all of the following:
 
 3. Write down some words or phrases that summarize your thoughts. Express at least three distinct concepts in a few words or phrases.
 
-.. _Individual exercise, create your country's flag:
-
-**Individual exercise, create your country's flag**
+Individual exercise, create your country's flag
+=====================
 
 1.Continue to work ``individually``. Sketch out a design for a flag that captures the spirit of the significant words/phrases for your country. Keep in mind that you are creating something for the world to see.
 
@@ -138,15 +103,13 @@ You may want to review the `StdDraw API <http://introcs.cs.princeton.edu/java/st
 
 3. Come back together with your studio group. Take turns showing off your flags. Have other members of your group try to guess your values based on your flag design. After hearing the guesses from your teammates let them know about the values that influenced your design.
 
-.. _Create your group's flag:
-
-**Create your group's flag**
+Create your group's flag
+=====================
 
 Now you’re going to create your group flag (drawing on paper) by taking your favorite features of each flag and designing a singular flag to represent the combination of the individual flags. Make sure a component of each flag is captured in the unified flag. Once again, keep in mind that you need to be communicating your ideas in a way that others can understand.
 
-.. _Interacting with other groups, Share Feedback!:
-
-**Interacting with other groups, Share Feedback!**
+Interacting with other groups, Share Feedback!
+=====================
 
 A crucial component to the design process is getting feedback from others and incorporating that feedback into your work.
 
@@ -162,9 +125,8 @@ A crucial component to the design process is getting feedback from others and in
 
 6. Don’t be afraid to completely redo it. We all make mistakes and part of the design process is realizing our mistakes and not being afraid to do something over! It’s all about iteration.
 
-.. _Draw your flag:
-
-**Draw your flag** 
+Draw your flag
+=====================
 
 Now that you have perfected your flag using the feedback provided it’s time to draw it using ``StdDraw``!
 
@@ -182,9 +144,8 @@ Now that you have perfected your flag using the feedback provided it’s time to
 
 4. When you’re done share your work! Show your flag to your neighbors/TAs.
 
-.. _Norway, Mother of all Flags:
-
-**Norway, Mother of all Flags**
+Norway, Mother of all Flags
+=====================
 
 There will almost certainly not be time for this during studio (improve your flag design first!), but it is here for those interested. In ``NorwayMotherOfAllFlags.java`` we will be using Norway’s flag to create upto six other flags found within it.
 
@@ -297,9 +258,8 @@ Below are the steps for this task:
   :height: 200
   :align: center
 
-.. _Demo:
-
-**Demo**
+Demo
+=====================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

@@ -1,54 +1,14 @@
 =====================
-Module 4 Assignment
+Assignment 4: APIsolutely About Zombies
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+=====================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+To create your repository go `here <https://classroom.github.com/a/gTm-BRH1>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-
-Assignment 4: APIsolutely About Zombies
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-* `Assignment Setup`_
-
-* `Zombies`_
-
-* `Information Needed`_
-
-  * `Data Management`_
-
-  * `Data Encoding`_ 
-
-  * `A Note About Strings`_
-
-* `APIs`_
-
-  * `Using ArgsProcessor to read from a file`_
-
-* `Assignment Requirements`_
-
-* `Assignment Procedure`_
-
-* `Submitting your work`_
-
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/WW7vHns2>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
-
-.. _Zombies:
-
-**Zombies**
+Zombies
+=====================
 
 This assignment is the first step in a sequence of assignments that will simulate `zombies <https://en.wikipedia.org/wiki/Zombie>`_! In this part you will prepare the simulation data and display the entities being simulated (the zombies and non-zombies/humans). In the next part (Assignment 5) we will actually simulate the interaction between the two.
 
@@ -66,9 +26,8 @@ There are a few reasons for this choice of subject matter:
 
 * Simulating biological systems can be fascinating but complex. Using zombies allows us to simplify the rules of the system, which means shorter assignments more focused on the CS concepts we want you to learn.
 
-.. _Information Needed:
-
-**Information Needed** 
+Information Needed 
+=====================
 
 In order to simulate how a zombie infection can spread, we will simulate:
 
@@ -78,9 +37,9 @@ In order to simulate how a zombie infection can spread, we will simulate:
 
 In other words, for every entity (zombie or non-zombie), we will want to keep track of the entity’s current coordinates and whether the entity is a zombie. We can use a boolean for the entity type, with true to indicate a zombie and false to indicate a non-zombie.
 
-.. _Data Management:
 
-**Data Management**
+Data Management
+=====================
 
 There are several ways to manage information like this. For this assignment, we’ll use an approach sometimes called `parallel arrays <https://en.wikipedia.org/wiki/Parallel_array>`_. The basic idea is that we will have three arrays to keep track of ``N`` entities:
 
@@ -90,7 +49,8 @@ There are several ways to manage information like this. For this assignment, we�
 
 Each thing being simulated will be associated with an index. For example, ``areZombies[0]``, ``xs[0]``, and ``ys[0]`` represent the type and coordinates of a single entity in our simulation. In a sense you can think about ``areZombies``, ``xs``, and ``ys`` as being columns in a table. Each individual row of the table represents a specific thing being simulated. The three arrays are considered “in parallel” since the i-th items in each array represent different aspects of a single composite thing.
 
-.. _Data Encoding:
+Data Encoding
+=====================
 
 The initial locations of zombies and non-zombies will be provided in a file. The file will have a very specific format:
 
@@ -261,9 +221,9 @@ We’ve included several example files. When you run the program, you will see a
 
 |
 
-.. _A Note About Strings:
 
-**A Note About Strings**
+A Note About Strings
+=====================
 
 Although the files will contain a String for each entity type, we will want to represent the type as a boolean value in our areZombies array.
 
@@ -271,9 +231,9 @@ Unlike primitive data types (``int``, ``double``, ``boolean``, etc.), comparing 
 
 .. youtube:: uM19VWfas10
 
-.. _APIs:
 
-**APIs**
+APIs
+=====================
 
 This assignment will utilize two different APIs:
 
@@ -281,7 +241,8 @@ This assignment will utilize two different APIs:
 
 * ``StdDraw``: This will allow us to display the location of the zombies and non-zombies as our simulation progresses.
 
-.. _Using ArgsProcessor to read from a file:
+Using ArgsProcessor to read from a file
+---------------------------------------
 
 * When ArgsProcessor is connected to a file, ``ap.nextDouble()``, will get the next value in the selected file if it’s a double. If the next value is not a double, it will ask the user for a double instead.
 
@@ -289,9 +250,8 @@ This assignment will utilize two different APIs:
 
 * Make sure you use the method that asks for the data type that corresponds to the next value in the file. For example, if the next value in the file is a double, make sure to call ``ap.nextDouble()``, not ``ap.nextString()``. If a user input popup comes up, you are not calling methods in the right order.
 
-.. _Assignment Requirements:
-
-**Assignment Requirements**
+Assignment Requirements
+=====================
 
 Your work needs to:
 
@@ -307,7 +267,8 @@ Your work needs to:
 
 3. Use ``StdDraw`` to display the ratio of Non-Zombies to total entities in the corner of the window (choose whatever corner you like). For example, in a simulation that has 3 Non-Zombies and 4 Zombies, this would look like “``3/7``”. Make sure that this display is readable.
 
-.. _Assignment Procedure:
+Assignment Procedure
+=====================
 
 * Open the ``ZombieData`` in the ``assignment4`` package. One line has already been done for you. The remaining work is summarized with ``TODO`` comments.
 
@@ -326,8 +287,7 @@ When running the program:
 * Select the file you wish to read from the file dialog box.
 
 
-.. _Submitting your work:
-
-**Submitting your work**
+Submitting your work
+=====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via wustl-cse.help.

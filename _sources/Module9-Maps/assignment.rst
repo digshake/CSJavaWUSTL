@@ -1,38 +1,11 @@
 =====================
-Module 9 Assignment
+Assignment 9: Scene Composer
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+=====================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
-
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-
-Assignment 9: Scene Composer
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-* `Assignment Setup`_
-
-  * `Overview`_
-
-  * `Requirements`_
-
-  * `Code base`_
-
-* `Submitting your work`_
-
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/DDL1ilgU>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
+To create your repository go `here <https://classroom.github.com/a/ZqDxsJtd>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
 
 This assignment is fairly creative in that:
 
@@ -42,9 +15,8 @@ This assignment is fairly creative in that:
 
 * The application you develop here allows creation of artistic images
 
-.. _Overview:
-
-**Overview**
+Overview
+=====================
 
 The idea is to develop an application in which a user (presently, just yourself) can compose images.
 
@@ -58,9 +30,8 @@ You can create your solution all in one ``main`` method as you did at the beginn
 
 The code base provided to you draws images using somewhat transparent colors, so that if you draw the same image twice, its intensity increases.
 
-.. _Requirements:
-
-**Requirements**
+Requirements
+=====================
 
 Before continuing, take a look at `this video <https://wustl.box.com/s/o0cnmrq5enboqsq2t3u8xapcatr511fz>`__.
 
@@ -80,9 +51,8 @@ To receive credit you must:
 
 * Allow the recording of a sequence of ``Drawables``, and the subsequent recall of that sequence for display.
 
-.. _Code base:
-
-**Code base**
+Code base
+=====================
 
 Before continuing, take a look at `this video <https://wustl.box.com/s/s82qapv7gwtz6pw4fryrxjamqxp0nryo>`_.
 
@@ -90,8 +60,7 @@ Familiarize yourself with the code by watching the video and looking at the ``as
 
 OK! implement at least the features above and have fun with this!
 
-.. _Submitting your work:
-
-**Submitting your work**
+Submitting your work
+=====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_. Be prepared to show them the work that you have done and answer their questions about it!

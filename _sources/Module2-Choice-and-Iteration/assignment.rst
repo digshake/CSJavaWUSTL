@@ -1,44 +1,14 @@
 =====================
-Module 2 Assignment
+Assignment 2: Game of Nim
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+=====================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+To create your repository go `here <https://classroom.github.com/a/5i2eODzV>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-
-
-
-
-Assignment 2: Game of Nim
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-* `Assignment Setup`_
-
-* `Game of Nim`_
-
-  * `Example`_
-
-  * Notes_
-
-* `Submitting your work`_
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/vDG5z2OJ>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
-
-.. _Game of Nim:
-
-**Game of Nim**
+Game of Nim
+=====================
 
 `Nim <https://en.wikipedia.org/wiki/Nim>`_ is a `game of strategy <https://en.wikipedia.org/wiki/Strategy_game>`_ in which two players take turns removing sticks from a common pile. There are many variations of Nim but we will stick with a simple version. On each turn a player must remove either 1 or 2 sticks from the pile. The goal of the game is to be the player who removes the last stick.
 
@@ -46,9 +16,8 @@ You will design a game in which one human player is competing against a computer
 
 While there is a winning strategy for this game, you are only required to create a computer player that makes random, but valid, moves.
 
-.. _Example:
-
-**Example**
+Example
+=====================
 
 ``Round 0: 7 at start human takes 2, so 5 remain``
 
@@ -60,9 +29,8 @@ While there is a winning strategy for this game, you are only required to create
 
 ``The computer wins / you lose!``
 
-.. _Notes:
-
-**Notes**
+Notes
+=====================
 
 * Begin by prompting the user for the initial number of sticks. In the example above, it appears that 7 sticks were used in the game.
 
@@ -86,8 +54,7 @@ Be careful! A human might enter 5 if 5 sticks are left, and if you are not caref
 
 * When it’s time to demo be prepared to discuss how you would implement a “smarter” strategy for the computer player.
 
-.. _Submitting your work:
-
-**Submitting your work**
+Submitting your work
+=====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via wustl-cse.help.

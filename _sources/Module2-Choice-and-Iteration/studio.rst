@@ -1,35 +1,11 @@
 =====================
-Module 2 Studio
+Studio 2: Problem 1, Gambler's Ruin and Pi
 =====================
 
-Studio 2: Problem 1, Gambler's Ruin and Pi
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+**Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
-* `Studio Setup and Procedure`_
-
-* `Problem 1:Gambler's Ruin`_
-
-  * Background_
-
-  * Procedure_
-
-  * `Example Run`_
-
-    * `Example Output`_
-
-  * `Final Testing & Review`_
-
-* `Problem 2:Computing Pi by throwing darts`_
-
-* `Further investigations`_
-
-* Demo_
-
-Studio activities should not be started before class! Come to the session and work on the activity with other students!
-
-.. _Studio Setup and Procedure:
-
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+=====================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -43,7 +19,7 @@ Studio activities should not be started before class! Come to the session and wo
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `Logo <https://classroom.github.com/g/n3TfYnGC>`_ here and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/X4bGsC9u>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -55,13 +31,8 @@ Studio activities should not be started before class! Come to the session and wo
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Problem 1:Gambler's Ruin:
-
-**Problem 1:Gambler's Ruin**
-
-.. _Background:
-
-**Background**
+Problem 1: Gambler's Ruin
+=====================
 
 In this assignment you’ll simulate a version of `Gambler’s Ruin <https://en.wikipedia.org/wiki/Gambler%27s_ruin>`_ problem. The problem is:
 
@@ -91,7 +62,8 @@ There are two major ways to solve these questions:
 
 In this assignment you’ll do both (and compare the simulated value to the expected one)
 
-.. _Procedure:
+Procedure
+---------
 
 1. With your repository open create a new class in the ``studio2`` package:
 
@@ -153,9 +125,8 @@ In this assignment you’ll do both (and compare the simulated value to the expe
 
 .. image:: MathChart.png
 
-.. _Example Run:
-
-**Example Run**
+Example Run
+=====================
 
 Here’s an example run. You should try to match this format. 
 
@@ -170,9 +141,8 @@ Given:
    "winLimit", "10"
    "totalSimulations", "500"
 
-.. _Example Output:
-
-**Example Output**
+Example Output
+=====================
 
 ``Simulation 1: 16 LOSE``
 
@@ -192,18 +162,17 @@ Given:
 
 ``Ruin Rate from Simulation: 0.18 Expected Ruin Rate: 0.18350278772959913``
 
-.. _Final Testing & Review:
-
-**Final Testing & Review**
+Final Testing & Review
+=====================
 
 * Come up with creative ways to test your code until you’re confident it’s working as expected. Talk to your TA/instructor and try to justify that all you calculations are correct.
 
 * Review the development process. The order of your work was chosen carefully to increase the likelihood you’d be successful. Review the steps and try to identify strategies that may help you be successful in other course work. Again, share with your TA/instructor.
 
 
-.. _Problem 2:Computing Pi by throwing darts:
 
-**Problem 2:Computing Pi by throwing darts**
+Problem 2:Computing Pi by throwing darts
+=====================
 
 Computer scientists often use `simulation <http://en.wikipedia.org/wiki/Simulation>`_ as a means of modeling, understanding, and predicting real-world phenomena.
 
@@ -235,10 +204,9 @@ Hint:
 
 4. As before, discuss ways to test and validate your work.
 
-.. _Further investigations:
 
-
-**Further investigations**
+Further investigations
+=====================
 
 If you have time, pick one or both of the following:
 
@@ -252,9 +220,8 @@ If you have time, pick one or both of the following:
 
 2. There are other ways of `computing Pi <http://en.wikipedia.org/wiki/Pi>`_. Try some of these and study their effectiveness in terms of the number of iterations you use.
 
-.. _Demo:
-
-**Demo (get credit for your work)**
+Demo (get credit for your work)
+=====================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

@@ -7,7 +7,7 @@ Introduction
    :maxdepth: 2
 
    topic-0-1-first-day.rst
-   topic-0-2-installation-setup.rst
+   software.rst
    studio.rst
    assignment.rst
 

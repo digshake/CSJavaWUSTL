@@ -1,89 +1,14 @@
 =====================
-Module 6 Assignment
+Assignment 6: More Recursive Puzzles
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+=====================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+To create your repository go `here <https://classroom.github.com/a/Enu_UohN>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-
-Assignment 6: More Recursive Puzzles
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-* `Assignment Setup`_
-  
-* `More Recursive Puzzles`_
-  
-* `Exponents`_
-  
-  * `Tips for completing Exponents`_
-  
-  * `Testing Exponents`_
-  
-  * `Submitting Exponents`_
-
-* `Array Sum`_
-  
-  * `Tips for Array Sum`_
-
-  * `Testing Array Sum`_
-
-  * `Submitting Array Sum`_
-
-* `Substitute All Practice`_
-
-* `Dragon Curves`_
-
-  * `dragon(0) = F-H`_
-
-  * `dragon(1) = F-H-F+H`_
-
-  * `dragon(2) = F-H-F+H-F-H+F+H`_
-
-  * `dragon(3) = F-H-F+H-F-H+F+H-F-H-F+H+F-H+F+H`_
-
-  * `dragon(4) = F-H-F+H-F-H+F+H-F-H-F+H+F-H+F+H-F-H-F+H-F-H+F+H+F-H-F+H+F-H+F+H`_
-
-  * `dragon(5) = F-H-F+H-F-H+F+H-F-H-F+H+F-H+F+H-F-H-F+H-F-H+F+H+F-H-F+H+F-H+F+H-F-H-F+H-F-H+F+H-F-H-F+H+F-H+F+H+F-H-F+H-F-H+F+H+F-H-F+H+F-H+F+H`_
-
-  * `dragon(10)`_
-
-  * `Testing`_
-
-  * `Tips for completing this method`_
-
-  * `Submitting this method`_
-
-* `Max Path Length`_
-
-  * `Testing and Debug App`_
-
-    * `Chose Correctly`_
-
-    * `Chose Poorly`_
-
-  * `Tips for this method`_
-
-  * `Submitting this method, Max Path Length`_
-  
-* `Submitting your work`_
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/DDL1ilgU>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
-
-.. _More Recursive Puzzles:
-
-**More Recursive Puzzles**
+More Recursive Puzzles
+=====================
 
 In this assignment you’ll be tasked with writing a few recursive methods. These recursive methods will rely on the concepts covered in the prep work and studio including:
 
@@ -103,31 +28,27 @@ All of the methods that you are asked to complete can be found in the ``Recursiv
 
 Since this lab is meant to reinforce the concepts relating to recursion, **no loops are allowed for any reason**. If you use a loop to solve a particular problem you will not receive any credit for that problem.
 
-.. _Exponents:
-
-**Exponents**
+Exponents
+=====================
 
 Your next task is to complete a method ``exponent(int base, int exp)`` that recursively computes base ^ exp. Your code should work for positive and negative bases as well as positive and negative exponents (Hint: You may want to review the relationship between positive and negative exponents. Khan Academy has a great `Negative exponents review <https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-negative-exponents/a/negative-exponents-review>`_). Unit tests have been provided in the ``ExponentsTests.java`` file that can be used to check your work.
 
 Once you have completed your method, you should sketch out the execution of ``exponent(3, 4)``. Show every method call that is made and be sure to include every step that is involved in computing the final result. More detail is better!
 
-.. _Tips for completing Exponents:
-
-**Tips for completing Exponents**
+Tips for completing Exponents
+-----------------------------
 
 * A helper method isn’t strictly required, but it may help you here.
 
 * Usage of ``Math.pow()`` or any other method to compute exponents besides recursion is not allowed for this problem.
 
-.. _Testing Exponents:
-
-**Testing Exponents**
+Testing Exponents
+-----------------------------
 
 .. youtube::s8kOg6wDv3E
 
-.. _Submitting Exponents:
-
-**Submittting Exponents**
+Submittting Exponents
+-----------------------------
 
 When you submit this method you will be asked the following:
 
@@ -141,17 +62,15 @@ When you submit this method you will be asked the following:
 
 * Show and explain your work for the execution of ``exponent(3, 4)``
 
-.. _Array Sum:
-
-**Array Sum**
+Array Sum
+=========
 
 Complete the method ``arraySum(int[] array``) such that it computes and returns the sum of the given array. Unit tests have been provided in the ``ArraySumTests.java`` file that can be used to check your work.
 
 Once you have completed your method, you should sketch out the execution of ``arraySum`` using the array ``[1, 3, 9, 7]``. Show every method call that is made and be sure to include every step that is involved in computing the final result. More detail is better!
 
-.. _Tips for Array Sum:
-
-**Tips for Array Sum**
+Tips for Array Sum
+-----------------------------
 
 * This is not the first time you have seen this method, as ``arraySum`` was also part of Studio 5 . It is likely that you used iteration during the studio, however your iterative solution may still help you figure out the recursive solution. Note that the unit tests provided to you here are the same as the ones provided to you in studio: the functionality of the two methods should be exactly the same.
 
@@ -161,16 +80,14 @@ Once you have completed your method, you should sketch out the execution of ``ar
 
 * You will undoubtedly want a helper method. Think about what additional information the helper method should track.
 
-.. _Testing Array Sum:
-
-**Testing Array Sum**
+Testing Array Sum
+-----------------------------
 
 .. youtube:: UBFmT90hRog
 
 
-.. _Submitting Array Sum:
-
-**Submitting Array Sum**
+Submitting Array Sum
+-----------------------------
 
 When you submit this method you will be asked the following:
 
@@ -187,9 +104,8 @@ When you submit this method you will be asked the following:
 * Show and explain your work for the execution of ``arraySum`` with the ``array [1, 3, 9, 7]``.
 
 
-.. _Substitute All Practice:
-
-**Substitute All Practice**
+Substitute All Practice
+==========================
 
 Before moving on to Dragon Curves, we strongly recommmend completing the ``substituteAll()`` practice problem outlined in the video below:
 
@@ -214,9 +130,8 @@ instead of the correct:
 
 Check out `this video <https://www.youtube.com/watch?v=UrmVV6-h8c8?rel=0>`_ for more details.
 
-.. _Dragon Curves:
-
-**Dragon Curves**
+Dragon Curves
+=============
 
 Dragon curves are a type of `Fractal <https://en.wikipedia.org/wiki/Fractal>`_ created by drawing lines in a particular pattern. These lines can be specified using a string with the following characters:
 
@@ -317,17 +232,15 @@ Skipping ahead to 10…
   :height: 400
   :align: center
 
-.. _Testing: 
-
-**Testing**
+Testing
+-----------------------------
 
 
 .. youtube:: Uq1YJamAvwI
 
 
-.. _Tips for completing this method:
-
-**Tips for completing this method**
+Tips for completing this method
+-----------------------------
 
 * We would suggest using the provided ``substituteAll(source, target, replacement)`` method from Studio 5.
 
@@ -340,9 +253,8 @@ Skipping ahead to 10…
 * Unit tests have been provided to you in the ``DragonTestSuite`` portion of the ``RecursiveMethodsTestSuite``. Use them to check your work.
 
 
-.. _Submitting this method:
-
-**Submitting this method**
+Submitting this method
+-----------------------------
 
 When you submit this problem you will be asked the following:
 
@@ -355,9 +267,8 @@ When you submit this problem you will be asked the following:
 * Can you identify the recursive step(s) in your code?
 
 
-.. _Max Path Length:
-
-**Max Path Length**
+Max Path Length
+===============
 
 As a break from studying, you decide to go for a walk in a very special park. This park has dangers, but you are provided a chart for the park in the form of a 2D array, such as the following:
 
@@ -473,9 +384,8 @@ Complete the ``maxPathLength(boolean[][] chart, int r, int c)`` method such that
 
 ``MaxPathLengthDebugApp`` is provided to see what the test chart looks like and what answers your code provided versus the expected solution. Unit tests have been provided in the ``MaxPathLengthTestSuite`` portion of the ``RecursiveMethodsTestSuite`` so that can be used to check your work.
 
-.. _Testing and Debug App:
-
-**Testing and Debug App** 
+Testing and Debug App
+-----------------------------
 
 .. youtube:: J1QV9a5Ti_c
 
@@ -487,9 +397,8 @@ Complete the ``maxPathLength(boolean[][] chart, int r, int c)`` method such that
   :height: 400
   :align: center
 
-.. _Chose Correctly:
-
-**Chose Correctly**
+Chose Correctly
+-----------------------------
 
 The ``MaxPathLengthDebugApp`` will look like the image below if you chose correctly.
 
@@ -501,9 +410,10 @@ The ``MaxPathLengthDebugApp`` will look like the image below if you chose correc
 
 .. _Chose Poorly:
 
-**Chose poorly**
+Chose poorly
+-----------------------------
 
-The ``MaxPathLengthDebugApp`` will could look somthing like the image below if you chose poorly.
+The ``MaxPathLengthDebugApp`` could look somthing like the image below if you chose poorly.
 
 
 
@@ -513,9 +423,8 @@ The ``MaxPathLengthDebugApp`` will could look somthing like the image below if y
   :height: 400
   :align: center
 
-.. _Tips for this method:
-
-**Tips for this method**
+Tips for this method
+-----------------------------
 
 * You’ll undoubtedly want some way to mark that you’ve already visited a spot on the chart. Feel free to change the values in the array for this purpose. In the example above, this involved temporarily changing a cell’s contents from ``true`` to ``false`` (and, critically, back again at some point).
 
@@ -525,9 +434,8 @@ The ``MaxPathLengthDebugApp`` will could look somthing like the image below if y
 
 * Though this method is conceptually difficult, it does not require a large amount of code to complete. A clean and elegant solution is achievable in around 10 lines of code. **It is worthwhile thinking through how to solve this problem before coding!**
 
-.. _Submitting this method, Max Path Length:
-
-**Submitting this method, Max Path Length**
+Submitting this method, Max Path Length
+-----------------------------
 
 When you submit this method you will be asked the following:
 
@@ -539,9 +447,8 @@ When you submit this method you will be asked the following:
 
 * Can you identify the recursive step(s) in your code?
 
-.. _Submitting your work:
-
-**Submitting your work**
+Submitting your work
+====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_. Be prepared to show them the work that you have done and answer their questions about it!
 

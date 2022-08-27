@@ -1,58 +1,14 @@
 =====================
-Module 5 Assignment
+Assignment 5: Zombies: A METHOD to their Madness
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+=====================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+To create your repository go `here <https://classroom.github.com/a/pw0eWTD7>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
-
-
-Assignment 5: Zombies: A METHOD to their Madness
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-**Assignment: Zombies: A METHOD to their Madness**
-
-* `Assignment Setup`_
-  
-* `More Zombies... There's a METHOD to their Madness!`_
-
-* `New Techniques & Topics`_
-
-  * `Refactoring!`_
-
-  * `Methods!`_
-
-  * `2D Array for X,Y Positions. 1D Array for Boolean Zombie State.`_
-
-  * `"Magic" Numbers and Constants`_
-
-  * `Double Buffering`_
-
-  * `Unit Testing`_
-
-* `Procedure & Recommended Workflow`_
-
-* `Assignment Requirements`_
-
-* `Submitting your work`_
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/XMft8ceF>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
-
-.. _More Zombies... There's a METHOD to their Madness!:
-
-**More Zombies... There's a METHOD to their Madness!**
+More Zombies... There's a METHOD to their Madness!
+=====================
 
 This assignment is a follow-up to Assignment 4, where you wrote code that could read a data file and display entities being simulated. Here you’ll build on Assignment 4 in two ways:
 
@@ -60,13 +16,11 @@ This assignment is a follow-up to Assignment 4, where you wrote code that could 
 
 * You’ll extend it with additional methods and complete the basic zombie simulator.
 
-.. _New Techniques & Topics:
+New Techniques & Topics
+=====================
 
-**New Techniques & Topics**
-
-.. _Refactoring!:
-
-**Refactoring!**
+Refactoring!
+------------
 
 `Refactoring <https://en.wikipedia.org/wiki/Code_refactoring>`__ is a technique used to refine computer code. The basic idea is to restructure code without changing overall behavior. Often refactoring is done because either:
 
@@ -76,9 +30,8 @@ This assignment is a follow-up to Assignment 4, where you wrote code that could 
 
 Part of your work here will be easier if you just refactor some of your work from Assignment 4.
 
-.. _Methods!:
-
-**Methods!**
+Methods!
+--------
 
 Methods are a fundamental part of computing because:
 
@@ -92,9 +45,8 @@ Methods are a fundamental part of computing because:
 
 In this assignment, we will now use a two-dimensional array of ``doubles`` to store our coordinate data. Like before, each index (row index) will represent a single item. Rather than using different arrays for the x and y coordinates, we’ll instead use two columns of a two dimensional array. Column 0 will contain the x coordinate and column 1 will contain the y coordinate. We will still keep the zombie state in a ``boolean`` array, as it uses a separate data type.
 
-.. _"Magic" Numbers and Constants:
-
-**"Magic" Numbers and Constants**
+"Magic" Numbers and Constants
+-----------------------------
 
 The term `Magic Number <https://en.wikipedia.org/wiki/Magic_number_(programming)>`_ is often used to represent a constant value whose significance isn’t clear from the value and its context. For example, we will be storing the entities’ y-coordinates in the second column of an array, so the number 1 indicates the column containing the y-coordinates. The number 1 would be considered a “magic number” because it’s an arbitrary choice and may not be clear to someone who reads your code.
 
@@ -148,9 +100,9 @@ Finally, ``updateEntities()`` will use ``RANDOM_DELTA_HALF_RANGE``:
 
   static final double RANDOM_DELTA_HALF_RANGE = 0.006;
 
-.. _Double Buffering:
 
-**Double Buffering**
+Double Buffering
+----------------
 
 You may have noticed in Assignment 4 that it’s possible to see each individual entity being drawn. This is because drawing on the screen takes a little bit of time. When we’re running a simulation where entities are moving, however, seeing each entity being drawn will make the simulation will seem slow and jerky. Instead, we will use double buffering.
 
@@ -168,9 +120,9 @@ You may have noticed in Assignment 4 that it’s possible to see each individual
   // Draw *all* objects in their locations (which may have changed from the last frame)
   StdDraw.show();  // Swap the non-shown frame with the one being shown on screen.
 
-.. _Unit Testing:
 
-**Unit Testing**
+Unit Testing
+------------
 
 `Unit testing <https://en.wikipedia.org/wiki/Unit_testing>`__ can help find problems and add confidence that certain aspects of your program are functioning correctly. As you complete each part of this assignment, you will test that part. If all the parts work in the intended way, there’s a greater chance that they will work when combined together.
 
@@ -179,9 +131,8 @@ You may have noticed in Assignment 4 that it’s possible to see each individual
 
 If you fail any unit test cases, you should try to read through the test case and see what it’s testing. In this assignment, almost all tests cases are either looking for a particular value (via ``assertEquals()`` or ``assertNotEquals()`` ) or for a boolean condition (via ``assertTrue``() or ``assertFalse()``). Doubling clicking on a failing test will take you to the code for that test, where you can probably figure out what the test case is expecting and then try to identify why your code didn’t pass it. The comments in and above the test cases may also provide some guidance.
 
-.. _Procedure & Recommended Workflow:
-
-**Procedure & Recommended Workflow**
+Procedure & Recommended Workflow
+=====================
 
 Below is a recommended work-flow. Many of the parts are independent. If you get stuck on one, you can leave it incomplete and move on to the next, but you may need to ensure there aren’t any errors in your code (no red lines) so the rest of your code works correctly.
 
@@ -295,9 +246,8 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
 21. As always check the rubric to make sure you haven’t missed anything you will be graded on.
 
-.. _Assignment Requirements:
-
-**Assignment Requirements**
+Assignment Requirements
+=====================
 
 Partial credit is possible (check the rubric), but for full credit:
 
@@ -313,7 +263,8 @@ Here’s an example run (note: there is no audio):
 
 .. _Submitting your work:
 
-**Submitting your work**
+Submitting your work
+=====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
 

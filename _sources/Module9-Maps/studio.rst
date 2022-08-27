@@ -1,31 +1,11 @@
 =====================
-Module 9 Studio
+Studio 9: Map Practice
 =====================
-
-
-Studio 9: Recursive Puzzles 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
-* `Studio Setup and Procedure`_
-
-  * `Code To Use`_
-
-  * `Videos To Watch`_
-
-  * `Map Name to Height Warmup`_
-
-  * `Word Count`_
-
-  * `University Database`_
-
-* `Demo`_
-
-
-.. _Studio Setup and Procedure:
-
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+=====================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -39,7 +19,7 @@ Studio 9: Recursive Puzzles
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `Logo <https://classroom.github.com/g/n3TfYnGC>`_ here and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/nSPdsTOf>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -51,9 +31,8 @@ Studio 9: Recursive Puzzles
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Code To Use:
-
-**Code To Use**
+Code To Use
+=====================
 
 * interface `Map<K,V> <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html>`__
 
@@ -73,9 +52,8 @@ Studio 9: Recursive Puzzles
 
   * `new HashMap() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E()>`_
 
-.. _Videos To Watch:
-
-**Videos To Watch**
+Videos To Watch
+=====================
 
 You should have already watched these videos in preparation for the studio, but they are repeated here for your reference.
 
@@ -85,7 +63,8 @@ You should have already watched these videos in preparation for the studio, but 
 
 .. _Map Name to Height Warmup:
 
-**Map Name to Height Warmup**
+Map Name to Height Warmup
+=====================
 
 1. Open the Java file NameToHeight in the studio9 package and edit the main method.
 
@@ -99,9 +78,8 @@ Be sure to handle the ``null`` case for names that are not in the map and print 
 
 Explain your solution to your TA before moving on.
 
-.. _Word Count:
-
-**Word Count**
+Word Count
+=====================
 
 This section of the studio can be tested with ``WordCountTestSuite`` in the ``studio9`` package.
 
@@ -134,9 +112,8 @@ This section of the studio can be tested with ``WordCountTestSuite`` in the ``st
 
 Ensure that ``WordCountTest`` is working and you have explained your solution to your TA before moving on.
 
-.. _University Database:
-
-**University Database**
+University Database
+=====================
 
 This section of the studio can be tested with ``UniversityDatabaseTestSuite`` in the ``studio9`` package.
 
@@ -160,9 +137,8 @@ This section of the studio can be tested with ``UniversityDatabaseTestSuite`` in
 
 Ensure that ``UniversityDatabaseTestSuite`` is working and you have explained your solution to your TA before moving on.
 
-.. _Demo:
-
-**Demo**
+Demo
+=====================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

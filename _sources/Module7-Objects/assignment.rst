@@ -1,61 +1,24 @@
 =====================
-Module 7 Assignments
+Assignment 7: Students and Courses
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+=====================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
-
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
+To create your repository go `here <https://classroom.github.com/a/NU_BBnqL>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
 
 
-Assignment 7: Students and Courses
-:::::::::::::::::::::::::::::::::::::::::::::::::::
 
-* `Assignment Setup`_
+Creating Student and Course class
+=====================
 
-* `Creating Student and Course class`_
-
-  * `Synopsis`_
-
-  * `Getting Started`_
-
-  * `Creating a Student class`_
-
-  * `Creating a Course class`_
-
-* `Comprehensive Unit Test`_
-
-* `Submitting your work`_
-
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/Xeql2d4p>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
-
-
-.. _Creating Student and Course class:
-
-**Creating Student and Course class**
-
-.. _Synopsis:
-
-**Synopsis**
 
 Your task is to generate two classes ``Student`` and ``Course`` using a `test driven development approach <https://en.wikipedia.org/wiki/Test-driven_development>`_ . This means that your goal is to get the unit tests to pass, and you develop your code incrementally to get more of the tests to pass.
 
 First, take a look at the ``StudentAndCourseTestSuite.java`` file. Unfortunately, none of the tests will currently pass. You use these tests as you develop your classes to verify whether they are working as intended. You are also encouraged to write some additional tests of your own. Be sure to test often!
 
-.. _Getting Started:
-
-**Getting Started**
+Getting Started
+=====================
 
 Part of the reason that the unit tests do not pass is the classes being tested, ``Student`` and ``Course``, are empty. Your first task is to create bare bones versions of these classes with the methods that will be tested.
 
@@ -76,9 +39,8 @@ Once you have done this for the ``Student`` class, repeat this process for the `
 
 Once you have finished creating all the stubs, follow the directions below to implement the desired functionality for your methods.
 
-.. _Creating a Student class:
-
-**Creating a Student class**
+Creating a Student class
+=====================
 
 1. Start crafting a ``Student`` class. Students have lots of wonderful properties, but we are primarily interested in these:
 
@@ -230,9 +192,8 @@ To reason about this, you need to think about what the unit test is doing, and y
 
 The TAs will discuss this with you when you demo.
 
-.. _Creating a Course class:
-
-**Creating a Course class**
+Creating a Course class
+=====================
 
 The ``Course`` class should contain the following properties:
 
@@ -269,15 +230,13 @@ From what we have studied, what is the appropriate data type to keep track of en
 
 ``String toString()`` - The returned ``String`` should contain the course name and credits.
 
-.. _Comprehensive Unit Test:
-
-**Comprehensive Unit Test**
+Comprehensive Unit Test
+=====================
 
 When you’re completely done run all the tests in ``StudentAndCourseTestSuite.java``, which runs both the ``Student`` and ``Course`` tests. If you’ve successfully implemented all the required methods to behave as expected, all the tests should pass.
 
-.. _Submitting your work:
-
-**Submitting your work**
+Submitting your work
+=====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_. Be prepared to show them the work that you have done and answer their questions about it!
 

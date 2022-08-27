@@ -1,97 +1,16 @@
 =====================
-Module 8 Assignment
+Assignment 8: Zombies: The Final OBJECTive
 =====================
 
-.. Here is were you specify the content and order of your new book.
+Assignment Setup
+=====================
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+To create your repository go `here <https://classroom.github.com/a/PBqLvKZk>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
+Zombies... The Final OBJECTive
+=====================
 
-
-
-Assignment 8: Zombies: The Final OBJECTive
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-* `Assignment Setup`_
-  
-* `Zombies... The Final OBJECTive`_
-  
-* `Files`_
-
-* `Watch this video on Real Time Animation`_
-
-* `Procedure & Recommended Workflow`_
-
-  * `Entity`_
-  
-    * `Constructor and Instance Variables`_
-    
-    * `Is Zombie, X, and Y Accessors`_
-    
-    * `Radius Accessor`_
-
-    * `draw() description`_
-
-    * `Simulation (Update) Support`_
-
-      * `distanceCenterToPoint(xOther, yOther)`_
-
-      * `distanceEdgeToEdge(xOther, yOther, radiusOther)`_
-
-      * `isTouching(xOther, yOther, radiusOther)`_
-
-      * `moveToward(x, y, amount)`_
-
-      * `moveAwayFrom(x, y, amount)`_
-
-      * `Investigate Find Closest`_
-
-      * `update(entities, deltaTime)`_
-
-* `Zombie Simulator`_
-
-  * `Constructor and Instance Variable(s)`_
-
-  * `getEntities()`_
-
-  * `readEntities(ap)`_
-  
-  * `getZombieCount()`_
-
-  * `getNonzombieCount()`_
-
-  * `draw()`_
-
-  * `update(deltaTime)`_
-
-  * `main(args)`_
-
-* `Revisit Entity update(entities, deltaTime)`_
-
-* `Assignment Requirements`_
-
-* `Submitting your work`_
-
-
-.. _Assignment Setup:
-
-**Assignment Setup**
-
-To create your repository go `here <https://classroom.github.com/a/DyBPQLgu>`__. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
-
-
-.. _Zombies... The Final OBJECTive:
-
-**Zombies... The Final OBJECTive**
-
-In `Assignment 4 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/4/assignment>`_ we used the notion of “parallel arrays” to store details of the entities that we wanted to simulate. In `Assignment 5 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/5/assignment>`_ we created an actual simulation, but in order to make it manageable we refactored the work from Assignment 4 using Methods. Since we had ``boolean`` state (isZombie) and ``double`` state (x and y coordinates), we kept track of our entities in separate arrays. Further, since ,methods can only return a single value, we (somewhat awkwardly) were forced to create arrays and pass them into ``readEntities(ap, areZombies, positions)``. Now that we’ve seen the concept of an actual Abstract Data Type (ADT), it makes more sense to store the individual data in an ``Entity`` class. We can then forgo the arrays for a single ``List<Entity>`` stored in our ZombieSimulator.
+In Assignment 4 we used the notion of “parallel arrays” to store details of the entities that we wanted to simulate. In Assignment 5 we created an actual simulation, but in order to make it manageable we refactored the work from Assignment 4 using Methods. Since we had ``boolean`` state (isZombie) and ``double`` state (x and y coordinates), we kept track of our entities in separate arrays. Further, since ,methods can only return a single value, we (somewhat awkwardly) were forced to create arrays and pass them into ``readEntities(ap, areZombies, positions)``. Now that we’ve seen the concept of an actual Abstract Data Type (ADT), it makes more sense to store the individual data in an ``Entity`` class. We can then forgo the arrays for a single ``List<Entity>`` stored in our ZombieSimulator.
 
 In this installment of the zombie saga we will:
 
@@ -103,9 +22,8 @@ In this installment of the zombie saga we will:
 
 * When a ``Nonzombie`` is touching a ``Zombie`` there’s a chance it will be consumed (one fewer entity) rather than always turn into a ``Zombie``.
 
-.. _Files:
-
-**Files**
+Files
+=====================
 
 Your project includes a number of source files in the ``src`` folder:
 
@@ -117,44 +35,39 @@ Your project includes a number of source files in the ``src`` folder:
 
 * ``assignment8/ZombieSimulator.java``: The ``ZombieSimulator`` class. *You will need to complete this file*
 
-.. _Watch this video on Real Time Animation:
 
-**Watch this video on Real Time Animation**
+Watch this video on Real Time Animation
+=====================
 
 .. youtube:: nhDt5HVOzVM
 
 In the video above, Prof. Cosgrove explains how to build a real-time animation. Among the topics covered include the ``deltaTime`` parameter which you are often asked to use in your methods.
 
-.. _Procedure & Recommended Workflow:
-
-**Procedure & Recommended Workflow**
+Procedure & Recommended Workflow
+=====================
 
 Below is a recommended work-flow. You should expect to have to revisit the implementation of some methods as you experiment with different strategies.
 
-.. _Entity:
+Entity
+=====================
 
-**Entity**
-
-.. _Constructor and Instance Variables:
-
-**Constructor and Instance Variables**
+Constructor and Instance Variables
+----------------------------------
 
 
 Your Entity constructor is passed the initial values of for the zombie state (``isZombie``) and the x and y coordinates. You should store these values in instance variables for later use. You should also keep track of a radius for each entity. This is not specified as a parameter to the constructor. The initial radius value is left for you to choose.
 
 **Note**: You should expect to revisit this step when different evasion and/or hunting stratgies call upon further state to be stored.
 
-.. _Is Zombie, X, and Y Accessors:
-
-**Is Zombie, X, and Y Accessors**
+Is Zombie, X, and Y Accessors
+----------------------------------
 
 * Complete the ``isZombie()``, ``getX()``, and ``getY()`` methods.
 
 * Run ``EntityAndZombieSimulatorTestSuite``. You should pass all cases in ``EntityConstructorTest`` before proceding.
 
-.. _Radius Accessor:
-
-**Radius Accessor**
+Radius Accessor
+----------------------------------
 
 * Complete ``getRadius()`` method.
 
@@ -162,9 +75,8 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
 **Note**: if you are looking for a default radius value to start with, Assignment 5 used ``0.008``.
 
-.. _draw description():
-
-**draw() description**
+draw() description
+----------------------------------
 
 **Warning**: each instance of ``Entity`` will have its ``draw()`` method called from ``ZombieSimulator``. The ZombieSimulator will be responsible for calling ``StdDraw.clear()`` and ``StdDraw.show()``. Entities should **NOT** call StdDraw.clear() or StdDraw.show() from its draw() method. If an Entity were to StdDraw.clear() in its draw() method it would erase the previously drawn Entities! If an Entity were to StdDraw.show() in its draw() method it would unnecessarily slow things down.
 
@@ -178,13 +90,8 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
 .. youtube:: VvWh35Zj8nM
 
-.. _Simulation (Update) Support:
-
-**Simulation (Update) Support**
-
-.. _distanceCenterToPoint(xOther, yOther):
-
-**distanceCenterToPoint(xOther, yOther)**
+distanceCenterToPoint(xOther, yOther)
+----------------------------------
 
 .. image:: distanceCenterToPoint.png
   :alt: diagram of what distanceCenterToPoint measures
@@ -196,9 +103,8 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
 * **Note**: the method ``distanceCenterToCenter(other)`` has been provided to you. It simply calls ``distanceCenterToPoint(xOther, yOther)`` with the center of the other Entity.
 
-.. _distanceEdgeToEdge(xOther, yOther, radiusOther):
-
-**distanceEdgeToEdge(xOther, yOther, radiusOther)**
+distanceEdgeToEdge(xOther, yOther, radiusOther)
+----------------------------------
 
 .. image:: distanceEdgeToEdge.png
   :alt: diagram of what distanceEdgeToEdge measures
@@ -212,17 +118,15 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
 * **Note**: the method ``distanceEdgeToEdge(other)`` has been provided to you. It simply calls ``distanceEdgeToEdge(xOther, yOther, radiusOther)`` with the center and radius of the other Entity.
 
-.. _isTouching(xOther, yOther, radiusOther):
-
-**isTouching(xOther, yOther, radiusOther)**
+isTouching(xOther, yOther, radiusOther)
+----------------------------------
 
 * **Question**: How can you leverage your existing code to calculate if the circle centered at (``xOther``, ``yOther``) of ``radius`` overlaps with the bounding circle of this Entity?
 
 * **Note**: the method ``isTouching(other)`` has been provided to you. It simply calls ``isTouching(xOther, yOther, radiusOther)`` with the center and radius of the other Entity.
 
-.. _moveToward(x, y, amount):
-
-**moveToward(x, y, amount)**
+moveToward(x, y, amount)
+----------------------------------
 
 * **Note**: This code is mostly provided to you. You should simply need to delete the Runtime exception and uncomment the lines which update the x and y coordinates of this Entity. If you named your instance variables something other than x and y, be sure to update them instead.
 
@@ -243,23 +147,20 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
 .. youtube:: 5mkiddBiTxM
 
-.. _moveAwayFrom(x, y, amount):
-
-**moveAwayFrom(x, y, amount)**
+moveAwayFrom(x, y, amount)
+----------------------------------
 
 * **Question**: How can you implement this method leveraging ``moveToward(x, y, amount)``?
 
-.. _Investigate Find Closest:
-
-**Investigate Find Closest**
+Investigate Find Closest
+----------------------------------
 
 * A few convenience methods have been provided to you for finding the closest entity (which is not this itself) to this Entity. Variations include finding the closest zombie, the closest nonzombie, and the closest entity (independent of its state of undeadedness). Investigate these so that you know how to utilize them in your ``update(entities, deltaTime)`` method.
 
 **Warning**: each of the find closest methods will return null if no Entity meets the specified constriaints. For example, if there are no remaining nonzombies and findClosestNonzombie(entities) is called ``null`` will be returned. You will need to handle this case gracefully since if you try to call a method on ``null`` a ``NullPointerException`` will be thrown.
 
-.. _update(entities, deltaTime):
-
-**update(entities, deltaTime)**
+update(entities, deltaTime)
+----------------------------------
 
 **ALERT**: a detailed description of the requirements for this method are below in Revisit Entity update(entities, deltaTime)
 
@@ -279,44 +180,36 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
 **ALERT**: a detailed description of the requirements for this method are below in the Revisit Entity update(entities, deltaTime) section
 
+Zombie Simulator
+================
 
-.. _Zombie Simulator:
-
-**Zombie Simulator**
-
-.. _Constructor and Instance Variable(s):
-
-**Constructor and Instance Variable(s)**
+Constructor and Instance Variable(s)
+----------------------------------
 
 * The ZombieSimulator’s default constructor (a constructor with no given parameters) should initialize an instance variable with an empty List of Entities.
 
-.. _getEntities():
-
-**getEntities()**
+getEntities()
+----------------------------------
 
 * Returns the current list of entities.
 
-.. _readEntities(ap):
-
-**readEntities(ap)**
+readEntities(ap)
+----------------------------------
 
 * reads a complete zombie simulation file as described in Assignment 4. Each read Entity should be added to this instance’s List of entities.
 
-.. _getZombieCount():
-
-**getZombieCount()**
+getZombieCount()
+----------------------------------
 
 * Returns the number of Entities in the current list of entities which are zombies.
 
-.. _getNonzombieCount():
-
-**getNonzombieCount()**
+getNonzombieCount()
+----------------------------------
 
 * **Question**: How can you implement this method leveraging ``getZombieCount()``?
 
-.. _draw():
-
-**draw()**
+draw()
+----------------------------------
 
 * A bare bones implementation has been provided to you. Feel free to come up with more creative presentations if you choose.
 
@@ -326,23 +219,20 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
   * Both the Entity and Zombie Simulator draw methods should look good at this point.
 
-.. _update(deltaTime):
-
-**update(deltaTime)**
+update(deltaTime)
+----------------------------------
 
 * Updating a ZombieSimulator largely defers to its active (not yet consumed) Entities to each update. Put another way, each of the active entities should have its update method called. Each Entity will need the complete list of active entities passed to it, so that it can properly simulate its update. The ``deltaTime`` parameter should simply be passed along unchanged to each Entity.
 
 * Calling ``update(entities, deltaTime)`` on an Entity will return whether it is to be active for the next round of the simulation (``true`` if active, ``false`` if consumed). While it is possible to `remove <https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#remove-->`_ elements from a List while `iterating <https://docs.oracle.com/javase/8/docs/api/java/util/List.html#iterator-->`_ over it, it is more approachable to (and highly encouraged that you) simply create a new list of the not-consumed entities, and assign it to be the new active entities for the next round.
 
-.. _main(args):
-
-**main(args)**
+main(args)
+----------------------------------
 
 * A bare bones implementation of a real-time simulation has been provided to you. Investigate this method and make any changes you need to improve your ZombieSimulator.
 
-.. _Revisit Entity update(entities, deltaTime):
-
-**Revisit Entity update(entities, deltaTime)**
+Revisit Entity update(entities, deltaTime)
+==========================================
 
 **Repeated Warning**: each of the find closest methods will return ``null`` if no Entity meets the specified constriaints. For example, if there are no remaining nonzombies and findClosestNonzombie(entities) is called ``null`` will be returned. You will need to handle this case gracefully since if you try to call a method on ``null`` a ``NullPointerException`` will be thrown.
 
@@ -372,9 +262,8 @@ Your Entity constructor is passed the initial values of for the zombie state (``
 
   * You are encouraged to do more elaborate approaches or minor variations on the above to see how they impact the simulation (try to have fun running experiments).
 
-.. _Assignment Requirements:
-
-**Assignment Requirements**
+Assignment Requirements
+=======================
 
 Partial credit is possible and will be based on the number of unit tests that are passed and the degree to which you complete the required update strategies. For full credit:
 
@@ -403,9 +292,8 @@ Here’s an example run of one approach. Here nonzombies flee from other nonzomb
   </center>
 
 
-.. _Submitting your work:
-
-**Submitting your work**
+Submitting your work
+====================
 
 To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
 
