@@ -22,7 +22,7 @@ Studios are a chance to work with other students to learn course material by act
 Studio Setup and Procedure
 =====================
 
-* You'll need to complete the [software setup]({{ site.baseurl }}/misc/software.html) before you can work on this Studio, so do that first if you haven't already.
+* You'll need to complete the `software setup <software.html>`_ before you can work on this Studio, so do that first if you haven't already.
 * All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
 * Plan to have one computer at which your team does its work (usually using Eclipse). Initially, one of you will be in charge of typing at that computer.
 * Throughout the studio you should trade who is in charge of the keyboard.
@@ -45,8 +45,6 @@ to ensure it performs its task correctly.
 * The files for this program are in the `src/studio0` package of the repository you loaded.
 * To run a program just open the file in a tab and click on the green "Play" button on the menu.  The program in the active/open tab will run.
 
-<hr>
-
 `LunchReceipt`
 --------------
 
@@ -60,19 +58,27 @@ Fortunately, Eclipse provides a way for us to walk through the code in this way,
 
 To start debugging we first need to set a **breakpoint**. A breakpoint is the point in our code where we want the computer to stop and show us what's going on. For now, go ahead and set a breakpoint on the first line of the program, line 7. You can do this by double clicking the side of the text editor and selecting **Toggle Breakpoint**:<br />![Hello]({{ site.baseurl }}/resources/lab0/Debug_Toggle_BP.png){: width="50%" }
 
-Once the breakpoint is set you should see a blue circle next to the line:<br /> .. image:: resources/lab0/Debug_Circle.png
+Once the breakpoint is set you should see a blue circle next to the line:
+
+.. image:: resources/lab0/Debug_Circle.png
 
 Instead of clicking the green circle to run the program, this time click the button with the little green bug (it is right next to the green circle). This is how you run a program in debug mode. You will see a window like this pop-up:<br /> .. image:: resources/lab0/Eclipse_Switch.png
 
-Make sure the checkbox is checked and select **Switch**. You'll see the window change into a new configuration that looks something like this:<br /> .. image:: resources/lab0/Eclipse_Perspective.png
+Make sure the checkbox is checked and select **Switch**. You'll see the window change into a new configuration that looks something like this:
+
+.. image:: resources/lab0/Eclipse_Perspective.png
 
 This is called the **debug perspective**. The program is currently paused on line 7, where the breakpoint was set. We can see this by the fact that the line is highlighted in green.
 
 The other big change is that on the right side of the screen there is a window called **variables**. It is mostly empty, but eventually we'd like it to be able to show us what's going on with our program as it runs.
 
-In order to proceed, click the **Step Over** button at the top of the window:<br /> .. image:: resources/lab0/Debug_Step_Over.png
+In order to proceed, click the **Step Over** button at the top of the window:
 
-Notice what happened: the next line is now highlighted and a new entry appeared in the variables window in the top right:<br /> .. image:: resources/lab0/Debug_After_Step.png
+.. image:: resources/lab0/Debug_Step_Over.png
+
+Notice what happened: the next line is now highlighted and a new entry appeared in the variables window in the top right:
+
+.. image:: resources/lab0/Debug_After_Step.png
 
 Line 7 of the program was executed and we can now see the results. The variable was created and we can see its value in the variables window. Continue pressing the step over button to walk through the program, paying attention as the values appear.
 
@@ -112,11 +118,15 @@ First, select one person and have them type a message to your group mates in the
 
 A **Git Staging** tab will show up on the bottom of the screen. Make sure that the files you want to send to your team mates are in the "Staged Changes" area, and type a message into the box that explains what you are doing. Once you are ready, click the **Commit and Push...** button.<br /> .. image:: resources/lab0/Eclipse_Staging.png
 
-Press the **Preview** button then the push button. You should hopefully see a window that looks like this, which indicates success:<br /> .. image:: resources/lab0/Eclipse_Pushed.png
+Press the **Preview** button then the push button. You should hopefully see a window that looks like this, which indicates success:
+
+.. image:: resources/lab0/Eclipse_Pushed.png
 
 At this point you should visit the GitHub page for your repository (that you created in the very beginning of the studio). If you navigate to the Message.java file, you should see the changes that you made. The other members of your group still don't have the message on their computers though, so let's take care of that next.
 
-In order to receive the message on their computers, the other group members will have to perfom a **pull**. To do this, right click the project then select **Team -> Pull**<br />.. image:: resources/lab0/Eclipse_Pull.png
+In order to receive the message on their computers, the other group members will have to perfom a **pull**. To do this, right click the project then select **Team -> Pull**
+
+.. image:: resources/lab0/Eclipse_Pull.png
 
 Once the pull operation has completed, you should see the message that was sent!
 
@@ -125,7 +135,6 @@ Have each team member take turns sending messages to the others using the above 
 Demo (get credit for your) your work:
 =====================
 
-
-**Commit and Push** your work.  Be sure that any file you worked on is updated on [GitHub](https://github.com/).
+**Commit and Push** your work.  Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 
 To get participation credit for your work talk to the TA you've been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
