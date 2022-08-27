@@ -4,11 +4,15 @@ h1, h2 {
 }
 
 strong {
-    color:  #00b3e3;
+    color:  #e02014;
 }
 
 a {
   text-decoration: underline !important;
+}
+
+.brand-logo {
+	display: none
 }
 
 .strike {

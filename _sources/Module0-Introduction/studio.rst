@@ -42,10 +42,10 @@ Studio 0: Some Helpful Tools
 
 * You will examine a series of simple Java programs, and run each program
 to ensure it performs its task correctly.
-* The files for this program are in the `src/studio0` package of the repository you loaded.
+* The files for this program are in the ``src/studio0`` package of the repository you loaded.
 * To run a program just open the file in a tab and click on the green "Play" button on the menu.  The program in the active/open tab will run.
 
-`LunchReceipt`
+``LunchReceipt``
 --------------
 
 Take a look at the supplied program. It tells a story about an event that took place. Go through the story with your group and make sure that you understand what is going on.
@@ -56,13 +56,17 @@ One way we could verify the output is to get out some paper or a calculator and 
 
 Fortunately, Eclipse provides a way for us to walk through the code in this way, using a process called  **debugging**.
 
-To start debugging we first need to set a **breakpoint**. A breakpoint is the point in our code where we want the computer to stop and show us what's going on. For now, go ahead and set a breakpoint on the first line of the program, line 7. You can do this by double clicking the side of the text editor and selecting **Toggle Breakpoint**:<br />![Hello]({{ site.baseurl }}/resources/lab0/Debug_Toggle_BP.png){: width="50%" }
+To start debugging we first need to set a **breakpoint**. A breakpoint is the point in our code where we want the computer to stop and show us what's going on. For now, go ahead and set a breakpoint on the first line of the program, line 7. You can do this by double clicking the side of the text editor and selecting **Toggle Breakpoint**:
+
+.. image:: resources/lab0/Debug_Toggle_BP.png
 
 Once the breakpoint is set you should see a blue circle next to the line:
 
 .. image:: resources/lab0/Debug_Circle.png
 
-Instead of clicking the green circle to run the program, this time click the button with the little green bug (it is right next to the green circle). This is how you run a program in debug mode. You will see a window like this pop-up:<br /> .. image:: resources/lab0/Eclipse_Switch.png
+Instead of clicking the green circle to run the program, this time click the button with the little green bug (it is right next to the green circle). This is how you run a program in debug mode. You will see a window like this pop-up:
+
+.. image:: resources/lab0/Eclipse_Switch.png
 
 Make sure the checkbox is checked and select **Switch**. You'll see the window change into a new configuration that looks something like this:
 
@@ -87,9 +91,11 @@ Some other tips:
 * If you ever wish to stop running or debugging a program, click the red square button at the top.
 * If you wish to ignore the breakpoints and run the entire program, you can click the green circle. Breakpoints and debugging will only work if you start the program with the little bug button.
 
-Once you feel as though you are comfortable navigating through the program, you'll want to return Eclipse back to its original perspective (called the **Java** perspective). You can do this by clicking the **Java** button in the top right corner:<br /> .. image:: resources/lab0/Debug_Java.png
+Once you feel as though you are comfortable navigating through the program, you'll want to return Eclipse back to its original perspective (called the **Java** perspective). You can do this by clicking the **Java** button in the top right corner:
 
-`MileageReport`
+.. image:: resources/lab0/Debug_Java.png
+
+``MileageReport``
 --------------
 
 **Switch who is "entering code"; Everyone should have equal time entering code**
@@ -100,23 +106,27 @@ Hmm...something doesn't seem quite right about this one. There's a mistake somew
 
 Once you have found the mistake, see if you can fix it before moving on to the next problem.
 
-`BurritoBudget`
+``BurritoBudget``
 --------------
 
 **Switch who is "entering code"; Everyone should have equal time entering code**
 
 Open the file and run the program. Uh oh, looks like there might be another error here. Again, use the debugger to see if you can figure out where the problem occurs and do what you can to fix it.
 
-`Message`
+``Message``
 --------------
 
 **For this part of the studio you will need at least two computers with the repository loaded. Have every group member load the studio repository into Eclipse using the above instructions before proceeding.**
 
 As mentioned in `the software setup <setup.html>`_, we'll be using Git this semester. Git is a common tool that allows programmers to collaborate more effectively. You'll need to use git on every assignment in this course to submit your work, so the next part of the studio aims to show you how to do some basic Git operations.
 
-First, select one person and have them type a message to your group mates in the `Message.java` file. In order for this message to be made available to the other group members, it must first be **pushed** to the GitHub website. To do this, right click the project then select **Team -> Commit..**<br /> .. image:: resources/lab0/Eclipse_Commit.png
+First, select one person and have them type a message to your group mates in the `Message.java` file. In order for this message to be made available to the other group members, it must first be **pushed** to the GitHub website. To do this, right click the project then select **Team -> Commit..**
 
-A **Git Staging** tab will show up on the bottom of the screen. Make sure that the files you want to send to your team mates are in the "Staged Changes" area, and type a message into the box that explains what you are doing. Once you are ready, click the **Commit and Push...** button.<br /> .. image:: resources/lab0/Eclipse_Staging.png
+.. image:: resources/lab0/Eclipse_Commit.png
+
+A **Git Staging** tab will show up on the bottom of the screen. Make sure that the files you want to send to your team mates are in the "Staged Changes" area, and type a message into the box that explains what you are doing. Once you are ready, click the **Commit and Push...** button.
+
+.. image:: resources/lab0/Eclipse_Staging.png
 
 Press the **Preview** button then the push button. You should hopefully see a window that looks like this, which indicates success:
 

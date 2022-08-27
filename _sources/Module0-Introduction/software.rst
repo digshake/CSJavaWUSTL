@@ -19,14 +19,12 @@ We will be using a language called `Java <https://en.wikipedia.org/wiki/Java_(pr
    * It includes a smart editor that helps you create and work with computer code.
    * It can work with other programs called `compilers <http://en.wikipedia.org/wiki/Compiler>`_. Compilers translate the program you write into something the computer can run.  The JDK that you installed included a compiler.
    * Other handy features, like support for `debugging assistance <http://en.wikipedia.org/wiki/Debugger>`_.
-We'll be using `*Eclipse* <https://www.eclipse.org/downloads/>`_, a popular IDE that supports programming in Java.  
+We'll be using `Eclipse <https://www.eclipse.org/downloads/>`_, a popular IDE that supports programming in Java.  
 
 2. Create a GitHub Account
 =====================
 
-We will be using software called `Git <http://git-scm.com/>`_ for "version control".  `Version control systems (VCS) <https://en.wikipedia.org/wiki/Version_control>`_ are a way of life in the modern software-development industry.  They track how team members have changed a project, and they are particularly useful for collaborative projects, where multiple developers work concurrently on the same body of code. Below is a video explaining the concept:
-
-<iframe src="https://player.vimeo.com/video/41027679" width="480" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+We will be using software called `Git <http://git-scm.com/>`_ for "version control".  `Version control systems (VCS) <https://en.wikipedia.org/wiki/Version_control>`_ are a way of life in the modern software-development industry.  They track how team members have changed a project, and they are particularly useful for collaborative projects, where multiple developers work concurrently on the same body of code.
 
 We use the site `GitHub <https://github.com>`_ to distribute and collect course work.  GitHub is a place that hosts git repositories.  You need to create a (free) account.  Please visit `GitHub <https://github.com>`_ and sign up for an account.  Please use your WUSTL email address, although you can add multiple e-mail addresses.  If you already have an account, please be sure to add your WUSTL email. `These directions <https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/adding-an-email-address-to-your-github-account>`_ describe how to add additional email addresses.
 
@@ -69,7 +67,7 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 
 .. image::  resources/lab0/EclipseImport_4_SourceRepo.png
 
-6. Before you enter your username and password, you need to create a personal access token. To do this, click `here <https://github.com/settings/tokens/new> to be taken back to the GitHub page for creating tokens.
+6. Before you enter your username and password, you need to create a personal access token. To do this, click `here <https://github.com/settings/tokens/new>`_ to be taken back to the GitHub page for creating tokens.
 7. For the note, enter what this token will be used for
 
 .. image:: resources/lab0/GHToken_4_Note.png
@@ -86,7 +84,7 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 
 .. image:: resources/lab0/GHToken_6_button.png
 
-11. Returning to Eclipse, enter your **GitHub** username and the token you just generated as the password.  <b>Do not use your GitHub password.</b> (You should select ``Store in Secure Store`` so that you don't have to re-enter your password every time you accept an assignment). Select ``Log in`` when ready
+11. Returning to Eclipse, enter your **GitHub** username and the token you just generated as the password.  *Do not use your GitHub password.* (You should select ``Store in Secure Store`` so that you don't have to re-enter your password every time you accept an assignment). Select ``Log in`` when ready
 
 .. image:: resources/lab0/EclipseImport_5_Login.png
 
@@ -98,11 +96,11 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 
 .. image:: resources/lab0/EclipseImport_7_Where.png
 
-14. Select `Import existing Eclipse Project` and select `Next` on the Project Wizard.
+14. Select ``Import existing Eclipse Project`` and select ``Next`` on the Project Wizard.
 
 .. image:: resources/lab0/EclipseImport_8_ExistingProject.png
 
-15. Select `Finish`.
+15. Select ``Finish``.
 
 .. image:: resources/lab0/EclipseImport_9_Finish.png
 
@@ -111,13 +109,13 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 
 To verify that your installation worked correctly, use eclipse to complete the following steps and run a simple program:
 
-1. Expand the `exercises` folder.
-2. Expand the `src` folder.
-3. Expand the `exercises.exercises0` folder and double click on the `Hello.java` file.  It should look something like this:
+1. Expand the ``exercises`` folder.
+2. Expand the ``src`` folder.
+3. Expand the ``exercises.exercises0`` folder and double click on the ``Hello.java`` file.  It should look something like this:
 
 .. image:: resources/lab0/Eclipse_Hello.png
 
-4. Run the file by **right-clicking on it**, selecting `Run As`, and then selecting `Java Application`, like:
+4. Run the file by **right-clicking on it**, selecting ``Run As``, and then selecting ``Java Application``, like:
 
 .. image:: resources/lab0/Eclipse_Run.png
 
