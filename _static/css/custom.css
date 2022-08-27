@@ -15,16 +15,14 @@ a {
 	display: none
 }
 
-.navbar-ex1-collapse {
-	display: none
+.navbar-right {
+	visibility: hidden
 }
 
 #scprogresscontainer {
-	display: none
+	visibility: hidden
 }
-.dropdown {
-	display: none
-}
+
 .strike {
   text-decoration: line-through;
 }
