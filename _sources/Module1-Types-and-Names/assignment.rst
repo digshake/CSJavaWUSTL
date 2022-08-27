@@ -5,7 +5,7 @@ Assignment 1: Grade Calculator
 Assignment Setup
 ================
 
-To create your repository `go here <https://classroom.github.com/a/82JQvlTV>`_. Then follow the same accept/import process described in `Assignment 0 <../Module0-Introduction/assignment.html>`_.
+To create your repository `go here <https://classroom.github.com/a/82JQvlTV>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Grade Calculator
 ================

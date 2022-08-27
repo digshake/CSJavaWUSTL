@@ -5,7 +5,7 @@ Assignment 6: More Recursive Puzzles
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/Enu_UohN>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`_.
+To create your repository go `here <https://classroom.github.com/a/Enu_UohN>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 More Recursive Puzzles
 =====================

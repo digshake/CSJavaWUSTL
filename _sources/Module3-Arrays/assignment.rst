@@ -15,7 +15,7 @@ Still a confused about arrays? Watch this bonus demonstration by former 131 TA A
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/4xludTxl>`_. Then follow the same accept/import process described in `Assignment 0 <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment>`__.
+To create your repository go `here <https://classroom.github.com/a/4xludTxl>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Array Puzzles
 =====================
