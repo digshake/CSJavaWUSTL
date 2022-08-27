@@ -12,15 +12,15 @@ a {
 }
 
 .brand-logo {
-	display: none
+	display: none;
 }
 
 .navbar-right {
-	visibility: hidden
+	visibility: hidden;
 }
 
 #scprogresscontainer {
-	visibility: hidden
+	visibility: hidden;
 }
 
 .strike {
