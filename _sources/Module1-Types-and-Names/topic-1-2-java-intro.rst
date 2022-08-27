@@ -62,7 +62,7 @@ First Java Program
 	pair: class; main method
 	
 Every program in Java is written as a **class**. Java is an **object-oriented language** and 
-we'll learn more about classes and objects in Unit 2. Inside the class, 
+we'll learn more about classes and objects later in the semester. Inside the class, 
 there can be a **main method** that starts the program. When you ask the 
 Java environment to *run* a class, it will always start execution in the main method. 
 Here is the template for a simple Java program with a main method:
@@ -88,8 +88,7 @@ Here is the template for a simple Java program with a main method:
 
 |CodingEx| **Coding Exercise**: 
 
-Click on the ``Save & Run`` button below to have the 
-computer execute the ``main`` method in the following class. 
+Open ``HelloExample.java`` in the ``module1`` package of the exercises repository in Eclipse that you loaded on the first day of class. Run this program by finding it in the File explorer, right-clicking it, then selecting ``Run As -> Java Application`` from the menu. 
 ``System.out.println("Hi there!");`` prints out the characters between the first ``"`` and the 
 second ``"`` followed by a new line.  
 The ``"Hi there!"`` is called a **string literal**, and it can have zero to many characters 
@@ -97,87 +96,9 @@ enclosed in starting and ending double quotes.
 Then, 
 change the code  to print your name.  
 Be sure to keep the starting ``"`` and ending ``"``.  
-Run the modified code to test your changes. If you revisit this page later and login, 
-click on ``Load History`` button and move the bar above it to see your previous code changes.
- 
-.. activecode:: code1_2_1
-   :language: java
-   :autograde: unittest    
+Run the modified code to test your changes.
 
-   Run this code to see the output below it. 
-   Then change the code to print your name, for example "Hi Pat!", and run again. 
-   If you mess up the code, hit the "Load History" button and use the slider to go back to a previous version.
-   ~~~~    
-   public class HelloExample
-   {
-      public static void main(String[] args)
-      {
-         System.out.println("Hi there!");
-      }
-   }
-     
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Hi there!";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-   }
-
-
-
-You can copy the Java source code shown in this book into a file and save 
-it if you want to run it in an integrated development environment (IDE) 
-on your local computer (see section 1.7 for different IDEs).  
-You must name the file the same name as the class name with ".java" as the extension.  
-All code (programs) in Java must be defined inside a class in a source file, 
-and the name of the class must match the file name. 
-
-
-.. activecode:: code1_2_2
-   :language: java
-   :autograde: unittest    
-
-   Run this code to see the output below it. 
-   Then change the code to add two more lines to the poem: "Java is interesting," followed by "And so are you!".
-   ~~~~    
-   public class PoemExample
-   {
-      public static void main(String[] args)
-      {
-         System.out.println("Roses are red,");
-         System.out.println("Violets are blue,");
-      }
-   }
-     
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Roses are red,\nViolets are blue,\nJava is interesting,\nAnd so are you!";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-   }
-
+Next, open the ``PoemExample.java`` file and run it. Then change the code to add two more lines to the poem: “Java is interesting,” followed by “And so are you!”. Run your code to make sure that it works.
 
 Most command keywords in Java must be in lowercase, 
 but class names such as System and String are capitalized. 
@@ -204,57 +125,9 @@ Java has two different print commands to print output to the screen:
 
 |CodingEx| **Coding Exercise:**
 
-.. activecode:: code1_2_3
-   :language: java
-   :autograde: unittest 
-
-   Run this code to see the output below it. 
+Open and run ``HelloExample2.java`` to see the output. 
    How would you change it to print the ! on the same line as Hi there 
    keeping all 3 print statements?
-   ~~~~    
-   public class HelloExample2
-   {
-      public static void main(String[] args)
-      {
-         System.out.print("Hi ");
-         System.out.println("there");
-         System.out.print("!");
-      }
-   }
-        
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Hi there!";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-        @Test
-        public void testLineCount() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "1 output line";
-            String actual = "  output line";
-
-            if (output.length() > 0) {
-               actual = output.split("\n").length + actual;
-            } else {
-               actual = output.length() + actual;
-           }
-           boolean passed = getResults(expect, actual, "Checking lines of output");
-           assertTrue(passed);
-        }
-   }
-
 
 |Exercise| **Check Your Understanding**
 
@@ -308,174 +181,23 @@ Java has two different print commands to print output to the screen:
 A print statement can also contain numeric values and arithmetic expressions.  Don't use double quotes for 
 expressions that have a numeric value.
 
-
-.. activecode:: code1_2_4
-   :language: java
-   :autograde: unittest 
-
-   Run this code to see the output below it. 
+Run ``CalculationExample.java`` to see the output. 
    Can you change the last print statement to print the sum of the values from 1 to 10?
-   ~~~~    
-   public class CalculationExample
-   {
-      public static void main(String[] args)
-      {
-         System.out.println(570 * 23);
-         System.out.println(12.34 / 5);
-         System.out.println(1 + 2 + 3 + 4 + 5 );
-      }
-   }
-          
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "13110\n2.468\n55\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-        
-   }
 
 
-.. activecode:: code1_2_5
-   :language: java
-   :autograde: unittest 
-
-   Run this code to see the output below it.  The output is not correct.  
+   Run ``CalculationErrorPrint`` to see the output.  The output is not correct.  
    The second System.out.println statement should print the value resulting from the computation, not a literal string for the computation. 
    Get rid of the double quotes in the second println statement and run the program.
    
-   ~~~~    
-   public class CalculationErrorPrint
-   {
-      public static void main(String[] args)
-      {
-         System.out.println("570 * 23 = ");
-         System.out.println("570 * 23");
-      }
-   }
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "570 * 23 = \n13110\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-        
-   }
-
-
-.. activecode:: code1_2_6
-   :language: java
-   :autograde: unittest 
-
-   Assume you have some bills to pay.  The individual bill amounts are 89.50, 14.75, 45.12, and 92.50.  
+   Open the ``CalculateBillTotal.java`` file. Assume you have some bills to pay.  The individual bill amounts are 89.50, 14.75, 45.12, and 92.50.  
    Add another print statement to sum and print the total bill amount on a separate line.  Don't just add the numbers in
    your head and print the result. You must write the code to add up the numbers and print the result.
    
-   ~~~~    
-   public class CalculateBillTotal
-   {
-      public static void main(String[] args)
-      {
-         System.out.println("Bill total:");
-         
-      }
-   }
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Bill total:\n241.87\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-
-       @Test
-       public void test2() throws IOException
-       {
-           String target1 = "System.out.println( 89.50 + 14.75 + 45.12 + 92.50";
-           boolean passed1 = checkCodeContains("bill calculation", target1);
-          
-           assertTrue(passed1);
-       }
-        
-   }
-
-
-
-.. activecode:: code1_2_7
-   :language: java
-   :autograde: unittest 
-
-   A bus starts out with no passengers.  Three people get on at the first stop.  
+   Open the ``PassengersOnBus.java`` file. A bus starts out with no passengers.  Three people get on at the first stop.  
    Five people get on at the second stop.
    One person gets off and eight people get on at the third stop. 
    Three people get off at the fourth stop. How many people are left on the bus?
    Add another print statement to calculate and print the passengers remaining on the bus.
-
-   ~~~~    
-   public class PassengersOnBus
-   {
-      public static void main(String[] args)
-      {
-         System.out.print("Passengers remaining : ");
-        
-      }
-   }
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Passengers remaining : 12\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-
-       @Test
-       public void test2() throws IOException
-       {
-           String target1 = "3 + 5 - 1 + 8 -3";
-           boolean passed1 = checkCodeContains("passenger calculation", target1);
-          
-           assertTrue(passed1);
-       }
-        
-   }
 
 
 
@@ -585,170 +307,21 @@ Let's practice debugging some code!
 
 |CodingEx| **Coding Exercise: Compile Time Error 1**
 
-Run the following code.  Look for an error message after the code.  This is called a **compile time error** because it is an error detected by the compiler.  
+Open the ``Error1.java`` file and look for an error.  This is called a **compile time error** because it is an error detected by the compiler.  
 
-What is wrong?  Can you fix it?  The error message will tell you the line number that it thinks is 
-causing the error (``Error1.java:5: error: unclosed string literal``).  Check line 5 to make sure that everything looks correct.  One good thing to check is that all ``{`` have a matching ``}`` and all ``(`` have a matching ``)`` and all starting ``"`` have a ending ``"`` as well. Try putting in the missing symbol and run again. This is called **debugging**.
-
-.. activecode:: code1_2_8
-   :language: java
-   :autograde: unittest 
-   :practice: T
-
-   Fix the code below.
-   ~~~~
-   public class Error1
-   {
-      public static void main(String[] args)
-      {
-         System.out.println("Hi there!);
-      }
-   }
-           
-   ====
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Hi there!";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-   }
-
-
+What is wrong?  Can you fix it?  One good thing to check is that all ``{`` have a matching ``}`` and all ``(`` have a matching ``)`` and all starting ``"`` have a ending ``"`` as well. Try putting in the missing symbol and run again. This is called **debugging**.
     
 |CodingEx| **Coding Exercise: Compile Time Error 2**
 
 
-Try and run the following code.  
-Look for an error message after the code. What is wrong this time?  Can you fix it?  
-One good thing to check is that all ``{`` have a matching ``}`` and all ``(`` have a matching ``)`` and all starting ``"`` have a ending ``"`` as well.
-
-.. activecode:: code1_2_9
-   :language: java
-   :autograde: unittest 
-   :practice: T
-
-   Fix the code below.
-   ~~~~
-   public class Error2
-   {
-      public static void main(String[] args)
-      {
-         System.out.println("Hi there!";
-      }
-   }
-           
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Hi there!";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-   }
-
-    
+Open the ``Error2.java`` file. What is wrong this time?  Can you fix it?  
+One good thing to check is that all ``{`` have a matching ``}`` and all ``(`` have a matching ``)`` and all starting ``"`` have a ending ``"`` as well. 
     
 |CodingEx| **Coding Exercise: Compile Time Error 3**
 
-Try and run the following code.  
-What is wrong this time?  Can you fix it?  After you fix the first error, you may 
+
+Open the ``Error3.java`` file. What is wrong this time?  Can you fix it?  After you fix the first error, you may 
 encounter a 2nd error! Fix that one too! 
-
-.. activecode:: code1_2_10
-   :language: java
-   :autograde: unittest 
-   :practice: T
-
-   Fix the code below.
-   ~~~~    
-   public class Error3
-   {
-      public static void main(String[] args)
-      {
-         system.out.println("Hi there!")
-      }
-   }
-           
-   ====
-   // should pass if/when they run code
-   // This doesn't really work because it filters out the \n
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Hi there!";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-   }
-
-
-Did you remember that System is capitalized in System.out.println? Did you find the missing semicolon? 
-   
-   
-
-|Groupwork| Debugging Challenge
------------------------------------
-
-.. activecode:: code1_2_11
-   :language: java
-   :autograde: unittest 
-   :practice: T
-
-   Debug the following code. 
-   Can you find all the bugs and get the code to run? 
-   ~~~~
-   public class Challenge1
-   {
-      public static void main(String[] args)
-      {
-         System.out.print("Good morning! ")
-         system.out.print("Good afternoon!);
-         System.Print " And good evening!";
-      }
-   }
-           
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Good morning! Good afternoon! And good evening";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-   }
 
 Comments
 --------

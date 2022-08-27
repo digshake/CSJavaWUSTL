@@ -71,49 +71,13 @@ The most common shortcut operator ``++``, the plus-plus or **increment** operato
 
 |CodingEx| **Coding Exercise**
 
-.. activecode:: code1_5_1
-   :language: java
-   :autograde: unittest    
   
-   Run the code below to see what the ++ and shorcut operators do. 
+   Run the code in ``Test2`` to see what the ++ and shorcut operators do. 
    Use the Codelens to trace through the code and observe how the 
    variable values change. Try creating more compound assignment 
    statements with shortcut operators and guess what they would 
    print out before running the code.
-   ~~~~
-   public class Test2
-   {
-      public static void main(String[] args)
-      {
-        int score = 0;
-        System.out.println(score);
-        score++;
-        System.out.println(score);
-        score *= 2;
-        System.out.println(score);
-        int penalty = 5;
-        score -= penalty/2;
-        System.out.println(score);      
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-    
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "0\n1\n2\n0";
-
-            boolean passed = getResults(expect, output, "Expected output from main",true);
-            assertTrue(passed);
-        }
-    }
-
+ 
 |Exercise| **Check Your Understanding**
 
 
@@ -266,24 +230,13 @@ values of the variables at the end.   Be careful, ``%`` is the remainder operato
 Prefix versus Postfix Operator
 ------------------------------
 
-.. activecode:: code1_5_2
-   :language: java
    
-   What do you think is printed when the following code is executed?    
+   Open the ``PostfixExample`` program. What do you think is printed when the following code is executed?    
    Try to guess the output before running the code.  You might be surprised at the result.  
    Click on CodeLens to step through the  execution.  
    Notice that the second println prints the original value 7 even though the memory  
    location for variable ``count`` is updated to the value 8.
-   ~~~~  
-    public class Postfix_Example {
-        public static void main(String[] args) {
-            int count = 7;
-            System.out.println(count);
-            System.out.println(count++);
-            System.out.println(count);
-        }
-    }
-   ====
+  
 
 The code ``System.out.println(count++)`` adds one to the variable *after* the value is printed.  
 Try changing the code to ``++count`` and run it again. This will result in one being added to

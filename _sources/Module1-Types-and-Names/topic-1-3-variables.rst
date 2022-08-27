@@ -243,57 +243,10 @@ the memory location called score to 4.
     
 
 |CodingEx| **Coding Exercise:** 
- 
-.. activecode:: code1_3_1
-   :language: java
-   :autograde: unittest      
+     
    
-   Run the following code to see what is printed. 
+   Run the code in ``VariableAssignment`` to see what is printed. 
    Then, change the values and run it again. 
-
-   Click the ``Show CodeLens`` button and then use the ``Next`` button to step through the 
-   program one line at a time.  Stepping through a program lets you see how memory is assigned for each variable.
-
-   ~~~~
-   public class VariableAssignment
-   {
-      public static void main(String[] args)
-      {
-        int score; 
-        score = 4;
-        System.out.println(score);
-        
-        double price = 23.25;
-        System.out.println(price);
-        
-        boolean won = false;
-        System.out.println(won);
-        won = true;
-        System.out.println(won);
-        
-        String name = "Jose";
-        System.out.println(name);
-      }
-   }
-        
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "4\n23.25\nfalse\ntrue\nJose";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-   }
-
 
 When you are printing the value of a variable, never put double quotes ``" "`` around the variable 
 because that will print out the variable 
@@ -450,52 +403,10 @@ then the code ``"Hi " + name`` will create a new String object with value ``"Hi 
 
 |CodingEx| **Coding Exercise:** 
  
+    
+   
+Run the code in ``StringConcatenation`` to see what is printed. 
  
-.. activecode:: code1_3_2
-   :language: java
-   :autograde: unittest      
-   
-   Run the following code to see what is printed. 
-   ~~~~
-   public class StringConcatenation
-   {
-      public static void main(String[] args)
-      {
-        int score; 
-        score = 0;
-        System.out.println("The score is " + score);
-        
-        double price = 23.25;
-        System.out.println("The price is " + price);
-        
-        boolean won = false;
-        System.out.println("Won? " + won);
-        won = true;
-        System.out.println("Won? " + won);
-        
-        String name = "Jose";
-        System.out.println("Hi " + name);
-      }
-   }
-        
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "The score is 0\nThe price is 23.25\nWon? false\nWon? true\nHi Jose";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-   }
-   
 If you want spaces between words and variables when printing, you must put the 
 space within the quoted string.  For example, notice the space in the string "Hi " in the last print statement. If you forget to add spaces, you will get smushed output 
 like "HiJose" instead of "Hi Jose".  
@@ -516,92 +427,14 @@ like "HiJose" instead of "Hi Jose".
 
    Assume variable declaration ``double price = 9.50;``.  Which print statement will result in the output: ``Price is 9.50``
 
-
-.. activecode:: code1_3_3
-   :language: java
-   :autograde: unittest      
+     
    
-   Add a print statement to concatenate the string literal "Favorite color is " with the value stored in the ``color`` variable.
-   ~~~~
-   public class StringConcatenation2
-   {
-      public static void main(String[] args)
-      {
-        String color = "red"; 
-        
-      }
-   }
-        
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Favorite color is red\n";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-        @Test
-        public void test2() throws IOException
-        {
-           String target1 = " + color);";
-           boolean passed1 = checkCodeContains("string concatenation for color variable", target1);
-          
-           assertTrue(passed1);
-        }
-   }
-
-
-
+   In the ``StringConcatenation2`` class, add a print statement to concatenate the string literal "Favorite color is " with the value stored in the ``color`` variable.
+  
 Also note that the variable has to be on the 
 left side of the ``=`` and the value on the right.  Switching the two is 
 called **assignment dyslexia**.  
-   
-|CodingEx| **Coding Exercise:** 
-
-.. activecode:: code1_3_4
-   :language: java
-   :autograde: unittest   
-   
-   This is an example of *assignment dyslexia*, when the coder has put the value on the left and the declaration on the right side.  Try to fix the following code to compile and run.
-   ~~~~
-   public class Dyslexia
-   {
-      public static void main(String[] args)
-      {
-        int score;
-        4 = score; 
-        System.out.println(score);
-      }
-   }
-        
-   ====
-   // should pass if/when they run code
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "4";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-   }
-   
   
-
 Naming Variables
 --------------------
 
@@ -636,13 +469,9 @@ The convention in Java and many programming languages is to always start a varia
 	
 
 |CodingEx| **Coding Exercise:**
+ 
 
-  
-.. activecode:: code1_3_5
-   :language: java
-   :autograde: unittest   
-
-   Java is case sensitive so ``playerScore`` and ``playerscore`` are not the same.  Run the code below to see the difference.
+   Java is case sensitive so ``playerScore`` and ``playerscore`` are not the same.  Run the code in the ``CaseSensitive`` class to see the difference.
    ~~~~
    public class CaseSensitive
    {
@@ -696,52 +525,7 @@ The convention in Java and many programming languages is to always start a varia
 
    -    :^\s*lastScore$: Correct.
         :.*: In camel case just put the words after each other but uppercase the first letter of each word after the 1st word.  This would be lastScore
-
-
-|Groupwork| Debugging Challenge : Weather Report
-------------------------------------------------
-
-.. activecode:: code1_3_6
-   :language: java
-   :autograde: unittest   
-   :practice: T
-
-   Debug the following code. Can you find the all the bugs and get the code to run? 
-   ~~~~
-   public class WeatherChannel
-   {
-      public static void main(String[] args)
-      {
-         int temperature = 70.5;
-         double radioChannel = 101;
-         boolean sunny = 1
-         
-         System.out.print("Welcome to the weather report on Channel ")
-         System.out.println(Radiochannel);
-         System.out.print("The temperature today is );
-         System.out.println(tempurature);
-         System.out.print("Is it sunny today? ");
-         System.out.println(sunny);
-      }
-   }
-
-   ====
-   import static org.junit.Assert.*;
-   import org.junit.*;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-   {
-      @Test
-      public void testMain() throws IOException
-      {
-        String output = getMethodOutput("main");
-        String expect = "Welcome to the weather report on Channel 101 \nThe temperature today is 70.5\nIs it sunny today? true";
-        boolean passed = getResults(expect, output, "Expected output from main");
-        assertTrue(passed);
-      }
-   }
-            
+        
 
 Summary
 -------------------

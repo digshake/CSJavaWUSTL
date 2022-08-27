@@ -73,160 +73,18 @@ This won’t change the value of the variable that you are copying from.
 
 |CodingEx| **Coding Exercise:** 
 
-.. activecode:: code1_4_1
-   :language: java
-   :autograde: unittest   
+Run the code in the ``VariableAssignment`` class and see how the values of the variables change.
    
-   Click on the ``Show CodeLens`` button to step through the code and see how the values of the variables change. 
-   ~~~~
- 
-    public class VariableAssignment
-    {
-      public static void main(String[] args)
-      {
-        int x = 3;
-        int y = 2;
-        System.out.println(x);
-        System.out.println(y);
-        x = y;
-        System.out.println(x);
-        System.out.println(y);
-        y = 5;
-        System.out.println(x);
-        System.out.println(y);
-      }
-    }
-    ====
-
-.. activecode:: code1_4_2
-   :language: java
-   :autograde: unittest   
-   
-   The program is supposed to figure out the total money value given the number of dimes, quarters and nickels.
+   The ``CalculateMoney`` program is supposed to figure out the total money value given the number of dimes, quarters and nickels.
    There is an error in the calculation of the total.  Fix the error to compute the correct amount.
-   ~~~~
- 
-    public class CalculateMoney
-    {
-      public static void main(String[] args)
-      {
-        int numDimes = 7;
-        int numQuarters = 3;
-        int numNickels = 8;
-        
-        int total = numDimes * 10 + numQuarters + 25;
 
-        System.out.println("Total = " + total);
-      }
-    }
-    ====
-    import static org.junit.Assert.*;
-    import org.junit.After;
-    import org.junit.Before;
-    import org.junit.Test;
-
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "Total = 185\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-
-
-        @Test
-        public void test2() throws IOException
-        {
-           String target1 = "numQuarters * 25";
-           boolean passed1 = checkCodeContains("numQuarters * 25", target1);
-          
-           assertTrue(passed1);
-        }
-
-        @Test
-        public void test3() throws IOException
-        {
-           String target1 = "numNickels * 5";
-           boolean passed1 = checkCodeContains("numNickels * 5", target1);
-          
-           assertTrue(passed1);
-        }
-
-
-    }
-
-.. activecode:: code1_4_3
-   :language: java
-   :autograde: unittest   
+  
    
-   Calculate and print the total pay given the weekly salary and the number of weeks worked.  
+   The ``SalaryExample`` program is supposed to calculate and print the total pay given the weekly salary and the number of weeks worked.  
    Use
    string concatenation with the totalPay variable to produce the output ``Total Pay = $3000``.
    Don't hardcode the number 3000 in your print statement.
-   ~~~~
- 
-    public class SalaryExample
-    {
-      public static void main(String[] args)
-      {
-        int weeklySalary = 500;
-        int numWeeks = 6;
-        int totalPay;
-
-      }
-    }
-    ====
-    import static org.junit.Assert.*;
-    import org.junit.After;
-    import org.junit.Before;
-    import org.junit.Test;
-
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "Total Pay = $3000\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testPrintStringsB() throws IOException
-        {
-
-            String code = getCode();
-            int count = countOccurences(code, "totalPay = weeklySalary * numWeeks")  +
-                        countOccurences(code, "totalPay = numWeeks * weeklySalary") ;
-            boolean passed = count >= 1;
-
-            passed = getResults("1", "" + count , "correct totalPay calculation", passed);
-            assertTrue(passed);
-        }
-
-
-       @Test
-       public void testStrConcat() throws IOException
-       {
-           String target1 = "+ totalPay);";
-           boolean passed1 = checkCodeContains("print statement concatenation of totalPay variable", target1);
-          assertTrue(passed1);
-       }
-
-    }
-
-
-
-
-
+  
 |Exercise| **Check your understanding**
    
 
@@ -243,168 +101,6 @@ This won’t change the value of the variable that you are copying from.
         :.*: num3 - num1 = 19 - 7 = 12 
   
 
-|CodingEx| **Coding Exercise:** 
-
-
-.. activecode:: code1_4_4
-   :language: java
-   :autograde: unittest  
-
-   Assume you have a package with a given height 3 inches and width 5 inches.  If the package is rotated 90 degrees, you should swap the
-   values for the height and width.
-   The code below makes an attempt to swap the values stored in two variables h and w, which represent  height and width.  Variable h should end up with w's initial 
-   value  of 5 and w should get h's initial value of 3.  Unfortunately this code has an error and does not work.
-   Use the CodeLens to step through the code to understand why it fails to swap the values in h and w.  
-   
-   ~~~~
- 
-    public class ErrorSwap
-    {
-      public static void main(String[] args)
-      {
-        int h = 3;
-        int w = 5;
-        System.out.println(h);  //3
-        System.out.println(w);  //5
-        h = w;
-        w = h;
-        System.out.println(h);  //expected 5
-        System.out.println(w);  //expected 3
-      }
-    }
-    ====
-
-
-.. shortanswer:: q1_4_2
-
-   Explain in your own words why the ``ErrorSwap`` program code does not swap the values stored in h and w.
-
-
-
-|Exercise| **Check your understanding**
-
-Swapping two variables requires a third variable.  Before assigning ``h = w``, you need to store the original value of ``h`` in the temporary variable.
-In the mixed up programs below, drag the blocks to the right to put them in the right order.
-
-.. parsonsprob:: q1_4_3
-   :numbered: left
-   :practice: T
-   :adaptive:
-   :noindent:
-
-   The following has the correct code that uses a third variable named "temp" to swap the 
-   values in h and w. 
-
-   The code is mixed up and contains <b>one extra block</b> which is not needed 
-   in a correct solution.  Drag the needed blocks from the left into the correct 
-   order on the right, then check your solution.  
-   You will be told if any of the blocks are in the wrong order or if you need to remove 
-   one or more blocks.  
-   
-   After three incorrect attempts you will be able to use the <i>Help Me</i> button to make the problem easier.  
-   -----
-   int h = 3;
-   int w = 5;
-   int temp = 0;
-   =====
-   temp = h;
-   =====
-   h = w;
-   =====
-   w = temp;
-   =====
-   w = h; #distractor
-
-
-
-.. activecode:: code1_4_5
-   :language: java
-   :autograde: unittest   
-   
-   Fix the code below to perform a correct swap of h and w.  
-   You need to add a new variable named ``temp`` to use for the swap.
-   ~~~~
- 
-    public class CorrectSwap
-    {
-      public static void main(String[] args)
-      {
-        int h = 3;
-        int w = 5;
-        System.out.println(h);
-        System.out.println(w);
-        h = w;
-        w = h;
-        System.out.println(h);    
-        System.out.println(w);
-      }
-    }
-    ====
-    import static org.junit.Assert.*;
-    import org.junit.After;
-    import org.junit.Before;
-    import org.junit.Test;
-
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "3\n5\n5\n3\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-
-
-        @Test
-        public void test2()
-        {
-            String code = getCode();
-            String expect = "int temp";
-
-            int count = countOccurences(code, expect);
-
-            boolean passed = count >= 1;
-
-            passed = getResults("1 temp declaration", "" + count  + " temp declaration", "Declare variable temp", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test3()
-        {
-            String code = getCode();
-            String expect = "temp = h";
-
-            int count = countOccurences(code, expect);
-
-            boolean passed = count >= 1;
-
-            passed = getResults("1 temp assignment to h", "" + count  + " temp assignment to h", "Assign variable temp to h", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test4()
-        {
-            String code = getCode();
-            String expect = "w = temp";
-
-            int count = countOccurences(code, expect);
-
-            boolean passed = count >= 1;
-
-            passed = getResults("1 w assignment to temp", "" + count  + " w assignment to temp", "Assign variable w to temp", passed);
-            assertTrue(passed);
-        }
-
-
-    }
-
-
 Incrementing the value of a variable
 ------------------------------------
 
@@ -420,44 +116,7 @@ previous value of score + 1.
 
 |CodingEx| **Coding Exercise:** 
 
-.. activecode:: code1_4_6
-   :language: java
-   :autograde: unittest   
-   
-   Click on the ``Show CodeLens`` button to step through the code and see how the score value changes.
-   ~~~~
-   public class UpdateScore
-   {
-      public static void main(String[] args)
-      {
-        int score = 0;
-        System.out.println(score);
-        score = score + 1;
-        System.out.println(score);
-        score = score + 1;
-        System.out.println(score);
-      }
-   }
-   ====
-   // Test Code for Lesson 1.4 Expressions - iccv1
-    import static org.junit.Assert.*;
-    import org.junit.After;
-    import org.junit.Before;
-    import org.junit.Test;
-
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "0\n1\n2\n";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-    }
+Run the code in ``UpdateScore`` and see how the score value changes.
 
    
 |Exercise| **Check your understanding**
@@ -530,46 +189,8 @@ Java uses the standard mathematical operators for addition (``+``), subtraction 
 Java uses the operator ``==`` to test if the value on the left is equal to the value on the right and ``!=`` to test if two items are not equal.   Don't get one equal sign ``=`` confused with two equal signs ``==``! They mean different things in Java. One equal sign is used to assign a value to a variable. Two equal signs are used to test a variable to see if it is a certain value and that returns true or false as you'll see below.  Use == and != only with int values and not doubles because double values are an approximation and 3.3333 will not equal 3.3334 even though they are very close.
 
 |CodingEx| **Coding Exercise:** 
-
-.. activecode:: code1_4_7
-   :language: java
-   :autograde: unittest      
-   
-   Run the code below to see all the operators in action. Do all of those operators do what you expected?  What about ``2 / 3``? Isn't surprising that it prints ``0``?  See the note below.
-   ~~~~
-   public class OperatorExample
-   {
-      public static void main(String[] args)
-      {
-        System.out.println(2 + 3);
-        System.out.println(2 - 3);
-        System.out.println(2 * 3);
-        System.out.println(2 / 3);
-        System.out.println(2 == 3);
-        System.out.println(2 != 3);
-      }
-   }
-   ====
-   // Test Code for Lesson 1.4 Expressions - iccv1
-    import static org.junit.Assert.*;
-    import org.junit.After;
-    import org.junit.Before;
-    import org.junit.Test;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "5\n-1\n6\n0\nfalse\ntrue";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-    }
-   
-
+    
+Run the code in ``OperatorExample`` to see all the operators in action. Do all of those operators do what you expected?  What about ``2 / 3``? Isn't surprising that it prints ``0``?  See the note below.
 
 .. note::
 
@@ -582,42 +203,8 @@ Operators can be used to create compound expressions with more than one operator
 
 |CodingEx| **Coding Exercise:** 
 
-.. activecode:: code1_4_8
-   :language: java
-   :autograde: unittest      
-   
-   In the example below, try to guess what it will print out and then run it to see if you are right. Remember to consider **operator precedence**.
-   ~~~~
-   public class TestCompound
-   {
-      public static void main(String[] args)
-      {
-        System.out.println(2 + 3 * 2);
-        System.out.println((2 + 3) * 2);
-        System.out.println(2 + (3 * 2));
-      }
-   }
-   ====
-   // Test Code for Lesson 1.4 Expressions - compunds
-    import static org.junit.Assert.*;
-    import org.junit.After;
-    import org.junit.Before;
-    import org.junit.Test;
-    import java.io.*;
+Open the ``TestCompound.java`` file, try to guess what it will print out and then run it to see if you are right. Remember to consider **operator precedence**.
 
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "8\n10\n8";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-    }
-
- 
 |Exercise| **Check Your Understanding**
 
 .. mchoice:: q1_4_6
@@ -727,42 +314,10 @@ The percent sign operator (``%``) is the **mod (modulo)** or **remainder** opera
 
 |CodingEx| **Coding Exercise:** 
 
-.. activecode:: code1_4_9
-   :language: java
-   :autograde: unittest      
+    
    
-   In the example below, try to guess what it will print out and then run it to see if you are right.
-   ~~~~
-   public class ModExample
-   {
-      public static void main(String[] args)
-      {
-        System.out.println(11 % 10);
-        System.out.println(3 % 4);
-        System.out.println(8 % 2);
-        System.out.println(9 % 2);
-      }
-   }
-   ====
-   // Test Code for Lesson 1.4 Expressions - lcop2
-    import static org.junit.Assert.*;
-    import org.junit.After;
-    import org.junit.Before;
-    import org.junit.Test;
-
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "1\n3\n0\n1";
-            boolean passed = getResults(expect, output, "Expected output from main",true);
-            assertTrue(passed);
-        }
-    }
+   In ``ModExample`` program, try to guess what it will print out and then run it to see if you are right.
+   
 
 
 .. note::
