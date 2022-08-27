@@ -19,6 +19,12 @@ a {
 	display: none
 }
 
+.scprogresscontainer {
+	display: none
+}
+.dropdown {
+	display: none
+}
 .strike {
   text-decoration: line-through;
 }
