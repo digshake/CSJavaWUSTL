@@ -1,5 +1,5 @@
 =====================
-Studio 2: Problem 1, Gambler's Ruin and Pi
+Studio 2: Gambler's Ruin and Pi
 =====================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**

@@ -1,9 +1,5 @@
-Boolean Expressions and If Statements
+Module 2 - Choice and Iteration
 :::::::::::::::::::::::::::::::::::::
-
-This unit introduces If-statements, which allow you to conditionally 
-execute a block of code depending on whether a Boolean expression is true or false.
-
 
 .. toctree::
    :maxdepth: 3

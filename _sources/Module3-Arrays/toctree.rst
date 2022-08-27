@@ -1,5 +1,4 @@
-
-Arrays
+Module 3 - Arrays
 ::::::::::::::::::::
 
 .. toctree::
