@@ -2,7 +2,7 @@
    :prefix: 1-10-
    :start: 1
 
-Unit 1 Coding Practice
+Module 1 Coding Practice
 =======================
 
 .. activecode::  code1_10_0a
