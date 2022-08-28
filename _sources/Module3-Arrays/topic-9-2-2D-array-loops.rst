@@ -20,7 +20,7 @@
     :alt: groupwork
     
 Nested Loops for 2D Arrays
---------------------------
+==========================
 
 In this lesson, you will learn how to use nested loops to traverse a 2D Array.
 

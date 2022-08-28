@@ -20,7 +20,7 @@
     :alt: groupwork
 
 2D Arrays
----------
+=========
 
 ..	index::
     single: 2D Arrays
