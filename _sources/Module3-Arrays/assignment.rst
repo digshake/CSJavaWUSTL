@@ -29,7 +29,7 @@ Bubble Sort
 
 The way that bubble sort works is by “bubbling” the larger values up. If a value is larger than its neighbor it will be swapped until all of the larger values make their way to the end of the array and the smaller values end up at the beginning of the array.
 
-Your task is to create a program called ``BubbleSort.java`` in the ``assignment3`` package. This program should first use ``ArgsProcessor`` to ask the user how big they would like the array to be. It will then prompt the user to enter that many integer values, which get stored into the array.
+Your task is to create a program called ``BubbleSort.java`` in the ``assignment3`` package. This program should first use ``Scanner`` to ask the user how big they would like the array to be. It will then prompt the user to enter that many integer values, which get stored into the array.
 
 You should then sort this array in ascending order using the bubble sort algorithm. To assist you, take a look at this `pseudocode <https://en.wikipedia.org/wiki/Pseudocode>`_ implementation of the sorting algorithm:
 
@@ -56,7 +56,7 @@ Example Output:
 Frequency Table
 =====================
 
-Make a program called ``FrequencyTable.java`` in the ``assignment3`` package. This program will generate ``x`` integers between 1 and ``n`` where ``x`` and ``n`` are values supplied by the user through ``ArgsProcessor``.
+Make a program called ``FrequencyTable.java`` in the ``assignment3`` package. This program will generate ``x`` integers between 1 and ``n`` where ``x`` and ``n`` are values supplied by the user through ``Scanner``.
 
 Your program should create a frequency table, counting the number of times that each number is randomly generated. Think carefully about how you can use an array for this purpose. How big should our array be? Can we define a relationship between the random values that are generated and how we count them in the array?
 
@@ -88,7 +88,7 @@ Example Output:
 Symmetrical Image
 =====================
 
-Create a program ``SymmetricalImage.java``. This program should create an ``n`` x ``m`` array where ``n`` and ``m`` are values supplied by the user through ``ArgsProcessor``.
+Create a program ``SymmetricalImage.java``. This program should create an ``n`` x ``m`` array where ``n`` and ``m`` are values supplied by the user through ``Scanner``.
 
 We wish to use this array to create some randomly generated vertically symmetrical images. To do this, first select a random point within the 2D array. You will then need to compute the “mirrored” point on the other side of the array. Both of these array positions should be marked.
 

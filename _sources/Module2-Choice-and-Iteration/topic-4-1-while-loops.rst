@@ -41,7 +41,7 @@ When you play a song, you can set it to loop, which means that when it reaches t
 
 A ``while`` loop executes the body of the loop as long as (or while) a Boolean condition is true.  When the condition is false, we exit the loop and continue with the statements that are after the body of the ``while`` loop.  If the condition is false the first time you check it, the body of the loop will not execute.  
 
-Notice the ``while`` statement looks a lot like an ``if`` statement, but it runs more than once. The curly brackets { } are optional when there is just 1 statement following the condition, but required if there are more than 1 statement in the loop. In the AP exam, they will always use curly brackets, which is a good practice to follow.
+Notice the ``while`` statement looks a lot like an ``if`` statement, but it runs more than once. The curly brackets { } are optional when there is just 1 statement following the condition, but required if there are more than 1 statement in the loop. Always using curly brackets is a good practice to follow.
 
 .. code-block:: java
 
@@ -89,50 +89,11 @@ The loop condition usually involves a **loop control variable** that controls wh
 
 |CodingEx| **Coding Exercise**
 
-
-.. activecode:: code4_1_1
-   :language: java
-   :autograde: unittest
-   :practice: T
    
-   Here is a while loop that counts from 1 to 5 that demonstrates the 3 steps of writing a loop. 
-   Use the CodeLens to step through the execution.
+   The ``LoopTest1`` program contains a while loop that counts from 1 to 5 that demonstrates the 3 steps of writing a loop. 
+   Use the debugger to step through the execution.
    Can you change it to count from 2 to 10? 
-   ~~~~
-   public class LoopTest1
-   {
-      public static void main(String[] args)
-      {
-        // 1. initialize the loop variable
-        int count = 1;
-        
-        // 2. test the loop variable
-        while (count <= 5)
-        {
-           System.out.println(count);
-           // 3. change the loop variable
-           count++;
-        }
- 
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "2\n3\n4\n5\n6\n7\n8\n9\n10\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-    }
-
+   
 Java doesn't require your code to be correctly indented (code moved to the right a few spaces) to make it clear what statements are part of the body of the loop, but it is standard practice to do so.  
 
 |Exercise| **Check your understanding**
@@ -173,7 +134,7 @@ Tracing Loops
 
 A really important skill to develop is the ability to trace the values of variables and how they change during each iteration of a loop.  
 
-You can create a tracing table that keeps track of the variable values each time through the loop as shown below.  This is very helpful on the exam. Studies have shown that students who create tables like this do much better on code tracing problems on multiple choice exams.
+You can create a tracing table that keeps track of the variable values each time through the loop as shown below.
 
 .. figure:: Figures/traceTable.png
     :width: 150px
@@ -269,233 +230,8 @@ Another common error with loops is an **off-by-one error** where the loop runs o
 |CodingEx| **Coding Exercise**
 
 
-.. activecode:: code4_1_2
-   :language: java
-   :autograde: unittest
    
-   The while loop should print out the numbers 1 to 8, but it has 2 errors that cause an infinite loop and an off-by-one error. Can you fix the errors? If you run an infinite loop, you may need to refresh the page to stop it (so make sure all active code windows on the page have been saved and click on Load History after refreshing).
-   ~~~~
-   public class LoopTest2
-   {
-      public static void main(String[] args)
-      {
-        int count = 1;
-        while (count < 8)
-        {
-           System.out.println(count);
-        }
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        public RunestoneTests() {
-            super("LoopTest2");
-        }
-
-        @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "1\n2\n3\n4\n5\n6\n7\n8";
-
-            boolean passed = getResults(expect, output, "Running main");
-            assertTrue(passed);
-        }
-    }
-
-
-   
-Input-Controlled Loops
-----------------------
-
-.. |simple chatbot| raw:: html
-
-   <a href="https://repl.it/@LindaMM/basicchat" target="_blank">simple chatbot on repl.it</a>
-   
-You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  
-However, a ``while`` loop is typically used when you don't know how many times the loop will execute. 
-It is often used for a **input-controlled loop** where the user's input indicates when to stop. 
-
-|CodingEx| **Coding Exercise**
-
-The code below shows a |simple chatbot|. The while loop stops when you type in "Bye". 
-The stopping value is often called the **sentinel value** for the loop. 
-Notice that if you type in "Bye" right away, the loop will never run. 
-If the loop condition evaluates to false initially, the loop body is not executed at all. 
-Another way to stop the loop prematurely is to put in a return statement that makes it immediately return from the method.
-
-.. raw:: html
-
-    <iframe  height="700px" width="100%" style="max-width:90%; margin-left:5%" src="https://repl.it/@LindaMM/basicchat?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-|CodingEx| **Coding Exercise**
-
-.. |numbers on repl.it| raw:: html
-
-   <a href="https://repl.it/@BerylHoffman/Average" target="_blank">numbers on repl.it</a>
-
-Here's another example with |numbers on repl.it|. This code calculates the average of positive numbers, but it is missing the condition for the loop on line 14.  Let's use -1 as the **sentinel value**. Add the condition to  the while loop to run while the user does not input -1. What would happen if you forgot step 3 (change the loop variable - get a new input)? Try commenting out line 19 with // to see what happens (note there is a stop button at the top!).
-
-.. raw:: html
-
-    <iframe height="700px" width="100%" style="max-width:90%; margin-left:5%" src="https://repl.it/@BerylHoffman/Average?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-
-There are standard algorithms that use loops to compute the sum or average like above, or determine the minimum or maximum 
-value entered, or the frequency of a certain condition. You can also use loops to identify if some integers are 
-evenly divisible by other integers or identify the individual digits in an integer. We will see a lot more of these 
-algorithms in Unit 7 with loops and arrays.
-
-|Groupwork| Programming Challenge  :  Guessing Game
-----------------------------------------------------
-
-.. image:: Figures/questionmark.jpg
-    :width: 100
-    :align: left
-    
-In the guessing game, the computer picks a random number from 0-100 and you have to guess it. 
-After each guess, the computer will give you clues like "Too high" or "Too low". 
-Here's the pseudocode for the guessing game. **Pseudocode** is an English 
-description or plan of what your code will do step by step. What's the loop variable 
-for this program? Can you identify the 3 steps of writing this loop with respect to 
-the loop variable?
-
-1. Choose a random number from 0-100
-2. Get the first guess
-3. Loop while the guess does not equal the random number,
-
-   - If the guess is less than the random number, print out "Too low!"
-   - If the guess is greater than the random number, print out "Too high!"
-   - Get a new guess (save it into the same variable)
-   
-4. Print out something like "You got it!"
-
-As an extension to this project, you can add a counter variable to count how many guesses the user took and print it out when they guess correctly.
-
-When you finish and run your program, what is a good guessing strategy for guessing a number between 0 and 100? What was your first guess? One great strategy is to always split the guessing space into two and eliminating half, so guessing 50 for the first guess. This is called a **divide and conquer** or **binary search** algorithm. If your guess is between 0-100, you should be able to guess the number within 7 guesses. Another extension to this challenge is to test whether the user got it in 7 guesses or less and provide feedback on how well they did.
-
-.. |Scanner class| raw:: html
-
-   <a href="https://www.w3schools.com/java/java_user_input.asp" target="_blank">Scanner class</a>
-   
-.. |repl.it| raw:: html
-
-   <a href="https://repl.it/@BerylHoffman/Guessing-Game" target="_blank">repl.it</a>
-   
-For this project, you will need to use the |Scanner class| for input and |repl.it| or another IDE of your choice.
-
-.. raw:: html
-
-    <iframe height="600px" width="100%" style="max-width:90%; margin-left:5%" src="https://repl.it/@BerylHoffman/Guessing-Game?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-
-.. activecode:: code4_1_3
-  :language: java
-  :autograde: unittest  
-
-  Copy and paste all of your code from your repl.it and run to see if it passes the autograder tests. Include the link to your repl.it code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
-  ~~~~
-  // Copy in your link to your code on repl.it here:
-  // Copy in all of your code from repl.it below (include import and public class Main)
-       
-
-  ====
-  import static org.junit.Assert.*;
-    import org.junit.*;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        public RunestoneTests() {
-            super("Main", input1.replaceAll(" ", "\n")); // For Book
-            //super("GuessingGame", input1.replaceAll(" ", "\n")); // For Repl.it
-        }
-
-        private static int goal = 1;
-        private static String input1 = "100 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0";
-        private static String input2 = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100";
-        private String output1, output2;
-
-
-        @Test
-        public void test1()
-        {
-            String input = input1.replaceAll(" ", "\n");
-            String output = getMethodOutputWithInput("main", input);
-            output1 = output;
-
-            String[] lines = output.split("\n");
-
-            boolean passed = lines.length >= goal;
-
-            passed = getResults(">" + goal +" lines", "" + lines.length + " lines", "Outputs at least " + goal +" lines", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test2()
-        {
-            String input = input2.replaceAll(" ", "\n");
-            String output = getMethodOutputWithInput("main", input);
-            output2 = output;
-
-            if (output1 == null) {
-                input = input1.replaceAll(" ", "\n");
-                output1 = getMethodOutputWithInput("main", input);
-            }
-
-            boolean passed = !output1.equals(output2);
-
-            passed = getResults("true", "" + passed, "Outputs different results for different inputs", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test3()
-        {
-            String code = getCode();
-            int num = countOccurences(code, "if");
-            boolean passed = num >= 2;
-
-            getResults("2", "" + num, "Number of if statements", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test4()
-        {
-            boolean passed = checkCodeContainsRegex("while loop", "while(*)");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test5()
-        {
-            String input = input1.replaceAll(" ", "\n");
-            int[] values = new int[10];
-
-            for (int i = 0; i < values.length; i++) {
-                String output = getMethodOutputWithInput("main", input);
-                values[i] = output.split("\n").length;
-            }
-
-            boolean passed = false;
-            for (int i = 0; i < values.length-1; i++) {
-                if (values[i] != values[i+1])
-                    passed = true;
-
-            }
-
-            passed = getResults("true", "" + passed, "Guesses random numbers", passed);
-            assertTrue(passed);
-        }
-    }
-
+   The while loop in ``LoopTest2`` should print out the numbers 1 to 8, but it has 2 errors that cause an infinite loop and an off-by-one error. Can you fix the errors? If you run an infinite loop, you may need to refresh the page to stop it (so make sure all active code windows on the page have been saved and click on Load History after refreshing).
   
    
 Summary
@@ -517,8 +253,6 @@ Summary
 - **Off by one** errors occur when the iteration statement loops one time too many or one time too few.
 
 - If the Boolean expression evaluates to false initially, the loop body is not executed at all.
-
-- **Input-controlled loops** often use a **sentinel value** that is input by the user like "bye" or -1 as the condition for the loop to stop. Input-controlled loops are not on the AP CS A exam, but are very useful to accept data from the user. 
 
 - There are standard algorithms to compute a sum or average.
 

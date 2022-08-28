@@ -107,57 +107,9 @@ To actually create an array after declaring the variable, use the **new** keywor
 
 |CodingEx| **Coding Exercise**
 
-
-
-
-.. activecode:: code7_1_1
-   :language: java
-   :autograde: unittest
-   :practice: T
    
-   In the following code, add another array declaration that creates an array of 5 doubles called prices and another array of 5 Strings called names and corresponding System.out.println commands.
-   ~~~~
-   public class Test1
-   {
-      public static void main(String[] args)
-      {
-        // Array example
-        int[] highScores = new int[10];
-        // Add an array of 5 doubles called prices.
-        
-        // Add an array of 5 Strings called names.
-      
-        System.out.println("Array highScores declared with size " + highScores.length);
-        // Print out the length of the new arrays
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        public RunestoneTests() {
-            super("Test1");
-        }
-
-        @Test
-        public void testDouble() throws IOException
-        {
-            String target = "new double[5];";
-            boolean passed = checkCodeContains(target);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testString() throws IOException
-        {
-            String target = "new String[5];";
-            boolean passed = checkCodeContains(target);
-            assertTrue(passed);
-        }
-    }
+   In the ``Array1`` program, add another array declaration that creates an array of 5 doubles called prices and another array of 5 Strings called names and corresponding System.out.println commands.
+   
 
 ..	index::
 	pair: array; initialization
@@ -211,60 +163,14 @@ Arrays know their length (how many elements they can store).  It is a public rea
 |CodingEx| **Coding Exercise**
 
 
-
-.. activecode:: code7_1_2
-   :language: java
-   :autograde: unittest   
    
-   Try running the code below to see the length. Try adding another value to the highScores initializer list and run again to see the length value change.
-   ~~~~
-   public class Test2
-   {
-      public static void main(String[] args)
-      {
-        int[ ] highScores = {99,98,98,88,68};
-        System.out.println(highScores.length);
-      }
-   }
-   ====
-   // Test for Lesson 6.1.2 - While Loop FindAndReplace lclw1
-    import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        public RunestoneTests() {
-            super("Test2");
-        }
-
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main").trim();
-            String expect = "6";
-
-            //boolean pass = !output.equals(expect.trim());
-
-            boolean passed = getResults(expect, output, "Did you add another value?");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testChangedCode() {
-            String origCode = "public class Test2 { public static void main (String [] args) { int [] highScores = {99,98,98,88,68}; System.out.println(highScores.length); } }";
-
-            boolean changed = codeChanged(origCode);
-
-            assertTrue(changed);
-
-        }
-    }
+   Try running the ``Array2`` program to see the length. Try adding another value to the highScores initializer list and run again to see the length value change.
+   
 
 
 .. note::
 
-   Note that length is an instance variable and not a method, unlike the String ``length()`` method, so you don't add parentheses after length.  However, if you use parentheses after length during the exam, you won't lose any points. The length instance variable is declared as a ``public final int``.  ``public`` means you can access it and ``final`` means the value can't change.
+   Note that length is an instance variable and not a method, unlike the String ``length()`` method, so you don't add parentheses after length. The length instance variable is declared as a ``public final int``.  ``public`` means you can access it and ``final`` means the value can't change.
    
 
 
@@ -360,48 +266,14 @@ An indexed variable like **arrayname[index]** can be used anywhere a regular var
 
 ..  **Coding Exercise**
 
-Try out the following code which has an int array of highScores and names. Can you print out 3rd score in the array (remember that the first score is at index 0)? Can you change last score to 97 using an assignment statement in the code? Can you change the array so that it has 6 elements and add another score and print it out? What happens if you try to access an element that is not there, for example at index 7?
-
-.. activecode:: code7_1_3
-   :language: java
-   
-   public class Test1
-   {
-      public static void main(String[] args)
-      {
-        // declare and create arrays
-        int[ ] highScores = new int[5];
-        // Print initial highScore
-        System.out.println(scores[0]);
-        // put values in highScore using an indexed variable
-        highScores[0] = 99;
-        highScores[1] = 98;
-        highScores[2] = 98;
-        highScores[3] = 88;
-        highScores[4] = 68;
-
-        // Print first highScore at index 0
-        System.out.println( highScores[0] );
-
-      }
-   }
-
-
-   
-
+Try out the ``Array3`` program which has an int array of highScores and names. Can you print out 3rd score in the array (remember that the first score is at index 0)? Can you change last score to 97 using an assignment statement in the code? Can you change the array so that it has 6 elements and add another score and print it out? What happens if you try to access an element that is not there, for example at index 7?
 
 
 If you want to keep track of the top 5 highest scores in a game and the names of the people with those scores, you could use two **parallel arrays**.  One array could keep track of the scores and the other the names. You have to make sure you keep them in the same order so that the same index can be used to get correponding names and scores. 
 
 |CodingEx| **Coding Exercise**
-
-
-
-.. activecode:: code7_1_4
-   :language: java
-   :autograde: unittest   
    
-   Try out the following code which has two parallel arrays, highScores and names. Can you print out Mateo's score? Can you change Sofia's score to 97 using an assignment statement in the code? Can you change the arrays so that they have 6 elements and add your name and score and print them out? 
+   Try out the ``Array4`` program which has two parallel arrays, highScores and names. Can you print out Mateo's score? Can you change Sofia's score to 97 using an assignment statement in the code? Can you change the arrays so that they have 6 elements and add your name and score and print them out? 
    ~~~~
    public class Test1
    {
@@ -469,171 +341,6 @@ One powerful feature in the array **data abstraction** is that we can use variab
   int index = 3;
   System.out.println(  highScores[index] );
 
-.. image:: 6-1-images/cow.jpg
-    :width: 150
-    :align: left
-    
-|CodingEx| **Coding Exercise**
-
-Here's a fun String array of image filenames. The following code displays an online image using an HTML tag. (Note that this just works in this Active Code window which interprets HTML. In other Java IDEs you would need to use Java Swing graphics instead). Run the code and see that it displays images[0] which is "cow.jpg". The images array holds 5 images. 
-
-
-    
-.. activecode:: code7_1_5
-   :language: java
-   
-   Can you change the index variable's value so that it prints out the puppy image? Can you print out the reindeer? Try all of them! What indices did you need to use? Then try using a random number for the index instead. Remember that (int)(Math.random()*max) will return a number from 0 up to max. What's the maximum number it can be for this array?
-   ~~~~
-   public class ImageEx
-   { 
-    public static void main(String[] args)
-    {
-        String[] images = {"cow.jpg", "kitten.jpg", 
-                  "puppy.jpg", "pig.jpg", "reindeer.jpg"};
-   
-        // Change index to see different images in the array!
-        // Can you have it pick out a random image?
-        int index = 0;
-        printHTMLimage( images[index] );
-     }
-      
-     // This method will just work in Active Code which interprets html
-     public static void printHTMLimage(String filename)
-     {
-        String baseURL = "https://raw.githubusercontent.com/bhoffman0/CSAwesome/master/_sources/Unit6-Arrays/6-1-images/";
-        System.out.print("<img src=" + baseURL + filename + ">");
-      }
-    }  
-
-|Groupwork| Programming Challenge : Countries Array
-===================================================
-    
-In this challenge, you will create a guide to different countries using arrays. 
-
-1. Use the Active Code window below to create 4 parallel arrays and intialize them using initialization lists that represent the data below. Remember that the order of these arrays has to match so that you can use the same index and get corresponding values out.
-
-  - **Countries:** China, Egypt, France, Germany, India, Japan, Kenya, Mexico, United Kingdom, United States
-  - **Capitals:** Beijing, Cairo, Paris, Berlin, New Delhi, Tokyo, Nairobi, Mexico City, London, Washington D.C.
-  - **Languages:** Chinese, Arabic, French, German, Hindi, Japanese, Swahili, Spanish, English, English
-  - **Filenames for map images:** China.jpg, Egypt.jpg, France.jpg, Germany.jpg, India.jpg, Japan.jpg, Kenya.jpg, Mexico.jpg, UK.jpg, US.jpg
-
-
-
-
-2. Choose a random number using Math.random() and the **length** of one of the arrays and save it in a variable called index. 
-
-3. Print out the country name, its capital, and its language, and the map image for that country using the random index to access the corresponding item in each parallel array. For the images, the printHTMLimage method has been given to get the image URL online and print it out as an HTML image.
-
-.. activecode:: code7_1_6
-   :language: java
-   :autograde: unittest        
-   
-   public class Countries
-   {
-     public static void main(String[] args)
-     {
-        // 1. Declare 4 arrays and initialize them to the given values. 
-        // Countries: China, Egypt, France, Germany, India, Japan, Kenya, Mexico, United Kingdom, United States
-        // Capitals: Beijing, Cairo, Paris, Berlin, New Delhi, Tokyo, Nairobi, Mexico City, London, Washington D.C.
-        // Languages: Chinese, Arabic, French, German, Hindi, Japanese, Swahili, Spanish, English, English
-        // Filenames for map images: China.jpg, Egypt.jpg, France.jpg, Germany.jpg, India.jpg, Japan.jpg, Kenya.jpg, Mexico.jpg, UK.jpg, US.jpg
-        
-        // 2. Pick a random number up to the length of one of the arrays and save in the variable index
-        
-        // 3. Print out the info in each array using the random index
-        
-        // Sample image printing - this will only work in Active Code
-        // printHTMLimage( images[index] );
-
-      }
-      
-      // This method will just work in Active Code which interprets html
-      public static void printHTMLimage(String filename)
-      {
-        String baseURL = "https://raw.githubusercontent.com/bhoffman0/CSAwesome/master/_sources/Unit6-Arrays/6-1-images/";
-        System.out.print("<img src=" + baseURL + filename + ">");
-      }
-     }
-     ====
-     // Test for Lesson 6.1 - challenge
-     import static org.junit.Assert.*;
-     import org.junit.*;;
-     import java.io.*;
-
-     public class RunestoneTests extends CodeTestHelper
-     {
-        public RunestoneTests() {
-            super("Countries");
-        }
-
-        @Test
-        public void test1() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Country Capital Language Image";
-
-            int len = expect.split(" ").length;
-
-            boolean passed = len == 4 && output.contains(".jpg");
-
-            passed = getResults(expect, expect, "Did you print all the info?", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test2() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "<img src";
-
-            boolean passed = output.contains(expect);
-
-            //passed = getResults(expect + "...", output, "Did you uncomment the image code?", passed);
-            passed = getResults("image", "image", "Did you uncomment the image code?", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test3() throws IOException
-        {
-            String[] lines = new String[10];
-
-            for (int i = 0; i < lines.length; i++)
-            {
-                lines[i] = getMethodOutput("main");
-            }
-
-            int difft = 10;
-
-            for (int i = 0; i < lines.length-1; i++) {
-                if (lines[i].equals(lines[i+1])) {
-                    difft--;
-                }
-            }
-
-            boolean passed = difft > 3;
-
-            passed = getResults("> 3 Countries", difft + " countries", "Can pick a random different country > 3 times?", passed);
-            assertTrue(passed);
-        }
-
-
-        @Test
-        public void testArrays() throws IOException {
-            //System.out.println(program);
-            String program = getCode();
-
-            int arrays = 0;
-            int index = program.indexOf("String[]");
-            while (index >= 0) {
-                arrays++;
-                index = program.indexOf("String[]", index + 7);
-            }
-
-            boolean passed = getResults("5 x String[]", arrays + " x String[]", "Did you declare 4 arrays?");
-            assertTrue(passed);
-        }
-     }
     
 Summary
 =========

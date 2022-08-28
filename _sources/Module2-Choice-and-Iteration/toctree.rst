@@ -8,7 +8,6 @@ Module 2 - Choice and Iteration
    topic-3-3-if-else.rst
    topic-3-4-else-ifs.rst
    topic-3-5-compound-ifs.rst
-   topic-3-6-DeMorgan.rst
    topic-4-1-while-loops.rst
    topic-4-2-for-loops.rst
    topic-4-3-strings-loops.rst

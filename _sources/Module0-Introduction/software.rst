@@ -31,7 +31,7 @@ We use the site `GitHub <https://github.com>`_ to distribute and collect course 
 3. Accepting the exercises
 =====================
 
-For each major type of course work you will need to generate a repository on GitHub.  You'll do so by clicking on a link and "accepting" an assignment.  Click `HERE <no>`_ to accept the repository containing the course exercises ***and follow along with the instructions below***.
+For each major type of course work you will need to generate a repository on GitHub.  You'll do so by clicking on a link and "accepting" an assignment.  Click `HERE <https://classroom.github.com/a/QVNyoZKd>`_ to accept the repository containing the first batch of course exercises ***and follow along with the instructions below***.
 
 2. Select the button to accept the exercises:
 

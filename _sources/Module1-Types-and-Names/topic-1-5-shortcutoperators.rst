@@ -73,7 +73,7 @@ The most common shortcut operator ``++``, the plus-plus or **increment** operato
 
   
    Run the code in ``Test2`` to see what the ++ and shorcut operators do. 
-   Use the Codelens to trace through the code and observe how the 
+   Use the debugger to trace through the code and observe how the 
    variable values change. Try creating more compound assignment 
    statements with shortcut operators and guess what they would 
    print out before running the code.
@@ -233,7 +233,7 @@ Prefix versus Postfix Operator
    
    Open the ``PostfixExample`` program. What do you think is printed when the following code is executed?    
    Try to guess the output before running the code.  You might be surprised at the result.  
-   Click on CodeLens to step through the  execution.  
+   Use the debugger to step through the  execution.  
    Notice that the second println prints the original value 7 even though the memory  
    location for variable ``count`` is updated to the value 8.
   

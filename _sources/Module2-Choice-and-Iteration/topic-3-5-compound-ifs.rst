@@ -47,102 +47,15 @@ two Boolean expressions and the body of the condition will only be executed  if 
 |CodingEx| **Coding Exercise**
 
 
-.. activecode:: code3_5_1
-   :language: java
-   :autograde: unittest   
-
-   What if you want to go out and your parents say you can go out if you clean your room and do your homework?  Run the code below and try different values for ``cleanedRoom`` and ``didHomework`` and see what they have to be for it to print ``You can go out``.
-   ~~~~
-   public class Test1
-   {
-      public static void main(String[] args)
-      {
-        boolean cleanedRoom = true;
-        boolean didHomework = false;
-        if (cleanedRoom && didHomework) 
-        {
-            System.out.println("You can go out");
-        }
-        else 
-        {
-            System.out.println("No, you can't go out");
-        }
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-    
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void testChangedCode() {
-            String origCode = "public class Test1 { public static void main(String[] args){ boolean cleanedRoom = true; boolean didHomework = false;if (cleanedRoom && didHomework){System.out.println(\"You can go out\");} else { System.out.println(\"No, you can't go out\");}}}";
-
-            boolean changed = codeChanged(origCode);
-            assertTrue(changed);
-        }
-        @Test
-        public void testMain() {   
-            String output = getMethodOutput("main");
-           String expect = "You can go out";
-
-           boolean passed = getResults(expect, output, "Expected output from main");
-           assertTrue(passed);
-        }
-    }
-
+   What if you want to go out and your parents say you can go out if you clean your room and do your homework?  Run the ``Test1`` program and try different values for ``cleanedRoom`` and ``didHomework`` and see what they have to be for it to print ``You can go out``.
+  
 What if it is okay if only one of two things is true? Use ``||`` as a logical **or** to join two Boolean expressions and the body of the condition will be executed if one or both are true.  
 
 |CodingEx| **Coding Exercise**
 
 
-.. activecode:: code3_5_2
-   :language: java
-   :autograde: unittest 
-
-   For example, your parents might say you can go out if you can walk or they don't need the car.  Try different values for ``walking`` and ``carIsAvailable`` and see what the values have to be to print ``You can go out``.
-   ~~~~
-   public class Test2
-   {
-      public static void main(String[] args)
-      {
-        boolean walking = false;
-        boolean carIsAvailable = false;
-        if (walking || carIsAvailable) 
-        {
-           System.out.println("You can go out");
-        }
-        else 
-        {
-          System.out.println("No, you can't go out");
-        }
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void testChangedCode() {
-            String origCode = "public class Test2 {public static void main(String[] args){boolean walking = false;boolean carIsAvailable = false;if (walking || carIsAvailable){System.out.println(\"You can go out\");}else{System.out.println(\"No, you can't go out\"); }}}";
-
-            boolean changed = codeChanged(origCode);
-            assertTrue(changed);
-        }
-        @Test
-        public void testMain() {   
-            String output = getMethodOutput("main");
-           String expect = "You can go out";
-
-           boolean passed = getResults(expect, output, "Expected output from main");
-           assertTrue(passed);
-        }
-    }
+   For example, your parents might say you can go out if you can walk or they don't need the car.  Open the ``Test2`` program. Try different values for ``walking`` and ``carIsAvailable`` and see what the values have to be to print ``You can go out``.
+  
 
 .. note::
 
@@ -152,29 +65,9 @@ With numerical values, the or-operator is often used to check for error conditio
 
 |CodingEx| **Coding Exercise**
 
-.. activecode:: code3_5_3
-   :language: java
-   :autograde: unittest 
    
-   Explore how && and || are used with numbers below. Try different values for score like -10 and 110 in the code below.
-   ~~~~
-   public class TestNum
-   {
-      public static void main(String[] args)
-      {
-        int score = 10; // Try -10 and 110
-        if (score < 0 || score > 100) 
-        {
-            System.out.println("Score has an illegal value.");
-        }
-        if (score >= 0 && score <= 100) 
-        {
-            System.out.println("Score is in the range 0-100");
-        }
- 
-      }
-   }
-
+   Explore how && and || are used with numbers in the ``TestNum`` program. Try different values for score like -10 and 110 in the code below.
+   
 
 
 
@@ -184,39 +77,9 @@ force the order of execution in a different way. If you mix ! with && and ||, be
 often the opposite of what you think. We'll see examples of this in the next lesson.  
 
 |CodingEx| **Coding Exercise**
-
-
-.. activecode:: code3_5_4
-   :language: java
-   :autograde: unittest
       
-   The code below says if homework is not done, you can't go out. Try different values for ``homeworkDone``.
-   ~~~~
-   public class TestNot
-   {    public static void main(String[] args)
-      {
-        boolean homeworkDone = false;
-        if (!homeworkDone) 
-        {
-            System.out.println("Sorry, you can't go out!");
-        }
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-    
-    public class RunestoneTests extends CodeTestHelper
-    {
-       @Test
-        public void testChangedCode() {
-            String origCode = "public class TestNot{public static void main(String[] args){ boolean homeworkDone = false; if (!homeworkDone) { System.out.println(\"Sorry, you can't go out!\"); } } }";
-
-            boolean changed = codeChanged(origCode);
-            assertTrue(changed);
-        }
-    }
+   The ``TestNot`` program says if homework is not done, you can't go out. Try different values for ``homeworkDone``.
+  
 
 .. note::
 
@@ -459,93 +322,6 @@ Both ``&&`` and ``||`` use **short circuit evaluation**.  That means that the se
 
      if ((y / x) == 3 || x = 0) System.out.println("first case");
      else System.out.println("second case");
-     
-     
-|Groupwork| Programming Challenge : Truth Tables
-------------------------------------------------------
-  
-.. |venn diagram| raw:: html
-
-   <a href="https://docs.google.com/document/d/1lpjk0LS_KdAddRurMayJZmaFzeyEg4FyhviZcSTXvtU/edit?usp=sharing" target="_blank" style="text-decoration:underline">Venn diagram</a>
-
-Explore the following problems:
-
-
-1. Draw or print a |Venn diagram| of 4 intersecting circles. Put the names of 4 people in each circle. Write down the age of each person in the circles. If two or more people are the same age, put the age in the intersecting parts of their circles. Write a Boolean expression that compares the age of each person in the group using ==, <, >, and &&, for example Ada's age > Alan's age && Alan's age == Grace's age. Then, ask each person in your group their favorite movie. If two or more people have the same favorite movie, put the movie in the intersecting parts of their circles. Write a Boolean expression that compares the favorite movies in the group using ==, !=, and &&, for example Ada's movie == Alan's movie && Alan's movie != Grace's movie. Think of 1 more comparison and write it in the circles and as a Boolean expression. Share the Boolean expressions with the class. (Thank you to Jill Westerlund of Hoover High School and Art Lopez of Sweetwater High School for this activity suggestion).
-
-2. Write the sentence "If it's sunny, OR if the temperature is greater than 80 and it's not raining, I will go to the beach." as a Java if statement using an int variable ``temperature`` and boolean variables ``sunny`` and ``raining``.  If the conditional is true, print out "Go to the beach!". So, you will go to beach on days that it is sunny in any temperature, or you will go to the beach on days when the temperature is over 80 degrees and it's not raining.
-
-3. Complete a truth table for the if statement that you wrote in #2 with columns for sunny, temperature > 80, raining, and go to the beach.
-
-4. Write Java code below to test your if statement and try all the values in your truth table to see if you filled it out correctly. You will need test case for each of the 8 rows in your truth table, for example when sunny is true and false, when raining is true or false, and for a value of temperature greater than 80, for example 90, and less than 80, for example 60.
-
-.. activecode:: code3_5_5
-   :language: java
-   :autograde: unittest
-   :practice: T
-
-   public class TruthTable
-   {
-      public static void main(String[] args)
-      {
-         // Test multiple values for these variables
-         boolean sunny = false;
-         int temperature = 90;
-         boolean raining = false;
-         
-         // Write an if statement for: If it's sunny, 
-         //  OR if the temperature is greater than 80 
-         //     and it's not raining, "Go to the beach!"
-         
-         
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-       @Test
-        public void testMain() throws IOException
-        {
-          String expect = "Go to the beach!";
-          String output = getMethodOutput("main");
-          String code = getCode();
-          boolean passed;
-          if (getCode().contains("boolean sunny = false")) 
-             passed = getResults(expect, output, "Prints Go to the beach! with initial input (sunny = false; temperature = 90; raining = false;)");
-          else
-            passed = getResults("sunny = false","sunny = true", "Set sunny to false to test"); 
-
-          assertTrue(passed);
-        }    
-
-        @Test
-        public void testCodeContains1(){
-          boolean ifStatement = checkCodeContains("conditional: if sunny", "if (sunny");
-          assertTrue(ifStatement);
-        }
-
-        @Test
-        public void testCodeContains2(){
-          boolean ifStatement1 = checkCodeContains("conditional: temperature greater than 80", "temperature > 80");
-
-          assertTrue(ifStatement1);
-        }
-
-         @Test
-        public void testCodeContains4(){
-          boolean ifStatement3 = checkCodeContains("and", "&&");
-          assertTrue(ifStatement3);
-        }
-        @Test
-        public void testCodeContains5(){
-          boolean ifStatement3 = checkCodeContains("or", "||");
-          assertTrue(ifStatement3);
-        }
-    }
 
    
 Summary

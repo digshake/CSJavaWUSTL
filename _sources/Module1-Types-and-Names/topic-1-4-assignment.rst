@@ -389,7 +389,106 @@ The process relies on integer division to determine slices per person, and the m
    Complete the program ``PizzaCalculator`` based on the process shown in the Figure 3 flowchart.  Note the first line of code declares all 4 variables as type int.
    Add assignment statements and print statements to compute and print the slices per person and leftover slices.    Use System.out.println for output.
 
+Storing User Input in Variables
+---------------------------------
 
+.. |repl JavaIOExample| raw:: html
+
+   <a href="https://repl.it/@BerylHoffman/JavaIOExample" target="_blank">repl JavaIOExample</a>
+
+
+Variables are a powerful abstraction in programming because the same algorithm can be 
+used with different input values saved in variables.  
+
+.. figure:: Figures/iostream.png
+    :figclass: align-center
+    :alt: Program input and output
+    
+    Figure 4: Program input and output
+
+
+A Java program can ask the user to type in one or more values.   
+The Java class ``Scanner`` is used to read from
+the keyboard input stream, which is referenced by ``System.in``. Normally the keyboard input is typed into a console window, but since this is running
+in a browser you will type in a small textbox window displayed below the code. 
+The code ``String name = scan.nextLine()`` 
+gets the string value you enter as program input and then stores the value in a variable.  
+
+|CodingEx| **Coding Exercise:** 
+
+
+Run the ``NameReader`` program a few times, typing in a different name. The code works for any name: 
+behold, the power of variables!
+
+
+
+.. .. raw:: html
+
+..    <iframe height="500px" width="100%" style="max-width:90%; margin-left:5%"  src="https://repl.it/@BerylHoffman/JavaIOExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    
+
+
+The Scanner class has several useful methods for reading user input.  A token is a sequence of characters separated by white space.
+
+.. table:: 
+  :align: left
+  :widths: auto
+
+  =========================  ================================================
+  Method                           Description             
+  =========================  ================================================
+  nextLine()                 Scans all input up to the line break as a String     
+  next()                     Scans the next token of the input as a String    
+  nextInt()                  Scans the next token of the input as an int                    
+  nextDouble()               Scans the next token of the input as a double                      
+  nextBoolean()              Scans the next token of the input as a boolean                     
+  =========================  ================================================
+
+
+|CodingEx| **Coding Exercise:** 
+
+   
+   Run the ``AgeReader`` program to read in an integer from the input stream. 
+   You can type a different integer value in the input window shown below the code.
+
+
+
+
+A rhomboid (slanted rectangle) is used in a flowchart to depict data flowing into and out of a program.  
+The previous flowchart in Figure 3 used a rhomboid to indicate program output.  A rhomboid is
+also used to denote reading a value from the input stream.  
+
+.. figure:: Figures/flow_2.png
+    :figclass: align-center
+    :width: 300px
+    :alt: Flow Chart
+    
+    Figure 5: Flow Chart Reading User Input
+
+Figure 5 contains an updated version of the pizza calculator process.  
+The first two steps have been altered to initialize the pizzaSlices and numPeople variables by reading two values from the input stream.
+In Java this will be done using a Scanner object and reading from System.in.
+
+   
+   Complete the ``PizzaCalculatorInput`` program based on the process shown in the Figure 5 flowchart.  
+   The program should scan two integer values to initialize pizzaSlices and numPeople.  Run the program a few times to experiment with different values for input.
+   What happens if you enter 0 for the number of people?  The program will bomb due to division by zero! We will see how to prevent this in a later lesson.  
+  
+
+
+|CodingEx| **Coding Exercise:** 
+
+The ``SumInput`` program reads two integer values from the input stream and attempts to print the sum.  Unfortunately there is a problem
+with the last line of code that prints the sum.  
+  
+   Run the program and look at the result. When the input is ``5`` and ``7``, the output is ``Sum is 57``. 
+   Both of the ``+`` operators in the print statement are performing string concatenation.  
+   While the first ``+`` operator 
+   should perform string concatenation, the second ``+`` operator should perform addition.   
+   You can force the second ``+`` operator to perform addition by putting the arithmetic expression in parentheses ``( num1 + num2 )``.  
+   
+
+More information on using the Scanner class can be found here https://www.w3schools.com/java/java_user_input.asp 
 
 Programming Challenge : Dog Years
 ------------------------------------------------
@@ -400,89 +499,6 @@ in the current year, the year you were born, the year your dog or cat was born
 (if you don't have one, make one up!) in the variables below. Then write formulas in 
 assignment statements to calculate how old you are, how old your dog or cat is, and 
 how old they are in dog years which is 7 times a human year.  Finally, print it all out. 
-
-.. |repl| raw:: html
-
-   <a href="https://repl.it" target="_blank">repl.it</a>
-   
-
-.. |Scanner| raw:: html
-
-   <a href="https://www.w3schools.com/java/java_user_input.asp" target="_blank">Scanner class</a>
-
-.. activecode:: code1_4_15
-   :language: java
-   :autograde: unittest
-   :practice: T
-   :stdin: 2020 2005 2012  
-
-   Calculate your age and your pet's age from the birthdates, and then your pet's age in dog years.
-   If you want an extra challenge, try reading the values using a Scanner.  
-   ~~~~
-   import java.util.Scanner;
-   public class DogAgeChallenge
-   {
-      public static void main(String[] args)
-      {
-         // Fill in values for these variables
-         int currentYear = 
-         int birthYear = 
-         int dogBirthYear = 
-         
-         // Write a formula to calculate your age 
-         // from the currentYear and your birthYear variables 
-         int age = 
-         
-         // Write a formula to calculate your dog's age 
-         // from the currentYear and dogBirthYear variables 
-         int dogAge = 
-         
-         // Calculate the age of your dog in dogYears (7 times your dog's age in human years)
-         int dogYearsAge =
-         
-         // Print out your age, your dog's age, and your dog's age in dog years. Make sure you print out text too so that the user knows what is being printed out.
-        
-      
-      }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-    public class RunestoneTests extends CodeTestHelper
-    {
-       @Test
-       public void testAsgn1() throws IOException
-       {
-           String target = "age = currentYear - birthYear";
-           boolean passed = checkCodeContains("formula for age", target);
-           assertTrue(passed);
-       }
-       @Test
-       public void testAsgn2() throws IOException
-       {
-           String target = "dogAge = currentYear - dogBirthYear";
-           boolean passed = checkCodeContains("formula for dogAge", target);
-           assertTrue(passed);
-       }
-       @Test
-       public void testAsgn3() throws IOException
-       {
-            String target1 = "dogYearsAge = dogAge * 7";
-            String target2 = "dogYearsAge = 7 * dogAge";
-            boolean passed = 
-       checkCodeContainsNoRegex("formula for dogYearsAge using dogAge", target1) || checkCodeContainsNoRegex("formula for dogYearsAge using dogAge in another order", target2);
-            assertTrue(passed);
-       }
-       @Test
-       public void testPrint() throws IOException
-       {
-           String target = "System.out.println";
-           boolean passed = checkCodeContains("print using System.out.println", target);
-           assertTrue(passed);
-       }
- 
-    }
 
 
 Summary

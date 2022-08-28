@@ -43,13 +43,13 @@ You should be thinking about the data types you would use to represent each of t
 
 Just after the ``main`` method declaration, you should have the line:
 
-``ArgsProcessor ap = new ArgsProcessor(args);``
+``Scanner in = new Scanner(System.in);``
 
 It shows an error that can be fixed via the approach described in Studio 1.
 
 After that, you should initialize your inputs using code modeled after the code you read and wrote in studio — see the section on ``Average.``
 
-Eclipse will help you out here: If you have typed ``ap``. and Eclipse will show you the possible ways of continuing. For example, ``nextInt(String)`` is one way to keep going. That call will prompt the user for an ``int`` displaying the provided ``String`` as the prompting message.
+Eclipse will help you out here: If you have typed ``in``. and Eclipse will show you the possible ways of continuing. For example, ``nextInt()`` is one way to keep going. That call will accept an integer that the user types in. It is probably a good idea to print out a prompt first so that your users will know what to type.
 
 3. Arrange for your program to produce output such as the following:
 
@@ -58,15 +58,15 @@ Eclipse will help you out here: If you have typed ``ap``. and Eclipse will show 
 
 ``Average assignment grade: 85.4%``
 
-``Weighted assignment grade (out of 40): 34.16%``
+``Weighted assignment grade (out of 30): 25.62%``
 
 ``Number of extension points: 37``
 
-``Weighted extension grade (out of 12): 11.1%``
+``Weighted extension grade (out of 10): 9.25%``
 
 ``Number of studios attended: 7``
 
-``Weighted studio grade (out of 13): 11.38%``
+``Weighted studio grade (out of 10): 8.75%``
 
 ``Average quiz grade: 97.3%``
 
@@ -78,11 +78,11 @@ Eclipse will help you out here: If you have typed ``ap``. and Eclipse will show 
 
 ``Average exam grade: 93.5%``
 
-``Weighted exam grade (out of 30): 28.05%``
+``Weighted exam grade (out of 45): 42.07%``
 	
 ``Completed course review: false``
 
-``Total Grade: 89.63%``
+``Total Grade: 90.64%``
 
 .. _Notes:
 

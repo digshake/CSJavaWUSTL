@@ -46,7 +46,7 @@ Be careful! A human might enter 5 if 5 sticks are left, and if you are not caref
 
 * Start your work by creating a ``Nim`` class in the ``assignment2`` package.
 
-* Use ``ArgsProcessor`` to prompt for inputs.
+* Use ``Scanner`` to prompt for inputs.
 
 * Your program must continue play until somebody (computer or human) wins.
 

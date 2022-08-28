@@ -43,46 +43,10 @@ Let's practice tracing through loops with many variables. Remember to make a tra
 
 |CodingEx| **Coding Exercise**
 
-Here is a complex loop.  See if you can trace the code on paper by making a tracing table to predict what the code will do when you run it. Click on the this |Java visualizer| link or the Code Lens button to help you step through the code. 
+The ``Trace`` program contains a complex loop.  See if you can trace the code on paper by making a tracing table to predict what the code will do when you run it. 
 
-.. activecode:: code4_5_1
-   :language: java
-   :autograde: unittest
    
-   Can you trace through this code? Add in output statements ``System.out.println("var1: " + var1 + " var2: " + var2);`` before the loop and inside the loop at the end to keep track of the variables and run. Click on the Code Lens button to visualize the code step by step.
-   ~~~~
-   public class Trace
-   {
-       public static void main(String[] args)
-       {
-           int var1 = 3;
-           int var2 = 2;
-    
-           while ((var2 != 0) && ((var1 / var2) >= 0))
-           {
-               var1 = var1 + 1;
-               var2 = var2 - 1;
-           }
-       }
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-      @Test
-      public void testMain() throws IOException
-      {
-        String output = getMethodOutput("main");
-        String expect = "var1: 3 var2: 2\nvar1: 4 var2: 1\nvar1: 5 var2: 0\n";
-        boolean passed = getResults(expect, output, "Expected output from main", true);
-        assertTrue(passed);
-      }
-    }
-  
-
+Can you trace through this code? Add in output statements ``System.out.println("var1: " + var1 + " var2: " + var2);`` before the loop and inside the loop at the end to keep track of the variables and run.
 
 
 Did your trace table look like the following?
@@ -161,39 +125,8 @@ Loops can be also analyzed to determine how many times they run.  This is called
 
 |CodingEx| **Coding Exercise**
 
-
-
-.. activecode::  code4_5_2
-   :language: java
-   :autograde: unittest
    
-   How many stars are printed out in this loop? How many times does the loop run? Figure it out on paper before you run the code.
-   ~~~~
-   public class CountLoop
-   {
-
-      public static void main(String[] args)
-      {
-          for (int i = 3; i < 7; i++)
-               System.out.print("*");   
-      }  
-   }
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-      @Test
-      public void testMain() throws IOException
-      {
-        String output = getMethodOutput("main");
-        String expect = "****\n";
-        boolean passed = getResults(expect, output, "Expected output from main");
-        assertTrue(passed);
-      }
-    }
+   How many stars are printed out in the ``CountLoop`` program? How many times does the loop run? Figure it out on paper before you run the code.
   
 
 If you made a trace table, you would know that the loop runs when i = 3, 4, 5, 6 but finishes as soon as i becomes 7 since that is not less than 7. So, the loop runs 4 times. Or you can use the shortcut formula in the note below.
@@ -209,45 +142,8 @@ In the code above the largest value that allows the loop to run is 6 (which is t
    
 |CodingEx| **Coding Exercise**
 
-
-
-.. activecode::  code4_5_3
-   :language: java
-   :autograde: unittest
    
-   How many stars are printed out by the following loops? How many times do the loops run? Calculate on paper before you run the code.
-   ~~~~
-   public class NestedLoops
-   {
-
-      public static void main(String[] args)
-      {
-          for (int row = 0; row < 5; row++)
-          {
-              for (int col = 0; col < 10; col++)
-              {
-                  System.out.print("*");
-              }
-              System.out.println();
-          }      
-      }  
-   }   
-   ====
-   import static org.junit.Assert.*;
-    import org.junit.*;
-    import java.io.*;
-    
-    public class RunestoneTests extends CodeTestHelper
-    {
-      @Test
-      public void testMain() throws IOException
-      {
-        String output = getMethodOutput("main");
-        String expect = "**********\n**********\n**********\n**********\n**********\n";
-        boolean passed = getResults(expect, output, "Expected output from main");
-        assertTrue(passed);
-      }
-    }
+   How many stars are printed out by the ``NestedLoops`` program? How many times do the loops run? Calculate on paper before you run the code.
   
    
 .. note::

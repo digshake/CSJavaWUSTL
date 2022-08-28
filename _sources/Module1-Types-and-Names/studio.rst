@@ -119,17 +119,17 @@ We aren’t giving you the class for this one, but we will instruct you how to c
 
 4. Click the ``Finish button``, which will create the new file
 
-5. At the top of the ``main`` method, you need to insert the ``ArgsProcessor`` code to accept two integers: ``n1`` and ``n2`` .
+5. At the top of the ``main`` method, you need to insert the ``Scanner`` code to accept two integers: ``n1`` and ``n2`` .
 
-      Refer to other studio code to see how this is done. Depending on how you add the code referring to the ``ArgsProcessor``, Eclipse may flag your code with an error. If so, you can get Eclipse to solve its own problem by mousing over the error (red underline), and using the first suggestion that pops up, namely to import ``ArgsProcessor``. Try to use meaningful messages to prompt for values.
+      Refer to other studio code to see how this is done. Depending on how you add the code referring to the ``Scanner``, Eclipse may flag your code with an error. If so, you can get Eclipse to solve its own problem by mousing over the error (red underline), and using the first suggestion that pops up, namely to import ``Scanner``. Try to use meaningful messages to prompt for values.
 
       **A not so nice prompt:**
 
-      ``int n1 = ap.nextInt("Yo, sup?");``
+      ``int n1 = in.nextInt("Yo, sup?");``
 
       **And a nice  prompt:**
 
-      ``int n1 = ap.nextInt("The first of two integers to be averaged?");``
+      ``int n1 = in.nextInt("The first of two integers to be averaged?");``
 
       Run your program and makes sure it prompts you correctly for its values and ask a TA to check your work at this point.
 
@@ -145,7 +145,7 @@ We aren’t giving you the class for this one, but we will instruct you how to c
 Leap Year
 =====================
 
-You’ll need to make a ``LeapYear class``, just as you made the ``Average`` class in the previous step. You should again insert the ``ArgsProcessor`` code, this time to take in an integer that represents a year.
+You’ll need to make a ``LeapYear class``, just as you made the ``Average`` class in the previous step. You should again insert the ``Scanner`` code, this time to take in an integer that represents a year.
 
 Your task is to determine whether the given year is a leap year or not. A value is a leap year if it meets the following criteria:
 
