@@ -111,9 +111,7 @@ To verify that your installation worked correctly, use eclipse to complete the f
 
 1. Expand the ``exercises`` folder.
 2. Expand the ``src`` folder.
-3. Expand the ``exercises.exercises0`` folder and double click on the ``Hello.java`` file.  It should look something like this:
-
-.. image:: resources/lab0/Eclipse_Hello.png
+3. Expand the ``module1._whyjava`` folder and double click on the ``HelloExample.java`` file.
 
 4. Run the file by **right-clicking on it**, selecting ``Run As``, and then selecting ``Java Application``, like:
 
