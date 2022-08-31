@@ -30,20 +30,20 @@ We use the site `GitHub <https://github.com>`_ to distribute and collect course 
 
 You will also need to create a **Personal Access Token**:
 
-6. After creating your GitHub account, click `here <https://github.com/settings/tokens/new>`_ to be taken back to the GitHub page for creating tokens.
-7. For the note, enter what this token will be used for
+1. After creating your GitHub account, click `here <https://github.com/settings/tokens/new>`_ to be taken back to the GitHub page for creating tokens.
+2. For the note, enter what this token will be used for
 
 .. image:: resources/lab0/GHToken_4_Note.png
 
-8. Make sure the expiration is set to "never". 
+3. Make sure the expiration is set to "never". 
 
 .. image:: resources/lab0/GHToken_7_expiration.png
 
-9. Select the `repo` checkbox. The other checkboxes can be left unchecked
+4. Select the `repo` checkbox. The other checkboxes can be left unchecked
 
 .. image:: resources/lab0/GHToken_5_repo.png
 
-10. Click the ``Generate token`` button
+5. Click the ``Generate token`` button
 
 .. image:: resources/lab0/GHToken_6_button.png
 
