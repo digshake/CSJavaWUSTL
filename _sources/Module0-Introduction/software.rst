@@ -14,7 +14,7 @@ This page will walk you through installing the software that you will need for t
 =====================
 
 We will be using a language called `Java <https://en.wikipedia.org/wiki/Java_(programming_language)>`_ to create and run code on our computers. Before you can execute Java code, you need to install two pieces of software:
-1. The `Java Development Kit (JDK) <https://www.oracle.com/technetwork/java/javase/downloads/>`_. The JDK includes a whole bunch of Java tools that are used to assist in the creation and execution of Java programs. Visit the link above to download the JDK and install it on your computer.
+1. The `Java Development Kit (JDK) <https://www.oracle.com/technetwork/java/javase/downloads/>`_. The JDK includes a whole bunch of Java tools that are used to assist in the creation and execution of Java programs. Visit the link above to download the JDK and install it on your computer. Windows users will likely want the download labelled "x64 Installer." Mac users with the newer chipset (M1 or newer) should select "Arm 64 DMG Installer" and Mac users with older machines should select "x64 DMG Installer." 
 2. Professional software developers use an `Integrated Development Environment (IDE) <http://en.wikipedia.org/wiki/Integrated_development_environment>`_.  As the name describes, it's used to develop computer programs and it integrates several different useful features:
    * It includes a smart editor that helps you create and work with computer code.
    * It can work with other programs called `compilers <http://en.wikipedia.org/wiki/Compiler>`_. Compilers translate the program you write into something the computer can run.  The JDK that you installed included a compiler.
@@ -27,6 +27,27 @@ We'll be using `Eclipse <https://www.eclipse.org/downloads/>`_, a popular IDE th
 We will be using software called `Git <http://git-scm.com/>`_ for "version control".  `Version control systems (VCS) <https://en.wikipedia.org/wiki/Version_control>`_ are a way of life in the modern software-development industry.  They track how team members have changed a project, and they are particularly useful for collaborative projects, where multiple developers work concurrently on the same body of code.
 
 We use the site `GitHub <https://github.com>`_ to distribute and collect course work.  GitHub is a place that hosts git repositories.  You need to create a (free) account.  Please visit `GitHub <https://github.com>`_ and sign up for an account.  Please use your WUSTL email address, although you can add multiple e-mail addresses.  If you already have an account, please be sure to add your WUSTL email. `These directions <https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/adding-an-email-address-to-your-github-account>`_ describe how to add additional email addresses.
+
+You will also need to create a **Personal Access Token**:
+
+6. After creating your GitHub account, click `here <https://github.com/settings/tokens/new>`_ to be taken back to the GitHub page for creating tokens.
+7. For the note, enter what this token will be used for
+
+.. image:: resources/lab0/GHToken_4_Note.png
+
+8. Make sure the expiration is set to "never". 
+
+.. image:: resources/lab0/GHToken_7_expiration.png
+
+9. Select the `repo` checkbox. The other checkboxes can be left unchecked
+
+.. image:: resources/lab0/GHToken_5_repo.png
+
+10. Click the ``Generate token`` button
+
+.. image:: resources/lab0/GHToken_6_button.png
+
+**Keep this tab open** as you will need the personal access token in one of the following steps.
 
 3. Accepting the exercises
 =====================
@@ -67,24 +88,7 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 
 .. image::  resources/lab0/EclipseImport_4_SourceRepo.png
 
-6. Before you enter your username and password, you need to create a personal access token. To do this, click `here <https://github.com/settings/tokens/new>`_ to be taken back to the GitHub page for creating tokens.
-7. For the note, enter what this token will be used for
-
-.. image:: resources/lab0/GHToken_4_Note.png
-
-8. Make sure the expiration is set to "never". 
-
-.. image:: resources/lab0/GHToken_7_expiration.png
-
-9. Select the `repo` checkbox. The other checkboxes can be left unchecked
-
-.. image:: resources/lab0/GHToken_5_repo.png
-
-10. Click the ``Generate token`` button
-
-.. image:: resources/lab0/GHToken_6_button.png
-
-11. Returning to Eclipse, enter your **GitHub** username and the token you just generated as the password.  *Do not use your GitHub password.* (You should select ``Store in Secure Store`` so that you don't have to re-enter your password every time you accept an assignment). Select ``Log in`` when ready
+11. Enter your **GitHub** username and the **Personal Access Token** you generated as the password.  *Do not use your GitHub password.* (You should select ``Store in Secure Store`` so that you don't have to re-enter your password every time you accept an assignment). Select ``Log in`` when ready
 
 .. image:: resources/lab0/EclipseImport_5_Login.png
 
