@@ -120,7 +120,7 @@ Open the file and run the program. Uh oh, looks like there might be another erro
 
 As mentioned in `the software setup <setup.html>`_, we'll be using Git this semester. Git is a common tool that allows programmers to collaborate more effectively. You'll need to use git on every assignment in this course to submit your work, so the next part of the studio aims to show you how to do some basic Git operations.
 
-First, select one person and have them type a message to your group mates in the `Message.java` file. In order for this message to be made available to the other group members, it must first be **pushed** to the GitHub website. To do this, right click the project then select **Team -> Commit..**
+First, **select one person** and have them type a message to your group mates in the `Message.java` file. In order for this message to be made available to the other group members, it must first be **pushed** to the GitHub website. To do this, right click the project then select **Team -> Commit..**
 
 .. image:: resources/lab0/Eclipse_Commit.png
 
@@ -134,7 +134,7 @@ Press the **Preview** button then the push button. You should hopefully see a wi
 
 At this point you should visit the GitHub page for your repository (that you created in the very beginning of the studio). If you navigate to the Message.java file, you should see the changes that you made. The other members of your group still don't have the message on their computers though, so let's take care of that next.
 
-In order to receive the message on their computers, the other group members will have to perfom a **pull**. To do this, right click the project then select **Team -> Pull**
+In order to receive the message on their computers, the **other group members** will have to perfom a **pull**. To do this, right click the project then select **Team -> Pull**
 
 .. image:: resources/lab0/Eclipse_Pull.png
 
