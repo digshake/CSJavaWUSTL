@@ -24,9 +24,9 @@ The example given in the book is reproduced below:
 
 ::
 
-* * . . .    * * 1 0 0
-. . . . .    3 3 2 0 0
-. * . . .    1 * 1 0 0
+	* * . . .    * * 1 0 0
+	. . . . .    3 3 2 0 0
+	. * . . .    1 * 1 0 0
 
 
 You must produce output that matches the form you see above:
