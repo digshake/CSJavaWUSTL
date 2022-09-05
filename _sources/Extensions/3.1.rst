@@ -4,14 +4,14 @@ Extension 3.1: Pascal's Triangle (3 points)
 
 Authors
 
-* Robert Sedgewick (book)
+* Robert Sedgewick
 
 Take a look at the Wikipedia page on `Pascal\'s Triangle <http://en.wikipedia.org/wiki/Pascal%27s_triangle>`_.  We will implement this using a two-dimensional array, so it may be easier to imagine the entries left-justified rather than in triangular form:
 
 ::
 
-			column
-			0  1  2  3  4
+	        column
+	        0  1  2  3  4
 	row
 	0       1
 	1       1  1
@@ -26,7 +26,7 @@ Viewed as a two-dimensional array, the computation is specified as follows, for 
 
 * If ``c`` is 0, then the entry is ``1`` .
 * If ``c``==``r``, then the entry is ``1`` .
-* If ``r`` < 0 or ``c`` < 0 or ``c`` >``r`` , then the entry is ``0`` and is not shown.
+* If ``r`` < 0 or ``c`` < 0 or ``c`` > ``r`` , then the entry is ``0`` and is not shown.
 * Everywhere else, the entry is computed as the sum of the entries at:
 	* ``r-1`` , ``c``
 	* ``r-1`` , ``c-1``

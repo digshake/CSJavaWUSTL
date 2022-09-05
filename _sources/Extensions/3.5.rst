@@ -3,6 +3,7 @@ Extension 3.5: Data Sorting and Analysis (5 points)
 =========================
 
 Authors
+
 * Brennan Morell
 * Jarett Gross
 
@@ -14,7 +15,7 @@ A big part of Computer Science revolves around finding ways to sort data to be o
 * `Quick Sort <https://en.wikipedia.org/wiki/Quicksort>`_
 
 
-We will implement our sorting using a naive process of repeatedly selecting the smallest value from a data set of type `int[]` and swapping it to the front of the collection. In computer science, this is called a [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort).
+We will implement our sorting using a naive process of repeatedly selecting the smallest value from a data set of type `int[]` and swapping it to the front of the collection. In computer science, this is called a `Selection Sort <https://en.wikipedia.org/wiki/Selection_sort>`_.
 
 Procedure
 =========================
@@ -30,16 +31,14 @@ Procedure
 4. After processing all of the numbers entered, the data will be sorted using the following naive algorithm:
 
 
-	* Create an outer loop to limit the number of scans to be equal to the size of the collection.
-     
-	* Create an inner loop to iterate over the unsorted portion of the array, each time selecting the minimum value (keep track of this value and its index in the array)
+* Create an outer loop to limit the number of scans to be equal to the size of the collection.
+ 
+* Create an inner loop to iterate over the unsorted portion of the array, each time selecting the minimum value (keep track of this value and its index in the array)
 
-		The unsorted portion will always be the sub-array with indexes ``sortCount`` to ``size`` inclusive.
-	
-    * Swap this minimum value with the value currently at the head of the unsorted portion of the array
-    
-	
-	
+	The unsorted portion will always be the sub-array with indexes ``sortCount`` to ``size`` inclusive.
+
+* Swap this minimum value with the value currently at the head of the unsorted portion of the array
+
 .. image:: http://www.piratelearner.com/static/media/images/admin/2015/10/13/selection.gif
 
 5. After the sorting the data, we will take advantage of its useful organization to compute the following statistics:
