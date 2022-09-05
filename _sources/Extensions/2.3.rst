@@ -40,7 +40,7 @@ The steps you might consider are as follows:
 3. You next can make the concept of the random player real. This means declaring a variable name of a suitable type to represent this concept, establishing the variable\'s initial value.
 
   What is the concept of the player? There are many details about the
- player that appear unnecessary: the player\'s name, address, cell phone number.
+  player that appear unnecessary: the player\'s name, address, cell phone number.
 
   On the other hand, if we are going to play RPS, we need to know what move the player has made. This is the important concept.
 

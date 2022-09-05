@@ -26,3 +26,10 @@ a {
 .strike {
   text-decoration: line-through;
 }
+
+blockquote {
+	border-left: none !important;
+	margin: none !important;
+	font-size: initial !important;
+	padding: 5px 40px !important;
+}
