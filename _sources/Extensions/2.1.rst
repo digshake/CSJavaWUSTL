@@ -39,6 +39,7 @@ Notes
 * Each ``Picture`` has a width and a height, and these can be obtained for a ``Picture p`` as follows:
 
 ::
+
 	int width  = p.width();
 	int height = p.height();
 	
@@ -46,12 +47,14 @@ Notes
 * To find the ``Color`` of a pixel at location ``x``, ``y``, you use
 
 ::
+
 	Color c = source.get(x,y);``
  	
 
 * To set the ``Color`` of a pixel at location ``x``, ``y`` to the color ``c``, you use
 
 ::	
+
 	target.set(x,y,c);
 	
 Instructions
