@@ -1,0 +1,99 @@
+=================
+Extension 2.3: Rock-Paper-Scissors (5 points)
+=================
+
+**Authors**
+
+* `Ron Cytron <http://www.cs.wustl.edu/~cytron/>`_
+
+The game of `Rock-Paper-Scissors <https://en.wikipedia.org/wiki/Rock-paper-scissors>`_ (hereafter, RPS) is a two-player game that can be used to avoid boredom and to settle disputes.
+
+In this lab you will simulate two players: one plays randomly while
+the other rotates faithfully from rock to paper to scissors. Your task is
+to simulate this game and to report the fraction of games won by
+each of the two players.
+
+Procedure
+==================
+
+Find the ``RockPaperScissors`` package in the labs source folder.
+Create a new class ``RPS`` there, and you are ready to begin your development.
+
+It is suggested that you develop code in small steps, so that you can proceed from confidence to confidence, and not have a big pile of untested code to debug at the end.
+
+> To help motivate this approach, the TAs will not help you unless you have shown progress based on these steps. Ask for help as soon as you need it, but please follow the steps below > so that you can gain confidence.
+
+The steps you might consider are as follows:
+
+1. What inputs does your program need? First, get your program to accept those inputs and print them out so you can see they are set properly.
+
+	> This means that you should type in the code to prompt the user for the input(s), print out the values of those inputs, and that\'s all for now. Run your program at this point
+	> and make sure it is behaving as you want.
+	> What inputs do you need? There\'s no reason to ask for more than is necessary. At a minimum, you have to know how many rounds of RPS to play before printing the resulting
+	> statistics
+
+2. Next, create a loop that simply iterates the desired number of times.
+
+	> Again, run your program. You may want to print something out in your loop so you can
+	> verify that the loop works correctly.
+
+3. You next can make the concept of the random player real. This means declaring a variable name of a suitable type to represent this concept, establishing the variable\'s initial value.
+
+	> What is the concept of the player? There are many details about the
+	> player that appear unnecessary: the player\'s name, address, cell phone number.
+	>
+	> On the other hand, if we are going to play RPS, we need to know what move the player has made. This is the important concept.
+	>
+	> How do we represent the choice of rock, paper, or scissors?
+	> This is left up to you, so try for something simple. It may help to recall how Paul
+	> Revere was `poetically <http://www.nationalcenter.org/PaulRevere%27sRide.html>`_ "The Midnight Ride of Paul Revere") told of how the British were coming: one if by land,
+	> two if by sea.
+	>
+	> In otherwords, an ``int`` encoded the manner of invasion.
+	>
+	> If there were only two choices, why didn\'t Paul use a ``boolean``?
+	> Sadly, `Boole <https://en.wikipedia.org/wiki/George_Boole>`_ "George Boole wiki")
+	> was not yet born
+
+4. In your loop, you should modify this variable\'s value to reflect the associated player choosing randomly among rock, paper, and scissors each iteration.
+
+	> You\'ve seen how to use the random number generator to pick between two outcomes.
+	> Now you must pick between three.
+
+5. Run your program and verify that the player is choosing randomly.
+
+6. OK, now for the other player. This player must cycle among rock, paper, and scissors. Let\'s make this player real by declaring a variable name of a suitable type and establishing its initial value.
+
+	> In the interest of consistency and simplicity, you should use the same
+	> encoding for this player in terms of what value means rock, what value means
+	> paper, and what value means scissors.
+
+7. In your loop, arrange for this player to choose its next move based on its previous move. If the move used to be rock, it\'s now paper. If the move used to be paper, it\'s now scissors. If the move was scissors, it\'s now rock.
+
+8. Run your program again and make sure the cycling player is behaving properly.
+
+	> To verify the cycling player\'s behavior, you will probably want to print out
+	> the values representing that player\'s move each iteration.
+	>
+	> It won\'t take many iterations to see if this is working or not: 10 should do.
+
+9. Each player has made a move; now let\'s see who won. First, pick a name, type, and initial value for the number of wins a player has. Do the same for the other player.
+
+	> Why do we need a variable to keep track of each player\'s wins?
+	> Why not keep track of only one player\'s wins and assume the other player won the
+	> other rounds?
+
+10. In the loop, determine who won based on the current value of each player\'s move.
+
+	> Use the `rules <https://en.wikipedia.org/wiki/Rock-paper-scissors#Game_play>`_
+	> of RPS to adjudicate the winner,
+	> and credit the win count properly.
+
+11. After the loop completes, report the fraction of wins awarded to each of the two players.
+
+12. Test your code by trying it with just one iteration, two iterations, and three iterations. Make sure it\'s working before you set it loose.
+
+13. Run your code several times, each on 1000 iterations.
+
+14. Based on what you see, did one player tend to win more often than the other?
+

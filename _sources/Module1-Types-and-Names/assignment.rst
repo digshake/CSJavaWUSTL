@@ -101,7 +101,7 @@ Notes
 
 * Note that we allow you to miss two studios without penalty. So while there are 10 studios in total, attending more than 8 studios does not have an effect on the overall course grade. Or another way to think about it: two studios are dropped, leading to a maximum studio score of 8.
 
-* The percentages shown for the weighted grades have at most two digits of precision after the decimal point. You should print percentages in exactly this format. You do not have to round any values that are entered through ``ArgsProcessor`` even though they may appear rounded in our example. It’ll take some thought, but it can be done using things that have been covered: ``int`` operations, ``double`` operations, casting, and ``Math.round(..)``. (You are not allowed to use ``printf`` or other functions you may find that would accomplish this task. You have to figure out how to do it using what you have learned in this module.)
+* The percentages shown for the weighted grades have at most two digits of precision after the decimal point. You should print percentages in exactly this format. You do not have to round any values that are entered through ``Scanner`` even though they may appear rounded in our example. It’ll take some thought, but it can be done using things that have been covered: ``int`` operations, ``double`` operations, casting, and ``Math.round(..)``. (You are not allowed to use ``printf`` or other functions you may find that would accomplish this task. You have to figure out how to do it using what you have learned in this module.)
 
 * Review how the the random-number generator, ``Math.random()`` works. Define a ``boolean courseReview`` and assign its value by comparing a random number with ``0.5``.
 

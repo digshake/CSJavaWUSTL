@@ -1,0 +1,65 @@
+==================
+Extension 1.1: Speed Limit Fine Calculator (3 points)
+==================
+
+Authors:
+
+  * `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
+  * Michael Waldman
+  * Alan Waldman
+  * Cameron Wong
+
+You will calculate the fine one would have to pay for going over the speed limit in the state of Massachusetts according to the `Massachusetts DMV <http://www.dmv.org/ma-massachusetts/traffic-tickets.php>`_.
+
+By completing this work, you  demonstrate that you can:
+
+  * Create a Java class on your own
+  * Arrange for the class to take inputs of interest
+  * Compute output values of interest
+  * Produce meaningful output based on your computations
+
+Have you ever received a ticket for speeding?  If so, how do you feel about it? Were you going more or less than 10 miles over the speed limit?
+
+The objective of this extension is  to allow you to practice **assignment statements** and **data types** as well as for you to create a practical tool, though of course we hope you never need to compute a speeding fine for yourself.
+
+Consider the following story: 
+
+* Pat is driving a Mini Cooper at 85 MPH on a road that has the speed limit of 60 MPH.
+* Pat is therefore going 25 MPH over the speed limit.
+* If Pat is caught speeding, what would be Pat's fine?  
+
+	We'll model the fine after Massachusetts law:
+
+	* A fine is assessed only if the driver's speed is over the speed limit.
+	* For the first 10 MPH over the speed limit, the fine includes both a $50 base fine and a $50 surcharge.
+	* If the driver is more than 10 MPH over the limit the fee increases.  For each additional MPH past the first ten and additional  $10 it added to the fine.
+	* Thus, Pat owes $100 for going at least 10 MPH over the speed limit (50 base fine+50 surcharge = 100).  To this, we add $10 for each additional MPH.  Pat was going 15MPH above the 70MPH that triggered the ticket.  Consequently, we add  $10 * 15 = $150 for the additional 15 MPH.  Thus, Pat owes $250.
+ 
+Procedure
+==================
+
+
+1. First, create a **SpeedLimit** Java class in the ``speeding`` package of the ``extensions`` source folder.
+2. Consider and decide upon the **data type** to represent information of interest to this problem.
+3. You must ask the user for some input values. Use 
+4. Arrange for your program to produce output such that:
+   * For the first 10 miles over the speed limit, the fine is 100 no matter what
+   * For any additional mile past the first ten, 10 dollars are added to the fine
+
+	> Beware: Make sure your program works correctly for 0 MPH and all possible positive speeds.
+5. Finally, your program should print how many miles you were going over the speed limit and how much money the fine will be.
+
+Sample output based on the example story above:
+
+<pre><code class="plaintext">You reported a speed of 85 MPH for a speed limit of 60 MPH.
+You went 25 MPH over the speed limit.
+Your fine is $250.
+</code></pre>
+
+You must compute the required information **without** using `if`-statements.  To evaluate an expression conditionally, use the `ternary <http://alvinalexander.com/java/edu/pj/pj010018>`_ operator, an example of which follows:
+
+::
+	int x = (y > 7) ? 12 : 5;
+
+
+The variable ``x`` is set to ``12`` if ``y``'s value is greater than ``7``;  otherwise ``x`` is set to ``5``.

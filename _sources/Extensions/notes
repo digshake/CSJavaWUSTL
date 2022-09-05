@@ -1,0 +1,9 @@
+conway tester needs to test for a given cell:
+
+If something should be live, it stays live
+If something shoudl be dead, it dies
+
+
+(blinker is a good thing to try)
+
+Bug was from isAlive always returning false

@@ -1,0 +1,71 @@
+=========================
+Extension 3.7: Minesweeper (8 points)
+=========================
+
+Authors
+* `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
+
+You should see a ``minesweeper`` package in the ``extensions`` source folder.
+
+* The file you will modify for this assignment is ``MineSweeper.java``.  It is already in the respository.
+
+* That file already prompts for the number of columns, rows, and the probability of a bomb.
+
+	Do not change that part of the file.  The file is very clear about where you are to insert your code.
+
+* Create the output as shown below
+
+You **must** use the ``\*`` and ``.`` characters as shown.  Otherwise, the visual version of this game (described below) will not work correctly.
+
+Your output **must** include both the left and right parts of each line as described below.
+
+The example given in the book is reproduced below:
+
+<pre><code class="plaintext">* * . . .    * * 1 0 0
+. . . . .    3 3 2 0 0
+. * . . .    1 * 1 0 0
+</code></pre>
+
+You must produce output that matches the form you see above:
+
+* Each line's **left part** displays the locations of the bombs (denoted by ``*``) and the non-bombs (denoted by ``.``).
+
+* Each line's **right part** reports a ``*`` where there is a bomb and the count of bombs that border that cell where there is *not* a bomb.
+
+	For example: 
+
+	1. The leftmost entry of the second row has no bomb.  In the left part of the second row, a dot is shown.  Its corresponding entry in the right part of the second row shows the number ``3``, which is the sum of the bombs found on that cell\'s eight neighbors. Because this cell is left-most in the grid, some of its neighbors do not exist, but they are thus assumed to have no bombs.
+
+	2. The mine field\'s central entry also has no bomb and shows a ``2`` in the right part of the output.   Those two bombs can be found in the upper-left and lower-left cells with respect to that center cell\'s eight neighbors.
+
+
+	The book provides a nice hint about an implementation that eliminates special cases around the edges of the field.
+
+* Run ``MineSweeper`` as a Java Application and be sure your results look correct before you demo.
+
+	Test on very small (say, 3x2) mine fields at first.  Enlarge the fields and test again, making certain the output is correct.
+
+	Make sure it includes both the left and right parts of each line as described above.
+
+* When your program is complete (or, actualy, even prior to that), you can run a visual version of your game by running ``Game`` as a Java Application.
+
+	* Our ``Game`` program runs your ``MineSweeper`` code, but hijacks the output for its own use.
+
+	The output you produce is therefore the *interface* between:
+
+	* Your code that computes the maze, in particular, the location of bombs, and
+
+	* The class-provided code that runs the visual version of the game.
+
+	That class-provided code has tried to be tolerant of the output you might produce.  If it is not working for you, let us know.
+
+	* It builds a visual board based on your output.
+
+	* It also shows the output you produced in the console window.
+
+
+	To play the visual version of the game:
+
+	* Right-click on squares where you think there is a bomb.
+
+	* Left-click on a square that has no bomb to show you the count of the number of bombs that border that square.

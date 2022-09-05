@@ -1,0 +1,48 @@
+=======================
+Extension 3.1: Pascal's Triangle (3 points)
+=======================
+
+Authors
+
+: Robert Sedgewick (book)
+
+Take a look at the Wikipedia page on `Pascal\'s Triangle <http://en.wikipedia.org/wiki/Pascal%27s_triangle>`_.  We will implement this using a two-dimensional array, so it may be easier to imagine the entries left-justified rather than in triangular form:
+
+<pre><code class="plaintext">        column
+        0  1  2  3  4
+row
+0       1
+1       1  1
+2       1  2  1
+3       1  3  3  1
+4       1  4  6  4  1
+        .
+        .
+        .
+</code></pre>
+
+Viewed as a two-dimensional array, the computation is specified as follows, for each entry at row ``r`` and column ``c``:
+
+* If ``c`` is 0, then the entry is ``1``.
+* If ``c``==``r``, then the entry is ``1``.
+* If ``r``<0 or ``c``<0 or ``c``>``r``, then the entry is ``0`` and is not shown.
+* Everywhere else, the entry is computed as the sum of the entries at:
+	* ``r-1``,``c``
+	* ``r-1``,``c-1``
+
+Procedure
+=======================
+
+1. Open the ``PascalsTriangle`` class, found in the ``arrays`` package of the ``extensions`` folder.
+
+2. Insert code to obtain from the user the value *N* which is the number of rows you should compute of the triangle.
+
+3. Instantiate the two-dimensional array needed to hold the results.
+
+	>Java lets you do this as a *ragged* array, where each row can be of a different length.  
+	>
+	>You are welcome to instantiate the array that way, but it is simpler and equally acceptable to instantiate the array with the same number of columns in each row.  Java syntax for that is *much* simpler. An example of this appears in [``SelfAvoidingWalk``](https://introcs.cs.princeton.edu/java/14array/SelfAvoidingWalk.java.html),which is contained in the [Computer Science: An Interdisciplinary Approach](https://introcs.cs.princeton.edu/java/home/), a text book commonly used for courses like 131 and which was used for some of the resources and examples used in 131.
+
+4. Compute the triangle as a two-dimensional array and print the results  left-justified as shown above.
+
+5. *Demo a version that prints using the above format*, but for extra fun try to print the triangle centered as shown on the `Wikipedia page <http://en.wikipedia.org/wiki/Pascal%27s_triangle>`_.
