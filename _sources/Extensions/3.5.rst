@@ -14,7 +14,7 @@ A big part of Computer Science revolves around finding ways to sort data to be o
 * `Quick Sort <https://en.wikipedia.org/wiki/Quicksort>`_
 
 
-> We will implement our sorting using a naive process of repeatedly selecting the smallest value from a data set of type `int[]` and swapping it to the front of the collection. In computer science, this is called a [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort).
+We will implement our sorting using a naive process of repeatedly selecting the smallest value from a data set of type `int[]` and swapping it to the front of the collection. In computer science, this is called a [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort).
 
 Procedure
 =========================
@@ -23,22 +23,22 @@ Procedure
 
 2. Prompt the user for the ``size`` of the collection
 
-	> If the user enters a negative number, continue to prompt them with a useful message until they enter a positive number.
+	If the user enters a negative number, continue to prompt them with a useful message until they enter a positive number.
 
 3. Continue to prompt the user to input numbers one at a time, using an array to store the input data.
 
 4. After processing all of the numbers entered, the data will be sorted using the following naive algorithm:
 
 
-	> * Create an outer loop to limit the number of scans to be equal to the size of the collection.
-    > 
-	> * Create an inner loop to iterate over the unsorted portion of the array, each time selecting the minimum value (keep track of this value and its index in the array)
-	>
-	> 	The unsorted portion will always be the sub-array with indexes ``sortCount`` to ``size`` inclusive.
-	>
-    > * Swap this minimum value with the value currently at the head of the unsorted portion of the array
-    >
-	>
+	* Create an outer loop to limit the number of scans to be equal to the size of the collection.
+     
+	* Create an inner loop to iterate over the unsorted portion of the array, each time selecting the minimum value (keep track of this value and its index in the array)
+
+		The unsorted portion will always be the sub-array with indexes ``sortCount`` to ``size`` inclusive.
+	
+    * Swap this minimum value with the value currently at the head of the unsorted portion of the array
+    
+	
 	
 .. image:: http://www.piratelearner.com/static/media/images/admin/2015/10/13/selection.gif
 
@@ -56,10 +56,11 @@ Procedure
 
 6. Finally, arrange for your output to display the sorted dataset and accompanying statistics in the following manner:
 
-<pre><code class="plaintext">1 2 3 4 5 
-Mean: 3.0
-Median: 3.0
-Min: 1
-Max: 5
-Range: 4
-</code></pre>
+::
+
+	1 2 3 4 5 
+	Mean: 3.0
+	Median: 3.0
+	Min: 1
+	Max: 5
+	Range: 4
