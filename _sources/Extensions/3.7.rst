@@ -3,6 +3,7 @@ Extension 3.7: Minesweeper (8 points)
 =========================
 
 Authors
+
 * `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
 
 You should see a ``minesweeper`` package in the ``extensions`` source folder.
@@ -21,10 +22,12 @@ Your output **must** include both the left and right parts of each line as descr
 
 The example given in the book is reproduced below:
 
-<pre><code class="plaintext">* * . . .    * * 1 0 0
+::
+
+* * . . .    * * 1 0 0
 . . . . .    3 3 2 0 0
 . * . . .    1 * 1 0 0
-</code></pre>
+
 
 You must produce output that matches the form you see above:
 

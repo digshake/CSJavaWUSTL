@@ -39,7 +39,7 @@ Procedure
 
 * Swap this minimum value with the value currently at the head of the unsorted portion of the array
 
-.. image:: http://www.piratelearner.com/static/media/images/admin/2015/10/13/selection.gif
+.. image:: selection.gif
 
 5. After the sorting the data, we will take advantage of its useful organization to compute the following statistics:
 
