@@ -27,7 +27,6 @@ Table of Contents
    Module1-Types-and-Names/toctree.rst
    Module2-Choice-and-Iteration/toctree.rst
    Module3-Arrays/toctree.rst
-   Extensions/toctree.rst
 
 Index
 ::::::::::::::::::
