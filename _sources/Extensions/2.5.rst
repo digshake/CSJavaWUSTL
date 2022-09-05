@@ -27,7 +27,7 @@ The code for this assignment will be unit-tested, which means that we have an au
 
 ::
 
-		#
+	    #
 	   ##
 	  ###
 	 ####
@@ -51,9 +51,9 @@ The code for this assignment will be unit-tested, which means that we have an au
 	 ######
 	  #####
 	   ####
-		###
-		 ##
-		  #
+	    ###
+	     ##
+	      #
 
 
 4. Make a mountain that resembles pattern 2, but flipped upside down. Below is shown a size 4 mountain for this pattern.
@@ -72,7 +72,7 @@ Run the unit test by right (control) clicking on ``MarioTest`` and running it as
 
 * Avoid extra spaces at the beginning of lines
 
-* Avoid using more ``ln``s than needed.  For example, if the size is 5 there should be exactly 5 things that move to a new line (5 ``println``s or 5 ``\n``s or a mix of the two.)
+* Avoid using more ``ln`` s than needed.  For example, if the size is 5 there should be exactly 5 things that move to a new line (5 ``println`` s or 5 ``\n`` s or a mix of the two.)
 
 If you see a green bar, then the test ran correctly. If it's red, you have a problem with your solution. The output shown in the console window should help you determine what is wrong.
 
