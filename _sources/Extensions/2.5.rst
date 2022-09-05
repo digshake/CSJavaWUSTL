@@ -10,27 +10,29 @@ Authors:
 
 `Mario <https://en.wikipedia.org/wiki/Mario_(franchise)>`_, created in 1981 by Nintendo, is a classic video game starring the fictional Italian character Mario. In the assignment,  loops printing hashtags will be used to build the block mountains as seen in the picture. 
 
-.. image:: Super-Mario-Bros.-3.jpg)
+.. image:: Super-Mario-Bros.-3.jpg
 
 The code for this assignment will be unit-tested, which means that we have an automatic way to determine if your code is producing the correct output. For the unit testing to work, you must follow the instructions below carefully.
 
 * Find and open the Java class Mario in the mario package of your extensions folder.
 * Your program must first prompt the user for two integer inputs using ``Scanner``. These must be requested in the following order:
 
-	* ``size``: What is the size of the mountain? In the picture above, the mountain has size 5 because there are 5 levels of squares, and the widest part of the mountain, at its bottom, is also 5 squares. A mountain will always be a square structure containing size×size elements, some of which are hashtags (#) and some of which are blanks.
+	``size``: What is the size of the mountain? In the picture above, the mountain has size 5 because there are 5 levels of squares, and the widest part of the mountain, at its bottom, is also 5 squares. A mountain will always be a square structure containing size×size elements, some of which are hashtags (#) and some of which are blanks.
 	
-	* ``pattern``: We will use an integer in the range 1 to 4 to indicate which pattern your program should produce. In the picture above, pattern 1 is shown. The other patterns are explained below
+	``pattern``: We will use an integer in the range 1 to 4 to indicate which pattern your program should produce. In the picture above, pattern 1 is shown. The other patterns are explained below
 
 * Your program then prints the mountain of the specified size and pattern.
 
 1. Mario runs from left to right. Create a mountain that he would have to climb, as shown in the example for a size 5 mountain.
 
-<pre><code class="plaintext">    #
-   ##
-  ###
- ####
-#####
-</code></pre>
+::
+
+|    #
+|   ##
+|  ###
+| ####
+|#####
+
 
 2. Create a mountain that he would descend, as shown below for a size 3 mountain.
 
