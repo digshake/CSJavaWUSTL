@@ -23,17 +23,18 @@ Notes
 	* *x* pixels to the right of the leftmost edge of the picture
 	* *y* pixels down from the top edge of the picture
 
-	Thus, *(0,0)* is the top left corner of the picture.
+Thus, *(0,0)* is the top left corner of the picture.
 
 * Pixel addressing follows the common Java convention:  if there are *w* horizontal pixels, then 0 is the first (leftmost) and *w-1* is the last (rightmost).
 
 * Almost all of the methods are written in terms of two ``Picture`` parameters:
 
 	``source``:  the picture to be used as input to your transformation
+	
 	``target``:  the picture area to be used as output from your transformation
 
 
-	There is just one exception:  the ``gradient`` method produces its output without needing a source.  Its only parameter is ``target``.
+There is just one exception:  the ``gradient`` method produces its output without needing a source.  Its only parameter is ``target``.
 
 
 * Each ``Picture`` has a width and a height, and these can be obtained for a ``Picture p`` as follows:
