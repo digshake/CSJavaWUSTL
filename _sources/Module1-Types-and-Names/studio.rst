@@ -28,13 +28,6 @@ Studios are a chance to work with other students to learn course material by act
   + Each member of your team is responsible for ensuring that all members completely understand your work and the topics being used.
 
 
-Academic Integrity Agreement
-=====================
-
-
-Today, course staff will guide you in completing an Academic Integrity Agreement.
-
-Your group should review and discuss the `Examples <https://wustl.instructure.com/courses/90796/pages/course-policies#Examples>`_ of what you can and can’t do. When everyone is clear about what is allowed, the TA/instructor will tell you to proceed.
 
 Studio Setup and Procedure
 =====================
