@@ -41,7 +41,7 @@ Studio Setup and Procedure
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
 
-1. Have **one person** in your group create a new team by clicking `here <https://classroom.github.com/a/fQdFUNfj>`_ and going to the ``OR Create a new team`` box at the bottom of the page.
+1. Have **one person** in your group create a new team by clicking `here <https://classroom.github.com/a/VfsWMrnL>`_ and going to the ``OR Create a new team`` box at the bottom of the page.
 
    1. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
@@ -118,13 +118,15 @@ We aren’t giving you the class for this one, but we will instruct you how to c
 
       **A not so nice prompt:**
 
-      ``int n1 = in.nextInt("Yo, sup?");``
+      ``System.in.println("Yo, sup?");``
+	  ``int n1 = in.nextInt();``
 
       **And a nice  prompt:**
 
-      ``int n1 = in.nextInt("The first of two integers to be averaged?");``
+      ``System.in.println("The first of two integers to be averaged?");``
 
       Run your program and makes sure it prompts you correctly for its values and ask a TA to check your work at this point.
+	  ``int n1 = in.nextInt();``
 
 6. Finish the class so it prints out the average of its two integer inputs.
 
