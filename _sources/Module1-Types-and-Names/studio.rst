@@ -118,7 +118,7 @@ We aren’t giving you the class for this one, but we will instruct you how to c
 
       **A not so nice prompt:**
 
-      ``System.in.println("Yo, sup?");``
+      ``System.out.println("Yo, sup?");``
 	  ``int n1 = in.nextInt();``
 
       **And a nice  prompt:**

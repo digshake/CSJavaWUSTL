@@ -78,11 +78,11 @@ Eclipse will help you out here: If you have typed ``in``. and Eclipse will show 
 
 ``Average exam grade: 93.5%``
 
-``Weighted exam grade (out of 45): 42.07%``
+``Weighted exam grade (out of 45): 42.08%``
 	
 ``Completed course review: false``
 
-``Total Grade: 90.64%``
+``Total Grade: 89.64%``
 
 .. _Notes:
 
@@ -93,7 +93,7 @@ Notes
 
 * Don’t try to write this all at once. Instead, build one piece at a time and test it. This will make it easier to figure out what’s going wrong when your program doesn’t work as you expect. (This is called `incremental development <https://en.wikipedia.org/wiki/Incremental_build_model>`_ and this approach will serve you well all semester).
 
-* You’ll need the weights for each course component, which can be found on the `course policies page <https://wustl.instructure.com/courses/69918/pages/course-policies>`_.
+* You’ll need the weights for each course component, which can be found on the `course policies page <https://wustl.instructure.com/courses/90796/pages/course-policies>`_.
 
 * Pay close attention to how you compute the final grade in the course. Rounded numbers look better when printed, but which values will lead to a more accurate result?
 
