@@ -1,110 +1,82 @@
 =============
-Extension 2.1: Image Processor With Iteration (6 points)
+Extension 2.1: Image Processor With Iteration (7 points)
 =============
 
-**Authors**
+# Authors
 
-* `Ron Cytron <http://www.cs.wustl.edu/~cytron/>`_
+* `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
 * Ken Goldman
 * Logan Sorentino
-
-Manipulating an Image Raster
-==================
-
-In the ``imagetransforms`` package, modify the provided ``Transforms`` Java program to implement the methods as described below. Your methods will use iteration (either ``while`` loops or ``for`` loops) to operate on the pixels of a picture.
-
-Notes
--------
-
-* To run this extension, right (control) click on ``Main`` and choose ``Run as...`` then ``Java Application``.  
-
-*  The `Picture <https://introcs.cs.princeton.edu/java/stdlib/javadoc/Picture.html>`_ class has been provided to you. The coordinates are expressed using the standard in computer science graphics:  the coordinate *(x,y)* denotes the pixel that is 
-
-	* *x* pixels to the right of the leftmost edge of the picture
-	* *y* pixels down from the top edge of the picture
-
-Thus, *(0,0)* is the top left corner of the picture.
-
-* Pixel addressing follows the common Java convention:  if there are *w* horizontal pixels, then 0 is the first (leftmost) and *w-1* is the last (rightmost).
-
-* Almost all of the methods are written in terms of two ``Picture`` parameters:
-
-	``source``:  the picture to be used as input to your transformation
-	
-	``target``:  the picture area to be used as output from your transformation
+* `Dennis Cosgrove <http://www.cs.wustl.edu/~cosgroved/>`_
 
 
-There is just one exception:  the ``gradient`` method produces its output without needing a source.  Its only parameter is ``target``.
+# Manipulating an Image Raster
+
+In the ``imagetransform`` package, modify the provided ``ImageTransforms`` Java program to implement the methods as described below. Your methods will use iteration (either `while` loops or `for` loops) to operate on the pixels of a picture.
+
+.. youtube:: VJiE78FTohs
+    :width: 600
+    :align: center
 
 
-* Each ``Picture`` has a width and a height, and these can be obtained for a ``Picture p`` as follows:
-
-::
-
-	int width  = p.width();
-	int height = p.height();
-	
-
-* To find the ``Color`` of a pixel at location ``x``, ``y``, you use
-
-::
-
-	Color c = source.get(x,y);``
- 	
-
-* To set the ``Color`` of a pixel at location ``x``, ``y`` to the color ``c``, you use
-
-::	
-
-	target.set(x,y,c);
-	
 Instructions
-==================
+============
+
+	**Note:** there is information at the bottom of this page (including a video) on [how to test your solution](#testing)
 
 Each of the methods described below is found in the ``Transforms`` class.
 
-1. The provided method ``flipHoriz(Picture source, Picture target)`` flips the image horizontally. 
+1. Complete the method ``Color[][] copy(Color[][] source)`` to create a new 2D array of Colors which is simply copy the values from source 2D array of Colors.
 
-.. image:: fliphoriz.png
+	.. image:: 2.1/copy_gradient.png
 
-Look at the code given to you for this example carefully.   It is broken into simple steps and the comments help explain why the pixel indexing works.
+	.. image:: 2.1/copy_you_belong_here.png
 
-2. Complete the method ``flipVert(Picture source, Picture target)`` that flips the image vertically. 
+	.. image:: 2.1/copy_bear.png
 
-.. image:: flipvert.png
-
-3. Complete the method ``flipHorizLeftHalf(Picture source, Picture target)`` that flips the left half of the image horizontally.  
-
-The left half of the target image should be same as the source, but the right half of the target image should  be the mirror of the left half of the source.
-
-.. image:: fliplefthalf.png
-
-4. Complete the method ``flipVertBotHalf(Picture source, Picture target)`` that flips the bottom half of the image vertically.
-
-.. image:: flipbottomhalf.png
-
-5. Complete the method ``gradient(Picture target)`` that takes a single ``Picture`` as a parameter.
-
-Your code
-should create a **color gradient** by computing the following for each pixel:
-
-* The amount of red in each pixel increases gradually from 0 at the left edge of the image to 255 at the right edge of the image.  
-* The amount of green in each pixel increases gradually from 0 at the top edge of the image to 255 at the bottom edge of the image.  
-* The amount of blue in every pixel should be 128.  
-
-Thus, each pixel will have a different color depending on its position.  For example, the pixel at the top left will have red=0, green=0, and blue=128.  The pixel about 1/4 of the way down on the right edge will have red=255, green=64, and blue=128.  
-
-Develop an expression for the amount of red and green in each pixel, given the x and y position of that pixel and the width and height of the image:
-	
-::
-
-	int amountRed   = .....
-	int amountGreen = ....
+2. Complete the method ``Color[][] flipHorizontal(Color[][] source)`` to create a new 2D array of Colors which contains the flipped horizontally values from source 2D array of Colors.
 
 
-Then set the pixel at *(x,y)* to a color based on those computations:
+	.. image:: 2.1/flip_horizontal_gradient.png
 
-``target.set(x, y, new Color(amountRed, amountGreen, 128));``
+	.. image:: 2.1/flip_horizontal_you_belong_here.png
 
-.. image:: gradient.png)
+	.. image:: 2.1/flip_horizontal_bear.png
+
+3. Complete the method ``Color[][] flipVertical(Color[][] source)`` to create a new 2D array of Colors which contains the flipped vertically values from source 2D array of Colors.
+
+	.. image:: 2.1/flip_vertical_gradient.png
+
+	.. image:: 2.1/flip_vertical_you_belong_here.png
+
+	.. image:: 2.1/flip_vertical_bear.png
+
+4. Complete the method ``Color[][] mirrorLeftOntoRight(Color[][] source)`` to create a new 2D array of Colors which contains mirrored values from source 2D array of Colors.
+
+	> The left half of the target image should be same as the source, but the right half of the destination image should be the mirror of the left half of the source.
+
+	.. image:: 2.1/mirror_left_onto_right_gradient.png
+
+	.. image:: 2.1/mirror_left_onto_right_you_belong_here.png
+
+	.. image:: 2.1/mirror_left_onto_right_bear.png
+
+5. Complete the method ``Color[][] rotateRight(Color[][] source)`` to create a new 2D array of Colors which contains rotated right values from source 2D array of Colors.
+
+	Note: the dimensions of the returned destination are different from the source.
+
+	.. image:: 2.1/rotate_right_gradient.png
+
+	.. image:: 2.1/rotate_right_you_belong_here.png
+
+	.. image:: 2.1/rotate_right_bear.png
+
+
+
+# Testing
+
+* To run the suite of unit tests, right (control) click on `ImageTransformsTestSuite` and choose `Run as...` then `JUnit Test`.  
+
+	> note: `the video shown above <https://www.youtube.com/watch?v=VJiE78FTohs>`_ shows how to run the test suite
+
 
