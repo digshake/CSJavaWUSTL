@@ -32,8 +32,6 @@ A method bundles together lines of code that perform a specific task.
 - You can pass values into a method using formal parameters. 
 - You can pass a value out of a method using a **return statement**.  
 
-You saw examples of  methods that return values in Unit 2 with the ``Turtle`` methods (getWidth, getXpos, etc).
-The method calls were usually on the right hand side of an assignment, or they were contained in a print statement.
 When a method returns a value, the code should do something with the value such as store it in a 
 variable or print it.
 
@@ -41,26 +39,6 @@ You will learn how to  create methods that access object attributes in a later l
 This lesson shows 
 you how to create static methods that are functions. 
 A function takes one or more values passed as formal parameters and computes a new value to return.
-
-
-A method can return at most one value.  The method signature specifies the **return type**, which can be a primitive (int, double, boolean), 
-a class (String, Turtle, etc), or void.
-
-.. mchoice:: q5_3_1
-   :answer_a: public
-   :answer_b: static
-   :answer_c: double
-   :answer_d: volumeCylinder
-   :correct: c
-   :feedback_a: This is the access modifier.
-   :feedback_b: This is the non-access modifier.
-   :feedback_c: Correct. This is the return type.
-   :feedback_d: This is the method name.
-  
-   This method computes the volume of a cylinder.  The method has formal parameters for radius and height, and returns a value representing the corresponding volume. 
-   Given the method signature, what is the return type?
-
-    .. figure:: Figures/volumeCylinder.png
 
 
 Method Return Type

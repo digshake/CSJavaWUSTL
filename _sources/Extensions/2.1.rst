@@ -2,7 +2,7 @@
 Extension 2.1: Image Processor With Iteration (7 points)
 =============
 
-# Authors
+**Authors**
 
 * `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
 * Ken Goldman
@@ -10,7 +10,8 @@ Extension 2.1: Image Processor With Iteration (7 points)
 * `Dennis Cosgrove <http://www.cs.wustl.edu/~cosgroved/>`_
 
 
-# Manipulating an Image Raster
+Manipulating an Image Raster
+============================
 
 In the ``imagetransform`` package, modify the provided ``ImageTransforms`` Java program to implement the methods as described below. Your methods will use iteration (either `while` loops or `for` loops) to operate on the pixels of a picture.
 
@@ -73,10 +74,11 @@ Each of the methods described below is found in the ``Transforms`` class.
 
 
 
-# Testing
+Testing
+============
 
 * To run the suite of unit tests, right (control) click on `ImageTransformsTestSuite` and choose `Run as...` then `JUnit Test`.  
 
-	> note: `the video shown above <https://www.youtube.com/watch?v=VJiE78FTohs>`_ shows how to run the test suite
+Note: `the video shown above <https://www.youtube.com/watch?v=VJiE78FTohs>`_ shows how to run the test suite
 
 

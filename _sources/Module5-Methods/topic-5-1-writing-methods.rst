@@ -141,65 +141,13 @@ The main method can call the chorus method multiple times to repeat the two line
    
 |CodingEx| **Coding Exercise**
 
-.. activecode:: code5_1_1
-  :language: java   
-  :autograde: unittest    
-  :practice: T
 
-  Run the following code to see the song print out.  
-  Notice the first line of code in the main method
-  is a call to the new method ``chorus()``.
-  Can you replace the last two print statements in the main 
-  method with another call to the ``chorus()`` method? 
-  Use the CodeLens to step through the program and notice what happens when the main method calls the chorus method.
-  ~~~~
-  public class Song 
-  { 
-    // The chorus method
-    public static void chorus() 
-    {
-       System.out.println("I'm looking over a four-leaf clover");
-       System.out.println("That I overlooked before");
-    }
-
-    public static void main(String args[]) 
-    {
-      chorus();
-      System.out.println("One leaf is sunshine, the second is rain");
-      System.out.println("Third is the roses that grow in the lane");
-      System.out.println();
-      System.out.println("No need explaining, the one remaining");
-      System.out.println("Is somebody I adore");
-      // Can you replace these 2 lines with a method call to chorus()?
-      System.out.println("I'm looking over a four-leaf clover");
-      System.out.println("That I overlooked before");
-    }
-  }
-  ====
-  import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-    
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "I'm looking over a four-leaf clover\nThat I overlooked before\nOne leaf is sunshine, the second is rain\nThird is the roses that grow in the lane\n\nNo need explaining, the one remaining\nIs somebody I adore\nI'm looking over a four-leaf clover\nThat I overlooked before";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testcodeContains(){
-          int count = countOccurences(getCode(),"chorus();");
-          boolean passed = count > 1;
-          passed = getResults("> 1 chorus call",  count  + " chorus call(s)", "Added second call to chorus?", passed);
-          assertTrue(passed);
-        }
-
-    }
+Run the ``Song`` program to see the song print out.  
+Notice the first line of code in the main method
+is a call to the new method ``chorus()``.
+Can you replace the last two print statements in the main 
+method with another call to the ``chorus()`` method? 
+Use the debugger to step through the program and notice what happens when the main method calls the chorus method.
   
 |Exercise| **Check Your Understanding**
    
@@ -492,57 +440,10 @@ Click on each tab to observe the flow of control for the ``GreetingExample`` cla
   
 |CodingEx| **Coding Exercise**
 
-.. activecode:: code5_1_2
-  :language: java   
-  :autograde: unittest    
-  :practice: T
-
-  A refrain is similar to a chorus, although usually shorter in length such as a single line that gets repeated.
-  In the song below, the refrain is "The farmer in the dell".  
-  Add a method named "refrain" and update the main method to call the new method 3 times in place of the duplicate print statements.  
-  Run your program to ensure the output is correct.
-  ~~~~
-  public class FarmerSong 
-  { 
-
-    //add your new method here
-
-
-
-    public static void main(String args[]) 
-    {
-       System.out.println("The farmer in the dell");
-       System.out.println("The farmer in the dell");
-       System.out.println("Heigh ho the derry-o");
-       System.out.println("The farmer in the dell");
-    }
-    
-  }
-  ====
-  import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-    
-    public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void testSignature(){
-          int count = countOccurences(getCode(),"public static void refrain()");
-          boolean passed = count == 1;
-          passed = getResults("1 refrain signature",  count  + " refrain signature", "Refrain method signature", passed);
-          assertTrue(passed);
-        }
-
-        @Test
-        public void testcodeContains(){
-          int count = countOccurences(getCode(),"refrain();");
-          boolean passed = count == 3;
-          passed = getResults("3 refrain calls",  count  + " refrain calls", "Call refrain() from the main method", passed);
-          assertTrue(passed);
-        }
-
-    }
-
+A refrain is similar to a chorus, although usually shorter in length such as a single line that gets repeated.
+In the ``FarmerSong`` program, the refrain is "The farmer in the dell".  
+Add a method named "refrain" and update the main method to call the new method 3 times in place of the duplicate print statements.  
+Run your program to ensure the output is correct.
 
 Summary
 -------

@@ -84,66 +84,8 @@ contains not only the current line but also the formal parameter variables and v
 
 
 .. figure:: Figures/stackframesong.png
-
-
-.. activecode:: code5_2_1
-  :language: java
-  :autograde: unittest
-  :practice: T
   
-  Update the main method to add a third verse to the song with another animal and noise. Use the CodeLens button to step through the code.
-  ~~~~
-  public class Song 
-  { 
-  
-    public static void verse(String animal, String noise) 
-    {
-      System.out.println( "Old MacDonald had a farm" );
-      System.out.println( "E-I-E-I-O" );
-      System.out.println( "And on that farm he had a " + animal );
-      System.out.println( "E-I-E-I-O" );
-      System.out.println( "With a " + noise + "-" + noise + " here") ;
-      System.out.println( "And a " + noise + "-" + noise + " there" );
-      System.out.println( "Here a " + noise + ", there a " + noise );
-      System.out.println( "Everywhere a " + noise + "-" + noise );
-      System.out.println( "Old MacDonald had a farm" );
-      System.out.println( "E-I-E-I-O" );
-    }
-
-    public static void main(String[] args) 
-    {
-      verse( "cow" , "moo" );
-      verse( "duck" , "quack" );
-    }
-  }
-  ====
-  import static org.junit.Assert.*;
-  import org.junit.*;;
-  import java.io.*;
-
-  public class RunestoneTests extends CodeTestHelper
-  {
-    
-    public RunestoneTests() {
-      super("Song");
-    }
-
-    @Test
-    public void test1()
-    {
-      String code = getCode();
-      int numVerses = countOccurences(code, "verse(");
-      numVerses--; //exclude definition
-      boolean passed = numVerses >= 3;
-      
-      passed = getResults("3 verses", numVerses + " verses", "Update the main with a third verse call", passed);
-      assertTrue(passed);
-    }
-  }
-
-
- 
-
+Update the main method of the ``Song`` program to add a third verse to the song with another animal and noise. Use the debugger to step through the code.
 
 Refactoring - Removing Duplicate Code
 ---------------------------------------
@@ -226,76 +168,10 @@ When the **calculatePay** method is called, actual values must be provided for e
 
   calculatePay ( "Fred", 12.50, 20.0 );
   calculatePay ( "Amir", 15.00, 35.0 );
-
-.. activecode:: code5_2_2
-  :language: java
-  :autograde: unittest
-  :practice: T
     
-  Update the code below to add the ``calculatePay`` method.  Update the ``main`` method to 
-  call the ``calculatePay`` method twice to compute the pay for each employee.  
-  Use the CodeLens button to confirm that your main method makes the two calls to calculatePay, with the correct values passed into the method.
-
-  ~~~~
-  public class PayrollCalculator
-  { 
-
-    //add a new static method calculatePay here
-  
-
-
-    public static void main(String[] args) 
-    {
-      
-        //call calculatePay for employee Fred, hourly rate 12.50 and hours worked 20.0
-
-        //call calculatePay for employee Amir, hourly rate 15.0 and hours worked 35.0
-
-    }
-  }
-  ====
-  import static org.junit.Assert.*;
-  import org.junit.*;;
-  import java.io.*;
-
-  public class RunestoneTests extends CodeTestHelper
-  {
-    
-    public RunestoneTests() {
-      super("PayrollCalculator");
-    }
-
-    @Test
-        public void test1()
-        {
-            String output = getMethodOutput("main");
-            String expect = "Fred:250.0\nAmir:525.0\n";
-            boolean passed = getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-        }
-
-    @Test
-        public void test2()
-        {
-           String code = getCode();
-           int sig = countOccurences(code, "public static void calculatePay(");
-           boolean passed = sig == 1;
-           passed = getResults("1 method signature", sig + " method signature", "Add a new method calculatePay", passed);
-           assertTrue(passed);
-        }
-
-    @Test
-        public void test3()
-        {
-           String code = getCode();
-           int calls = countOccurences(code, "calculatePay(\"");
-           boolean passed = (calls==2);
-           passed = getResults("2 calls", calls + " calls", "Update the main with two calls to calculatePay", passed);
-           assertTrue(passed);
-        }
-
-  }
-
+Update the ``PayrollCalculator`` program to add the ``calculatePay`` method.  Update the ``main`` method to 
+call the ``calculatePay`` method twice to compute the pay for each employee.  
+Use the debugger to confirm that your main method makes the two calls to calculatePay, with the correct values passed into the method.
 
 
 |Exercise| **Check your understanding**
@@ -448,24 +324,8 @@ the method again, the old value is not available.
 .. activecode:: code5_2_3
   :language: java
     
-  Use the CodeLens button to step through the two method calls in the main.  Notice the ``inches`` and ``centimeters`` variables are
-  visible in the ``inchesToCentimeters`` method but not the ``main`` method.  
-  ~~~~
-  public class ScopeExample 
-  {
-    public static void inchesToCentimeters(double inches)
-    {
-        double centimeters = inches * 2.54;
-        System.out.println(inches + "-->" + centimeters);
-    }
-
-    public static void main(String[] args)  
-    {
-        inchesToCentimeters(10);
-        inchesToCentimeters(15.7);
-    }
-
-  }
+Use the debugger button to step through the two method calls in the ``ScopeExample`` program.  Notice the ``inches`` and ``centimeters`` variables are
+visible in the ``inchesToCentimeters`` method but not the ``main`` method.  
 
 The ``inchestToCentimeters`` method defines a local 
 variable ``centimeters``, which is only visible inside that method. 
@@ -701,31 +561,13 @@ value of a formal parameter inside a method, however it is possible as the examp
 
 |CodingEx| **Check your understanding**
 
-.. activecode:: code5_2_4
-  :language: java
-    
-  Use the CodeLens button to watch how the square method
-  alters the value of x, while the value of y in the main method is not affected.
+Open the ``CallByValue`` program. Use the debugger to watch how the square method
+alters the value of x, while the value of y in the main method is not affected.
 
-  Try changing the name of the variable in the main method to "x" and rerun the program.  You should see
-  that the variable in the main method remains unaffected by changes made in the square method, even when 
-  the variables have the same name.
-  ~~~~
-  public class CallByValue 
-  {
-    public static void square(int x)
-    {
-      x = x * x;  
-      System.out.println(x);
-    }
+Try changing the name of the variable in the main method to "x" and rerun the program.  You should see
+that the variable in the main method remains unaffected by changes made in the square method, even when 
+the variables have the same name.
 
-    public static void main(String[] args) 
-    {
-      int y = 5;
-      square(y);  
-      System.out.println(y); 
-    }
-  }
 
 
 
@@ -735,7 +577,7 @@ is passed in and saved in the parameter variable. You will explore
 this more in the following unit.
 
 
-|Groupwork| Programming Challenge : Calculating Shipping Costs
+Programming Challenge : Calculating Shipping Costs
 ---------------------------------------------------------------
 
 The ShippingCostCalculator class listed below computes and prints the shipping cost for 3 different items based on their weight. 
@@ -797,101 +639,9 @@ each tests the weight and assigns the cost in the same way.
 The redundant code will be eliminated by adding a new method to 
 compute and print the cost based on item weight.  
 
-.. activecode:: code5_2_5
-  :language: java
-  :autograde: unittest  
-
-  - Update the program below to add a new method  ``calculateShipping`` that has one formal parameter for ``weight``.  The method will need a local variable for ``cost``.  The method should test the weight and print the corresponding cost.
-  - Update the main method to replace the existing code with 3 calls to ``calculateShipping``, each passing an actual value for weight.  The main method will no longer need local variables.
-  - Confirm that the new version of the program produces the same output as the original version.
-
-  ~~~~
-  public class ShippingCostCalculator {
-  
-  public static void main(String[] args) {
-    
-     double weight1, weight2, weight3;
-     double cost1, cost2, cost3;
-
-     weight1 = 22.0;  
-     weight2 = 10.0;
-     weight3 = 12.0;
-
-     //calculate cost for item#1
-     if (weight1 < 15.0)
-     {
-        cost1 = 9.95;
-     }
-     else 
-     {
-        cost1 = 12.95;
-     }
-     System.out.println(cost1);
-
-     //calculate cost for item#2
-     if (weight2 < 15.0)
-     {
-        cost2 = 9.95;
-     }
-     else 
-     {
-        cost2 = 12.95;
-     }
-     System.out.println(cost2);
-
-     //calculate cost for item#3
-     if (weight3 < 15.0)
-     {
-        cost3 = 9.95;
-     }
-     else 
-     {
-        cost3 = 12.95;
-     }
-     System.out.println(cost3);
-
-    }
-  }
-  ====
-  import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-    
-    public class RunestoneTests extends CodeTestHelper
-    {
-
-    public RunestoneTests() {
-      super("ShippingCostCalculator");
-    }
-      @Test
-      public void checkSig(){
-        String code = getCode();
-        int num = countOccurences(code, "public static void calculateShipping(");
-        boolean passed = num == 1;
-        passed = getResults("1 method declaration", num + " method declaration", "Declare the static calculateShipping method", passed);
-        assertTrue(passed);
-      }
-
-      @Test
-      public void checkCodeContains3(){
-        String code = getCode();
-        int num = countOccurences(code, "calculateShipping(");
-        num--;  //exclude method signature
-        boolean passed = num ==3;
-        passed = getResults("3 method calls", num + " method calls", "Call the calculateShipping method 3 times", passed);
-        assertTrue(passed);
-      }
-
-      @Test
-      public void testMain() throws IOException
-      {
-            String output = getMethodOutput("main");
-            String expect = "12.95\n9.95\n9.95";
-            boolean passed = output.contains(expect);
-            getResults(expect, output, "Expected output from main");
-            assertTrue(passed);
-      }
-    }
+- Update the ``ShippingCostCalculator`` program to add a new method  ``calculateShipping`` that has one formal parameter for ``weight``.  The method will need a local variable for ``cost``.  The method should test the weight and print the corresponding cost.
+- Update the main method to replace the existing code with 3 calls to ``calculateShipping``, each passing an actual value for weight.  The main method will no longer need local variables.
+- Confirm that the new version of the program produces the same output as the original version.
 
 
 Summary
