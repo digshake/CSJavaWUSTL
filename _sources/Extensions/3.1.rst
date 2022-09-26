@@ -1,5 +1,5 @@
 =======================
-Extension 3.1: Pascal's Triangle (3 points)
+Extension 3.1: Pascal's Triangle (4 points)
 =======================
 
 Authors

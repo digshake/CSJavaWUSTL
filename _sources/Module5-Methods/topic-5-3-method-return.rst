@@ -88,98 +88,16 @@ Click on each tab to observe the data flowing into the method through the formal
 
       .. figure:: Figures/frame5.png
 
-
-
-.. activecode:: code5_3_1
-  :language: java
     
-  Use the CodeLens to step through the code.  Experiment with passing different values to the volumeCylinder method.
-
-  ~~~~
-  public class VolumeExample 
-  {
-    public static double volumeCylinder(double radius, double height) 
-    {
-      return Math.PI * radius * radius * height;
-    }   
-
-    public static void main(String args[])
-    {
-      // Calculate the volume of a cylinder  radius=4 and height=10
-      double vol = volumeCylinder(4, 10);
-      System.out.println(vol);
-    }
-  }
+Use the debugger to step through the ``VolumeExample`` program.  Experiment with passing different values to the volumeCylinder method.
 
 |CodingEx| **Coding Exercise**
-
-.. activecode:: code5_3_2
-  :language: java
-  :autograde: unittest
-  :practice: T
     
-  The code below contains a method ``inchesToCentimeters`` that computes and prints the centimeter equivalent of the value passed into the inches parameter.
-  Instead of printing the centimeter value inside the inchesToCentimeters method, you should update the  
-  method to return the value and then move the printing to the main method.  You will have to change 
-  the return type of the inchesToCentimeters method to match the type of the value being returned. 
-  Update the ``main`` method to print the value returned by the ``inchesToCentiments`` method. 
-
-  ~~~~
-  public class InchesToCentimeters 
-  {
-    public static void inchesToCentimeters(double inches)
-        {
-            double centimeters = inches * 2.54;
-            System.out.println(centimeters);
-        }
-
-        public static void main(String[] args)  
-        {
-            inchesToCentimeters(10);
-            inchesToCentimeters(12.5);
-        }
-  }
-
-  ====
-  import static org.junit.Assert.*;
-  import org.junit.*;;
-  import java.io.*;
-
-  public class RunestoneTests extends CodeTestHelper
-  {
-    
-    public RunestoneTests() {
-      super("InchesToCentimeters");
-    }
-
-    @Test
-    public void checkCodeContainsSig(){
-      String code = getCode();
-      int num = countOccurences(code, "public static double inchesToCentimeters(double inches)");
-      boolean passed = num ==1;
-      passed = getResults("1 signature", num + " signature", "Return type of inchesToCentimeters method", passed);
-      assertTrue(passed);
-    }
-
-    @Test
-    public void checkCodeContainsReturn(){
-      String code = getCode();
-      int num = countOccurences(code, "return");
-      boolean passed = num ==1;
-      passed = getResults("1 return", num + " return" , "Return statement in inchesToCentiments method", passed);
-      assertTrue(passed);
-    }
-
-    @Test
-    public void testMain() throws IOException
-    {
-          String output = getMethodOutput("main");
-          String expect = "25.4\n31.75";
-          boolean passed = output.contains(expect);
-          getResults(expect, output, "Expected output from main");
-          assertTrue(passed);
-    }
-  }
+The ``InchesToCentimeters`` program contains a method ``inchesToCentimeters`` that computes and prints the centimeter equivalent of the value passed into the inches parameter.
+Instead of printing the centimeter value inside the inchesToCentimeters method, you should update the  
+method to return the value and then move the printing to the main method.  You will have to change 
+the return type of the inchesToCentimeters method to match the type of the value being returned. 
+Update the ``main`` method to print the value returned by the ``inchesToCentiments`` method. 
 
 
 |Exercise| **Check your understanding**
@@ -279,139 +197,19 @@ Click on each tab to observe the data flowing into the method through the formal
 
 |CodingEx| **Coding Exercise**
 
-.. activecode:: code5_3_3
-  :language: java
-  :autograde: unittest
-  :practice: T
+A pedometer estimates that taking 2,000 steps is the same as walking 1 mile. 
+In the ``StepCounter`` program, write a method ``convertToMiles`` that takes a parameter for the number of steps and returns the equivalent miles walked.
+Update the main method to call ``convertToMiles`` 3 times with values 500, 2000, 3000. 
+Carefully consider the method return type.  Watch out for integer division in the method body!
+You can assume the number of steps is an integer.
+
   
-  A pedometer estimates that taking 2,000 steps is the same as walking 1 mile. 
-  Write a method ``convertToMiles`` that takes a parameter for the number of steps and returns the equivalent miles walked.
-  Update the main method to call ``convertToMiles`` 3 times with values 500, 2000, 3000. 
-  Carefully consider the method return type.  Watch out for integer division in the method body!
-  You can assume the number of steps is an integer.
-
-  ~~~~
-  public class StepCounter 
-  {
-      //add convertToMiles method here
-
-      public static void main(String[] args)  
-      {
-         System.out.println("500 steps is equal to " + convertToMiles(500) + " miles");
-         //add 2 more method calls here for 2000 and 3000 steps.
-
-      }
-  }
-
-  ====
-  import static org.junit.Assert.*;
-  import org.junit.*;;
-  import java.io.*;
-
-  public class RunestoneTests extends CodeTestHelper
-  {
-    
-    
-     @Test
-    public void checkCodeContainsSig()
-    {
-      String code = getCode();
-      int num = countOccurences(code, "public static double convertToMiles(int");
-      boolean passed = num ==1;
-      passed = getResults("1 signature", num + "signature", "The convertToMiles signature is not correct. Check your return type and the parameter type", passed);
-      assertTrue(passed);
-    }
-
-    @Test
-    public void checkCodeContainsReturn()
-    {
-      String code = getCode();
-      int num = countOccurences(code, "return");
-      boolean passed = num ==1;
-      passed = getResults("1 return", num + " return", "The method convertToMiles is missing a return statement", passed);
-      assertTrue(passed);
-    }
-
-
-    @Test
-    public void testMain() throws IOException
-    {
-          String output = getMethodOutput("main");
-          String expect = "500 steps is equal to 0.25 miles\n2000 steps is equal to 1.0 miles\n3000 steps is equal to 1.5 miles";
-          boolean passed = output.equals(expect);
-          getResults(expect, output, "Expected output from main");
-          assertTrue(passed);
-    }
-  }
-
 
 |CodingEx| **Coding Exercise**
-
-.. activecode:: code5_3_4
-  :language: java
-  :autograde: unittest
-  :practice: T
   
-  Write a function ``randomInteger`` that takes two integer 
-  parameters ``min`` and ``max`` and returns a random integer value between min and max (inclusive).
-  Have the main method call the function with different values.  You might want to go back and 
-  review random number generation in Unit 2-9.
-
-  ~~~~
-  public class RandomNumberInRange 
-  {
-      //add your method here
-
-      public static void main(String args[])  
-      {
-         //test your method by calling it
-
-      }
-  }
-
-  ====
-  import static org.junit.Assert.*;
-  import org.junit.*;;
-  import java.io.*;
-
-  public class RunestoneTests extends CodeTestHelper
-  {
-    
-    public RunestoneTests() {
-      super("RandomNumberInRange");
-    }
-
-    @Test
-    public void checkCodeContainsSig(){
-      String code = getCode();
-      int num = countOccurences(code, "public static int randomInteger(int min, int max");
-      boolean passed = num ==1;
-      passed = getResults("1 signature", num + " signature" , "The randomInteger signature is not correct. Check your return type and the parameters", passed);
-      assertTrue(passed);
-    }
-
-    @Test
-    public void checkCodeContainsReturn(){
-      String code = getCode();
-      int num = countOccurences(code, "return");
-      boolean passed = num ==1;
-      passed = getResults("1 return", num + " return", "The method randomInteger is missing a return statement", passed);
-      assertTrue(passed);
-    }
-
-    @Test
-      public void test1()
-      {
-          String code = getCode();
-          int numRandom = countOccurences(code, "Math.random()");
-
-          boolean passed = numRandom >= 1;
-          passed = getResults("1+", ""+numRandom, "1 call to Math.random()", passed);
-          assertTrue(passed);
-      }
-
-  }
-
+In the ``RandomNumberInRange`` program, write a function ``randomInteger`` that takes two integer 
+parameters ``min`` and ``max`` and returns a random integer value between min and max (inclusive).
+Have the main method call the function with different values.
 
 Summary
 -------
