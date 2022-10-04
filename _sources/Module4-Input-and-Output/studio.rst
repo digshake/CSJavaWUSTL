@@ -45,11 +45,11 @@ Design is largely all about communicating your intentions in a way that other pe
 Reading shape data from a file
 =====================
 
-Your first task is to use ``ArgsProcessor`` and ``StdDraw`` to draw shapes based on data from a file. Do not spend more than 40 minutes on this part before moving on to designing and drawing your own flag!
+Your first task is to use ``Scanner`` and ``StdDraw`` to draw shapes based on data from a file. Do not spend more than 40 minutes on this part before moving on to designing and drawing your own flag!
 
 * Open up ``InterpretDrawingFile.Java.`` When the code is run, it will prompt you to select a ``.txt`` file from a pop-up window.
 
-* In order to get an idea of what is in these ``.txt`` files, open up the folders ``support_src`` and ``studio4.resources`` and take a look.
+* In order to get an idea of what is in these ``.txt`` files, open up the ``resources`` folder and take a look.
 
 These files are specifications for given shapes, and contain the following information in this exact order:
 
@@ -57,9 +57,9 @@ These files are specifications for given shapes, and contain the following infor
 
 The ``double`` values at the end depend on the shape type (more on that below).
 
-You will be creating code in the method ``readFileViaArgsProcessorAndDraw(ArgsProcessor ap)`` that will read the data from the file you select in the dropdown and will draw the given shape.
+You will be creating code in the method that will read the data from the file you select in the dropdown and will draw the given shape.
 
-* To read from the file, you can use ``ArgsProcessor`` methods like ``ap.nextString()`` and ``ap.nextInt()``. The ``ap`` variable is already set up for you to take from the file instead of prompting for user input.
+* To read from the file, you can use ``Scanner`` methods like ``nextLine()`` and ``nextInt()``. The ``in`` variable is already set up for you to take from the file instead of prompting for user input.
 
 * Begin by just trying to create the rectangle. The final four parameters given in the file are ``double x, double y, double halfWidth, and double halfHeigh``.
 

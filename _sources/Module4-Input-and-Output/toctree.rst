@@ -9,6 +9,7 @@ Input / Output
    
    topic-4-1-text.rst
    topic-4-2-graphics.rst
+   studioPR.rst
    studio.rst
    assignment.rst
 

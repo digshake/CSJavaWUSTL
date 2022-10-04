@@ -237,25 +237,25 @@ APIs
 
 This assignment will utilize two different APIs:
 
-* ``ArgsProcessor``: This allows us to read data from a file. We’ll get the type and location of all entities from a file. This is slightly different from how we have used ArgsProcessor in the past, as we will not be prompting the user for input values.
+* ``Scanner``: This allows us to read data from a file. We’ll get the type and location of all entities from a file. This is slightly different from how we have used Scanner in the past, as we will not be prompting the user for input values.
 
 * ``StdDraw``: This will allow us to display the location of the zombies and non-zombies as our simulation progresses.
 
-Using ArgsProcessor to read from a file
+Using Scanner to read from a file
 ---------------------------------------
 
-* When ArgsProcessor is connected to a file, ``ap.nextDouble()``, will get the next value in the selected file if it’s a double. If the next value is not a double, it will ask the user for a double instead.
+* When Scanner is connected to a file, ``nextDouble()``, will get the next value in the selected file if it’s a double. If the next value is not a double, it will ask the user for a double instead.
 
-* Each time you call ``ap.nextDouble()``, ArgsProcessor will process that value, and the next call to ``ap.nextDouble()`` will return the next double in the file, whether it’s on the same line or the next.
+* Each time you call ``nextDouble()``, Scanner will process that value, and the next call to ``nextDouble()`` will return the next double in the file, whether it’s on the same line or the next.
 
-* Make sure you use the method that asks for the data type that corresponds to the next value in the file. For example, if the next value in the file is a double, make sure to call ``ap.nextDouble()``, not ``ap.nextString()``. If a user input popup comes up, you are not calling methods in the right order.
+* Make sure you use the method that asks for the data type that corresponds to the next value in the file. For example, if the next value in the file is a double, make sure to call ``nextDouble()``, not ``next()``. 
 
 Assignment Requirements
 =====================
 
 Your work needs to:
 
-1. Read all the information from the selected file and store it in parallel arrays. Use ``ArgsProcessor`` methods as described above.
+1. Read all the information from the selected file and store it in parallel arrays. Use ``Scanner`` methods as described above.
 
 2. Display all the elements in the simulation using Sedgewick’s ``StdDraw``.
 

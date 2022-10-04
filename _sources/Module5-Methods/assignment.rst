@@ -144,9 +144,9 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
    * Do **NOT** attempt to create the ``areZombies`` and ``positions`` arrays. As previously stated, they have already been created (outside of your method) and passed in to your method.
 
-   * Do **NOT** ask the ArgsProcessor for the initial nextInt() expecting it to be the length of the arrays. This call to nextInt() will have already been performed by the caller (in order to create and pass in arrays of the correct length). If you start off by calling nextInt() you will be attempting to read the first entity’s “Zombie” or “Nonzombie” state as the length of the arrays.
+   * Do **NOT** ask the Scanner for the initial nextInt() expecting it to be the length of the arrays. This call to nextInt() will have already been performed by the caller (in order to create and pass in arrays of the correct length). If you start off by calling nextInt() you will be attempting to read the first entity’s “Zombie” or “Nonzombie” state as the length of the arrays.
 
-   * If you cannot ask the ArgsProcessor for the length of the arrays, how will you know what it is? Luckily, all created arrays know how long they are. In this method, both ``areZombies`` and positions will be the same length and can be accessed with the code ``areZombies.length`` and/or ``positions.length``.
+   * If you cannot ask the Scanner for the length of the arrays, how will you know what it is? Luckily, all created arrays know how long they are. In this method, both ``areZombies`` and positions will be the same length and can be accessed with the code ``areZombies.length`` and/or ``positions.length``.
 
    * Be sure that it uses the 2D ``positions`` array rather than parallel ``xs`` and ``ys`` arrays.
 
@@ -230,7 +230,7 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
 15. Almost done! You just need to complete the actual simulation. Open ``ZombieSimulator.java`` and complete the ``TODO`` in the ``runSimulation()`` method. HINT: this should be short. It can be reasonably and cleanly done in ~10 lines of code.
 
-    * uncomment the code to read the number of entities from the passed in ``ArgsProcessor ap``, create the ``areZombies`` and ``positions`` arrays of the correct lengths, and read and draw the entries in their initial positions.
+    * uncomment the code to read the number of entities from the passed in ``Scanner in``, create the ``areZombies`` and ``positions`` arrays of the correct lengths, and read and draw the entries in their initial positions.
 
     * implement the zombie simulation
 
