@@ -1,5 +1,5 @@
 
-Writing Methods
+Module 5: Writing Methods
 :::::::::::::::
 
  In this unit, you will learn to write your own methods to reduce redundancy and improve code maintainability.  
