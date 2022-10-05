@@ -29,429 +29,135 @@
     pair: method; argument
     pair: method; return 
     
-Writing Methods
-=================
+A Graphics API: StdDraw
+=======================
 
-Up until this unit, you wrote all  code in the main method, 
-but now you will be creating new methods that can be called by the main method. 
-Why have multiple methods instead of just one? 
-**Procedural Abstraction** allows us to name a block of code as a method and 
-call it whenever we need it, abstracting away the details of how it works.  
-This serves to organize our code by function and reduce 
-the repetition of code. In addition, it helps with debugging and maintenance since 
-changes to that block of code only need to happen in one place. 
-Here are some of the main reasons to use multiple methods in your programs:
+Using computers for artistic expression is not a new idea. Consider, however, that there is a lot of work involved in simply displaying an image onto a screen:
 
-- Reducing Complexity: Divide a problem into subproblems to solve it a piece at a time.
-- Reusing Code: Avoid repetition of code. 
-- Maintainability and Debugging: Smaller methods are easier to debug and understand.
+1. Read the image data in whatever format it comes in. This could be a program (like the ones you are about to see) or it could be a file like a PNG or GIF.
 
-Let's look at an example with repetition and then we will 
-create a method to reduce the redundant code. 
+2. Convert that data into colors. Computers represent colors in a particular way, which you will soon see.
 
+3. Determine the positioning of the image on the screen. Your computer screen has a coordinate system just like you've seen in your math classes.
 
-.. clickablearea:: q5_1_1
-    :question: Click on each line that occurs more than once in the song.
-    :iscode:
-    :feedback: Look for lines that are completely identical.  
+To perform all of these tasks ourselves would be very complicated and take lots of time. Fortunately, a lot of these tasks such as displaying colors and positioning things on the screen are repetitve, well known tasks that have well known solutions. Instead of recreating them all ourselves, we will use an API to assist us. This API performs some of the more complicated tasks that we don't necessarily need to concern ourselves with so that we can focus on the more important things, like what colors and shapes we would like to have in the images that we are about to compose.
 
-    :click-incorrect:public static void main(String args[]) {:endclick:
-        :click-correct:System.out.println("I'm looking over a four-leaf clover");:endclick:
-        :click-correct:System.out.println("That I overlooked before");:endclick:
-        :click-incorrect:System.out.println("One leaf is sunshine, the second is rain");:endclick:
-        :click-incorrect:System.out.println("Third is the roses that grow in the lane");:endclick:
-        :click-incorrect:System.out.println();:endclick:
-        :click-incorrect:System.out.println("No need explaining, the one remaining");:endclick:
-        :click-incorrect:System.out.println("Is somebody I adore");:endclick:
-        :click-correct:System.out.println("I'm looking over a four-leaf clover");:endclick:
-        :click-correct:System.out.println("That I overlooked before");:endclick:
-    :click-incorrect:}:endclick:
-            
-The two-line chorus is 
-repeated at the beginning and ending of the song. 
+Read on to learn more about how to use the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_.
 
-When you see duplicate lines of code, that is a signal for you to make a new method!
-A method is a **named** set of statements.  When we want to execute the statements, 
-we call the method using its name.
-In a subsequent lesson you will create methods that are called using an object, 
-referred to as **instance methods** or **object methods**.
-The methods in this unit are called without an object, so they are  **static methods**.  
-Static methods are also referred to as **class methods**.
+Color and Canvas
+----------------
 
-.. note::
-  static methods - can call without an object ``m()``
+Before we can draw things it is important to understand how colors are represented on the computer. While there are many ways to consider colors on the computer, we will use the common `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`_ color model.
 
-  instance methods - must call using an object  ``obj.m()``
+In this model there are three values: Red, Green, and Blue. Each of these values are integers that can range from 0-255. So if I wished to make purple, which is a combination of Red and Blue, I could create it in my code as follows:
 
-Writing Static Methods
-----------------------
+``Color purple = new Color(255, 0, 255);``
 
-There are two steps to writing and using a static method:
+The ``purple`` variable could then be used wherever I would like to use that color. Of course there are also some built-in colors that you can access, such as ``Color.PURPLE``.
 
-- Step 1. Method Definition
-- Step 2. Method Call
+To see what kinds of colors can be created using this model, you can use `this tool <https://www.w3schools.com/colors/colors_rgb.asp>`_.
 
-You define a method by writing the method's **header** and **body**.  
-The header is also called 
-a method **signature**.  The parts of the main method header are shown in the figure below, 
-which include an access modifier,
-static modifier, return type, name, and formal parameters.   The method body 
-consists of a set of statements enclosed in curly braces { }.  
+To start adding shapes to the screen, we will use the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_. Take a look at the API and notice that there are lots of different shapes mentioned as well as things like a canvas and a pen.
 
-.. mchoice:: q5_1_2
-   :answer_a: public
-   :answer_b: static
-   :answer_c: void
-   :answer_d: main
-   :correct: d
-   :feedback_a: This is the access modifier.
-   :feedback_b: This is the non-access modifier.
-   :feedback_c: This is the return type.
-   :feedback_d: Correct.
-  
-   Given the method signature, what is the method name?
+To draw something on the screen you would first set the pen color:
 
-    .. figure:: Figures/methodsig.png
+``StdDraw.setPenColor(Color.GREEN); //or use a custom color here!``
 
+You can then use one of the API methods to draw something on the canvas:
 
-The code below contains a chorus() method definition 
-that we could write to encapsulate the two lines that get repeated in the song.  
+``StdDraw.filledSquare(0.5, 0.5, 0.2);``
 
-.. code-block:: java
+The resulting image would look something like this (the coordinates are added for reference and are not part of what was drawn by the code):
 
-    // Step 1: define a new method named chorus
-    public static void chorus() 
-    { 
-        System.out.println("I'm looking over a four-leaf clover");
-        System.out.println("That I overlooked before");
-    }
+.. image:: canvas.png
 
+Using the information from the API and the image above, can you determine what the three values (0.5, 0.5, 0.2) represent? They are important!
 
-Whenever you want to use a method, you call it using the method name followed by parentheses.
-The method header ``public static void chorus()`` indicates the return type is void and there are no formal parameters
-between the parentheses, which means you can call the method as shown:
+In this example those values represent the x, y position of the center of the square as well as the "radius" of the square that gets drawn. Typically, this process works in the other direction: we wish to draw something on the screen and refer to the API to figure out how to do it!
 
-.. code-block:: java
-
-    // Step 2: call the chorus method
-    chorus(); 
-
-Notice that we can just call the static method, we don't need to create an object to use for calling the method.
-The main method can call the chorus method multiple times to repeat the two lines of the song.
-   
 |CodingEx| **Coding Exercise**
 
+Open the ``GraphicsDemo`` program and examine the code that has been provided. It shows you how to use 
+standard colors as well as custom colors of your choosing. Use the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to complete the exercises at the bottom of the program.
 
-Run the ``Song`` program to see the song print out.  
-Notice the first line of code in the main method
-is a call to the new method ``chorus()``.
-Can you replace the last two print statements in the main 
-method with another call to the ``chorus()`` method? 
-Use the debugger to step through the program and notice what happens when the main method calls the chorus method.
-  
-|Exercise| **Check Your Understanding**
-   
-.. clickablearea:: q5_1_3
-    :question: A method definition consists of a method header and a method body. Click on the method header for the method named "greet" in the following code.
-    :iscode:
-    :feedback: There is one header for the greet method: public static void greet()
-    
-    :click-incorrect:public class GreetingExample:endclick:
-    :click-incorrect:{:endclick:
-        :click-correct:public static void greet():endclick:
-        :click-incorrect:{:endclick:
-            :click-incorrect:System.out.println("Hello!");:endclick:
-            :click-incorrect:System.out.println("How are you?");:endclick:
-        :click-incorrect:}:endclick:
-        :click-incorrect: :endclick:
-        :click-incorrect:public static void main(String[] args):endclick:
-        :click-incorrect:{:endclick:
-            :click-incorrect:System.out.println("Before greeting");:endclick:
-            :click-incorrect:greet();:endclick:
-            :click-incorrect:System.out.println("After greeting");:endclick:
-        :click-incorrect:}:endclick:
-    :click-incorrect:}:endclick:
-
-
-   
-.. clickablearea:: q5_1_4
-    :question: Click on all statements contained within the greet method body.
-    :iscode:
-    :feedback: The greet method body consists of the 2 print statements nested between the curly braces that follow the method header.  
-    
-    :click-incorrect:public class GreetingExample:endclick:
-    :click-incorrect:{:endclick:
-        :click-incorrect:public static void greet():endclick:
-        :click-incorrect:{:endclick:
-            :click-correct:System.out.println("Hello!");:endclick:
-            :click-correct:System.out.println("How are you?");:endclick:
-        :click-incorrect:}:endclick:
-        :click-incorrect: :endclick:
-        :click-incorrect:public static void main(String[] args):endclick:
-        :click-incorrect:{:endclick:
-            :click-incorrect:System.out.println("Before greeting");:endclick:
-            :click-incorrect:greet();:endclick:
-            :click-incorrect:System.out.println("After greeting");:endclick:
-        :click-incorrect:}:endclick:
-    :click-incorrect:}:endclick:
-
-
-   
-.. clickablearea:: q5_1_5
-    :question: Click on the greet method call.
-    :iscode:
-    :feedback: The greet method call occurs in the main method.  
-    
-    :click-incorrect:public class GreetingExample:endclick:
-    :click-incorrect:{:endclick:
-        :click-incorrect:public static void greet():endclick:
-        :click-incorrect:{:endclick:
-            :click-incorrect:System.out.println("Hello!");:endclick:
-            :click-incorrect:System.out.println("How are you?");:endclick:
-        :click-incorrect:}:endclick:
-        :click-incorrect: :endclick:
-        :click-incorrect:public static void main(String[] args):endclick:
-        :click-incorrect:{:endclick:
-            :click-incorrect:System.out.println("Before greeting");:endclick:
-            :click-correct:greet();:endclick:
-            :click-incorrect:System.out.println("After greeting");:endclick:
-        :click-incorrect:}:endclick:
-    :click-incorrect:}:endclick:
-
-
-.. fillintheblank:: q5_1_6
-
-   Given the GreetingExample class in the previous problem, how many times is  **System.out.println** called in total when the program runs?
-
-   -    :4: Correct.  
-        :.*: Incorrect. The main method calls System.out.println directly 2 times, and the call to greet() results in 2 additional calls to System.out.println.
+Mouse and Keyboard
+------------------
 
-Flow of Execution - Stack Diagrams
-------------------------------------
+We have already seen how to interact with the keyboard using ``Scanner`` in previous units. For "real-time" applications that require immediate feedback from the keyboard and mouse, Scanner doesn't really work.
 
-A class can contain several methods.  It can be tempting to think the methods are executed in the order they
-appear in the class, but this is not the case.
-
-A program always begins at the first statement in the main method. 
-Each statement in the main is executed one at a time until you reach a method call. 
-A method call causes the program execution to jump to the first line of the called method. 
-Each statement in the called method is then executed in order.
-When the called method is done, the program returns back to the main method.
-
-How does the program keep track of all of this?  
-The Java runtime environment keeps track of the method calls using a **call stack**.
-The call stack is made up of stack **frames**.  Each time a method is called, a new frame is created
-and added to the stack. A frame contains the method’s parameters and local variables, along with the number of the current line that is about to be executed. 
+The `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ also has methods that can be used to see if a particular key has been pressed or the position of the mouse, for example. Keep in mind these two important points when working with keyboard and mouse input:
 
-The CodeLens Visualizer represents the call stack using a **stack diagram**, with each 
-method frame drawn as a box.  When a method is called, a new frame is added to the bottom of the stack diagram.
-You can tell which method is currently executing by looking at the bottom of the stack. 
+1. Your users are unpredictable
 
-|Exercise| **Check your understanding**
+2. The computer is VERY fast (faster than any human)
 
-.. |visualizeTrace| raw:: html
+This means that we need to write code to have the computer wait for something to happen (such as a key press or button click) and then perform some desired action.
 
-   <a href="http://pythontutor.com/visualize.html#code=public%20class%20GreetingExample%0A%7B%0A%20%20%20%20public%20static%20void%20greet%28%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Hello!%22%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22How%20are%20you%3F%22%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20%20%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Before%20greeting%22%29%3B%0A%20%20%20%20%20%20%20%20greet%28%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22After%20greeting%22%29%3B%0A%20%20%20%20%7D%0A%7D&cumulative=true&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">GreetingExample Visualizer</a>    
- 
+We see this represented at the very beginning of the ``KeyboardDemo`` program::
 
+	while(!StdDraw.hasNextKeyTyped()) {
+		StdDraw.pause(100);
+	}
 
-Click on each tab to observe the flow of control for the ``GreetingExample`` class. 
+Without this loop, our computer would only check to see if a key was typed **one time** at the **beginning** of the program, and since the computer is so fast it is unlikely that we as humans will hit a key in that very small window. Including it as part of a loop means that the computer is continuously checking to see if a key has been pressed, with a short pause in between each check to allow the computer to do other things.
 
-.. tabbed:: q5_1_7
+Once a key has been pressed, the loop exits. We can then get the key that was pressed as a ``char`` (not a ``String`` since it is a single character), which we can then check the value of. Notice that when comparing ``char`` values the letter being compared is in single quotes, as opposed to the double quotes we are used to using for ``Strings``.
 
-    .. tab:: Tab 1
+For an example of how to use the mouse, inspect the ``MouseDemo`` program. This program shows how to use ``StdDraw`` to get the position of the mouse::
 
-      The program starts at the first line of the main method.
-      The red arrow shows that line 11 is next to execute.
-      
-      The stack diagram is in the right portion of the screen print, below the print output section 
-      where it says "Frames".  There is a single frame for the main method  ``main:11``, 
-      indicating line 11 is the current line in the method.
+	double x = StdDraw.mouseX();
+	double y = StdDraw.mouseY();
+	
+as well as whether the mouse button was pressed::
 
-      Click on the next tab to see what happens after line 11 executes.
+	boolean isPressed = StdDraw.mousePressed();
+	
+The program displays this information once per second. Play around with this short demo and make sure that you understand how it works. You can always refer to the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ for more information about a particular method!
 
-      .. figure:: Figures/greet0.png
- 
-    .. tab:: Tab 2
 
-      The red arrow shows that line 12 is next to execute.  
-      The main method frame ``main:12`` is updated to indicate the current line.
-     
-      Click on the next tab to see what happens when line 12 executes and the greet() method is called.
 
-      .. figure:: Figures/greet1.png
-         
 
-
-    .. tab:: Tab 3
-
-      Control is transferred into the greet() method.
-      
-      The stack diagram shows a new frame was created for the greet() method ``greet:5``, indicating 
-      line 5 is the current line in the method.   
-
-      Note that the CodeLens tool adds the new method frame to the bottom of the stack diagram.
-
-
-      .. figure:: Figures/greet2.png
-
-    .. tab:: Tab 4
-
-      The output is updated after line 5 is executed.  The ``greet:6`` frame indicates line 6 is next to execute.
-
-      .. figure:: Figures/greet2b.png
-
-    .. tab:: Tab 5
-
-      The output is updated after line 6 is executed.  The ``greet:7`` frame indicates line 7 is next to execute, which is the last line of code in the method.
-
-      When line 7 executes, the greet() method will return to the previous frame in the stack, which is the main method. 
-      But how does the program know which line in the main to return to?
-      The method frame ``main:12`` indicates that control should return to line 12.
-
-      .. figure:: Figures/greet3.png
-
-    .. tab:: Tab 6
-
-      The greet() method completed and its frame was removed from the stack.  
-      Control returned to the main method and since there was nothing else to do on line 12, the
-      program moves forward to line 13 as depicted in the method frame ``main:13``.  The program
-      will execute the remaining lines of code in the main method and then terminate.
-
-      .. figure:: Figures/greet4.png
-
-    .. tab:: Tab 7
-
-      You can step through the program using the |visualizeTrace|.
-
-
-|Exercise| **Check your understanding**
-
-.. mchoice:: q5_1_8
-   :practice: T
-   :answer_a: apples and bananas! eat I like to.
-   :answer_b: I like to consume consume consume fruit.
-   :answer_c: I like to apples and bananas! eat.
-   :answer_d: I like to eat eat eat apples and bananas!
-   :correct: d
-   :feedback_a: Try tracing through the main method and see what happens when it calls the other methods.
-   :feedback_b: The consume() method does not print the word consume, and the fruit() method but it does not print the word fruit.
-   :feedback_c: Try tracing through the main method and see what happens when it calls the other methods.
-   :feedback_d: Yes, the print method calls the consume method 3 times and then the fruit method to print this.
-  
-   What does the following code print? 
-
-   .. code-block:: java
-
-      public class LikeFood 
-      {
-        
-        public static void fruit()
-        {
-            System.out.println("apples and bananas!");
-        }
-
-        public static void consume() 
-        {
-           System.out.print("eat ");
-        }
-        
-        public static void main(String[] args) 
-        {
-            System.out.print("I like to ");
-            consume();
-            consume();
-            consume();
-            fruit();
-        }
-    }
-
-.. mchoice:: q5_1_9
-   :practice: T
-   :answer_a: 9
-   :answer_b: 11
-   :answer_c: 19
-   :answer_d: 20
-   :correct: b
-   :feedback_a: Look at the frame on the bottom of the stack diagram to determine the current method.
-   :feedback_b: Correct. The bottom stack frame shows the current method is greet() and line 11 is next to execute.
-   :feedback_c: Look at the frame on the bottom of the stack diagram to determine the current method.
-   :feedback_d: Look at the frame on the bottom of the stack diagram to determine the current method.
-  
-   Given the stack diagram shown in the figure, which line is next to execute?
-
-    .. figure:: Figures/stackframeq1.png
-
-
-
-
-.. mchoice:: q5_1_10
-   :practice: T
-   :answer_a: 16
-   :answer_b: 17
-   :answer_c: 18
-   :answer_d: 19
-   :correct: d
-   :feedback_a: Look at the main method frame in the stack diagram.
-   :feedback_b: Look at the main method frame in the stack diagram.
-   :feedback_c: Look at the main method frame in the stack diagram.
-   :feedback_d: Correct. The main method frame shows the greet method was called at line 19.
-  
-   After line 12 executes and the greet() method completes, control will return to which line in the main method?
-
-    .. figure:: Figures/stackframeq2.png
-
-
-.. mchoice:: q5_1_11
-   :practice: T
-   :answer_a: line 21 in method main.
-   :answer_b: line 6 in method o.
-   :answer_c: line 16 in method m.
-   :correct: c
-   :feedback_a: Incorrect. The stack diagram shows method n was called by method m.
-   :feedback_b: Incorrect. The stack diagram shows method n was called by method m.
-   :feedback_c: Correct. The stack diagram shows method n was called by method m.
-   
-   Notice the n() method is called both in method o() and method m().  
-   The stack diagram shows the current execution
-   trace.  After line 12 executes and the n() method completes, 
-   control will return to which line in which method?
-
-    .. figure:: Figures/stackframeq3.png
-
-
-.. mchoice:: q5_1_12
-   :practice: T
-   :answer_a: Called n
-   :answer_b: Called o
-   :answer_c: Called m
-   :answer_d: After n
-   :correct: d
-   :feedback_a: Incorrect. The last method call in the main is to method o().  Look at the last line in method o().
-   :feedback_b: Incorrect. The last method call in the main is to method o().  Look at the last line in method o().
-   :feedback_c: Incorrect. The last method call in the main is to method o().  Look at the last line in method o().
-   :feedback_d: Correct. 
-   
-   What is the last thing printed when the program runs?
-
-     .. figure:: Figures/stackframeq4.png
-
-
-  
 |CodingEx| **Coding Exercise**
 
-A refrain is similar to a chorus, although usually shorter in length such as a single line that gets repeated.
-In the ``FarmerSong`` program, the refrain is "The farmer in the dell".  
-Add a method named "refrain" and update the main method to call the new method 3 times in place of the duplicate print statements.  
-Run your program to ensure the output is correct.
+Open the ``WaitPoint`` program. You should write code using the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to do the following:
 
-Summary
--------
+* Waits until the mouse has been pressed
 
-- **Procedural Abstraction** (creating methods) reduces the complexity and repetition of code. We can name a block of code as a method and call it whenever we need it, abstracting away the details of how it works.  
+* Waits until the mouse has been released
 
-- A programmer breaks down a large problem into smaller subproblems by creating methods to solve each individual subproblem.
+* Draws a visible point at the spot where the mouse was released
 
-- Write a **method definition** with a **method signature** like ``public static void chorus()`` and a **method body** that consists of statements nested within {}.
+* Waits until the user has typed a ``q``, ignoring all other keys
 
-- Call the method using its name followed by parentheses ``chorus()``.  The method call executes the statements in the method body.
+* Writes a goodbye message to the canvas
+
+Be sure to write this code one step at a time, testing as you go.
+
+
+Animation
+---------
+
+Animation consists of repeatedly drawing images (called frames) fast enough to fool the human brain into thinking that the images are moving or "animated." The repetitve nature of the animation allows use to use a standard **animation loop** in our code to produce whatever animations we would like. Each animation loop consists of three parts:
+
+1. Clear the canvas, so that we can draw the next frame
+
+2. Update the positions of anything that needs to move, then draw the entire frame (the whole thing, not just the moving parts!)
+
+3. Pause briefly, to give the human brain enough time to process the frame that is being displayed before rendering the next frame
+
+To see the animation loop in action, examine the ``MovingBall`` program. The first step of the loop is accomplished with a call to ``StdDraw.clear()``. 
+
+Notice how the position of the ball is updated every frame before the ball is redrawn. Special logic is included to keep the ball in bounds once it reaches the edge of the canvas. This logic isn't very realistic, however. Could you change the code to make the ball "bounce" off the edge of the screen instead?
+
+After updating the position of the ball and drawing it in step 2, a call to ``StdDraw.show()`` is used to accomplish step 3 of our animation loop.
+
+Of these steps, step 2 is the one that can often get quite involved. If there are a lot of moving parts to your animation then it could potentially lead to a lot of work to update all of their positions and redraw everything. Keep in mind, however, that the general structure of the animation loop remains the same regardless of what is being animated.
+
+
+|CodingEx| **Coding Exercise**
+
+Open the ``MouseFollower`` program, which already contains a standard animation loop. 
+
+Use the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to draw a point on the canvas that follows the mouse. To do this, you will need to acquire the coordinates of the mouse, then draw something at that point.
+
+Once you get it working, experiment with the timings to see if you can get the image to "lag" behind the mouse.
