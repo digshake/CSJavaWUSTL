@@ -4,6 +4,8 @@ Module 5: Writing Methods
 
  In this unit, you will learn to write your own methods to reduce redundancy and improve code maintainability.  
 
+To get the exercises repository for modules 4-6, click `here <https://classroom.github.com/a/tq4oIpoF>`_.
+
 .. toctree::
    :maxdepth: 3
    

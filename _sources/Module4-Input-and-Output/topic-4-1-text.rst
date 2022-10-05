@@ -29,10 +29,11 @@
     pair: method; argument
     pair: method; return 
 
-To get the exercises repository for modules 4-6, click `here <https://classroom.github.com/a/tq4oIpoF>`_.
 
 Input and Output
 =================
+
+To get the exercises repository for modules 4-6, click `here <https://classroom.github.com/a/tq4oIpoF>`_.
 
 In this unit we will learn how to write code such that we can better interact with our users. 
 Computers are very different from humans, especially in the way that they communication information. The 
