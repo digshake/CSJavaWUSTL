@@ -12,7 +12,7 @@ Authors
 Description
 ============
 
-Your goal in this extension is to create a memory matching game using ``StdDraw`` and your growing computer science knowledge. If you've never played a memory matching game before, you can [try this version](https://www.freeboardgames.org/play/memorymatch/local) to get the general idea. Additionally, you can find a video demoing a solution [here]({{ site.baseurl }}/resources/extensions/5.04/memorymatch.mp4).
+Your goal in this extension is to create a memory matching game using ``StdDraw`` and your growing computer science knowledge. If you've never played a memory matching game before, you can `try this version <https://www.freeboardgames.org/play/memorymatch/local>`_ to get the general idea. Additionally, you can find a video demoing a solution `here <5.04/memorymatch.mp4>`_.
 
 In this extension, you are going to create a matching game that uses colors rather than images.  Generating a 4x4 board with randomly arranged tiles can be a bit daunting.  We will guide you through writing a few helper methods first to perhaps inspire a solution.
 
@@ -24,13 +24,13 @@ MemoryMatchBoard
 
 1. Inspect ``getPalette()``.
 
-	We have provided you with an array of colors which [should be more discernible to those who are color-blind](http://mkweb.bcgsc.ca/colorblind/img/colorblindness.palettes.v11.pdf).  You are free to change the Colors if you would like to.  If you choose to do so, why not make your application available to more people?  There are plenty of resources on the web to help [select a more inclusive palette](https://www.google.com/search?q=color+blind+color+palette).
+	We have provided you with an array of colors which `should be more discernible to those who are color-blind <http://mkweb.bcgsc.ca/colorblind/img/colorblindness.palettes.v11.pdf>`_.  You are free to change the Colors if you would like to.  If you choose to do so, why not make your application available to more people?  There are plenty of resources on the web to help `select a more inclusive palette <https://www.google.com/search?q=color+blind+color+palette>`_.
 
 2. Complete ``swap(board, aRow, aCol, bRow, bCol)``
 
 	**Note:** this method should be written to be generally useful.  Therefore it should not assume a 4x4 board nor that it is filled with the colors from ``getPalette()``.  Honestly, it should not need to.  You may assume that aRow, aCol, bRow, bCol are all on the board.
 
-3. Open ``MemoryMatchTestSuite.java`` and Run it as a JUnit Test.<br/>
+3. Open ``MemoryMatchTestSuite.java`` and Run it as a JUnit Test.
 
 4. Examine the results of the test cases.  
    * Update your ``swap()`` method until it passes all of the ``SwapTestSuite`` cases of ``MemoryMatchTestSuite`` and you are happy with its clarity.
@@ -58,10 +58,9 @@ MemoryMatchGame
 
 1. Note the declaration of ``X`` and ``Y``.
 
-	~~~java
+::
 	private static final int X = 0;
 	private static final int Y = 1;
-	~~~
 
 	Use these to index the X and Y coordinates of the points represented as double arrays of length 2 in this extension.
 
@@ -77,9 +76,9 @@ MemoryMatchGame
 
 3. Complete ``waitForMouseClick()``
 
-	The code to wait for the mouse to be presses and released has been provided.  Complete this method by returning a created an array of length 2 with the array item at the X index assigned to [StdDraw.mouseX()](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseX--) and the array item at the Y index assigned to [StdDraw.mouseY()](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseY--).
+	The code to wait for the mouse to be presses and released has been provided.  Complete this method by returning a created an array of length 2 with the array item at the X index assigned to `StdDraw.mouseX() <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseX-->`_ and the array item at the Y index assigned to `StdDraw.mouseY() <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseY-->`_.
 
-	~~~java
+::
 	private static double[] waitForMouseClick() {
 		// wait for the mouse to be pressed
 		while (!StdDraw.isMousePressed()) {
@@ -95,7 +94,7 @@ MemoryMatchGame
 		// Delete the line below and implement this method
 		throw new NotYetImplementedException();
 	}
-	~~~
+
 4. Complete ``toRow(xy)``
 
 	Based on how you have defined your world boundaries, map the ``y`` of xy into the appropriate row of the board. 
@@ -106,14 +105,14 @@ MemoryMatchGame
 
 6. Investigate ``waitForClickOnRowColumn()``
 
-	~~~java
+::
 	private static int[] waitForClickOnRowColumn() {
 		double[] xy = waitForMouseClick();
 		int r = toRow(xy);
 		int c = toColumn(xy);
 		return new int[] { r, c };
 	}
-	~~~
+
 
 7. Complete ``drawBoard(Color[][] board, ???)``
 

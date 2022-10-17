@@ -10,18 +10,18 @@ Authors
 * The idea for this assignment comes from the article "Persian Recursion" by Anne M. Burns that appeared on pages 196-199 of *Mathematics Magazine*, volume 7, in 1997
 
 
-* A video demonstrating my solution can be found [here]({{ site.baseurl }}/resources/extensions/6.02/persian.mp4).
+* A video demonstrating my solution can be found `here <6.02/persian.mp4>`_.
 
 * That video instructs you how to speed up the drawing substantially.
 * Don't speed things up until you see the rug is drawing properly.
 
 In the ``extensions`` folder open the ``recursivepatterns`` package and the ``PersianRug`` class. Your task is to complete the method ``persianRug`` so that it draws a rug similar to the one shown below:
 
-![]({{ site.baseurl }}/resources/extensions/6.02/rug.png)
+.. image:: 6.02/rug.png
 
 Each call to ``persianRug`` works on a given square of the rug.   Consider the picture shown below:
 
-![]({{ site.baseurl }}/resources/extensions/6.02/orig.png)
+.. image:: 6.02/orig.png
 
 
 * The square is described by its lower-left corner (in this case, (0,0)), and its size (in this case, 1).
@@ -48,7 +48,7 @@ Notes:
 
 * Different functions will produce different rugs.  The rug below is computed using the same code as the rug shown at the top of this assignment, but the function was tweaked slightly:
 
-	![]({{ site.baseurl }}/resources/extensions/6.02/otherrug.png)
+.. image:: 6.02/otherrug.png
 
 	Perhaps you can see that in the above rug, once a square has red on each of its borders, the two drawn lines inside that square are also red.
 	That effect just happens to be a property of the function I used to produce

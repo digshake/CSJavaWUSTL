@@ -20,27 +20,29 @@ Procedure
 
 2. Note ``X`` and ``Y``.
 
-	~~~java
+::
 	private static final int X = 0;
 	private static final int Y = 1;
-	~~~
+
 
 	Use these to index the X and Y coordinates of the points represented as double arrays of length 2 in this extension.
 
 2. Complete ``getMousePosition()``.
 
-	Return a created array of length 2 with the array item at the X index assigned to [StdDraw.mouseX()](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseX--) and the array item at the Y index assigned to [StdDraw.mouseY()](https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseY--).
+	Return a created array of length 2 with the array item at the X index assigned to `StdDraw.mouseX() <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseX-->`_ and the array item at the Y index assigned to `StdDraw.mouseY() <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseY-->`_.
 
 3. Run ``MousePositionDebugApp`` as a Java Application.
 
-	<center><iframe width="480" height="270" src="https://www.youtube.com/embed/UEen1LteE9E?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: UEen1LteE9E
+	:align: center
 
 
 4. Complete ``drawBall(location, radius)``
 
 5. Run ``DrawBallDebugApp`` as a Java Application.
 
-	<center><iframe width="480" height="270" src="https://www.youtube.com/embed/a8z_2wBpA38?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: a8z_2wBpA38
+	:align: center
 
 6. Complete ``square(v)``.
 
@@ -48,13 +50,15 @@ Procedure
 
 7. Run ``ChaseTheMouseTestSuite`` as a JUnit Test.
 
-	<center><iframe width="480" height="270" src="https://www.youtube.com/embed/M_vEO6g-S_w?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: M_vEO6g-S_w
+	:align: center
+	
 	Make any necessary edits to square until the Square test cases have all passed.
 
 
 8. Complete ``calculateMagnitude(xy)``.
 
-	[Vector Magnitude on Wolfram MathWorld](https://mathworld.wolfram.com/VectorMagnitude.html)
+	`Vector Magnitude on Wolfram MathWorld <https://mathworld.wolfram.com/VectorMagnitude.html>`_
 
 	**Note:** vector ``xy`` only has 2 dimensions.
 
@@ -64,7 +68,7 @@ Procedure
 
 10. Complete ``add(a, b)``.
 
-	[Vector Addition on Wolfram MathWorld](https://mathworld.wolfram.com/VectorAddition.html)
+	`Vector Addition on Wolfram MathWorld <https://mathworld.wolfram.com/VectorAddition.html>`_
 
 	**Note:** vectors ``a`` and ``b`` only have 2 dimensions.
 
@@ -74,7 +78,7 @@ Procedure
 
 12. Complete ``subtract(a, b)``.
 
-	[Vector Subtraction on Wolfram MathWorld](https://mathworld.wolfram.com/VectorSubtraction.html)
+	`Vector Subtraction on Wolfram MathWorld <https://mathworld.wolfram.com/VectorSubtraction.html>`_
 
 	**Note:** vectors ``a`` and ``b`` only have 2 dimensions.
 
@@ -84,9 +88,9 @@ Procedure
 
 14. Complete ``scalarMultiply(xy, scalar)``.
 
-	[Scalar Multiplication on Wolfram MathWorld](https://mathworld.wolfram.com/ScalarMultiplication.html)
+	`Scalar Multiplication on Wolfram MathWorld <https://mathworld.wolfram.com/ScalarMultiplication.html>`_
 
-	[Scalar Multiplication on Wikipedia](https://en.wikipedia.org/wiki/Scalar_multiplication)
+	`Scalar Multiplication on Wikipedia <https://en.wikipedia.org/wiki/Scalar_multiplication>`_
 
 	**Note:** vector ``xy`` only has 2 dimensions.
 
@@ -96,7 +100,8 @@ Procedure
 
 16. Watch this video on Real Time Animation
 
-	<center><iframe width="480" height="270" src="https://www.youtube.com/embed/nhDt5HVOzVM?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: nhDt5HVOzVM
+	:align: center
 
 17. Complete ``calculateNextPosition(currentBallPosition, mousePosition, speed, deltaTime)``.
 
@@ -106,9 +111,9 @@ Procedure
 
 	Below are two different images which attempt to convey what is required:
 
-	<img src="{{ site.baseurl }}/resources/extensions/5.01/single_frame.jpg">
+.. image:: 5.01/single_frame.jpg
 
-	<img src="{{ site.baseurl }}/resources/extensions/5.01/chase_the_mouse.svg" width="640">
+.. image:: 5.01/chase_the_mouse.svg
 
 18. Run ``ChaseTheMouseTestSuite``.
 
@@ -118,7 +123,8 @@ Procedure
 
 19. Run ``CalculateNextPositionDebugApp`` as a Java Application.
 
-	<center><iframe width="480" height="270" src="https://www.youtube.com/embed/WkbEaztb7W0?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: WkbEaztb7W0
+	:align: center
 
 20. Complete ``chaseTheMouse()``
 

@@ -27,7 +27,8 @@ Either way you did it, the specific set of watermelons that produces these weigh
 Demo Video
 ============
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/EwZQ1Mux1L0?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: EwZQ1Mux1L0
+	:align: center
 
 Randomly Guessing Watermelon Weights Prohibited
 ============

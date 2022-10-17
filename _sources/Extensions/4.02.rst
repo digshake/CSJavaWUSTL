@@ -33,20 +33,21 @@ It is important to note that there are many acceptable ways to implement this as
 
 Listed below are several helpful methods for this assignment. The first is from the ``String`` class and is called on the target ``String t``. The other four are static methods. Recall that static methods are not called on a target variable as in the previous method, but rather are called on a generic object of that type.
     
-* [char charAt(int i)](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#charAt(int)) : Returns the character at index ``i`` in ``t``.  Ex: ``"Hello".charAt(1)`` would return ``'e'`` because ``"Hello"`` is a ``String`` and ``'e'`` is the character at index 1. 
+* `char charAt(int i) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/String.html#charAt(int) :>`_ Returns the character at index ``i`` in ``t``.  Ex: ``"Hello".charAt(1)`` would return ``'e'`` because ``"Hello"`` is a ``String`` and ``'e'`` is the character at index 1. 
 
-* [boolean Character.isDigit(char c)](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.html#isDigit(char)) : Returns true if ``c`` is a digit and false otherwise. Ex: ``Character.isDigit('e')`` would return ``false``.
+* `boolean Character.isDigit(char c) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.html#isDigit(char)>`_ : Returns true if ``c`` is a digit and false otherwise. Ex: ``Character.isDigit('e')`` would return ``false``.
 
-* [boolean Character.isWhitespace(char c)](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.html#isWhitespace(char)) : Returns true if ``c`` is white space.
+* `boolean Character.isWhitespace(char c) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.html#isWhitespace(char)>`_ : Returns true if ``c`` is white space.
 
-* [String Character.toString(char c)](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.html#toString(char)) : Returns the ``String`` representation of a character.
+* `String Character.toString(char c) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.html#toString(char)>`_ : Returns the ``String`` representation of a character.
 
-* [int Integer.parseInt(String s)](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Integer.html#parseInt(java.lang.String)) : Returns the ``int`` representation of a String.
+* `int Integer.parseInt(String s) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Integer.html#parseInt(java.lang.String)>`_ : Returns the ``int`` representation of a String.
 
 Demo Video
 ============
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/ESftATfp3Wk?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: ESftATfp3Wk
+	:align: center
 
 Procedure
 ============
@@ -69,4 +70,4 @@ then the output should be:
 Testing
 ============
 
-To run the suite of unit tests, right (control) click on ``CalculatorTestSuite`` and choose ``Run as...`` then ``JUnit Test``.  
+Be sure to try and test your code with all of the various operations. Some specific examples can be found on the rubric.

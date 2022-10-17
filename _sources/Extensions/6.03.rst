@@ -8,7 +8,7 @@ Authors
 * `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
 * Ken Goldman
 
-> A video demonstrating my solution can be found [here]({{ site.baseurl }}/resources/extensions/6.03/flower.mp4).
+A video demonstrating my solution can be found `here <6.03/flower.mp4>`_.
 
 In the ``extensions`` folder open the ``recursivepatterns`` package.  The following classes found there, and described in greater detail below, must be completed for this extension:
 
@@ -18,7 +18,7 @@ In the ``extensions`` folder open the ``recursivepatterns`` package.  The follow
 
 The ultimate goal is to complete the ``flower`` method of the ``Flower`` class so that it draws an image similar to the one shown below:
 
-![]({{ site.baseurl }}/resources/extensions/6.03/flower.png)
+.. image:: 6.03/flower.png
 
 The colors shown in the above image are somewhat *transparent*, so that the color of an ellipse is allowed to bleed through the ellipse above it.
 
@@ -27,32 +27,31 @@ You can proceed by working on either class first.  However, if you postpone ``Tr
 Representing Color in Java
 ------------------
 
-Opaque [Color](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html)'s in Java are made up of 3 components: red, green, and blue (hence the term *RGB*). The color of a pixel is made up of a combination of the *intensities* of each of red, green, and blue components. In computing it's common for intensities range from 0 (meaning none of that color is present) to 255 (meaning as much as possible of that color is present). (The reason for 255 is the maximum is because computer use binary numbers. The "why" isn't important not, but keep in mind that color values go from 0 to 255)
+Opaque `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html>`_s in Java are made up of 3 components: red, green, and blue (hence the term *RGB*). The color of a pixel is made up of a combination of the *intensities* of each of red, green, and blue components. In computing it's common for intensities range from 0 (meaning none of that color is present) to 255 (meaning as much as possible of that color is present). (The reason for 255 is the maximum is because computer use binary numbers. The "why" isn't important not, but keep in mind that color values go from 0 to 255)
 
 You create a new color for a pixel with the code:
 
-``````
-new Color(redValue, greenValue, blueValue)
-``````
+``new Color(redValue, greenValue, blueValue)``
+
 
 where ``redValue`` is the intensity (an integer between 0 and 255) of red, ``greenValue`` is the intensity of green, and ``blueValue`` is the intensity of blue.
 
 For example, you get the color black with ``new Color (0,0,0)`` (0 intensity for all colors). You get red with ``new Color (255,0,0)`` (highest intensity for red, 0 intensity for green and blue).
 
-As is the case with most color models, Java's [Color](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html) objects are allowed to have a degree of transparency.
+As is the case with most color models, Java's `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html>`_ objects are allowed to have a degree of transparency.
 
 The ``transparentColor`` method, as provided to you, ignores the ``alpha`` parameter and returns the color provided as input.
 
 You must change this behavior so that the color returned as the same red, green, and blue components as the provided color, but with the specified transparency.
 
-Java makes this easy, because there is a constructor for [Color](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(int,int,int,int)) 
+Java makes this easy, because there is a constructor for `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(int,int,int,int)>`_  
 that does the job. This task is given to you primarily to acquaint you with the process of looking through JavaDoc documentation to find a class or method you need.
 
-The 4 components of a [Color](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html) instance can be accessed via these methods:
- - color.[getRed()](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getRed())
- - color.[getGreen()](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getGreen())
- - color.[getBlue()](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getBlue())
- - color.[getAlpha()](https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getAlpha())
+The 4 components of a `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html>`_instance can be accessed via these methods:
+ - color.`getRed() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getRed()>`_
+ - color.`getGreen() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getGreen()>`_
+ - color.`getBlue() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getBlue()>`_
+ - color.`getAlpha() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getAlpha()>`_
 
 Follow the instructions provided in the ``TransparentColor`` source code.
 
@@ -68,7 +67,7 @@ If necessary, review the material in the text and slides that discusses how to p
 
 * You must find the substructure in the flower pattern.  To help with this, the following diagram shows the locations of each ellipse within a given level of recursion:
 
-![]({{ site.baseurl }}/resources/extensions/6.03/five-recursive-calls.jpg)
+.. image:: 6.03/five-recursive-calls.jpg
 
 * Analyze the above diagrams to infer the area taken up by each sub-ellipse that you must draw.
 

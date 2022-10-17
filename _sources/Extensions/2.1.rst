@@ -23,7 +23,7 @@ In the ``imagetransform`` package, modify the provided ``ImageTransforms`` Java 
 Instructions
 ============
 
-	**Note:** there is information at the bottom of this page (including a video) on [how to test your solution](#testing)
+	**Note:** there is information at the bottom of this page (including a video) on how to test your solution.
 
 Each of the methods described below is found in the ``Transforms`` class.
 
@@ -79,6 +79,6 @@ Testing
 
 * To run the suite of unit tests, right (control) click on `ImageTransformsTestSuite` and choose `Run as...` then `JUnit Test`.  
 
-Note: `the video shown above <https://www.youtube.com/watch?v=VJiE78FTohs>`_ shows how to run the test suite
+Note: `this video <https://www.youtube.com/watch?v=VJiE78FTohs>`_ shows how to run the test suite
 
 

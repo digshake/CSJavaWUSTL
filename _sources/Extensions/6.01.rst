@@ -16,7 +16,8 @@ Do not change the parameters or return type of the ``drawLine`` method!  You are
 
 Your task is to devise an algorithm for drawing a line from (x1,y1) to (x2,y2) using *recursion*. It may take you some time to think about how to do that, but once you see the recursive nature of drawing a line, you will probably need only a few lines of code to accomplish this task.
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/1qW7dKsgzIQ?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: 1qW7dKsgzIQ
+	:align: center
 
 Please take note of the following guidelines, as you will not receive credit unless your solution follows the rules of this assignment:
 
@@ -32,7 +33,7 @@ Please take note of the following guidelines, as you will not receive credit unl
 	Do **not** compute or use the slope of the line in your approach.  We will not count the extension if you do that.  Instead, think recursively about how a line is constructed.
 
  When you are done it should look like this:
-
- ![]({{ site.baseurl }}/resources/extensions/6.01/divine_lines.png)
+ 
+.. image:: 6.01/divine_lines.png
 
 

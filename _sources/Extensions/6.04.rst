@@ -11,7 +11,7 @@ Authors
 Background
 ============
 
-The [Fibonacci Sequence](http://en.wikipedia.org/wiki/Fibonacci_number) is an interesting pattern of numbers that occurs in a lot of unusual places. The first number in the sequence is 0, the second number is 1, the third is also 1, the fourth is 2, the fifth is 3, the sixth is 5, ....   
+The `Fibonacci Sequence <http://en.wikipedia.org/wiki/Fibonacci_number>`_ is an interesting pattern of numbers that occurs in a lot of unusual places. The first number in the sequence is 0, the second number is 1, the third is also 1, the fourth is 2, the fifth is 3, the sixth is 5, ....   
 
 Each new number in this sequence is just the sum of the previous two numbers.  This can be expressed via a recursive equation, like:
 
@@ -31,7 +31,8 @@ In this extension, you will compare the running time of that recursive formulati
 Why Fibonacci?
 ------------------
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/SjSHVDfXHQ4?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: SjSHVDfXHQ4
+	:align: center
 
 Procedure
 ============
@@ -45,11 +46,11 @@ Graph
 
   **Note:** You should assume that StdDraw's x and y scales are configured to allow the index of the array to map to the x-coordinate and the value at that index to be the y-coordinate.
 
-  <center><iframe width="480" height="270" src="https://www.youtube.com/embed/9psWz0hAhmw?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: 9psWz0hAhmw
 
 - Run ``Graph`` as a Java Application.
 
-  <img src="{{ site.baseurl }}/resources/extensions/6.04/graph_lines.png" width="640">
+.. image:: 6.04/graph_lines.png
 
 Fibonacci
 ------------------
@@ -75,10 +76,10 @@ Timing
 
 Run ``FibonacciDebugApp`` to get timing information on your algorithms.
 
-<img src="{{ site.baseurl }}/resources/extensions/6.04/fibonacci_debug_app.png" width="640">
+.. image:: 6.04/fibonacci_debug_app.png
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/qJ3EBKyOsoQ?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: qJ3EBKyOsoQ
 
 Press the **Graph Timing** button to see your ``graphLine(ys)`` method draw the timing data.
 
-<img src="{{ site.baseurl }}/resources/extensions/6.04/fibonacci_graph_timing.png" width="640">
+.. image:: 6.04/fibonacci_graph_timing.png

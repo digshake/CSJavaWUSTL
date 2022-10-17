@@ -13,23 +13,24 @@ Background
 
 In this extension we will use Mosaic: a custom API which is ideally suited for the problems below.  Unlike with StdDraw where you explicitly pass the x and y locations at which shapes should be drawn, with Mosaic you use the provided methods like above() and beside() to arrange your sub-mosaics.  Combining these tools with recursion allows us to create complex recursive shapes with an extraordinarily small amount of code.  Watch the videos to see some examples of how to use Mosaic.  Then create the three mosaics shown at the bottom in order to demo this extension.
 
-* [L-system](https://en.wikipedia.org/wiki/L-system) 
-* [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle)
-* [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_carpet)
-* [Cantor set](https://en.wikipedia.org/wiki/Cantor_set)
+* `L-system <https://en.wikipedia.org/wiki/L-system>`_ 
+* `Sierpinski triangle <https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle>`_
+* `Sierpinski carpet <https://en.wikipedia.org/wiki/Sierpi%C5%84ski_carpet>`_
+* `Cantor set <https://en.wikipedia.org/wiki/Cantor_set>`_
 
 
 Mosiac API
 ============
 
-The Mosaic API is inspired by the [Racket Image Library](https://docs.racket-lang.org/teachpack/2htdpimage.html).
+The Mosaic API is inspired by the `Racket Image Library <https://docs.racket-lang.org/teachpack/2htdpimage.html>`_.
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/bXVpI9sCBuI?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: bXVpI9sCBuI
+	:align: center
 
 Beside Mosaic Example
 ------------------
 
-~~~java
+::
 	private static Mosaic sideBySideEllipses() {
 		return beside(
 				filledEllipse(0.1, 0.2, HONOLULU_BLUE), 
@@ -37,14 +38,14 @@ Beside Mosaic Example
 				filledEllipse(0.1, 0.4, BLACK)
 		);
 	}
-~~~
 
-<img src="{{ site.baseurl }}/resources/extensions/6.05/beside.png" width="320">
+
+.. image:: 6.05/beside.png
 
 Above Mosaic Example
 ------------------
 
-~~~java
+::
 	private static Mosaic stackedEllipses() {
 		return above(
 				filledEllipse(0.2, 0.1, HONOLULU_BLUE), 
@@ -52,14 +53,14 @@ Above Mosaic Example
 				filledEllipse(0.4, 0.1, BLACK)
 		);
 	}
-~~~
 
-<img src="{{ site.baseurl }}/resources/extensions/6.05/above.png" width="320">
+
+.. image:: 6.05/above.png
 
 Overlay Mosaic Example
 ------------------
 
-~~~java
+::
 	private static Mosaic overlaidEllipses() {
 		return overlay(
 				filledEllipse(0.1, 0.2, HONOLULU_BLUE), 
@@ -67,14 +68,14 @@ Overlay Mosaic Example
 				filledEllipse(0.8, 0.6, BLACK)
 		);
 	}
-~~~
 
-<img src="{{ site.baseurl }}/resources/extensions/6.05/overlay.png" width="320">
+
+.. image:: 6.05/overlay.png
 
 Forest Mosaic Example
 ------------------
 
-~~~java
+::
 	private static Mosaic tree() {
 		return above(
 				filledEquilateralTriangle(1, OCEAN_GREEN), 
@@ -91,14 +92,14 @@ Forest Mosaic Example
 		Mosaic row = rowOfTrees();
 		return above(row, row, row);
 	}
-~~~
 
-<img src="{{ site.baseurl }}/resources/extensions/6.05/forest.png" width="320">
+
+.. image:: 6.05/forest.png
 
 Recursive Mosaic Example
 ------------------
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/GkimQLmx-0E?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: GkimQLmx-0E
 
 Note: Mosaic Is Not StdDraw
 ------------------
@@ -116,7 +117,7 @@ Implement simple and elegant algorithms to create the three mosaics below.  For 
 Sierpinski Gasket
 ------------------
 
-<img src="{{ site.baseurl }}/resources/extensions/6.05/sierpinski_gasket.png" width="640">
+.. image:: 6.05/sierpinski_gasket.png
 
 **Note:** Although it is easy to see solutions to this problem as either:
 - drawing only the black triangles or 
@@ -129,9 +130,9 @@ Sierpinski Carpet
 
 **Note:** The PARIS_YELLOW lines you see in the image below are unfortunate artifacts of the StdDraw system.  Do **NOT** attempt to draw them.  Depending on your algorithm, they will sadly appear in your simple and elegant solution to this problem.
 
-<img src="{{ site.baseurl }}/resources/extensions/6.05/sierpinski_carpet.png" width="640">
+.. image:: 6.05/sierpinski_carpet.png
 
 Cantor Stool
 ------------------
 
-<img src="{{ site.baseurl }}/resources/extensions/6.05/cantor_stool.png" width="640">
+.. image:: 6.05/cantor_stool.png
