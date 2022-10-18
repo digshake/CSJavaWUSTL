@@ -60,7 +60,7 @@ It is suggested that you implement the methods in the following order:
 
 5. `boolean boardFull(String[][]) <5.03/TTTDoc/tictactoe/TicTacToe.html#boardFull-java.lang.String:A:A->`_
 
-    > Note that when comparing to see if two strings are equivalent you should use the ``.equals()`` method, NOT ``==``, like
+Note that when comparing to see if two strings are equivalent you should use the ``.equals()`` method, NOT ``==``, like
 
 ::
 
@@ -70,7 +70,7 @@ It is suggested that you implement the methods in the following order:
 		// This will be true! (the == would not!)
 	}
 	
-> You can even reverse the order of the two strings, like:
+You can even reverse the order of the two strings, like:
 
 ::
 

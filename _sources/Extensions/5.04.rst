@@ -63,7 +63,7 @@ MemoryMatchGame
 	private static final int X = 0;
 	private static final int Y = 1;
 
-	Use these to index the X and Y coordinates of the points represented as double arrays of length 2 in this extension.
+Use these to index the X and Y coordinates of the points represented as double arrays of length 2 in this extension.
 
 2. Investigate and possibly edit ``defineWorldBoundaries()``
 
