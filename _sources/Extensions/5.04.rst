@@ -12,7 +12,7 @@ Authors
 Description
 ============
 
-Your goal in this extension is to create a memory matching game using ``StdDraw`` and your growing computer science knowledge. If you've never played a memory matching game before, you can `try this version <https://www.freeboardgames.org/play/memorymatch/local>`_ to get the general idea. Additionally, you can find a video demoing a solution `here <5.04/memorymatch.mp4>`_.
+Your goal in this extension is to create a memory matching game using ``StdDraw`` and your growing computer science knowledge. If you've never played a memory matching game before, you can `try this version <https://www.freeboardgames.org/play/memorymatch/local>`_ to get the general idea. Additionally, you can find a video demoing a solution `here <https://classes.engineering.wustl.edu/2021/fall/cse131//resources/extensions/5.04/memorymatch.mp4>`_.
 
 In this extension, you are going to create a matching game that uses colors rather than images.  Generating a 4x4 board with randomly arranged tiles can be a bit daunting.  We will guide you through writing a few helper methods first to perhaps inspire a solution.
 
