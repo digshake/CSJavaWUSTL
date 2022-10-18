@@ -51,13 +51,13 @@ We then use the `time value of money <https://en.wikipedia.org/wiki/Time_value_o
 
 * What would $1 be worth in fifty years if invested with some rate of return *r*?  We model this computation by the function
 
-.. math:: futureValue(dollars, years, r) = dollars * (1.0 + r)^{years} $$
+.. math:: futureValue(dollars, years, r) = dollars * (1.0 + r)^{years} 
 
 Thus, using *r=.1*, $1 is the same now as $117 dollars fifty years from now.
 
 * A "reverse" question is also interesting:  How much would I have to set aside today so that it would be worth $1 in fifty years using the **discount** rate *r*?  We model this computation by computing the reverse (running time backwards) of what we computed for the future:
 
-.. math:: presentValue(dollars, years, r) = \frac{dollars}{(1.0 + r)^{years}} $$
+.. math:: presentValue(dollars, years, r) = \frac{dollars}{(1.0 + r)^{years}} 
 
 Thus, to have $1 fifty years from now, we would have to set aside 0.854 cents (less than one cent) now.
 
@@ -80,7 +80,7 @@ Friend Two
 
 This friend takes your $1 and gives you back $10 in fifty years.  $10 sounds better than $5, but adjusting the $10 in fifty years into it's present value:
 
-.. math:: presentValue($10, 50, 0.10) = \frac{$10}{(1.0 + 0.10)^{50}} = $0.08 $$ 
+.. math:: presentValue($10, 50, 0.10) = \frac{$10}{(1.0 + 0.10)^{50}} = $0.08 
 
 * Your *net* gain is the 0.08 dollars you receive minus the $1 you gave away, so you net -0.92 dollars (you lose money on this deal).
 

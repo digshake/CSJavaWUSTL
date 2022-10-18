@@ -8,7 +8,7 @@ Authors
 * `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
 * Ken Goldman
 
-A video demonstrating my solution can be found `here <6.03/flower.mp4>`_.
+A video demonstrating my solution can be found `here <https://classes.engineering.wustl.edu/2021/fall/cse131//resources/extensions/6.03/flower.mp4>`_.
 
 In the ``extensions`` folder open the ``recursivepatterns`` package.  The following classes found there, and described in greater detail below, must be completed for this extension:
 
@@ -27,7 +27,7 @@ You can proceed by working on either class first.  However, if you postpone ``Tr
 Representing Color in Java
 ------------------
 
-Opaque `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html>`_s in Java are made up of 3 components: red, green, and blue (hence the term *RGB*). The color of a pixel is made up of a combination of the *intensities* of each of red, green, and blue components. In computing it's common for intensities range from 0 (meaning none of that color is present) to 255 (meaning as much as possible of that color is present). (The reason for 255 is the maximum is because computer use binary numbers. The "why" isn't important not, but keep in mind that color values go from 0 to 255)
+Opaque `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html>`_ s in Java are made up of 3 components: red, green, and blue (hence the term *RGB*). The color of a pixel is made up of a combination of the *intensities* of each of red, green, and blue components. In computing it's common for intensities range from 0 (meaning none of that color is present) to 255 (meaning as much as possible of that color is present). (The reason for 255 is the maximum is because computer use binary numbers. The "why" isn't important not, but keep in mind that color values go from 0 to 255)
 
 You create a new color for a pixel with the code:
 
@@ -47,11 +47,11 @@ You must change this behavior so that the color returned as the same red, green,
 Java makes this easy, because there is a constructor for `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(int,int,int,int)>`_  
 that does the job. This task is given to you primarily to acquaint you with the process of looking through JavaDoc documentation to find a class or method you need.
 
-The 4 components of a `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html>`_instance can be accessed via these methods:
- - color.`getRed() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getRed()>`_
- - color.`getGreen() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getGreen()>`_
- - color.`getBlue() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getBlue()>`_
- - color.`getAlpha() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getAlpha()>`_
+The 4 components of a `Color <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html>`_ instance can be accessed via these methods:
+ - color. `getRed() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getRed()>`_
+ - color. `getGreen() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getGreen()>`_
+ - color. `getBlue() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getBlue()>`_
+ - color. `getAlpha() <https://docs.oracle.com/en/java/javase/13/docs/api/java.desktop/java/awt/Color.html#getAlpha()>`_
 
 Follow the instructions provided in the ``TransparentColor`` source code.
 

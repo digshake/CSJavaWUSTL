@@ -31,6 +31,7 @@ Beside Mosaic Example
 ------------------
 
 ::
+
 	private static Mosaic sideBySideEllipses() {
 		return beside(
 				filledEllipse(0.1, 0.2, HONOLULU_BLUE), 
@@ -46,6 +47,7 @@ Above Mosaic Example
 ------------------
 
 ::
+
 	private static Mosaic stackedEllipses() {
 		return above(
 				filledEllipse(0.2, 0.1, HONOLULU_BLUE), 
@@ -61,6 +63,7 @@ Overlay Mosaic Example
 ------------------
 
 ::
+
 	private static Mosaic overlaidEllipses() {
 		return overlay(
 				filledEllipse(0.1, 0.2, HONOLULU_BLUE), 
@@ -76,6 +79,7 @@ Forest Mosaic Example
 ------------------
 
 ::
+
 	private static Mosaic tree() {
 		return above(
 				filledEquilateralTriangle(1, OCEAN_GREEN), 
@@ -120,8 +124,8 @@ Sierpinski Gasket
 .. image:: 6.05/sierpinski_gasket.png
 
 **Note:** Although it is easy to see solutions to this problem as either:
-- drawing only the black triangles or 
-- drawing a single black triangle with upside down white triangles on top
+* drawing only the black triangles or 
+* drawing a single black triangle with upside down white triangles on top
 
 Mosaic currently only supports drawing upright equilateral triangles so you can only reasonably go down the "drawing only the black traingles" path.
 

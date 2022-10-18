@@ -30,58 +30,58 @@ Block
 Beehive
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Game_of_life_beehive.svg/200px-Game_of_life_beehive.svg.png)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Game_of_life_beehive.svg/200px-Game_of_life_beehive.svg.png
 
 Loaf
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game_of_life_loaf.svg/200px-Game_of_life_loaf.svg.png)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game_of_life_loaf.svg/200px-Game_of_life_loaf.svg.png
 
 Boat 
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Game_of_life_boat.svg/200px-Game_of_life_boat.svg.png)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Game_of_life_boat.svg/200px-Game_of_life_boat.svg.png
 
 
 Blinker 
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/9/95/Game_of_life_blinker.gif)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/9/95/Game_of_life_blinker.gif
 
 Toad
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/1/12/Game_of_life_toad.gif)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/1/12/Game_of_life_toad.gif
 
 Beacon 
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/1/1c/Game_of_life_beacon.gif)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/1/1c/Game_of_life_beacon.gif
 
 Pulsar
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif
 
 Glider 
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/f/f2/Game_of_life_animated_glider.gif)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/f/f2/Game_of_life_animated_glider.gif
 
 Lightweight Spaceship
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/3/37/Game_of_life_animated_LWSS.gif)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/3/37/Game_of_life_animated_LWSS.gif
 
 Gosper Glider Gun
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Game_of_life_glider_gun.svg/500px-Game_of_life_glider_gun.svg.png)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Game_of_life_glider_gun.svg/500px-Game_of_life_glider_gun.svg.png
 
 Block-Laying Switch Engine
 ------------------
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Game_of_life_infinite1.svg/200px-Game_of_life_infinite1.svg.png)
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Game_of_life_infinite1.svg/200px-Game_of_life_infinite1.svg.png
 
 Directions
 ============
@@ -98,29 +98,29 @@ The code for this work can be found ``conway`` package. The ``Conway`` class is 
 
 4. A ``public void setAlive(boolean isAlive, int row, int col)`` method that takes in a row and a column, and whether that cell should be currently alive or dead
 
-	> You must come up with a data type that stores values in rows an columns to represent all of the cells. There are multiple ways to store this information, but think carefully about which one you choose. Some choices will make remaining work easier than others. (Hint: This method's signature may suggest an appropriate representation)
+	You must come up with a data type that stores values in rows an columns to represent all of the cells. There are multiple ways to store this information, but think carefully about which one you choose. Some choices will make remaining work easier than others. (Hint: This method's signature may suggest an appropriate representation)
 
 5. An ``public boolean isAlive(int row, int col)`` method, which returns whether the cell at that specific row and column is alive or dead. If the row and column are out of the bounds of that Conway object, then return ``false``.
 
-	> Run ``ConwayTestSuite``.  Your code should now pass the ``AliveTestSuite`` portion of the ``ConwayTestSuite``.
+	Run ``ConwayTestSuite``.  Your code should now pass the ``AliveTestSuite`` portion of the ``ConwayTestSuite``.
 
 6. A ``public void clear()`` method, which sets every cell in the Conway object to dead.
 
-	> Run ``ConwayTestSuite``.  Your code should now pass the ``ClearTestSuite`` portion of the ``ConwayTestSuite``.
+	Run ``ConwayTestSuite``.  Your code should now pass the ``ClearTestSuite`` portion of the ``ConwayTestSuite``.
 
 7. A ``public int countLivingNeighbors(int row, int col)`` method, which considers the cell at a certain row and column, and returns the number of living neighbors that it has.
 
 	The neighbors of a certain cell are considered to be the eight cells that are surrounding it. Your ``isAlive()`` should help you with this.
 
-	> Run ``ConwayTestSuite``.  Your code should now pass the ``CountTestSuite`` portion of the ``ConwayTestSuite``.
+	Run ``ConwayTestSuite``.  Your code should now pass the ``CountTestSuite`` portion of the ``ConwayTestSuite``.
 
 8. A ``public void step()`` method, which executes a generation of life (one step of the simulation of life). Take all of the current cells and determine whether or not they will be alive in the next generation using the rules given above.
 
-	> You need to be careful how you update.  The updates should not impact the outcome of another update.  For example, when you figure out if the cell in row 0 and column 0 will be alive, this new value should not impact the computation for the surrounding rows.  They should be based on the original value of row 0 column 0 before it's next value was computed.   (Hint: It may be helpful to use an additional array or an entirely new ``Conway`` object)
+	You need to be careful how you update.  The updates should not impact the outcome of another update.  For example, when you figure out if the cell in row 0 and column 0 will be alive, this new value should not impact the computation for the surrounding rows.  They should be based on the original value of row 0 column 0 before it's next value was computed.   (Hint: It may be helpful to use an additional array or an entirely new ``Conway`` object)
 	
-	> For instance, say cell A and cell B both alive and are neighbors. If you determine that A will be dead in the next generation, and you kill it, when you go to count the number of living neighbors of B, it will have fewer living neighbors now than it should. 
+	For instance, say cell A and cell B both alive and are neighbors. If you determine that A will be dead in the next generation, and you kill it, when you go to count the number of living neighbors of B, it will have fewer living neighbors now than it should. 
 
-	> Run ``ConwayTestSuite``.  Your code should now pass the ``StepTestSuite`` portion of the ``ConwayTestSuite``.
+	Run ``ConwayTestSuite``.  Your code should now pass the ``StepTestSuite`` portion of the ``ConwayTestSuite``.
 
 9. Once you have completed all the methods, you can run ``ConwayDebugApp.java`` to run a simulation.  
     1.  You'll want to select an item to simulate from the drop down menu on the right of the window.
@@ -141,6 +141,7 @@ For example, the ``Toad`` code is captured already:
 but if you were to generate code for it using ``toJavaCode()`` the result would look something like this:
 
 ::
+
 		conway.clear();
 		conway.setAlive(true, 2, 2);
 		conway.setAlive(true, 2, 3);

@@ -10,7 +10,7 @@ Authors
 * The idea for this assignment comes from the article "Persian Recursion" by Anne M. Burns that appeared on pages 196-199 of *Mathematics Magazine*, volume 7, in 1997
 
 
-* A video demonstrating my solution can be found `here <6.02/persian.mp4>`_.
+* A video demonstrating my solution can be found `here <https://classes.engineering.wustl.edu/2021/fall/cse131//resources/extensions/6.02/persian.mp4>`_.
 
 * That video instructs you how to speed up the drawing substantially.
 * Don't speed things up until you see the rug is drawing properly.
@@ -39,10 +39,10 @@ Notes:
 * Colors in this extension are represented as an index into a ``Color`` array called ``palette``.  This array is provided for you in the source code and it is passed into your ``persianRug`` method.
 * Indexes into ``palette`` are passed into ``persianRug`` to describe the colors of the square's bordering edges.  For example, blue is represented by index 0 into the ``palette`` array, and cyan appears at index 1.
 * Picking a color for the two lines drawn inside a given square is the *creative* aspect of this assignment.  **The following should be read carefully and understood before you jump into coding**:
-  * Although you will eventually pick more diverse colors, we recommend that until your code is working you should use color index 0 for the color of the two drawn lines.
-  * Once that is working, you must pick a color that is a function of the square's bordering colors (which are conveniently represented as indexes into ``palette``).   That function must have the following properties to perform correctly:
-    * The function must return a value that is an appropriate index into the ``palette`` array.  As you know, 0 is the smallest index, and the largest index is ``palette.length-1``.
-    * The function must return the same value for any permutation of a given square's bordering colors.  For example, if the colors are specified in order red, blue, blue, red, then any square with two blue and two red sides must compute the same color for the two drawn lines.
+	* Although you will eventually pick more diverse colors, we recommend that until your code is working you should use color index 0 for the color of the two drawn lines.
+	* Once that is working, you must pick a color that is a function of the square's bordering colors (which are conveniently represented as indexes into ``palette``).   That function must have the following properties to perform correctly:
+		* The function must return a value that is an appropriate index into the ``palette`` array.  As you know, 0 is the smallest index, and the largest index is ``palette.length-1``.
+		* The function must return the same value for any permutation of a given square's bordering colors.  For example, if the colors are specified in order red, blue, blue, red, then any square with two blue and two red sides must compute the same color for the two drawn lines.
 
 	    Recall that these colors are represented as integers, each being an index into the ``palette`` array. What kinds of operations and functions on integers return the same result no matter the order of those integers?   
 
@@ -50,6 +50,6 @@ Notes:
 
 .. image:: 6.02/otherrug.png
 
-	Perhaps you can see that in the above rug, once a square has red on each of its borders, the two drawn lines inside that square are also red.
-	That effect just happens to be a property of the function I used to produce
-	the above image.
+Perhaps you can see that in the above rug, once a square has red on each of its borders, the two drawn lines inside that square are also red.
+That effect just happens to be a property of the function I used to produce
+the above image.

@@ -15,14 +15,12 @@ The `Fibonacci Sequence <http://en.wikipedia.org/wiki/Fibonacci_number>`_ is an 
 
 Each new number in this sequence is just the sum of the previous two numbers.  This can be expressed via a recursive equation, like:
 
-$$ 
-fib(n) =
-    \begin{cases}
+.. math:: fib(n) = \begin{cases}
       0, & \text{if}\ n=0 \\
       1, & \text{if}\ n=1, \\
       fib(n-1)+ fib(n-2), & \text{otherwise}
     \end{cases}
-$$
+
 
 Since this formula is recursive, it can easily be represented in recursive computer code. 
 
@@ -57,12 +55,12 @@ Fibonacci
 
 1. You will complete two methods in the ``Fibonacci`` class: ``recursive(n)`` and ``iterative(n)``.  You will complete ``graphLine(ys)`` in the ``Graph`` class. 
 
-2. Complete the ``recursive`` method in ``Fibonacci`` so that it returns the *n*<SUP>th</SUP> fibonacci number using recursion.  (You can base it on the recursive equation provided above.)
+2. Complete the ``recursive`` method in ``Fibonacci`` so that it returns the *n* :sup:`th` fibonacci number using recursion.  (You can base it on the recursive equation provided above.)
 
 3. Run ``FibonacciTestSuite`` until you have passed all of the recursive portion.
 
 4. Complete the ``iterative`` method in ``Fibonacci`` so that it computes the same function, but iteratively.
-	As a hint, you will need two variables that represent the  *(n-1)*<SUP>th</SUP> and *(n-2)*<SUP>th</SUP> values of the sequence.  Adding those together produces the *n*<SUP>th</SUP> term.  The variables' values are then shifted prior to the next iteration.
+	As a hint, you will need two variables that represent the  *(n-1)* :sup:th and *(n-2)* :sup:`th` values of the sequence.  Adding those together produces the *n* :sup:`th`term.  The variables' values are then shifted prior to the next iteration.
 
 5. Run ``FibonacciTestSuite`` until you have passed all of the tests.
 

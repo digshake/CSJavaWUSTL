@@ -23,7 +23,7 @@ In this extension we will use StdDraw to create a method that draws stars with a
 Polar Coordinates
 ------------------
 
-It may be useful to think about how you convert from `polar coordinates <https://mathworld.wolfram.com/PolarCoordinates.html>`_ (&rho;, &theta;) to `cartesian coordinates <https://mathworld.wolfram.com/CartesianCoordinates.html>`_ (x, y) to aid you in how you tackle this problem.
+It may be useful to think about how you convert from `polar coordinates <https://mathworld.wolfram.com/PolarCoordinates.html>`_ (rho, theta) to `cartesian coordinates <https://mathworld.wolfram.com/CartesianCoordinates.html>`_ (x, y) to aid you in how you tackle this problem.
 
 Filled Polygon
 ------------------
@@ -36,6 +36,7 @@ For a demo on how to use ``StdDraw.filledPolygon(xs, ys)`` check out this video:
 Code from the video:
 
 ::
+
 		double[] xs = {0.1, 0.9, 0.5, 0.3, 0.6};
 		double[] ys = {0.1, 0.1, 0.5, 0.2, 0.05};
 		StdDraw.filledPolygon(xs, ys);

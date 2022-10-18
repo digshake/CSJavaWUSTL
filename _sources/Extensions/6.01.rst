@@ -26,7 +26,7 @@ Please take note of the following guidelines, as you will not receive credit unl
 * Do not use ``StdDraw.line`` to do any of your work!
 * The only methods you are allowed to use from ``StdDraw`` are ``point``, ``setPenRadius``, and ``setPenColor``.  A pen radius of 0.002 works well (looks solid and isn't too slow).
 
-	> This means you must draw your line one point at a time.
+	This means you must draw your line one point at a time.
 
 * Some students approach this problem by computing the slope of the line and then incrementally trying to draw pieces of it using recursion. That approach comes to grief for vertical lines, which have infinite slope.  There is a much easier and satisfying way to solve this problem, but you have to think about it.
 
