@@ -34,6 +34,7 @@ Suppose you have $1 and two friends who offer to take your dollar under the foll
 
 
 Friend One: This friend takes your $1 and gives you back $5 tomorrow. 
+
 Friend Two: This friend takes your $1 and gives you back $10 in fifty years.        
 
 Which friend is offering you the better deal?  
@@ -93,14 +94,11 @@ Consider the following `example from Wikipedia <https://en.wikipedia.org/wiki/Ne
 
 In summary, you give away $100,000 and you get $120,000 back.  Is this a good deal?  Let's look at the returns in terms of Net Present Value (NPV).  The table below shows:
 
-Cash Flow
-: How much income or expense we have for the year. In year 0 we pay an investment, in all other years we receive a payout.
+Cash Flow: How much income or expense we have for the year. In year 0 we pay an investment, in all other years we receive a payout.
 
-Present Value
-: Calculated by taking the cash flow for the year and converting it to its value in today's dollars via the formula
+Present Value: Calculated by taking the cash flow for the year and converting it to its value in today's dollars via the formula
 
-Net Present Value
-: Calculated by taking the sum of this row’s present value and the present value of all previous years.
+Net Present Value: Calculated by taking the sum of this row’s present value and the present value of all previous years.
 
 ======= =========== =============== ===================
   Year   Cash flow   Present value   Net Present Value 
