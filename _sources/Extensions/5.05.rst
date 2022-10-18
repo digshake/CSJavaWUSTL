@@ -100,23 +100,23 @@ Present Value: Calculated by taking the cash flow for the year and converting it
 
 Net Present Value: Calculated by taking the sum of this row’s present value and the present value of all previous years.
 
-======= =========== =============== ===================
-  Year   Cash flow   Present value   Net Present Value 
-======= =========== =============== ===================
- T = 0  -100,000  −100,000   -100,000.00
- T = 1  10,000  9,090.91    −90,909.09
- T = 2  10,000  8,264.46  −82,644.63  
- T = 3  10,000  7,513.15  −75,131.48    
- T = 4  10,000  6,830.13  −68,301.35	  
- T = 5  10,000  6,209.21  −62,092.14	    
- T = 6  10,000  5,644.74  −56,447.40  
- T = 7  10,000  5,131.58  −51,315.82	  
- T = 8  10,000  4,665.07  −46,650.75    
- T = 9  10,000  4,240.98   −42,409.77	  
- T = 10  10,000  3,855.43  −42,409.77	  
- T = 11  10,000  3,504.94  −35,049.40	  
- T = 12  10,000  3,186.31  −31,863.09	  
-======= =========== =============== =================== 
+=======  =========== =============== ===================
+  Year    Cash flow   Present value   Net Present Value 
+=======  =========== =============== ===================
+ T = 0    -100,000      −100,000           -100,000.00
+ T = 1    10,000        9,090.91           −90,909.09
+ T = 2    10,000        8,264.46           −82,644.63  
+ T = 3    10,000        7,513.15           −75,131.48    
+ T = 4    10,000        6,830.13           −68,301.35	  
+ T = 5    10,000        6,209.21           −62,092.14	    
+ T = 6    10,000        5,644.74           −56,447.40  
+ T = 7    10,000        5,131.58           −51,315.82	  
+ T = 8    10,000        4,665.07           −46,650.75    
+ T = 9    10,000        4,240.98           −42,409.77	  
+ T = 10   10,000       3,855.43            −42,409.77	  
+ T = 11   10,000       3,504.94            −35,049.40	  
+ T = 12   10,000       3,186.31            −31,863.09	  
+======== =========== =============== =================== 
 
 At the end of 12 years, we have $120,000 (The $10,000 per year for 12 years) but each year the $10,000 that we get has less buying power than it would have today (each year's adjustment to a "present value").  If we sum those adjusted values, we have a total income of that is equivalent to $68,136.91 today for our expense of $100,000. Consequently, the NPV of the $100,000 investment is −31,863.09, which is a substantial loss. Because the NPV is negative, this is not an investment you should make.
 
