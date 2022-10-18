@@ -31,6 +31,8 @@ Table of Contents
    Module5-Methods/toctree.rst
    Module6-Recursion/toctree.rst
    Extensions/toctree.rst
+   Extensions/toctree2.rst
+
 
 Index
 ::::::::::::::::::

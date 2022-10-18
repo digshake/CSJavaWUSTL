@@ -124,6 +124,7 @@ Sierpinski Gasket
 .. image:: 6.05/sierpinski_gasket.png
 
 **Note:** Although it is easy to see solutions to this problem as either:
+
 * drawing only the black triangles or 
 * drawing a single black triangle with upside down white triangles on top
 
