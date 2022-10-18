@@ -32,10 +32,13 @@ Two Friends and your $1
 
 Suppose you have $1 and two friends who offer to take your dollar under the following circumstances:
 
-| Friend | Agreement | 
-| :-- | :-- |
-| Friend One | This friend takes your $1 and gives you back $5 tomorrow.|
-| Friend Two | This friend takes your $1 and gives you back $10 in fifty years. |
++------------------------+------------+
+| Friend  | Agreement | 
++========================+============+
+| Friend One  | This friend takes your $1 and gives you back $5 tomorrow.   |
++------------------------+------------+
+| Friend Two             | This friend takes your $1 and gives you back $10 in fifty years.        |
++------------------------+------------+
 
 Which friend is offering you the better deal?  
 ------------------
@@ -47,7 +50,7 @@ How do we reason about the value of $10 in fifty years?  We must first model how
 * a time period during which the money's value stays the same and at the end of which money grows instantaneously by some factor *r*.  For this exercise, we choose a year's time, so that money changes value annually.
 * a factor *r*, which is interchangeably called the *discount rate*, *opportunity cost of capital*, and *rate of return*. For this exercise, we choose 10% growth so that *r=0.1*.
 
-We then use the [time value of money](https://en.wikipedia.org/wiki/Time_value_of_money) to compute the following:
+We then use the `time value of money <https://en.wikipedia.org/wiki/Time_value_of_money>`_ to compute the following:
 
 * What would $1 be worth in fifty years if invested with some rate of return *r*?  We model this computation by the function
 
@@ -71,7 +74,7 @@ Friend One
 
 This friend takes your $1 and gives you back $5 tomorrow.  Since value only changes value annually, $5 tomorrow is the same as $5 today.
 
-$$ presentValue($5, 0, 0.10) = \frac{$5}{(1.0 + 0.10)^0} = $5 $$
+.. math:: presentValue($5, 0, 0.10) = \frac{$5}{(1.0 + 0.10)^0} = $5 
 
 Your *net* gain is the $5 you receive *minus* the $1 you gave away, so you net $4.
 
@@ -87,7 +90,7 @@ $$ presentValue($10, 50, 0.10) = \frac{$10}{(1.0 + 0.10)^{50}} = $0.08 $$
 Product Development Story
 ------------------
 
-Consider the following [example from Wikipedia](https://en.wikipedia.org/wiki/Net_present_value#Example), based on investing $100,000 to create a new product:
+Consider the following `example from Wikipedia <https://en.wikipedia.org/wiki/Net_present_value#Example>`_, based on investing $100,000 to create a new product:
 
 * The product would cost you $100,000 to develop.  That money would be gone forever.
 * Every year for the next 12 years, you would receive a $10,000 payout from sales of the product.
@@ -103,34 +106,36 @@ Present Value
 Net Present Value
 : Calculated by taking the sum of this row’s present value and the present value of all previous years.
 
-
-| Year | Cash flow | Present value | Net Present Value | Comments |
-| :--  | :--       | :--           | :--               | :-- |
-|T = 0| -100,000 |−100,000 | -100,000.00| Initial investment, no return until year 1|
-|T = 1| 10,000 |9,090.91 |  −90,909.09 | $10K income in year 1, which is worth ~$9K. |
-|T = 2| 10,000 |8,264.46 |−82,644.63||
-|T = 3| 10,000 |7,513.15 |−75,131.48 || 
-|T = 4| 10,000 |6,830.13 |−68,301.35	||
-|T = 5| 10,000 |6,209.21 |−62,092.14	 || 
-|T = 6| 10,000 |5,644.74 |−56,447.40||
-|T = 7| 10,000 |5,131.58 |−51,315.82	||
-|T = 8| 10,000 |4,665.07 |−46,650.75 | The $10K received in this year is worth < $$ \frac{1}{2} $$ of $10K today!|
-|T = 9| 10,000 |4,240.98 | −42,409.77	||
-|T = 10| 10,000 |3,855.43 |−42,409.77	||
-|T = 11| 10,000 |3,504.94 |−35,049.40	||
-|T = 12| 10,000 |3,186.31 |−31,863.09	||
+======= =========== =============== =================== ===========
+  Year   Cash flow   Present value   Net Present Value   Comments  
+======= =========== =============== =================== ===========
+ T = 0  -100,000  −100,000   -100,000.00  Initial investment, no return until year 1 
+ T = 1  10,000  9,090.91    −90,909.09   $10K income in year 1, which is worth ~$9K.  
+ T = 2  10,000  8,264.46  −82,644.63  
+ T = 3  10,000  7,513.15  −75,131.48    
+ T = 4  10,000  6,830.13  −68,301.35	  
+ T = 5  10,000  6,209.21  −62,092.14	    
+ T = 6  10,000  5,644.74  −56,447.40  
+ T = 7  10,000  5,131.58  −51,315.82	  
+ T = 8  10,000  4,665.07  −46,650.75   The $10K received in this year is worth < $$ \frac{1}{2} $$ of $10K today! 
+ T = 9  10,000  4,240.98   −42,409.77	  
+ T = 10  10,000  3,855.43  −42,409.77	  
+ T = 11  10,000  3,504.94  −35,049.40	  
+ T = 12  10,000  3,186.31  −31,863.09	  
+======= =========== =============== =================== ===========
 
 At the end of 12 years, we have $120,000 (The $10,000 per year for 12 years) but each year the $10,000 that we get has less buying power than it would have today (each year's adjustment to a "present value").  If we sum those adjusted values, we have a total income of that is equivalent to $68,136.91 today for our expense of $100,000. Consequently, the NPV of the $100,000 investment is −31,863.09, which is a substantial loss. Because the NPV is negative, this is not an investment you should make.
 
 Demo Video
 ------------------
 
-<center><iframe width="480" height="270" src="https://www.youtube.com/embed/mi0YNXXzC8o?rel=0" frameborder="0" allowfullscreen></iframe></center>
+.. youtube:: mi0YNXXzC8o
+	:align: center
 
 Warning
 ------------------
 
-The Product Development Story from Wikipedia has the unfortunate characteristic that investment*rate==payout.  This can result in the surprising result that incorrect implementations of netPresentValue() will pass this case but fail all of the other test cases (which test netPresentValue() more rigorously).
+The Product Development Story from Wikipedia has the unfortunate characteristic that ``investment * rate == payout``.  This can result in the surprising result that incorrect implementations of netPresentValue() will pass this case but fail all of the other test cases (which test netPresentValue() more rigorously).
 
 Procedure
 ============
@@ -140,7 +145,7 @@ Procedure
 
 * Run ``ProductDevelopmentStoryTable.java`` as a Java Application which should produce:
 
-~~~
+======  ===============  ===================
  Year    Present Value    Net Present Value
 ======  ===============  ===================
  T= 0     -100000.00         -100000.00
@@ -156,10 +161,10 @@ Procedure
  T=10        3855.43          -38554.33
  T=11        3504.94          -35049.39
  T=12        3186.31          -31863.08
+======  ===============  ===================
 
 
 Note: Your table may differ from wikipedia's results by a cent.
       https://en.wikipedia.org/wiki/Net_present_value#Example
       This appears to be due to wikipedia rounding each year to the nearest cent.
       Do not worry about this difference.
-~~~

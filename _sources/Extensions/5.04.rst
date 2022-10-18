@@ -59,6 +59,7 @@ MemoryMatchGame
 1. Note the declaration of ``X`` and ``Y``.
 
 ::
+
 	private static final int X = 0;
 	private static final int Y = 1;
 
@@ -79,6 +80,7 @@ MemoryMatchGame
 	The code to wait for the mouse to be presses and released has been provided.  Complete this method by returning a created an array of length 2 with the array item at the X index assigned to `StdDraw.mouseX() <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseX-->`_ and the array item at the Y index assigned to `StdDraw.mouseY() <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#mouseY-->`_.
 
 ::
+
 	private static double[] waitForMouseClick() {
 		// wait for the mouse to be pressed
 		while (!StdDraw.isMousePressed()) {
@@ -106,6 +108,7 @@ MemoryMatchGame
 6. Investigate ``waitForClickOnRowColumn()``
 
 ::
+
 	private static int[] waitForClickOnRowColumn() {
 		double[] xy = waitForMouseClick();
 		int r = toRow(xy);

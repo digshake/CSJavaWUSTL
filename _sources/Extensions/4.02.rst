@@ -11,9 +11,9 @@ Authors
 Overview
 ============
 
-The purpose of this assignment is to give you the skills to index and analyze ``String``s in order to prepare for different scraping tasks. Once you are able to extract information of interest from a target ``String``, you  will be ready to query a webpage, save the raw HTML code, and extract relevant information.
+The purpose of this assignment is to give you the skills to index and analyze ``String`` s in order to prepare for different scraping tasks. Once you are able to extract information of interest from a target ``String``, you  will be ready to query a webpage, save the raw HTML code, and extract relevant information.
 
-For this assignment, you are working on simple arithmetic expressions as ``String``s. Your task is to extract the two integer values and the arithmetic operator from the ``String`` and save them as variables of their respective type. You will then compute and print the value of the expression.
+For this assignment, you are working on simple arithmetic expressions as ``String`` s. Your task is to extract the two integer values and the arithmetic operator from the ``String`` and save them as variables of their respective type. You will then compute and print the value of the expression.
 
 Example
 ============
@@ -61,11 +61,15 @@ You should see a ``calculator`` package in the ``src`` folder.
 
 For example, if the input is:
 
-  > 2 + 3
+::
+
+	2 + 3
 
 then the output should be:
 
-  > 2 + 3 = 5
+::
+
+	2 + 3 = 5
 
 Testing
 ============

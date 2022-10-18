@@ -16,13 +16,13 @@ Warm Up
 Five watermelons, each of different weight, have been weighed in *pairs*
 to obtain the following weights:
 
-20, 22, 23, 24, 25, 26, 27, 28, 30, 31
+	20, 22, 23, 24, 25, 26, 27, 28, 30, 31
 
 One way to solve this would be to figure out a mathematical algorithm for this number of watermelons and work out the weight of each watermelon. 
 Another would be to try all of the possible combinations of weights five watermelons until you found one that has this same set of combinations of weights.
 Either way you did it, the specific set of watermelons that produces these weights is
 
- [ 9, 11, 13, 14, 17 ]
+	[ 9, 11, 13, 14, 17 ]
 
 Demo Video
 ============

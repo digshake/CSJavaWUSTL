@@ -21,6 +21,7 @@ Procedure
 2. Note ``X`` and ``Y``.
 
 ::
+
 	private static final int X = 0;
 	private static final int Y = 1;
 
