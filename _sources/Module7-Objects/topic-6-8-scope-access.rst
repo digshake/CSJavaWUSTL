@@ -85,53 +85,9 @@ Instance variables at class scope are shared by all the methods in the class and
 
 Another way to look at scope is that a variable's scope is where it lives and exists. You cannot use the variable in code outside of its scope. The variable does not exist outside of its scope.
 
-|CodingEx| **Coding Exercise**
-
-
-
-
-.. activecode:: code6_8_1
-  :language: java
-
-  Try the following code to see that you cannot access the variables outside of their scope levels in the toString() method. Explain to someone sitting next to you why you can't access these. Try to fix the errors by either using variables that are in scope or moving the variable declarations so that the variables have larger scope. 
-  ~~~~
-  public class Person 
-  {
-     private String name;
-     private String email;
-    
-     public Person(String initName, String initEmail)
-     {
-        name = initName;
-        email = initEmail;
-     }
-     
-     public String toString() 
-     { 
-       for (int i=0; i < 5; i++) {
-          int id = i;
-       } 
-       // Can you access the blockScope variables i or id?
-       System.out.println("i at the end of the loop is " + i);
-       System.out.println("The last id is " + id);
-       
-       // Can toString() access parameter variables in Person()?
-       return  initName + ": " + initEmail;
-     }
-     
-     // main method for testing
-     public static void main(String[] args)
-     {
-        // call the constructor to create a new person
-        Person p1 = new Person("Sana", "sana@gmail.com");
-        System.out.println(p1);
-     }
-  }
-
 If there is a local variable with the same name as an instance variable, the variable name will refer to the local variable instead of the instance variable, as seen below. We'll see in the next lesson, that we can distinguish between the local variable and the instance variable using the keyword this to refer to this object's instance variables.
 
-.. activecode:: code6_8_2
-  :language: java
+.. code-block:: java
 
   public class Person 
   {
@@ -160,60 +116,6 @@ If there is a local variable with the same name as an instance variable, the var
         System.out.println(p1);
      }
   }
-
-|Groupwork| Programming Challenge : Debugging
-------------------------------------------------------------
-
-
-
-.. activecode:: code6_8_3
-  :language: java
-
-  Debug the following program that has scope violations. Then, add comments that label the variable declarations as class, method, or block scope.
-  ~~~~
-  public class TesterClass 
-  {
-     public static void main(String[] args)
-     {
-        Fraction f1 = new Fraction();
-        Fraction f2 = new Fraction(1,2);
-        System.out.println(f1);
-        System.out.println(f2.numerator / f2.denominator);
-     }   
-   }
-   
-  /** Class Fraction */
-  class Fraction
-  {
-     //  instance variables
-     private int numerator;
-     private int denominator;
-     
-     // constructor: set instance variables to default values
-     public Fraction()
-     {
-        int d = 1;
-        numerator = d;
-        denominator = d;
-     }
-     
-     // constructor: set instance variables to init parameters
-     public Fraction(int initNumerator, int initDenominator)
-     {
-        numerator = initNumerator;
-        denominator = initDenominator;
-     }
-     
-     public String toString()
-     {
-       // if the denominator is 1, then just return the numerator
-       if (denominator == d) {
-          int newNumerator = 1;
-       }
-       return newNumerator + "/" + denominator;
-     }
-  }
-
 
 
 Practice

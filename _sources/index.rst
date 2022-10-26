@@ -30,6 +30,7 @@ Table of Contents
    Module4-Input-and-Output/toctree.rst
    Module5-Methods/toctree.rst
    Module6-Recursion/toctree.rst
+   Module7-Objects/toctree.rst
    Extensions/toctree.rst
    Extensions/toctree2.rst
 
