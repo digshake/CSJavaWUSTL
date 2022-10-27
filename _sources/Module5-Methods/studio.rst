@@ -1,5 +1,5 @@
 =====================
-Studio 5: Writing and testing Methods 
+Studio 5: Writing and Testing Methods 
 =====================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
@@ -87,7 +87,7 @@ It’s mostly done for you. (*Don’t change it yet*) Read the description and m
 * Imagine a program will often need to compute distance between different points. Can use of this function make code easier to read or avoid duplicating code?
 
 
-Running Tests, distanceBetween()
+Running distanceBetween() tests
 =====================
 
 Open ``DistanceBetweenTest.java`` in ``test_src/studio5/tests``. This file contains several tests to help demonstrate that ``distanceBetween()`` works as expected. You can run all the tests in the file by right-clicking on the file name, selecting ``Run As > JUnit Test``.
@@ -114,7 +114,7 @@ Run it. You should see a new tab in Eclipse that should look something like:
 Complete the code for ``distanceBetween()``. Use other methods, like ``Math.sqrt()``. (By the way, click on the link and note the format of each of the descriptions. This style is called JavaDoc. You’ll see it again soon.)
 
 
-Finishing Testing, distanceBetween()
+Finishing testing distanceBetween()
 =====================
 
 Re-run the test cases. Do they all pass? Probably not!
@@ -128,13 +128,13 @@ Re-run the test cases. Do they all pass? Probably not!
 .. _Adding another test, distanceBetween():
 
 
-Adding another test, distanceBetween()
+Adding another test for distanceBetween()
 =====================
 
 Once all tests pass, add one more test named ``testPointsE()`` that will verify that the distance between (8,9) and (5,5) is 5.0.
 
 
-void methods, drawBullsEye()
+Writing a void method, drawBullsEye()
 =====================
 
   If working with a partner change who is at the keyboard
@@ -149,14 +149,14 @@ Imaging you plan to create a simple computer game that allows players to throw f
   :align: center
 
 
-Finishing the Code, drawBullsEye()
+Finishing the code for drawBullsEye()
 =====================
 
 Review the partial code for ``drawBullsEye()`` in ``Methods.java``. Pay attention to the JavaDoc comment, return type, parameter types, and name. Do they all seem to be reasonable choices? **Notice that the return type is** ``void``. **This method is used to bundle together common work, but it doesn’t create a new piece of information like a mathematical function. The special word** ``void`` **is used to indicate that it doesn’t return anything**. The ``println()`` method you’ve been using all semester is an example of another ``void`` method. ``println`` has a side effect of placing text in the console window, but it doesn’t “return” a result.
 
 Complete the code for ``drawBullsEye()``.
 
-Testing, drawBullsEye()
+Testing drawBullsEye()
 =====================
 
 Open ``BullsEyeDebugApp.java`` and review the cases. In this case we need to confirm that drawings are correct. This app is used to make a repeatable way to ensure consistently. They require human intervention to confirm if the test was passed or not. (There are ways to truly automate tests like this, but it’s beyond the scope of this class.)
@@ -170,7 +170,7 @@ A method applicable to a future assignment, substituteAll()
 We will need a method which substitutes characters in a String when we create a `fractal dragon curve <https://en.wikipedia.org/wiki/Dragon_curve>`_ in Assignment 6. It is often worth it to extract functionality into a method even if it is only used once. It is even more satisfying to be able to use the same method from different locations in the same application. Ultimately, generally useful methods can be used in many applications and String manipulation is a common operation.
 
 
-Finishing the Code, substituteAll()
+Finishing the code for substituteAll()
 =====================
 
 Read the Javadoc and the starting code for the ``substituteAll(source, target, replacement)`` method, come up a plan, and execute that plan.
@@ -202,7 +202,7 @@ Some methods on String to investigate:
 * `toCharArray() <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#toCharArray-->`_
 
 
-Testing, substitueAll()
+Testing substituteAll()
 =====================
 
 Run the ``MethodsTestSuite`` as a JUnit Test and fix any errors in the ``SubstituteAllTestSuite``, if necessary.
@@ -233,12 +233,12 @@ Array's as parameters, arraySum()
 
 Arrays can be given as parameters to methods. Review the code for ``arraySum()`` in ``Methods.java``. As before, pay attention to the JavaDoc comment, return type, parameter types, and name. Do they all seem to be reasonable choices?
 
-Finishing the Code, arraySum()
+Finishing the code for arraySum()
 =====================
 
 Complete the code for arraySum().
 
-Testing, arraySum()
+Testing arraySum()
 =====================
 
 Run the ``MethodsTestSuite`` and note the ``ArraySumTestSuite`` within. Investigate the ``ArraySumPreliminaryTest.java`` within ``ArraySumTestSuite``.
@@ -256,13 +256,13 @@ Review the tests:
 Do these tests appear “complete and concise”?
 
 
-Finishing the code, arraySum() pt2
+Finishing the code for arraySum() pt2
 =====================
 
 If your code didn’t pass all tests update it until it does. (These test don’t have an intentional flaw for you to fix.)
 
 
-Array's as returned values, filledArray()
+Returning arrays in filledArray()
 =====================
 
   If working with a partner change who is at the keyboard
@@ -270,13 +270,13 @@ Array's as returned values, filledArray()
 Arrays can also be returned from methods. Review the code for ``filledArray()`` in ``Methods.java``. As before, pay attention to the JavaDoc comment, return type, parameter types, and name. Do they all seem to be reasonable choices?
 
 
-Finishing the Code, filledArray()
+Finishing the code for filledArray()
 =====================
 
 
 Complete the code for ``filledArray()``.
 
-Testing, filledArray()
+Testing filledArray()
 =====================
 
 Run the ``MethodsTestSuite`` and note the ``FilledArrayTestSuite`` within. Investigate the ``FilledArrayPreliminaryTes``t within ``FilledArrayTestSuite``.
@@ -285,12 +285,12 @@ Notice that the ``testArrayLength0()`` case uses ``assertNotNull`` and ``assertA
 
 Notice that ``testArrayLength2`` does two separate tests. **It has a flaw in the first thing it’s testing**. Run the tests and notice the error message printed when it fails. Double Click on the test case that failed in the JUnit tab and it will take you to the line of code where the failure was noticed. Update the test code (in ``testArrayLength2``) to remove the error. Don’t remove the line of code, just update it so it’s checking for the proper value. Also notice that the second part of the method uses a loop to check several items.
 
-Finishing the Code, filledArray() pt2
+Finishing the code for filledArray() pt2
 =====================
 
 If your code didn't pass all tests update it until it does.
 
-Methods from scratch & re-using methods, arrayMean()
+Writing methods from scratch & re-using methods in arrayMean()
 =====================
 
   If working with a partner change who is at the keyboard
@@ -320,7 +320,7 @@ JavaDoc-style comment
 
 After writing the code for the method create the JavaDoc style comment before it. Type ``/**`` above the method and hit return. It will automatically create a JavaDoc style comment block. Fill it in using the same style as used in the rest of the examples.
 
-Testing, arrayMean()
+Testing arrayMean()
 =====================
 
 Run the ``MethodsTestSuite`` and note the ``ArrayMeanTestSuite`` within.
@@ -331,7 +331,7 @@ If your code didn’t pass all tests update it until it does.
 
 Notice that these tests don’t perform a test with an empty array. Take a few minutes to consider why such a test may not be appropriate here. Discuss with a TA/instructor.
 
-Generate JavaDoc pages
+Generating JavaDoc pages
 =====================
 
   If working with a partner change who is at the keyboard
