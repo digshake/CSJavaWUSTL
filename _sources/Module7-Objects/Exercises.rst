@@ -1,336 +1,824 @@
 .. qnum::
-   :prefix: 2-13-
+   :prefix: 6-12-
    :start: 1
-
-Multiple Choice Exercises
-=================================
-
-These questions are mostly about Strings, but more questions on using other objects will be added in the future.
-
-.. highlight:: java
-   :linenothreshold: 3
-
-Easier Multiple Choice Questions
----------------------------------
-
-.. mchoice:: q2_13_1
-   :practice: T
-   :answer_a: An attribute of breed is String.
-   :answer_b: color, breed, and age are instances of the Cat class.
-   :answer_c: Cat is an instance of the myCat class.
-   :answer_d: age is an attribute of the myCat object.
-   :answer_e: An attribute of Cat is myCat.
-   :correct: d
-   :feedback_a: The data type of breed is String.  
-   :feedback_b: color, breed, and age are attributes of the Cat class.
-   :feedback_c: myCat is an instance of the Cat class.
-   :feedback_d: Attributes of the Cat class and myCat object are color, breed, age.
-   :feedback_e: Attributes of the Cat class are color, breed, age.
+   
+Exercises
+=========
 
 
-    A student has created a Cat class. The class contains variables to represent the following.
-    - A String variable called color to represent the color of the cat
-    - A String variable called breed to represent the breed of the cat
-    - An int variable called age to represent the age of the cat
+.. mchoice:: q6_12_1
+    :practice: T
 
-    The object myCat will be declared as type Cat.
-    Which of the following descriptions is accurate?
-
-.. mchoice:: q2_13_2
-   :practice: T
-   :answer_a: An attribute of the scaryMovie class is title.
-   :answer_b: scaryMovie is an instance of the Movie class.
-   :answer_c: Title, director, and rating are instances of the scaryMovie object.
-   :answer_d: An attribute of the Movie instance is scaryMovie
-   :answer_e: Movie is an instance of scaryMovie.
-   :correct: b
-   :feedback_a: scaryMovie is an object, not a class. 
-   :feedback_b: scaryMovie is an object which is an instance of the Movie class.
-   :feedback_c: These are attributes of the object or class.
-   :feedback_d: scaryMovie is an instance of the Movie class.
-   :feedback_e: scaryMovie is an instance of the Movie class.
-  
-    A student has created a Movie class. The class contains variables to represent the following.
-    - A String variable called title to represent the title of the movie
-    - A String variable called director to represent the director of the movie
-    - A double variable called rating to represent the rating of the movie
+    The Liquid class will contain two double attributes for a liquid’s boiling point temperature and freezing point temperature. The class will also contain a constructor.
     
-    The object scaryMovie will be declared as type Movie.
-    Which of the following descriptions is accurate?
+    .. code-block:: java
 
+        public class Liquid
+        {
+           /* missing code */
+        }
+        Which of the following replacements for /* missing code */ is the most appropriate 
+        implementation of the class?
+        
+    - .. code-block:: java
+    
+        private double boilingPoint;
+        private double freezingPoint;
+        public Liquid(double boilingPoint, double freezingPoint)
+        { /* implementation not shown */ }
 
-.. mchoice:: q2_13_3
-   :practice: T
-   :answer_a: 8
-   :answer_b: 10
-   :answer_c: 11
-   :correct: c
-   :feedback_a: Be sure to count spaces and punctuation in the length (the number of characters in the string).
-   :feedback_b: Did you forget to count a space or punctuation?
-   :feedback_c: The length method returns the number of characters in the string, including spaces and punctuation.
-
-   What is the value of len after the following executes?
-
-   .. code-block:: java
-
-     String s1 = "Hey, buddy!";
-     int len = s1.length();
-
-.. mchoice:: q2_13_4
-   :practice: T
-   :answer_a: 3
-   :answer_b: 4
-   :answer_c: 5
-   :answer_d: -1
-   :correct: a
-   :feedback_a: The method indexOf returns the first position of the passed str in the current string starting from the left (from 0).
-   :feedback_b: The first character is at index 0 in a string, not 1.
-   :feedback_c: Does the indexOf method find the first occurrence of the character, or the last?
-   :feedback_d: Does the string contain a d?  The pos method will return the first index that the character is at in the string.
-
-   What is the value of pos after the following code executes?
-
-   .. code-block:: java
-
-     String s1 = "ac ded ca";
-     int pos = s1.indexOf("d");
-
-.. mchoice:: q2_13_5
-   :practice: T
-   :answer_a: Hey
-   :answer_b: he
-   :answer_c: H
-   :answer_d: h
-   :correct: a
-   :feedback_a: Strings are immutable, meaning they don't change.  Any method that that changes a string returns a new string.  So s1 never changes unless you set it to a different string.
-   :feedback_b: The substring method returns a new string starting at the first index and ending before the second index.
-   :feedback_c: This would be true if we asked what the value of s2 was after the code executes.  What is the value of s1?
-   :feedback_d: This would be true if we asked what the value of s3 was after the code executes.  What is the value of s1?
-
-   What is the value of s1 after the following code executes?
-
-   .. code-block:: java
-
-     String s1 = "Hey";
-     String s2 = s1.substring(0,1);
-     String s3 = s2.toLowerCase();
-
-
-
-
-Medium Multiple Choice Questions
-----------------------------------
-
-
-
-
-.. mchoice:: q2_13_6
-   :practice: T
-   :answer_a: a random number from 0 to 4
-   :answer_b: a random number from 1 to 5
-   :answer_c: a random number from 5 to 9
-   :answer_d: a random number from 5 to 10
-   :correct: c
-   :feedback_a: This would be true if it was (int) (Math.random * 5)
-   :feedback_b: This would be true if it was ((int) (Math.random * 5)) + 1
-   :feedback_c: Math.random returns a value from 0 to not quite 1.  When you multiply it by 5 you get a value from 0 to not quite 5.  When you cast to int you get a value from 0 to 4.  Adding 5 gives a value from 5 to 9.
-   :feedback_d: This would be true if Math.random returned a value between 0 and 1, but it won't ever return 1.  The cast to int results in a number from 0 to 4.  Adding 5 gives a value from 5 to 9.  
-
-   Given the following code segment, what is the value of ``num`` when it finishes executing? Math.random() returns a random decimal number between 0 and up to 1, for example 0.4.
-   
-    .. code-block:: java 
-
-      double value = Math.random();
-      int num = (int) (value * 5) + 5;
+      + Correct! The instance variables should be private and the constructor and methods should be public.
       
+    - .. code-block:: java
+    
+        private double boilingPoint;
+        private double freezingPoint;
+        private Liquid(double boilingPoint, double freezingPoint)
+        { /* implementation not shown */ }
 
+      - Constructors should be public.
+     
+    - .. code-block:: java
+    
+        private double boilingPoint;
+        public double freezingPoint;
+        private Liquid(double freezingPoint, double boilingPoint)
+        { /* implementation not shown */ }
+
+      - The instance variables should be private and the constructor and methods should be public.
+     
+    - .. code-block:: java
+     
+        public double boilingPoint;
+        public double freezingPoint;
+        private Liquid(double boilingPoint, double freezingPoint)
+        { /* implementation not shown */ }
+
+      - The instance variables should be private and the constructor and methods should be public.
       
-.. mchoice:: q2_13_7
+    - .. code-block:: java
+      
+          public double freezingPoint;
+          public double boilingPoint;
+          public Liquid(double freezingPoint, double boilingPoint)
+          { /* implementation not shown */ }
+
+      - The instance variables should be private.
+
+.. mchoice:: q6_12_2
+    :practice: T
+    :random:
+
+    The Cat class below will contain two String attributes and one int attribute for name, color, and age; a constructor; and an adoptCat method. The adoptCat method is intended to be accessed outside the class.
+    
+    .. code-block:: java
+
+        public class Cat
+        {
+          /* missing code */
+        }
+        Which of the following replacements for /* missing code */ is the most appropriate 
+        implementation of the class?
+        
+    - .. code-block:: java
+    
+        private String name;
+        private String color;
+        private int age;
+        public Cat()
+        { /* implementation not shown */ }
+        private void adoptCat(String n, String c, int a)
+        { /* implementation not shown */ }
+
+      - Method adoptCat() should be public.
+      
+    - .. code-block:: java
+    
+        public String name;
+        public String color;
+        public int age;
+        private Cat()
+        { /* implementation not shown */ }
+        private void adoptCat(String n, String c, int a)
+        { /* implementation not shown */ }
+
+      - Method and constructor should be public, and instance variables should be private.
+        
+    - .. code-block:: java
+        
+        private String name;
+        private String color;
+        private int age;
+        public Cat()
+        { /* implementation not shown */ }
+        public void adoptCat(String n, String c, int a)
+        { /* implementation not shown */ }
+
+      + Correct! Method and constructor should be public, and instance variables should be private.
+        
+    - .. code-block:: java
+    
+        public String name;
+        public String color;
+        public int age;
+        public Cat()
+        { /* implementation not shown */ }
+        public void adoptCat(String n, String c, int a)
+        { /* implementation not shown */ }
+
+      - Instance variables should be private.
+    
+    - .. code-block:: java
+    
+        public String name;
+        public String color;
+        public int age;
+        private Cat()
+        { /* implementation not shown */ }
+        public void adoptCat(String n, String c, int a)
+        { /* implementation not shown */ }
+
+      - Instance variables should be private, and the constructor should be public.
+      
+.. mchoice:: q6_12_3
+    :practice: T
+    :random:
+
+    Consider the definition of the Party class below. The class uses the instance variable numOfPeople to indicate how many people are at the party.
+    
+    .. code-block:: java
+
+        public class Party
+        {
+            private int numOfPeople;
+            private String partyHost;
+            
+            public Party (String name, int people)
+            {
+                partyHost = name;
+                numOfPeople = people;
+            }
+        }
+
+        Which of the following statements will create a Party object
+        that represents a party that has three people at it?
+        
+    - Party p = new Party ("Natasha", "3");
+
+      - An int should be passed in as the second parameter, not a String.
+      
+    - Party p = new Party ("Eduardo", 3);
+
+      + Correct
+    
+    - Party p = new Party ("Emillio", "three");
+
+      - An int should be passed in as the second parameter, not a string.
+      
+    - Party p = new Party ("Bob", three);
+
+      - The word three would be treated as an undeclared variable here.
+      
+    - Party p = new Party ("Billie", "2+1");
+
+      - Strings cannot perform addition.
+
+.. mchoice:: q6_12_4
    :practice: T
-   :answer_a: a random number from 0 to 10
-   :answer_b: a random number from 0 to 9
-   :answer_c: a random number from -5 to 4
-   :answer_d: a random number from -5 to 5
+   :random:
+   :answer_a: I only
+   :answer_b: I and II 
+   :answer_c: I and III
+   :answer_d: I, II, and III
+   :answer_e: II and III
    :correct: d
-   :feedback_a: This would be true if it was (int) (value * 11)
-   :feedback_b: This would be true if it was (int) (value * 10)
-   :feedback_c: This would be true if it was (int) (value * 10) - 5
-   :feedback_d: Math.random returns a random value from 0 to not quite 1.  After it is multipied by 11 and cast to integer it will be a value from 0 to 10.  Subtracting 5 means it will range from -5 to 5.  
+   :feedback_a: II and III can also create a correct Party instance
+   :feedback_b: III can also create a correct Party instance
+   :feedback_c: II can also create a correct Party instance
+   :feedback_d: I, II, and III can successfully create the Party instance.
+   :feedback_e: I can also create a correct Party instance
 
-   Given the following code segment, what is the value of ``num`` when it finishes executing? Math.random() returns a random decimal number between 0 and up to 1, for example 0.4.
+   Consider the following class definition. Each object of the class Party will store the party host’s name as partyHost, the number of people as numOfPeople, and the capacity that the event can hold as capacity. Which of the following code segments, found in a class other than Party, can be used to create a party hosted by Charlie without anyone there initially, but the place can hold 78 people ?
    
-    .. code-block:: java 
-
-      double value = Math.random();
-      int num = (int) (value * 11) - 5;
-      
-      
-.. mchoice:: q2_13_8
-   :practice: T
-   :answer_a: I, II, III
-   :answer_b: I only
-   :answer_c: II only
-   :answer_d: III only
-   :answer_e: II and III only
-   :correct: a
-   :feedback_a: The "equals" operation on strings returns true when the strings have the same characters.  The == operator returns true when they refer to the same object.  In this case all three references actually refer to the same object so both == and equals will be true.
-   :feedback_b: This is true, since s1 and s3 contain the same characters since s1 and s3 actually refer to the same string object. But, it isn't the only thing that is true.
-   :feedback_c: This is true since s2 == s1.  But, it isn't the only thing that is true.
-   :feedback_d: This is true since s3 == s2, and s2 == s1 so it follows that s1 == s3.  But, it isn't the only thing that is true.
-   :feedback_e: This is true since they all refer to the same string object.  But, they also contain the same characters so equals is also true.
-
-   After the following code is executed, which of I, II and/or III will evaluate to true?
-
    .. code-block:: java
 
-     String s1 = "xyz";
-     String s2 = s1;
-     String s3 = s2;
+    public class Party
+    {
+        private String partyHost;
+        private int numOfPeople;
+        private int capacity;
 
-     I.   s1.equals(s3)
-     II.  s1 == s2
-     III. s1 == s3
+        public Party(String name, int num, int cap)
+        {
+            partyHost = name;
+            numOfPeople = num;
+            capacity = cap;
+        }
+        public Party (String name, int cap)
+        {
+            partyHost = name;
+            numOfPeople = 0;
+            capacity = cap;
+        }
+        /* Other methods not shown */
+    }
 
-.. mchoice:: q2_13_9
+    I.   Party b = new Party("Charlie", 78);
+    II.  Party b = new Party("Charlie", 0, 70+8);
+    III. Party b = new Party("Charlie", 0, 78);
+
+.. mchoice:: q6_12_5
+    :practice: T
+    :random:
+
+    Consider the following class definition.
+    
+    .. code-block:: java
+
+        public class Party
+        {
+            private int numOfPeople;
+            private double volumeOfMusic;
+            /* missing constructor */
+        }
+
+    The following statement appears in a method in a class other than Party. It is intended to create a new Party object p with its attributes set to 10 and 5.0.
+    
+    .. code-block:: java
+
+         Party p = new Party(10, 5.0);
+
+         Which of the following can be used to replace /* missing constructor */ 
+         so that the object p is correctly created?
+     
+    - .. code-block:: java
+    
+        public Party(int first, double second)
+        {
+            numOfPeople = 10;
+            volumeOfMusic = 5.0;
+        }
+
+      - The constructor should be using the local variables to set the instance variables.
+
+    - .. code-block:: java
+    
+        public Party(int first, double second)
+        {
+            numOfPeople = first;
+            volumeOfMusic = second;
+        }
+
+      + Correct
+
+    - .. code-block:: java
+    
+        public Party(int first, double second)
+        {
+            first = 10;
+            second = 5.0;
+        }
+
+      - The constructor should be using the parameters to set the instance variables.
+
+    - .. code-block:: java
+    
+        public Party(int first, double second)
+        {
+            first = numOfPeople;
+            second = volumeOfMusic;
+        }
+
+      - The constructor should be changing the instance variables, not the local variables.
+      
+.. mchoice:: q6_12_6
+    :practice: T
+    :random:
+
+    Consider the following class definition that defines a Liquid class with a boilingPoint, a currentTemperature, and a freezingPoint. For example, Liquid water = new Liquid(100, 50, 0); defines a water object with a boiling point of 100, a current temperature of 50, and a freezing temperature of 0.
+
+    .. code-block:: java
+
+        public class Liquid
+        {
+            private int boilingPoint;
+            private int currentTemp;
+            private int freezingPoint;
+
+            public Liquid(int bp, int ct, int fp)
+            {
+                boilingPoint = bp;
+                currentTemp = ct;
+                freezingPoint = fp;
+            }
+            /* Other methods not shown */
+        }
+
+    Which of the following preconditions is reasonable for the Liquid constructor? 
+       
+    - Precondition: fp \> 0 
+    
+      - Incorrect. The freezing point could be negative.
+      
+    - Precondition: currentTemp \> 0 
+    
+      - Incorrect. Unable to make this assumption for all liquids.
+    
+    - Precondition: fp < ct < bp 
+    
+      + Correct!
+    
+    - Precondition: fp > ct > bp 
+      
+      - Incorrect. This would again result in freezing point being > boiling point which is impossible.
+
+.. mchoice:: q6_12_7
    :practice: T
-   :answer_a: org
-   :answer_b: eor
-   :answer_c: eorg
-   :answer_d: orgi
-   :answer_e: You will get an index out of bounds exception
-   :correct: a
-   :feedback_a: The method substring(a,b) means start at a and stop before b. The method substring(a) means start at a and go to the end of the string. The first character in a string is at index 0.
-   :feedback_b: This can't be true since the e is at index 1 and s2 = s1.substring(2) will start at index 2 and take all characters till the end of the string.
-   :feedback_c: This can't be true since the e is at index 1 and s2 = s1.substring(2) will start at index 2 and take all characters till the end of the string.
-   :feedback_d: This would be true if substring(a,b) included the character at index b, but it doesn't.
-   :feedback_e: This would be true if the starting index was invalid or the ending index was past 2 past the last valid index.
+   :random:
+   :answer_a: The getAge method should be declared as private.
+   :answer_b: The return type of the getAge method should be void.
+   :answer_c: The getAge method should have at least one parameter.
+   :answer_d: The variable age is not declared inside the getAge method.
+   :answer_e: The instance variable age should be returned instead of a, which is local to the constructor.
+   :correct: e
+   :feedback_a: The method should be public so it can be accessed outside of the class.
+   :feedback_b: The method return type should stay as int.
+   :feedback_c: The getAge should not take any parameters.
+   :feedback_d: This is an instance variable and should be declared outside.
+   :feedback_e: The accessor method getAge should return the instance variable age.
 
-   What is output from the following code?
+    Consider the following Cat class, with the cat’s age stored in the method’s int attribute. The getAge method is intended to allow methods in other classes to access a Cat object’s age value; however, it does not work as intended. Which of the following best explains why the getAge method does NOT work as intended?
+    
+    .. code-block:: java
 
+        public class Cat
+        {
+            private int age;
+
+            public Cat(int a)
+            {
+                age = a;
+            }
+
+            public int getAge()
+            {
+                return a;
+            }
+        }
+
+
+.. mchoice:: q6_12_8
+   :practice: T
+   :random:
+   
+   Consider the following Liquid class. The currentTemperature is stored in the method’s int attribute. The getCurrentTemp method is intended to allow methods in other classes to access a Liquid object’s currentTemperature value; however, it does not work as intended. Which of the following best explains why the getCurrentTemperature method does NOT work as intended?
+   
    .. code-block:: java
 
-     String s = "Georgia Tech";
-     String s1 = s.substring(0,7);
-     String s2 = s1.substring(2);
-     String s3 = s2.substring(0,3);
-     System.out.println(s3);
+        public class Liquid
+        {
+            private int currentTemperature;
 
-.. mchoice:: q2_13_10
+            public Liquid(int ct)
+            {
+                currentTemperature = ct;
+            }
+
+            public void getCurrentTemperature()
+            {
+                return currentTemperature;
+            }
+        }
+
+   - The getCurrentTemperature method should be declared as private.
+    
+     - Accessor methods should be public methods.
+    
+   - The return type of the getCurrentTemperature method should be int.
+    
+     + Correct! The return type should match the type of the variable being returned.
+
+   - The getCurrentTemperature method should have at least one parameter.
+    
+     - Get methods do not need parameters.
+
+   - The variable currentTemperature is not declared inside of the getCurrentTemperature method.
+    
+     - currentTemperature is an instance variable that is shared by all the methods in the class.
+
+   - The instance variable ct should be returned instead of currentTemperature.
+    
+     - The getCurrentTemperature method does not have access to the ct variable which is the parameter for the constructor.
+     
+
+.. mchoice:: q6_12_9
+    :practice: T
+    :random:
+
+    Consider the following class definition.
+    
+    .. code-block:: java
+
+        public class Liquid
+        {
+            private int currentTemp;
+
+            public Liquid(int temp)
+            {
+                currentTemp = temp;
+            }
+
+            public int getTemp()
+            {
+              return currentTemp;
+            }
+            
+            public void resetTemp(int new_temp)
+            {
+                currentTemp = new_temp;
+            }
+        }
+
+    Consider the following code segment, which appears in a method in a class other than Liquid. The code segment does not compile.
+    
+    .. code-block:: java
+
+        Liquid liq = new Liquid(50);
+        System.out.println("The temperature of the liquid is " + liq.currentTemp);
+
+    Which of the following best identifies the reason the code segment does not compile?
+    
+    - The Liquid class constructor should not have a parameter.
+        
+      - The constructor does have a parameter.
+      
+    - The resetTemperature method does not return a value that can be printed.
+        
+      - This is a void mutator method.
+      
+    - The private instance variable cannot be accessed from outside the class unless the accessor method is used.
+    
+      + Correct! The currentTemp instance variable is private and cannot be accessed outside of the class but the public accessor method getTemp() can be used instead.
+      
+    - The getTemp method cannot be called from outside the Liquid class.
+      
+      - The getTemp accessor method should be used from outside the class.
+      
+    - currentTemp does not have a value.
+      
+      - currentTemp is initialized to a value by the constructor but it is private and cannot be accessed outside the class.
+
+
+.. mchoice:: q6_12_10
+    :practice: T
+    :random:
+
+    In the Liquid class below, the raiseTemperature method is intended to increase the value of the instance variable currentTemp by the value of the parameter increase. The method does not work as intended.
+    
+    .. code-block:: java
+
+        public class Liquid
+        {
+            private int currentTemp;
+
+            public Liquid(int ct)
+            {
+                currentTemp = ct;
+            }
+
+            public void raiseTemperature(int increase) // Line 10
+            {
+                return currentTemp + increase; // Line 12
+            }
+        }
+
+    Which of the following changes should be made so that the class definition compiles without error and the method raiseTemperature works as intended?
+    
+    - Replace line 12 with ``currentTemp += increase;``
+    
+      + Correct! This void mutator method should just change the value of currentTemp and not return a value.
+      
+    - Replace line 12 with ``return currentTemp += increase;``
+    
+      - This void mutator method should just change the value of currentTemp and not return a value.
+        
+    - Replace line 12 with  ``increase += currentTemp;``
+    
+      - This method should  change the value of currentTemp, not increase.
+        
+    - Replace line 10 with  ``public raiseTemperature(int increase)``
+        
+      - This mutator method needs a return type of void.
+      
+    - Replace line 10 with  ``public int raiseTemperature(int increase)``
+        
+      - This mutator method should have a void return value and just change the value of currentTemp without returning a value.
+      
+
+.. mchoice:: q6_12_11
    :practice: T
-   :answer_a: null
-   :answer_b: hi there
-   :answer_c: HI THERE
-   :answer_d: Hi There
-   :answer_e: hI tHERE
+   :random:
+   :answer_a: return (numOfBoxes + priceOfOnePizzaBox) / numOfPeople;
+   :answer_b: return numOfPeople * numOfBoxes * priceOfOnePizzaBox;.
+   :answer_c: return numOfBoxes / priceOfOnePizzaBox / numOfPeople;
+   :answer_d: return numOfPeople / (numOfBoxes * priceOfOnePizzaBox);
+   :answer_e: return (numOfBoxes * priceOfOnePizzaBox) / numOfPeople;
+   :correct: e
+   :feedback_a: Assume you have 5 boxes at $10 each. You would need to multiply them to get a total cost of $50. If you had 10 people at the party, you would need to divide $50 by 10 to get $5 per person.
+   :feedback_b: Assume you have 5 boxes at $10 each for a total cost of $50. If you had 10 people at the party, you would need to divide $50 by 10 to get $5 per person.
+   :feedback_c: Assume you have 5 boxes at $10 each. You would need to multiply them to get a total cost of $50. If you had 10 people at the party, you would need to divide $50 by 10 to get $5 per person.
+   :feedback_d: Assume you have 5 boxes at $10 each for a total cost of $50. If you had 10 people at the party, you would need to divide $50 by 10 to get $5 per person.
+   :feedback_e: Assume you have 5 boxes at $10 each for a total cost of $50. If you had 10 people at the party, you would need to divide $50 by 10 to get $5 per person.
+   
+
+   Consider the following class definition. The calculatePizzaCostPerPerson method is intended to calculate the amount each person at the party must pay for pizza. The amount is equal to the total price of all the pizza boxes divided by the number of people at the party. Which of the following code segments should replace *missing code* so that the calculatePizzaCostPerPerson method will work as intended?
+   
+   .. code-block:: java
+
+        public class Party
+        {
+            private int numOfPeople; //number of people at the party
+
+            public Party(int people)
+            {
+                numOfPeople = people;
+            }
+
+            public double calculatePizzaCostPerPerson(int numOfBoxes, double priceOfOnePizzaBox)
+            {
+                /* missing code */
+            }
+        }
+
+
+
+
+.. mchoice:: q6_12_12
+   :practice: T
+   :random:
+   :answer_a: I only
+   :answer_b: II only
+   :answer_c: III only
+   :answer_d: I and II only
+   :answer_e: I, II, and III
    :correct: d
-   :feedback_a: This would be true if we had s1 = s4 after s4 = null was executed. Strings are immutable and so any changes to a string returns a new string.
-   :feedback_b: This would only be correct if we had s1 = s2 after s2.toLowerCaase() was executed. Strings are immutable and so any change to a string returns a new string.
-   :feedback_c: This would be correct if we had s1 = s3 after s3.toUpperCase() was executed. String are immutable and so any change to a string returns a new string.
-   :feedback_d: Strings are immutable meaning that any changes to a string creates and returns a new string, so the string referred to by s1 does not change.
-   :feedback_e: Strings are immutable and so any changes to a string returns a new string.
+   :feedback_a: I would work but this is not the only code that would work.
+   :feedback_b: II would work but this is not the only code that would work.
+   :feedback_c: You cannot put a shortcut assignment operator in the conditional test of an if statement.
+   :feedback_d: Correct!
+   :feedback_e: III would not work because you cannot put a shortcut assignment operator in the conditional test of an if statement.
 
-   Given the following code segment, what is the value of s1 after the code executes?
-
+   Consider the Party class below.
+    
    .. code-block:: java
 
-     String s1 = "Hi There";
-     String s2 = s1;
-     String s3 = s2;
-     String s4 = s1;
-     s2 = s2.toLowerCase();
-     s3 = s3.toUpperCase();
-     s4 = null;
+        public class Party
+        {
+            private int numOfPeople; //number of people at the party
+            private int capacity;    //total capacity of people at party
 
-.. mchoice:: q2_13_11
-   :practice: T
-   :answer_a: Data Set 2 contains one string which should return true and one that should return false.
-   :answer_b: All strings in Data Set 2 have the same number of characters.
-   :answer_c: The strings in Data Set 2 are all lowercase
-   :answer_d: Data Set 2 contains fewer values than Data Set 1.
-   :answer_e: There are no advantages.
-   :correct: a
-   :feedback_a: All of the strings in Data Set 1 should return true, so the false condition is never tested.
-   :feedback_b: Variety is always good in testing, so this is not an advantage.
-   :feedback_c: It would be better to include both upper and lower case for testing, so this is not an advantage.
-   :feedback_d: More test conditions is usually better, so this is not an advantage.
-   :feedback_e: All the values in Data Set 1 are true, so the false condition is not tested.
+            public Party(int people, int cap)
+            {
+                numOfPeople = people;
+                capacity = cap;
+            }
 
-   There is a method called checkString that determines whether a string is the same forwards and backwards. The following data set inputs can be used for testing the method. What advantage does Data Set 2 have over Data Set 1?
+            public boolean updateNumOfPeople(int additionalPeople)
+            {
+                /* missing code */
+            }
+        }
+    
+   The class contains the updateNumOfPeople method, which is intended to update the instance variable numOfPeople under certain conditions and return a value indicating whether the  update was successful. If adding additionalPeople to the current number of people would lead to the number going over the capacity, then the update would be unsuccessful. Otherwise, if adding the number of additional people is still below or at the capacity, the update is successful. Which of the following code segments can replace *missing code* to ensure that the updateNumOfPeople method works as intended?
 
    .. code-block:: java
+     
+        I.  if (numOfPeople + additionalPeople > capacity)
+            {
+                return false;
+            }
+            else
+            {
+                numOfPeople += additionalPeople;
+                return true;
+            }
+        II. if (numOfPeople + additionalPeople <= capacity)
+            {
+                numOfPeople += additionalPeople;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        III. if (numOfPeople += additionalPeople <= capacity)
+             {
+                return true;
+             }
+             else
+             {
+                return false;
+             }           
 
-      Data Set 1    Data Set 2
-      aba	        bcb
-      abba	        bcd
-      aBa
+.. mchoice:: q6_12_13
+    :practice: T
 
-.. mchoice:: q2_13_12
+    Consider the following class definition.
+
+    .. code-block:: java
+
+        public class Liquid
+        {
+            private int currentTemp;
+            private int boilingPoint;
+
+            public Liquid(int ct, int bp)
+            {
+                currentTemp = ct;
+                boilingPoint = bp;
+            }
+
+            public void changeTemp(int newTemp)
+            {
+                currentTemp = newTemp;
+            }
+
+            public void increaseTemp(int howMuch)
+            {
+                currentTemp = newTemp + howMuch;
+            }
+
+        }
+
+    Which of the following best explains why the class will not compile?
+    
+    - The class is missing an accessor method.
+        
+      - The class does not necessarily need an accessor method.
+      
+    - The instance variables currentTemp and boilingPoint should be  public instead of private.
+    
+      - Instance variables are usually private.
+      
+    - The Liquid constructor needs a return type.
+    
+      - Constructors do not have return types.
+        
+    - The Liquid class is missing a constructor.
+    
+      - The class includes a constructor.
+      
+    - The variable newTemp is not defined in the increaseTemp method.
+    
+      + Correct! newTemp is defined in a different method. The instance variable currentTemp should be used instead.
+      
+
+.. mchoice:: q6_12_14
    :practice: T
-   :answer_a: Use one class, Car, which has three attributes: int numDoors, double mpg, and boolean hasAir.
-   :answer_b: Use four unrelated classes: Car, Doors, MilesPerGallon, and AirConditioning
-   :answer_c: Use a class, Car, which has three subclasses: Doors, MilesPerGallon, and AirConditioning
-   :answer_d: Use a class Car, which has a subclass Doors, with a subclass AC, with a subclass MPG.
-   :answer_e: Use three classes: Doors, AirConditioning, and MilesPerGallon, each with a subclass Car.
-   :correct: a
-   :feedback_a: Having one class with all the attributes needed is the most efficient design in this case.
-   :feedback_b: The point of storing the car information is so we can easily access the attributes related to a car.
-   :feedback_c: In this case, the information only refers to a couple of basic attributes so it is better to store that data as fields within a single class.
-   :feedback_d: It doesn't really make sense for AC to be a subclass of MPG, and that being a subclass of Doors.
-   :feedback_e: A car doesn't really make sense to be a subclass of AC, and so on. It would also be better to group a couple of pieces of data into a single class.
+   :answer_a: The private variables boxesOfFood and numOfPeople are not properly initialized.
+   :answer_b: The private variables boxesOfFood and numOfPeople should have been declared public.
+   :answer_c: The public method getBoxesOfFood should have been declared private.
+   :answer_d: The variable updatedAmountOfFood in the eatFoodBoxes method is not declared in this method.
+   :answer_e: The variables boxesOfFood and numOfPeople in the updatedAmountOfFood method are local variables.
+   :correct: d
+   :feedback_a: The private variables boxesOfFood and numOfPeople are initialized by the constructor.
+   :feedback_b: Instance variables are usually private.
+   :feedback_c: Methods are usually public.
+   :feedback_d: The variable updatedAmountOfFood in the eatFood method is not declared in this method. It could be replaced by the boxesOfFood instance variable.
+   :feedback_e: The variables boxesOfFood and numOfPeople are instance variables.
 
-   A car dealership needs a program to store information about the cars for sale.For each car, they want to keep track of the following information: the number of doors (2 or 4),its average number of miles per gallon, and whether the car has air conditioning. Which of the following is the best design?
-
-
-
-Hard Multiple Choice Questions
-----------------------------------
-
-
-.. mchoice:: q2_13_13
-   :practice: T
-   :answer_a: II and IV
-   :answer_b: II, III, and IV
-   :answer_c: I, II, III, IV
-   :answer_d: II only
-   :answer_e: IV only
-   :correct: b
-   :feedback_a: III is also correct.
-   :feedback_b: String overrides equals to check if the two string objects have the same characters. The == operator checks if two object references refer to the same object. So II is correct since s1 and s2 have the same characters. Number II is correct since s3 and s1 are referencing the same string, so they will be ==. And s2 and s3 both refer to string that have the same characters so equals will be true in IV. The only one that will not be true is I, since s1 and s2 are two different objects (even though they have the same characters).
-   :feedback_c: I is not correct since s1 and s2 are two different objects (even though they have the same characters). If s1 and s2 were both referring to literals, then I would be correct, but the new operator forces a new object to be created.
-   :feedback_d: III and IV are also correct.
-   :feedback_e: II and III are also correct.
-
-   Given the following code segment, which of the following is true?
-
+   Consider the following class definition for Party.  The following code segment appears in a method in a class other than Party. The code segment is intended to print the value 30, but does not print the correct value because of an error in the Party class. Which of the following best explains why the correct value isn’t printed?
+    
    .. code-block:: java
+ 
+       Party p = new Party(20, 15);
+       p.orderMoreFood(20);
+       p.eatFood(5);
+       System.out.println(p.getBoxesOfFood());
+        
+       public class Party
+       {
+        private int boxesOfFood;
+        private int numOfPeople;
 
-     String s1 = new String("Hi There");
-     String s2 = new String("Hi There");
-     String s3 = s1;
+        public Party(int people, int foodBoxes)
+        {
+            numOfPeople = people;
+            boxesOfFood = foodBoxes;
+        }
 
-     I.   (s1 == s2)
-     II.  (s1.equals(s2))
-     III. (s1 == s3)
-     IV.  (s2.equals(s3))
+        public void orderMoreFood(int additionalFoodBoxes)
+        {
+            int updatedAmountOfFood = boxesOfFood + additionalFoodBoxes;
+            boxesOfFood = updatedAmountOfFood;
+        }
 
-.. mchoice:: q2_13_14
-   :practice: T
-   :answer_a: 21
-   :answer_b: 1353
-   :answer_c: It will give a run-time error
-   :answer_d: 138
-   :answer_e: It will give a compile-time error
-   :correct: b
-   :feedback_a: This would be correct if it was System.out.println(13 + 5 + 3), but the 13 is a string.
-   :feedback_b: This is string concatenation.  When you append a number to a string it get turned into a string and processing is from left to right.
-   :feedback_c: You can append a number to a string in Java. It turns the number into a string and then appends the second string to the first string.
-   :feedback_d: This would be correct if it was System.out.println("13" + (5 + 3)), but the 5 is turned into a string and appended to the 13 and then the same is done with the 3.
-   :feedback_e: You can append a number to a string in Java.  It will compile.
+        public int getNumOfPeople() {
+            return numOfPeople;
+        }
 
-   What does the following code print?
+        public int getBoxesOfFood() {
+            return boxesOfFood;
+        }
 
-   .. code-block:: java
+        public void eatFood(int eatenBoxes) 
+        {
+            boxesOfFood = updatedAmountOfFood - eatenBoxes;
+        }
+       }
 
-     System.out.println("13" + 5 + 3);
+        
+.. mchoice:: q6_12_15
+    :practice: T
+
+    Consider the following class definitions. 
+    
+    .. code-block:: java
+
+        public class Party
+        {
+            private String partyHost;
+            private int monthOfParty;
+            private int partyStartTime;
+
+            public Party (String h, int month, int startTime)
+            {
+                partyHost = h;
+                monthOfParty = month;
+                partyStartTime = startTime;
+            }
+
+            public int getMonth()
+            {
+                return monthOfParty;
+            }
+
+            public int getStartTime()
+            {
+                return partyStartTime;
+            }
+
+            public String getHost()
+            {
+                return partyHost;
+            }
+
+            public void addToOptions(PartyOptions o)
+            {
+                o.addParty(this);
+            }
+        }
+
+        public class PartyOptions
+        {
+            private int onlyThisMonth;
+
+            public PartyOptions(int month)
+            {
+                onlyThisMonth = month;
+            }
+
+            /* A Party should only be added to this PartyOption if the party’s month matches onlyThisMonth */
+            public void addParty(Party p)
+            {
+                if (p.getMonth() == onlyThisMonth)
+                {
+                    System.out.print("Party by " + p.getHost() + " accepted; ");
+                }
+                else
+                {
+                    System.out.print("Party by " + p.getHost() + " rejected; ");
+                }
+            }
+        }
+
+
+    Consider the following code segment, which appears in a class other than Party or PartyOptions.
+    
+    .. code-block:: java
+     
+        Party p1 = new Party("Kerry", 10, 7);
+        Party p2 = new Party("Jules", 9, 6);
+
+        PartyOptions options = new PartyOptions(10);
+        p1.addToOptions(options);
+        p2.addToOptions(options);
+
+    - Party by Kerry rejected; Party by Jules rejected;
+    
+      - Kerry's party should be accepted because it is in the 10th month.
+   
+    - Party by Kerry rejected; Party by Jules accepted;
+    
+      - Kerry's party should be accepted because it is in the 10th month. Jules' party should be rejected because it is not in the 10th month. 
+   
+    - Party by Kerry accepted; Party by Jules rejected;
+   
+      + Kerry's party is accepted because it is in the 10th month, and Jules' party is not.
+      
+    - Party by Kerry accepted; Party by Jules accepted;
+   
+      - Jules' party should be rejected because it is not in the 10th month.    
+
 
 

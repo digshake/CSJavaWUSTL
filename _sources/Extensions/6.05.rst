@@ -1,0 +1,143 @@
+============
+Extension 6.5: L-Systems (6 points)
+============
+
+
+Authors
+============
+
+* `Dennis Cosgrove <http://www.cs.wustl.edu/~cosgroved/>`_
+
+Background
+============
+
+In this extension we will use Mosaic: a custom API which is ideally suited for the problems below.  Unlike with StdDraw where you explicitly pass the x and y locations at which shapes should be drawn, with Mosaic you use the provided methods like above() and beside() to arrange your sub-mosaics.  Combining these tools with recursion allows us to create complex recursive shapes with an extraordinarily small amount of code.  Watch the videos to see some examples of how to use Mosaic.  Then create the three mosaics shown at the bottom in order to demo this extension.
+
+* `L-system <https://en.wikipedia.org/wiki/L-system>`_ 
+* `Sierpinski triangle <https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle>`_
+* `Sierpinski carpet <https://en.wikipedia.org/wiki/Sierpi%C5%84ski_carpet>`_
+* `Cantor set <https://en.wikipedia.org/wiki/Cantor_set>`_
+
+
+Mosiac API
+============
+
+The Mosaic API is inspired by the `Racket Image Library <https://docs.racket-lang.org/teachpack/2htdpimage.html>`_.
+
+.. youtube:: bXVpI9sCBuI
+	:align: center
+
+Beside Mosaic Example
+------------------
+
+::
+
+	private static Mosaic sideBySideEllipses() {
+		return beside(
+				filledEllipse(0.1, 0.2, HONOLULU_BLUE), 
+				filledEllipse(0.1, 0.3, BAMBOO), 
+				filledEllipse(0.1, 0.4, BLACK)
+		);
+	}
+
+
+.. image:: 6.05/beside.png
+
+Above Mosaic Example
+------------------
+
+::
+
+	private static Mosaic stackedEllipses() {
+		return above(
+				filledEllipse(0.2, 0.1, HONOLULU_BLUE), 
+				filledEllipse(0.3, 0.1, BAMBOO),
+				filledEllipse(0.4, 0.1, BLACK)
+		);
+	}
+
+
+.. image:: 6.05/above.png
+
+Overlay Mosaic Example
+------------------
+
+::
+
+	private static Mosaic overlaidEllipses() {
+		return overlay(
+				filledEllipse(0.1, 0.2, HONOLULU_BLUE), 
+				filledEllipse(0.2, 0.4, BAMBOO),
+				filledEllipse(0.8, 0.6, BLACK)
+		);
+	}
+
+
+.. image:: 6.05/overlay.png
+
+Forest Mosaic Example
+------------------
+
+::
+
+	private static Mosaic tree() {
+		return above(
+				filledEquilateralTriangle(1, OCEAN_GREEN), 
+				filledRectangle(0.1, 0.2, BAMBOO)
+		);
+	}
+	
+	private static Mosaic rowOfTrees() {
+		Mosaic tree = tree();
+		return beside(tree, tree, tree);
+	}
+
+	private static Mosaic forest() {
+		Mosaic row = rowOfTrees();
+		return above(row, row, row);
+	}
+
+
+.. image:: 6.05/forest.png
+
+Recursive Mosaic Example
+------------------
+
+.. youtube:: GkimQLmx-0E
+
+Note: Mosaic Is Not StdDraw
+------------------
+
+**Warning:** use the methods found in Mosaics which are imported for you, not StdDraw to complete this problem.
+
+Procedure
+============
+
+Implement simple and elegant algorithms to create the three mosaics below.  For each problem, analyze the picture and come up with a plan to create it recursively.  Questions to ask:
+
+* What is the base case?
+* What is the recursive substructure?
+
+Sierpinski Gasket
+------------------
+
+.. image:: 6.05/sierpinski_gasket.png
+
+**Note:** Although it is easy to see solutions to this problem as either:
+
+* drawing only the black triangles or 
+* drawing a single black triangle with upside down white triangles on top
+
+Mosaic currently only supports drawing upright equilateral triangles so you can only reasonably go down the "drawing only the black traingles" path.
+
+Sierpinski Carpet
+------------------
+
+**Note:** The PARIS_YELLOW lines you see in the image below are unfortunate artifacts of the StdDraw system.  Do **NOT** attempt to draw them.  Depending on your algorithm, they will sadly appear in your simple and elegant solution to this problem.
+
+.. image:: 6.05/sierpinski_carpet.png
+
+Cantor Stool
+------------------
+
+.. image:: 6.05/cantor_stool.png

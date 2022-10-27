@@ -72,72 +72,7 @@ Notice the difference between set (mutator) and get (accessor) methods in the fo
 
     Figure 1: Comparison of set and get methods
     
-    
-|CodingEx| **Coding Exercise**
-
-Try the Student class below which this time has set methods added. You will need to fix one error. The main method is in a separate Tester class and does not have access to the private instance variables in the other Student class. Change the main method so that it uses a public mutator method (set method) to access the value instead.
-
-.. activecode:: code6_5_1
-  :language: java
-
-  Fix the main method to include a call to the appropriate set method.
-  ~~~~
-  public class TesterClass 
-  {
-     // main method for testing
-     public static void main(String[] args)
-     {
-        Student s1 = new Student("Skyler", "skyler@sky.com", 123456);
-        System.out.println(s1);
-        s1.setName("Skyler 2");
-        // Main doesn't have access to email, use set method!
-        s1.email = "skyler2@gmail.com";
-        System.out.println(s1);
-     }   
-   }
-  
-  class Student 
-  {
-     private String name;
-     private String email;
-     private int id;
-     
-     public Student(String initName, String initEmail, int initId)
-     {
-        name = initName;
-        email = initEmail;
-        id = initId;
-     }
-     // mutator methods - setters
-     public void setName(String newName)
-     { 
-       name = newName; 
-     }
-     public void setEmail(String newEmail)
-     { 
-       email = newEmail; 
-     }
-     public void setId(int newId)
-     { 
-       id = newId; 
-     }
-     // accessor methods - getters 
-     public String getName() 
-     { 
-        return name;
-     }
-     public String getEmail() 
-     { 
-        return email;
-     }
-     public int getId() 
-     { 
-        return id;
-     }
-     public String toString() {
-        return id + ": " + name + ", " + email;
-     }
-  }
+   
   
 |Exercise| **Check your understanding**
 
@@ -207,38 +142,9 @@ variable or a static variable in the class.
     :align: left
     :alt: Animal Clinic
     
-1. Copy your Awesome Animal Clinic Pet class from the last lesson into this Active Code window. 
+1. Continue working with your pet class from the last lesson.
 2. Add set methods for each of the 5 instance variables. Make sure you use good commenting!
 3. Test each of the set methods in the main method.
-
-
-.. activecode:: code6_5_2
-  :language: java
-  
-  Create a Pet class that keeps track of the name, age, weight, type of animal, and breed for records at an animal clinic with 2 constructors, accessor (get) methods, a toString method, and mutator (set) methods for each instance variable.
-  ~~~~
-  /**
-      Pet class (complete comments)
-      @author
-      @since 
-      
-  */
-  class Pet 
-  {
-     // complete class definition with set methods
-     
-  }
-  
-  public class TesterClass 
-  {
-     // main method for testing
-     public static void main(String[] args)
-     {
-        // Create Pet objects and test all your set methods
-        
-     }   
-   }  
-
 
 Practice
 ------------

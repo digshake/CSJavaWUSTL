@@ -24,14 +24,17 @@
 Anatomy of a Java Class
 =======================
 
-In Unit 2, we learned to use **classes** and **objects** that are built-in to Java or 
-written by other programmers. 
-In this unit, you will learn to write your own classes and objects!
+Java is an **object-oriented programming** language.  In object-oriented programming, we group the 
+data attributes and the behaviors/methods that use them together into objects.
+
+**Objects** are created from a **class** definition in the code, and they are **instances** of a class. 
 
 Creating a Class
 ------------------
 
-Remember that a **class** in programming defines a new **abstract data type**. When you create **objects**, you create new variables or **instances** of that class data type. For example in Unit 2, we created yertle and myrtle, 2 turtle objects created from the class Turtle, and we used the Java String class to create different String variables, also called **object references**.
+A **class** in programming defines a new **abstract data type**. When you create **objects**, you create new variables or **instances** of that class data type. For example, we have used the Java String class to create different String variables, also called **object references**.
+
+You can think of a **class** as a classification or blueprint. A class defines the data (attributes) and behavior (methods) of a set of objects.
 
 To write your own class, you typically start a class declaration with ``public`` then ``class`` then the name of the class.  The body of the class is defined inside a ``{`` and a ``}``. For example, the class House below. Then, you can create objects of that new House type by using ``Classname objectname = new Classname();``
 
@@ -59,13 +62,7 @@ Let's create a class called Person. What would we want to know about a person?  
 
     Figure 1: Person class
 
-Run the code below to see how it constructs 2 Person objects and fills in their data. We will explain all parts of this class in the next sections, but notice that execution always starts in the main method. When a method like the print() method is called, we run the code in the print method for that object. After a method is done, the control returns back to the next line of code in the main method. You can also see this in the |Java visualizer| (click on the link and then Forward at the bottom to run the code step by step).
-
-
-.. |Java visualizer| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20Person%20%0A%7B%0A%20%20%20%20%20//%20instance%20variables%20%0A%20%20%20%20%20private%20String%20name%3B%0A%20%20%20%20%20private%20String%20email%3B%0A%20%20%20%20%20private%20String%20phoneNumber%3B%0A%20%20%20%20%20%0A%20%20%20%20%20//%20constructor%3A%20construct%20a%20Person%20copying%20in%20the%20data%20into%20the%20instance%20variables%0A%20%20%20%20%20public%20Person%28String%20initName,%20String%20initEmail,%20String%20initPhone%29%0A%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20name%20%3D%20initName%3B%0A%20%20%20%20%20%20%20%20email%20%3D%20initEmail%3B%0A%20%20%20%20%20%20%20%20phoneNumber%20%3D%20initPhone%3B%0A%20%20%20%20%20%7D%0A%20%20%20%20%20%0A%20%20%20%20%20//%20Print%20all%20the%20data%20for%20a%20person%0A%20%20%20%20%20public%20void%20print%28%29%0A%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20System.out.println%28%22Name%3A%20%22%20%2B%20name%29%3B%0A%20%20%20%20%20%20%20System.out.println%28%22Email%3A%20%22%20%2B%20email%29%3B%0A%20%20%20%20%20%20%20System.out.println%28%22Phone%20Number%3A%20%22%20%2B%20phoneNumber%29%3B%0A%20%20%20%20%20%7D%0A%20%20%20%20%20%0A%20%20%20%20%20//%20main%20method%20for%20testing%0A%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20//%20call%20the%20constructor%20to%20create%20a%20new%20person%0A%20%20%20%20%20%20%20%20Person%20p1%20%3D%20new%20Person%28%22Sana%22,%20%22sana%40gmail.com%22,%20%22123-456-7890%22%29%3B%0A%20%20%20%20%20%20%20%20//%20call%20p1%27s%20print%20method%0A%20%20%20%20%20%20%20%20p1.print%28%29%3B%0A%20%20%20%20%20%20%20%20Person%20p2%20%3D%20new%20Person%28%22Jean%22,%20%22jean%40gmail.com%22,%20%22404%20899-9955%22%29%3B%0A%20%20%20%20%20%20%20%20p2.print%28%29%3B%0A%20%20%20%20%20%7D%0A%20%20%7D&cumulative=false&curInstr=34&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0" target="_blank"  style="text-decoration:underline">Java visualizer</a>
-
+Run the code in the ``Person`` class to see how it constructs 2 Person objects and fills in their data. We will explain all parts of this class in the next sections, but notice that execution always starts in the main method. When a method like the print() method is called, we run the code in the print method for that object. After a method is done, the control returns back to the next line of code in the main method. You can also see this in the |Java visualizer| (click on the link and then Forward at the bottom to run the code step by step).
 
 .. activecode:: code6_1_1
   :language: java
@@ -108,26 +105,7 @@ Run the code below to see how it constructs 2 Person objects and fills in their 
      }
   }
   
-  ====
-  // Test for Lesson 5.1.0 - Person class - should pass if/when they run code
-  import static org.junit.Assert.*;
-  import org.junit.*;;
-  import java.io.*;
-
-  public class RunestoneTests extends CodeTestHelper
-  {
-        @Test
-        public void testMain() throws IOException
-        {
-           String output = getMethodOutput("main");
-            String expect = "Name: Sana\nEmail: sana@gmail.com\nPhone Number: 123-456-7890\nName: Jean\nEmail: jean@gmail.com\nPhone Number: 404 899-9955";
-
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-  }
-
-  
+ 
 
 
 
@@ -258,50 +236,6 @@ To call a method to do its job, we create an object of the class and then use th
          
     :click-incorrect:}:endclick: 
 
-Object-Oriented Design
-----------------------
-
-.. |tutorial on class diagrams| raw:: html
-
-   <a href="https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b" target="_blank">tutorial on class diagrams</a> 
-
-.. |Creately.com| raw:: html
-
-   <a href="https://creately.com" target="_blank">Creately.com</a> 
-
-
-In **Object-Oriented Design** (OOD), programmers first spend time to decide which classes are needed and then figure out the data and methods in each class. For example, here is the class diagram for the Turtle class that we have seen before. The - in front of the attributes indicate that they are private, and the + in front of the methods indicate that they are public. Here is a |tutorial on class diagrams| that explains it in more detail if you are curious. If you want to draw your own, |Creately.com| is a good free online drawing tool for class diagrams.
-
-
-.. figure:: Figures/turtleUMLClassDiagram.png
-    :width: 350px
-    :align: center
-    :alt: Turtle class diagram
-    :figclass: align-center
-
-    Figure 3: Turtle Class Diagram
-    
-When you are given a problem specification, look for the **nouns** to identify what classes you need to create. For an example, try the problem below.
-
-|Exercise| **Check Your Understanding**
-
-.. shortanswer:: q6_1_3
-
-    You've been hired by your school to create a program that keeps track of "students at your school and the courses they are taking". Name 2 classes that you would create in your program. Name 2 attributes (data kept in instance variables) for each class. 
-    
-
-The two nouns in the problem description above, **Student** and **Course** would make good class names! Then, you can think about what data you need to keep track of for students and courses and what methods you need. Note that the instance variables in the Person class could also work for a Student class!
-
-
-
-
-
-|Exercise| **Check Your Understanding**
-
-.. shortanswer:: q6_1_4
-
-    Say you wanted to make a computer game from a board game that you are playing. Think about what objects are in the game. For example, here is the description for Monopoly (trademark Hasbro games): "Buy, sell, dream and scheme your way to riches. Players buy, sell and trade to win. Build houses and hotels on your properties and bankrupt your opponents to win it all. Chance and Community Chest cards can change everything." What classes would you need to create a computer version of this game? (Remember to look for the nouns). Take one of the classes you listed, and try to come up with 2 pieces of data in that class that will be the instance variables.
-    
 
 |Groupwork| Programming Challenge : Riddle Class
 ----------------------------------------------------------
@@ -316,160 +250,11 @@ In this project, you will create a class that can tell riddles like the followin
 - Riddle Question: Why did the chicken cross the playground?
 - Riddle Answer: To get to the other slide!
 
-1. First, brainstorm in pairs to do the **Object-Oriented Design** for a riddle asking program. What should we call this class? What data does it need to keep track of in instance variables? What is the data type for the instance variables? What methods do we need? (You could draw a Class Diagram for this class using |Creately.com|, although it is not required). 
+1. First, brainstorm in pairs to do the **Object-Oriented Design** for a riddle asking program. What should we call this class? What data does it need to keep track of in instance variables? What is the data type for the instance variables? What methods do we need? 
 
-2. Using the Person class above as a guide, write a Riddle class in the Active Code template below that has 2 instance variables for the riddle's question and answer, a constructor that initializes the riddle, and 2 methods to ask the riddle and answer the riddle. Hint:  Don't name your instance variables initQuestion and initAnswer -- we'll explain why shortly. If you came up with other instance variables and methods for this class, you can add those too! Don't forget to specify the private or public access modifiers. Use the outline in the Active Code below. You will learn how to write constructors and other methods in detail in the next lessons.
+2. Using the Person class as a guide, complete the given ``Riddle` class in the that has 2 instance variables for the riddle's question and answer, a constructor that initializes the riddle, and 2 methods to ask the riddle and answer the riddle. Hint:  Don't name your instance variables initQuestion and initAnswer -- we'll explain why shortly. If you came up with other instance variables and methods for this class, you can add those too! Don't forget to specify the private or public access modifier. You will learn how to write constructors and other methods in detail in the next lessons.
 
 3. Complete the main method to construct at least 2 Riddle objects and call their printQuestion() and printAnswer() methods to ask and answer the riddle. You can look up some good riddles online.
-
-
-
-.. activecode:: code6_1_2
-  :language: java
-  :autograde: unittest
-
-  Complete the Riddle class below and complete the main method to construct 2 Riddle objects and call their printQuestion() and printAnswer() methods.  
-  ~~~~
-  public class Riddle
-  {
-     // write 2 instance variables for Riddle's question and answer: private type variableName;
-     
-     
-     // constructor
-     public Riddle(String initQuestion, String initAnswer)
-     {
-        // set the instance variables to the init parameter variables
-     
-     }
-     
-     // Print riddle question
-     public void printQuestion()
-     {
-       // print out the riddle question with System.out.println
-       
-     }
-     
-     // Print riddle answer
-     public void printAnswer()
-     {
-       // print out the riddle answer with System.out.println
-       
-     }
-     
-     // main method for testing
-     public static void main(String[] args)
-     {
-        // call the constructor to create 2 new Riddle objects
-        
-        // call their printQuestion() and printAnswer methods
-       
-     }
-  }
-  
-  ====
-  // Test Code for Lesson 5.1.5 - Riddle
-  // @author Kate McDonnell
-  // Test Code for Lesson 5.1.5 - Riddle
-  import static org.junit.Assert.*;
-  import org.junit.*;
-
-  import java.io.*;
-
-  public class RunestoneTests extends CodeTestHelper
-  {
-        public RunestoneTests()
-        {
-            super("Riddle"); // class name / location of main
-
-            Object[] values = new Object[]{"Question", "Answer"};
-            setDefaultValues(values);
-        }
-
-        @Test
-        public void testPrintQuestion()
-        {
-            String output = getMethodOutput("printQuestion");
-            String expect = "Question";
-
-            boolean passed = getResults(expect, output, "Checking method printQuestion()");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testPrintAnswer()
-        {
-            String output = getMethodOutput("printAnswer");
-            String expect = "Answer";
-
-            boolean passed = getResults(expect, output, "Checking method printAnswer()");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testDefaultConstructor()
-        {
-            String[] args = {"Question 1", "Answer 1"};
-            String output = checkDefaultConstructor();
-            String expect = "fail";
-
-            boolean passed = getResults(expect, output, "Checking default constructor");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testConstructor()
-        {
-            String[] args = {"Question 1", "Answer 1"};
-            String output = checkConstructor(args);
-            String expect = "pass";
-
-            boolean passed = getResults(expect, output, "Checking constructor with parameters");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testVariableTypes()
-        {
-            String varTypes = "String String";
-            String output = testInstanceVariableTypes(varTypes.split(" "));
-
-            boolean passed = getResults(varTypes, output, "Checking Instance Variable Type(s)");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void testPrivateVariables()
-        {
-            String expect = "2 Private";
-            String output = testPrivateInstanceVariables();
-
-            boolean passed = getResults(expect, output, "Checking Private Instance Variable(s)");
-            assertTrue(passed);
-        }
-
-
-        @Test
-        public void testMain()
-        {
-            String output = getMethodOutput("main");
-
-            String expect = "2+ line(s) of text";
-            String actual = " line(s) of text";
-
-            int len = output.split("\n").length;
-
-            if (output.length() > 0) {
-                actual = len + actual;
-            } else {
-                actual = output.length() + actual;
-            }
-            boolean passed = len >= 2;
-
-            getResults(expect, actual, "Checking main method", passed);
-            assertTrue(passed);
-        }
-    }
-
 
 
 Practice

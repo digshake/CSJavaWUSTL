@@ -1,27 +1,24 @@
-Using Objects
-:::::::::::::::::::::
+  
+Module 7: Writing Classes
+:::::::::::::::
 
-In this unit, you will learn how to create and use objects in Java. 
-The unit introduces a library that supports turtle graphics, which enables you to
-create 2D drawings and animations.  This unit also introduces String and Math methods.
-
+ In this unit, you will learn to write your own classes and objects.  
+ 
+ To get the exercise repository for this chapter, click `here <https://classroom.github.com/a/0GIxkPWs>`_ .
 .. toctree::
-   :caption: Unit 2 Table of Contents
    :maxdepth: 3
-
-   topic-2-1-objects-intro-turtles.rst
-   topic-2-2-constructors.rst
-   topic-2-3-methods-no-params.rst
-   topic-2-4-methods-with-params.rst
-   topic-2-5-methods-return.rst
-   topic-2-6-strings.rst
-   topic-2-7-string-methods.rst
-   topic-2-8-IntegerDouble.rst
-   topic-2-9-Math.rst
-   topic-2-10-summary.rst
-   topic-2-11-practice-mixed-code.rst
-   topic-2-12-practice-coding.rst
+   
+   topic-6-1-parts-of-class.rst
+   topic-6-2-writing-constructors.rst
+   topic-6-4-accessor-methods.rst
+   topic-6-5-mutator-methods.rst
+   topic-6-6-writing-methods.rst
+   topic-6-7-static-vars-methods.rst
+   topic-6-8-scope-access.rst
+   topic-6-9-this.rst
+   topic-6-11-summary.rst
    Exercises.rst
-   JavaSwingGUIs.rst
-   topic-2-15-lesson-workspace.rst
+   studio.rst
+   assignment.rst
+
    
