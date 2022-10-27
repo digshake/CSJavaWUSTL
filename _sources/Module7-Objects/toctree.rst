@@ -1,5 +1,5 @@
   
-Writing Classes
+Module 7: Writing Classes
 :::::::::::::::
 
  In this unit, you will learn to write your own classes and objects.  
