@@ -41,6 +41,8 @@ Procedure
 
 .. image:: selection.gif
 
+	Please note that **you cannot reuse your code from Assignment 3** because this is a different algorithm.
+
 5. After the sorting the data, we will take advantage of its useful organization to compute the following statistics:
 
 	Mean: The simple average of the data.

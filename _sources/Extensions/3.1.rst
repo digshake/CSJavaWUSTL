@@ -44,6 +44,4 @@ Procedure
 	
 	You are welcome to instantiate the array that way, but it is simpler and equally acceptable to instantiate the array with the same number of columns in each row.  
 
-4. Compute the triangle as a two-dimensional array and print the results  left-justified as shown above.
-
-5. *Demo a version that prints using the above format*, but for extra fun try to print the triangle centered as shown on the `Wikipedia page <http://en.wikipedia.org/wiki/Pascal%27s_triangle>`_.
+4. Compute the triangle as a two-dimensional array and print the results left-justified as shown above. The columns must be aligned up to row 12. You may use any approach to aligning the columns, but we recommend using tabs (\t).

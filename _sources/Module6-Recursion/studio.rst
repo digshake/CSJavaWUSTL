@@ -87,7 +87,7 @@ Let’s examine the case of a geometric sum. A geometric sum can be computed as 
 
 1/2 + 1/4 + 1/8 + 1/16...
 
-Now say that we wish to compute the geometric sum for the first N terms, where 12 is the 1st term, 14 is the 2nd term, etc. Take a moment to reformulate the equation in terms of N (you’ll probably want to get out some paper and a pencil for this).
+Now say that we wish to compute the geometric sum for the first N terms, where 1/2 is the 1st term, 1/4 is the 2nd term, etc. Take a moment to reformulate the equation in terms of N (you’ll probably want to get out some paper and a pencil for this).
 
 Within this formulation of a geometric sum is a recursive structure and a base case. Consider the following questions:
 
