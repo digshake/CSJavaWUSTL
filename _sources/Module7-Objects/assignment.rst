@@ -99,13 +99,6 @@ Once you have implemented a method run the tests again and pay attention to whic
 
 ``int getId()`` - returns the student id number.
 
-``void submitGrade(double grade, int credits)`` - this method takes in a course grade (as a value between 0 and 4) and the number of credits for a course, and updates the students GPA accordingly. For the purposes of this assignment a grade greater than or equal to 1.7 is considered passing and you can think about it as the final, overall grade for the course. **You may want to read through the descriptions of the next three methods to get a sense of information you need to keep track of**.
-
-
-   **Warning**: In a moment, you will be required to calculate the grade point average.
-   Keeping track of what are called quality points (credits multiplied by the grade points) will likely prove useful.
-
-
 ``int getTotalAttemptedCredits()`` - returns the number of attempted credits (that is, credits for all submitted grades).
 
 ``int getTotalPassingCredits()`` - returns the number of passing credits (that is, credits for which the student received at least a 1.7 grade).
@@ -115,6 +108,7 @@ Once you have implemented a method run the tests again and pay attention to whic
 
 Take the number of credits for a course and multiply it by the grade for that course. This is called the *quality points*. GPA is computed as the sum of all of the quality points for each course the student has taken divided by the total number of *attempted credits*. **Hint: Think carefully about the choice of type for quality points**
 
+``void submitGrade(double grade, int credits)`` - this method takes in a course grade (as a value between 0 and 4) and the number of credits for a course, and updates the student's credits and GPA points accordingly. For the purposes of this assignment a grade greater than or equal to 1.7 is considered passing and you can think about it as the final, overall grade for the course.
 
 ``String getClassStanding()`` - returns the students class standing based on how many passing credits they have:
 
@@ -138,8 +132,7 @@ Take the number of credits for a course and multiply it by the grade for that co
 
 ``double getBearBucksBalance()`` - returns the Bear Bucks balance
 
-double cashOutBearBucks() - Zero out the Bear Bucks balance and return the appropriate amount as (previously) specified in the Terms of Service for `Bear Bucks <https://card.wustl.edu/bear-bucks/>`_ :
-
+``double cashOutBearBucks()`` - Zero out the Bear Bucks balance and return the appropriate amount as follows:
 
 * Remaining balance will be refunded, minus a $10 administrative fee.
 
@@ -147,22 +140,18 @@ double cashOutBearBucks() - Zero out the Bear Bucks balance and return the appro
 
 For example:
 
-if your balance was $1000 and your “cashed out” you would receive $990 (via the return value) and your balance would be $0.
-
 if your balance was $42 and your “cashed out” you would receive $32 (via the return value) and your balance would be $0.
 
 if your balance was $9 and your “cashed out” you would receive $0 (via the return value) and your balance would be $0.
 
 ::
 
-   **Note:** since the creation of this assignment, WashU has changed the policy and you can no longer get refunded from your bear bucks account.
-
    **To reiterate:**  the student's Bear Bucks balance should be zeroed out as a result of calling this method.
 
 
-``Student createLegacy(String firstName, Student other, boolean isHyphenated, int id)`` - it is not unusual for two students to meet at college and eventually start a family, and send their children to the same school. Imagine that in an effort to incentivize alums to send their children to their alma mater, WashU will transfer unused Bear Bucks to a legacy. The administrative fees, of course, still apply (and sadly to both parents).
+``Student createLegacy(String firstName, Student otherParent, boolean isHyphenated, int id)`` - it is not unusual for two students to meet at college and eventually start a family, and send their children to the same school. Imagine that in an effort to incentivize alums to send their children to their alma mater, WashU will transfer unused Bear Bucks to a legacy. The administrative fees, of course, still apply (and sadly to both parents).
 
-This method should take parameters for a first name, the other parent, whether the last name should be hyphenated, and a student id number to create and return a new ``Student`` object as described below. Note: there are three particpants in this method:
+This method should take parameters for a first name, the other parent, whether the last name should be hyphenated, and a student id number to create and return a new ``Student`` object as described below. Note: there are three participants in this method:
 
 * ``this`` parent
 
@@ -175,6 +164,8 @@ The newly-created legacy’s state will be determined by:
 * The legacy’s first name and id (as you might have imagined) will determined by the ``firstName`` and ``id`` parameters.
 
 * The legacy’s last name with either be the last name of ``this`` or a hyphenated combination of this-other depending on the value of ``isHyphenated``.
+
+* The legacy should have the amount of money that results from cashing out its parents.
 
 ``String toString()`` - returns the students full name and student ID
 
@@ -203,9 +194,7 @@ The ``Course`` class should contain the following properties:
 
 * Roster of enrolled Students
 
-* Number of seats in the classroom (the capacity)
-
-1. Add these properties to your class, create a constructor, create some getters and setters, and test!
+1. Add these properties to your class, and create a constructor. Write getters for the name, credits, number of "seats remaining" (unfilled seats) and capacity (total number of seats). You do not need one instance variable for every getter, but you may set your class up that way if you'd like.
 
 As before, drive your software development by the unit test. You may want to look at the way unit tests are “constructing” an instance of the class to identify the expected parameters.
 
