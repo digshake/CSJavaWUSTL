@@ -128,7 +128,7 @@ Nothing should be found in the list with the broken ``.equals(Object other)``.
 5. Revert the code back to its proper ``hashCode`` and ``.equals(Object other)``.
 
 ``equals()`` vs. ``==``
-=======================
+------------------------------
 
 We have now seen two ways of determining equality: ``==`` and ``equals()``. Why are there two ways for determining equality? And how do you know which one to use?
 

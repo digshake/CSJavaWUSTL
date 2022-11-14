@@ -35,7 +35,7 @@ In this module, we are going to examine some abstract data types that are useful
 As you continue your computer science career, you will be introduced to many of these abstract data types, and one of our most important jobs as programmers becomes selecting the appropriate data type for the task at hand. With that in mind, let's start to explore these two new abstract data types!
 
 Lists
-=====
+-----
 
 A ``List`` is an ordered collection of objects. Lists also allow for duplicate elements to be included. Most people are familiar with lists in the form of a todo list, or a list of items to pick up from the store. Note that the list preserves the order of the items whether or not that order is important: the order of the things on our todo list could be very important but the order of our grocery list probably doesn't matter as much. These lists will maintain an order, regardless, in this case perhaps the order only represents the order that things were added to the list.
 
@@ -78,7 +78,7 @@ Thus, we need a ``List<?>``, but what type of element should be in this list?
 4. Suppose we have some kind of a ``List``. What kinds of operations might we want to perform on that ``List``?
 
 List behaviors
-==============
+--------------
 
 Regardless of the type of list we are using, we would expect all lists to have the same basic behaviors:
 
@@ -106,7 +106,7 @@ The method signatures in the ``interface`` correspond to the above behaviors tha
 This is only a partial specification of the List ADT. You can see the full Java ``List`` interface and what it contains `in the documentation <https://docs.oracle.com/javase/8/docs/api/java/util/List.html>`_ .
 
 Implementations
-===============
+---------------
 
 Now that we have an idea of what behaviors a ``List`` can perform, let's turn our attention to some implementations. There are many implementations of ``List`` available, but two popular ones are `ArrayList <https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html>`_ and `LinkedList <https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html>`_ .
 

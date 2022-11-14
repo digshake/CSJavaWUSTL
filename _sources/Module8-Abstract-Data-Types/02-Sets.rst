@@ -74,7 +74,7 @@ Can you find the Javadoc documentation for the ``List`` interface on your own, u
 	 
 	 
 List or Set?
-============
+---------------
 
 So far we have seen lists and sets which are two different types of ADTs. As programmers it is important to determine what data structure is most appropriate for the data being stored. Using what you know about lists and sets, determine the most appropriate data type to use for the following data sets:
 
