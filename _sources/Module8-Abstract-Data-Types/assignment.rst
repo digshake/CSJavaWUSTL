@@ -5,7 +5,7 @@ Assignment 8: Zombies: The Final OBJECTive
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/PBqLvKZk>`__. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/BAc0FfEr>`__. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Zombies... The Final OBJECTive
 =====================
@@ -39,7 +39,7 @@ Your project includes a number of source files in the ``src`` folder:
 Watch this video on Real Time Animation
 =====================
 
-.. youtube:: nhDt5HVOzVM
+.. youtube:: 5mkiddBiTxM
 
 In the video above, Prof. Cosgrove explains how to build a real-time animation. Among the topics covered include the ``deltaTime`` parameter which you are often asked to use in your methods.
 

@@ -16,7 +16,6 @@ Studio activities should not be started before class! Come to the session and wo
 * `Demo`_
 
 
-.. _Studio Setup and Procedure:
 
 **Studio Setup and Procedure**
 
@@ -44,11 +43,9 @@ Studio activities should not be started before class! Come to the session and wo
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-.. _Overview:
 
 **Overview**
 
-.. _Part 1; Objects, Equality, and Composition:
 
 **Part 1; Objects, Equality, and Composition**
 
@@ -197,37 +194,12 @@ Design a ``Calendar`` object in terms of a collection of ``Appointments``.
    * What methods should your `Calendar` object offer?
 
 
-1. Try to implement and test the methods of your ``Calendar`` object.
+6. Try to implement and test the methods of your ``Calendar`` object.
 
-2. Let’s add code so that a ``Time`` object offers the method ``boolean isEarlierThan(Time other)`` that returns whether ``this`` ``Time`` is earlier than the ``other`` ``Time``, assuming the two occur on the same day.
-
-3. Likewise, a ``Date`` offers the method ``boolean isEarlierThan(Date other)``
-
-Implement and test these two methods.
-
-At this point, if implementation of these methods is difficult, revisit the way you specify and accept information for these classes. You are free to design them to make your life easier.
-
-4. Suppose we would like to offer a method common to both ``Date`` and ``Time`` that indicates whether you are working on the specified date or at the specified time. Create an interface called ``Working`` with the single method:
-
-::
-
-   public boolean amWorking();
-
-5. Make both ``Date`` and ``Time`` implement that interface.
-
-You can be creative in terms of when you decide you are working, but here is a suggestion:
-
-* For ``Time``, assume you are working between 9 AM and 5 PM
-
-* For ``Date``, assume you are working on even-numbered dates
-
-6. Create a list of ``Working`` objects and add up the number of those objects that indicate that you are working.
-
-7. **Show your work to a TA.**
-
-.. _Demo:
 
 **Demo**
+
+Be sure to show 
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 
