@@ -7,17 +7,10 @@ Studio 8: Objects, Equality, ADTs, and Collections
 
 Studio activities should not be started before class! Come to the session and work on the activity with other students!
 
-* `Studio Setup and Procedure`_
-
-* `Overview`_
-
-  * `Part 1; Objects, Equality, and Composition`_
-
-* `Demo`_
 
 
-
-**Studio Setup and Procedure**
+Studio Setup and Procedure
+============================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -44,10 +37,9 @@ Studio activities should not be started before class! Come to the session and wo
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
 
-**Overview**
 
-
-**Part 1; Objects, Equality, and Composition**
+Objects, Equality, and Composition
+============================
 
 Design and implement the classes described based on the story given. Follow the instructions carefully. Don’t rush ahead until you have successfully completed the specified work.
 
@@ -197,9 +189,10 @@ Design a ``Calendar`` object in terms of a collection of ``Appointments``.
 6. Try to implement and test the methods of your ``Calendar`` object.
 
 
-**Demo**
+Demo
+======
 
-Be sure to show 
+
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 
