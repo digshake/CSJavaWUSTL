@@ -52,17 +52,6 @@ Code To Use
 
   * `new HashMap() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E()>`_
 
-Videos To Watch
-=====================
-
-You should have already watched these videos in preparation for the studio, but they are repeated here for your reference.
-
-.. youtube:: MwPrMAG4bLg
-
-.. youtube:: De-S0bYg_-4
-
-.. _Map Name to Height Warmup:
-
 Map Name to Height Warmup
 =====================
 
@@ -73,7 +62,7 @@ Note: `Map<K,V> <https://docs.oracle.com/javase/8/docs/api/java/util/Map.html>`_
 
 3. Associate each member of your team’s name with their height (use inches or centimeters at your preference).
 
-4. Repeatedly prompt the user (via ArgsProcessor) for a name. If the users cancels by hitting the cancel button (``ArgsProcessor`` will return a ``null``) then stop prompting for more names. Otherwise, look up the name in the map for the associated height. Print out both the name and the height.
+4. Repeatedly prompt the user (via Scanner) for a name. If the user cancels by typing "quit" then stop prompting for more names. Otherwise, look up the name in the map for the associated height. Print out both the name and the height.
 Be sure to handle the ``null`` case for names that are not in the map and print an appropriate message.
 
 Explain your solution to your TA before moving on.

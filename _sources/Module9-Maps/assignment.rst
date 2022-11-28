@@ -39,7 +39,7 @@ To receive credit you must:
 
 * Use a ``Map<String,Drawable>`` to allow users to recall existing scenes and create new ones.
 
-* Use a ``List<Drawable>`` as needed to store a list of ``Drawables``.
+* Use a ``List<Drawable>`` as needed to store a list of ``Drawables``. 
 
 * Create an initial scene with multiple objects and store it under the name "``init``".
 
