@@ -5,7 +5,7 @@ Assignment 1: Grade Calculator
 Assignment Setup
 ================
 
-To create your repository `go here <https://classroom.github.com/a/82JQvlTV>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository `go here <https://classroom.github.com/a/k0RoehD7>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Grade Calculator
 ================
@@ -93,7 +93,7 @@ Notes
 
 * Don’t try to write this all at once. Instead, build one piece at a time and test it. This will make it easier to figure out what’s going wrong when your program doesn’t work as you expect. (This is called `incremental development <https://en.wikipedia.org/wiki/Incremental_build_model>`_ and this approach will serve you well all semester).
 
-* You’ll need the weights for each course component, which can be found on the `course policies page <https://wustl.instructure.com/courses/90796/pages/course-policies>`_.
+* You’ll need the weights for each course component, which can be found on the `course policies page <https://wustl.instructure.com/courses/102124/pages/course-policies>`_.
 
 * Pay close attention to how you compute the final grade in the course. Rounded numbers look better when printed, but which values will lead to a more accurate result?
 

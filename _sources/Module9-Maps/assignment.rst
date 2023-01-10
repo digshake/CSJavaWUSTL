@@ -5,7 +5,7 @@ Assignment 9: Scene Composer
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/ZqDxsJtd>`__. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/0OLP09ay>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 This assignment is fairly creative in that:
 

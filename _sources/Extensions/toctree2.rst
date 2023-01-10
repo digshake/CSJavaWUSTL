@@ -1,7 +1,7 @@
 Extension Batch 2
 :::::::::::::::::::::::::::::::::::::::::::
 
-To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/o5vJFD5n>`_
+To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/6HyxMpUq>`_
 
 .. toctree::
    :caption: Extension Batch 2
@@ -19,7 +19,6 @@ To get the repository for this batch of extensions, `click here <https://classro
    6.03.rst
    6.04.rst
    6.05.rst
-   7.01.rst
 
 .. raw:: html
     

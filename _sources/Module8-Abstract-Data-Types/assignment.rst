@@ -5,7 +5,7 @@ Assignment 8: Zombies: The Final OBJECTive
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/BAc0FfEr>`__. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/BuTu1Hi_>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Zombies... The Final OBJECTive
 =====================

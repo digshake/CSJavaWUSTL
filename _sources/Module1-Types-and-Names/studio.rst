@@ -41,7 +41,7 @@ Studio Setup and Procedure
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
 
-1. Have **one person** in your group create a new team by clicking `here <https://classroom.github.com/a/VfsWMrnL>`_ and going to the ``OR Create a new team`` box at the bottom of the page.
+1. Have **one person** in your group create a new team by clicking `here <https://classroom.github.com/a/YWwBpq_j>`_ and going to the ``OR Create a new team`` box at the bottom of the page.
 
    1. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 

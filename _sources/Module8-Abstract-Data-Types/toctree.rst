@@ -4,7 +4,6 @@ Module 8: Abstract Data Types
 
  In this unit, you will be introduced to two new ADTs: Lists and Sets. 
  
- To get the exercise repository for this chapter, click `here <https://classroom.github.com/a/vaWbRDgA>`_ .
 .. toctree::
    :maxdepth: 3
    
