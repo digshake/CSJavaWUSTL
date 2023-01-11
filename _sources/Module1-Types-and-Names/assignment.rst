@@ -37,7 +37,23 @@ Procedure
 
 2. Arrange for your program to accept the following inputs:
 
-.. image:: Assignment1Chart.png
++------------+------------+
+| Header 1   | Header 2   |
++============+============+
+| name | The name of the student taking this course, as a String  |
++------------+------------+
+| averageAssignmentGrade | The average grade on all assignments, as a percentage between 0 and 100   |
++------------+------------+
+| extensionPoints | The number of points earned during extension batches 1 and 2 as a value between 0 and 30   |
++------------+------------+
+| studiosAttended | The total number of studio sessions attended, as a value between 0 and 8   |
++------------+------------+
+| averageQuizGrade | The average grade on all quizzes after the two lowest quiz grades have been dropped, as a percentage between 0 and 100   |
++------------+------------+
+| studioPrepsCompleted | The total number of pre-studio preps completed, as a value between 0 and 10   |
++------------+------------+
+| averageExamGrade | The average grade on all exams, as a percentage between 0 and 100   |
++------------+------------+
 
 You should be thinking about the data types you would use to represent each of the above items. We tell you that the **name** is a ``String``, but what about the other inputs? Use the range of values given to inspire your thinking. To accept the inputs use the same code we used in studio.
 
@@ -60,9 +76,9 @@ Eclipse will help you out here: If you have typed ``in``. and Eclipse will show 
 
 ``Weighted assignment grade (out of 30): 25.62%``
 
-``Number of extension points: 37``
+``Number of extension points: 27``
 
-``Weighted extension grade (out of 10): 9.25%``
+``Weighted extension grade (out of 10): 9.00%``
 
 ``Number of studios attended: 7``
 
@@ -82,7 +98,7 @@ Eclipse will help you out here: If you have typed ``in``. and Eclipse will show 
 	
 ``Completed course review: false``
 
-``Total Grade: 89.64%``
+``Total Grade: 89.40%``
 
 .. _Notes:
 
