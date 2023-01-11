@@ -37,23 +37,23 @@ Procedure
 
 2. Arrange for your program to accept the following inputs:
 
-+------------+------------+
-| Header 1   | Header 2   |
-+============+============+
-| name | The name of the student taking this course, as a String  |
-+------------+------------+
-| averageAssignmentGrade | The average grade on all assignments, as a percentage between 0 and 100   |
-+------------+------------+
-| extensionPoints | The number of points earned during extension batches 1 and 2 as a value between 0 and 30   |
-+------------+------------+
-| studiosAttended | The total number of studio sessions attended, as a value between 0 and 8   |
-+------------+------------+
-| averageQuizGrade | The average grade on all quizzes after the two lowest quiz grades have been dropped, as a percentage between 0 and 100   |
-+------------+------------+
-| studioPrepsCompleted | The total number of pre-studio preps completed, as a value between 0 and 10   |
-+------------+------------+
-| averageExamGrade | The average grade on all exams, as a percentage between 0 and 100   |
-+------------+------------+
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
+| Variable               | Value                                                                                                                |
++========================+==========================================================================================================================+
+| name                   | The name of the student taking this course, as a String                                                                  |
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
+| averageAssignmentGrade | The average grade on all assignments, as a percentage between 0 and 100                                                  |
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
+| extensionPoints        | The number of points earned during extension batches 1 and 2 as a value between 0 and 30                                 |
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
+| studiosAttended        | The total number of studio sessions attended, as a value between 0 and 8                                                 |
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
+| averageQuizGrade       | The average grade on all quizzes after the two lowest quiz grades have been dropped, as a percentage between 0 and 100   |
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
+| studioPrepsCompleted   | The total number of pre-studio preps completed, as a value between 0 and 10                                              |
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
+| averageExamGrade       | The average grade on all exams, as a percentage between 0 and 100                                                        |
++------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 You should be thinking about the data types you would use to represent each of the above items. We tell you that the **name** is a ``String``, but what about the other inputs? Use the range of values given to inspire your thinking. To accept the inputs use the same code we used in studio.
 
