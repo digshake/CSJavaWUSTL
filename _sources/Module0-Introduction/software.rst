@@ -17,8 +17,8 @@ We will be using a language called `Java <https://en.wikipedia.org/wiki/Java_(pr
 
 1. The `Java Development Kit (JDK) <https://www.oracle.com/technetwork/java/javase/downloads/>`_. The JDK includes a whole bunch of Java tools that are used to assist in the creation and execution of Java programs. Visit the link above to download the JDK and install it on your computer. 
 
-	* Windows users will likely want the download labelled "x64 Installer." 
-	* Mac users with the newer chipset (M1 or newer) should select "Arm 64 DMG Installer" and Mac users with older machines should select "x64 DMG Installer." 
+   * Windows users will likely want the download labelled "x64 Installer." 
+   * Mac users with the newer chipset (M1 or newer) should select "Arm 64 DMG Installer" and Mac users with older machines should select "x64 DMG Installer." 
 
 
 2. Professional software developers use an `Integrated Development Environment (IDE) <http://en.wikipedia.org/wiki/Integrated_development_environment>`_.  As the name describes, it's used to develop computer programs and it integrates several different useful features:
@@ -27,7 +27,7 @@ We will be using a language called `Java <https://en.wikipedia.org/wiki/Java_(pr
    * It can work with other programs called `compilers <http://en.wikipedia.org/wiki/Compiler>`_. Compilers translate the program you write into something the computer can run.  The JDK that you installed included a compiler.
    * Other handy features, like support for `debugging assistance <http://en.wikipedia.org/wiki/Debugger>`_.
 
-We'll be using `Eclipse <https://www.eclipse.org/downloads/>`_, a popular IDE that supports programming in Java. Download and install Eclipse before proceeding.
+   We'll be using `Eclipse <https://www.eclipse.org/downloads/>`_, a popular IDE that supports programming in Java. Download and install Eclipse before proceeding.
 
 2. Create a GitHub Account
 =====================
