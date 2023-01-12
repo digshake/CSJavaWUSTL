@@ -12,7 +12,7 @@ Assignment Setup
 
 Before starting this assignment it is expected that you have completed the `software setup <software.html>`_ for the course as well as `Studio 0 <studio.html>`_)
 
-To create your repository go `go here <https://classroom.github.com/a/tMzZOKT8>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
+To create your repository go `go here <https://classroom.github.com/a/h00-y0h0>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
 
 Using Java to Control a Robot
 ================
@@ -58,19 +58,19 @@ Now that you understand how to use Eclipse to modify and run the program, spend 
 
 Follow the instructions from `studio 0 <studio.html>`_ to commit and push your work.
 
-After doing `Commit and Push` always check your work on GitHub.  Go to `the course page on GitHub <https://github.com/wustl-cse131-fl22>`_, select the respository for the assignment, and then review the individual files.  
+After doing `Commit and Push` always check your work on GitHub.  Go to `the course page on GitHub <https://github.com/wustlcse131sp23>`_, select the respository for the assignment, and then review the individual files.  
 
 The TAs will be asking you some questions about GitHub (and debugging) as part of the submission process, so be sure to review the content of studio 0 before submitting this assignment.
 
 3. Course Information
 ================
 
-Review the course site on `Canvas <https://wustl.instructure.com/courses/90796>`_.  Make sure you review:
+Review the course site on `Canvas <https://wustl.instructure.com/courses/102124>`_.  Make sure you review:
 
-1. `Course Policies <https://wustl.instructure.com/courses/90796/pages/course-policies>`_
-2. Know where to go to find `Office Hours <https://wustl.instructure.com/courses/90796/pages/office-hours>`_, which will be posted by the second week of class.
-3. Know how to `browse the content and prepare for modules <https://wustl.instructure.com/courses/90796>`_.
-4. Be sure you're signed up for the course's `Piazza forum <piazza.com/wustl/fall2022/cse131cse501n>`_.
+1. `Course Policies <https://wustl.instructure.com/courses/102124/pages/course-policies>`_
+2. Know where to go to find `Office Hours <https://wustl.instructure.com/courses/102124/pages/office-hours>`_, which will be posted by the second week of class.
+3. Know how to `browse the content and prepare for modules <https://wustl.instructure.com/courses/102124>`_.
+4. Be sure you're signed up for the course's `Piazza forum <piazza.com/wustl/spring2023/cse131cse501n>`_.
 
 
 4. "Demo" your work to a TA!

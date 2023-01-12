@@ -5,7 +5,7 @@ Assignment 2: Game of Nim
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/5i2eODzV>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/QHQpHA__>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Game of Nim
 =====================

@@ -31,6 +31,8 @@ Table of Contents
    Module5-Methods/toctree.rst
    Module6-Recursion/toctree.rst
    Module7-Objects/toctree.rst
+   Module8-Abstract-Data-Types/toctree.rst
+   Module9-Maps/toctree.rst
    Extensions/toctree.rst
    Extensions/toctree2.rst
 

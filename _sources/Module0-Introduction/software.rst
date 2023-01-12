@@ -14,12 +14,13 @@ This page will walk you through installing the software that you will need for t
 =====================
 
 We will be using a language called `Java <https://en.wikipedia.org/wiki/Java_(programming_language)>`_ to create and run code on our computers. Before you can execute Java code, you need to install two pieces of software:
+
 1. The `Java Development Kit (JDK) <https://www.oracle.com/technetwork/java/javase/downloads/>`_. The JDK includes a whole bunch of Java tools that are used to assist in the creation and execution of Java programs. Visit the link above to download the JDK and install it on your computer. Windows users will likely want the download labelled "x64 Installer." Mac users with the newer chipset (M1 or newer) should select "Arm 64 DMG Installer" and Mac users with older machines should select "x64 DMG Installer." 
 2. Professional software developers use an `Integrated Development Environment (IDE) <http://en.wikipedia.org/wiki/Integrated_development_environment>`_.  As the name describes, it's used to develop computer programs and it integrates several different useful features:
    * It includes a smart editor that helps you create and work with computer code.
    * It can work with other programs called `compilers <http://en.wikipedia.org/wiki/Compiler>`_. Compilers translate the program you write into something the computer can run.  The JDK that you installed included a compiler.
    * Other handy features, like support for `debugging assistance <http://en.wikipedia.org/wiki/Debugger>`_.
-We'll be using `Eclipse <https://www.eclipse.org/downloads/>`_, a popular IDE that supports programming in Java.  
+We'll be using `Eclipse <https://www.eclipse.org/downloads/>`_, a popular IDE that supports programming in Java. Download and install Eclipse before proceeding.
 
 2. Create a GitHub Account
 =====================
@@ -52,7 +53,7 @@ You will also need to create a **Personal Access Token**:
 3. Accepting the exercises
 =====================
 
-For each major type of course work you will need to generate a repository on GitHub.  You'll do so by clicking on a link and "accepting" an assignment.  Click `HERE <https://classroom.github.com/a/QVNyoZKd>`_ to accept the repository containing the first batch of course exercises ***and follow along with the instructions below***.
+For each major type of course work you will need to generate a repository on GitHub.  You'll do so by clicking on a link and "accepting" an assignment.  Click `HERE <https://classroom.github.com/a/4Czvmxis>`_ to accept the repository containing the first batch of course exercises ***and follow along with the instructions below***.
 
 2. Select the button to accept the exercises:
 
