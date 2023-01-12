@@ -10,8 +10,10 @@ Studio Sessions Overview
 Studios are a chance to learn the module's topics by actively solving problems with other students.
 
 Credit is based on active, good faith participation (not correctness or completion):
+
 	* If you arrive late (more than 15 minutes) or don't actively contribute to the work, you will not be given credit.
 	* Be a constructive member of group:
+
 		* Complete the prep materials.
 		* Ask questions and discuss as a group/with your TA. Studio is a great time to further your big-picture understanding.
 		* Be polite and respectful of your group members!
@@ -26,11 +28,13 @@ Studio Setup and Procedure
 4. Choose one group member to open Eclipse. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
 5. Everyone else, open the studio instructions on your own computer.
 6. Choose one group member to complete the following instructions:
+
 	1. Click `here <https://classroom.github.com/a/_berWX0c>`_
 	2. Go to the bottom of the page, where it says `OR Create a new team`.
 	3. Enter your group's last names and "Studio0" into the text field. Ex: "XiaSmith-Studio0"
 	4. Click the button to create the team.
 7. After the team is created, all other members of your team should complete the following instructions:
+
 	1. Click `here <https://classroom.github.com/a/_berWX0c>`_
 	2. Find the team your groupmate created.
 	3. Join the team. 
@@ -51,6 +55,7 @@ In Eclipse, open ``src/studio0/LunchReceipt.java``. Unless stated otherwise, mos
 The code in the ``main`` method tells a story about an event that took place. Talk through the story as a group.
 
 Run the program. There are two main ways to run a program:
+
 	* With the file open, click the green Play button at the top
 	* Right-click on the file in the Package Explorer or right-click anywhere in the file you want to run. Click "Run As" and then "Java Application".
 
@@ -67,6 +72,7 @@ To start debugging, we first need to set a breakpoint. A **breakpoint** is the p
 Set a breakpoint on the first line of the program (line 7).
 
 There are two ways to toggle (enable or disable) a breakpoint:
+
 	* Right-click on the line number and select "Toggle Breakpoint"
 	* Double-click on the line number
 
@@ -103,6 +109,7 @@ Once you feel comfortable navigating through the debugger, return to the origina
 .. image:: resources/lab0/Debug_Java.png
 
 Some general tips:
+
 	* To stop running or debugging a program partway through, click the red square button at the top.
 	* If the Eclipse doesn't look like you expect (windows are missing), try resetting the perspective with the button shown above. If that doesn't work, try opening the windows manually with Window>Show View>[whichever window you want to open]
 
@@ -133,17 +140,23 @@ As mentioned in `the software setup <setup.html>`_, we'll be using Git this seme
 
 1. Have someone who was *not* the original Eclipse person import the studio repository. Explore the code and see how none of the changes you've made today are visible on this computer.
 2. Have the Eclipse person type a message in ``Message.java`` on their computer, then **commit and push** like so:
+	
 	1. Right click the project (the big folder in the Package Explorer), then "Team" and then "Commit"
+
 		.. image:: resources/lab0/Eclipse_Commit.png
 	2. A **Git Staging** tab will show up on the bottom of the screen. Make sure that the files you want to send to your team mates are in the "Staged Changes" area.
 	3. Under "Commit Message", type a short explanation of what you did ("Finished up to Message" or something similar).
 	4. Click the **Commit and Push...** button.
+
 		.. image:: resources/lab0/Eclipse_Staging.png
 	5. Press the **Preview** button then the push button. You should hopefully see a window that looks like this, which indicates success:
+
 		.. image:: resources/lab0/Eclipse_Pushed.png
 	6. Open the GitHub webpage for your repository (that you created in the very beginning of the studio). If you navigate to the ``Message.java`` file, you should see the changes that you made.
 3. Have the non-Eclipse person do a **pull** like so:
+
 	1. Right click the project, click "Team", and then click the first "Pull" option.
+
 		.. image:: resources/lab0/Eclipse_Pull.png
 	2. Confirm that all of the code you've written today is on your computer, including the message!
 
