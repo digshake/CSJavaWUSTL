@@ -26,12 +26,12 @@ Studio Setup and Procedure
 4. Choose one group member to open Eclipse. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
 5. Everyone else, open the studio instructions on your own computer.
 6. Choose one group member to complete the following instructions:
-	1. Click `here <https://classroom.github.com/a/IMxgx0I4>`_
+	1. Click `here <https://classroom.github.com/a/_berWX0c>`_
 	2. Go to the bottom of the page, where it says `OR Create a new team`.
 	3. Enter your group's last names and "Studio0" into the text field. Ex: "XiaSmith-Studio0"
 	4. Click the button to create the team.
 7. After the team is created, all other members of your team should complete the following instructions:
-	1. Click `here <https://classroom.github.com/a/IMxgx0I4>`_
+	1. Click `here <https://classroom.github.com/a/_berWX0c>`_
 	2. Find the team your groupmate created.
 	3. Join the team. 
 	
