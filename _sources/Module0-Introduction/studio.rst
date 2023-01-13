@@ -11,13 +11,13 @@ Studios are a chance to learn the module's topics by actively solving problems w
 
 Credit is based on active, good faith participation (not correctness or completion):
 
-	* If you arrive late (more than 15 minutes) or don't actively contribute to the work, you will not be given credit.
-	* Be a constructive member of group:
+* If you arrive late (more than 15 minutes) or don't actively contribute to the work, you will not be given credit.
+* Be a constructive member of group:
 
-		* Complete the prep materials.
-		* Ask questions and discuss as a group/with your TA. Studio is a great time to further your big-picture understanding.
-		* Be polite and respectful of your group members!
-		* Make sure every member of your group understands your group's work and the topics being used.
+	* Complete the prep materials.
+	* Ask questions and discuss as a group/with your TA. Studio is a great time to further your big-picture understanding.
+	* Be polite and respectful of your group members!
+	* Make sure every member of your group understands your group's work and the topics being used.
 
 Studio Setup and Procedure
 ==========================
@@ -56,8 +56,8 @@ The code in the ``main`` method tells a story about an event that took place. Ta
 
 Run the program. There are two main ways to run a program:
 
-	* With the file open, click the green Play button at the top
-	* Right-click on the file in the Package Explorer or right-click anywhere in the file you want to run. Click "Run As" and then "Java Application".
+* With the file open, click the green Play button at the top
+* Right-click on the file in the Package Explorer or right-click anywhere in the file you want to run. Click "Run As" and then "Java Application".
 
 The first option is faster, but if you want to make sure you're running the right program, try the second option.
 
@@ -73,8 +73,8 @@ Set a breakpoint on the first line of the program (line 7).
 
 There are two ways to toggle (enable or disable) a breakpoint:
 
-	* Right-click on the line number and select "Toggle Breakpoint"
-	* Double-click on the line number
+* Right-click on the line number and select "Toggle Breakpoint"
+* Double-click on the line number
 
 .. image:: resources/lab0/Debug_Toggle_BP.png
 
@@ -110,8 +110,8 @@ Once you feel comfortable navigating through the debugger, return to the origina
 
 Some general tips:
 
-	* To stop running or debugging a program partway through, click the red square button at the top.
-	* If the Eclipse doesn't look like you expect (windows are missing), try resetting the perspective with the button shown above. If that doesn't work, try opening the windows manually with Window>Show View>[whichever window you want to open]
+* To stop running or debugging a program partway through, click the red square button at the top.
+* If the Eclipse doesn't look like you expect (windows are missing), try resetting the perspective with the button shown above. If that doesn't work, try opening the windows manually with Window>Show View>[whichever window you want to open]
 
 ``MileageReport``
 -----------------
