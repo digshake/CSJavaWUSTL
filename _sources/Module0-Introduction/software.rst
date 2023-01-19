@@ -70,7 +70,7 @@ For each major type of course work you will need to generate a repository on Git
 
 .. image:: resources/lab0/GHClassroom_3_AssignmentLink.png
 
-4. Finally, 1) click on `Clone or Download` and then 2) click the  "Copy to Clipboard" button to make a copy of the URI shown.
+4. Finally, click on `Code` and then click the  "Copy to Clipboard" button to make a copy of the URI shown.
 
 .. image:: resources/lab0/GHClassroom_4_CloneLink.png
 
