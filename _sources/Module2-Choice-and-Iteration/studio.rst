@@ -1,38 +1,32 @@
-=====================
+===============================
 Studio 2: Gambler's Ruin and Pi
-=====================
+===============================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
 Studio Setup and Procedure
-=====================
+==========================
 
-* Form a group of 2-3 students and find a TA or instructor to work with.
+1. Form a group of 2-3 students. Make sure you know who your TA is.
+2. Choose one group member to open Eclipse. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
+3. Everyone else, open the studio instructions on your own computer.
+4. Choose one group member to complete the following instructions:
 
-* All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
+	1. Click `here <https://classroom.github.com/a/4Ng-uoY->`_
+	2. Go to the bottom of the page, where it says `OR Create a new team`.
+	3. Enter your group's last names and "Studio0" into the text field. Ex: "XiaSmith-Studio0"
+	4. Click the button to create the team.
+5. After the team is created, all other members of your team should complete the following instructions:
 
-* Plan to work on one computer (using Eclipse).
-
-  * Initially, one of you will be in charge of typing at that computer.
-
-  * Throughout the studio you should trade who is in charge of the keyboard.
-
-**READ THE FOLLOWING FULLY BEFORE PROCEEDING**
-
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/4Ng-uoY->`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
-
-2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
-
-   1. **Be careful to join the right team!** You won’t be able to change teams yourself and will have to contact instructors if there’s a problem.
-
-   2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
-
-3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
-
-   * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
+	1. Click `here <https://classroom.github.com/a/4Ng-uoY->`_
+	2. Find the team your groupmate created.
+	3. Join the team. 
+	
+	* If you join the wrong team, you will need to contact one of the instructors or Head TAs to fix it.
+6. Eclipse person: import the studio repository as described in `the software setup <setup.html>`_
 
 Problem 1: Gambler's Ruin
-=====================
+=========================
 
 In this assignment you’ll simulate a version of `Gambler’s Ruin <https://en.wikipedia.org/wiki/Gambler%27s_ruin>`_ problem. The problem is:
 
@@ -42,9 +36,9 @@ In this assignment you’ll simulate a version of `Gambler’s Ruin <https://en.
 
 * Over the course of the day you repeatedly play a game, which has known odds of winning called the “win chance”.
 
-  * Each time you play you either win or lose $1 based on the “win chance”. So the total amount of money you have on-hand either increases or decreases by 1 after each game.
+  * Each time you play, you win or lose $1 based on the “win chance”. So the money you have increases or decreases by 1 after each game.
 
-* If the total amount of money you have ever hits a “win limit” you stop gambling and leave the casino for the day. It was a successful day!
+* If the amount of money you have ever hits a “win limit,” you stop gambling and leave the casino for the day. It was a successful day!
 
 * If you lose all of your money you also stop gambling. The day was a ruin!
 
@@ -98,7 +92,11 @@ Procedure
 
    * How would you expect it to behave if you started with $500, will stop at when you have $1000 (or ruin), and the game has a 50% (0.5) chance of winning?
 
-5. Now we want to answer the question posed earlier: If you play every day, what percentage of time will you “ruin”? Start in adding and prompting for a new variable:
+5. Conceptual checkpoint 1: How is the syntax different between a for loop and a while loop? When can you use a for loop but can't use a while loop?
+
+6. Choose a new group member to type.
+
+7. Now we want to answer the question posed earlier: If you play every day, what percentage of time will you “ruin”? Start in adding and prompting for a new variable:
 
 
 .. csv-table:: 
@@ -107,9 +105,9 @@ Procedure
 
    "totalSimulations", "The number of day's you'll simulate"
 
-6. Then use this value to repeatedly play an entire day’s casino visit (the work you’ve already done) until you succeed or ruin (``totalSimulations`` times).
+8. Then use this value to repeatedly play an entire day’s casino visit (the work you’ve already done) until you succeed or ruin (``totalSimulations`` times).
 
-7. Remove any ``println()`` statements for individual plays and instead print:
+9. Remove any ``println()`` statements for individual plays and instead print:
 
    1. The simulation (day) number
 
@@ -119,9 +117,13 @@ Procedure
 
 **(Get this part working before proceeding: See the examples values and corresponding sample output below. It should look somewhat like this, but since you’re using random values the results may not be identical.)**
 
-8. Compute an estimate of the “ruin rate” (percentage of simulations resulting in ruin) and print it after all the rounds of simulation.
+10. Conceptual checkpoint 2: Do you need an else statement whenever you write an if statement?
 
-9. Finally, calculate and print the “expected ruin rate” in your program using the following formula:
+11. Choose a new group member to type.
+
+12. Compute an estimate of the “ruin rate” (percentage of simulations resulting in ruin) and print it after all the rounds of simulation.
+
+13. Finally, calculate and print the “expected ruin rate” in your program using the following formula:
 
 .. image:: MathChart.png
 
@@ -163,7 +165,7 @@ Example Output
 ``Ruin Rate from Simulation: 0.18 Expected Ruin Rate: 0.18350278772959913``
 
 Final Testing & Review
-=====================
+======================
 
 * Come up with creative ways to test your code until you’re confident it’s working as expected. Talk to your TA/instructor and try to justify that all you calculations are correct.
 
@@ -172,11 +174,11 @@ Final Testing & Review
 
 
 Problem 2:Computing Pi by throwing darts
-=====================
+========================================
 
 Computer scientists often use `simulation <http://en.wikipedia.org/wiki/Simulation>`_ as a means of modeling, understanding, and predicting real-world phenomena.
 
-Your group is auditioning for `survivor <http://en.wikipedia.org/wiki/Survivor_%28TV_series%29>`_ by proving your group’s ability to compute `Pi <http://en.wikipedia.org/wiki/Pi>`_ using only the materials at hand, as follows:
+Your group is auditioning for the show `Survivor <http://en.wikipedia.org/wiki/Survivor_%28TV_series%29>`_ by proving your group’s ability to compute `Pi <http://en.wikipedia.org/wiki/Pi>`_ using only the materials at hand, as follows:
 
 * A unit-square dart board (1 meter by 1 meter). Unit-square dart boards are astoundingly resilient in plane crashes and yours is nicely intact.
 
@@ -188,9 +190,7 @@ Your group is auditioning for `survivor <http://en.wikipedia.org/wiki/Survivor_%
 
 As a group, develop an approach for computing `Pi <http://en.wikipedia.org/wiki/Pi>`_ based on the above materials.
 
-Hint:
-
-**Think about the chances of where a dart lands. Can you develop a forumla for it? How could you estimate this chance via a simulation?**
+Hint: Think about the chances of where a dart lands. Can you develop a formula for it? How could you estimate this chance via a simulation?
 
 1. Create a new class called ``Pi`` in your ``studio2`` package
 
@@ -206,7 +206,7 @@ Hint:
 
 
 Further investigations
-=====================
+======================
 
 If you have time, pick one or both of the following:
 
@@ -221,10 +221,10 @@ If you have time, pick one or both of the following:
 2. There are other ways of `computing Pi <http://en.wikipedia.org/wiki/Pi>`_. Try some of these and study their effectiveness in terms of the number of iterations you use.
 
 Demo (get credit for your work)
-=====================
+===============================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 
-To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
+To get participation credit for your work, talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
 
 *Before leaving check that everyone in your group has a grade recorded in Canvas!*
