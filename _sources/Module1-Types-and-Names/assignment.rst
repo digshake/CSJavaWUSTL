@@ -75,7 +75,7 @@ This is an example of what your program should output:
 
 ``Number of extension points: 27``
 
-``Weighted extension grade (out of 10): 9.00%``
+``Weighted extension grade (out of 10): 9.0%``
 
 ``Number of studios attended: 7``
 
@@ -95,7 +95,7 @@ This is an example of what your program should output:
 	
 ``Completed course review: false``
 
-``Total Grade: 89.40%``
+``Total Grade: 89.4%``
 
 How do we write this program? Let's start one step at a time. What's the simplest, easily checkable change you can make?
 
