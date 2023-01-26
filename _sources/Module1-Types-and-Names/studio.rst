@@ -82,6 +82,12 @@ Define a ``boolean`` variable ``isOrdered`` whose value is ``true`` if the three
 
    Some of you may already know some Java. We have not yet covered the if statement. You must use what has been taught so far (simple expressions and assignment) to accomplish this task.
 
+We forgot to teach you something important for this! These will be useful operators:
+
+``&&`` (pronounced "and") compares two booleans and returns whether they are BOTH true. (``true && true`` makes ``true`` but ``true && false`` makes ``false``)
+
+``||`` (pronounce "or") compares two booleans and returns whether EITHER boolean is true. (``true || true`` and ``false || true`` both make ``true``, but ``false || false`` makes ``false``)
+
 Average
 =====================
 
@@ -108,7 +114,7 @@ We aren’t giving you the class for this one, but we will instruct you how to c
 
       **And a nice  prompt:**
 
-      ``System.in.println("The first of two integers to be averaged?");``
+      ``System.out.println("The first of two integers to be averaged?");``
 
       Run your program and makes sure it prompts you correctly for its values and ask a TA to check your work at this point.
 	  ``int n1 = in.nextInt();``
@@ -123,7 +129,7 @@ We aren’t giving you the class for this one, but we will instruct you how to c
 
 Conceptual Checkpoint 2:
 
-Chat with your group and TA: Why separate int and double when they are both numbers?
+Chat with your group and TA: Why have separate data types for int and double when they are both numbers?
 
 Leap Year
 =====================
