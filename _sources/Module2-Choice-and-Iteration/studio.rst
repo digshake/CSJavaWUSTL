@@ -14,7 +14,7 @@ Studio Setup and Procedure
 
 	1. Click `here <https://classroom.github.com/a/4Ng-uoY->`_
 	2. Go to the bottom of the page, where it says `OR Create a new team`.
-	3. Enter your group's last names and "Studio0" into the text field. Ex: "XiaSmith-Studio0"
+	3. Enter your group's last names and "Studio2" into the text field. Ex: "XiaSmith-Studio2"
 	4. Click the button to create the team.
 5. After the team is created, all other members of your team should complete the following instructions:
 
