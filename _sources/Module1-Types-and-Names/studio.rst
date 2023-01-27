@@ -82,7 +82,7 @@ Define a ``boolean`` variable ``isOrdered`` whose value is ``true`` if the three
 
    Some of you may already know some Java. We have not yet covered the if statement. You must use what has been taught so far (simple expressions and assignment) to accomplish this task.
 
-We forgot to teach you something important for this! These will be useful operators:
+You'll need a new tool to accomplish this! These will be useful operators:
 
 ``&&`` (pronounced "and") compares two booleans and returns whether they are BOTH true. (``true && true`` makes ``true`` but ``true && false`` makes ``false``)
 
