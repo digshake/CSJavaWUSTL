@@ -96,7 +96,7 @@ This is an example of what your program should output:
 	
 ``Completed course review: false``
 
-``Total Grade: 89.4%``
+``Total Grade: 89.39%``
 
 How do we write this program? Let's start one step at a time. What's the simplest, easily checkable change you can make?
 
