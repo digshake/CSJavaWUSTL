@@ -1,36 +1,29 @@
-=====================
+===============================
 Studio 3: Sieve of Eratosthenes
-=====================
+===============================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
-
 Studio Setup and Procedure
-=====================
+=============================
 
-* Form a group of 2-3 students and find a TA or instructor to work with.
+1. Form a group of 2-3 students. Make sure you know who your TA is.
+2. Choose one group member to open Eclipse. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
+3. Everyone else, open the studio instructions on your own computer.
+4. Choose one group member to complete the following instructions:
 
-* All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
+	1. Open `this link <https://classroom.github.com/a/HjxMmmYR>`_ in a new tab.
+	2. Go to the bottom of the page, where it says `OR Create a new team`.
+	3. Enter your group's last names and "Studio2" into the text field. Ex: "XiaSmith-Studio2"
+	4. Click the button to create the team.
+5. After the team is created, all other members of your team should complete the following instructions:
 
-* Plan to work on one computer (using Eclipse).
-
-  * Initially, one of you will be in charge of typing at that computer.
-
-  * Throughout the studio you should trade who is in charge of the keyboard.
-
-**READ THE FOLLOWING FULLY BEFORE PROCEEDING**
-
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/HjxMmmYR>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
-
-2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
-
-   1. **Be careful to join the right team!** You won’t be able to change teams yourself and will have to contact instructors if there’s a problem.
-
-   2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
-
-3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
-
-   * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
+	1. Open `this link <https://classroom.github.com/a/HjxMmmYR>`_ in a new tab.
+	2. Find the team your groupmate created.
+	3. Join the team. 
+	
+	* If you join the wrong team, you will need to contact one of the instructors or Head TAs to fix it.
+6. Eclipse person: import the studio repository as described in `the software setup <setup.html>`_
 
 Sieve of Eratosthenes
 =====================
@@ -47,10 +40,10 @@ In this studio you will make a program that performs the `sieve of Eratosthenes 
 
 3. When done, review your work. Confirm that all the values you found are primes and that all the composites have been removed.
 
-4. Reflect on the process — discuss each step and how it relates to concepts you’ve seen in class. *Check your work with both a TA and other groups*.
+4. Conceptual checkpoint 1: Talk through your approach with a TA and how each step relates to concepts you've seen in class.
 
-Making a program Sieve for You
-=====================
+Making a Program Sieve for You
+==============================
 
 1. Add a new ``Sieve`` class to the ``studio-03/src`` folder.
 
@@ -68,23 +61,25 @@ Making a program Sieve for You
 
    * How can you incrementally test your work to ensure that what you’re doing is correct/working? (Hint, printing details as your code executes is really helpful)
 
-4. Develop and refine your code until it works.
+4. Conceptual checkpoint 2: What is the structure of a for loop? What values should you use for iterating through all even numbers up to 100? What about multiples of 5 up to 100?
+
+5. Choose a new person to type.
+
+6. Write code that updates the array when you find out a number is not prime. Note: You should not use mod (%) in this studio. If it seems like you need it, go back to the description of the sieve.
+
+7. Develop and refine your code until it works.
 
    * Think carefully about whether you are including the ``n``-th value or not. Test that your program works as expected. If it doesn’t, figure out why.
 
-5. Have your program print all the prime values it finds and nothing else.
+8. Have your program print all the prime values it finds and nothing else.
 
-6. Once you can successfully print primes, try it with large values of ``n``, like 10,000,000. If you’ve implemented everything correctly it should only take a few seconds to final all the primes less than 10,000,000! (One takeaway from today’s studio: You can use a little code to quickly automate tasks! This is much quicker and more accurate than attempting to do this by hand!)
-
-
-
+9. Once you can successfully print primes, try it with large values of ``n``, like 10,000,000. If you’ve implemented everything correctly it should only take a few seconds to final all the primes less than 10,000,000! (One takeaway from today’s studio: You can use a little code to quickly automate tasks! This is much quicker and more accurate than attempting to do this by hand!)
 
 
 Review and Revise
 =====================
 
 `Pseudocode <https://en.wikipedia.org/wiki/Pseudocode>`__ is a way to describe things with a precise format that is similar to computer programs. Review the `Pseudo Code for the sieve of Eratosthenes <https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Pseudocode>`__ and compare it to your version. Not everything done in the pseudocode is straightforward in Java. None the less, if your approach is substantially different, revise it to include some of the approaches described in the pseudocode that seem sensible. Compare/contrast the approaches with your TA.
-
 
 
 Peer Comparisons
@@ -99,4 +94,4 @@ Demo
 
 To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
 
-*Before leaving check that everyone in your group has a grade recorded in Canvas
+*Before leaving check that everyone in your group has a grade recorded in Canvas!*
