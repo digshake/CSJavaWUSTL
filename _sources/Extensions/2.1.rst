@@ -1,6 +1,6 @@
-=============
+========================================================
 Extension 2.1: Image Processor With Iteration (7 points)
-=============
+========================================================
 
 **Authors**
 
@@ -20,12 +20,20 @@ In the ``imagetransform`` package, modify the provided ``ImageTransforms`` Java 
     :align: center
 
 
+Testing
+============
+
+* To run the suite of unit tests, right (control) click on `ImageTransformsTestSuite` and choose `Run as...` then `JUnit Test`.  
+
+Note: `this video <https://www.youtube.com/watch?v=VJiE78FTohs>`_ shows how to run the test suite
+
+
 Instructions
 ============
 
-	**Note:** there is information at the bottom of this page (including a video) on how to test your solution.
-
 Each of the methods described below is found in the ``Transforms`` class.
+
+Quick tip: You will be using a lot of nested for loops in this extension. Reminder that ``i`` is just a variable name and you can name the loop variable anything, like ``row`` or something else descriptive.
 
 1. Complete the method ``Color[][] copy(Color[][] source)`` to create a new 2D array of Colors which is simply copy the values from source 2D array of Colors.
 
@@ -74,11 +82,5 @@ Each of the methods described below is found in the ``Transforms`` class.
 
 
 
-Testing
-============
-
-* To run the suite of unit tests, right (control) click on `ImageTransformsTestSuite` and choose `Run as...` then `JUnit Test`.  
-
-Note: `this video <https://www.youtube.com/watch?v=VJiE78FTohs>`_ shows how to run the test suite
 
 
