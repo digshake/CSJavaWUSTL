@@ -1,6 +1,6 @@
-==================
+======================================================
 Extension 1.1: Speed Limit Fine Calculator (3 points)
-==================
+======================================================
 
 Authors:
 
@@ -41,6 +41,7 @@ Procedure
 2. Consider and decide upon the **data type** to represent information of interest to this problem.
 3. You must ask the user for some input values. Use 
 4. Arrange for your program to produce output such that:
+
    * If the driver is going at or under the speed limit, the fine is $0.
    * If the driver is going less than 10 miles over the speed limit, the fine is $100.
    * If the driver is going over 10 miles over the speed limit, the fine is 10 times the number of miles over the speed limit.
