@@ -1,6 +1,6 @@
-=======================
+============================================
 Extension 3.1: Pascal's Triangle (4 points)
-=======================
+============================================
 
 Authors
 
@@ -28,6 +28,7 @@ Viewed as a two-dimensional array, the computation is specified as follows, for 
 * If ``c``==``r``, then the entry is ``1`` .
 * If ``r`` < 0 or ``c`` < 0 or ``c`` > ``r`` , then the entry is ``0`` and is not shown.
 * Everywhere else, the entry is computed as the sum of the entries at:
+
 	* ``r-1`` , ``c``
 	* ``r-1`` , ``c-1``
 
@@ -44,4 +45,6 @@ Procedure
 	
 	You are welcome to instantiate the array that way, but it is simpler and equally acceptable to instantiate the array with the same number of columns in each row.  
 
-4. Compute the triangle as a two-dimensional array and print the results left-justified as shown above. The columns must be aligned up to row 12. You may use any approach to aligning the columns, but we recommend using tabs (\t).
+4. Fill in the 2D array with the values of the triangle.
+
+5. Print the results left-justified as shown above. The columns must be aligned up to row 12. You may use any approach to aligning the columns, but we recommend using tabs (``\t``).
