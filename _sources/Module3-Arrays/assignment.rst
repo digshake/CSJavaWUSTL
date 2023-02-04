@@ -56,9 +56,15 @@ Example Output:
 Frequency Table
 =====================
 
-Make a program called ``FrequencyTable.java`` in the ``assignment3`` package. This program will generate ``x`` integers between 1 and ``n`` where ``x`` and ``n`` are values supplied by the user through ``Scanner``.
+Make a program called ``FrequencyTable.java`` in the ``assignment3`` package. This program will generate ``amount`` number of integers between 1 and ``max`` where ``amount`` and ``max`` are values supplied by the user through ``Scanner``.
 
 Your program should create a frequency table, counting the number of times that each number is randomly generated. Think carefully about how you can use an array for this purpose. How big should our array be? Can we define a relationship between the random values that are generated and how we count them in the array?
+
+Some iterative development tips:
+
+* Try making your array before you write the code for generating random numbers. Try using the array to print out information with the same structure as the example below (even though the frequencies will all be 0). Make sure the numbers start at 1 and go up to exactly ``max``.
+* Try writing code that will generate a random number in your range. Print out the result. If ``max`` is 1, the generated number should always be 1. If ``max`` is 2, the generated number should sometimes be 1 and sometimes be 2. You can use these two values as a litmus test to see if your generator is working. (Once you have a number generator working, you can delete the print statement.)
+* Try using the number you generated as your index in the array and increase that count by one. Is there an index out of bounds error? Why might that be happening, and how could you fix it?
 
 Example Output:
 
