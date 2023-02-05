@@ -30,17 +30,17 @@ Procedure
 
 4. After processing all of the numbers entered, the data will be sorted using the following naive algorithm:
 
-* Create an outer loop to limit the number of scans to be equal to the size of the collection.
- 
-* Create an inner loop to iterate over the unsorted portion of the array, each time selecting the minimum value (keep track of this value and its index in the array)
+	* Create an outer loop to limit the number of scans to be equal to the size of the collection.
+	
+	* Create an inner loop to iterate over the unsorted portion of the array, each time selecting the minimum value (keep track of this value and its index in the array)
 
-	The unsorted portion will always be the sub-array with indexes ``sortCount`` to ``size`` inclusive.
+		The unsorted portion will always be the sub-array with indexes ``sortCount`` to ``size`` inclusive.
 
-* Swap this minimum value with the value currently at the head of the unsorted portion of the array
+	* Swap this minimum value with the value currently at the head of the unsorted portion of the array
 
-	.. image:: selection.gif
+		.. image:: selection.gif
 
-	Please note that **you cannot reuse your code from Assignment 3** because this is a different algorithm.
+		Please note that **you cannot reuse your code from Assignment 3** because this is a different algorithm.
 
 5. After the sorting the data, we will take advantage of its useful organization to compute the following statistics:
 
