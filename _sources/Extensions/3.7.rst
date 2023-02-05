@@ -1,6 +1,6 @@
-=========================
+=====================================
 Extension 3.7: Minesweeper (8 points)
-=========================
+=====================================
 
 Authors
 
@@ -16,7 +16,7 @@ You should see a ``minesweeper`` package in the ``extensions`` source folder.
 
 * Create the output as shown below
 
-You **must** use the ``\*`` and ``.`` characters as shown.  Otherwise, the visual version of this game (described below) will not work correctly.
+You **must** use the ``*`` and ``.`` characters as shown.  Otherwise, the visual version of this game (described below) will not work correctly.
 
 Your output **must** include both the left and right parts of each line as described below.
 
@@ -50,7 +50,7 @@ You must produce output that matches the form you see above:
 
 	Make sure it includes both the left and right parts of each line as described above.
 
-* When your program is complete (or, actualy, even prior to that), you can run a visual version of your game by running ``Game`` as a Java Application.
+* When your program is complete (or prior to that), you can run a visual version of your game by running ``Game`` as a Java Application.
 
 	* Our ``Game`` program runs your ``MineSweeper`` code, but hijacks the output for its own use.
 
@@ -58,9 +58,7 @@ You must produce output that matches the form you see above:
 
 	* Your code that computes the maze, in particular, the location of bombs, and
 
-	* The class-provided code that runs the visual version of the game.
-
-	That class-provided code has tried to be tolerant of the output you might produce.  If it is not working for you, let us know.
+	* The class-provided code that runs the visual version of the game. That class-provided code has tried to be tolerant of the output you might produce.  If it is not working for you, let us know.
 
 	* It builds a visual board based on your output.
 
