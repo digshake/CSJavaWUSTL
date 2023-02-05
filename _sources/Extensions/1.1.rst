@@ -39,15 +39,24 @@ Procedure
 
 1. First, create a **SpeedLimit** Java class in the ``speeding`` package of the ``extensions`` source folder.
 2. Consider and decide upon the **data type** to represent information of interest to this problem.
-3. You must ask the user for some input values. Use 
-4. Arrange for your program to produce output such that:
+3. You must ask the user for input values for the driver's speed and the speed limit. For the automated test to work properly, please ask in that order.
+4. Arrange for your program to produce output such that if the driver is going at or under the speed limit, the fine is $0 and the only thing you print is "Have a nice day.". (You may use an if statement for this and wrap the rest in an else statement, but you may not use any other if or else if statements.)
 
-   * If the driver is going at or under the speed limit, the fine is $0.
-   * If the driver is going less than 10 miles over the speed limit, the fine is $100.
-   * If the driver is going over 10 miles over the speed limit, the fine is 10 times the number of miles over the speed limit.
-   
-	> Beware: Make sure your program works correctly for 0 MPH and all possible positive speeds.
-5. Finally, your program should print how many miles you were going over the speed limit and how much money the fine will be.
+5. If the driver is speeding, your program should print how many miles you were going over the speed limit and how much money the fine will be.
+
+	Reminder:
+
+	* If the driver is going less than 10 miles over the speed limit, the fine is $100.
+	* If the driver is going over 10 miles over the speed limit, the fine is 10 times the number of miles over the speed limit.
+
+You must compute the fine **without** using `if`-statements.  To evaluate an expression conditionally, use the `ternary <http://alvinalexander.com/java/edu/pj/pj010018>`_ operator, an example of which follows:
+
+::
+	
+	int x = (y > 7) ? 12 : 5;
+
+
+If ``y``'s value is greater than ``7``, the variable ``x`` is set to ``12``;  otherwise ``x`` is set to ``5``.
 
 Sample output based on the example story above:
 
@@ -57,12 +66,19 @@ Sample output based on the example story above:
 	You went 25 MPH over the speed limit.
 	Your fine is $250.
 
+Make sure to match the format exactly in order to pass the tests.
 
-You must compute the required information **without** using `if`-statements.  To evaluate an expression conditionally, use the `ternary <http://alvinalexander.com/java/edu/pj/pj010018>`_ operator, an example of which follows:
+Running JUnit tests
+===================
 
-::
-	
-	int x = (y > 7) ? 12 : 5;
+JUnit tests allow you to automatically check your work. To run the tests for this extension, right-click on ``SpeedLimitTestSuite.java`` > Run As... > JUnit Test. You may also simply open the Test Suite file and click the green Run button.
 
+Important: when you're running JUnit tests, make sure to comment out any Scanner input-related print statements (such as asking for the driver's speed). The tests don't expect those lines at the beginning.
 
-The variable ``x`` is set to ``12`` if ``y``'s value is greater than ``7``;  otherwise ``x`` is set to ``5``.
+If your code passes all the tests, you'll see a green bar.
+
+If your code does not pass all the tests, you'll see a red bar. On the bottom-left corner of the screen, you'll see a section titled the "Failure Trace". This section will be extremely useful throughout this class for figuring out how to fix your code!
+
+Usually, test errors will say something along the lines of "expected abc, actual xyz", which means that the correct output would have been "abc", but your program is currently outputting "xyz" for those inputs.
+
+Use these differences to guide your understanding of what parts of your program you need to fix.
