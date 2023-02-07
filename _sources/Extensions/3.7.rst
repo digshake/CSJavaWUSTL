@@ -41,9 +41,6 @@ You must produce output that matches the form you see above:
 
 	2. The mine field\'s central entry also has no bomb and shows a ``2`` in the right part of the output.   Those two bombs can be found in the upper-left and lower-left cells with respect to that center cell\'s eight neighbors.
 
-
-	The book provides a nice hint about an implementation that eliminates special cases around the edges of the field.
-
 * Run ``MineSweeper`` as a Java Application and be sure your results look correct before you demo.
 
 	Test on very small (say, 3x2) mine fields at first.  Enlarge the fields and test again, making certain the output is correct.
