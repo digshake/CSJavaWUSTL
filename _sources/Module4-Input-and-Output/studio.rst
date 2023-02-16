@@ -5,31 +5,9 @@ Studio 4: Flag Day
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
 Studio Setup and Procedure
-=====================
+==========================
 
-* Form a group of 2-3 students and find a TA or instructor to work with.
-
-* All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
-
-* Plan to work on one computer (using Eclipse).
-
-  * Initially, one of you will be in charge of typing at that computer.
-
-  * Throughout the studio you should trade who is in charge of the keyboard.
-
-**READ THE FOLLOWING FULLY BEFORE PROCEEDING**
-
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/kX_sH-Rv>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
-
-2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
-
-   1. **Be careful to join the right team!** You won’t be able to change teams yourself and will have to contact instructors if there’s a problem.
-
-   2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
-
-3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
-
-   * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
+You know the drill by now! 2–3 students per group. Here's `the Github link <https://classroom.github.com/a/kX_sH-Rv>`_.
 
 Overview
 =====================
@@ -95,7 +73,7 @@ Work *individually* on all of the following:
 Individual exercise, create your country's flag
 =====================
 
-1.Continue to work ``individually``. Sketch out a design for a flag that captures the spirit of the significant words/phrases for your country. Keep in mind that you are creating something for the world to see.
+1. Continue to work ``individually``. Sketch out a design for a flag that captures the spirit of the significant words/phrases for your country. Keep in mind that you are creating something for the world to see.
 
 You may want to review the `StdDraw API <http://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to get a sense of it’s capabilities (and limitations).
 
@@ -113,7 +91,7 @@ Interacting with other groups, Share Feedback!
 
 A crucial component to the design process is getting feedback from others and incorporating that feedback into your work.
 
-1.Find a group next to you and share your group flag with them. Do not tell them the words or principles you based your flag on and see if they can guess. Take note of what their guesses are! Are their guesses close to what you intended or are they way off? What does this say about your design and the way you communicate your ideas?
+1. Find a group next to you and share your group flag with them. Do not tell them the words or principles you based your flag on and see if they can guess. Take note of what their guesses are! Are their guesses close to what you intended or are they way off? What does this say about your design and the way you communicate your ideas?
 
 2. Take note of their guesses and feedback!
 
