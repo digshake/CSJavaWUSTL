@@ -1,5 +1,5 @@
 ===================================================
-Extension 3.5: Data Sorting and Analysis (3 points)
+Extension 3.5: Data Sorting and Analysis (5 points)
 ===================================================
 
 Authors
