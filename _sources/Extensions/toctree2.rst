@@ -1,7 +1,7 @@
 Extension Batch 2
 :::::::::::::::::::::::::::::::::::::::::::
 
-To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/6HyxMpUq>`_
+To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/>`_
 
 .. toctree::
    :caption: Extension Batch 2
