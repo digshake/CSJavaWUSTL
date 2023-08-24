@@ -5,7 +5,7 @@ Assignment 1: Grade Calculator
 Assignment Setup
 ================
 
-To create your repository, `go here <https://classroom.github.com/a/k0RoehD7>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository, `go here <https://classroom.github.com/a/CnAAIndN>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Grade Calculator
 ================
@@ -55,13 +55,9 @@ These are the inputs that you should ask for from the user, plus the names of th
 	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
 	| averageAssignmentGrade | The average grade on all assignments, as a percentage between 0 and 100                                                  |
 	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-	| extensionPoints        | The number of points earned during extension batches 1 and 2 as a value between 0 and 30                                 |
-	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
 	| studiosAttended        | The total number of studio sessions attended, as a value between 0 and 8                                                 |
 	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
 	| averageQuizGrade       | The average grade on all quizzes after the two lowest quiz grades have been dropped, as a percentage between 0 and 100   |
-	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-	| studioPrepsCompleted   | The total number of pre-studio preps completed, as a value between 0 and 10                                              |
 	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
 	| averageExamGrade       | The average grade on all exams, as a percentage between 0 and 100                                                        |
 	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
@@ -70,33 +66,23 @@ This is an example of what your program should output:
 
 ``CSE131 Grade for: Doug Shook``
 
-``Average assignment grade: 85.4%``
+``Average assignment grade: 85.4``
 
-``Weighted assignment grade (out of 30): 25.62%``
-
-``Number of extension points: 27``
-
-``Weighted extension grade (out of 10): 9.0%``
+``Weighted assignment grade (out of 34): 29.03%``
 
 ``Number of studios attended: 7``
 
 ``Weighted studio grade (out of 10): 8.75%``
 
-``Average quiz grade: 97.3%``
+``Average quiz grade: 97.3``
 
 ``Weighted quiz grade (out of 2): 1.95%``
 
-``Studio preps completed: 10``
+``Average exam grade: 93.5``
 
-``Weighted studio prep grade (out of 2): 2.0%``
+``Weighted exam grade (out of 56): 52.36%``
 
-``Average exam grade: 93.5%``
-
-``Weighted exam grade (out of 45): 42.08%``
-	
-``Completed course review: false``
-
-``Total Grade: 89.39%``
+``Total Grade: 92.09%``
 
 How do we write this program? Let's start one step at a time. What's the simplest, easily checkable change you can make?
 
@@ -112,11 +98,9 @@ Here are a few issues we anticipate you will come across. Read the bullet point 
 
 * Making sure users don't put in invalid values: 150% is not a valid average assignment grade. In the future, we'll learn how to force programs to only accept valid inputs. For now, just assume the user will always put in valid inputs.
 
-* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/102124/pages/course-policies>`_ for the weighting on different components of the grade.
+* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/112030/pages/course-policies>`_ for the weighting on different components of the grade.
 
 * Rounding: You must round the weighted grade percentages to two digits after the decimal point so that they get printed with the right number of decimal places. In order to round, you may use the math operations we learned (``+``, ``-``, ``*``, ``/``) and/or ``Math.round()`` and nothing else. Think about what information ``Math.round()`` "loses" and how you would need to change the input so it only loses the information you want to get rid of.
-
-* Course review: The course review should simulate a coin flip. Review how ``Math.random()`` works and assign the value of a variable ``boolean courseReview`` by comparing a random number to ``0.5``. What kind of comparison will simulate a coin flip? You can then print the value of ``courseReview`` directly.
 
 * Total grade: Make sure you keep as much precision as possible in all the components when you're calculating the final grade, and then you can round the final grade. Rounding early will result in an incorrect final grade value.
 
@@ -127,4 +111,4 @@ Submitting your work
 
 Check the rubric (which is at the very bottom of the Canvas page for this assignment).
 
-Get your assignment graded by going to office hours or by going to class on an "Assignment day" (non-studio day) and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
+Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.

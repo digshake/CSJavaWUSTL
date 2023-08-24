@@ -15,7 +15,7 @@ Still a confused about arrays? Watch this bonus demonstration by former 131 TA A
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/SrQaN_VN>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/GEWDXCdb>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Array Puzzles
 =====================

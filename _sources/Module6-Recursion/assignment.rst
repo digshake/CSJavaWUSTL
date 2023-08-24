@@ -5,7 +5,7 @@ Assignment 6: More Recursive Puzzles
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/oPV9mo9p>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/EWWxAljw>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 More Recursive Puzzles
 =====================
