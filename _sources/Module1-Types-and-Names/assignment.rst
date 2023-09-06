@@ -68,7 +68,7 @@ This is an example of what your program should output:
 
 ``Average assignment grade: 85.4``
 
-``Weighted assignment grade (out of 34): 29.03%``
+``Weighted assignment grade (out of 34): 29.04%``
 
 ``Number of studios attended: 7``
 
