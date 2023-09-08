@@ -68,7 +68,7 @@ This is an example of what your program should output:
 
 ``Average assignment grade: 85.4``
 
-``Weighted assignment grade (out of 34): 29.04%``
+``Weighted assignment grade (out of 36): 30.74%``
 
 ``Number of studios attended: 7``
 
@@ -80,9 +80,9 @@ This is an example of what your program should output:
 
 ``Average exam grade: 93.5``
 
-``Weighted exam grade (out of 56): 52.36%``
+``Weighted exam grade (out of 54): 50.49``
 
-``Total Grade: 92.09%``
+``Total Grade: 91.93%``
 
 How do we write this program? Let's start one step at a time. What's the simplest, easily checkable change you can make?
 
