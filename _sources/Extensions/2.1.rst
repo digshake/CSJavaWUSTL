@@ -1,5 +1,5 @@
 ========================================================
-Extension 2.1: Image Processor With Iteration (7 points)
+Extension 2.1: Image Processor With Iteration
 ========================================================
 
 **Authors**
@@ -13,7 +13,7 @@ Extension 2.1: Image Processor With Iteration (7 points)
 Manipulating an Image Raster
 ============================
 
-In the ``imagetransform`` package, modify the provided ``ImageTransforms`` Java program to implement the methods as described below. Your methods will use iteration (either `while` loops or `for` loops) to operate on the pixels of a picture.
+In the ``nonexam.imagetransform`` package, modify the provided ``ImageTransforms`` Java program to implement the methods as described below. Your methods will use iteration (either `while` loops or `for` loops) to operate on the pixels of a picture.
 
 .. youtube:: VJiE78FTohs
     :width: 600
@@ -23,29 +23,20 @@ In the ``imagetransform`` package, modify the provided ``ImageTransforms`` Java 
 Testing
 ============
 
-JUnit tests allow you to automatically check your work. To run the tests for this extension, right-click on ``ImageTransformsTestSuite.java`` > Run As... > JUnit Test. You may also simply open the Test Suite file and click the green Run button.
-
-If your code passes all the tests, you'll see a green bar.
-
-If your code does not pass all the tests, you'll see a red bar. On the bottom-left corner of the screen, you'll see a section titled the "Failure Trace". This section will be extremely useful throughout this class for figuring out how to fix your code!
-
 Some common errors you may see while testing this extension:
 
 * ArrayIndexOutOfBoundsException. This error means you're trying to use an array index that is out of bounds (<0 or >=length). The error will tell you the index you're trying to use and the length of the array, and the second line will tell you which line the error is happening on. (Ex: ImageTransforms.java:70 means the erroneous index is on line 70 of ``ImageTransforms.java``
-* AssertionError. This error means you did not return the correct response (in this case, ``destination`` has at least one incorrect value). If it says "expected[...] but was <null>" that means you didn't fill in all the values of ``destination``.
 * NullPointerException. Generally, this error means something is null (hasn't been initialized) that shouldn't be null. For this assignment, that means at least one of the values in ``destination`` is null, which means you didn't finish filling in the values.
 
 For this extension, we recommend using ``ImageTransformsDebugApp`` for a more visual testing experience.
 
 Quick tip: uncheck "display correct results?" on the top right of the debug app to skip to the cases you need to fix.
 
-`This video <https://www.youtube.com/watch?v=VJiE78FTohs>`_ gives an intro to the extension and shows how to run the test suite.
-
 
 Instructions
 ============
 
-Each of the methods described below is found in the ``Transforms`` class.
+Each of the methods described below is found in the ``ImageTransforms`` class.
 
 Quick tip: You will be using a lot of nested for loops in this extension. Reminder that ``i`` is just a variable name and you can name the loop variable anything, like ``row`` or something else descriptive.
 

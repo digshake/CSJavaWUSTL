@@ -1,12 +1,12 @@
 =====================================
-Extension 3.7: Minesweeper (8 points)
+Extension 3.7: Minesweeper
 =====================================
 
 Authors
 
 * `Ron K. Cytron <http://www.cs.wustl.edu/~cytron/>`_
 
-You should see a ``minesweeper`` package in the ``extensions`` source folder.
+You should see a ``nonexam.minesweeper`` package in the source folder.
 
 * The file you will modify for this assignment is ``MineSweeper.java``.  It is already in the respository.
 
@@ -20,7 +20,7 @@ You **must** use the ``*`` and ``.`` characters as shown.  Otherwise, the visual
 
 Your output **must** include both the left and right parts of each line as described below.
 
-The example given in the book is reproduced below:
+Here's an example of what a game might look like:
 
 ::
 
@@ -41,7 +41,7 @@ You must produce output that matches the form you see above:
 
 	2. The mine field\'s central entry also has no bomb and shows a ``2`` in the right part of the output.   Those two bombs can be found in the upper-left and lower-left cells with respect to that center cell\'s eight neighbors.
 
-* Run ``MineSweeper`` as a Java Application and be sure your results look correct before you demo.
+* Run ``MineSweeper`` as a Java Application and be sure your results look correct..
 
 	Test on very small (say, 3x2) mine fields at first.  Enlarge the fields and test again, making certain the output is correct.
 
