@@ -7,7 +7,7 @@ Studio 4: Flag Day
 Studio Setup and Procedure
 ==========================
 
-You know the drill by now! 2–3 students per group. Here's `the Github link <https://classroom.github.com/a/IjUvOLY->`_.
+You know the drill by now! 2–3 students per group. Here's `the Github link <https://classroom.github.com/a/tTsc2Lha>`_.
 
 Overview
 =====================
