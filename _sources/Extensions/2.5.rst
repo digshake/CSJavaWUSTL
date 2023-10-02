@@ -1,5 +1,5 @@
 =========================
-Extension 2.5: Mario (5 points)
+Extension 2.5: Mario
 =========================
 
 Authors:
@@ -12,9 +12,7 @@ Authors:
 
 .. image:: Super-Mario-Bros.-3.jpg
 
-The code for this assignment will be unit-tested, which means that we have an automatic way to determine if your code is producing the correct output. For the unit testing to work, you must follow the instructions below carefully.
-
-* Find and open the Java class Mario in the mario package of your extensions folder.
+* Find and open the Java class Mario in the ``nonexam.mario`` package.
 * Your program must first prompt the user for two integer inputs using ``Scanner``. These must be requested in the following order:
 
 	``size``: What is the size of the mountain? In the picture above, the mountain has size 5 because there are 5 levels of squares, and the widest part of the mountain, at its bottom, is also 5 squares. A mountain will always be a square structure containing size×size elements, some of which are hashtags (#) and some of which are blanks.
@@ -68,11 +66,10 @@ The code for this assignment will be unit-tested, which means that we have an au
 
 Try running your Mario class and test yourself using various sizes (say, 1 to 10) and patterns (always an integer from 1 to 4).
 
-Run the unit test by right (control) clicking on ``MarioTest`` and running it as you would any other program.  Note that the unit test are very sensitive to `whitespace <https://en.wikipedia.org/wiki/Whitespace_character>`_ which are the characters like tab, space, and newlines that don't show anything in the foreground color.  On a white background whitespace characters don't have a visible impact, but they do move the cursor to a new location. In particular:
+Note that this problem requires careful use of `whitespace <https://en.wikipedia.org/wiki/Whitespace_character>`_ which are the characters like tab, space, and newlines that don't show anything in the foreground color.  On a white background whitespace characters don't have a visible impact, but they do move the cursor to a new location. In particular:
 
 * Avoid extra spaces at the beginning of lines
 
 * Avoid using more ``ln`` s than needed.  For example, if the size is 5 there should be exactly 5 things that move to a new line (5 ``println`` s or 5 ``\n`` s or a mix of the two.)
 
-If you see a green bar, then the test ran correctly. If it's red, you have a problem with your solution. The output shown in the console window should help you determine what is wrong.
 

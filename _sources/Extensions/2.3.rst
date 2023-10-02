@@ -1,5 +1,5 @@
 =================
-Extension 2.3: Rock-Paper-Scissors (5 points)
+Extension 2.3: Rock-Paper-Scissors
 =================
 
 **Authors**
@@ -8,7 +8,7 @@ Extension 2.3: Rock-Paper-Scissors (5 points)
 
 The game of `Rock-Paper-Scissors <https://en.wikipedia.org/wiki/Rock-paper-scissors>`_ (hereafter, RPS) is a two-player game that can be used to avoid boredom and to settle disputes.
 
-In this lab you will simulate two players: one plays randomly while
+In this extension you will simulate two players: one plays randomly while
 the other rotates faithfully from rock to paper to scissors. Your task is
 to simulate this game and to report the fraction of games won by
 each of the two players.
@@ -16,8 +16,7 @@ each of the two players.
 Procedure
 ==================
 
-Find the ``RockPaperScissors`` package in the labs source folder.
-Create a new class ``RPS`` there, and you are ready to begin your development.
+Find the ``nonexam.rockpaperscissors`` package in the source folder.
 
 It is suggested that you develop code in small steps, so that you can proceed from confidence to confidence, and not have a big pile of untested code to debug at the end.
 
