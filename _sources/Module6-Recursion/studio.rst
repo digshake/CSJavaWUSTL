@@ -70,6 +70,7 @@ In preparation for the exercises open the following files, found in the **studio
 
 Run ``MethodsTestSuite`` as a JUnit Test to ensuring it passes the ``IterativeTestSuite`` portion. If it fails any of the tests within ``IterativeTestSuite`` then there is an unintended error and you should check with your TA on how to fix it.
 
+**Important!** You are only writing new code in ``RecursiveMethods.java`` - ``IterativeMethods.java`` provides the iterative solution to each of the problems.
 
 
 Investigate IterativeMethods.geometricSum(n)
@@ -109,47 +110,6 @@ After thinking about these questions, see if you can code up a recursive method 
 
 Be prepared to discuss the base case and recursive substructure with the instructor or TA when demoing this studio.
 
-Investigate IterativeMethods.gcd(p, q)
-=====================
-
-Discuss with your group what the provided iterative solution is doing.
-
-Implement RecursiveMethods.gcd(p, q)
-=====================
-
-Recursion and iteration (loops) share some similarities. In fact, a solution that uses iteration can be rewritten using recursion. For this part, you are tasked with writing a method that computes the greatest common divisor in two different ways: iteratively and recursively.
-
-The greatest common divisor of two integers is the largest integer that evenly divides both integers. So, for example the greatest common divisor of 27 and 36 is 9. The greatest common divisor of 48 and 14 is 2.
-
-The computation of greatest common divisor can take many forms, but one of the most common ways that it is computed is by applying the following rule:
-
-
-The greatest common divisor of two numbers, ``p`` and ``q`` is equal to ``q`` if ``p % q`` is equal to zero. Otherwise it is equal to the greatest common divisor of ``q`` and ``p % q``.
-
-Using the above definition, your task is now to implement the recursive version of computing the greatest common divisor. Test your work by running ``MethodsTestSuite`` and ensuring it passes the ``RecursiveGCDTestSuite`` portion. Continue to update your code until it passes these tests and your group is happy with its clarity.
-
-Take a look at your two implementations: do you see similarities between them? Can you match up pieces from the iterative and recursive solutions to see how they are essentially computing the result in the same way just with a different structure?
-
-Walk through the recursive execution of ``gcdRecursive(48, 14)``. How many recursive calls does it take to get to the answer? Use the debugger to work through this particular problem and verify your answer and be prepared to discuss this when you demo the studio.
-
-Investigate IterativeMethods.reverse(array)
-=====================
-
-Discuss with your group what the provided iterative solution is doing.
-
-Implement RecursiveMethods.(array)
-=====================
-
-In the previous section we saw how recursion and iteration share some similarities. An important similarity is that recursive methods will repeat, just like iterations through a loop. This repetition is useful, but like iteration there may be things that we don’t want to repeat. With iteration we would put this non-repetitive code outside of the loop, but where can it go with recursion?
-
-
-The solution to this problem is to use something called a helper method. The idea here is that instead of putting all of our repetitive and non-repetitive code into one method, we can move the recursive part of our method to a helper method. This keeps the recursive, repetitive part of our code in the helper method and the non-repetitive, non-recursive part of our code in a separate method. This separate method will typically be the method that is called first and after performing any tasks that it needs to perform it will call the recursive helper method.
-
-Another nice advantage of this approach is that because the helper method is a “bonus” method, we can construct this method however we want. We might decide that this method should have some additional input parameters to make the recursive work a bit easier to manage.
-
-Your next task is to develop a recursive solution to reversing the contents of an array. You should complete ``reverse(int[] array)``, which will return an array with the same elements as the original but in reverse order. In order to do this you will need a helper method. Your helper method will need additional parameters to assist with the recursion (hint: how can we keep track of where we are currently at in the array?). The non-helper method can then simply call the helper method and return the result. The non-helper method can also handle special cases (what if the length of the array is zero or one?) that don’t require any repetition. Note that for this problem you are not allowed to use loops. You should only need to create a single copy of the array in the reverse(array) method to be passed to your helper method which should update its contents. Beyond that you need not create any additional arrays.
-
-Test your work by running ``MethodsTestSuite`` and ensuring it passes the ``RecursiveToReversedTestSuite`` portion. Continue to update your code until it passes these tests and your group is happy with its clarity.
 
 Recursive Drawing, Circles Upon Circles
 =====================
@@ -263,6 +223,50 @@ And so on…
   :width: 350
   :height: 350
   :align: center
+
+
+Investigate IterativeMethods.reverse(array)
+=====================
+
+Discuss with your group what the provided iterative solution is doing.
+
+Implement RecursiveMethods.reverse(array)
+=====================
+
+In the previous section we saw how recursion and iteration share some similarities. An important similarity is that recursive methods will repeat, just like iterations through a loop. This repetition is useful, but like iteration there may be things that we don’t want to repeat. With iteration we would put this non-repetitive code outside of the loop, but where can it go with recursion?
+
+
+The solution to this problem is to use something called a helper method. The idea here is that instead of putting all of our repetitive and non-repetitive code into one method, we can move the recursive part of our method to a helper method. This keeps the recursive, repetitive part of our code in the helper method and the non-repetitive, non-recursive part of our code in a separate method. This separate method will typically be the method that is called first and after performing any tasks that it needs to perform it will call the recursive helper method.
+
+Another nice advantage of this approach is that because the helper method is a “bonus” method, we can construct this method however we want. We might decide that this method should have some additional input parameters to make the recursive work a bit easier to manage.
+
+Your next task is to develop a recursive solution to reversing the contents of an array. You should complete ``reverse(int[] array)``, which will return an array with the same elements as the original but in reverse order. In order to do this you will need a helper method. Your helper method will need additional parameters to assist with the recursion (hint: how can we keep track of where we are currently at in the array?). The non-helper method can then simply call the helper method and return the result. The non-helper method can also handle special cases (what if the length of the array is zero or one?) that don’t require any repetition. Note that for this problem you are not allowed to use loops. You should only need to create a single copy of the array in the reverse(array) method to be passed to your helper method which should update its contents. Beyond that you need not create any additional arrays.
+
+Test your work by running ``MethodsTestSuite`` and ensuring it passes the ``RecursiveToReversedTestSuite`` portion. Continue to update your code until it passes these tests and your group is happy with its clarity.
+
+
+Investigate IterativeMethods.gcd(p, q)
+=====================
+
+Discuss with your group what the provided iterative solution is doing.
+
+Implement RecursiveMethods.gcd(p, q)
+=====================
+
+Recursion and iteration (loops) share some similarities. In fact, a solution that uses iteration can be rewritten using recursion. For this part, you are tasked with writing a method that computes the greatest common divisor in two different ways: iteratively and recursively.
+
+The greatest common divisor of two integers is the largest integer that evenly divides both integers. So, for example the greatest common divisor of 27 and 36 is 9. The greatest common divisor of 48 and 14 is 2.
+
+The computation of greatest common divisor can take many forms, but one of the most common ways that it is computed is by applying the following rule:
+
+
+The greatest common divisor of two numbers, ``p`` and ``q`` is equal to ``q`` if ``p % q`` is equal to zero. Otherwise it is equal to the greatest common divisor of ``q`` and ``p % q``.
+
+Using the above definition, your task is now to implement the recursive version of computing the greatest common divisor. Test your work by running ``MethodsTestSuite`` and ensuring it passes the ``RecursiveGCDTestSuite`` portion. Continue to update your code until it passes these tests and your group is happy with its clarity.
+
+Take a look at your two implementations: do you see similarities between them? Can you match up pieces from the iterative and recursive solutions to see how they are essentially computing the result in the same way just with a different structure?
+
+Walk through the recursive execution of ``gcdRecursive(48, 14)``. How many recursive calls does it take to get to the answer? Use the debugger to work through this particular problem and verify your answer and be prepared to discuss this when you demo the studio.
 
 
 Demo
