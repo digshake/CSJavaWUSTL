@@ -1,5 +1,5 @@
   
-Module 8: Abstract Data Types
+Module 9: Abstract Data Types
 :::::::::::::::
 
  In this unit, you will be introduced to three new ADTs: Lists, Sets, and Maps. 
@@ -11,5 +11,3 @@ Module 8: Abstract Data Types
    02-Sets.rst
    03-Maps.rst
    04-Equality.rst
-   studio.rst
-   assignment.rst
