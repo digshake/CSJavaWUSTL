@@ -1,5 +1,5 @@
     
-Module 9: Inheritance
+Module 8: Inheritance
 ::::::::::::
 
 .. toctree::
