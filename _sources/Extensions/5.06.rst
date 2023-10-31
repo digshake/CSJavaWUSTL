@@ -1,5 +1,5 @@
 ============
-Extension 5.6: Star Sines (5 points)
+Extension 5.6: Star Sines
 ============
 
 Authors

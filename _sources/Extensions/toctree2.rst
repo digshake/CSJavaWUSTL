@@ -1,24 +1,22 @@
-Extension Batch 2
+Exam 2 Prep
 :::::::::::::::::::::::::::::::::::::::::::
 
-To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/>`_
+To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/M4E5Cf73>`_
 
 .. toctree::
-   :caption: Extension Batch 2
+   :caption: Exam 2 Prep
    :maxdepth: 2
 
-   4.02.rst
-   5.01.rst
-   5.02.rst
    5.03.rst
    5.04.rst
-   5.05.rst
    5.06.rst
+   5.08.rst
    6.01.rst
    6.02.rst
    6.03.rst
    6.04.rst
    6.05.rst
+   6.06.rst
 
 .. raw:: html
     

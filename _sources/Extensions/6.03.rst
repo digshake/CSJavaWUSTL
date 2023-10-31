@@ -1,5 +1,5 @@
 ============
-Extension 6.3: Flower Power (4 points)
+Extension 6.3: Flower Power
 ============
 
 Authors
@@ -10,7 +10,7 @@ Authors
 
 A video demonstrating my solution can be found `here <https://classes.engineering.wustl.edu/2021/fall/cse131//resources/extensions/6.03/flower.mp4>`_.
 
-In the ``extensions`` folder open the ``recursivepatterns`` package.  The following classes found there, and described in greater detail below, must be completed for this extension:
+In the ``nonexam`` folder open the ``recursivepatterns`` package.  The following classes found there, and described in greater detail below, must be completed for this extension:
 
 * ``TransparentColor`` 
 

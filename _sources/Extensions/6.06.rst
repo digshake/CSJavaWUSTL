@@ -1,0 +1,49 @@
+================
+Flood Fill
+================
+
+Overview
+========
+The tool flood fill (aka bucket fill) `demonstrated here <https://www.youtube.com/watch?v=hoVbNF8CpBk>`_, is a tool in many paint applications that fills an enclosed space with a certain color.
+This extension will target practicing **methods (module 5)** and **recursion (module 6)**.
+
+Provided Variables
+-------------------
+``Color[][] screen``: A 2D array of Color objects, each (row, column) index will lead to the Color that should be drawn at those coordinates
+
+``double halfPixelWidth``: the half-width of a single pixel
+
+``double halfPixelHeight``: the half-height of a single pixel
+
+``double SCREEN_WIDTH = 1.0``: A constant for the width of the screen
+
+``double SCREEN_HEIGHT = 1.0``: A constant for the height of the screen
+
+Methods
+-------------------
+These are the provided and suggested methods for completing this problem - if you want to approach it differently, go ahead!
+
+``public void drawPixel(int r, int c) ``
+
+Draw a single pixel at indices r, c (row, column), using the provided information. 
+- Note that r, c cannot be used as the coordinates to draw a pixel at - they are the indices for the Color 2D array ``screen``. But, ``screen`` should cover the entire screen - how can we convert an index to a coordinate using that information?
+    - Hint: We have ``screen.length`` amount of rows. If our screen width and height are 1, how can the index of the screen array translate to a coordinate?
+
+``public void drawScreen()``
+
+Draw the entire screen by drawing each pixel in the Color array.
+
+``public int getXIndex(double x)``
+
+Take the x coordinate and return the corresponding index for the ``screen`` array.
+
+``public int getYIndex(double y)``
+
+Take the x coordinate and return the corresponding index for the ``screen`` array.
+
+``public void fill(Color currentColor, Color fillColor, int row, int col)``
+
+**Recursively** fill the screen until
+- row or col is out of bounds of ``screen``
+- We have already filled the pixel, or if the pixel was already the intended ``fillColor``
+- The color at the current pixel is not the ``currentColor``

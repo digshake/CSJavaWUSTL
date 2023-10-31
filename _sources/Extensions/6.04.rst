@@ -1,5 +1,5 @@
 ============
-Extension 6.4: Fibonacci Recursively and Iteratively (3 points)
+Extension 6.4: Fibonacci Recursively and Iteratively
 ============
 
 Authors
@@ -35,7 +35,7 @@ Why Fibonacci?
 Procedure
 ============
 
-You should see a ``fibonacci`` package in the ``src`` folder.  You will modify ``Graph.java`` and ``Fibonacci.java``.  They are both already in the respository.
+You should see a ``fibonacci`` package in the ``nonexam`` folder.  You will modify ``Graph.java`` and ``Fibonacci.java``.  They are both already in the respository.
 
 Graph
 ------------------

@@ -1,5 +1,5 @@
 ============
-Extension 6.1: Divine Lines (4 points)
+Extension 6.1: Divine Lines
 ============
 
 
@@ -10,7 +10,7 @@ Authors
 * Ken Goldman
 
 
-In the ``src`` folder, find and open the ``divinelines`` package and the ``Lines`` class contained therein.    The ``main`` method is provided, and it calls the method ``drawLine``, which you must complete.
+In the ``nonexam`` folder, find and open the ``divinelines`` package and the ``Lines`` class contained therein.    The ``main`` method is provided, and it calls the method ``drawLine``, which you must complete.
 
 Do not change the parameters or return type of the ``drawLine`` method!  You are welcome to define *other* methods in the ``Lines`` class if you wish, but the ``drawLine`` method's signature (the number and types of its parameters and its return type) must be preserved as you do your work.
 

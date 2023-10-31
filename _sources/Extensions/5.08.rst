@@ -1,0 +1,69 @@
+================
+Wordle Clone
+================
+
+Overview
+========
+A playable version of hit online game `Wordle <https://www.nytimes.com/games/wordle/index.html>`_!
+This extension will target practicing **methods (module 5)** and **input and output (module 4)**. It will take quite some time, but it is great practice!
+
+Methods (Suggested)
+-------------------
+These are the provided and suggested methods for completing this problem - if you want to approach it differently, go ahead!
+
+``public static void drawRow(int row)``
+
+Draw a single row on the Wordle board. A row should have 5 squares, one for each letter. The variables ``SIDE_BUFFER``, ``TOP_BUFFER``, and ``CELL_SIZE`` are useful values here - the first two can be used as spacers to avoid drawing outside of the screen. ``CELL_SIZE`` is a convienient half-width to use for the cells.
+
+``public static void drawBoard()``
+
+Draw the entire board, made up of 6 rows. Again, the ``TOP_BUFFER`` should come in handy here.
+
+``public static char getKeyPress()``
+
+- First, wait until a key is pressed by the user. 
+    - Helpful method:
+        - StdDraw.hasNextKeyTyped() - returns true if key has been pressed, false otherwise
+    - Do nothing until a key is pressed
+- Once a key is pressed, get it and return the value.
+    - Helpful method:
+        - StdDraw.nextKeyTyped() - returns the character that the user pressed
+
+``public static String getGuess(int guessNumber)``
+
+- Get each character typed by the user until the guess is appropriate length and the user hits the enter key
+- Draw the guess after each new letter typed
+
+*Recommended: add backspace functionality after everything else works, it's quite tough.*
+
+``public static void drawWord(int guess, String word)``
+
+Draw the String ``word`` on the row corresponding to ``guess``. 
+
+``public static String getRandomWord()``
+
+The String[] array ``WORDS`` is provided. This method will return a random word from that array.
+
+``public static String[] checkGuess(String guess, String answer)``
+
+Given the player's guess (``guess``) and the correct solution (``answer``), return a String array containing:
+
+- "Correct" if the letter at that index is at the same position in the answer
+- "Wrong Place" if the letter appears in the word, but not at the index it appears in ``guess``
+- "Incorrect" if the letter is not in the correct solution
+
+``public static void drawColors(String guess, String[] feedback, int guessNumber)``
+
+Given the String[] array ``feedback``, the user's guess (``guess``), and the current guess number, fill in the colors on the board. 
+
+- For "Correct", the cell should be colored green
+- For "Wrong Place", the cell should be colored yellow
+- For "Incorrect", the cell should be colored gray
+
+``public static boolean correctAnswer(String[] feedback)``
+
+Given the String[] array ``feedback``, return true if the guess is entirely correct (that is, that every String in the array is "Correct"), false otherwise.
+
+``public static void showMessage(String message)``
+
+Display a message ``message`` over the board to the user - used if they win or lose.

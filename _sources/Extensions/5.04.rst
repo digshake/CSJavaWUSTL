@@ -1,5 +1,5 @@
 ============
-Extension 5.4: Memory Matching (8 points)
+Extension 5.4: Memory Matching
 ============
 
 Authors

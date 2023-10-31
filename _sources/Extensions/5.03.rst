@@ -1,5 +1,5 @@
 ============
-Extension 5.3: Tic-Tac-Toe (5 points)
+Extension 5.3: Tic-Tac-Toe
 ============
 
 Authors
@@ -36,7 +36,7 @@ the *design* document for implementing the software.
 Procedure
 ============
 
-* Find the assignment's code in the ``tictactoe`` package of the ``src`` folder.  
+* Find the assignment's code in the ``tictactoe`` package of the ``nonexam`` folder.  
 
 * Watch `the documentation video <https://classes.engineering.wustl.edu/2021/fall/cse131//resources/extensions/5.03/tictactoe.mp4>`_.
   

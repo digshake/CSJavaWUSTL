@@ -1,5 +1,5 @@
 ============
-Extension 6.5: L-Systems (6 points)
+Extension 6.5: L-Systems
 ============
 
 

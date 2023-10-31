@@ -1,5 +1,5 @@
 ============
-Extension 6.2: Persian Recursian (5 points)
+Extension 6.2: Persian Recursian
 ============
 
 
@@ -15,7 +15,7 @@ Authors
 * That video instructs you how to speed up the drawing substantially.
 * Don't speed things up until you see the rug is drawing properly.
 
-In the ``extensions`` folder open the ``recursivepatterns`` package and the ``PersianRug`` class. Your task is to complete the method ``persianRug`` so that it draws a rug similar to the one shown below:
+In the ``nonexam`` folder open the ``recursivepatterns`` package and the ``PersianRug`` class. Your task is to complete the method ``persianRug`` so that it draws a rug similar to the one shown below:
 
 .. image:: 6.02/rug.png
 
