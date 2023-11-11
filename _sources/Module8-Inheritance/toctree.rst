@@ -14,6 +14,8 @@ Module 8: Inheritance
    ooSummary.rst
    ooParsonsPractice.rst
    ooCodePractice.rst
+   studio.rst
+   assignment.rst
 
    
 
