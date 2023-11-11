@@ -65,7 +65,7 @@ Once you have finished, examine and run the provided main method in the ``Multip
 Select All Questions
 ====================
 
-Another type of question we would like to include presents multiple choices but then asks the user to select all of the correct answers. For this question type, it is possible for more than one of the choices to be correct. Notice again that there is some overlap between what a ``SelectAllQuestion`` and ``MultipleChoiceQuestion`` can do. We would say that a ``SelectAllQuestion`` **is a** ``MultipleChoiceQuestion`` (and also a **is a** ``Question``).
+Another type of question we would like to include presents multiple choices but then asks the user to select all of the correct answers. For this question type, it is possible for more than one of the choices to be correct. Notice again that there is some overlap between what a ``SelectAllQuestion`` and ``MultipleChoiceQuestion`` can do. We would say that a ``SelectAllQuestion`` **is a** ``MultipleChoiceQuestion`` (and also **is a** ``Question``).
 
 First complete the constructor, making sure to call ``super()``.
 
@@ -82,7 +82,7 @@ Be sure to test your code using the provided main method to make sure it works b
 Quiz
 ====
 
-It is now time to put it all together. Examine the code that has been provided to you in the ``Quiz`` class. There is only one field, an array of ``Question`` objects. Because ``MultipleChoiceQuestion`` and ``SelectAllQuestion`` **are** ``Question``s, they can be used anywhere that a ``Question`` is specified as the type. This is the concept known as **polymorphism**.
+It is now time to put it all together. Examine the code that has been provided to you in the ``Quiz`` class. There is only one field, an array of ``Question`` objects. Because ``MultipleChoiceQuestion`` and ``SelectAllQuestion`` **are** ``Question`` s, they can be used anywhere that a ``Question`` is specified as the type. This is the concept known as **polymorphism**.
 
 Two methods have been completed for you already: ``getTotalPoints()`` and ``getUserAnswer()``. You will need both of these methods in a moment, so familiarize yourself with them now.
 
