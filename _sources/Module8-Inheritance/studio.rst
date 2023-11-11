@@ -1,11 +1,16 @@
 =====================
-Studio 9: Map Practice
+Module 8 Studio
 =====================
 
-**Studio activities should not be started before class! Come to the session and work on the activity with other students!**
+Studio 8: Making a Quiz
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Studio activities should not be started before class! Come to the session and work on the activity with other students!
+
+
 
 Studio Setup and Procedure
-=====================
+============================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -19,7 +24,7 @@ Studio Setup and Procedure
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/KgZFGdbk>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/Pl4vBTun>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -27,107 +32,78 @@ Studio Setup and Procedure
 
    2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
 
-3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
+3. Finally, one person should import the studio repository into Eclipse, as described in Assignment 0’s Add the assignment to Eclipse.
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-Code To Use
-=====================
 
-* interface `Map<K,V> <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html>`__
 
-  * `put(key, value) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#put(K,V)>`_
+A Question Class
+============================
 
-  * `get(key) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#get(java.lang.Object)>`_
+Before we can construct a Quiz, we'll start by creating a few different types of questions. The first type of question will be similar to a fill in the blank style question, where a prompt is given and the user has to supply the correct answer.
 
-  * `getOrDefault(key, defaultValue) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,V)>`_
+Examine the ``Question`` class. This will be our **base class** so no inheritance will be used here, but these methods will be inherited and used by the **subclasses** later on in the studio.
 
-  * `size() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#size()>`_
+Take some time to familiarize yourself with this class. Make sure you understand what the fields are and how the constructor works. Make sure you understand what the ``displayPrompt()`` and ``checkAnswer()`` methods are doing.
 
-  * `keySet() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#keySet()>`_
+Finally, examine and run the main method that is provided in the ``Question`` class. Feel free to come up with your own questions and test the provided methods to make sure you understand this base class before proceeding.
 
-  * `entrySet() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#entrySet()>`_
+Multiple Choice Questions
+=========================
 
-* class `HashMap<K, V> <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html>`_
+We now wish to construct a class for multiple choice questions. Notice that some of the fields and behaviors for a multiple choice question will be the same as our ``Question`` class. We would say that a ``MultipleChoiceQuestion`` **is a** ``Question``. This makes it a great candidate for inheritance.
 
-  * `new HashMap() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E()>`_
+By extending the ``Question`` class, our ``MultipleChoiceQuestion`` class gains access to the fields and methods from ``Question``. The biggest difference is a list of choices, which must be stored in a field and also displayed along with the question prompt.
 
-Map Name to Height Warmup
-=====================
+Start by examining the ``MultipleChoiceQuestion`` constructor. Use the constructor from the base class to take care of the fields that the two classes have in common by calling ``super()``. Then, deal with any additional fields, creating them if necessary.
 
-1. Open the Java file NameToHeight in the studio9 package and edit the main method.
+Next, you should **override** the ``displayPrompt()`` method, which has been started for you. You can use the ``displayPrompt()`` method from the base class to display the question prompt, then finish the method by displaying the choices in order. Your first choice should be labelled "1", second choice "2", etc.
 
-2. Create a new instance of a Map from key type String to value type Integer.
-Note: `Map<K,V> <https://docs.oracle.com/javase/8/docs/api/java/util/Map.html>`__ is an interface so you will need to create an instance of a `class which implements it <https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html>`_.
+Once you have finished, examine and run the provided main method in the ``MultipleChoiceQuestion`` class. Make some more questions and test your code to make sure it behaves in the way you expect.
 
-3. Associate each member of your team’s name with their height (use inches or centimeters at your preference).
+Select All Questions
+====================
 
-4. Repeatedly prompt the user (via Scanner) for a name. If the user cancels by typing "quit" then stop prompting for more names. Otherwise, look up the name in the map for the associated height. Print out both the name and the height.
-Be sure to handle the ``null`` case for names that are not in the map and print an appropriate message.
+Another type of question we would like to include present multiple choices but then asks the user to select all of the correct answers. For these question types, it is possible for more than one of the choices to be correct. Notice again that there is some overlap between what ``SelectAllQuestion`` and ``MultipleChoiceQuestion`` can do. We would say that a ``SelectAllQuestion`` **is a** ``MultipleChoiceQuestion`` (and also a ``Question``).
 
-Explain your solution to your TA before moving on.
+First complete the constructor, making sure to call ``super()``.
 
-Word Count
-=====================
+Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Examine the provided examples in the main method and make sure you understand how these questions are scored, then come up with a way to complete the method.
 
-This section of the studio can be tested with ``WordCountTestSuite`` in the ``studio9`` package.
+These methods from the ``String`` `API<https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>`_ will likely be useful:
 
-1. Open the Java file ``WordCount`` in the ``studio9`` package.
+* `charAt<https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#charAt-int->`_
 
-2. Implement the ``countWords(words)`` method to meet this specification:
+* `contains<https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#contains-java.lang.CharSequence->`_
 
-::
+Be sure to test your code using the provided main method to make sure it works before proceeding.
 
-   /**
-   * Constructs and returns a map of the distinct words in the specified list with
-   * each word associated with its accumulated count (that is: the number of
-   * occurrences of the word in the list).
-   *
-   * For example, if passed a List<String> containing:
-   *
-   * [to, be, or, not, to, be]
-   *
-   * the resulting Map<String,Integer> would contain
-   *
-   * key="to", value=2;
-   * key="be", value=2;
-   * key="or", value=1;
-   * key="not", value=1;
-   *
-   * @param words
-   * @return a map which contains all of the distinct words as keys, each
-   *         associated with the number of occurrences of the word
-   */
+Quiz
+====
 
-Ensure that ``WordCountTest`` is working and you have explained your solution to your TA before moving on.
+It is now time to put it all together. Examine the code that has been provided to you in the ``Quiz`` class. There is only one field, an array of ``Question`` objects. Because ``MultipleChoiceQuestion`` and ``SelectAllQuestion`` **are** ``Question``s, they can be used anywhere that a ``Question`` is specified as the type. This is the concept known as **polymorphism**.
 
-University Database
-=====================
+Two methods have been completed for you already: ``getTotalPoints()`` and ``getUserAnswer()``. You will need both of these methods in a moment, so familiarize yourself with them now.
 
-This section of the studio can be tested with ``UniversityDatabaseTestSuite`` in the ``studio9`` package.
+Your task is to complete ``takeQuiz()``. This method should:
 
-1. ``UniversityDatabase`` will rely on a working implementation of the ``Student`` class from Assignment 7. Copy the code from your Student class into the ``Student.java`` file in the ``studio9`` package and make sure any errors are resolved before proceeding. You may use which ever implementation you feel is best.
+* Iterate through all of the questions:
 
-2. Open ``UniversityDatabase`` in the ``studio9`` package.
+  * Display the prompt for each question
+  
+  * Request a user answer for each question (using ``getUserAnswer()``)
+  
+  * Check the answer that the user gave
+  
+  * Display the points earned for each question
+  
+* Once all questions have been answered, it should display the points earned as well as the total number of points available (from ``getTotalPoints()``)
 
-3. Declare a single ``private final`` instance variable of type ``Map<String, Student>``.
+A main method has been provided to you that shows each question type working with the quiz. Create and expand the quiz with questions of your own!
 
-   * You’ll need to import that ``Map`` interface (``java.util.Map``).
-
-4. Implement the default constructor (``UniversityDatabase()``) to initialize the map instance variable.
-
-5. Implement ``public void addStudent(String accountName, Student student)`` which associates with the key ``accountName`` the value ``student`` in the map.
-
-6. Implement public int ``getStudentCount()``
-
-7. Implement ``public String lookupFullName(String accountName)`` by looking up the student and then using the ``getFullName()`` method on ``Student``. If the student is ``null``, you should return ``null`` as the full name.
-
-8. Implement ``public double getTotalBearBucks()`` via iterating over the map.
-
-Ensure that ``UniversityDatabaseTestSuite`` is working and you have explained your solution to your TA before moving on.
-
-Demo
-=====================
+Submitting
+==========
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 

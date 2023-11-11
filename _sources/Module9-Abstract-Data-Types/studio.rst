@@ -1,16 +1,11 @@
 =====================
-Module 8 Studio
+Studio 9: Map Practice
 =====================
 
-Studio 8: Objects, Equality, ADTs, and Collections
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-Studio activities should not be started before class! Come to the session and work on the activity with other students!
-
-
+**Studio activities should not be started before class! Come to the session and work on the activity with other students!**
 
 Studio Setup and Procedure
-============================
+=====================
 
 * Form a group of 2-3 students and find a TA or instructor to work with.
 
@@ -24,7 +19,7 @@ Studio Setup and Procedure
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/Pl4vBTun>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/KgZFGdbk>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -32,167 +27,107 @@ Studio Setup and Procedure
 
    2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
 
-3. Finally, one person should import the studio repository into Eclipse, as described in `Assignment 0’s Add the assignment to Eclipse <https://classes.engineering.wustl.edu/2021/fall/cse131//modules/0/assignment#4-add-the-assignment-to-eclipse>`_
+3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
+Code To Use
+=====================
 
+* interface `Map<K,V> <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html>`__
 
-Objects, Equality, and Composition
-============================
+  * `put(key, value) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#put(K,V)>`_
 
-Design and implement the classes described based on the story given. Follow the instructions carefully. Don’t rush ahead until you have successfully completed the specified work.
+  * `get(key) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#get(java.lang.Object)>`_
 
-1. Read the following:
+  * `getOrDefault(key, defaultValue) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,V)>`_
 
-   * A ``Date`` has-a month, day, and year. It also has-a field that indicates whether the date is a holiday or not. (To simplify your work you may assume that all months have 31 days)
+  * `size() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#size()>`_
 
-   * A ``Time`` has-an hour (0 to 23) and a minute (0 to 59). It also has-a field that indicates whether the time should be shown in 12- or 24-hour format (this dictates how ``toString()`` behaves) .
+  * `keySet() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#keySet()>`_
 
-   * You can assume that only legitimate input values are specified for anything your constructor requires.
+  * `entrySet() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#entrySet()>`_
 
-   * Think carefully about what your constructor for ``Time`` should retain. Assume all times are in 24-hour format.
+* class `HashMap<K, V> <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html>`_
 
-     * What is the essence of such a Time object?
+  * `new HashMap() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E()>`_
 
-     * What instance variables are required to capture its essence?
+Map Name to Height Warmup
+=====================
 
-2. Create JavaDoc comments for your constructors that explain the expected parameter values.
+1. Open the Java file NameToHeight in the studio9 package and edit the main method.
 
-3. Now implement ``toString()`` for each of these classes, returning a ``String`` that is appropriately descriptive.
+2. Create a new instance of a Map from key type String to value type Integer.
+Note: `Map<K,V> <https://docs.oracle.com/javase/8/docs/api/java/util/Map.html>`__ is an interface so you will need to create an instance of a `class which implements it <https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html>`_.
 
-4. Create a few instances and print them out in the ``main()`` method of the each class.
+3. Associate each member of your team’s name with their height (use inches or centimeters at your preference).
 
-5. We next equip our two classes with the ability to tell whether they do or do not *equal* a given ``Object``.
+4. Repeatedly prompt the user (via Scanner) for a name. If the user cancels by typing "quit" then stop prompting for more names. Otherwise, look up the name in the map for the associated height. Print out both the name and the height.
+Be sure to handle the ``null`` case for names that are not in the map and print an appropriate message.
 
-For each of the two classes, let’s make Eclipse generate the ``equals()`` and ``hashCode()`` methods.
+Explain your solution to your TA before moving on.
 
-1. While editing each class, go to the ``Source`` menu and select ``Generate hashCode() and equals()...``
+Word Count
+=====================
 
-2. You are presented with a menu of instance variables to use for ``equals()`` and ``hashCode()``.
+This section of the studio can be tested with ``WordCountTestSuite`` in the ``studio9`` package.
 
-This is an important step. Decide *which* of the instance variables (fields) should be used to compare two objects of this kind.
+1. Open the Java file ``WordCount`` in the ``studio9`` package.
 
-These classes were specified such that **not all** of the fields are relevant for this comparison. Talk this over, make your choices, and then….
-
-1. Click ``Generate``
-
-2. Take a look at the code that is generated. Parts of it may not make sense, but there should be some familiar parts too.
-
-* ``hashCode()`` is a way to assign an integer to a complex object. Hash Codes are used for a variety of important things. One of the requirements for them to work is that any items that are considered equal (via ``equals()``) have the same ``hashCode()`` value. This requirement only goes in the direction stated, so one possible legal implementation is simply:
-
-::
-
-   public int hashCode() {
-      return 0;
-   }
-
-However, you can see that the code Eclipse generated is much more complicated than that.
-
-For now, imagine that you have before you lots of lockers, each labeled with an integer. Think of ``hashCode()`` as returning an integer that represents the only locker in which this object could be found. Thus, if you want to see if the object exists in all of the lockers, you really need only check one locker.
-
-Convince yourself that if two objects of the same type (for example, ``Date``) equal each other, then their ``hashCode()`` values are the same as computed by the Eclipse-generated code.
-
-* ``equals(Object obj)``: With regard to the code automatically generated for ``equals(Object obj)``, the `contract in Java for equals <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)>`_ includes the following; read over the code and convince yourselves that the code enacts the proper contract:
-
-  * If ``this`` and ``obj`` are physically the same object, then the result should be ``true``.
-
-  * No instantiated object equals the ``null`` reference. The ``this`` reference is always to an actually instantiated object.
-
-  * If ``this`` and ``obj`` are objects of different types, then the answer must be ``false``.
-
-  * If none of the above rules applies, then equality can be based on any consistent comparison of any subset of the objects’ fields.
-
-6. Instantiate some ``Date`` and ``Time`` objects (several of each) and ensure that they compare properly to each other.
-
-Remember to use ``a.equals(b)`` to see if ``a`` and ``b`` equal each other! If you use ``==``, the comparison is restricted to whether the two objects are physically the same: the ``equals(Object obj)`` method is not run for that comparison.
-
-7. Let’s now make some lists and sets of the objects we have created so far. We’ll focus on ``Date``.
-
-   1. In the ``main`` method of each class you should already be creating and comparing instances of your objects.
-
-   2. After you have instantiated 5 objects create a ``List`` of such objects by using the following code:
-
-::
-   
-    LinkedList<Date> list = new LinkedList<Date>();
-
-
-The angle bracket notation is used to specify parametric types. It may help to read the above line of code as:
-
-Instantiate a new linked list of Date objects and assign that object to the variable named list.
-
-You may have to use Eclipse suggestions to import the proper classes, which will come from the ``java.util`` package.
-
-8. What can we do with a `LinkedList <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/LinkedList.html>`_ object? Click on the link in the sentence before this one and check out the API.
-
-Note that in the documentation, ``E`` refers to the type of element in the list you construct. In this running example, that would be a ``Date`` object.
-
-9. Add some of your ``Date`` objects to the ``list`` list and print it out when you are done.
-
-To print it you need only say:
+2. Implement the ``countWords(words)`` method to meet this specification:
 
 ::
 
-   System.out.println(list);
+   /**
+   * Constructs and returns a map of the distinct words in the specified list with
+   * each word associated with its accumulated count (that is: the number of
+   * occurrences of the word in the list).
+   *
+   * For example, if passed a List<String> containing:
+   *
+   * [to, be, or, not, to, be]
+   *
+   * the resulting Map<String,Integer> would contain
+   *
+   * key="to", value=2;
+   * key="be", value=2;
+   * key="or", value=1;
+   * key="not", value=1;
+   *
+   * @param words
+   * @return a map which contains all of the distinct words as keys, each
+   *         associated with the number of occurrences of the word
+   */
 
-10. Let’s see what happens when we add two ``Date`` objects to the list that ``equal`` each other:
+Ensure that ``WordCountTest`` is working and you have explained your solution to your TA before moving on.
 
-::
+University Database
+=====================
 
+This section of the studio can be tested with ``UniversityDatabaseTestSuite`` in the ``studio9`` package.
 
-   Date d1 = new Date(...stuff your constructor needs);
-   Date d2 = new Date(...same info as above, so these will equal each other);
-   list.add(d1);
-   list.add(d2);
-   list.add(d1);
-   System.out.println(list);
+1. ``UniversityDatabase`` will rely on a working implementation of the ``Student`` class from Assignment 7. Copy the code from your Student class into the ``Student.java`` file in the ``studio9`` package and make sure any errors are resolved before proceeding. You may use which ever implementation you feel is best.
 
-What do you see? Does the same date appear three times in the list?
+2. Open ``UniversityDatabase`` in the ``studio9`` package.
 
-11. Let’s do the same thing but this time with a ``HashSet``. After the code you have written so far, add:
+3. Declare a single ``private final`` instance variable of type ``Map<String, Student>``.
 
-::
+   * You’ll need to import that ``Map`` interface (``java.util.Map``).
 
-   HashSet<Date> set = new HashSet<Date>();
-   set.add(d1);
-   set.add(d2);
-   set.add(d1);
-   System.out.println(set);
+4. Implement the default constructor (``UniversityDatabase()``) to initialize the map instance variable.
 
-Do you you see multiple occurrences of equal ``Date`` objects in the set?
+5. Implement ``public void addStudent(String accountName, Student student)`` which associates with the key ``accountName`` the value ``student`` in the map.
 
-**Based on your observations, what is the main difference between sets and lists?**
+6. Implement public int ``getStudentCount()``
 
-12. **Show your work to a TA.**
+7. Implement ``public String lookupFullName(String accountName)`` by looking up the student and then using the ``getFullName()`` method on ``Student``. If the student is ``null``, you should return ``null`` as the full name.
 
-The story continues: Create an ``Appointment`` class. An ``Appointment`` has-a ``Date`` and a ``Time``.
+8. Implement ``public double getTotalBearBucks()`` via iterating over the map.
 
-1. Design and implement an ``Appointment`` object in the ``src`` folder.
-
-2. Just as you did with ``Date`` and ``Time``, use Eclipse to generate the ``hashCode()`` and ``equals(Object obj)``. You should base these on equality of the contained ``Date`` and ``Time`` references.
-
-3. Read over the code Eclipse generates. Note how it *delegates* equality to the contained objects, in which you have previously defined how you want equality treated for objects of those types.
-
-4. Using the ``main()`` in your ``Appointment`` class, create some instances of ``Appointment`` objects using ``Date`` and ``Time`` objects.
-
-5. In your opinion, what other *has-as* should an ``Appointment`` have?
-
-Design a ``Calendar`` object in terms of a collection of ``Appointments``.
-
-::
-
-   * Should you use a list or a set?
-   * What methods should your `Calendar` object offer?
-
-
-6. Try to implement and test the methods of your ``Calendar`` object.
-
+Ensure that ``UniversityDatabaseTestSuite`` is working and you have explained your solution to your TA before moving on.
 
 Demo
-======
-
-
+=====================
 
 **Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
 
