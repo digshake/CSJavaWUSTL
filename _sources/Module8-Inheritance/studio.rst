@@ -65,17 +65,17 @@ Once you have finished, examine and run the provided main method in the ``Multip
 Select All Questions
 ====================
 
-Another type of question we would like to include present multiple choices but then asks the user to select all of the correct answers. For these question types, it is possible for more than one of the choices to be correct. Notice again that there is some overlap between what ``SelectAllQuestion`` and ``MultipleChoiceQuestion`` can do. We would say that a ``SelectAllQuestion`` **is a** ``MultipleChoiceQuestion`` (and also a ``Question``).
+Another type of question we would like to include presents multiple choices but then asks the user to select all of the correct answers. For this question type, it is possible for more than one of the choices to be correct. Notice again that there is some overlap between what a ``SelectAllQuestion`` and ``MultipleChoiceQuestion`` can do. We would say that a ``SelectAllQuestion`` **is a** ``MultipleChoiceQuestion`` (and also a **is a** ``Question``).
 
 First complete the constructor, making sure to call ``super()``.
 
 Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Examine the provided examples in the main method and make sure you understand how these questions are scored, then come up with a way to complete the method.
 
-These methods from the ``String`` `API<https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>`_ will likely be useful:
+These methods from the ``String`` `API <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>`_ will likely be useful:
 
-* `charAt<https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#charAt-int->`_
+* `charAt <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#charAt-int->`_
 
-* `contains<https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#contains-java.lang.CharSequence->`_
+* `contains <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#contains-java.lang.CharSequence->`_
 
 Be sure to test your code using the provided main method to make sure it works before proceeding.
 
