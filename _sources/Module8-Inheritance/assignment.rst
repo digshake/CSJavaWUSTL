@@ -59,8 +59,6 @@ Is Zombie, X, and Y Accessors
 
 * Complete the ``isZombie()``, ``getX()``, and ``getY()`` methods.
 
-* Run ``EntityAndZombieSimulatorTestSuite``. You should pass all cases in ``EntityConstructorTest`` before proceding.
-
 Radius Getter and Setter
 ----------------------------------
 
@@ -115,7 +113,7 @@ isTouching(xOther, yOther, radiusOther)
 moveAwayFrom(x, y, amount)
 ----------------------------------
 
-* **Question**: How can you implement this method leveraging ``moveToward(x, y, amount)``?
+* **Question**: How can you implement this method leveraging ``moveToward(x, y, amount)``? Recall that each entity has a speed instance variable that can be used to represent the amount of distance an entity should move in a given frame.
 
 Investigate Find Closest
 ----------------------------------

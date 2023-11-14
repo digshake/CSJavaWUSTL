@@ -69,13 +69,15 @@ Another type of question we would like to include presents multiple choices but 
 
 First complete the constructor, making sure to call ``super()``.
 
-Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Examine the provided examples in the main method and make sure you understand how these questions are scored, then come up with a way to complete the method.
+Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Examine the provided examples in the main method, the intention here is for each choice to be worth one point, with one point being deducted for each incorrect answer that is marked and for each correct answer that isn't marked.
 
 These methods from the ``String`` `API <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>`_ will likely be useful:
 
 * `charAt <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#charAt-int->`_
 
 * `contains <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#contains-java.lang.CharSequence->`_
+
+* `indexOf <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-int->`_
 
 Be sure to test your code using the provided main method to make sure it works before proceeding.
 
