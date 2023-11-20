@@ -29,21 +29,6 @@ What does it mean for two things to be equal? For primitive types (int, double, 
 	
 Are the two ``Person`` objects created above equal? This is not a simple question to answer. In one sense we can see the equality: the name "John Smith" is being used for each person that's being created. On the other hand, we also know that it is possible for two people to have the same name, so it is possible that the above code is intended to represent two similarly named individuals.
 
-In the last module we learned how to define our own objects using **classes**. Just like we are able to define the instance variables and methods within our classes, we can also define what it means for our objects to be equal. To see why this matters, consider this following extension of the previous example::
-
-	Person p1 = new Person("John", "Smith");
-	Person p2 = new Person("John", "Smith");
-	
-	Set<Person> pSet = new HashSet<>();
-	pSet.add(p1);
-	pSet.add(p2);
-	
-How many ``Person`` objects will the ``HashSet`` contain? If equality was determined by name, then we might expect the set to only contain one ``Person`` since the other person would be ignored as a duplicate. Is this what we want? Do we know for certain what would happen?
-
-If we wish to use a different definition of equality, then we can do this by implementing our own ``equals()`` method. 
-
-When adding objects into a ``Set`` it uses the ``equals()`` method to determine equality of two objects and thus determine if a duplicate already exists in the set. The definition of ``equals()`` is critical. It is important to base ``equals()`` on the instance variables that determine true, meaningful equality for the object. Sometimes that may mean using all or most of the instance variables to determine equality, sometimes maybe just one or two. Fortunately IDEs (like Eclipse) make generating these methods a lot easier, as you will see in the following exercise:
-
 |CodingEx| **Coding Exercise**
 
 In this exercise, you use Eclipse to *auto-generate* useful parts of a class. 
@@ -62,25 +47,9 @@ They should not look so good. When you print a ``Point``, you getan ugly and uni
 
 This, and the subsequent work below, is accomplished also via the ``Source`` menu.
 
-9. OK we are ready to make a ``Set`` of some points. Put the following code in the ``main`` method:
-
-::
-
-   Set<Point> set = new HashSet<Point>();
-   set.add(new Point(131, 132));
-   set.add(new Point(131,132));
-   System.out.println("Set has " + set);
-
-
-10. Recalling that sets should have no duplicates, we can see that there's a problem here since this set will show the same point (131, 132) twice. This is because equality for a ``Point`` has not yet been defined.
-
 11. Now let's use Eclipse to generate ``hashCode()`` and ``equals(Object other)`` methods.
 
 You must pick the attributes (instance variable names) upon which you wish equality to be based.
-
-12. Rerun your code and make sure that two ``Point`` objects with the same coordinates cannot both be contained in the same set.
-
-**Further exploration**
 
 1. What happens if ``hashCode()`` returns a random integer? Try:
 
@@ -90,9 +59,6 @@ You must pick the attributes (instance variable names) upon which you wish equal
       return (int)(Math.random()*100000);
    }
 
-* What behavior do you see in the set?
-
-* Why do you see that behavior?
 
 The above code makes ``hashCode()`` *inconsistent*, breaking a portion of the contract concerning object equality.
 
@@ -106,26 +72,6 @@ The above code makes ``hashCode()`` *inconsistent*, breaking a portion of the co
    }
 
 * Does this work?
-
-**Now try lists**
-
-Go back and change the ``Set`` and ``HashSet`` of your code to use ``List`` and ``LinkedList``, respectively.
-
-1. You should see duplicates. But that's OK for lists.
-
-2. Intentionally break ``.equals(Object other)`` by returning ``false`` always.
-
-What aspect of the contract does this break for \`.equals(Object other)?
-
-3. What behavior do you see?
-
-Adding to a list does not consult ``.equals(Other object)``, so you should see no difference.
-
-4. Now ask whether the list ``.contains(new Point(131,132))``.
-
-Nothing should be found in the list with the broken ``.equals(Object other)``.
-
-5. Revert the code back to its proper ``hashCode`` and ``.equals(Object other)``.
 
 ``equals()`` vs. ``==``
 ------------------------------
