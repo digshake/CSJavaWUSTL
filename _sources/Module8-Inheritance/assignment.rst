@@ -64,8 +64,6 @@ Radius Getter and Setter
 
 * Complete ``getRadius()`` and ``setRadius(double d)`` methods.
 
-* Run ``EntityAndZombieSimulatorTestSuite``. You should pass all cases in ``EntityRadiusTest`` before proceding. 
-
 **Note**: if you are looking for a default radius value to start with, Assignment 5 used ``0.008``.
 
 isAlive and wasConsumed
@@ -262,14 +260,6 @@ Partial credit is possible and will be based on the number of unit tests that ar
   * Animation should be reasonably smooth (nothing should jump to new locations on the screen)
 
   * As before, all entities must stay within the visible window (the unit square from (0,0) to (1,1))
-
-Here’s an example run of one approach. Here nonzombies flee from other nonzombies (they think they will be safe in isolated areas). Zombies can “smell” nonzombies and relentlessly pursue the closest one:
-
-.. raw:: html
-
-  <center>
-    <video controls src="zombieObjectives1.mp4"></video>
-  </center>
 
 
 Submitting your work

@@ -8,6 +8,5 @@ Module 9: Abstract Data Types
    :maxdepth: 3
    
    01-Lists.rst
-   02-Sets.rst
    03-Maps.rst
    04-Equality.rst
