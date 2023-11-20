@@ -51,28 +51,6 @@ This, and the subsequent work below, is accomplished also via the ``Source`` men
 
 You must pick the attributes (instance variable names) upon which you wish equality to be based.
 
-1. What happens if ``hashCode()`` returns a random integer? Try:
-
-::
-
-   public int hashCode() {
-      return (int)(Math.random()*100000);
-   }
-
-
-The above code makes ``hashCode()`` *inconsistent*, breaking a portion of the contract concerning object equality.
-
-2. What happens if ``hashCode()`` always returns the same result?
-
-
-::
-
-   public int hashCode() {
-      return 0;
-   }
-
-* Does this work?
-
 ``equals()`` vs. ``==``
 ------------------------------
 
