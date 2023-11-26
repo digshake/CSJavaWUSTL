@@ -31,41 +31,27 @@ Studio Setup and Procedure
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
-Code To Use
+
+
+Polynomial
 =====================
+This section of the studio can be tested with ``PolynomialTest`` in the ``studio9`` package.
 
-* interface `Map<K,V> <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html>`__
+Our first goal is to implement an object that can be used to represent a `polynomial <https://en.wikipedia.org/wiki/Polynomial>`_. For the purposes of our studio, our polynomials will all be of the single variable type, and they will also be complete with no missing terms. A ``LinkedList`` will be used to store the coefficients. For example, if we were trying to represent the polynomial x:sup:`2` + 4, our list would contain the values [1, 0, 4]. Notice that the **order** of the coefficients combined with the **length** of the list can be used to determine the power of a term.
 
-  * `put(key, value) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#put(K,V)>`_
+1. Open the Java file ``Polynomial`` in the ``studio9`` package.
 
-  * `get(key) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#get(java.lang.Object)>`_
+2. Complete the constructor - it should create an empty list.
 
-  * `getOrDefault(key, defaultValue) <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,V)>`_
+3. Complete ``addTerm()``. This simple method should assume that the incoming term will be added to the end of the polynomial.
 
-  * `size() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#size()>`_
+4. Complete ``toString()``. After this point you should be able to run the tests and view some polynomials to make sure the code you have written so far is working.
 
-  * `keySet() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#keySet()>`_
+5. Complete ``evaluate()`` to evaluate the polynomial for a given value. Use the provided tests to check your work.
 
-  * `entrySet() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/Map.html#entrySet()>`_
+6. Complete ``derivative()`` which creates a new ``Polynomial`` based on the `power rule <https://en.wikipedia.org/wiki/Power_rule>`_.
 
-* class `HashMap<K, V> <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html>`_
-
-  * `new HashMap() <https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E()>`_
-
-Map Name to Height Warmup
-=====================
-
-1. Open the Java file NameToHeight in the studio9 package and edit the main method.
-
-2. Create a new instance of a Map from key type String to value type Integer.
-Note: `Map<K,V> <https://docs.oracle.com/javase/8/docs/api/java/util/Map.html>`__ is an interface so you will need to create an instance of a `class which implements it <https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html>`_.
-
-3. Associate each member of your team’s name with their height (use inches or centimeters at your preference).
-
-4. Repeatedly prompt the user (via Scanner) for a name. If the user cancels by typing "quit" then stop prompting for more names. Otherwise, look up the name in the map for the associated height. Print out both the name and the height.
-Be sure to handle the ``null`` case for names that are not in the map and print an appropriate message.
-
-Explain your solution to your TA before moving on.
+Check your work with a TA before moving on.
 
 Word Count
 =====================
@@ -100,31 +86,6 @@ This section of the studio can be tested with ``WordCountTestSuite`` in the ``st
    */
 
 Ensure that ``WordCountTest`` is working and you have explained your solution to your TA before moving on.
-
-University Database
-=====================
-
-This section of the studio can be tested with ``UniversityDatabaseTestSuite`` in the ``studio9`` package.
-
-1. ``UniversityDatabase`` will rely on a working implementation of the ``Student`` class from Assignment 7. Copy the code from your Student class into the ``Student.java`` file in the ``studio9`` package and make sure any errors are resolved before proceeding. You may use which ever implementation you feel is best.
-
-2. Open ``UniversityDatabase`` in the ``studio9`` package.
-
-3. Declare a single ``private final`` instance variable of type ``Map<String, Student>``.
-
-   * You’ll need to import that ``Map`` interface (``java.util.Map``).
-
-4. Implement the default constructor (``UniversityDatabase()``) to initialize the map instance variable.
-
-5. Implement ``public void addStudent(String accountName, Student student)`` which associates with the key ``accountName`` the value ``student`` in the map.
-
-6. Implement public int ``getStudentCount()``
-
-7. Implement ``public String lookupFullName(String accountName)`` by looking up the student and then using the ``getFullName()`` method on ``Student``. If the student is ``null``, you should return ``null`` as the full name.
-
-8. Implement ``public double getTotalBearBucks()`` via iterating over the map.
-
-Ensure that ``UniversityDatabaseTestSuite`` is working and you have explained your solution to your TA before moving on.
 
 Demo
 =====================
