@@ -1,5 +1,5 @@
 =====================
-Studio 9: Map Practice
+Studio 9: ADT Practice
 =====================
 
 **Studio activities should not be started before class! Come to the session and work on the activity with other students!**

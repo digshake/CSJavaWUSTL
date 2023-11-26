@@ -2,7 +2,7 @@
 Module 9: Abstract Data Types
 :::::::::::::::
 
- In this unit, you will be introduced to three new ADTs: Lists, Sets, and Maps. 
+ In this unit, you will be introduced to three new ADTs: Lists and Maps. 
  
 .. toctree::
    :maxdepth: 3
