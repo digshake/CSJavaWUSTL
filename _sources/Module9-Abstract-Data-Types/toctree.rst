@@ -10,3 +10,5 @@ Module 9: Abstract Data Types
    01-Lists.rst
    03-Maps.rst
    04-Equality.rst
+   studio.rst
+   assignment.rst
