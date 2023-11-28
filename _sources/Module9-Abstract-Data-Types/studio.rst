@@ -37,7 +37,7 @@ Polynomial
 =====================
 This section of the studio can be tested with ``PolynomialTest`` in the ``studio9`` package.
 
-Our first goal is to implement an object that can be used to represent a `polynomial <https://en.wikipedia.org/wiki/Polynomial>`_. For the purposes of our studio, our polynomials will all be of the single variable type, and they will also be complete with no missing terms. A ``LinkedList`` will be used to store the coefficients. For example, if we were trying to represent the polynomial x:sup:`2` + 4, our list would contain the values [1, 0, 4]. Notice that the **order** of the coefficients combined with the **length** of the list can be used to determine the power of a term.
+Our first goal is to implement an object that can be used to represent a `polynomial <https://en.wikipedia.org/wiki/Polynomial>`_. For the purposes of our studio, our polynomials will all be of the single variable type, and they will also be complete with no missing terms. A ``LinkedList`` will be used to store the coefficients. For example, if we were trying to represent the polynomial x :sup:`2` + 4, our list would contain the values [1, 0, 4]. Notice that the **order** of the coefficients combined with the **length** of the list can be used to determine the power of a term.
 
 1. Open the Java file ``Polynomial`` in the ``studio9`` package.
 
