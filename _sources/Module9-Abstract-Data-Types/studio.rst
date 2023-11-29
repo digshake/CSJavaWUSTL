@@ -85,6 +85,8 @@ This section of the studio can be tested with ``WordCountTestSuite`` in the ``st
    *         associated with the number of occurrences of the word
    */
 
+Once you have finished the method, turn your attention to the ``main`` method provided to you at the end of the file. Write code that will iterate over the generated map. Notice how you have to use a for each style loop when iterating with maps. Why is this?
+
 Ensure that ``WordCountTest`` is working and you have explained your solution to your TA before moving on.
 
 Demo
