@@ -29,13 +29,13 @@ Studio Setup and Procedure
 5. Everyone else, open the studio instructions on your own computer.
 6. Choose one group member to complete the following instructions:
 
-	1. Click `here <https://classroom.github.com/a/yTJ-Nk1H>`_
+	1. Click `here <https://classroom.github.com/a/Vx_ZQmoA>`_
 	2. Go to the bottom of the page, where it says `OR Create a new team`.
 	3. Enter your group's last names and "Studio1" into the text field. Ex: "XiaSmith-Studio1"
 	4. Click the button to create the team.
 7. After the team is created, all other members of your team should complete the following instructions:
 
-	1. Click `here <https://classroom.github.com/a/yTJ-Nk1H>`_
+	1. Click `here <https://classroom.github.com/a/Vx_ZQmoA>`_
 	2. Find the team your groupmate created.
 	3. Join the team. 
 	

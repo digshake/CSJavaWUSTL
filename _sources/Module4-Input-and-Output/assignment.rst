@@ -5,7 +5,7 @@ Assignment 4: APIsolutely About Zombies
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/fkuhmMmE>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/3alQxEK6>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Zombies
 =====================

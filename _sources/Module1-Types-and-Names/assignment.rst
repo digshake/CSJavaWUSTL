@@ -5,7 +5,7 @@ Assignment 1: Grade Calculator
 Assignment Setup
 ================
 
-To create your repository, `go here <https://classroom.github.com/a/CnAAIndN>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository, `go here <https://classroom.github.com/a/qH2ERQkX>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Grade Calculator
 ================
@@ -98,7 +98,7 @@ Here are a few issues we anticipate you will come across. Read the bullet point 
 
 * Making sure users don't put in invalid values: 150% is not a valid average assignment grade. In the future, we'll learn how to force programs to only accept valid inputs. For now, just assume the user will always put in valid inputs.
 
-* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/112030/pages/course-policies>`_ for the weighting on different components of the grade.
+* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/123389/pages/course-policies>`_ for the weighting on different components of the grade.
 
 * Rounding: You must round the weighted grade percentages to two digits after the decimal point so that they get printed with the right number of decimal places. In order to round, you may use the math operations we learned (``+``, ``-``, ``*``, ``/``) and/or ``Math.round()`` and nothing else. Think about what information ``Math.round()`` "loses" and how you would need to change the input so it only loses the information you want to get rid of.
 
