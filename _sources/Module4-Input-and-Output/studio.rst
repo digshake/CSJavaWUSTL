@@ -37,9 +37,9 @@ The ``double`` values at the end depend on the shape type (more on that below).
 
 You will be creating code in the method that will read the data from the file you select in the dropdown and will draw the given shape.
 
-* To read from the file, you can use ``Scanner`` methods like ``nextLine()`` and ``nextInt()``. The ``in`` variable is already set up for you to take from the file instead of prompting for user input.
+* To read from the file, you can use ``Scanner`` methods like ``next()`` and ``nextInt()``. The ``in`` variable is already set up for you to take from the file instead of prompting for user input.
 
-* Begin by just trying to create the rectangle. The final four parameters given in the file are ``double x, double y, double halfWidth, and double halfHeigh``.
+* Begin by just trying to create the rectangle. The final four parameters given in the file are ``double x, double y, double halfWidth, and double halfHeight``.
 
 * Once you have read in the rectangle data, use ``StdDraw`` to draw the shape as specified in the file.
 
