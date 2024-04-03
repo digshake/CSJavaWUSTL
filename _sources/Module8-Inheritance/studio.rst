@@ -69,7 +69,7 @@ Another type of question we would like to include presents multiple choices but 
 
 First complete the constructor, making sure to call ``super()``.
 
-Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Examine the provided examples in the main method, the intention here is for each choice to be worth one point, with one point being deducted for each incorrect answer that is marked and for each correct answer that isn't marked.
+Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Examine the provided examples in the main method, the intention here is for each choice to be worth one point, with one point being deducted for each incorrect answer that is given and for each correct answer that isn't given. Use the provided methods ``findMissingCorrectAnswers()`` and ``findIncorrectGivenAnswers()`` to complete the ``checkAnswer()`` method. Note that you will not have to use the provided ``findMissingCharacters()`` method, though it is already being used in the other methods you have been given.
 
 These methods from the ``String`` `API <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>`_ will likely be useful:
 
