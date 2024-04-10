@@ -108,10 +108,10 @@ isTouching(xOther, yOther, radiusOther)
 
 * **Note**: the method ``isTouching(other)`` has been provided to you. It simply calls ``isTouching(xOther, yOther, radiusOther)`` with the center and radius of the other Entity.
 
-moveAwayFrom(x, y, amount)
+moveAwayFrom(x, y)
 ----------------------------------
 
-* **Question**: How can you implement this method leveraging ``moveToward(x, y, amount)``? Recall that each entity has a speed instance variable that can be used to represent the amount of distance an entity should move in a given frame.
+* **Question**: How can you implement this method leveraging ``moveToward(x, y)``? Recall that each entity has a speed instance variable that can be used to represent the amount of distance an entity should move in a given frame.
 
 Investigate Find Closest
 ----------------------------------
