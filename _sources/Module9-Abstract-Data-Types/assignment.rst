@@ -15,9 +15,9 @@ For this assignment, we will be asking you to create the classic game `Snake <ht
 Requirements
 =====================
 
-To receive credit you must:
+To receive full credit you must:
 
-* Have a Snake that is controlled by the keyboard
+* Have a Snake that is controlled by the keyboard and moves in a snake-like fashion across the screen
 
 * Randomly place food around the game screen
 
