@@ -5,12 +5,25 @@ Assignment 9: Snake
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/KAWEg7Hy>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/FGlvnIYR>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Overview
 =====================
 
 For this assignment, we will be asking you to create the classic game `Snake <https://g.co/kgs/aKNjEh>`_. This assignment is a bit more open ended than past assignments - no unit tests are given. This is to allow you a degree of creativity and flexibility. We expect some basic functionality from your game but you are otherwise encouraged you explore, expand, and improve upon the game to make it your own!
+
+Questions to ask if you get stuck
+=================================
+
+Like all problems, this one can be tricky. Here are some common questions that we get from students regarding this assignment. Use these questions to gauge your own understanding of what we are asking you to do. Please ask these questions to a TA or an instructor if you are feeling stuck on a certain part of the assignment.
+
+* What is a ``List``? How does it differ from an array?
+
+* What are some common useful methods provided by ``List``s?
+
+* How are ``List``s created? What does it mean for ``Lists`` to be parameterized?
+
+* How do we determine the equality of two objects? What kinds of equality are there?
 
 Requirements
 =====================
@@ -58,4 +71,6 @@ This list is not intended to be exhaustive, we want you to be creative and pick 
 Submitting your work
 =====================
 
-To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_. Be prepared to show them the work that you have done and answer their questions about it!
+Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
+
+Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!

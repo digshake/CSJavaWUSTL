@@ -5,7 +5,7 @@ Assignment 6: More Recursive Puzzles
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/Qf7mUzgF>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/KtM52jvp>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 More Recursive Puzzles
 =====================
@@ -28,6 +28,21 @@ All of the methods that you are asked to complete can be found in the ``Recursiv
 
 Since this lab is meant to reinforce the concepts relating to recursion, **no loops are allowed for any reason**. If you use a loop to solve a particular problem you will not receive any credit for that problem.
 
+Questions to ask if you get stuck
+=================================
+
+Like all problems, these can be tricky. Here are some common questions that we get from students regarding this assignment. Use these questions to gauge your own understanding of what we are asking you to do. Please ask these questions to a TA or an instructor if you are feeling stuck on a certain part of the assignment.
+
+* What is recursion? When should it be used?
+
+* What is a base case?
+
+* How do you trace the execution of a recursive program?
+
+* How do you debug a recursive program?
+
+* What is a helper method? When should a helper method be used?
+
 Exponents
 =====================
 
@@ -41,11 +56,6 @@ Tips for completing Exponents
 * A helper method isn’t strictly required, but it may help you here.
 
 * Usage of ``Math.pow()`` or any other method to compute exponents besides recursion is not allowed for this problem.
-
-Testing Exponents
------------------------------
-
-.. youtube::s8kOg6wDv3E
 
 Submittting Exponents
 -----------------------------
@@ -80,11 +90,6 @@ Tips for Array Sum
 
 * You will undoubtedly want a helper method. Think about what additional information the helper method should track.
 
-Testing Array Sum
------------------------------
-
-.. youtube:: UBFmT90hRog
-
 
 Submitting Array Sum
 -----------------------------
@@ -102,33 +107,6 @@ When you submit this method you will be asked the following:
 * Did you provide JavaDoc comments for your helper method?
 
 * Show and explain your work for the execution of ``arraySum`` with the ``array [1, 3, 9, 7]``.
-
-
-Substitute All Practice
-==========================
-
-Before moving on to Dragon Curves, we strongly recommmend completing the ``substituteAll()`` practice problem outlined in the video below:
-
-.. youtube:: GkCCxjTG-u4
-
-You should be able to produce “LEGOLAS_GIMLI” from “L_G” by clever usages of ``substituteAll()``. Completing this practice task will pay off when you build ``dragon()``.
-
-
-**Note**: If you run into a problem:
-
-  The method substituteAll(String, char, String) in the type RecursiveMethods is not applicable for the arguments (String, String, String)
-
-You have undoubtedly passed in a double quoted ``String`` instead of a single quoted ``char``.
-
-For example, incorrectly typing:
-
-  RecursiveMethods.substituteAll(text, “L”, “LEGOLAS”)
-
-instead of the correct:
-
-  RecursiveMethods.substituteAll(text, ‘L’, “LEGOLAS”)
-
-Check out `this video <https://www.youtube.com/watch?v=UrmVV6-h8c8?rel=0>`_ for more details.
 
 Dragon Curves
 =============
@@ -231,12 +209,6 @@ Skipping ahead to 10…
   :width: 400
   :height: 400
   :align: center
-
-Testing
------------------------------
-
-
-.. youtube:: Uq1YJamAvwI
 
 
 Tips for completing this method
@@ -450,5 +422,8 @@ When you submit this method you will be asked the following:
 Submitting your work
 ====================
 
-To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_. Be prepared to show them the work that you have done and answer their questions about it!
+Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
+
+Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!
+
 

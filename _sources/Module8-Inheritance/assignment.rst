@@ -5,12 +5,12 @@ Assignment 8: Zombies: The Final OBJECTive
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/gP4BzEoq>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/ho4Awhig>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Zombies... The Final OBJECTive
 =====================
 
-In Assignment 4 we used the notion of “parallel arrays” to store details of the entities that we wanted to simulate. In Assignment 5 we created an actual simulation, but in order to make it manageable we refactored the work from Assignment 4 using Methods. Since we had ``boolean`` state (isZombie) and ``double`` state (x and y coordinates), we kept track of our entities in separate arrays. Further, since ,methods can only return a single value, we (somewhat awkwardly) were forced to create arrays and pass them into ``readEntities(in, areZombies, positions)``. Now that we’ve seen the concept of objects and inheritance, it makes more sense to store the individual data in an ``Entity`` base class. We can then forgo the arrays for a single array of entities stored in our ZombieSimulator.
+In Assignment 5 we created a simulation using Methods. Since we had ``boolean`` state (isZombie) and ``double`` state (x and y coordinates), we kept track of our entities in separate arrays. Further, since ,methods can only return a single value, we (somewhat awkwardly) were forced to create arrays and pass them into ``readEntities(in, areZombies, positions)``. Now that we’ve seen the concept of objects and inheritance, it makes more sense to store the individual data in an ``Entity`` base class. We can then forgo the arrays for a single array of entities stored in our ZombieSimulator.
 
 In this installment of the zombie saga we will:
 
@@ -21,6 +21,23 @@ In this installment of the zombie saga we will:
 * Rather than having all entities move randomly, we’ll make our ``Zombies`` and ``Nonzombies`` behave somewhat intelligently.
 
 * When a ``Nonzombie`` is touching a ``Zombie`` there’s a chance it will be consumed rather than always turn into a ``Zombie``.
+
+Questions to ask if you get stuck
+=================================
+
+Like all problems, this one can be tricky. Here are some common questions that we get from students regarding this assignment. Use these questions to gauge your own understanding of what we are asking you to do. Please ask these questions to a TA or an instructor if you are feeling stuck on a certain part of the assignment.
+
+* What is inheritance? What parts of a class are inherited?
+
+* How do we inherit from one class to another class in Java?
+
+* What does it mean to override a method? Which method will be used if a method is overriden?
+
+* How do constructors work when using inheritance?
+
+* What is ``super``?
+
+* What is polymorphism? How does it help us?
 
 Files
 =====================
@@ -265,5 +282,6 @@ Partial credit is possible and will be based on the number of unit tests that ar
 Submitting your work
 ====================
 
-To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
+Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
 
+Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!

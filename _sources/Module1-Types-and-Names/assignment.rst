@@ -5,7 +5,7 @@ Assignment 1: Grade Calculator
 Assignment Setup
 ================
 
-To create your repository, `go here <https://classroom.github.com/a/qH2ERQkX>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository, `go here <https://classroom.github.com/a/DzEHvf2W>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Grade Calculator
 ================
@@ -21,6 +21,23 @@ In this assignment, you will develop a tool that can help you compute your final
 * Produce meaningful output based on your computations
 
 * Work with Java expressions
+
+Questions to ask if you get stuck
+=================================
+
+Like all problems, this one can be tricky. Here are some common questions that we get from students regarding this assignment. Use these questions to gauge your own understanding of what we are asking you to do. Please ask these questions to a TA or an instructor if you are feeling stuck on a certain part of the assignment.
+
+* What is the significance of ``public static void main(String[] args)`` in Java?
+
+* How does the ``Scanner`` class work in Java?
+
+* What methods can I use to read user input with a ``Scanner`` object in Java?
+
+* In Java, what are data types, and how do they relate to variables and user input?
+
+* How can grade weights be computed in Java?
+
+* How can values be rounded to two decimal places using the ``Math`` class?
 
 Procedure
 ================
@@ -62,13 +79,13 @@ These are the inputs that you should ask for from the user, plus the names of th
 	| averageExamGrade       | The average grade on all exams, as a percentage between 0 and 100                                                        |
 	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
-This is an example of what your program should output:
+This is an example of what your program should display when it is run:
 
 ``CSE131 Grade for: Doug Shook``
 
 ``Average assignment grade: 85.4``
 
-``Weighted assignment grade (out of 36): 30.74%``
+``Weighted assignment grade (out of 30): 25.62%``
 
 ``Number of studios attended: 7``
 
@@ -80,9 +97,9 @@ This is an example of what your program should output:
 
 ``Average exam grade: 93.5``
 
-``Weighted exam grade (out of 54): 50.49``
+``Weighted exam grade (out of 60): 56.1%``
 
-``Total Grade: 91.93%``
+``Total Grade: 92.42%``
 
 How do we write this program? Let's start one step at a time. What's the simplest, easily checkable change you can make?
 
@@ -112,3 +129,5 @@ Submitting your work
 Check the rubric (which is at the very bottom of the Canvas page for this assignment).
 
 Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
+
+Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!

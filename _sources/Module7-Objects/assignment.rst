@@ -5,13 +5,25 @@ Assignment 7: Students and Courses
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/cIs02MDp>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/pHHEgP34>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
+Questions to ask if you get stuck
+=================================
 
+Like all problems, these can be tricky. Here are some common questions that we get from students regarding this assignment. Use these questions to gauge your own understanding of what we are asking you to do. Please ask these questions to a TA or an instructor if you are feeling stuck on a certain part of the assignment.
+
+* What are classes, objects, and instances? How are they all related?
+
+* What is an instance variable?
+
+* What is a constructor? What does the constructor do?
+
+* What are getters and setters? Why are they needed?
+
+* What does ``this`` mean?
 
 Creating Student and Course class
 =====================
-
 
 Your task is to generate two classes ``Student`` and ``Course`` using a `test driven development approach <https://en.wikipedia.org/wiki/Test-driven_development>`_ . This means that your goal is to get the unit tests to pass, and you develop your code incrementally to get more of the tests to pass.
 
@@ -227,8 +239,9 @@ When you’re completely done run all the tests in ``StudentAndCourseTestSuite.j
 Submitting your work
 =====================
 
-To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_. Be prepared to show them the work that you have done and answer their questions about it!
+Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
 
+Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!
 
 
 

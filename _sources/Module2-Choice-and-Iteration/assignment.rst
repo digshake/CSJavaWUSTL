@@ -5,7 +5,7 @@ Assignment 2: Game of Nim
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/Ax1EfmOd>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/ucy6_sFv>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Game of Nim
 =====================
@@ -28,6 +28,21 @@ Example
 ``Round 3: 1 at start computer takes 1, so 0 remain``
 
 ``The computer wins / you lose!``
+
+Questions to ask if you get stuck
+=================================
+
+Like all problems, this one can be tricky. Here are some common questions that we get from students regarding this assignment. Use these questions to gauge your own understanding of what we are asking you to do. Please ask these questions to a TA or an instructor if you are feeling stuck on a certain part of the assignment.
+
+* How can the code know whose turn it is?
+
+* How can numbers be randomly generated within a given range using the `Math` class in Java?
+
+* How can user input be validated to ensure that a proper number is given?
+
+* How do if-statements and while loops with multiple conditions work in Java?
+
+* How do the `&&`, `||`, and `!` operators work in Java?
 
 Notes
 =====================
@@ -57,4 +72,6 @@ Be careful! A human might enter 5 if 5 sticks are left, and if you are not caref
 Submitting your work
 =====================
 
-To submit your work come to office hours or class on an “Assignment day” and sign up for a demo via wustl-cse.help.
+Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
+
+Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!

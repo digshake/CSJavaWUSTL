@@ -19,7 +19,7 @@ Studio Setup and Procedure
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/Bmh7iGTL>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/Bft8_yWB>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -162,69 +162,6 @@ Testing drawBullsEye()
 Open ``BullsEyeDebugApp.java`` and review the cases. In this case we need to confirm that drawings are correct. This app is used to make a repeatable way to ensure consistently. They require human intervention to confirm if the test was passed or not. (There are ways to truly automate tests like this, but it’s beyond the scope of this class.)
 
 Run ``BullsEyeDebugApp``. If your code does not produce the correct pictures, update it until it does.
-
-
-A method applicable to a future assignment, substituteAll()
-=====================
-
-We will need a method which substitutes characters in a String when we create a `fractal dragon curve <https://en.wikipedia.org/wiki/Dragon_curve>`_ in Assignment 6. It is often worth it to extract functionality into a method even if it is only used once. It is even more satisfying to be able to use the same method from different locations in the same application. Ultimately, generally useful methods can be used in many applications and String manipulation is a common operation.
-
-
-Finishing the code for substituteAll()
-=====================
-
-Read the Javadoc and the starting code for the ``substituteAll(source, target, replacement)`` method, come up a plan, and execute that plan.
-
-**Note**: The target parameter to substituteAll(source, target, replacement) is of type `char <https://docs.oracle.com/javase/tutorial/java/data/characters.html>`_ which is the primitive type for a Character. In Java, `String’s <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>`_ are made up of chars.
-
-**Recall**: You can add a String with anything to produce a new `concatenated String <https://www.merriam-webster.com/dictionary/concatenate>`_. For example:
-
-::
-
-  String text = "hello";
-  char ch = '!';
-  String concatenatedText = text + ch;
-  System.out.println(concatenatedText);
-
-outputs:
-
-::
-
-  hello!
-
-
-Some methods on String to investigate:
-
-* `length() <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#length-->`_
-
-* `charAt(i) <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#charAt-int->`
-
-* `toCharArray() <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#toCharArray-->`_
-
-
-Testing substituteAll()
-=====================
-
-Run the ``MethodsTestSuite`` as a JUnit Test and fix any errors in the ``SubstituteAllTestSuite``, if necessary.
-
-**Discussion**: Now that it is passing the tests, are there ways to improve your code?
-
-
-Expected???
-=====================
-
-Investigate ``SubstituteAllTest`` in the ``studio5.tests`` package in the ``test_src`` folder.
-
-Note the use of `assertEquals(expected, actual) <https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertEquals(java.lang.Object,%20java.lang.Object)>`_.
-
-* Are any of the expected values unexpected?
-
-* What is going on with the perhaps surprising result?
-
-* What would be an approach to producing a result closer to the line from the `original poem <https://www.poetryfoundation.org/poems/44477/ode-on-a-grecian-urn>`_?
-
-**Discussion**: Are the tests reasonably comprehensive? What tests could be added to better ensure your code is working in all cases?
-
 
 Array's as parameters, arraySum()
 =====================
