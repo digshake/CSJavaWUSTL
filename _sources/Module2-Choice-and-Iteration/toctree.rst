@@ -13,7 +13,6 @@ Module 2 - Choice and Iteration
    topic-4-3-strings-loops.rst
    topic-4-4-nested-loops.rst
    topic-4-5-loop-analysis.rst
-   topic-3-9-practice-mixed-code.rst
    topic-3-10-practice-coding.rst
    Exercises.rst
    studio.rst
