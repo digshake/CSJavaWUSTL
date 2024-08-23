@@ -84,10 +84,8 @@ Since you can find out the number of rows and columns in a 2D array you can use 
 .. code-block:: java 
 
   int[][] array = { {1,2,3},{4,5,6}};
-  for (int row = 0; row < array.length; row++)
-  {
-      for (int col = 0; col < array[0].length; col++)
-      {
+  for (int row = 0; row < array.length; row++) {
+      for (int col = 0; col < array[0].length; col++) {
            System.out.println( array[row][col] );
       }
    }

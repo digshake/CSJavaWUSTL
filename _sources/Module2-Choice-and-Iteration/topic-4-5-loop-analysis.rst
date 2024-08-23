@@ -80,8 +80,7 @@ Did your trace table look like the following?
      int var1 = 0;
      int var2 = 2;
    
-     while ((var2 != 0) && ((var1 / var2) >= 0))
-     {
+     while ((var2 != 0) && ((var1 / var2) >= 0)) {
         var1 = var1 + 1;
         var2 = var2 -1;
      }
@@ -107,8 +106,7 @@ Did your trace table look like the following?
      int x = 2;
      int y = 5;
    
-     while (y > 2 && x < y)
-     {
+     while (y > 2 && x < y) {
         x = x + 1;
         y = y - 1;
      }
@@ -171,8 +169,7 @@ Do the following exercises. Make sure you draw the trace tables keeping track of
    
    .. code-block:: java 
 
-      for (int i = 3; i < 8; i++) 
-      {  
+      for (int i = 3; i < 8; i++) {  
           for (int y = 1; y < 5; y++)
           {
               System.out.print("*");
@@ -196,10 +193,8 @@ Do the following exercises. Make sure you draw the trace tables keeping track of
    
    .. code-block:: java 
 
-     for (int i = 2; i < 8; i++) 
-     {  
-         for (int y = 1; y <= 5; y++)
-         {
+     for (int i = 2; i < 8; i++) {  
+         for (int y = 1; y <= 5; y++) {
              System.out.print("*");
          }
          System.out.println();
@@ -221,10 +216,8 @@ Do the following exercises. Make sure you draw the trace tables keeping track of
    
    .. code-block:: java 
 
-     for (int i = 3; i <= 9; i++) 
-     {  
-        for (int j = 6; j > 0; j--)
-        {
+     for (int i = 3; i <= 9; i++) {  
+        for (int j = 6; j > 0; j--) {
             System.out.print("*");
         }
         System.out.println();
@@ -248,10 +241,8 @@ Do the following exercises. Make sure you draw the trace tables keeping track of
    .. code-block:: java 
 
        int i = 0;
-       while (i <= 4)
-       {
-         for (int j = 0; j < 3; j++)
-         {
+       while (i <= 4) {
+         for (int j = 0; j < 3; j++) {
            System.out.println("Hi!");
          }
          i++;

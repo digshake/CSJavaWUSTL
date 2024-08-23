@@ -78,8 +78,7 @@ For example, here is a loop traversing the highScores array to print every score
 .. code-block:: java 
  
   int[] highScores = { 10, 9, 8, 11};
-  for (int i = 0; i < highScores.length; i++)
-  {
+  for (int i = 0; i < highScores.length; i++) {
       System.out.println(  highScores[i] );
   } 
 

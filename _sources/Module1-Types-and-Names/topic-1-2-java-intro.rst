@@ -69,10 +69,8 @@ Here is the template for a simple Java program with a main method:
 
 .. code-block:: java 
 
-   public class MyClass
-   {
-      public static void main(String[] args)
-      {
+   public class MyClass {
+      public static void main(String[] args) {
          // Put your code here!
       }
    }
@@ -256,11 +254,9 @@ Let's practice debugging some code!
    After three incorrect attempts you will be able to use 
    the "Help me" button to make the problem easier.
    -----
-   public class HelloExample3
-   {
+   public class HelloExample3 {
    =====
-      public static void main(String[] args)
-      {
+      public static void main(String[] args) {
       =====
          System.out.println("Hi my friend!");
          =====
@@ -277,17 +273,13 @@ Let's practice debugging some code!
    but the code is mixed up and contains some extra blocks with errors.  
    Drag the needed blocks from left to right and put them in the correct order, then check your solution.
    -----
-   public class HelloExample4
-   {
+   public class HelloExample4 {
    =====
-   public Class HelloExample4
-   {                         #paired
+   public Class HelloExample4 {                         #paired
    =====
-      public static void main(String[] args)
-      {
+      public static void main(String[] args) {
       =====
-      public static void main()
-      {                         #paired
+      public static void main() {                         #paired
       =====
          System.out.println("Hi there!");
          =====
@@ -373,10 +365,8 @@ Summary
 
 .. code-block:: java 
 
-   public class MyClass
-   {
-      public static void main(String[] args)
-      {
+   public class MyClass {
+      public static void main(String[] args) {
          System.out.println("Hi there!");
       }
    }

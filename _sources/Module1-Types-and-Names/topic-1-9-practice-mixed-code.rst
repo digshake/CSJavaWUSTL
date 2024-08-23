@@ -51,11 +51,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should print Marcus's name on one line and his favorite color on the next line. But, the blocks have been mixed up and include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-       {
+       public static void main(String[] args) {
    =====
            String name = "Marcus";
            String color = "Blue";
@@ -120,11 +118,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should print the number of seconds in 5 days. But, the blocks have been mixed up and may include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-       {
+       public static void main(String[] args) {
    =====    
            int sInMin = 60;
            int mInHour = 60;
@@ -140,8 +136,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    =====          
    } // end class
    =====
-   public Class Test1
-   { #distractor
+   public Class Test1 { #distractor
    
 .. parsonsprob:: q1_9_7
    :numbered: left
@@ -151,11 +146,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should calculate the number of months it would take you to save 500 if you make 50 a week. But, the blocks have been mixed up and may include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-       {
+       public static void main(String[] args) {
    =====
            double weeklyRate = 50;
            double goal = 500;
@@ -169,8 +162,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
        } // end main method
    } // end class
    =====
-       public void main(String[] args)
-       { #distractor
+       public void main(String[] args) { #distractor
        
 
 .. parsonsprob:: q1_9_8
@@ -181,11 +173,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should print the name on one line followed by the age on the next line. But, the blocks have been mixed up and include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-       {
+       public static void main(String[] args) {
    =====
            String name = "Layla";
            String age = "16";
@@ -209,12 +199,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should print the name on one line and the favorite food on the next line. But, the blocks have been mixed up and include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-   =====
-       {
+       public static void main(String[] args) {
    =====
            String name = "Julian";
            String food = "chicken wings";
@@ -238,12 +225,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should calculate the cost of a trip that is 200 miles when the price of gas is 2.20 and the miles per gallon is 42. But, the blocks have been mixed up and may include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-   =====
-       {
+       public static void main(String[] args) {
    =====
            int miles = 200;
            double price = 2.20;
@@ -269,12 +253,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should calculate how many miles you can go on half a tank of gas if the miles per gallon is 26 and your tank holds 15 gallons. But, the blocks have been mixed up and may include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-   =====
-       {
+       public static void main(String[] args) {
    =====
            int mpg = 26;
            int tankHolds = 15;
@@ -299,12 +280,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should calculate how many chicken wings you can buy with $3.50 if the wings are $.60 each. But, the blocks have been mixed up and may include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-   =====
-       {
+       public static void main(String[] args) {
    =====
            double cost = 0.6;
            double money = 3.5;
@@ -328,12 +306,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should calculate how much you will have to pay for an item that is 60% off the original price of $52.99. But, the blocks have been mixed up and may include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-   =====
-       {
+       public static void main(String[] args) {
    =====
            double price = 52.99;
            double discount = 0.6;
@@ -359,12 +334,9 @@ Try to solve each of the following. Click the *Check Me* button to check each so
 
    The main method in the following class should calculate how much the per item costs is for shorts that are buy 2 and get the third free.  The shorts are $39.99 each. But, the blocks have been mixed up and may include an extra block that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
+   public class Test1 {
    =====
-       public static void main(String[] args)
-   =====
-       {
+       public static void main(String[] args) {
    =====
            double price = 39.99;
    =====

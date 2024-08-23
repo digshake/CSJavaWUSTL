@@ -63,10 +63,8 @@ What does the ``E01NestedLoops`` program print out? Step through the code in the
    
    .. code-block:: java 
 
-     for (int i = 1; i < 7; i++) 
-     {  
-         for (int y = 1; y <= 5; y++)
-         {
+     for (int i = 1; i < 7; i++) {  
+         for (int y = 1; y <= 5; y++) {
              System.out.print("*");
          }
          System.out.println();
@@ -88,10 +86,8 @@ What does the ``E01NestedLoops`` program print out? Step through the code in the
    
    .. code-block:: java 
 
-     for (int i = 0; i < 5; i++) 
-     {  
-         for (int j = 3; j >= 1; j--)
-         {
+     for (int i = 0; i < 5; i++) {  
+         for (int j = 3; j >= 1; j--) {
              System.out.print("*");
          }
          System.out.println();
@@ -105,19 +101,14 @@ What does the ``E01NestedLoops`` program print out? Step through the code in the
 
    The main method in the following class should print 10 rows with 5 <code>*</code> in each row.   But, the blocks have been mixed up and include <b>one extra block</b> that isn't needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
    -----
-   public class Test1
-   {
-       public static void main(String[] args)
-       {
+   public class Test1 {
+       public static void main(String[] args) {
    =====
-           for (int x = 0; x < 10; x++) 
-           {
+           for (int x = 0; x < 10; x++) {
    =====
-               for (int y = 0; y < 5; y++) 
-               {
+               for (int y = 0; y < 5; y++) {
    =====
-               for (int y = 0; y <= 5; y++) 
-               { #paired
+               for (int y = 0; y <= 5; y++) { #paired
    =====
                    System.out.print("*");
    =====

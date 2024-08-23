@@ -139,8 +139,7 @@ true and false in the next lesson.  However, the code below shows how to print d
    .. code-block:: java
 
      int x = 3;
-     if (x < 2) ;
-     {
+     if (x < 2) ; {
          System.out.println("ERROR");
      }
      
@@ -182,12 +181,10 @@ Most if statements have a boolean condition that uses relational operators like 
    .. code-block:: java
 
      int x = 3;
-     if (x > 2) 
-     {
+     if (x > 2) {
          x = x * 2;
      }
-     if (x > 4) 
-     {
+     if (x > 4) {
         x = 0;
      }
      System.out.print(x);
@@ -261,8 +258,7 @@ Summary
 .. code-block:: java
 
     // A block if statement    
-    if (boolean expression)
-    {
+    if (boolean expression) {
        Do Statement1;
        Do Statement2;
        ...

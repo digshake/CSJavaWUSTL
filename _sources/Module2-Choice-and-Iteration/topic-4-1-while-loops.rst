@@ -46,13 +46,11 @@ Notice the ``while`` statement looks a lot like an ``if`` statement, but it runs
 .. code-block:: java
 
     // if statements just run once if the condition is true
-    if (condition)
-    {
+    if (condition) {
         statements;
     }
     // while statements are repeated while the condition is true
-    while (condition)
-    {
+    while (condition) {
       statements;
     }
     
@@ -168,8 +166,7 @@ Watch the following |video| for a tracing demo. When you are tracing through cod
    .. code-block:: java 
 
      int count = 1;
-     while (count <= 10)
-     {
+     while (count <= 10) {
          count *= 2;
      }
      count = count - 10;
@@ -189,8 +186,7 @@ Watch the following |video| for a tracing demo. When you are tracing through cod
    .. code-block:: java 
 
      int x = -5;
-     while (x < 0) 
-     { 
+     while (x < 0) { 
         x++; 
         System.out.print(x + " ");
      }
@@ -210,8 +206,7 @@ One common error with loops is **infinite loops**.  An infinite loop is one that
 .. code-block:: java 
   
    // an infinite loop
-   while (true)
-   {
+   while (true) {
       System.out.println("This is a loop that never ends");
    }
    
@@ -253,13 +248,10 @@ Summary
 .. .. activecode:: code4_1_4
    :language: java
    
-   public class Test
-   {
-      public static void main(String[] args)
-      {
+   public class Test {
+      public static void main(String[] args) {
           int x = 3;
-          while (x > 0)
-          {
+          while (x > 0) {
              System.out.println(x);
              x = x - 1;
           }
@@ -271,12 +263,9 @@ Summary
 .. .. activecode:: code4_1_5
    :language: java
    
-   public class Test
-   {
-      public static void main(String[] args)
-      {
-          for (int x = 3; x > 0; x--)
-          {
+   public class Test {
+      public static void main(String[] args) {
+          for (int x = 3; x > 0; x--) {
              System.out.println(x);
           }
       }

@@ -68,8 +68,7 @@ A while loop can be used with the String indexOf method to find certain characte
    String s = "example";
    int i = 0;
    // while there is an a in s
-   while (s.indexOf("a") >= 0)
-   {
+   while (s.indexOf("a") >= 0) {
      // Find and save the next index for an a
      i = s.indexOf("a");
      // Process the string at that index
@@ -90,16 +89,14 @@ The example in the mixed up code below finds and removes all the letter a's in a
 
    The following program removes all the a's from a string, but the code is mixed up.  Drag the blocks from the left area into the correct order in the right area.  Click on the "Check Me" button to check your solution.
    -----
-   public static void main(String[] args)
-   {
+   public static void main(String[] args) {
    =====
       String s = "are apples tasty without an a?"; 
       int index = 0;
       System.out.println("Original string: " + s);
    =====
       // while there is an a in s
-      while (s.indexOf("a") >= 0)
-      {
+      while (s.indexOf("a") >= 0) {
    =====      
          // Find the next index for an a
          index = s.indexOf("a");
@@ -141,8 +138,7 @@ For loops with strings usually start at 0 and use the string's length() for the 
 
    String s = "example";
    // loop through the string from 0 to length 
-   for(int i=0; i < s.length(); i++) 
-   {
+   for(int i=0; i < s.length(); i++) {
       String ithLetter = s.substring(i,i+1);           
       // Process the string at that index
       ...
@@ -159,14 +155,12 @@ For loops with strings usually start at 0 and use the string's length() for the 
 
    The following main method has the correct code to count the number of e's in a string, but the code is mixed up.  Drag the blocks from the left area into the correct order in the right area.  Click on the "Check Me" button to check your solution.
    -----
-   public static void main(String[] args)
-   {
+   public static void main(String[] args) {
    =====
       String message = "e is the most frequent English letter.";
       int count = 0;
    =====
-      for(int i=0; i < message.length(); i++) 
-      {
+      for(int i=0; i < message.length(); i++) {
    =====
          if (message.substring(i,i+1).equalsIgnoreCase("e"))
    =====

@@ -31,16 +31,11 @@ Using if/else statements, you can even pick between 3 or more possibilites. Just
 .. code-block:: java
 
     // 3 way choice with else if
-    if (boolean expression)
-    {
+    if (boolean expression) {
        statement1;
-    }
-    else if (boolean expression)
-    {
+    } else if (boolean expression) {
        statement2;
-    }
-    else  
-    {
+    } else {
        statement3;
     }
     
@@ -81,16 +76,11 @@ Here is a flowchart for a conditional with 3 options like in the code above.
    
    .. code-block:: java 
 
-     if (x < 0) 
-     {
+     if (x < 0) {
         System.out.println("x is negative");
-     }
-     else if (x == 0) 
-     {
+     } else if (x == 0) {
         System.out.println("x is zero"); 
-     }
-     else
-     {
+     } else {
         System.out.println("x is positive"); 
      }
      
@@ -108,16 +98,11 @@ Here is a flowchart for a conditional with 3 options like in the code above.
    
    .. code-block:: java 
 
-     if (x < 0) 
-     {
+     if (x < 0) {
         System.out.println("x is negative");
-     }
-     else if (x == 0)
-     {
+     } else if (x == 0) {
         System.out.println("x is zero"); 
-     }
-     else
-     {
+     } else {
         System.out.println("x is positive"); 
      }
      
@@ -137,20 +122,13 @@ Here is a flowchart for a conditional with 3 options like in the code above.
    
    .. code-block:: java 
 
-     if (x < .25) 
-     {
+     if (x < .25) {
          System.out.println("first quartile");
-     }
-     else if (x < .5) 
-     {
+     } else if (x < .5) {
          System.out.println("second quartile"); 
-     }
-     else if (x < .75) 
-     {
+     } else if (x < .75) {
          System.out.println("third quartile");
-     }
-     else 
-     {
+     } else {
          System.out.println("fourth quartile");
      }
  
@@ -174,15 +152,10 @@ Summary
 .. code-block:: java
 
     // 3 way choice with else if
-    if (boolean expression)
-    {
+    if (boolean expression) {
        statement1;
-    }
-    else if (boolean expression)
-    { 
+    } else if (boolean expression) { 
        statement2;
-    }
-    else  
-    {
+    } else  {
         statement3;
     }

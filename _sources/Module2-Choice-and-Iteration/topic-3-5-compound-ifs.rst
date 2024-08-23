@@ -152,12 +152,9 @@ The following table shows the result for P || Q when P and Q are both expression
    
    .. code-block:: java 
 
-     if (x > 0 && (y / x) == 3) 
-     {
+     if (x > 0 && (y / x) == 3) {
         System.out.println("first case");
-     }
-     else
-     {
+     } else {
         System.out.println("second case");
      }
      
@@ -174,12 +171,9 @@ The following table shows the result for P || Q when P and Q are both expression
    
    .. code-block:: java 
 
-     if (x > 0 && (y / x) == 3) 
-     {
+     if (x > 0 && (y / x) == 3) {
         System.out.println("first case");
-     }
-     else
-     {
+     } else {
         System.out.println("second case");
      }
      
@@ -195,12 +189,9 @@ The following table shows the result for P || Q when P and Q are both expression
    
    .. code-block:: java 
 
-     if (x > 0 || (y / x) == 3) 
-     {
+     if (x > 0 || (y / x) == 3) {
         System.out.println("first case");
-     }
-     else
-     {
+     } else {
         System.out.println("second case");
      }
      
@@ -233,12 +224,9 @@ Both ``&&`` and ``||`` use **short circuit evaluation**.  That means that the se
    
    .. code-block:: java
 
-     if (x > 0 && (y / x) == 3) 
-     {
+     if (x > 0 && (y / x) == 3) {
         System.out.println("first case");
-     }
-     else
-     {
+     } else {
         System.out.println("second case");
      }
      
@@ -256,12 +244,9 @@ Both ``&&`` and ``||`` use **short circuit evaluation**.  That means that the se
    
    .. code-block:: java 
 
-     if (x == 0 || (y / x) == 3)
-     {
+     if (x == 0 || (y / x) == 3) {
         System.out.println("first case");
-     }
-     else
-     {
+     } else {
         System.out.println("second case");
      }
 
@@ -279,12 +264,9 @@ Both ``&&`` and ``||`` use **short circuit evaluation**.  That means that the se
    
    .. code-block:: java 
 
-     if ((y / x) == 3 || x == 0 )
-     {
+     if ((y / x) == 3 || x == 0 ) {
         System.out.println("first case");
-     }
-     else
-     {
+     } else {
         System.out.println("second case");
      }
      
@@ -306,22 +288,7 @@ Both ``&&`` and ``||`` use **short circuit evaluation**.  That means that the se
      if (x >= 0 && message.substring(x).equals("help")) System.out.println("first case");
      else System.out.println("second case");
      
-.. .. mchoice:: q3_5_10
-   :practice: T
-   :answer_a: first case
-   :answer_b: second case
-   :answer_c: You will get a error because you can't divide by zero.  
-   :correct: c
-   :feedback_a: The first part of the complex conditional is executed first and will cause a divide by zero error. Complex conditionals are executed from left to right as needed.  
-   :feedback_b: Since x is equal to zero the evaluation of the first part of the complex conditional will cause a divide by zero error.
-   :feedback_c: Since x is equal to zero the evaluation of the first part of the complex conditional will cause a divide by zero error.  You should switch the order of the conditionals to prevent the error because then the first condition would be false and the evaluation would short circuit and not evaluate the second condition. 
 
-   What is printed when the following code executes and x has been set to zero and y is set to 3?  
-   
-   .. code-block:: java 
-
-     if ((y / x) == 3 || x = 0) System.out.println("first case");
-     else System.out.println("second case");
 
    
 Summary

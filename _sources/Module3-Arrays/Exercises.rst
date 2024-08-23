@@ -70,12 +70,10 @@ Easier Multiple Choice Questions
    
    .. code-block:: java
    
-      public static void main(String[] args)
-      {
+      public static void main(String[] args) {
          int[] arr = {10, 30, 30, 60};
       	double output = 0;
-         for (int i = 0; i < arr.length; i++)
-         {
+         for (int i = 0; i < arr.length; i++) {
             output = output + arr[i];
          }
          output = output / arr.length;
@@ -97,11 +95,9 @@ Easier Multiple Choice Questions
    
    .. code-block:: java 
    
-      public static void main(String[] args)
-      {
+      public static void main(String[] args) {
          int[] a = {-10, -5, 1, 4, 8, 30};
-         for (int i = a.length / 2; i < a.length; i++)
-         {
+         for (int i = a.length / 2; i < a.length; i++) {
             a[i] = a[i] * 2;
          }
       }
@@ -122,13 +118,11 @@ Easier Multiple Choice Questions
    
    .. code-block:: java 
      
-     public static void main(String[] args)
-     {
+     public static void main(String[] args) {
         int[ ] a = {1, 3, -5, -2};
         int i = 0;
         int amt = 3;
-        while (i < a.length)
-        {
+        while (i < a.length) {
            a[i] = a[i] * amt;
            i++;
         } // end while
@@ -150,13 +144,11 @@ Easier Multiple Choice Questions
    
    .. code-block:: java 
      
-     public static void main(String[] args)
-     {
+     public static void main(String[] args) {
         int[ ] a = {1, 3, -5, -2};
         int i = 0;
         int amt = 2;
-        while (i < a.length)
-        {
+        while (i < a.length) {
            a[i] = a[i] * amt;
         } // end while
      } // end method  
@@ -277,10 +269,8 @@ Medium Multiple Choice Questions
 
    .. code-block:: java
      
-      for (int i = 1; i < k; i++) 
-      {
-         if (arr[i] < someValue) 
-         {
+      for (int i = 1; i < k; i++) {
+         if (arr[i] < someValue) {
            System.out.print("HELLO")
          }
       }
@@ -303,10 +293,8 @@ Medium Multiple Choice Questions
    
    .. code-block:: java 
 
-      for ( int k = 0; k < a.length; k++ )
-      {
-         while ( a[ k ] < temp )
-         {
+      for ( int k = 0; k < a.length; k++ ) {
+         while ( a[ k ] < temp ) {
             a[ k ] *= 2;
          }
       }
@@ -334,8 +322,7 @@ Medium Multiple Choice Questions
 
       int sum = 0;
       int col = matrix[0].length - 2;
-      for (int row = 0; row < 4; row++)
-      {
+      for (int row = 0; row < 4; row++) {
          sum = sum + matrix[row][col];
       }
             
@@ -360,12 +347,15 @@ Medium Multiple Choice Questions
       int [][] mat = new int [4][3];
       for (int row = 0; row < mat.length; row++) { 
          for (int col = 0; col < mat[0].length; col++) { 
-            if (row < col) 
+            if (row < col) {
                mat[row][col] = 1;
-            else if (row == col)    
+            } else if (row == col) {    
                mat[row][col] = 2; 
-            else 
-               mat[row][col] = 3; } } 
+            } else { 
+               mat[row][col] = 3; 
+		    } 
+		 }
+      }		 
                
 .. mchoice:: q9_6_6
    :practice: T
@@ -418,12 +408,10 @@ Hard Multiple Choice Questions
       int value = 0;
       for (int row = 1; row < arr.length; row++) {
          for (int col = 1; col < arr[0].length; col++) {
-            if (arr[row][col] % 2 == 1) 
-            {
+            if (arr[row][col] % 2 == 1) {
                 arr[row][col] = arr[row][col] + 1;
             }
-            if (arr[row][col] % 2 == 0) 
-            {
+            if (arr[row][col] % 2 == 0) {
                 arr[row][col] = arr[row][col] * 2;
             }
          }

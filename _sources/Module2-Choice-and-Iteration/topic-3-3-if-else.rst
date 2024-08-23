@@ -32,13 +32,11 @@ What if you want to pick between two possibilities?  If you are trying to decide
 .. code-block:: java
 
     // A block if/else statement    
-    if (boolean expression)  
-    {
+    if (boolean expression) {
        statement1;
        statement2;
     }
-    else 
-    {
+    else {
        do other statement;
        and another one;
     }
@@ -83,23 +81,18 @@ Notice the second condition is simply the negation of the first condition. Rewri
    
    The following program should print out "x is even" if the remainder of x divided by 2 is 0 and "x is odd" otherwise, but the code is mixed up.   Drag the blocks from the left and place them in the correct order on the right.  Click on <i>Check Me</i> to see if you are right. 
    -----
-   public class EvenOrOdd
-   {
+   public class EvenOrOdd {
    =====
-      public static void main(String[] args)
-      {
+      public static void main(String[] args) {
       =====
         int x = 92;
         =====
-        if (x % 2 == 0) 
-        =====
-        {
+        if (x % 2 == 0) {
+        ====
             System.out.println("x is even");
-        }
-            =====    
-        else
+        =====    
+        } else {
         =====
-        {
             System.out.println("x is odd");
         }
             =====
@@ -143,10 +136,10 @@ You can use curly brackets { } to enclose a nested if and have the else clause b
 .. code-block:: java
 
     // Nested if with dangling else
-    if (boolean expression) 
-    {
-       if (boolean expression)
+    if (boolean expression) {
+       if (boolean expression) {
            statement1;
+	   }
     }
     else  // belongs to first if
        statement2;
@@ -161,8 +154,7 @@ Summary
 
     if (boolean expression) {
         Do statement;
-    }
-    else {
+    } else {
         Do other statement;
     }
 

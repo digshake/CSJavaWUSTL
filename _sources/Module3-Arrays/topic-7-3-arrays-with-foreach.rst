@@ -35,8 +35,7 @@ in the array, and read it as "for each variable value in arrayname".
 
  .. code-block:: java
 
-    for (type item: array)
-    {
+    for (type item: array) {
          //statements using item;
     }
 
@@ -49,15 +48,13 @@ See the examples below in Java that loop through an int and a String array. Noti
   String[] names = {"Jamal", "Emily", "Destiny", "Mateo"};
   // for each loop: for each value in highScores
   // for (type variable : arrayname)
-  for (int value : highScores)
-  {
+  for (int value : highScores) {
       // Notice no index or [ ], just the variable value!
       System.out.println( value );
   }
   // for each loop with a String array to print each name
   // the type for variable name is String!
-  for (String name : names)
-  {
+  for (String name : names) {
       System.out.println(name); 
   }
 
@@ -130,12 +127,10 @@ What if we had a loop that incremented all the elements in the array. Would that
    .. code-block:: java
    
       int[ ] numbers = {44, 33, 22, 11};
-      for (int num : numbers)
-      {
+      for (int num : numbers) {
           num *= 2;
       }
-      for (int num : numbers)
-      {
+      for (int num : numbers) {
           System.out.print(num + " ");
       }
       
