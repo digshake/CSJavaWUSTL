@@ -47,7 +47,7 @@ Using if/else statements, you can even pick between 3 or more possibilites. Just
 |CodingEx| **Coding Exercise**
 
    
-   Run the ``TestElseIf`` program and try changing the value of x to get each of the three possible lines in the conditional to print.
+   Run the ``E01TestElseIf`` program and try changing the value of x to get each of the three possible lines in the conditional to print.
    
    
 Here is a flowchart for a conditional with 3 options like in the code above. 
@@ -157,11 +157,11 @@ Here is a flowchart for a conditional with 3 options like in the code above.
 |CodingEx| **Coding Exercise**
 
 
-   The else-if connection is necessary if you want to hook up conditionals together. In the ``IfDebug`` program, there are 4 separate if statements instead of the if-else-if pattern. Will this code print out the correct grade? First, trace through the code to see why it prints out the incorrect grade, using the debugger. Then, fix the code by adding in 3 else's to connect the if statements and see if it works.
+   The else-if connection is necessary if you want to hook up conditionals together. In the ``E02IfDebug`` program, there are 4 separate if statements instead of the if-else-if pattern. Will this code print out the correct grade? First, trace through the code to see why it prints out the incorrect grade, using the debugger. Then, fix the code by adding in 3 else's to connect the if statements and see if it works.
   
 
      
-  Finish the ``BatteryTest`` program so that it prints "Plug in your phone!" if the battery is below 50, "Unplug your phone!" if it is above 100, and "All okay!" otherwise. Change the battery value to test all 3 conditions.
+  Finish the ``E03BatteryTest`` program so that it prints "Plug in your phone!" if the battery is below 50, "Unplug your phone!" if it is above 100, and "All okay!" otherwise. Change the battery value to test all 3 conditions.
  
    
 Summary

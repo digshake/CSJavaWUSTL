@@ -51,7 +51,7 @@ Your project should now be open in Eclipse. You should have a pane called the `P
 Working With Code
 -----------------
 
-Now that you understand how to use Eclipse to modify and run the program, spend some time making the robot draw a picture of a flower or a tree (maybe a leaf?).
+Now that you understand how to use Eclipse to modify and run the program, spend some time making the robot draw a picture of a flower or a tree (maybe a leaf?). Be creative!
 
 2. Commit and push your work
 ================

@@ -108,7 +108,7 @@ To actually create an array after declaring the variable, use the **new** keywor
 |CodingEx| **Coding Exercise**
 
    
-   In the ``Array1`` program, add another array declaration that creates an array of 5 doubles called prices and another array of 5 Strings called names and corresponding System.out.println commands.
+   In the ``E01EmptyArrayDeclaration`` program, add another array declaration that creates an array of 5 doubles called prices and another array of 5 Strings called names. Update the corresponding System.out.println commands.
    
 
 ..	index::
@@ -164,7 +164,7 @@ Arrays know their length (how many elements they can store).  It is a public rea
 
 
    
-   Try running the ``Array2`` program to see the length. Try adding another value to the highScores initializer list and run again to see the length value change.
+   Try running the ``E02InitializerList`` program to see the length. Try adding another value to the highScores initializer list and run again to see the length value change.
    
 
 
@@ -266,68 +266,15 @@ An indexed variable like **arrayname[index]** can be used anywhere a regular var
 
 ..  **Coding Exercise**
 
-Try out the ``Array3`` program which has an int array of highScores and names. Can you print out 3rd score in the array (remember that the first score is at index 0)? Can you change last score to 97 using an assignment statement in the code? Can you change the array so that it has 6 elements and add another score and print it out? What happens if you try to access an element that is not there, for example at index 7?
+Try out the ``E03ArrayAccess`` program which has an int array of highScores and names. Can you print out 3rd score in the array (remember that the first score is at index 0)? Can you change last score to 97 using an assignment statement in the code? Can you change the array so that it has 6 elements and add another score and print it out? What happens if you try to access an element that is not there, for example at index 7?
 
 
 If you want to keep track of the top 5 highest scores in a game and the names of the people with those scores, you could use two **parallel arrays**.  One array could keep track of the scores and the other the names. You have to make sure you keep them in the same order so that the same index can be used to get correponding names and scores. 
 
 |CodingEx| **Coding Exercise**
    
-   Try out the ``Array4`` program which has two parallel arrays, highScores and names. Can you print out Mateo's score? Can you change Sofia's score to 97 using an assignment statement in the code? Can you change the arrays so that they have 6 elements and add your name and score and print them out? 
-   ~~~~
-   public class Test1
-   {
-      public static void main(String[] args)
-      {
-        // declare, create, initialize arrays
-        int[ ] highScores = {99,98,98,88,68};
-        String[ ] names = {"Jamal", "Emily", "Destiny", "Mateo", "Sofia"}; 
-        
-        // Print corresponding names and scores
-        System.out.println(names[0] + " has a score of " + highScores[0]);
-        System.out.println(names[1] + " has a score of " + highScores[1]);
-      }
-   }
-   ====
-   // Test for Lesson 6.1.2 - While Loop FindAndReplace lclw1
-
-    import static org.junit.Assert.*;
-    import org.junit.*;;
-    import java.io.*;
-
-    public class RunestoneTests extends CodeTestHelper
-    {
-        public RunestoneTests() {
-            super("Test1");
-        }
-
-        @Test
-        public void test1() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Jamal has a score of 99\nEmily has a score of 98";
-
-            boolean passed = !output.equals(expect);
-
-            passed = getResults(expect, output, "Did you change the main?", passed);
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test2() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "Mateo has a score of 88";
-
-            boolean passed = output.contains("Mateo");
-
-            passed = getResults(expect, output, "Did you print out Mateo?", passed);
-            assertTrue(passed);
-        }
-    }
+Try out the ``E04ParallelArrays`` program which has two parallel arrays, highScores and names. Can you print out Mateo's score? Can you change Sofia's score to 97 using an assignment statement in the code? Can you change the arrays so that they have 6 elements and add your name and score and print them out? 
    
-What happens if you try to access an element that is not there? Try to access a highScore or name at index 7 above to see what happens. The index must be between 0 and the length of the array - 1 or it will give an error message called ArrayIndexOutOfBoundsException. 
-
 .. note::
 
     Using an index value outside of 0 - (length-1) will result in an ArrayIndexOutOfBoundsException being thrown.  

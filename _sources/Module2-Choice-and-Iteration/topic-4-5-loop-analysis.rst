@@ -33,17 +33,12 @@ In this lesson, you will practice tracing through code with loops and analyzing 
 Tracing Loops
 ----------------------------
 
-
-    
-.. |Java visualizer| raw:: html
-
-   <a href="https://goo.gl/qEHnpg" target="_blank"  style="text-decoration:underline">Java visualizer</a>
    
 Let's practice tracing through loops with many variables. Remember to make a tracing table to keep track of all the variables, the iterations, and the output.
 
 |CodingEx| **Coding Exercise**
 
-The ``Trace`` program contains a complex loop.  See if you can trace the code on paper by making a tracing table to predict what the code will do when you run it. 
+The ``E01Trace`` program contains a complex loop.  See if you can trace the code on paper by making a tracing table to predict what the code will do when you run it. 
 
    
 Can you trace through this code? Add in output statements ``System.out.println("var1: " + var1 + " var2: " + var2);`` before the loop and inside the loop at the end to keep track of the variables and run.
@@ -126,7 +121,7 @@ Loops can be also analyzed to determine how many times they run.  This is called
 |CodingEx| **Coding Exercise**
 
    
-   How many stars are printed out in the ``CountLoop`` program? How many times does the loop run? Figure it out on paper before you run the code.
+   How many stars are printed out in the ``02CountLoop`` program? How many times does the loop run? Figure it out on paper before you run the code.
   
 
 If you made a trace table, you would know that the loop runs when i = 3, 4, 5, 6 but finishes as soon as i becomes 7 since that is not less than 7. So, the loop runs 4 times. Or you can use the shortcut formula in the note below.
@@ -143,7 +138,7 @@ In the code above the largest value that allows the loop to run is 6 (which is t
 |CodingEx| **Coding Exercise**
 
    
-   How many stars are printed out by the ``NestedLoops`` program? How many times do the loops run? Calculate on paper before you run the code.
+   How many stars are printed out by the ``E03NestedLoops`` program? How many times do the loops run? Calculate on paper before you run the code.
   
    
 .. note::

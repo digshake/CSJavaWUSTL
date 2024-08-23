@@ -106,22 +106,13 @@ It is recommended to always put in the curly braces even if you have just one st
     
 Imagine that your cell phone wanted to remind you to take an umbrella if it was currently raining in your area when it detected that you were leaving the house.  This type of thing is going to become more common in the future and it is an area of research called Human Computer Interaction (HCI) or Ubiquitous Computing (computers are everywhere).  
 
-Examine the code in the ``TestRaining`` program. Play with the ``isRaining`` variable and make sure you understand what is happening.
-
-|Exercise| **Check your understanding**
-
-.. fillintheblank:: q3_2_0
-
-   Change the code above to ``boolean isRaining = false;``. What does it print?
-
-   -    :^Drive carefully$: Correct.  If the boolean is false, it will skip executing the print statement after the if.
-        :.*: Try it and see
-        
+Examine the code in the ``E01TestRaining`` program. Play with the ``isRaining`` variable and make sure you understand what is happening.
+  
 You can test for a false value using the ``!`` operator, which is read as "not".  We will see a better way to test for both
 true and false in the next lesson.  However, the code below shows how to print different messages based on whether a value is true or false.
 
    
-   The ``TestMidterm`` program reads in a boolean value from standard input and tests whether the value is true ``if (passedExam)`` or false ``if (!passedExam)``.  
+   The ``E02TestMidterm`` program reads in a boolean value from standard input and tests whether the value is true ``if (passedExam)`` or false ``if (!passedExam)``.  
    Use the debugger to step through the program.   Change the value in the standard input window to test the program with each possible boolean value.
    
 
@@ -164,7 +155,7 @@ Most if statements have a boolean condition that uses relational operators like 
 
 |CodingEx| **Coding Exercise**
    
-   Run the ``TestNumbers`` program a couple times until you see all the possible outputs. It prints out whether a random number is positive or equal to 0. Add another if statement that tests if it is a negative number.
+   Run the ``E03TestNumbers`` program a couple times until you see all the possible outputs. It prints out whether a random number is positive or equal to 0. Add another if statement that tests if it is a negative number.
    
 .. note::
 
@@ -212,7 +203,7 @@ Conditional Control Flow
 Recall the program to compute the number of pizza slices per person from Module 1.  
  
 
-   Run the ``PizzaCalculatorInput`` program to confirm that it fails when a value of 0 is entered for numPeople (second input value). 
+   Run the ``E04PizzaCalculatorInput`` program to confirm that it fails when a value of 0 is entered for numPeople (second input value). 
  
 
 To avoid division by 0, the calculation for ``slicesPerPerson`` and ``leftoverSlices`` should be skipped when the number of people is 0.  
@@ -234,7 +225,7 @@ The 4 statements along the ``true`` branch must be nested within curly braces in
 If the condition ``numPeople > 0`` is false, the **false** branch is followed and the 4 statements for calculating and printing are skipped.
 
    
-   Update the ``PizzaCalculatorInput`` program based on the conditional control flow shown in Figure 2.  Add an if statement to test the value stored in numPeople.
+   Update the ``E04PizzaCalculatorInput`` program based on the conditional control flow shown in Figure 2.  Add an if statement to test the value stored in numPeople.
    Don't forget curly braces around the 4 lines for computing and printing slicesPerPerson and leftoverSlices.
 
    Run the program multiple times with negative, 0, and positive values for number of people.  The program should no longer result in a divide by zero exception.  
@@ -255,7 +246,7 @@ Here are some rules to follow to avoid common errors:
 |CodingEx| **Coding Exercise**
 
 
-   The ``TestCold`` program doesn't work as expected. It has 2 errors. 
+   The ``E05TestCold`` program doesn't work as expected. It has 2 errors. 
    Run the program with input true, then change the input to false and run again.
    Even when the input is false, the program still prints both messages.
    Fix it to only print both "Wear a coat" and "Wear gloves" when isCold is true.
@@ -269,9 +260,6 @@ Summary
 
 .. code-block:: java
 
-    // A single if statement
-    if (boolean expression)
-        Do statement;
     // A block if statement    
     if (boolean expression)
     {

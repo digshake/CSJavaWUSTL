@@ -96,7 +96,7 @@ Since you can find out the number of rows and columns in a 2D array you can use 
 
 
    
-   What does the ``Test1`` program do? Add another row of numbers to the matrix. Will the loops traverse this row too?
+   What does the ``E012DArrayTraversal`` program do? Add another row of numbers to the matrix. Will the loops traverse this row too?
    
    
 Some key things to notice about this code are:
@@ -139,27 +139,20 @@ Some key things to notice about this code are:
    =====
    } // end method
    
-You can step through this code using the Java Visualizer by clicking on the following |Java Visualizer|.
-
-.. |Java Visualizer| raw:: html
-
-   <a href= "http://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+Test+%7B%0A+++%0A+++public+static+int+getLargest(int%5B%5D%5B%5D+arr)++%7B%0A++++int+largest+%3D+arr%5B0%5D%5B0%5D%3B%0A++++for+(int+row+%3D+0%3B+row+%3C+arr.length%3B+row%2B%2B)++%7B%0A++++++for+(int+col+%3D+0%3B+col+%3C+arr%5B0%5D.length%3B+col%2B%2B)++%7B%0A++++++++if+(arr%5Brow%5D%5Bcol%5D+%3E+largest)++%7B%0A++++++++++largest+%3D+arr%5Brow%5D%5Bcol%5D%3B%0A++++++++%7D+//+end+if%0A++++++%7D+//+end+column+loop%0A++++%7D+//+end+row+loop%0A++++return+largest%3B%0A+++%7D+//+end+method%0A+++%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A++++++int%5B%5D%5B%5D+testArray+%3D+%7B%7B-32,+-6,+-3%7D,+%7B-392,+-93,+-2%7D%7D%3B%0A++++++System.out.println(getLargest(testArray))%3B%0A+++%7D%0A%7D&mode=display&curInstr=40" style="text-decoration:underline" target="_blank" >Java Visualizer</a>
-
-
 Most nested loops with 2D Arrays use "row-major order" where the outer loop goes through each row. However, you can write nested loops that traverse in "column-major order" like below.
 
    
 |CodingEx| **Coding Exercise**
 
    
-   What will the ``ColumnMajorTraversal`` program print out? Try to guess before you run it. Then, step through it with the debugger.
+   What will the ``E02ColumnMajorTraversal`` program print out? Try to guess before you run it. Then, step through it with the debugger.
   
          
 
 Enhanced For-Each Loop for 2D Arrays
 ----------------------------------------------------
    
-   The ``Average`` program is a nested enhanced for loops demo. Use the debugger to step through the code.
+   The ``E03Average`` program is a nested enhanced for loops demo. Use the debugger to step through the code.
 
   
 In this case the ``for (int[] colArray : a)`` means to loop through each element of the outer array which will set colArray to the current column array.  Then you can loop through the value in the column array.

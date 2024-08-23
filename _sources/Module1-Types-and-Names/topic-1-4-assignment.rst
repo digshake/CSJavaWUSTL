@@ -73,14 +73,14 @@ This won’t change the value of the variable that you are copying from.
 
 |CodingEx| **Coding Exercise:** 
 
-Run the code in the ``VariableAssignment`` class and see how the values of the variables change.
+Run the code in the ``E01VariableAssignment`` class and see how the values of the variables change.
    
-   The ``CalculateMoney`` program is supposed to figure out the total money value given the number of dimes, quarters and nickels.
+   The ``E02CalculateMoney`` program is supposed to figure out the total money value given the number of dimes, quarters and nickels.
    There is an error in the calculation of the total.  Fix the error to compute the correct amount.
 
   
    
-   The ``SalaryExample`` program is supposed to calculate and print the total pay given the weekly salary and the number of weeks worked.  
+   The ``E03SalaryExample`` program is supposed to calculate and print the total pay given the weekly salary and the number of weeks worked.  
    Use
    string concatenation with the totalPay variable to produce the output ``Total Pay = $3000``.
    Don't hardcode the number 3000 in your print statement.
@@ -190,7 +190,7 @@ Java uses the operator ``==`` to test if the value on the left is equal to the v
 
 |CodingEx| **Coding Exercise:** 
     
-Run the code in ``OperatorExample`` to see all the operators in action. Do all of those operators do what you expected?  What about ``2 / 3``? Isn't surprising that it prints ``0``?  See the note below.
+Run the code in ``E05OperatorExample`` to see all the operators in action. Do all of those operators do what you expected?  What about ``2 / 3``? Isn't surprising that it prints ``0``?  See the note below.
 
 .. note::
 
@@ -203,7 +203,7 @@ Operators can be used to create compound expressions with more than one operator
 
 |CodingEx| **Coding Exercise:** 
 
-Open the ``TestCompound.java`` file, try to guess what it will print out and then run it to see if you are right. Remember to consider **operator precedence**.
+Open the ``E06TestCompound.java`` file, try to guess what it will print out and then run it to see if you are right. Remember to consider **operator precedence**.
 
 |Exercise| **Check Your Understanding**
 
@@ -316,7 +316,7 @@ The percent sign operator (``%``) is the **mod (modulo)** or **remainder** opera
 
     
    
-   In ``ModExample`` program, try to guess what it will print out and then run it to see if you are right.
+   In ``E07ModExample`` program, try to guess what it will print out and then run it to see if you are right.
    
 
 
@@ -386,7 +386,7 @@ The process relies on integer division to determine slices per person, and the m
  
  
    
-   Complete the program ``PizzaCalculator`` based on the process shown in the Figure 3 flowchart.  Note the first line of code declares all 4 variables as type int.
+   Complete the program ``E08PizzaCalculator`` based on the process shown in the Figure 3 flowchart.  Note the first line of code declares all 4 variables as type int.
    Add assignment statements and print statements to compute and print the slices per person and leftover slices.    Use System.out.println for output.
 
 Storing User Input in Variables
@@ -417,7 +417,7 @@ gets the string value you enter as program input and then stores the value in a 
 |CodingEx| **Coding Exercise:** 
 
 
-Run the ``NameReader`` program a few times, typing in a different name. The code works for any name: 
+Run the ``E09NameReader`` program a few times, typing in a different name. The code works for any name: 
 behold, the power of variables!
 
 
@@ -448,7 +448,7 @@ The Scanner class has several useful methods for reading user input.  A token is
 |CodingEx| **Coding Exercise:** 
 
    
-   Run the ``AgeReader`` program to read in an integer from the input stream. 
+   Run the ``E10AgeReader`` program to read in an integer from the input stream. 
    You can type a different integer value in the input window shown below the code.
 
 
@@ -470,7 +470,7 @@ The first two steps have been altered to initialize the pizzaSlices and numPeopl
 In Java this will be done using a Scanner object and reading from System.in.
 
    
-   Complete the ``PizzaCalculatorInput`` program based on the process shown in the Figure 5 flowchart.  
+   Complete the ``E11PizzaCalculatorInput`` program based on the process shown in the Figure 5 flowchart.  
    The program should scan two integer values to initialize pizzaSlices and numPeople.  Run the program a few times to experiment with different values for input.
    What happens if you enter 0 for the number of people?  The program will bomb due to division by zero! We will see how to prevent this in a later lesson.  
   
@@ -478,7 +478,7 @@ In Java this will be done using a Scanner object and reading from System.in.
 
 |CodingEx| **Coding Exercise:** 
 
-The ``SumInput`` program reads two integer values from the input stream and attempts to print the sum.  Unfortunately there is a problem
+The ``E12SumInput`` program reads two integer values from the input stream and attempts to print the sum.  Unfortunately there is a problem
 with the last line of code that prints the sum.  
   
    Run the program and look at the result. When the input is ``5`` and ``7``, the output is ``Sum is 57``. 
@@ -489,16 +489,6 @@ with the last line of code that prints the sum.
    
 
 More information on using the Scanner class can be found here https://www.w3schools.com/java/java_user_input.asp 
-
-Programming Challenge : Dog Years
-------------------------------------------------
-    
-In this programming challenge, you will calculate your age, and your pet's age 
-from your birthdates, and your pet's age in dog years.   In the `DogAgeChallenge`` program, type 
-in the current year, the year you were born, the year your dog or cat was born 
-(if you don't have one, make one up!) in the variables below. Then write formulas in 
-assignment statements to calculate how old you are, how old your dog or cat is, and 
-how old they are in dog years which is 7 times a human year.  Finally, print it all out. 
 
 
 Summary

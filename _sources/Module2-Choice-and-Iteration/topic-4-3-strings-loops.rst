@@ -58,16 +58,6 @@ The String methods (previously covered in unit 2.7) that are most often used to 
 
 - **String substring(int from)** : returns substring(from, length()).
 
-
-.. |Java visualizer1| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20RemoveAs%20%7B%0A%20%20%20%0A%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%7B%0A%0A%20%20%20%20%20%20String%20s%20%3D%20%22are%20apples%20tasty%20without%20a's%3F%22%3B%20%0A%20%20%20%20%20%20int%20index%20%3D%200%3B%0A%20%20%20%20%20%20System.out.println%28%22Original%20string%3A%20%22%20%2B%20s%29%3B%0A%0A%20%20%20%20%20%20//%20while%20there%20is%20an%20a%20in%20s%0A%20%20%20%20%20%20while%20%28s.indexOf%28%22a%22%29%20%3E%3D%200%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%0A%20%20%20%20%20%20%20%20%20//%20Find%20the%20next%20index%20for%20an%20a%0A%20%20%20%20%20%20%20%20%20index%20%3D%20s.indexOf%28%22a%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20//%20Remove%20the%20a%20at%20index%20by%20concatenating%20%0A%20%20%20%20%20%20%20%20%20//%20substring%20up%20to%20index%20and%20then%20rest%20of%20the%20string.%0A%20%20%20%20%20%20%20%20%20s%20%3D%20s.substring%280,index%29%20%2B%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20s.substring%28index%2B1%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%7D%20//%20end%20loop%20%0A%20%20%0A%20%20%20%20%20%20System.out.println%28%22String%20with%20a's%20removed%3A%22%20%2B%20s%29%3B%0A%20%20%20%0A%20%20%20%7D%20//%20end%20method%0A%7D&cumulative=false&curInstr=23&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank"  style="text-decoration:underline">Java visualizer</a>
-
-
-.. |Java visualizer| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20Test%0A%20%20%20%7B%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20String%20message%20%3D%20%22Have%20a%201ong%20and%20happy%201ife%22%3B%20%0A%20%20%20%20%20%20%20%20int%20index%20%3D%200%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20//%20while%20more%201s%20in%20the%20message%0A%20%20%20%20%20%20%20%20while%20%28message.indexOf%28%221%22%29%20%3E%3D%200%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20//%20Find%20the%20next%20index%20for%201%0A%20%20%20%20%20%20%20%20%20%20%20index%20%3D%20message.indexOf%28%221%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%22Found%20a%201%20at%20index%3A%20%22%20%2B%20index%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20//%20Replace%20the%201%20with%20a%20l%20at%20index%20by%20concatenating%20substring%20up%20to%20index%20and%20then%20the%20rest%20of%20the%20string.%0A%20%20%20%20%20%20%20%20%20%20%20String%20firstpart%20%3D%20message.substring%280,index%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20String%20lastpart%20%3D%20message.substring%28index%2B1%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20message%20%3D%20firstpart%20%2B%20%22l%22%20%2B%20lastpart%3B%0A%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%22Replaced%201%20with%20l%20at%20index%20%22%20%2B%20index%29%3B%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20System.out.println%28%22Cleaned%20text%3A%20%22%20%2B%20message%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%7D&cumulative=false&curInstr=21&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0" target="_blank"  style="text-decoration:underline">Java visualizer</a>
-
 While Find and Replace Loop
 ---------------------------
 
@@ -87,7 +77,7 @@ A while loop can be used with the String indexOf method to find certain characte
      ...
    }
 
-The example in the mixed up code below finds and removes all the letter a's in a string. You can watch it in action in this |Java visualizer1|.
+The example in the mixed up code below finds and removes all the letter a's in a string.
 
 |Exercise| **Check Your Understanding**
   
@@ -126,14 +116,14 @@ The example in the mixed up code below finds and removes all the letter a's in a
    } // end method
    
    
-Google has been scanning old books and then using software to read the scanned text.  But, the software can get things mixed up like using the number 1 for the letter l. Try the code below (and in the |Java visualizer|) to clean up scanning mistakes like this.
+Google has been scanning old books and then using software to read the scanned text.  But, the software can get things mixed up like using the number 1 for the letter l. Try the code below to clean up scanning mistakes like this.
 
 |CodingEx| **Coding Exercise**
 
-The ``FindAndReplace`` program  loops through a string replacing all 1's with l's.  Trace through the code below with a partner and explain how it works on the given message.  You can run it line by line in the |Java visualizer|. Note that indexOf here can work repeatedly to find the next occurrence of a 1 because they are replaced as soon as they are found. 
+The ``FindAndReplace`` program  loops through a string replacing all 1's with l's.  Trace through the code below with a partner and explain how it works on the given message. Note that indexOf here can work repeatedly to find the next occurrence of a 1 because they are replaced as soon as they are found. 
 
    
-   Change the ``FindAndReplace`` program to add code for a counter variable to count the number of 1's replaced in the message and print it out. Change the message to have more mistakes with 1's to test it.
+   Change the ``E01FindAndReplace`` program to add code for a counter variable to count the number of 1's replaced in the message and print it out. Change the message to have more mistakes with 1's to test it.
    
 For Loops: Reverse String
 --------------------------
@@ -189,17 +179,12 @@ For loops with strings usually start at 0 and use the string's length() for the 
    }
     
     
-The ``ReverseString`` program has a for-loop that creates a new string that reverses the string s.  We start with a blank string sReversed and build up our reversed string in that variable by copying in characters from the string s.
+The ``E02ReverseString`` program has a for-loop that creates a new string that reverses the string s.  We start with a blank string sReversed and build up our reversed string in that variable by copying in characters from the string s.
 
-
-
-.. |Java visualizer link| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=%20%20%20public%20class%20ReverseString%0A%20%20%20%7B%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20String%20s%20%3D%20%22Hello%22%3B%0A%20%20%20%20%20%20%20%20String%20sReversed%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%20%20String%20ithLetter%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20for%28int%20i%3D0%3B%20i%20%3C%20s.length%28%29%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20ithLetter%20%3D%20s.substring%28i,i%2B1%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20add%20the%20letter%20at%20index%20i%20to%20what%20is%20already%20reversed.%0A%20%20%20%20%20%20%20%20%20%20%20%20sReversed%20%3D%20ithLetter%20%2B%20sReversed%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20System.out.println%28s%20%2B%20%22%20reversed%20is%20%22%20%2B%20sReversed%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D&cumulative=false&curInstr=25&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0" target="_blank">Java visualizer link</a>
-   
+ 
 |CodingEx| **Coding Exercise**
    
-   Open the ``ReverseString`` program. What would happen if you started the loop at 1 instead? What would happen if you used <= instead of <? What would happen if you changed the order in which you added the ithLetter in line 12?
+   Open the ``E02ReverseString`` program. What would happen if you started the loop at 1 instead? What would happen if you used <= instead of <? What would happen if you changed the order in which you added the ithLetter in line 12?
    
 
 Summary
@@ -212,5 +197,3 @@ There are standard algorithms that utilize String traversals to:
 * Find if one or more substrings has a particular property
 * Determine the number of substrings that meet specific criteria
 * Create a new string with the characters reversed
-
-For more practice with string processing, see the Free Response Question in the Practice and Summary section of this unit.

@@ -41,7 +41,7 @@ that you might want to use in your programs like ``Math.abs`` (absolute value). 
 The ``Math.random()`` method returns a number greater than or equal to 0.0, and less than 1.0. 
 
 
-   Try out the ``Test3`` program.  Run it several times to see what it prints each time.
+   Try out the ``E01Random`` program.  Run it several times to see what it prints each time.
  
 
    
@@ -53,7 +53,7 @@ You can use ``Math.random`` and a cast to integer to return a random integer bet
 
   
 
-   Run the ``Test4`` program several times to see how the value changes each time. The program returns a random integer between 0 and 9, inclusive. 
+   Run the ``E02RandomRange`` program several times to see how the value changes each time. The program returns a random integer between 0 and 9, inclusive. 
    How could you change the code to return a random integer from 1 to 10, inclusive?  Modify the code and see if your answer is correct. 
   
   

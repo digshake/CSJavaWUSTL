@@ -66,11 +66,11 @@ You can compare a ``while`` loop to a ``for`` loop to understand that a ``for`` 
     
 |CodingEx| **Coding Exercise**
    
-   The ``ForLoop`` program contains a for loop that counts from 1 to 5. Can you change it to count from 2 to 10? 
+   The ``E01ForLoop`` program contains a for loop that counts from 1 to 5. Can you change it to count from 2 to 10? 
   
 
    
-   The ``ForLoopFromWhile`` program contains a while loop that counts from 5 to 10. Run it and see what it does. Can you change it to a for-loop? Run your for-loop. Does it do the same thing?
+   The ``E02ForLoopFromWhile`` program contains a while loop that counts from 5 to 10. Run it and see what it does. Can you change it to a for-loop? Run your for-loop. Does it do the same thing?
   
 
 .. note::
@@ -190,14 +190,14 @@ You can also count backwards in a loop starting from the last number and decreme
 |CodingEx| **Coding Exercise**
 
    
-   What do you think will happen when you run the ``SongTest`` program?  How would it change if you changed line 11 to initialize i's value to 3? Try using the debugger to trace through this code.
+   What do you think will happen when you run the ``E03SongTest`` program?  How would it change if you changed line 11 to initialize i's value to 3? Try using the debugger to trace through this code.
   
   
 The program prints the words to a song.  It initializes the value of the variable i equal to 5 and then checks if i is greater than 0.  Since 5 is greater than 0, the body of the loop executes.  Before the condition is checked again, i is decreased by 1.  When the value in i is equal to 0 the loop stops executing.  
 
 
    
-   Can you make the loop in ``ForLoop2`` count by 2s backwards? It should print out 5 3 1? 
+   Can you make the loop in ``E04ForLoopBackwards`` count by 2s backwards? It should print out 5 3 1? 
    Remember to change all 3 parts of the for loop.
   
    

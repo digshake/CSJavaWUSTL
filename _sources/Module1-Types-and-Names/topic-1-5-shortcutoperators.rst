@@ -72,7 +72,7 @@ The most common shortcut operator ``++``, the plus-plus or **increment** operato
 |CodingEx| **Coding Exercise**
 
   
-   Run the code in ``Test2`` to see what the ++ and shorcut operators do. 
+   Run the code in ``E01ShortcutOperators`` to see what the ++ and shorcut operators do. 
    Use the debugger to trace through the code and observe how the 
    variable values change. Try creating more compound assignment 
    statements with shortcut operators and guess what they would 
@@ -231,7 +231,7 @@ Prefix versus Postfix Operator
 ------------------------------
 
    
-   Open the ``PostfixExample`` program. What do you think is printed when the following code is executed?    
+   Open the ``E02PostfixExample`` program. What do you think is printed when the following code is executed?    
    Try to guess the output before running the code.  You might be surprised at the result.  
    Use the debugger to step through the  execution.  
    Notice that the second println prints the original value 7 even though the memory  

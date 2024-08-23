@@ -73,22 +73,18 @@ Use the enhanced for each loop with arrays whenever you can, because it cuts dow
 
 
    
-   Rewrite the for loop in the ``EvenLoop`` program which prints out the even numbers in the array as an enhanced for-each loop. Make sure it works!
+   Rewrite the for loop in the ``E02EvenLoop`` program which prints out the even numbers in the array as an enhanced for-each loop. Make sure it works!
  
 
 Foreach Loop Limitations
 --------------------------
 
-.. |visualizer| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=%20%20%20public%20class%20IncrementLoop%0A%20%20%20%7B%20%20%20%20%20%20%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20int%5B%20%5D%20values%20%3D%20%7B6,%202,%201,%207,%2012,%205%7D%3B%0A%20%20%20%20%20%20%20%20//%20Can%20this%20loop%20increment%20the%20values%3F%0A%20%20%20%20%20%20%20%20for%20%28int%20val%20%3A%20values%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20val%2B%2B%3B%0A%20%20%20%20%20%20%20%20%20%20System.out.println%28%22New%20val%3A%20%22%20%2B%20val%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20//%20Print%20out%20array%20to%20see%20if%20they%20really%20changed%0A%20%20%20%20%20%20%20%20for%20%28int%20v%20%3A%20values%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20System.out.print%28v%20%2B%20%22%20%22%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%7D%0A%20%20%20&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0" target="_blank"  style="text-decoration:underline">Java visualizer</a>	
-   
 What if we had a loop that incremented all the elements in the array. Would that work with an enhanced for-each loop? Unfortunately not! Because only the variable in the loop changes, not the real array values. We would need an indexed loop to modify array elements.  
 
 |CodingEx| **Coding Exercise**
 
 
-   The for-each loop in the ``IncrementLoop`` program cannot change the values in the array because only the loop variable value will change. Run it with the debugger to see why this is. Then, change the loop to an indexed for loop to make it change the array values.
+   The for-each loop in the ``E03IncrementLoop`` program cannot change the values in the array because only the loop variable value will change. Run it with the debugger to see why this is. Then, change the loop to an indexed for loop to make it change the array values.
   
    
 .. note::

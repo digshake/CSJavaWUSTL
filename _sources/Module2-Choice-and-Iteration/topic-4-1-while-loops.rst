@@ -90,7 +90,7 @@ The loop condition usually involves a **loop control variable** that controls wh
 |CodingEx| **Coding Exercise**
 
    
-   The ``LoopTest1`` program contains a while loop that counts from 1 to 5 that demonstrates the 3 steps of writing a loop. 
+   The ``E01LoopComponents`` program contains a while loop that counts from 1 to 5 that demonstrates the 3 steps of writing a loop. 
    Use the debugger to step through the execution.
    Can you change it to count from 2 to 10? 
    
@@ -149,12 +149,6 @@ Watch the following |video| for a tracing demo. When you are tracing through cod
     :width: 600
     :align: center
     
-    
-.. |visualizer| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20TraceLoop%20%7B%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20%20int%20count%20%3D%201%3B%0A%20%20%20%20%20%20while%20%28count%20%3C%3D%2010%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20count%20*%3D%202%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20count%20%3D%20count%20-%2010%3B%0A%20%20%20%20%7D%0A%7D&cumulative=false&curInstr=16&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">visualizer</a>    
-    
-    
 |Exercise| **Check your understanding**
 
 .. mchoice:: q4_1_2
@@ -179,8 +173,6 @@ Watch the following |video| for a tracing demo. When you are tracing through cod
          count *= 2;
      }
      count = count - 10;
-
-Step through the code above with the |visualizer|.
 
 .. mchoice:: q4_1_3
    :practice: T
@@ -231,7 +223,7 @@ Another common error with loops is an **off-by-one error** where the loop runs o
 
 
    
-   The while loop in ``LoopTest2`` should print out the numbers 1 to 8, but it has 2 errors that cause an infinite loop and an off-by-one error. Can you fix the errors? If you run an infinite loop, you may need to refresh the page to stop it (so make sure all active code windows on the page have been saved and click on Load History after refreshing).
+   The while loop in ``E02LoopErrors`` should print out the numbers 1 to 8, but it has 2 errors that cause an infinite loop and an off-by-one error. Can you fix the errors? If you run an infinite loop, you may need to refresh the page to stop it (so make sure all active code windows on the page have been saved and click on Load History after refreshing).
   
    
 Summary

@@ -36,15 +36,10 @@ A **nested loop** has one loop inside of another.  These are typically used for 
     :figclass: align-center
     
     Figure 1: Nested Loops
-    
-.. |Java visualizer| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20NestedLoops%0A%7B%0A%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%7B%0A%20%20%20%20%20%20%20for%20%28int%20row%20%3D%201%3B%20row%20%3C%3D%203%3B%20row%2B%2B%29%0A%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20for%20%28int%20col%20%3D%201%3B%20col%20%3C%3D%205%3B%20col%2B%2B%29%0A%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20System.out.print%28%22*%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%29%3B%0A%20%20%20%20%20%20%20%7D%0A%20%20%20%7D%0A%7D&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false&curInstr=0" target="_blank"  style="text-decoration:underline">Java visualizer</a>
-
 
 |CodingEx| **Coding Exercises**
 
-What does the ``NestedLoops`` program print out? Step through the code in the debugger. Notice how the inner loop is started over for each row. Can you predict how many rows and columns of stars there will be?
+What does the ``E01NestedLoops`` program print out? Step through the code in the debugger. Notice how the inner loop is started over for each row. Can you predict how many rows and columns of stars there will be?
 
    
    Can you change the code to be a 10x8 rectangle? Try replacing line 14 with this print statement to see the rows and columns: System.out.print(row + "-" + col + " ");  

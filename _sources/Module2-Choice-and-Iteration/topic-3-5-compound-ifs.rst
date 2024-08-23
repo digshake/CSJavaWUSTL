@@ -47,14 +47,14 @@ two Boolean expressions and the body of the condition will only be executed  if 
 |CodingEx| **Coding Exercise**
 
 
-   What if you want to go out and your parents say you can go out if you clean your room and do your homework?  Run the ``Test1`` program and try different values for ``cleanedRoom`` and ``didHomework`` and see what they have to be for it to print ``You can go out``.
+   What if you want to go out and your parents say you can go out if you clean your room and do your homework?  Run the ``E01Chores`` program and try different values for ``cleanedRoom`` and ``didHomework`` and see what they have to be for it to print ``You can go out``.
   
 What if it is okay if only one of two things is true? Use ``||`` as a logical **or** to join two Boolean expressions and the body of the condition will be executed if one or both are true.  
 
 |CodingEx| **Coding Exercise**
 
 
-   For example, your parents might say you can go out if you can walk or they don't need the car.  Open the ``Test2`` program. Try different values for ``walking`` and ``carIsAvailable`` and see what the values have to be to print ``You can go out``.
+   For example, your parents might say you can go out if you can walk or they don't need the car.  Open the ``E02Transportation`` program. Try different values for ``walking`` and ``carIsAvailable`` and see what the values have to be to print ``You can go out``.
   
 
 .. note::
@@ -66,7 +66,7 @@ With numerical values, the or-operator is often used to check for error conditio
 |CodingEx| **Coding Exercise**
 
    
-   Explore how && and || are used with numbers in the ``TestNum`` program. Try different values for score like -10 and 110 in the code below.
+   Explore how && and || are used with numbers in the ``E03ScoreRange`` program. Try different values for score like -10 and 110 in the code below.
    
 
 
@@ -78,7 +78,7 @@ often the opposite of what you think. We'll see examples of this in the next les
 
 |CodingEx| **Coding Exercise**
       
-   The ``TestNot`` program says if homework is not done, you can't go out. Try different values for ``homeworkDone``.
+   The ``E04Homework`` program says if homework is not done, you can't go out. Try different values for ``homeworkDone``.
   
 
 .. note::

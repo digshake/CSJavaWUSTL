@@ -206,7 +206,7 @@ The code below creates a 2D array with 2 rows and 3 columns named ``ticketInfo``
 
 
   
-  What will the ``TicketInfo`` program print out? Can you change ticketInfo to be an array of 5 rows and 10 columns? Can you declare another array called studentNames that has 10 rows and 5 columns? The length property of arrays will be explained in the next lesson.
+  What will the ``E01TicketInfo`` program print out? Can you change ticketInfo to be an array of 5 rows and 10 columns? Can you declare another array called studentNames that has 10 rows and 5 columns? The length property of arrays will be explained in the next lesson.
   
   
 Set Value(s) in a 2D Array 
@@ -224,13 +224,9 @@ When arrays are created their contents are automatically initialized to 0 for nu
   ticketInfo[0][0] = 15;
   
   
-.. |Java visualizer| raw:: html
-
-   <a href= "http://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+Test+%0A++%7B%0A+++++public+static+void+main(String%5B%5D+args)%0A+++++%7B%0A++++++++//+declare+arrays%0A++++++++int%5B%5D%5B%5D+ticketInfo%3B%0A++++++++String%5B%5D%5B%5D+seatingChart%3B%0A++++++++%0A++++++++//+create+arrays%0A++++++++ticketInfo+%3D+new+int+%5B2%5D%5B3%5D%3B%0A++++++++seatingChart+%3D++new+String+%5B3%5D%5B2%5D%3B%0A++++++++%0A++++++++//+initialize+the+array+elements%0A++++++++ticketInfo%5B0%5D%5B0%5D+%3D+15%3B%0A++++++++ticketInfo%5B0%5D%5B1%5D+%3D+10%3B%0A++++++++ticketInfo%5B0%5D%5B2%5D+%3D+15%3B%0A++++++++ticketInfo%5B1%5D%5B0%5D+%3D+25%3B%0A++++++++ticketInfo%5B1%5D%5B1%5D+%3D+20%3B%0A++++++++ticketInfo%5B1%5D%5B2%5D+%3D+25%3B%0A++++++++seatingChart%5B0%5D%5B0%5D+%3D+%22Jamal%22%3B%0A++++++++seatingChart%5B0%5D%5B1%5D+%3D+%22Maria%22%3B%0A++++++++seatingChart%5B1%5D%5B0%5D+%3D+%22Jacob%22%3B%0A++++++++seatingChart%5B1%5D%5B1%5D+%3D+%22Suzy%22%3B%0A++++++++seatingChart%5B2%5D%5B0%5D+%3D+%22Emma%22%3B%0A++++++++seatingChart%5B2%5D%5B1%5D+%3D+%22Luke%22%3B%0A++++++++%0A++++++++//+print+the+contents%0A++++++++System.out.println(ticketInfo)%3B%0A++++++++System.out.println(seatingChart)%3B%0A+++++%7D%0A++%7D&mode=display&curInstr=0" style="text-decoration:underline" target="_blank" >Java Visualizer</a>
-
 |CodingEx| **Coding Exercise**
 
-Try the ``TwoDArraySet`` program. Did it print what you expected?  When you print a two dimensional array you just get the reference to the object. In the next lesson, we'll learn how to use nested loops to print out the whole 2D Array. Right now, use the debugger to see what the values are after this code runs. Edit the code to add in an extra row to the seatingChart and add your name and a friend's name in the columns of this extra row using assignment statements.
+Try the ``E02TwoDArraySet`` program. Did it print what you expected?  When you print a two dimensional array you just get the reference to the object. In the next lesson, we'll learn how to use nested loops to print out the whole 2D Array. Right now, use the debugger to see what the values are after this code runs. Edit the code to add in an extra row to the seatingChart and add your name and a friend's name in the columns of this extra row using assignment statements.
   
   Add another row of data to the arrays by changing the size of the arrays and adding in the assignment statements for the cells in those rows. Use the debugger to see the contents of the array. 
   
@@ -309,7 +305,7 @@ To get the value in a 2D array give the name of the array followed by the row an
 |CodingEx| **Coding Exercise**
 
   
-  Open the ``TwoDArrayInitGet`` program. Add another row to seatingInfo initialized to your name and a friend's name. Get these names out of the array using the correct indices and then print them out.
+  Open the ``E03TwoDArrayInitGet`` program. Add another row to seatingInfo initialized to your name and a friend's name. Get these names out of the array using the correct indices and then print them out.
  
 
 

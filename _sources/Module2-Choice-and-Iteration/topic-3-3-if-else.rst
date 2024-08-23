@@ -43,13 +43,6 @@ What if you want to pick between two possibilities?  If you are trying to decide
        and another one;
     }
 
-.. code-block:: java
-
-    // A single if/else statement
-    if (boolean expression)
-        Do statement;
-    else
-        Do other statement;
 
 The following flowchart demonstrates that if the condition (the boolean expression) is true, one block of statements is executed, but if the condition is false, a different block of statements inside the else clause is executed.  
 
@@ -65,52 +58,20 @@ The following flowchart demonstrates that if the condition (the boolean expressi
    The else will only execute if the condition is false.   
 
 
-Assume you are flipping a coin to decide whether to go to a game or watch a movie.  If the coin is heads then you will go to a game, if tails then watch a movie.
-The flowchart in Figure 2 shows the conditional control flow with 2 branches based on a boolean variable ``isHeads``.
-
-.. figure:: Figures/flow_4.png
-    :width: 400px
-    :align: center
-    :figclass: align-center
-
-    Figure 2: If-Else Decision
-
-
-   
-   Run the ``HeadsOrTails`` program twice for each boolean value for isHeads (true and false).    Notice the program always prints "after conditional" since that statement is not nested inside the if or else blocks.
-
-  
-
-   
-
-
-|Exercise| **Check your understanding**
-
-.. fillintheblank:: q3_3_1
-
-   Try changing the standard input value to false in the HeadsOrTails program.  What line will be printed before the ``after conditional``?
-
-   -    :^Let's watch a movie$: Correct.  If the boolean value is false, the statement following the else will execute
-        :.*: Try it and see
-        
-
-
-
-
 If/else statements can also be used with relational operators and numbers like below. If your code has an if/else statement, you need to test it with 2 test-cases to make sure that both parts of the code work.
 
 |CodingEx| **Coding Exercise**
 
 
    
-   Run the ``DriversTest`` program to see what it prints  when the variable age is set to the value 18. 
+   Run the ``E01DriversTest`` program to see what it prints  when the variable age is set to the value 18. 
    Change the input value to 18 and then run it again to see the result of the print 
    statement in the else part. 
    Can you change the if-statement to indicate that you can get a license at age 16 instead of 18? 
    Use 2 test cases for the value of age to test your code to see the results of both print statements. 
   
 
-Recall the ``TestMidterm`` program from the previous lesson that outputs a message based on whether you passed the midterm.  The program uses two separate ``if`` statements to decide what to print.
+Recall the ``E02TestMidterm`` program from the previous lesson that outputs a message based on whether you passed the midterm.  The program uses two separate ``if`` statements to decide what to print.
 Notice the second condition is simply the negation of the first condition. Rewrite this code to use a single if-else rather than two separate if statements.
    
 
@@ -151,7 +112,7 @@ Notice the second condition is simply the negation of the first condition. Rewri
 
 
    
-   Try the ``ScoreTest`` program. Add an else statement to the if statement that prints out "Good job!" if the score is greater than 9. Change the value of score to test it. Can you change the boolean test to only print out "Good job" if the score is greater than 20?
+   Try the ``E03ScoreTest`` program. Add an else statement to the if statement that prints out "Good job!" if the score is greater than 9. Change the value of score to test it. Can you change the boolean test to only print out "Good job" if the score is greater than 20?
   
 
 
@@ -174,7 +135,7 @@ If statements can be nested inside other if statements. Sometimes with nested if
 
 
    
-   Try the ``DanglingElseTest`` program. Notice that the indentation does not matter. How could you get the else to belong to the first if statement?
+   Try the ``E04DanglingElseTest`` program. Notice that the indentation does not matter. How could you get the else to belong to the first if statement?
   
 
 You can use curly brackets { } to enclose a nested if and have the else clause belong to the the top level if clause like below:

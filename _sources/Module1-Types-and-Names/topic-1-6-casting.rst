@@ -37,7 +37,7 @@ The casting operators (int) and (double) are used right next to a number or vari
 
 
    
-   Open the ``OperatorTest`` program. What happens when you divide an int by an int or with a double operand or with the type cast (double) on one of the operands?
+   Open the ``E01OperatorTest`` program. What happens when you divide an int by an int or with a double operand or with the type cast (double) on one of the operands?
    	
 Java assumes that if you are doing division with integers that you want an integer result and it will truncate and throw away the part after the decimal point.  But, if you use a mixture of integers (int) and decimal (double) numbers Java will assume that you want a double result. If there is at least one double in the operation, Java will widen the type of the other operand to double too and return the result in a double. If you have integers and you want a double result from some mathematical operation **cast** one of the integers to a double using (double) as shown above.  
 
@@ -55,7 +55,7 @@ For example, if you divide 5/3 using integer division, Java will truncate 1.67 t
 
 
    
-   Run the ``NearestInt`` program to see how the formula of adding or subtracting .5 and then casting with (int) rounds a positive or negative double number to the closest int.
+   Run the ``E02NearestInt`` program to see how the formula of adding or subtracting .5 and then casting with (int) rounds a positive or negative double number to the closest int.
 
 
 ..	index::
@@ -67,7 +67,7 @@ What happens to repeating decimal numbers like 3.333333...?  Java limits the num
 For example, int values are stored in 4 bytes of memory. There is an Integer.MAX_VALUE defined as 2147483647 and an Integer.MIN_VALUE defined as -2147483648. If you try to store any number larger or smaller than these numbers in an int variable, it will result in an error called **integer overflow**. Try it below.
 
    
-   Try the ``TestOverflow`` program to see two integer overflow errors for a positive and negative number. An int cannot hold that many digits! Fix the integer overflow error by deleting the last 0 in the numbers.
+   Try the ``E03TestOverflow`` program to see two integer overflow errors for a positive and negative number. An int cannot hold that many digits! Fix the integer overflow error by deleting the last 0 in the numbers.
   
 ..	index::
 	pair: double; precision format

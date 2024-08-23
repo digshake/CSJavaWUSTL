@@ -41,10 +41,6 @@ You can even do math with that index and have an arithmetic expression inside th
   System.out.println(  highScores[index] );
   System.out.println(  highScores[index - 1] );
 
-.. |visualizer| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20ArrayWithIndexVar%20%7B%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20%20//%20highScores%20array%20declaration%0A%20%20%20%20%20%20int%5B%5D%20highScores%20%3D%20%7B%2010,%209,%208,%208%7D%3B%0A%20%20%20%20%20%20//%20use%20a%20variable%20for%20the%20index%0A%20%20%20%20%20%20int%20index%20%3D%203%3B%0A%20%20%20%20%20%20//%20modify%20array%20value%20at%20index%0A%20%20%20%20%20%20highScores%5Bindex%5D%20%3D%2011%3B%0A%20%20%20%20%20%20//%20print%20array%20value%20at%20index%0A%20%20%20%20%20%20System.out.println%28%20%20highScores%5Bindex%5D%20%29%3B%0A%20%20%20%20%20%20System.out.println%28%20%20highScores%5Bindex%20-%201%5D%20%29%3B%0A%20%20%20%20%7D%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank"  style="text-decoration:underline">visualizer</a>
-    
 What does the code above print out? You can follow the code in this |visualizer| and look at the image depicting the array below.
 
 .. figure:: Figures/arraywithindex.png
@@ -54,14 +50,10 @@ What does the code above print out? You can follow the code in this |visualizer|
 
     Figure 1: Array with index variable
 
-.. |visualizer2| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=%20public%20class%20Test1%0A%20%20%20%7B%0A%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20String%5B%20%5D%20names%20%3D%20%7B%22Jamal%22,%20%22Emily%22,%20%22Destiny%22,%20%22Mateo%22,%20%22Sofia%22%7D%3B%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20int%20index%20%3D%201%3B%0A%20%20%20%20%20%20%20%20System.out.println%28names%5Bindex%20-%201%5D%29%3B%0A%20%20%20%20%20%20%20%20index%2B%2B%3B%0A%20%20%20%20%20%20%20%20System.out.println%28names%5Bindex%5D%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28names%5Bindex/2%5D%29%3B%0A%20%20%20%20%20%20%20%20names%5Bindex%5D%20%3D%20%22Rafi%22%3B%0A%20%20%20%20%20%20%20%20index--%3B%0A%20%20%20%20%20%20%20%20System.out.println%28names%5Bindex%2B1%5D%29%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%7D%0A%20%20%20&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank"  style="text-decoration:underline">visualizer</a>
-   
 |CodingEx| **Coding Exercise**
 
    
-   What do you think the ``Test1`` program will print out? First trace through it on paper keeping track of the array and the index variable. Then, run it to see if you were right. 
+   What do you think the ``E01Trace1`` program will print out? First trace through it on paper keeping track of the array and the index variable. Then, run it to see if you were right. 
    
    
 
@@ -83,10 +75,6 @@ We can use iteration with a **for loop** to visit each element of an array.  Thi
 
 For example, here is a loop traversing the highScores array to print every score. Follow the code below in the |visualizer3|.
 
-.. |visualizer3| raw:: html
-
-   <a href="http://www.pythontutor.com/visualize.html#code=public%20class%20ArrayLoop%0A%7B%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%0A%20%20%20%20%7B%0A%0A%20%20%20%20%20%20%20%20int%5B%5D%20highScores%20%3D%20%7B%2010,%209,%208,%208%7D%3B%0A%20%20%20%20%20%20%20%20for%20%28int%20i%20%3D%200%3B%20i%20%3C%20highScores.length%3B%20i%2B%2B%29%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%20%20highScores%5Bi%5D%20%29%3B%0A%20%20%20%20%20%20%20%20%7D%20%0A%20%20%20%20%7D%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank"  style="text-decoration:underline">visualizer</a>
-   
 .. code-block:: java 
  
   int[] highScores = { 10, 9, 8, 11};
@@ -102,7 +90,7 @@ For example, here is a loop traversing the highScores array to print every score
 |CodingEx| **Coding Exercise**
 
       
-   What do you think the ``Test2`` program will print out? First trace through it on paper keeping track of the array and the index variable. Then, run it to see if you were right. Then, try adding your name and a friend's name to the array names and run the code again. Did the code work without changing the loop?
+   What do you think the ``E02Trace2`` program will print out? First trace through it on paper keeping track of the array and the index variable. Then, run it to see if you were right. Then, try adding your name and a friend's name to the array names and run the code again. Did the code work without changing the loop?
    
 
 
@@ -144,7 +132,7 @@ When processing all array elements, be careful to start at the first index which
 |CodingEx| **Coding Exercise**
 
    
-   The ``OffByone`` program has an ArrayIndexOutOfBoundsException. It has 2 common off-by-one errors in the loop. Can you fix it and make the loop print out all the scores?
+   The ``E03OffByone`` program has an ArrayIndexOutOfBoundsException. It has 2 common off-by-one errors in the loop. Can you fix it and make the loop print out all the scores?
   
  
 Summary

@@ -88,7 +88,7 @@ Here is the template for a simple Java program with a main method:
 
 |CodingEx| **Coding Exercise**: 
 
-Open ``HelloExample.java`` in the ``module1`` package of the exercises repository in Eclipse that you loaded on the first day of class. Run this program by finding it in the File explorer, right-clicking it, then selecting ``Run As -> Java Application`` from the menu. 
+Open ``E01HelloExample.java`` in the ``module1`` package of the exercises repository in Eclipse that you loaded on the first day of class. Run this program by finding it in the File explorer, right-clicking it, then selecting ``Run As -> Java Application`` from the menu. 
 ``System.out.println("Hi there!");`` prints out the characters between the first ``"`` and the 
 second ``"`` followed by a new line.  
 The ``"Hi there!"`` is called a **string literal**, and it can have zero to many characters 
@@ -98,7 +98,7 @@ change the code  to print your name.
 Be sure to keep the starting ``"`` and ending ``"``.  
 Run the modified code to test your changes.
 
-Next, open the ``PoemExample.java`` file and run it. Then change the code to add two more lines to the poem: “Java is interesting,” followed by “And so are you!”. Run your code to make sure that it works.
+Next, open the ``E02PoemExample.java`` file and run it. Then change the code to add two more lines to the poem: “Java is interesting,” followed by “And so are you!”. Run your code to make sure that it works.
 
 Most command keywords in Java must be in lowercase, 
 but class names such as System and String are capitalized. 
@@ -125,7 +125,7 @@ Java has two different print commands to print output to the screen:
 
 |CodingEx| **Coding Exercise:**
 
-Open and run ``HelloExample2.java`` to see the output. 
+Open and run ``E03HelloExample2.java`` to see the output. 
    How would you change it to print the ! on the same line as Hi there 
    keeping all 3 print statements?
 
@@ -181,24 +181,17 @@ Open and run ``HelloExample2.java`` to see the output.
 A print statement can also contain numeric values and arithmetic expressions.  Don't use double quotes for 
 expressions that have a numeric value.
 
-Run ``CalculationExample.java`` to see the output. 
+Run ``E04CalculationExample.java`` to see the output. 
    Can you change the last print statement to print the sum of the values from 1 to 10?
 
 
-   Run ``CalculationErrorPrint`` to see the output.  The output is not correct.  
+   Run ``E05CalculationErrorPrint`` to see the output.  The output is not correct.  
    The second System.out.println statement should print the value resulting from the computation, not a literal string for the computation. 
    Get rid of the double quotes in the second println statement and run the program.
    
-   Open the ``CalculateBillTotal.java`` file. Assume you have some bills to pay.  The individual bill amounts are 89.50, 14.75, 45.12, and 92.50.  
+   Open the ``E06CalculateBillTotal.java`` file. Assume you have some bills to pay.  The individual bill amounts are 89.50, 14.75, 45.12, and 92.50.  
    Add another print statement to sum and print the total bill amount on a separate line.  Don't just add the numbers in
    your head and print the result. You must write the code to add up the numbers and print the result.
-   
-   Open the ``PassengersOnBus.java`` file. A bus starts out with no passengers.  Three people get on at the first stop.  
-   Five people get on at the second stop.
-   One person gets off and eight people get on at the third stop. 
-   Three people get off at the fourth stop. How many people are left on the bus?
-   Add another print statement to calculate and print the passengers remaining on the bus.
-
 
 
 Syntax Errors
@@ -307,20 +300,20 @@ Let's practice debugging some code!
 
 |CodingEx| **Coding Exercise: Compile Time Error 1**
 
-Open the ``Error1.java`` file and look for an error.  This is called a **compile time error** because it is an error detected by the compiler.  
+Open the ``E07Error1.java`` file and look for an error.  This is called a **compile time error** because it is an error detected by the compiler.  
 
 What is wrong?  Can you fix it?  One good thing to check is that all ``{`` have a matching ``}`` and all ``(`` have a matching ``)`` and all starting ``"`` have a ending ``"`` as well. Try putting in the missing symbol and run again. This is called **debugging**.
     
 |CodingEx| **Coding Exercise: Compile Time Error 2**
 
 
-Open the ``Error2.java`` file. What is wrong this time?  Can you fix it?  
+Open the ``E08Error2.java`` file. What is wrong this time?  Can you fix it?  
 One good thing to check is that all ``{`` have a matching ``}`` and all ``(`` have a matching ``)`` and all starting ``"`` have a ending ``"`` as well. 
     
 |CodingEx| **Coding Exercise: Compile Time Error 3**
 
 
-Open the ``Error3.java`` file. What is wrong this time?  Can you fix it?  After you fix the first error, you may 
+Open the ``E09Error3.java`` file. What is wrong this time?  Can you fix it?  After you fix the first error, you may 
 encounter a 2nd error! Fix that one too! 
 
 Comments

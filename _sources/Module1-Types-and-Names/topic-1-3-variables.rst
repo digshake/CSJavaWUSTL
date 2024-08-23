@@ -411,6 +411,8 @@ If you want spaces between words and variables when printing, you must put the
 space within the quoted string.  For example, notice the space in the string "Hi " in the last print statement. If you forget to add spaces, you will get smushed output 
 like "HiJose" instead of "Hi Jose".  
 
+In the ``StringConcatenation2`` class, add a print statement to concatenate the string literal "Favorite color is " with the value stored in the ``color`` variable.
+
 .. mchoice:: q1_3_16
    :practice: T
    :answer_a: System.out.println("Price is + price");
@@ -428,9 +430,7 @@ like "HiJose" instead of "Hi Jose".
    Assume variable declaration ``double price = 9.50;``.  Which print statement will result in the output: ``Price is 9.50``
 
      
-   
-   In the ``StringConcatenation2`` class, add a print statement to concatenate the string literal "Favorite color is " with the value stored in the ``color`` variable.
-  
+     
 Also note that the variable has to be on the 
 left side of the ``=`` and the value on the right.  Switching the two is 
 called **assignment dyslexia**.  
@@ -467,39 +467,6 @@ The convention in Java and many programming languages is to always start a varia
     single: camel case
 	pair: variable; naming convention
 	
-
-|CodingEx| **Coding Exercise:**
- 
-
-   Java is case sensitive so ``playerScore`` and ``playerscore`` are not the same.  Run the code in the ``CaseSensitive`` class to see the difference.
-   ~~~~
-   public class CaseSensitive
-   {
-      public static void main(String[] args)
-      {
-        int playerScore = 0; // variable name using camel case
-        int playerscore = 1; // this is a different variable
-        System.out.println("playerScore is " + playerScore);
-        System.out.println("playerscore is " + playerscore);
-      }
-   }
-   
-   ====
-   import static org.junit.Assert.*;
-   import org.junit.*;;
-   import java.io.*;
-
-   public class RunestoneTests extends CodeTestHelper
-    {
-        @Test
-        public void testMain() throws IOException
-        {
-            String output = getMethodOutput("main");
-            String expect = "playerScore is 0\nplayerscore is 1";
-            boolean passed = getResults(expect, output, "Expected output from main", true);
-            assertTrue(passed);
-        }
-    }
    
 |Exercise| **Check Your Understanding**
             

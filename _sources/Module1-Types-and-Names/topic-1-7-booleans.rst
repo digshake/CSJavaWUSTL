@@ -49,7 +49,7 @@ Note that ``x == 4`` does not assign a value to variable x, rather it simply com
 |CodingEx| **Coding Exercise**
 
 
-   What will the ``BoolTest1`` program print out? 
+   What will the ``E01Equality`` program print out? 
    Try to guess before you run it! 
    Note that 1 equal sign (=) is used for assigning a value 
    and 2 equal signs (==) for testing equality between values.  The != operator tests for inequality.
@@ -72,7 +72,7 @@ With <= and >=, remember to write the two symbols in the order that you would sa
 |CodingEx| **Coding Exercise**
 
    
-   Try to guess what the ``BoolTest2`` program will print out before you run it.  
+   Try to guess what the ``E02RelationalOperators`` program will print out before you run it.  
   
 
 |Exercise| **Check your understanding**
@@ -115,8 +115,7 @@ Here are some boolean expressions that are very useful in coding:
 
 
    
-   Open the ``BoolMod`` program. Try the expressions containing the % operator below to see how they can be used to check for even or odd numbers. All even numbers are divisible (with no remainder) by 2.
-    
+Open the ``E03BooleanMod`` program. Try the expressions containing the % operator below to see how they can be used to check for even or odd numbers. All even numbers are divisible (with no remainder) by 2.
    
 The **modulo** operator has a lot of great uses:
     
