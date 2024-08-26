@@ -12,7 +12,7 @@ Assignment Setup
 
 Before starting this assignment it is expected that you have completed the `software setup <software.html>`_ for the course as well as `Studio 0 <studio.html>`_)
 
-To create your repository go `go here <https://classroom.github.com/a/DzEHvf2W>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
+To create your repository go `go here <https://classroom.github.com/a/Md3OoV_X>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
 
 Using Java to Control a Robot
 ================
