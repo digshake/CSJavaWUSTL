@@ -89,8 +89,7 @@ The code below shows example commenting for a class and two enclosed methods.
         * @param inches A double representing a quantity of inches.
         * @return double The equivalent quantity of centimeters.
         */
-        public static double inchesToCentimeters(double inches)
-        {
+        public static double inchesToCentimeters(double inches) {
             return inches * 2.54;
         }
 
@@ -99,56 +98,11 @@ The code below shows example commenting for a class and two enclosed methods.
         * @param args Unused.
         * @return Nothing.
         */
-        public static void main(String[] args)  
-        {
+        public static void main(String[] args) {
             System.out.println("10 inches = " + inchesToCentimeters(10) + " centimeters");
             System.out.println("15.7 inches = " + inchesToCentimeters(15.7) + " centimeters");
         }
 
 
     }
-
- 
-Preconditions and  Postconditions
----------------------------------
-
-As you write methods in a class, it is a good idea to keep in mind the **preconditions** and the **postconditions** for the method and write them in the comments. A precondition is a condition that must be true for your method code to work, for example the assumption that the parameters have values and are not null. The methods could check for these preconditions, but they do not have to. The precondition is what the method expects in order to do its job properly.
-
-A postcondition is a condition that is true after running the method. It is what the method promises to do. Postconditions describe the outcome of running the method, for example what is being returned or the changes to the instance variables. These assumptions are very useful to other programmers who want to use your class and get the correct results.   
-
-Let's consider the substring method in Java. This method has a strong precondition that its arguments refer to indices within the given string. 
-
-|CodingEx| **Coding Exercise**
-
-The ``SubstringPreconditions`` code breaks the preconditions of the substring method and throws an IndexOutOfBoundsException. Can you fix the code by changing the arguments for the substring method to print out the substring "lo"? What are the preconditions for the substring method?
-
-.. note::
- 
-    The method str.substring(beginIndex, endIndex) has the precondition that 0 <= beginIndex <= endIndex <= str.length.
-    
-|Exercise| **Check your understanding**
-
-.. mchoice:: q5_4_1
-   :practice: T
-   :answer_a: /* Precondition: i >= 0 */
-   :answer_b: /* Precondition: i <= str.length() */
-   :answer_c: /* Precondition: 0 < i < str.length() */
-   :answer_d: /* Precondition: 0 <= i < str.length() */
-   :correct: d
-   :feedback_a: This is true but it could still throw an exception if i is a large value.
-   :feedback_b: This is true but it could still throw an exception if i is a negative value.   
-   :feedback_c: This is true but a little too restrictive.
-   :feedback_d: Correct. i can refer to character 0 up to str.length().
-      
-   The following method is intended to return the substring starting at index i until the end of the string. For example, getiToEnd("012",1) should return "12". Which of the following is the most appropriate precondition for the method so that it does not throw an exception?
-
-   .. code-block:: java
-
-        /* missing precondition */
-        public String getiToEnd(String str, int i)
-        {
-            return str.substring(i, str.length());
-        }
-    
-
 

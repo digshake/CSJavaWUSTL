@@ -54,8 +54,7 @@ print statements.
 
 .. code-block:: java
 
-     public static void verse( String animal, String noise ) 
-     {
+     public static void verse( String animal, String noise ) {
        System.out.println( "Old MacDonald had a farm" );
        System.out.println( "E-I-E-I-O" );
        System.out.println( "And on that farm he had a " + animal );
@@ -85,7 +84,7 @@ contains not only the current line but also the formal parameter variables and v
 
 .. figure:: Figures/stackframesong.png
   
-Update the main method of the ``Song`` program to add a third verse to the song with another animal and noise. Use the debugger to step through the code.
+Update the main method of the ``E01Song`` program to add a third verse to the song with another animal and noise. Use the debugger to step through the code.
 
 Refactoring - Removing Duplicate Code
 ---------------------------------------
@@ -97,13 +96,12 @@ We can introduce a method to perform a task that can be generalised by having fo
 The method can adapt to a variety of  situations
 depending on the values passed into the method.  
 
-The ``PayrollCalculator`` class listed below calculates and prints the weekly pay for two employees.  
+The ``E02PayrollCalculator`` class listed below calculates and prints the weekly pay for two employees.  
 Do you notice any redundancy?
   
  .. code-block:: java
  
-  public class PayrollCalculator
-  { 
+  public class PayrollCalculator { 
   
     public static void main(String[] args) {
 
@@ -156,8 +154,7 @@ A variable declared in a method is called a **local variable**.
 
 .. code-block:: java
  
-  public static void calculatePay ( String employee, double hourlyRate, double hoursWorked)
-  {
+  public static void calculatePay ( String employee, double hourlyRate, double hoursWorked) {
      double weeklyPay = hourlyRate * hoursWorked;
      System.out.println(employee  + ":" + weeklyPay);
   }
@@ -282,23 +279,19 @@ definition to match the name, number and type of arguments, and return type.
    .. code-block:: java
 
     public class TestArgumentPassing {
-      public static void mystery ( String str )
-      {
+      public static void mystery ( String str ) {
         System.out.println("first method " + str);
       }
       
-      public static void mystery ( int num )
-      {
+      public static void mystery ( int num ) {
         System.out.println("second method " + num);
       }
       
-      public static void mystery ( int num , String str)
-      {
+      public static void mystery ( int num , String str) {
         System.out.println("third method " + num + "," + str);
       }
       
-      public static void main (String[] args)
-      {
+      public static void main (String[] args) {
           
       }
 	
@@ -324,7 +317,7 @@ the method again, the old value is not available.
 .. activecode:: code5_2_3
   :language: java
     
-Use the debugger button to step through the two method calls in the ``ScopeExample`` program.  Notice the ``inches`` and ``centimeters`` variables are
+Use the debugger button to step through the two method calls in the ``E03ScopeExample`` program.  Notice the ``inches`` and ``centimeters`` variables are
 visible in the ``inchesToCentimeters`` method but not the ``main`` method.  
 
 The ``inchestToCentimeters`` method defines a local 
@@ -411,10 +404,6 @@ in a calculation.  The compiler will warn you if you try to use a local variable
 Method Tracing
 ------------------
 
-.. |visualizeTrace| raw:: html
-
-   <a href="http://pythontutor.com/visualize.html#code=public%20class%20TraceMethods%20%7B%0A%20%20public%20static%20void%20inchesToCentimeters%28double%20i%29%0A%20%20%7B%0A%20%20%20%20%20%20double%20c%20%3D%20i%20*%202.54%3B%0A%20%20%20%20%20%20printInCentimeters%28i,%20c%29%3B%0A%20%20%7D%0A%20%20%0A%20%20public%20static%20void%20printInCentimeters%28double%20inches,%20double%20centimeters%29%0A%20%20%7B%0A%20%20%20%20%20%20System.out.println%28inches%20%2B%20%22--%3E%22%20%2B%20centimeters%29%3B%0A%20%20%7D%0A%20%20%0A%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%7B%0A%20%20%20%20%20%20inchesToCentimeters%2810%29%3B%0A%20%20%7D%0A%7D&cumulative=true&curInstr=6&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">visualizer</a>    
- 
 A method can call other methods to help it do its job.  
 
 
@@ -427,19 +416,16 @@ A method can call other methods to help it do its job.
     
     .. code-block:: java
 
-        public static void inchesToCentimeters(double i)
-        {
+        public static void inchesToCentimeters(double i) {
             double c = i * 2.54;
             printInCentimeters(i, c);
         }
 
-        public static void printInCentimeters(double inches, double centimeters)
-        {
+        public static void printInCentimeters(double inches, double centimeters) {
             System.out.println(inches + "-->" + centimeters);
         }
 
-        public static void main(String[] args)  
-        {
+        public static void main(String[] args) {
             inchesToCentimeters(10);
         }
 
@@ -475,14 +461,12 @@ A method can call other methods to help it do its job.
 
     .. code-block:: java
     
-        public static void splitPizza(int numOfPeople)
-        {
+        public static void splitPizza(int numOfPeople) {
             int slicesPerPerson = 8/numOfPeople;
             /* INSERT CODE HERE */
         }
 
-        public static void printSlices(int slices)
-        {
+        public static void printSlices(int slices) {
             System.out.println("Each person gets " + slices + " slices each");
         }
 
@@ -531,14 +515,11 @@ A method can call other methods to help it do its job.
    
    .. code-block:: java
    
-      public class MethodTrace 
-      {
-        public static void square(int x)
-        {
+      public class MethodTrace {
+        public static void square(int x) {
             System.out.print(x*x);
         }
-        public static void divide(int x, int y)
-        {
+        public static void divide(int x, int y) {
             System.out.println(x/y);
         }
         public static void main(String[] args) {
@@ -580,66 +561,16 @@ this more in the following unit.
 Programming Challenge : Calculating Shipping Costs
 ---------------------------------------------------------------
 
-The ShippingCostCalculator class listed below computes and prints the shipping cost for 3 different items based on their weight. 
+The E05ShippingCostCalculator class computes and prints the shipping cost for 3 different items based on their weight. 
 The cost is 9.95 if the item weighs less than 15.0, otherwise the cost is 12.95.
 While the if-else statements are not identical 
 due to the different variables names (weight1 vs weight2 vs weight3, cost1 vs cost2 vs cost3),
 each tests the weight and assigns the cost in the same way.  
 
-.. code-block:: java
-
-  public class ShippingCostCalculator {
-    
-    public static void main(String[] args) {
-      
-      double weight1, weight2, weight3;
-      double cost1, cost2, cost3;
-
-      weight1 = 22.0;  
-      weight2 = 10.0;
-      weight3 = 12.0;
-
-      //calculate cost for item#1
-      if (weight1 < 15.0)
-      {
-        cost1 = 9.95;
-      }
-      else 
-      {
-        cost1 = 12.95;
-      }
-      System.out.println(cost1);
-
-      //calculate cost for item#2
-      if (weight2 < 15.0)
-      {
-        cost2 = 9.95;
-      }
-      else 
-      {
-        cost2 = 12.95;
-      }
-      System.out.println(cost2);
-
-      //calculate cost for item#3
-      if (weight3 < 15.0)
-      {
-        cost3 = 9.95;
-      }
-      else 
-      {
-        cost3 = 12.95;
-      }
-      System.out.println(cost3);
-
-      }
-    }
-    
-
 The redundant code will be eliminated by adding a new method to 
 compute and print the cost based on item weight.  
 
-- Update the ``ShippingCostCalculator`` program to add a new method  ``calculateShipping`` that has one formal parameter for ``weight``.  The method will need a local variable for ``cost``.  The method should test the weight and print the corresponding cost.
+- Update the ``E05ShippingCostCalculator`` program to add a new method  ``calculateShipping`` that has one formal parameter for ``weight``.  The method will need a local variable for ``cost``.  The method should test the weight and print the corresponding cost.
 - Update the main method to replace the existing code with 3 calls to ``calculateShipping``, each passing an actual value for weight.  The main method will no longer need local variables.
 - Confirm that the new version of the program produces the same output as the original version.
 

@@ -33,7 +33,7 @@
 Input and Output
 =================
 
-To get the exercises repository for modules 4-6, click `here <https://classroom.github.com/a/tq4oIpoF>`_.
+To get the exercises repository for modules 4-6, click `here <https://classroom.github.com/a/NaLMXuWv>`_.
 
 In this unit we will learn how to write code such that we can better interact with our users. 
 Computers are very different from humans, especially in the way that they communication information. The 
@@ -82,7 +82,7 @@ Unlike ``Scanner``, **you are not responsible for knowing how to use Files or un
 
 |CodingEx| **Coding Exercise**
 
-Take a look at the ``Stats.java`` program. You'll notice that it first allows the user to select a file that contains doubles. It then reads in these doubles and prints them out one at a time. 
+Take a look at the ``E01Stats.java`` program. You'll notice that it first allows the user to select a file that contains doubles. It then reads in these doubles and prints them out one at a time. 
 
 It does this using a new method, ``hasNextDouble()``. Using the provided code and the Scanner API, make sure you understand how this method is being used.
 

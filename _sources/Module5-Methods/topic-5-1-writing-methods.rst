@@ -120,8 +120,7 @@ that we could write to encapsulate the two lines that get repeated in the song.
 .. code-block:: java
 
     // Step 1: define a new method named chorus
-    public static void chorus() 
-    { 
+    public static void chorus() { 
         System.out.println("I'm looking over a four-leaf clover");
         System.out.println("That I overlooked before");
     }
@@ -142,7 +141,7 @@ The main method can call the chorus method multiple times to repeat the two line
 |CodingEx| **Coding Exercise**
 
 
-Run the ``Song`` program to see the song print out.  
+Run the ``E01Song`` program to see the song print out.  
 Notice the first line of code in the main method
 is a call to the new method ``chorus()``.
 Can you replace the last two print statements in the main 
@@ -249,11 +248,6 @@ You can tell which method is currently executing by looking at the bottom of the
 
 |Exercise| **Check your understanding**
 
-.. |visualizeTrace| raw:: html
-
-   <a href="http://pythontutor.com/visualize.html#code=public%20class%20GreetingExample%0A%7B%0A%20%20%20%20public%20static%20void%20greet%28%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Hello!%22%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22How%20are%20you%3F%22%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20%20%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Before%20greeting%22%29%3B%0A%20%20%20%20%20%20%20%20greet%28%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22After%20greeting%22%29%3B%0A%20%20%20%20%7D%0A%7D&cumulative=true&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">GreetingExample Visualizer</a>    
- 
-
 
 Click on each tab to observe the flow of control for the ``GreetingExample`` class. 
 
@@ -320,10 +314,6 @@ Click on each tab to observe the flow of control for the ``GreetingExample`` cla
 
       .. figure:: Figures/greet4.png
 
-    .. tab:: Tab 7
-
-      You can step through the program using the |visualizeTrace|.
-
 
 |Exercise| **Check your understanding**
 
@@ -343,21 +333,17 @@ Click on each tab to observe the flow of control for the ``GreetingExample`` cla
 
    .. code-block:: java
 
-      public class LikeFood 
-      {
+      public class LikeFood {
         
-        public static void fruit()
-        {
+        public static void fruit() {
             System.out.println("apples and bananas!");
         }
 
-        public static void consume() 
-        {
+        public static void consume() {
            System.out.print("eat ");
         }
         
-        public static void main(String[] args) 
-        {
+        public static void main(String[] args) {
             System.out.print("I like to ");
             consume();
             consume();
@@ -441,7 +427,7 @@ Click on each tab to observe the flow of control for the ``GreetingExample`` cla
 |CodingEx| **Coding Exercise**
 
 A refrain is similar to a chorus, although usually shorter in length such as a single line that gets repeated.
-In the ``FarmerSong`` program, the refrain is "The farmer in the dell".  
+In the ``E02FarmerSong`` program, the refrain is "The farmer in the dell".  
 Add a method named "refrain" and update the main method to call the new method 3 times in place of the duplicate print statements.  
 Run your program to ensure the output is correct.
 

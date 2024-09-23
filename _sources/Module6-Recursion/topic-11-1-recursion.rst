@@ -37,8 +37,7 @@ What is Recursion?
 .. code-block:: java
   :linenos:
 
-  public static void neverEnd()
-  {
+  public static void neverEnd() {
     System.out.println("This is the method that never ends!");
     neverEnd();
   }
@@ -72,8 +71,7 @@ This method will print out "This is the method that never ends!" and then call i
     .. code-block:: java
       :linenos:
 
-      public static int mystery()
-      {
+      public static int mystery() {
          int total = 0;
          for (int i=10; i>0; i--)
          {
@@ -95,10 +93,12 @@ This method will print out "This is the method that never ends!" and then call i
     .. code-block:: java
       :linenos:
 
-      public static int mystery2(int x)
-      {
-         if (x == 1) return 1;
-         else return x + mystery2(x-1);
+      public static int mystery2(int x) {
+         if (x == 1) {
+			return 1;
+		 } else {
+			return x + mystery2(x-1);
+		 }
       }
 
 
@@ -142,12 +142,12 @@ See the method `factorial` below that calculates the **factorial** of a number. 
 .. code-block:: java
    :linenos:
 
-   public static int factorial(int n)
-   {
-       if (n == 0)
+   public static int factorial(int n) {
+       if (n == 0) {
            return 1;
-       else
+       } else {
            return n * factorial(n-1);
+	   }
    }
 
 |Exercise| **Check your understanding**
@@ -162,7 +162,7 @@ See the method `factorial` below that calculates the **factorial** of a number. 
 
 |CodingEx| **Coding Exercise**
 
-Run the ``FactorialTest`` program to test the factorial method. What's the factorial of 6? Add another test to print out the factorial of 6. What's the factorial of 1? Add another test to print out the factorial of 1.
+Run the ``E01FactorialTest`` program to test the factorial method. What's the factorial of 6? Add another test to print out the factorial of 6. What's the factorial of 1? Add another test to print out the factorial of 1.
    
 
 Base Case
@@ -209,12 +209,12 @@ Every recursive method must have at least one **base case** which halts the recu
     .. code-block:: java
       :linenos:
 
-      public static int product(int n)
-      {
-         if(n == 1)
+      public static int product(int n) {
+         if(n == 1) {
             return 1;
-         else
+         } else {
             return n * product(n - 2);
+		 }
       }
 
 .. mchoice:: qrb_4
@@ -232,11 +232,14 @@ Every recursive method must have at least one **base case** which halts the recu
     .. code-block:: java
       :linenos:
 
-      public static int bunnyEars(int bunnies)
-      {
-         if (bunnies == 0) return 0;
-         else if (bunnies == 1) return 2;
-         else return 2 + bunnyEars(bunnies - 1);
+      public static int bunnyEars(int bunnies) {
+         if (bunnies == 0) {
+			return 0;
+         } else if (bunnies == 1) {
+			return 2;
+         } else {
+			return 2 + bunnyEars(bunnies - 1);
+		 }
       }
 
 
@@ -253,11 +256,9 @@ Every recursive method must have at least one **base case** which halts the recu
     .. code-block:: java
       :linenos:
 
-      public static int bunnyEars(int bunnies)
-      {
+      public static int bunnyEars(int bunnies) {
          int total = 0;
-         for (int i = 0; i < bunnies; i++)
-         {
+         for (int i = 0; i < bunnies; i++) {
             total = total + 2;
          }
          return total;
@@ -309,12 +310,12 @@ Let's trace the execution of the factorial method defined below.
 
 .. code-block:: java
 
-  public static int factorial(int n)
-  {
-    if (n == 0)
+  public static int factorial(int n) {
+    if (n == 0) {
       return 1;
-    else
+    } else {
       return n * factorial(n-1);
+	}
   }
 
 What happens when we call ``factorial(0)``?  It will return 1 (line 4) since n is equal to 0.  How about ``factorial(1)``?  It will return ``1 * factorial(0)``.  We already know that ``factorial(0)`` returns 1, but the computer won't *remember* that.  It will execute ``factorial(0)`` and return the result (1).   So  ``factorial(1)`` returns ``1 * 1 which is 1``.
@@ -342,8 +343,6 @@ Once factorial(0) executes and returns 1 that value can be substituted back into
   factorial(0) returns 1
 
 So ``factorial(5)`` returns 120.
-
-.. broken link: and http://ice-web.cc.gatech.edu/dl/?q=node/729 for a step by step tutorial about how to use Jeliot).
 
 .. figure:: Figures/callTree.png
     :width: 300px
@@ -396,12 +395,12 @@ So ``factorial(5)`` returns 120.
     .. code-block:: java
      :linenos:
 
-     public static int mystery(int n)
-     {
-        if (n == 0)
+     public static int mystery(int n) {
+        if (n == 0) {
            return 1;
-        else
+        } else {
            return 2 * mystery (n - 1);
+		}
      }
 
 .. mchoice:: qrb_7
@@ -423,9 +422,10 @@ So ``factorial(5)`` returns 120.
     .. code-block:: java
      :linenos:
 
-     public static int mystery(int n, int a)
-     {
-       if (n == 1) return a;
+     public static int mystery(int n, int a) {
+       if (n == 1) { 
+		return a;
+	   }
        return a * mystery(n-1,a);
      }
 
@@ -436,11 +436,14 @@ Let's trace the execution of the bunny ears method defined below.
 .. code-block:: java
   :linenos:
 
-  public static int bunnyEars(int bunnies)
-  {
-     if (bunnies == 0) return 0;
-     else if (bunnies == 1) return 2;
-     else return 2 + bunnyEars(bunnies - 1);
+  public static int bunnyEars(int bunnies) {
+     if (bunnies == 0) {
+		return 0;
+     } else if (bunnies == 1) {
+		return 2;
+     } else {
+		return 2 + bunnyEars(bunnies - 1);
+	 }
   }
 
 What happens when we call ``bunnyEars(0)``?  It will return 0 since n is equal to 0 (line 3).  How about ``bunnyEars(1)``?  It will return 2 since n is equal to 1 (line 4). What about ``bunnyEars(5)``?
@@ -518,14 +521,15 @@ You can step through the code above using the Java Visualizer by clicking on the
     .. code-block:: java
      :linenos:
 
-     public static int mystery(String str)
-     {
-        if (str.length() == 1) return 0;
-        else
-        {
-           if (str.substring(0,1).equals("y")) return 1 +
-                                mystery(str.substring(1));
-           else return mystery(str.substring(1));
+     public static int mystery(String str) {
+        if (str.length() == 1) {
+			return 0;
+        } else {
+           if (str.substring(0,1).equals("y")) {
+				return 1 + mystery(str.substring(1));
+           } else {
+				return mystery(str.substring(1));
+		   }
         }
      }
 
@@ -539,12 +543,12 @@ Consider the following recursive method:
 .. code-block:: java
    :linenos:
 
-   public static int mystery(int n)
-   {
-       if (n == 0)
+   public static int mystery(int n) {
+       if (n == 0) {
            return 1;
-       else
+       } else {
            return 3 * mystery (n - 1);
+	   }
    }
 
 The trace of this code for mystery(4) is shown below.
@@ -593,14 +597,15 @@ Consider the following recursive method:
 .. code-block:: java
    :linenos:
 
-   public static int strMethod(String str)
-   {
-      if (str.length() == 1) return 0;
-      else
-      {
-         if (str.substring(0,1).equals("e")) return 1 +
-                              strMethod(str.substring(1));
-         else return strMethod(str.substring(1));
+   public static int strMethod(String str) {
+      if (str.length() == 1) {
+		return 0;
+      } else {
+         if (str.substring(0,1).equals("e")) {
+			return 1 + strMethod(str.substring(1));
+         } else {
+			return strMethod(str.substring(1));
+		 }
       }
    }
 
@@ -663,7 +668,5 @@ Summary
 - Parameter values capture the progress of a recursive process, much like loop control variable values capture the progress of a loop.
 
 - Any recursive solution can be replicated through the use of an iterative approach.
-
-- Writing recursive program code is outside the scope of the course and AP Exam.
 
 - Recursion can be used to traverse String, array, and ArrayList objects.

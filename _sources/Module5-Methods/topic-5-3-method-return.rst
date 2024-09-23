@@ -89,11 +89,11 @@ Click on each tab to observe the data flowing into the method through the formal
       .. figure:: Figures/frame5.png
 
     
-Use the debugger to step through the ``VolumeExample`` program.  Experiment with passing different values to the volumeCylinder method.
+Use the debugger to step through the ``E01VolumeExample`` program.  Experiment with passing different values to the volumeCylinder method.
 
 |CodingEx| **Coding Exercise**
     
-The ``InchesToCentimeters`` program contains a method ``inchesToCentimeters`` that computes and prints the centimeter equivalent of the value passed into the inches parameter.
+The ``E02InchesToCentimeters`` program contains a method ``inchesToCentimeters`` that computes and prints the centimeter equivalent of the value passed into the inches parameter.
 Instead of printing the centimeter value inside the inchesToCentimeters method, you should update the  
 method to return the value and then move the printing to the main method.  You will have to change 
 the return type of the inchesToCentimeters method to match the type of the value being returned. 
@@ -198,7 +198,7 @@ Update the ``main`` method to print the value returned by the ``inchesToCentimen
 |CodingEx| **Coding Exercise**
 
 A pedometer estimates that taking 2,000 steps is the same as walking 1 mile. 
-In the ``StepCounter`` program, write a method ``convertToMiles`` that takes a parameter for the number of steps and returns the equivalent miles walked.
+In the ``E03StepCounter`` program, write a method ``convertToMiles`` that takes a parameter for the number of steps and returns the equivalent miles walked.
 Update the main method to call ``convertToMiles`` 3 times with values 500, 2000, 3000. 
 Carefully consider the method return type.  Watch out for integer division in the method body!
 You can assume the number of steps is an integer.
@@ -207,7 +207,7 @@ You can assume the number of steps is an integer.
 
 |CodingEx| **Coding Exercise**
   
-In the ``RandomNumberInRange`` program, write a function ``randomInteger`` that takes two integer 
+In the ``E04RandomNumberInRange`` program, write a function ``randomInteger`` that takes two integer 
 parameters ``min`` and ``max`` and returns a random integer value between min and max (inclusive).
 Have the main method call the function with different values.
 

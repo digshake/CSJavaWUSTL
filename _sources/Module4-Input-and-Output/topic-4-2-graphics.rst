@@ -77,7 +77,7 @@ In this example those values represent the x, y position of the center of the sq
 
 |CodingEx| **Coding Exercise**
 
-Open the ``GraphicsDemo`` program and examine the code that has been provided. It shows you how to use 
+Open the ``E01GraphicsDemo`` program and examine the code that has been provided. It shows you how to use 
 standard colors as well as custom colors of your choosing. Use the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to complete the exercises at the bottom of the program.
 
 Mouse and Keyboard
@@ -93,7 +93,7 @@ The `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.h
 
 This means that we need to write code to have the computer wait for something to happen (such as a key press or button click) and then perform some desired action.
 
-We see this represented at the very beginning of the ``KeyboardDemo`` program::
+We see this represented at the very beginning of the ``E02KeyboardDemo`` program::
 
 	while(!StdDraw.hasNextKeyTyped()) {
 		StdDraw.pause(100);
@@ -103,7 +103,7 @@ Without this loop, our computer would only check to see if a key was typed **one
 
 Once a key has been pressed, the loop exits. We can then get the key that was pressed as a ``char`` (not a ``String`` since it is a single character), which we can then check the value of. Notice that when comparing ``char`` values the letter being compared is in single quotes, as opposed to the double quotes we are used to using for ``Strings``.
 
-For an example of how to use the mouse, inspect the ``MouseDemo`` program. This program shows how to use ``StdDraw`` to get the position of the mouse::
+For an example of how to use the mouse, inspect the ``E03MouseDemo`` program. This program shows how to use ``StdDraw`` to get the position of the mouse::
 
 	double x = StdDraw.mouseX();
 	double y = StdDraw.mouseY();
@@ -119,7 +119,7 @@ The program displays this information once per second. Play around with this sho
 
 |CodingEx| **Coding Exercise**
 
-Open the ``WaitPoint`` program. You should write code using the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to do the following:
+Open the ``E04WaitPoint`` program. You should write code using the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to do the following:
 
 * Waits until the mouse has been pressed
 
@@ -145,7 +145,7 @@ Animation consists of repeatedly drawing images (called frames) fast enough to f
 
 3. Pause briefly, to give the human brain enough time to process the frame that is being displayed before rendering the next frame
 
-To see the animation loop in action, examine the ``MovingBall`` program. The first step of the loop is accomplished with a call to ``StdDraw.clear()``. 
+To see the animation loop in action, examine the ``E05MovingBall`` program. The first step of the loop is accomplished with a call to ``StdDraw.clear()``. 
 
 Notice how the position of the ball is updated every frame before the ball is redrawn. Special logic is included to keep the ball in bounds once it reaches the edge of the canvas. This logic isn't very realistic, however. Could you change the code to make the ball "bounce" off the edge of the screen instead?
 
@@ -156,7 +156,7 @@ Of these steps, step 2 is the one that can often get quite involved. If there ar
 
 |CodingEx| **Coding Exercise**
 
-Open the ``MouseFollower`` program, which already contains a standard animation loop. 
+Open the ``E06MouseFollower`` program, which already contains a standard animation loop. 
 
 Use the `StdDraw API <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ to draw a point on the canvas that follows the mouse. To do this, you will need to acquire the coordinates of the mouse, then draw something at that point.
 
