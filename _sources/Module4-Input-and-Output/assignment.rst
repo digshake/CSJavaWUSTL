@@ -34,7 +34,7 @@ Procedure
 	
 * Draw the cookie and some text that says "Cookie Clicker!"
 * The cookie should have a random amount of chocolate chips distributed around the cookie
-* Detect when the user clicks on the cookie. (Hint: Use `StdDraw <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ mouse methods such as: `isMousePressed()` and `mouseX()` and `mouseY()`
+* Detect when the user clicks on the cookie. (Hint: Use `StdDraw <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ mouse methods such as: ``isMousePressed()`` and ``mouseX()`` and ``mouseY()``)
 * Display a cookie counter on the screen and increment it every time the cookie is clicked
 * Implement idle point earning: every second, the user should earn 1 cookie without having to click 
 * Starting at a cost of 20 cookies, the user should automatically "purchase" a power up that increases the amount of cookies they get with each click. This power up should be able to be bought multiple times, increasing the click power each time, and increasing in cost after each purchase.
