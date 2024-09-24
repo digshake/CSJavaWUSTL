@@ -32,34 +32,34 @@ For each step in the procedure below, we will ask you to complete one step towar
 Procedure
 =========
 	
-	* Draw the cookie and some text that says "Cookie Clicker!"
-	* The cookie should have a random amount of chocolate chips distributed around the cookie
-	* Detect when the user clicks on the cookie
-		Hint: Use `StdDraw <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ mouse methods such as: isMousePressed() and mouseX() and mouseY()
-	* Display a cookie counter on the screen and increment it every time the cookie is clicked
-	* Implement idle point earning: every second, the user should earn 1 cookie without having to click 
-	* Starting at a cost of 20 cookies, the user should automatically "purchase" a power up that increases the amount of cookies they get with each click. This power up should be able to be bought multiple times, increasing the click power each time, and increasing in cost after each purchase.
-	* Starting at a cost of 60 cookies, the user should automatically "purchase" a power up that earns one more idle cookie per second. This power up should be able to be bought multiple times, increasing the idle cookies earned each time, and increasing in cost after each purchase.
+* Draw the cookie and some text that says "Cookie Clicker!"
+* The cookie should have a random amount of chocolate chips distributed around the cookie
+* Detect when the user clicks on the cookie
+	Hint: Use `StdDraw <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ mouse methods such as: isMousePressed() and mouseX() and mouseY()
+* Display a cookie counter on the screen and increment it every time the cookie is clicked
+* Implement idle point earning: every second, the user should earn 1 cookie without having to click 
+* Starting at a cost of 20 cookies, the user should automatically "purchase" a power up that increases the amount of cookies they get with each click. This power up should be able to be bought multiple times, increasing the click power each time, and increasing in cost after each purchase.
+* Starting at a cost of 60 cookies, the user should automatically "purchase" a power up that earns one more idle cookie per second. This power up should be able to be bought multiple times, increasing the idle cookies earned each time, and increasing in cost after each purchase.
 
 Requirements
 ============
 
 Your cookie clicker should:
 
-	* Increment total amount of cookies clicked with each click
-	* Increment total amount of cookies clicked idly every second
-	* Implement the click power up as explained above.
-	* Implement the idle power up as explained above.
-	* After each powerup purchased, the price of the powerup should increase by some factor (up to you!)
-	* The game should continue endlessly (unless the StdDraw window is closed)
-	* For each step, record the prompts you used to interact with the generative AI you chose in a comment in your code. We will ask you how you worked with your chosen tool to develop your code!
+* Increment total amount of cookies clicked with each click
+* Increment total amount of cookies clicked idly every second
+* Implement the click power up as explained above.
+* Implement the idle power up as explained above.
+* After each powerup purchased, the price of the powerup should increase by some factor (up to you!)
+* The game should continue endlessly (unless the StdDraw window is closed)
+* For each step, record the prompts you used to interact with the generative AI you chose in a comment in your code. We will ask you how you worked with your chosen tool to develop your code!
 
 Tips for if you get stuck
 =========================
 
-	* Try printing (or drawing) some of your variables. This shows you their values and how they're changing, which may help you figure out what's going on.
-	* If you get an error message you can't understand, try asking your generative AI tool what it means. You can then use this to help figure out why the error is occurring and how to solve it.
-	* Pay attention to the scope of your variables!
+* Try printing (or drawing) some of your variables. This shows you their values and how they're changing, which may help you figure out what's going on.
+* If you get an error message you can't understand, try asking your generative AI tool what it means. You can then use this to help figure out why the error is occurring and how to solve it.
+* Pay attention to the scope of your variables!
 
 
 Submitting your work
