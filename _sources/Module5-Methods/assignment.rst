@@ -10,8 +10,6 @@ To create your repository go `here <https://classroom.github.com/a/eQUj3s8V>`_. 
 Zombies
 =====================
 
-This assignment is the first step in a sequence of assignments that will simulate `zombies <https://en.wikipedia.org/wiki/Zombie>`_! In this part you will prepare the simulation data and display the entities being simulated (the zombies and non-zombies/humans). In the next part (Assignment 5) we will actually simulate the interaction between the two.
-
 There are a few reasons for this choice of subject matter:
 
 * These assignments show a real-world application of computing. The structure we will create is used in many simulations and games, and computer scientists often do similar work to visualize data and understand natural phenomena.
@@ -64,11 +62,11 @@ In other words, for every entity (zombie or non-zombie), we will want to keep tr
 Data Management
 =====================
 
-There are several ways to manage information like this. For this assignment, we’ll use an approach sometimes called `parallel arrays <https://en.wikipedia.org/wiki/Parallel_array>`_. The basic idea is that we will have three arrays to keep track of ``N`` entities:
+There are several ways to manage information like this. For this assignment, we’ll use an approach sometimes called `parallel arrays <https://en.wikipedia.org/wiki/Parallel_array>`_. The basic idea is that we will have two arrays to keep track of ``N`` entities:
 
 1. An array of length ``N`` that contains whether or not each entity is a zombie. Call this the ``areZombies`` array.
 
-2. An array of length ``N`` that contains the x coordinates of all the entities. Call this the ``xs`` array.
+2. An array of length ``N`` that contains the x coordinates of all the entities. Call this the ``positions`` array.
 
 Each thing being simulated will be associated with an index. For example, ``areZombies[0]``, ``xs[0]``, and ``ys[0]`` represent the type and coordinates of a single entity in our simulation. In a sense you can think about ``areZombies``, ``xs``, and ``ys`` as being columns in a table. Each individual row of the table represents a specific thing being simulated. The three arrays are considered “in parallel” since the i-th items in each array represent different aspects of a single composite thing.
 
@@ -266,6 +264,8 @@ Using Scanner to read from a file
 
 * Make sure you use the method that asks for the data type that corresponds to the next value in the file. For example, if the next value in the file is a double, make sure to call ``nextDouble()``, not ``next()``. 
 
+* Also be careful with ``next()`` and ``nextDouble()``. The first method reads in the next word, whereas the second reads in the entire next line. Both are useful, make sure you are choosing the correct one!
+
 Methods!
 --------
 
@@ -274,12 +274,6 @@ Methods are a fundamental part of computing because:
 * They allow us to break complex problems into smaller, more manageable parts. It makes it possible for a single person to write a complex program by working on one small part at a time and ensuring that the small parts can be combined together.
 
 * They allow code to be re-used. In this case we will do some operations repeatedly and rather than copying/pasting code you can just write a method once (one copy of the code) and call it as-needed.
-
-.. _2D Array For X,Y Positions. 1D Array For Boolean Zombie State.:
-
-**2D Array For X,Y Positions. 1D Array For Boolean Zombie State.**
-
-In this assignment, we will now use a two-dimensional array of ``doubles`` to store our coordinate data. Like before, each index (row index) will represent a single item. Rather than using different arrays for the x and y coordinates, we’ll instead use two columns of a two dimensional array. Column 0 will contain the x coordinate and column 1 will contain the y coordinate. We will still keep the zombie state in a ``boolean`` array, as it uses a separate data type.
 
 "Magic" Numbers and Constants
 -----------------------------
@@ -379,7 +373,7 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
    * Do **NOT** attempt to create the ``areZombies`` and ``positions`` arrays. As previously stated, they have already been created (outside of your method) and passed in to your method.
 
-   * Do **NOT** ask the Scanner for the initial nextInt() expecting it to be the length of the arrays. This call to nextInt() will have already been performed by the caller (in order to create and pass in arrays of the correct length). If you start off by calling nextInt() you will be attempting to read the first entity’s “Zombie” or “Nonzombie” state as the length of the arrays.
+   * Do **NOT** ask the Scanner for the initial nextInt() expecting it to be the length of the arrays. This call to nextInt() will have already been performed by the caller (in order to create and pass in arrays of the correct length). If you start off by calling nextInt() you will be attempting to read the first entity’s “Zombie” or “Nonzombie” state as the length of the arrays. You can simply use the length of the arrays directly to get the total number of zombies.
 
    * If you cannot ask the Scanner for the length of the arrays, how will you know what it is? Luckily, all created arrays know how long they are. In this method, both ``areZombies`` and positions will be the same length and can be accessed with the code ``areZombies.length`` and/or ``positions.length``.
 
@@ -397,11 +391,9 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
 4. Examine the results of the test cases.
 
-   * Update your ``readEntities(``)`` method until it passes all of the ``ReadEntitiesTest`` cases.
+   * Update your ``readEntities()`` method until it passes all of the ``ReadEntitiesTest`` cases.
 
 5. Return to ``ZombieSimulator.java`` and complete ``drawEntities()``. Notice that part of it has already been done for you. Again, you can merge in code from Lab 4. Draw all the entities. Zombies are drawn as ``ZOMBIE_COLOR`` filled circles of radius ``ENTITY_RADIUS`` and non-zombies with filled ``NONZOMBIE_COLOR`` filled circles of radius ``ENTITY_RADIUS``.
-
-   * **Note**: Using `StdDraw.filledCircle(x,y,radius) <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#filledCircle-double-double-double->`_ will produce the correct appearance. Using `StdDraw.setPenRadius(radius) <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#setPenRadius-double->`_ in combination with `StdDraw.point(x,y) <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html#point-double-double->`_ will result in half sized entities. If you decide to go the filledCircle() route, you should be fine. If you decide to go the setPenRadius() paired with point() route, just multiply the pen radius by 2.0 to account for the error in StdDraw.
 
 6. Open ``DrawEntitiesDebugApp.java`` and Run it as a Java Program.
 
@@ -439,13 +431,8 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
     * Update your ``updateEntities()`` method until it passes all of the ``UpdateEntitiesTest`` cases.
 
-11. Open ``Circles.java`` in the ``practice5`` package and follow along with this video:
 
-
-
-.. youtube:: 26ewfxQWMuQ
-
-12. Return to ``ZombieSimulator.java``. You’ll need to complete a ``nonzombieCount()`` method. Search the file for ``nonzombieCount``. The file already contains the comment block, but the method itself is commented out because it is incomplete.
+11. Return to ``ZombieSimulator.java``. You’ll need to complete a ``nonzombieCount()`` method. Search the file for ``nonzombieCount``. The file already contains the comment block, but the method itself is commented out because it is incomplete.
 
     * Change ``TodoReplaceWithCorrectReturnType`` to appropriate return type.
 
@@ -455,29 +442,29 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
     * Hint: You can uncomment or comment multiple lines by highlighting them and then typing ``Control-/`` (on a PC) or ``Command-/`` on a Mac.
 
-13. Complete the code for ``nonzombieCount()``
+12. Complete the code for ``nonzombieCount()``
 
-14. Open ``ZombieSimulatorTestSuite.java`` and Run it.
+13. Open ``ZombieSimulatorTestSuite.java`` and Run it.
 
     * Update your ``nonzombieCount()`` method until it passes all of the ``NonzombieCountMethodDeclarationTest`` and ``NonzombieCountTest cases.``
 
-15. Almost done! You just need to complete the actual simulation. Open ``ZombieSimulator.java`` and complete the ``TODO`` in the ``runSimulation()`` method. HINT: this should be short. It can be reasonably and cleanly done in ~10 lines of code.
+14. Almost done! You just need to complete the actual simulation. Open ``ZombieSimulator.java`` and complete the ``TODO`` in the ``runSimulation()`` method. HINT: this should be short. It can be reasonably and cleanly done in ~10 lines of code.
 
     * uncomment the code to read the number of entities from the passed in ``Scanner in``, create the ``areZombies`` and ``positions`` arrays of the correct lengths, and read and draw the entries in their initial positions.
 
     * implement the zombie simulation
 
-16. Run ``ZombieSimulator.java``. Try a few of the files that are provided (``cse131_vs_zombies.sim``, ``surrounded.sim``, ``in_the_house.sim``, ``bubbles.sim``, etc.)
+15. Run ``ZombieSimulator.java``. Try a few of the files that are provided (``cse131_vs_zombies.sim``, ``surrounded.sim``, ``in_the_house.sim``, ``bubbles.sim``, etc.)
 
-17. Return to ``drawEntities()`` and use StdDraw to display the ratio of Non-Zombies to total entities in the corner of the window (choose whatever corner you like). For example, in a simulation that has 3 Non-Zombies and 4 Zombies, this would look like “3/7”. Make sure that this display is readable on the canvas.
+16. Return to ``drawEntities()`` and use StdDraw to display the ratio of Non-Zombies to total entities in the corner of the window (choose whatever corner you like). For example, in a simulation that has 3 Non-Zombies and 4 Zombies, this would look like “3/7”. Make sure that this display is readable on the canvas.
 
-18. Feel free to add in more features (For example, count how many “turns” (updates) are completed before all the nonzombies have turned into zombies).
+17. Feel free to add in more features (For example, count how many “turns” (updates) are completed before all the nonzombies have turned into zombies).
 
-19. *Review your work*! Make sure you understand what each method does. Review how the individual methods fit into the overall process of simulating the zombie world.
+18. *Review your work*! Make sure you understand what each method does. Review how the individual methods fit into the overall process of simulating the zombie world.
 
-20. Search the file for any ``TODO`` or ``FIXME`` comments. If the items are completed, remove the comment (otherwise complete them).
+19. Search the file for any ``TODO`` or ``FIXME`` comments. If the items are completed, remove the comment (otherwise complete them).
 
-21. As always check the rubric to make sure you haven’t missed anything you will be graded on.
+20. As always check the rubric to make sure you haven’t missed anything you will be graded on.
 
 Example Run
 =====================
