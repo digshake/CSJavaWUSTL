@@ -27,7 +27,7 @@ As we saw in lecture, generative AI tools, like chatGPT, can generate code quick
 Recommended Workflow
 ====================
 
-For each step in the procedure below, we will ask you to complete one step towards a functioning game. Some of these steps have complex math (like finding where the user clicked) or other tricky elements. Use your AI tool of choice to work through these - a great perk of using these tools is to make them teach you about things you don't know yet. If you get some code you don't fully understand or haven't seen before, ask how it works! If the explanation you get doesn't quite click for you, feel free to get help from TAs or instructors (post on Piazza or stop by office hours)! Remember that at demo time you will be expected to explain how your code works - even if it is code that you did not write yourself.
+For each step in the procedure below, we will ask you to complete one step towards a functioning game. Some of these steps have complex math (like finding where the user clicked) or other tricky elements. Use your AI tool of choice to work through these - a great perk of using these tools is to make them teach you about things you don't know yet. Don't use AI to do everything at once, you'll have much better results if you complete the assignment one item at a time. If you get some code you don't fully understand or haven't seen before, ask how it works! If the explanation you get doesn't quite click for you, feel free to get help from TAs or instructors (post on Piazza or stop by office hours)! Remember that at demo time you will be expected to explain how your code works - even if it is code that you did not write yourself.
 
 Procedure
 =========
@@ -49,6 +49,7 @@ Your cookie clicker should:
 * Increment total amount of cookies clicked idly every second
 * Implement the click power up as explained above.
 * Implement the idle power up as explained above.
+* Power ups should be purchased automatically once enough cookies have been earned. No buttons are needed for the powerups.
 * After each powerup purchased, the price of the powerup should increase by some factor (up to you!)
 * The game should continue endlessly (unless the StdDraw window is closed)
 * For each step, record the prompts you used to interact with the generative AI you chose in a comment in your code. We will ask you how you worked with your chosen tool to develop your code!
