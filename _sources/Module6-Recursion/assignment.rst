@@ -214,9 +214,7 @@ Skipping ahead to 10…
 Tips for completing this method
 -----------------------------
 
-* We would suggest using the provided ``substituteAll(source, target, replacement)`` method from Studio 5.
-
-  * An Example: ``substituteAll("This is a String", 'i', "HELLO")`` would result in ``"ThHELLOs HELLOs a StrHELLOng"``. Note: This example shows what is called a ``String`` literal (the ``"This is a String"``) as the first parameter, but a ``String`` parameter, variable, or return value could have been used instead.
+* To perform the substitutions, please use the `String.replace() method <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#replace-java.lang.CharSequence-java.lang.CharSequence->`_. 
 
 * Be careful with how you perform the substitutions. The substitution for ``F`` will introduce more ``H`` characters into the string, but we only want to perform a substitution on the original ``H`` characters, not these new ones.
 
