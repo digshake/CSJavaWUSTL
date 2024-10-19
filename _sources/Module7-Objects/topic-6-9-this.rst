@@ -31,16 +31,14 @@ Observe the use of the keyword this in the given ``Person`` class.
   
 .. code-block:: java
 
-  public class Person 
-  {
+  public class Person {
      // instance variables 
       private String name;
       private String email;
       private String phoneNumber;
      
      // constructor
-     public Person(String theName)
-     {
+     public Person(String theName) {
         this.name = theName;
      }
      
@@ -53,14 +51,12 @@ Observe the use of the keyword this in the given ``Person`` class.
      public void setName(String theName) { this.name = theName;}
      public void setEmail(String theEmail) {this.email = theEmail;}
      public void setPhoneNumber(String thePhoneNumber) { this.phoneNumber = thePhoneNumber;}
-     public String toString()
-     {
+     public String toString() {
         return this.name + " " + this.email + " " + this.phoneNumber;
      }
      
      // main method for testing
-     public static void main(String[] args)
-     {
+     public static void main(String[] args) {
         Person p1 = new Person("Sana");
         System.out.println(p1);
         Person p2 = new Person("Jean");
@@ -85,8 +81,7 @@ The keyword this is sometimes used by programmers to distinguish between variabl
      private String name;
      
      // constructor
-     public Person(String name)
-     {
+     public Person(String name) {
         // Set this object's instance variable name to the parameter variable name
         this.name = name; 
      }
@@ -110,38 +105,31 @@ What does the ``Pay`` program print out? Trace through the code. Notice how the 
     
     .. code-block:: java
 
-       public class Pay
-       {
+       public class Pay {
         private double pay;
 
-        public Pay(double p)
-        {
+        public Pay(double p) {
             pay = p;
         }
 
-        public double getPay()
-        {
+        public double getPay() {
             return pay;
         }
 
-        public void calculatePayWithOvertime()
-        {
+        public void calculatePayWithOvertime() {
             // this Pay object is passed to the Overtime constructor
             Overtime ot = new Overtime(this);
             pay = ot.getOvertimePay();
         }
        }
 
-       public class Overtime
-       {
+       public class Overtime {
         private double payWithOvertime;
 
-        public Overtime(Pay p)
-        {
+        public Overtime(Pay p) {
             payWithOvertime = p.getPay() * 1.5;
         }
-        public double getOvertimePay()
-        {
+        public double getOvertimePay() {
             return payWithOvertime;
         }
        }
@@ -215,42 +203,34 @@ Practice
     
     .. code-block:: java
  
-        public class Liquid
-        {
+        public class Liquid {
             private int currentTemp;
 
-            public Liquid (int ct)
-            {
+            public Liquid (int ct) {
                 currentTemp = ct;
             }
 
-            public int getCurrentTemp()
-            {
+            public int getCurrentTemp() {
                 return currentTemp;
             }
 
-            public void addToJar(LiquidJar j)
-            {
+            public void addToJar(LiquidJar j) {
                 j.addLiquid(this);
             }
         }
 
-        public class LiquidJar
-        {
+        public class LiquidJar {
             private int totalTemp;
 
-            public LiquidJar()
-            {
+            public LiquidJar() {
               totalTemp = 0;
             }
             
-            public void addLiquid(Liquid l)
-            {
+            public void addLiquid(Liquid l) {
                 totalTemp += l.getCurrentTemp();
             }
 
-            public int getTotalTemp()
-            {
+            public int getTotalTemp() {
                 return totalTemp;
             }
             // Constructor not shown.

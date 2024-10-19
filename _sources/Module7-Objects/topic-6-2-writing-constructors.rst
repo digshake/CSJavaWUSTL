@@ -38,14 +38,12 @@ In a new class, constructors are usually written after the instance variables an
 
 .. code-block:: java 
 
-   public class ClassName
-   {
+   public class ClassName {
 
       /* Instance Variable Declarations -- not shown */
 
       /* Constructor - same name as Class, no return type */
-      public ClassName()
-      {
+      public ClassName() {
         /* Implementation not shown */
       }
    }
@@ -66,16 +64,14 @@ Here are two constructors that could be written for the Person class. Notice tha
 .. code-block:: java 
 
      // default constructor: initialize instance vars to default empty strings
-     public Person()
-     {
+     public Person() {
         name = "";
         email = "";
         phoneNumber = "";
      }
 
      // constructor: initialize all 3 instance variables to parameters
-     public Person(String initName, String initEmail, String initPhone)
-     {
+     public Person(String initName, String initEmail, String initPhone) {
         name = initName;
         email = initEmail;
         phoneNumber = initPhone;
@@ -149,21 +145,18 @@ Practice
 
     .. code-block:: java
 
-        public class Cat
-        {
+        public class Cat {
             private String color;
             private String breed;
             private boolean isHungry;
 
-            public Cat()
-            {
+            public Cat() {
                 color = "unknown";
                 breed = "unknown";
                 isHungry = false;
             }
 
-            public Cat(String c, String b, boolean h)
-            {
+            public Cat(String c, String b, boolean h) {
                 color = c;
                 breed = b;
                 isHungry = h;
@@ -194,23 +187,20 @@ Practice
 
    .. code-block:: java
 
-        public class Movie
-        {
+        public class Movie {
             private String title;
             private String director;
             private double rating;
             private boolean inTheaters;
 
-            public Movie(String t, String d, double r)
-            {
+            public Movie(String t, String d, double r) {
                 title = t;
                 director = d;
                 rating = r;
                 inTheaters = false;
             }
 
-            public Movie(String t)
-            {
+            public Movie(String t) {
                 title = t;
                 director = "unknown";
                 rating = 0.0;
@@ -236,14 +226,12 @@ When you pass object references as parameters to constructors or methods, they b
 
 .. code-block:: java 
 
-     public class Person 
-     {
+     public class Person {
        private String name;
        private Address addr; //Assumes an Address class is already defined
        
        // constructor: initialize instance variable and call Address constructor to make a copy
-       public Person(String initName, Address initAddr)
-       {
+       public Person(String initName, Address initAddr) {
           name = initName;
           addr = new Address(initAddr.getStreet(), 
                      initAddr.getCity(), initAddr.getState());
@@ -264,21 +252,16 @@ Practice
         
     .. code-block:: java
 
-        public class Cat
-        {
+        public class Cat {
             private String name;
             private int age;
             private boolean isSenior;
-            public Cat(String n, int a)
-            {
+            public Cat(String n, int a) {
                 name = n;
                 age = a;
-                if (age >= 10)
-                {
+                if (age >= 10) {
                     isSenior = true;
-                }
-                else
-                {
+                } else {
                     isSenior = false;
                 }
             }
@@ -327,20 +310,17 @@ Practice
    
    .. code-block:: java
 
-    public class Cat
-    {
+    public class Cat {
         private String name;
         private int age;
         private int kittens;
 
-        public Cat(String n, int a, int k)
-        {
+        public Cat(String n, int a, int k) {
             name = n;
             age = a;
             kittens = k;
         }
-        public Cat(String n, int a)
-        {
+        public Cat(String n, int a) {
             name = n;
             age = a;
             kittens = 0;
@@ -359,8 +339,7 @@ Practice
         
     .. code-block:: java
 
-        public class Cat
-        {
+        public class Cat {
             private String color;
             private boolean isHungry;
             /* missing constructor */
@@ -374,8 +353,7 @@ Practice
         
     - .. code-block:: java
     
-        public Cat(String c, boolean h)
-        {
+        public Cat(String c, boolean h) {
             c = "black";
             h = true;
         }
@@ -384,8 +362,7 @@ Practice
 
     - .. code-block:: java
     
-        public Cat(String c, boolean h)
-        {
+        public Cat(String c, boolean h) {
             c = "black";
             h = "true";
         }
@@ -394,8 +371,7 @@ Practice
 
     - .. code-block:: java
     
-        public Cat(String c, boolean h)
-        {
+        public Cat(String c, boolean h) {
             c = color;
             h = isHungry;
         }
@@ -404,8 +380,7 @@ Practice
 
     - .. code-block:: java
     
-        public Cat(String c, boolean h)
-        {
+        public Cat(String c, boolean h) {
             color = black;
             isHungry = true;
         }
@@ -414,8 +389,7 @@ Practice
 
     - .. code-block:: java
     
-        public Cat(String c, boolean h)
-        {
+        public Cat(String c, boolean h) {
             color = c;
             isHungry = h;
         }

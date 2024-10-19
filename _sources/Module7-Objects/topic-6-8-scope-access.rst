@@ -89,19 +89,16 @@ If there is a local variable with the same name as an instance variable, the var
 
 .. code-block:: java
 
-  public class Person 
-  {
+  public class Person {
      private String name;
      private String email;
     
-     public Person(String initName, String initEmail)
-     {
+     public Person(String initName, String initEmail) {
         name = initName;
         email = initEmail;
      }
      
-     public String toString() 
-     { 
+     public String toString() { 
        String name = "unknown";
        // The local variable name here will be used,
        //  not the instance variable name.
@@ -109,8 +106,7 @@ If there is a local variable with the same name as an instance variable, the var
      }
      
      // main method for testing
-     public static void main(String[] args)
-     {
+     public static void main(String[] args) {
         // call the constructor to create a new person
         Person p1 = new Person("Sana", "sana@gmail.com");
         System.out.println(p1);
@@ -139,25 +135,21 @@ Practice
     
    .. code-block:: java
  
-        public class Party
-        {
+        public class Party {
             private int boxesOfFood;
             private int numOfPeople;
 
-            public Party(int people, int foodBoxes)
-            {
+            public Party(int people, int foodBoxes) {
                 numOfPeople = people;
                 boxesOfFood = foodBoxes;
             }
 
-            public void orderMoreFood(int additionalFoodBoxes)
-            {
+            public void orderMoreFood(int additionalFoodBoxes) {
                 int updatedAmountOfFood = boxesOfFood + additionalFoodBoxes;
                 boxesOfFood = updatedAmountOfFood;
             }
 
-            public void eatFoodBoxes(int eatenBoxes) 
-            {
+            public void eatFoodBoxes(int eatenBoxes) {
                 boxesOfFood = updatedAmountOfFood - eatenBoxes;
             }
         }
@@ -169,25 +161,21 @@ Practice
     
     .. code-block:: java
 
-        public class Movie
-        {
+        public class Movie {
             private int currentPrice;
             private int movieRating;
 
-            public Movie(int p, int r)
-            {
+            public Movie(int p, int r) {
                 currentPrice = p;
                 movieRating = r;
             }
 
-            public int getCurrentPrice()
-            {
+            public int getCurrentPrice() {
                 int currentPrice = 16;
                 return currentPrice;
             }
 
-            public void printPrice()
-            {
+            public void printPrice() {
                 System.out.println(getCurrentPrice());
             }
         }

@@ -57,8 +57,7 @@ There are three steps to creating and calling an instance method:
 
         // Step 3: Define the method in the class
         // method header
-        public void methodName() 
-        { 
+        public void methodName() { 
               // method body for the code
         }
 
@@ -86,12 +85,10 @@ Practice
         
     .. code-block:: java
 
-        public class Wallet
-        {
+        public class Wallet {
             private double dollars;
 
-            public double putMoneyInWallet(int amount)
-            {
+            public double putMoneyInWallet(int amount) {
                 /* missing code */
             }
         }
@@ -142,19 +139,16 @@ Practice
     
     .. code-block:: java
 
-        public class Liquid
-        {
+        public class Liquid {
             private int currentTemp;
             private int boilingPoint;
 
-            public Liquid(int ct, int bp)
-            {
+            public Liquid(int ct, int bp) {
                 currentTemp = ct;
                 boilingPoint = bp;
             }
 
-            public boolean isBoiling(int amount)
-            {
+            public boolean isBoiling(int amount) {
                 /* missing code */
             }
         }
@@ -163,28 +157,19 @@ Practice
     
     .. code-block:: java
 
-       I.   if (currentTemp + amount < boilingPoint)
-            {
+       I.   if (currentTemp + amount < boilingPoint) {
                 return false;
-            }
-            else
-            {
+            } else {
                 return true;
             }
-       II.  if (amount > currentTemp)
-            {
+       II.  if (amount > currentTemp) {
                 return false;
-            }
-            else
-            {
+            } else {
                 return currentTemp;
             }
-       III. if (amount + currentTemp >= boilingPoint)
-            {
+       III. if (amount + currentTemp >= boilingPoint) {
                 return true;
-            }
-            else
-            {
+            } else {
                 return false;
             }
 

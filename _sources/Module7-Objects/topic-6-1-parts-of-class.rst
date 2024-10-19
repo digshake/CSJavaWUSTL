@@ -40,8 +40,7 @@ To write your own class, you typically start a class declaration with ``public``
 
 .. code-block:: java
 
-    public class House 
-    {
+    public class House {
        // define class here - a blueprint
     
     }
@@ -50,64 +49,11 @@ To write your own class, you typically start a class declaration with ``public``
     House neighborsHouse = new House();
 
 
-Remember that objects have attributes and behaviors. These correspond to **instance variables** and **methods** in the class definition.   Instance variables hold the data for objects where as the methods code the behaviors or the actions the object can do.   A class also has **constructors** which initialize the instance variables when the object is created, for example new House() above.  And a class can also have a **main method** which can be used to test the class.  
+Objects have attributes and behaviors. These correspond to **instance variables** and **methods** in the class definition.   Instance variables hold the data for objects where as the methods code the behaviors or the actions the object can do.   A class also has **constructors** which initialize the instance variables when the object is created, for example new House() above.  And a class can also have a **main method** which can be used to test the class.  
 
 Let's create a class called Person. What would we want to know about a person?  What we want to know depends on what problem we are trying to solve.  In one situation, perhaps when creating an address book, we might want to know the person's name and phone number and email. Here's a possible Person class with instance variables, constructor, and methods.
 
-.. figure:: Figures/personClassDefn.png
-    :width: 500px
-    :align: center
-    :alt: Person 
-    :figclass: align-center
-
-    Figure 1: Person class
-
-Run the code in the ``Person`` class to see how it constructs 2 Person objects and fills in their data. We will explain all parts of this class in the next sections, but notice that execution always starts in the main method. When a method like the print() method is called, we run the code in the print method for that object. After a method is done, the control returns back to the next line of code in the main method. You can also see this in the |Java visualizer| (click on the link and then Forward at the bottom to run the code step by step).
-
-.. activecode:: code6_1_1
-  :language: java
-  :autograde: unittest
-  
-  Run the following class. Try changing the Person p2 object in main to your name. 
-  ~~~~
-  public class Person 
-  {
-     // instance variables 
-     private String name;
-     private String email;
-     private String phoneNumber;
-     
-     // constructor: construct a Person copying in the data into the instance variables
-     public Person(String initName, String initEmail, String initPhone)
-     {
-        name = initName;
-        email = initEmail;
-        phoneNumber = initPhone;
-     }
-     
-     // Print all the data for a person
-     public void print()
-     {
-       System.out.println("Name: " + name);
-       System.out.println("Email: " + email);
-       System.out.println("Phone Number: " + phoneNumber);
-     }
-     
-     // main method for testing
-     public static void main(String[] args)
-     {
-        // call the constructor to create a new person
-        Person p1 = new Person("Sana", "sana@gmail.com", "123-456-7890");
-        // call p1's print method
-        p1.print();
-        Person p2 = new Person("Jean", "jean@gmail.com", "404 899-9955");
-        p2.print();
-     }
-  }
-  
- 
-
-
+Run the code in the ``Person`` class to see how it constructs 2 Person objects and fills in their data. We will explain all parts of this class in the next sections, but notice that execution always starts in the main method. When a method like the toString() method is called, we run the code in the toString method for that object. After a method is done, the control returns back to the next line of code in the main method.
 
 Instance Variables
 ---------------------------
@@ -185,28 +131,28 @@ Methods
 
    Methods define what the object can do.  They typically start with ``public`` then a type, then the name of the method followed by parentheses for optional parameters. Methods defined for an object can access and use its instance variables!  
 
-The ``Person`` class above has a constructor called Person() which we will discuss in the next lesson,  a print() method for output, and a main method which runs the whole program. We will also discuss **accessor** (also called getters) and **mutator** (also called setters or modifier) methods in the next lessons which allow get and set access to the instance variables.  
+The ``Person`` class above has a constructor called Person() which we will discuss in the next lesson,  a toString() method for output, and a main method which runs the whole program. We will also discuss **accessor** (also called getters) and **mutator** (also called setters or modifier) methods in the next lessons which allow get and set access to the instance variables.  
 
-Here is an example of the print() method that prints out all the data stored for a person object. Notice that it starts with public and then the return type.
+Here is an example of the toString() method that prints out all the data stored for a person object. Notice that it starts with public and then the return type.
 The **void** return type is used to indicate that the method does not return anything. Then it has the method name followed by parentheses for possible parameters. The body of the method is in curly brackets. Notice that the method can access and use the instance variables in the class: name, email, and phoneNumber. The instance variables are shared by all the methods of the class.
 
 .. code-block:: java
      
-     public void print()
-     {
-       System.out.println("Name: " + name);
-       System.out.println("Email: " + email);
-       System.out.println("Phone Number: " + phoneNumber);
+     public String toString() {
+       String result = "Name: " + name + ", ";
+       result += "Email: " + email + ", ";
+       result += "Phone Number: " + phoneNumber;
+       return result;
      }
      
-To call a method to do its job, we create an object of the class and then use the dot (.) operator to call its public methods, for example p1.print() means call p1's print method.
+To call a method to do its job, we create an object of the class and then use the dot (.) operator to call its public methods, for example p1.toString() means call p1's toString method.
 
 .. code-block:: java
 
     // call the constructor to create a new person
     Person p1 = new Person("Sana", "sana@gmail.com", "123-456-7890");
     // call p1's print method
-    p1.print();
+    String s = p1.toString();
         
         
 |Exercise| Check Your Understanding
@@ -269,8 +215,7 @@ Practice
 
         .. code-block:: java
  
-            public class Cat
-            {
+            public class Cat {
               /* missing code */
             }
     
@@ -329,8 +274,7 @@ Practice
     
     .. code-block:: java
 
-        public class Party
-        {
+        public class Party {
         /* missing code */
         }
 

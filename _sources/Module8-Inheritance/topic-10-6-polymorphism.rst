@@ -52,13 +52,6 @@ If you were simulating this toy in software you could create an Animal class tha
 .. note::
 
    In Java an object variable has both a **declared (compile-time) type** and an **actual (run-time) type**.  The *declared (compile-time) type*  of a variable is the type that is used in the declaration.  The *actual (run-time) type* is the class that actually creates the object using new.  
-   
-The variable ``nameList`` declared below has a **declared type** of ``List`` and an **actual** or **run-time type** of ``ArrayList``.  The complier will check if the declared type has the methods or inherits the methods being used in the code and give an error if it doesn't find the method(s).  The List interface does have an ``add`` method so this code will compile.  At run-time the execution environment will first look for the ``add`` method in the ``ArrayList`` class since that is the actual or run-time type. If it doesn't find it there it will look in the parent class and keep looking up the inheritance tree until it finds the method. It may go up all the way to the Object class.  The method will be found, since otherwise the code would not have compiled.
-
-.. code-block:: java 
-
-  List<String> nameList = new ArrayList<String>(); 
-  nameList.add("Hi");
   
 The variable ``message`` declared below has a **declared type** of ``Object`` and an **actual** or **run-time type** of ``String``.  Since the declared type of ``message`` is ``Object`` the code ``message.indexOf("h");`` will cause a compiler error since the ``Object`` class does not have an ``indexOf`` method.
   
@@ -108,8 +101,7 @@ In all of these cases, there are no errors at compile-time because the compiler 
          
             Shape[] shapes = {new Shape(), new Rectangle(), new Square(), 
                               new Circle()};
-            for (Shape s : shapes)
-            {
+            for (Shape s : shapes) {
                s.what();
                System.out.print(" ");
             }
@@ -131,9 +123,7 @@ In all of these cases, there are no errors at compile-time because the compiler 
       class Circle extends Oval {
          public void what() { System.out.print("Circle ");}
       }
-      
-You can step through this code using the Java Visualizer by clicking on the following link `Shape Example <http://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+Shape+%7B%0A+++public+void+what()+%7B+System.out.print(%22Shape+%22)%3B%7D%0A+++++++++%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A+++++++++%0A++++++Shape%5B%5D+shapes+%3D+%7Bnew+Shape(),+new+Rectangle(),+new+Square(),+%0A++++++++++++++++++++++++++++++new+Circle()%7D%3B%0A++++++for+(Shape+s+%3A+shapes)%0A++++++%7B%0A+++++++++s.what()%3B%0A+++++++++System.out.print(%22+%22)%3B%0A++++++%7D%0A+++%7D%0A%0A%7D+%0A%0Aclass+Rectangle+extends+Shape+%7B%0A+++public+void+what()+%7B+System.out.print(%22Rectangle+%22)%3B+%7D%0A%7D%0A%0Aclass+Square+extends+Rectangle+%7B%0A%7D%0A++++++%0Aclass+Oval+extends+Shape+%7B%0A+++public+void+what()+%7B+System.out.print(%22Oval+%22)%3B+%7D%0A%7D%0A%0Aclass+Circle+extends+Oval+%7B%0A+++public+void+what()+%7B+System.out.print(%22Circle+%22)%3B%7D%0A%7D%0A%0A&mode=display&curInstr=38>`_.
-      
+            
 
 .. mchoice:: qoo_11
    :practice: T
@@ -161,8 +151,7 @@ You can step through this code using the Java Visualizer by clicking on the foll
            return this.getFood(); 
          }
          
-         public static void main(String[] args)
-         {
+         public static void main(String[] args) {
            Student s1 = new GradStudent();
            s1.getInfo();
          }
@@ -193,8 +182,7 @@ You can step through this code using the Java Visualizer by clicking on the foll
    
    .. code-block:: java
    
-      public class Car
-      {
+      public class Car {
         private int fuel;
 
         public Car() { fuel = 0; } 
@@ -203,8 +191,7 @@ You can step through this code using the Java Visualizer by clicking on the foll
         public void addFuel() { fuel++; }
         public void display() { System.out.print(fuel + " "); }
         
-        public static void main(String[] args)
-        {
+        public static void main(String[] args) {
            Car car = new Car(5);
            Car fastCar = new RaceCar(5);
            car.display();
@@ -217,8 +204,7 @@ You can step through this code using the Java Visualizer by clicking on the foll
         
       }
 
-      class RaceCar extends Car
-      {
+      class RaceCar extends Car {
         public RaceCar(int g) { super(2*g); }
       } 
       
@@ -237,20 +223,16 @@ You can step through this code using the Java Visualizer by clicking on the foll
    
    .. code-block:: java 
    
-      public class Book
-      {
-         public String getISBN() 
-         {
+      public class Book {
+         public String getISBN() {
             // implementation not shown
          }
    
          // constructors, fields, and other methods not shown
       }
 
-      public class Dictionary extends Book
-      {
-         public String getDefinition()
-         {
+      public class Dictionary extends Book {
+         public String getDefinition() {
             // implementation not shown
          }
       } 

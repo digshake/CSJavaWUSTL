@@ -47,7 +47,7 @@ They should not look so good. When you print a ``Point``, you getan ugly and uni
 
 This, and the subsequent work below, is accomplished also via the ``Source`` menu.
 
-11. Now let's use Eclipse to generate ``hashCode()`` and ``equals(Object other)`` methods.
+9. Now let's use Eclipse to generate ``hashCode()`` and ``equals(Object other)`` methods.
 
 You must pick the attributes (instance variable names) upon which you wish equality to be based.
 

@@ -33,8 +33,7 @@ Corresponding to each get method, programmers also provide a public **set method
          private typeOfVar varName;
 
          // Mutator (setter) method template
-         public void setVarName(typeOfVar newValue)
-         {
+         public void setVarName(typeOfVar newValue) {
             varName = newValue;
          }
      }
@@ -50,13 +49,11 @@ Here's an example of the Student class with a mutator method called setName():
      
      /** setName sets name to newName
       *  @param newName                */
-     public void setName(String newName)
-     {
+     public void setName(String newName) {
         name = newName;
      }
      
-     public static void main(String[] args)
-     { 
+     public static void main(String[] args) { 
         // To call a set method, use objectName.setVar(newValue)
         Student s = new Student();
         s.setName("Ayanna");  
@@ -86,13 +83,11 @@ Notice the difference between set (mutator) and get (accessor) methods in the fo
     
     .. code-block:: java
 
-        public class Party
-        {
+        public class Party {
             //number of people at the party
             private int numOfPeople; 
 
-            /* Missing header of set method */
-            {
+            /* Missing header of set method */ {
                 numOfPeople = people;
             }
         }
@@ -156,17 +151,14 @@ Practice
     
     .. code-block:: java
     
-        public class Liquid
-        {
+        public class Liquid {
             private int currentTemp;
 
-            public Liquid(int temp)
-            {
+            public Liquid(int temp) {
                 currentTemp = temp;
             }
 
-            public void resetTemp()
-            {
+            public void resetTemp() {
                 currentTemp = newTemp;
             }
         }
@@ -196,9 +188,9 @@ Practice
 
 .. mchoice:: q6_5_4
     :practice: T
-    :answer_a: Replace line 12 with numOfPeople = additionalPeople;
-    :answer_b: Replace line 12 with return additionalPeople;
-    :answer_c: Replace line 12 with additionalPeople += 3;
+    :answer_a: Replace line 11 with numOfPeople = additionalPeople;
+    :answer_b: Replace line 11 with return additionalPeople;
+    :answer_c: Replace line 11 with additionalPeople += 3;
     :answer_d: Replace line 10 with public addPeople (int additionalPeople)
     :answer_e: Replace line 10 with public void addPeople(int additionalPeople)
     :correct: e
@@ -212,18 +204,15 @@ Practice
     
     .. code-block:: java
 
-        public class Party
-        {
+        public class Party {
             private int numOfPeople;
 
-            public Party(int n)
-            {
+            public Party(int n) {
                 numOfPeople = n;
             }
 
-            public int addPeople(int additionalPeople) // Line 10
-            {
-                numOfPeople += additionalPeople; // Line 12
+            public int addPeople(int additionalPeople) { //line 10
+                numOfPeople += additionalPeople; //line 11
             }
         }
 

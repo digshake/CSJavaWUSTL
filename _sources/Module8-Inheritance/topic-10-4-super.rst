@@ -64,30 +64,24 @@ When the student ``getFood()`` method is executed it will start executing the ``
    
    .. code-block:: java
 
-     public class Base
-     {
-        public void methodOne()
-        {
+     public class Base {
+        public void methodOne() {
           System.out.print("A");
           methodTwo();
         }
 
-        public void methodTwo()
-        {
+        public void methodTwo() {
           System.out.print("B");
         }
      }
 
-     public class Derived extends Base
-     {
-        public void methodOne()
-        {
+     public class Derived extends Base {
+        public void methodOne() {
            super.methodOne();
            System.out.print("C");
         }
 
-        public void methodTwo()
-        {
+        public void methodTwo() {
           super.methodTwo();
           System.out.print("D");
         }
@@ -98,8 +92,7 @@ The toString() method is a common method that is overriden. A subclass can overr
 .. code-block:: java
 
    // overriden toString() in subclass
-   public String toString() 
-   {
+   public String toString() {
      return super.toString() + "\n" + subclassInstanceVariables;
    }
 

@@ -42,8 +42,7 @@ that is the same type as the variable that it is returning.
      private typeOfVar varName;
   
      // Accessor (getter) method template
-     public typeOfVar getVarName()
-     {
+     public typeOfVar getVarName() {
         return varName;
      }
      
@@ -68,13 +67,11 @@ on the other hand must be called with an object, and therefore can access the in
   
      /** getName() example
       *  @return name */
-     public String getName()
-     {
+     public String getName() {
         return name;
      }
      
-     public static void main(String[] args)
-     { 
+     public static void main(String[] args) { 
         // To call a get method, use objectName.getVarName()
         Student s = new Student();
         System.out.println("Name: " + s.getName() );
@@ -150,12 +147,10 @@ Practice
     
     .. code-block:: java
 
-        public class Party
-        {
+        public class Party {
             private int numOfPeople;
 
-            public Party(int num)
-            {
+            public Party(int num) {
                 numOfPeople = num;
             }
 
@@ -173,11 +168,9 @@ Practice
 
     .. code-block:: java
 
-        public class Student
-        {
+        public class Student {
             private int id;
-            public getId()
-            {
+            public getId() {
                 return id;
             }
             // Constructor not shown

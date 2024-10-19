@@ -45,8 +45,7 @@ You may see the @Override annotation above a method. This is optional but it pro
 .. code-block:: java
 
     @Override
-    public String greet()
-    {
+    public String greet() {
          return "Go Away";
     }
 
@@ -87,28 +86,23 @@ Notice that in the ``Greeter`` class, the ``greet(String who)`` method overloads
     
     .. code-block:: java 
    
-      public class Person 
-      {
+      public class Person {
          private String name = null;
          
-         public Person(String theName)
-         {
+         public Person(String theName) {
             name = theName;
          }
          
-         public String getFood() 
-         {
+         public String getFood() {
             return "Hamburger";
          }
       }
         
-      public class Student extends Person
-      {
+      public class Student extends Person {
          private int id;
          private static int nextId = 0;
          
-         public Student(String theName)
-         {
+         public Student(String theName) {
            super(theName);
            id = nextId;
            nextId++;
@@ -116,8 +110,7 @@ Notice that in the ``Greeter`` class, the ``greet(String who)`` method overloads
          
          public int getId() {return id;}
          
-         public void setId (int theId) 
-         {
+         public void setId (int theId) {
             this.id = theId;
          }
       }
@@ -139,36 +132,30 @@ Notice that in the ``Greeter`` class, the ``greet(String who)`` method overloads
     
     .. code-block:: java 
    
-      public class Person 
-      {
+      public class Person {
          private String name = null;
          
-         public Person(String theName)
-         {
+         public Person(String theName) {
             name = theName;
          }
          
-         public String getFood() 
-         {
+         public String getFood() {
             return "Hamburger";
          }
       }
         
-      public class Student extends Person
-      {
+      public class Student extends Person {
          private int id;
          private static int nextId = 0;
          
-         public Student(String theName)
-         {
+         public Student(String theName) {
            super(theName);
            id = nextId;
            nextId++;
          }
          
          public int getId() {return id;}
-         public void setId (int theId) 
-         {
+         public void setId (int theId) {
             this.id = theId;
          }
       }  
@@ -204,30 +191,25 @@ For example, if a parent has a private instance variables, ``name``, then the pa
       
    .. code-block:: java 
    
-      class Item
-      {
+      class Item {
          private int x;
 
-         public void setX(int theX)
-         {
+         public void setX(int theX) {
             x = theX;
          }
          // ... other methods not shown
       }
       
-      public class EnhancedItem extends Item
-      {
+      public class EnhancedItem extends Item {
          private int y;
 
-         public void setY(int theY)
-         {
+         public void setY(int theY) {
             y = theY;
          }
 
          // ... other methods not shown
    
-         public static void main(String[] args)
-         {
+         public static void main(String[] args) {
             EnhancedItem currItem = new EnhancedItem();
             // missing code
          }

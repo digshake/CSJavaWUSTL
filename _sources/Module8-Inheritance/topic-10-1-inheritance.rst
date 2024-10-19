@@ -128,10 +128,6 @@ Inheritance is also useful for **specialization** which is when you want most of
    In Java how many parents can a class have? 
   
 
-|CodingEx| **Coding Exercise**
-
-The Student class can also inherit from the class Person just like Employee and Customer because a Student is a type of Person. 
-
 is-a vs. has-a 
 ---------------------------------------
 
@@ -153,8 +149,7 @@ In the code, the ``Course`` class **has** an array or ArrayList of ``CoursePerio
 
 .. code-block:: java
 
-  public class Course
-  {
+  public class Course {
      private ArrayList<CoursePeriod> periodList;
   }
 
@@ -162,8 +157,7 @@ Alternatively, we could say that a CoursePeriod  has a Course attribute inside i
 
 .. code-block:: java
 
-  public class CoursePeriod
-  {
+  public class CoursePeriod {
      private Course courseInfo;
      private int period;
   }

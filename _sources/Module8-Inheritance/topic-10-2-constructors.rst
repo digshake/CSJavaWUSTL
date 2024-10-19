@@ -34,14 +34,11 @@ The actual parameters given to super() are used to initialize the inherited inst
 
 .. code-block:: java
 
-    public class Employee extends Person
-    {
-        public Employee()
-        {
+    public class Employee extends Person {
+        public Employee() {
             super(); // calls the Person() constructor
         }
-        public Employee(String theName)
-        {
+        public Employee(String theName) {
             super(theName); // calls Person(theName) constructor
         }
     }
@@ -91,8 +88,7 @@ Regardless of whether the superclass constructor is called implicitly or explici
          // other methods
       }
 
-      public class Point3D extends Point2D
-      {
+      public class Point3D extends Point2D {
          public int z;
    
          // other code
@@ -131,19 +127,16 @@ Regardless of whether the superclass constructor is called implicitly or explici
    .. code-block:: java 
    
       
-      class MPoint
-      {
+      class MPoint {
          private int myX; // coordinates
          private int myY;
 
-         public MPoint( )
-         {
+         public MPoint( ) {
             myX = 0;
             myY = 0;
          }
 
-         public MPoint(int a, int b)
-         {
+         public MPoint(int a, int b) {
             myX = a;
             myY = b;
          }
@@ -152,8 +145,7 @@ Regardless of whether the superclass constructor is called implicitly or explici
 
       }
       
-      public class NamedPoint extends MPoint
-      {
+      public class NamedPoint extends MPoint {
          private String myName;
          // constructors go here
          // ... other methods not shown
