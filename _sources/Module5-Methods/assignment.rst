@@ -393,7 +393,7 @@ Below is a recommended work-flow. Many of the parts are independent. If you get 
 
    * Update your ``readEntities()`` method until it passes all of the ``ReadEntitiesTest`` cases.
 
-5. Return to ``ZombieSimulator.java`` and complete ``drawEntities()``. Notice that part of it has already been done for you. Again, you can merge in code from Lab 4. Draw all the entities. Zombies are drawn as ``ZOMBIE_COLOR`` filled circles of radius ``ENTITY_RADIUS`` and non-zombies with filled ``NONZOMBIE_COLOR`` filled circles of radius ``ENTITY_RADIUS``.
+5. Return to ``ZombieSimulator.java`` and complete ``drawEntities()``. Notice that part of it has already been done for you. Draw all the entities provided in the two arrays passed into this method. Entities that are Zombies should be drawn as filled circles with color ``ZOMBIE_COLOR`` and radius ``ENTITY_RADIUS``. Non-zombies should be ``NONZOMBIE_COLOR`` filled circles of radius ``ENTITY_RADIUS`` as well..
 
 6. Open ``DrawEntitiesDebugApp.java`` and Run it as a Java Program.
 
