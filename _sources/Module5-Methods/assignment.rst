@@ -66,9 +66,9 @@ There are several ways to manage information like this. For this assignment, we�
 
 1. An array of length ``N`` that contains whether or not each entity is a zombie. Call this the ``areZombies`` array.
 
-2. An array of length ``N`` that contains the x coordinates of all the entities. Call this the ``positions`` array.
+2. A 2D array with ``N`` rows (the number of columns is for you to decide) that contains the x and y coordinates of all the entities. Call this the ``positions`` array.
 
-Each thing being simulated will be associated with an index. For example, ``areZombies[0]``, ``positions[0]`` represent the type and coordinates of a single entity in our simulation. In a sense you can think about ``areZombies``, ``positions`` as being columns in a table. Each individual row of the table represents a specific thing being simulated. The three arrays are considered “in parallel” since the i-th items in each array represent different aspects of a single composite thing.
+Each thing being simulated will be associated with an index. For example, ``areZombies[0]``, ``positions[0]`` represent the type and coordinates of a single entity in our simulation. In a sense you can think about ``areZombies``, ``positions`` as being columns in a table. Each individual row of the table represents a specific thing being simulated. The two arrays are considered “in parallel” since the i-th items in each array represent different aspects of a single composite thing.
 
 Data Encoding
 =====================
@@ -357,7 +357,7 @@ Unit Testing
 
 **Special Note: Unit tests help developers make sure the code works, but they usually only test a relatively small number of possible conditions. NEVER assume that code that passes unit tests “must work”. The test only ensures that it did what those tests expected. The tests themselves could be flawed and they don’t test everything!**
 
-If you fail any unit test cases, you should try to read through the test case and see what it’s testing. In this assignment, almost all tests cases are either looking for a particular value (via ``assertEquals()`` or ``assertNotEquals()`` ) or for a boolean condition (via ``assertTrue``() or ``assertFalse()``). Doubling clicking on a failing test will take you to the code for that test, where you can probably figure out what the test case is expecting and then try to identify why your code didn’t pass it. The comments in and above the test cases may also provide some guidance.
+If you fail any unit test cases, you should try to read through the test case and see what it’s testing. In this assignment, almost all tests cases are either looking for a particular value (via ``assertEquals()`` or ``assertNotEquals()`` ) or for a boolean condition (via ``assertTrue()`` or ``assertFalse()``). Doubling clicking on a failing test will take you to the code for that test, where you can probably figure out what the test case is expecting and then try to identify why your code didn’t pass it. The comments in and above the test cases may also provide some guidance.
 
 
 Procedure & Recommended Workflow
