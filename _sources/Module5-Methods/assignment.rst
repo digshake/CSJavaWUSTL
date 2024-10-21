@@ -66,7 +66,7 @@ There are several ways to manage information like this. For this assignment, we�
 
 1. An array of length ``N`` that contains whether or not each entity is a zombie. Call this the ``areZombies`` array.
 
-2. An array of length ``N`` that contains the x coordinates of all the entities. Call this the ``positions`` array.
+2. An 2D array with ``N`` rows (how many columns is up to you) that contains the x and y coordinates of all the entities. Call this the ``positions`` array.
 
 Each thing being simulated will be associated with an index. For example, ``areZombies[0]``, ``positions[0]`` represent the type and coordinates of a single entity in our simulation. In a sense you can think about ``areZombies``, ``positions`` as being columns in a table. Each individual row of the table represents a specific thing being simulated. The three arrays are considered “in parallel” since the i-th items in each array represent different aspects of a single composite thing.
 
