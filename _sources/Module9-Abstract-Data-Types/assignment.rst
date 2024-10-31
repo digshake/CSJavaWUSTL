@@ -30,7 +30,7 @@ Requirements
 
 To receive full credit you must:
 
-* Have a Snake that is controlled by the keyboard and moves in a snake-like fashion across the screen
+* Have a Snake that is controlled by the keyboard and moves in a snake-like fashion across the screen. The expectation is that the movement will work like the game linked above. Moving the entire body of the snake in the same direction will not receive full credit.
 
 * Randomly place food around the game screen
 
