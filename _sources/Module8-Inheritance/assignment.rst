@@ -172,7 +172,7 @@ update()
 
 **Repeated Warning**: each of the find closest methods will return ``null`` if no Entity meets the specified constriaints. For example, if there are no remaining nonzombies and findClosestNonzombie(entities) is called ``null`` will be returned. You will need to handle this case gracefully since if you try to call a method on ``null`` a ``NullPointerException`` will be thrown.
 
-* The method will be passed a list of all current entities (this allows an entity to try to make a rational decision based on all other entities, like running away from a zombie).
+* The method will be passed an array of all current entities (this allows an entity to try to make a rational decision based on all other entities, like running away from a zombie).
 
 * Zombies are hungry. They should intentionally (not randomly) move toward nonzombies.
 
@@ -225,15 +225,15 @@ getEntities()
 
 * Returns the current array of entities.
 
-readEntities(ap)
+readEntities(in)
 ----------------------------------
 
-* reads a complete zombie simulation file as described in Assignment 4. Each read Entity should be added to this instance’s List of entities.
+* reads a complete zombie simulation file as described in Assignment 5. Each read Entity should be added to this instance’s array of entities.
 
 getZombieCount()
 ----------------------------------
 
-* Returns the number of Entities in the current list of entities which are zombies.
+* Returns the number of Entities in the current array of entities which are zombies.
 
 getNonzombieCount()
 ----------------------------------
@@ -248,9 +248,9 @@ draw()
 update()
 ----------------------------------
 
-* Updating a ZombieSimulator largely defers to its Entities to each update. Put another way, each of the entities should have its update method called. Each Entity will need the complete list of active entities passed to it, so that it can properly simulate its update.
+* Updating a ZombieSimulator largely defers to its Entities to each update. Put another way, each of the entities should have its update method called. Each Entity will need the complete array of active entities passed to it, so that it can properly simulate its update.
 
-* Calling ``update(entities)`` on an Entity will return an ``Entity`` (which could be either a Zombie or Nonzombie) as a result of the update. Make sure that this ``Entity`` is properly stored in the array so that the simulation can continue.
+* Calling ``update(entities)`` on an Entity will return an ``Entity`` (which could be either a Zombie or Nonzombie) as a result of the update. Make sure that this ``Entity`` is properly stored in the instance's array of Entities so that the simulation can continue.
 
 main(args)
 ----------------------------------
