@@ -12,7 +12,7 @@ Assignment Setup
 
 Before starting this assignment it is expected that you have completed the `software setup <software.html>`_ for the course as well as `Studio 0 <studio.html>`_)
 
-To create your repository go `go here <https://classroom.github.com/a/Md3OoV_X>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
+To create your repository go `go here <https://classroom.github.com/a/2NIlv5dk>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
 
 Using Java to Control a Robot
 ================
@@ -65,15 +65,15 @@ The TAs will be asking you some questions about GitHub (and debugging) as part o
 3. Course Information
 ================
 
-Review the course site on `Canvas <https://wustl.instructure.com/courses/133664>`_.  Make sure you review:
+Review the course site on `Canvas <https://wustl.instructure.com/courses/143742>`_.  Make sure you review:
 
-1. `Course Policies <https://wustl.instructure.com/courses/133664/pages/course-policies>`_
-2. Know where to go to find `Office Hours <https://wustl.instructure.com/courses/133664/pages/office-hours>`_, which will be posted by the second week of class.
-3. Know how to `browse the content and prepare for modules <https://wustl.instructure.com/courses/133664>`_.
-4. Be sure you're signed up for the course's `Piazza forum <https://piazza.com/wustl/fall2024/cse131cse501n>`_.
+1. `Course Policies <https://wustl.instructure.com/courses/143742/pages/course-policies>`_
+2. Know where to go to find `Office Hours <https://wustl.instructure.com/courses/143742/pages/office-hours>`_, which will be posted by the second week of class.
+3. Know how to `browse the content and prepare for modules <https://wustl.instructure.com/courses/143742>`_.
+4. Be sure you're signed up for the course's `Piazza forum <https://piazza.com/wustl/spring2025/cse131cse501n>`_.
 
 
-4. "Demo" your work to a TA!
+4. Demo your work to a TA!
 ================
 
 To receive credit for an assignment in this course you must demo your work to an instructor or a TA. The person demoing you will walk you through the rubric for the assignment, which can be found on Canvas. It is a good idea to take a look at the rubric yourself and make sure that all parts of the assignment are completed before starting a demo!
@@ -81,4 +81,4 @@ To receive credit for an assignment in this course you must demo your work to an
 1. Show the TA your work
 2. Show them your final work on GitHub.
 3. Ask any questions you have about the course.
-4. Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!
+4. Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/143742>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!

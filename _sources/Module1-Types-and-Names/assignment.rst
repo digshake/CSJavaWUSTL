@@ -5,7 +5,7 @@ Assignment 1: Grade Calculator
 Assignment Setup
 ================
 
-To create your repository, `go here <https://classroom.github.com/a/DzEHvf2W>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository, `go here <https://classroom.github.com/a/rru9iNpT>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Grade Calculator
 ================
@@ -115,7 +115,7 @@ Here are a few issues we anticipate you will come across. Read the bullet point 
 
 * Making sure users don't put in invalid values: 150% is not a valid average assignment grade. In the future, we'll learn how to force programs to only accept valid inputs. For now, just assume the user will always put in valid inputs.
 
-* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/123389/pages/course-policies>`_ for the weighting on different components of the grade.
+* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/143742/pages/course-policies>`_ for the weighting on different components of the grade.
 
 * Rounding: You must round the weighted grade percentages to two digits after the decimal point so that they get printed with the right number of decimal places. In order to round, you may use the math operations we learned (``+``, ``-``, ``*``, ``/``) and/or ``Math.round()`` and nothing else. Think about what information ``Math.round()`` "loses" and how you would need to change the input so it only loses the information you want to get rid of.
 
@@ -130,4 +130,4 @@ Check the rubric (which is at the very bottom of the Canvas page for this assign
 
 Get your assignment graded by bringing it to lab on Wednesday/Thursday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
 
-Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/133664>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!
+Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/143742>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!
