@@ -36,6 +36,7 @@ Steps to a Complete Cookie Clicker
 
    * Run your program and verify that your cookie looks correct.
 2. Draw 5 chocolate chips, randomly placed on the cookie.
+   * These chips should be randomly placed at the beginning of the game and stay in the same place for the duration of the game
 3. Detect when the user clicks on the cookie. (Hint: Use `StdDraw <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ mouse methods such as: ``isMousePressed()`` and ``mouseX()`` and ``mouseY()``)
 
    * To check your work, try printing something to the console (i.e., use ``System.out.println``) when the screen is clicked.
