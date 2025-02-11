@@ -42,7 +42,7 @@ Steps to a Complete Cookie Clicker
 4. Display a cookie counter on the screen and add one to it every time the cookie is clicked
 5. Implement idle point earning: every second, the user should earn 1 cookie without having to click 
 
-   * Use the timing methods provided to get the current time in milliseconds.
+   * Use the timing methods provided in the ``TimingPractice`` examples to get the current time in milliseconds.
 6. Starting at a cost of 20 cookies, a power up will begin that increases the amount of cookies they get with each click. This power up should be able to be bought multiple times, increasing the click power each time, and increasing in cost after each purchase.
 7. Starting at a cost of 60 cookies, a power up will begin that earns one more idle cookie per second. This power up should be able to be bought multiple times, increasing the idle cookies earned each time, and increasing in cost after each purchase.
 
