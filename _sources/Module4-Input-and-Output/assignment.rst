@@ -5,7 +5,9 @@ Assignment 4: Cookie Clicker
 Authors
 =======
 
-Dorian Marr, '26 Vicky Prisco, '25
+Dorian Marr, '26 
+
+Vicky Prisco, '25
 
 Assignment Setup
 =====================
@@ -36,6 +38,7 @@ Steps to a Complete Cookie Clicker
 
    * Run your program and verify that your cookie looks correct.
 2. Draw 5 chocolate chips, randomly placed on the cookie.
+
    * These chips should be randomly placed at the beginning of the game and stay in the same place for the duration of the game
 3. Detect when the user clicks on the cookie. (Hint: Use `StdDraw <https://introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html>`_ mouse methods such as: ``isMousePressed()`` and ``mouseX()`` and ``mouseY()``)
 
@@ -52,12 +55,13 @@ Requirements
 
 Your cookie clicker should:
 
+* Display a cookie with a number of randomly placed chips that stay still for the entirety of the game
 * Increment total amount of cookies clicked with each click
 * Increment total amount of cookies clicked idly every second
 * Implement the click power up as explained above.
 * Implement the idle power up as explained above.
-* Power ups should be begin automatically once enough cookies have been earned. No buttons should be used for the powerups.
-* After each powerup begins, the amount of cookies to start the powerup should increase by some factor (up to you!)
+* Power ups should begin automatically once enough cookies have been earned. No buttons should be used for the powerups.
+* After each powerup begins, the amount of cookies needed to achievev the powerup should increase by some factor (up to you!)
 * The game should continue endlessly
 * For each step, record the prompts you used to interact with the generative AI you chose in a comment in your code. We will ask you how you worked with your chosen tool to develop your code!
 
