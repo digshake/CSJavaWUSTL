@@ -45,9 +45,13 @@ Before we can construct a Quiz, we'll start by creating a few different types of
 
 Examine the ``Question`` class. This will be our **base class** so no inheritance will be used here, but these methods will be inherited and used by the **subclasses** later on in the studio.
 
+Complete the constructor and getter methods for the Question class.
+
 Take some time to familiarize yourself with this class. Make sure you understand what the fields are and how the constructor works. Make sure you understand what the ``displayPrompt()`` and ``checkAnswer()`` methods are doing.
 
-Finally, examine and run the main method that is provided in the ``Question`` class. Feel free to come up with your own questions and test the provided methods to make sure you understand this base class before proceeding.
+Finally, create your own Question object in the main method in the ``Question`` class.
+
+Run the test suite ``Studio8TestSuite.java`` to check your work before moving on.
 
 Multiple Choice Questions
 =========================
@@ -58,9 +62,31 @@ By extending the ``Question`` class, our ``MultipleChoiceQuestion`` class gains 
 
 Start by examining the ``MultipleChoiceQuestion`` constructor. Use the constructor from the base class to take care of the fields that the two classes have in common by calling ``super()``. Then, deal with any additional fields, creating them if necessary.
 
-Next, you should **override** the ``displayPrompt()`` method, which has been started for you. You can use the ``displayPrompt()`` method from the base class to display the question prompt, then finish the method by displaying the choices in order. Your first choice should be labelled "1", second choice "2", etc.
+Next, you should **override** the ``displayPrompt()`` method, which has been started for you. You can use the ``displayPrompt()`` method from the base class to display the question prompt, then finish the method by displaying the choices in order. Your first choice should be labelled "1", second choice "2", etc. The output for this method should look like the following:
 
-Once you have finished, examine and run the provided main method in the ``MultipleChoiceQuestion`` class. Make some more questions and test your code to make sure it behaves in the way you expect.
+If the options are 131, 231, 425, and 1301, the ``displayPrompt()`` method should print:
+
+1. 131
+
+2. 231
+
+3. 425
+
+4. 1301
+
+More abstractly, this method should print:
+
+1. choices[0]
+
+2. choices[1]
+
+...
+
+\ n. choices[n]
+
+Finally, complete the getter method for the instance variable you have created.
+
+Once you have finished, run the test suite (``Studio8TestSuite.java``) again to check your work. Make some MultipleChoiceQuestions in the main method and test your code to make sure it behaves in the way you expect.
 
 Select All Questions
 ====================
@@ -79,7 +105,7 @@ These methods from the ``String`` `API <https://docs.oracle.com/javase/8/docs/ap
 
 * `indexOf <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-int->`_
 
-Be sure to test your code using the provided main method to make sure it works before proceeding.
+Be sure to run the test suite to check your work, then create some SelectAllQuestions in the main method to ensure it works how you'd expect.
 
 Quiz
 ====
@@ -100,9 +126,9 @@ Your task is to complete ``takeQuiz()``. This method should:
   
   * Display the points earned for each question
   
-* Once all questions have been answered, it should display the points earned as well as the total number of points available (from ``getTotalPoints()``)
+* Once all questions have been answered, it should display the points earned as well as the total number of points available (from ``getTotalPoints()``) in the format: You have earned ___ points.
 
-A main method has been provided to you that shows each question type working with the quiz. Create and expand the quiz with questions of your own!
+Run the test suites to check your work and create a Quiz of your own in the main method!
 
 Submitting
 ==========
