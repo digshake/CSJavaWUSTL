@@ -157,7 +157,7 @@ See the method `factorial` below that calculates the **factorial** of a number. 
 
    Which line in the method factorial contains the recursive call (the call to the same method)?
 
-   -    :6$: Correct.  This line contains a call to the same method, which makes it a recursive method.
+   -    :5$: Correct.  This line contains a call to the same method, which makes it a recursive method.
         :.*: Look for a call to the same method name
 
 |CodingEx| **Coding Exercise**
