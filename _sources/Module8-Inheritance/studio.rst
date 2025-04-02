@@ -95,7 +95,7 @@ Another type of question we would like to include presents multiple choices but 
 
 First complete the constructor, making sure to call ``super()``.
 
-Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Examine the provided examples in the main method, the intention here is for each choice to be worth one point, with one point being deducted for each incorrect answer that is given and for each correct answer that isn't given. Use the provided methods ``findMissingCorrectAnswers()`` and ``findIncorrectGivenAnswers()`` to complete the ``checkAnswer()`` method. Note that you will not have to use the provided ``findMissingCharacters()`` method, though it is already being used in the other methods you have been given.
+Next, focus on the ``checkAnswer()`` method. Unlike the other question types, these kinds of questions allow for partial credit. Each choice is worth one point, with one point being deducted for each incorrect answer that is given and for each correct answer that isn't given. Use the provided methods ``findMissingCorrectAnswers()`` and ``findIncorrectGivenAnswers()`` to complete the ``checkAnswer()`` method. Note that you will not have to use the provided ``findMissingCharacters()`` method, though it is already being used in the other methods you have been given.
 
 These methods from the ``String`` `API <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>`_ will likely be useful:
 
@@ -112,7 +112,9 @@ Quiz
 
 It is now time to put it all together. Examine the code that has been provided to you in the ``Quiz`` class. There is only one field, an array of ``Question`` objects. Because ``MultipleChoiceQuestion`` and ``SelectAllQuestion`` **are** ``Question`` s, they can be used anywhere that a ``Question`` is specified as the type. This is the concept known as **polymorphism**.
 
-Two methods have been completed for you already: ``getTotalPoints()`` and ``getUserAnswer()``. You will need both of these methods in a moment, so familiarize yourself with them now.
+One method have been completed for you already: ``getUserAnswer()``. You will need this method in a moment, so familiarize yourself with it now.
+
+Complete ``getTotalPoints()``.
 
 Your task is to complete ``takeQuiz()``. This method should:
 
