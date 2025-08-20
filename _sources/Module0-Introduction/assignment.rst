@@ -12,12 +12,12 @@ Assignment Setup
 
 Before starting this assignment it is expected that you have completed the `software setup <software.html>`_ for the course as well as `Studio 0 <studio.html>`_
 
-To create your repository go `go here <https://classroom.github.com/a/lpurJI29>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
+To create your repository `go here <https://classroom.github.com/a/lpurJI29>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
 
 Using Java to Control a Robot
 ================
 
-Your project should now be open in Eclipse. You should have a pane called the `Package Explorer` on the screen (if not, go to the `Window` menu, select `Show View` and pick `Package Explorer`).  
+Your project should now be open in VS Code. You should the files and folders on the left side of the screen (if not, click the "Explorer" button in the top left corner).
 
 2. Expand the ``src`` folder.
 3. Expand the ``assignment0`` folder and click on the `RobotInstructions.java` file. You should see the code open in a new tab.
@@ -28,6 +28,7 @@ Your project should now be open in Eclipse. You should have a pane called the `P
 5. A new window should now open. Click on the ``Go`` button and you'll see a simulated robot draw on the screen.  It's merely following the instructions that are being given in the ``RobotInstructions.java`` that you opened.
 6. Close the robot simulation window (*not* VS Code).
 7. Review the contents of ``RobotInstructions.java``, which should be shown in VS Code. Make some changes:
+
    1. Change the ``robot.forward(60);`` to `robot.forward(120);`.  What do you think the robot will do differently?  
    2. Run the robot simulator again.
    3. Did the robot do what you expected?  
