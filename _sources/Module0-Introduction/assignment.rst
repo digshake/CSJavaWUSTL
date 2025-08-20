@@ -29,7 +29,7 @@ Your project should now be open in VS Code. You should the files and folders on 
 6. Close the robot simulation window (*not* VS Code).
 7. Review the contents of ``RobotInstructions.java``, which should be shown in VS Code. Make some changes:
 
-   1. Change the ``robot.forward(60);`` to `robot.forward(120);`.  What do you think the robot will do differently?  
+   1. Change the ``robot.forward(60);`` to ```robot.forward(120);``.  What do you think the robot will do differently?  
    2. Run the robot simulator again.
    3. Did the robot do what you expected?  
    4. What if you removed the line that now says ``robot.forward(120);`` and replaced it with two lines that each say ``robot.forward(60);``?  Before making any change be sure to close the simulator. Then make your changes and hit the `Play` button to see their impact.
