@@ -10,7 +10,7 @@ The assignment is intended to make sure that you've completed the setup material
 Assignment Setup
 ================
 
-Before starting this assignment it is expected that you have completed the `software setup <software.html>`_ for the course as well as `Studio 0 <studio.html>`_)
+Before starting this assignment it is expected that you have completed the `software setup <software.html>`_ for the course as well as `Studio 0 <studio.html>`_
 
 To create your repository go `go here <https://classroom.github.com/a/lpurJI29>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
 
