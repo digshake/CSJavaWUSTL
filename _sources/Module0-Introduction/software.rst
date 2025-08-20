@@ -60,7 +60,7 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 
 .. image:: resources/lab0/Clone_Git_Repository.png
 
-   If you do not see the Welcome tab, go to ``Help -> Welcome``.
+If you do not see the Welcome tab, go to ``Help -> Welcome``.
 
 3. Paste the git URI into the box and hit return:
 
