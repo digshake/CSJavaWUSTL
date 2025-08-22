@@ -1,7 +1,7 @@
 Exam 2 Prep
 :::::::::::::::::::::::::::::::::::::::::::
 
-To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/uu8ExLj1>`_
+To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/PchBvDN0>`_
 
 .. toctree::
    :caption: Exam 2 Prep

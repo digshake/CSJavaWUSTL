@@ -1,7 +1,7 @@
 Exam 1 Prep
 :::::::::::::::::::::::::::::::::::::::::::
 
-To get the exam prep repository, `click here <https://classroom.github.com/a/mcBZIKjE>`_
+To get the exam prep repository, `click here <https://classroom.github.com/a/iUPyNSKg>`_
 
 This repository contains code reading and writing problems from past exams. It also
 contains the following problems for additional practice:
