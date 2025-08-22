@@ -31,23 +31,22 @@ Are the two ``Person`` objects created above equal? This is not a simple questio
 
 |CodingEx| **Coding Exercise**
 
-In this exercise, you use Eclipse to *auto-generate* useful parts of a class. 
+In this exercise, you use VS Code to *auto-generate* useful parts of a class. 
 
 1. Find and open the ``Point`` class.
 2. Based on the comment you see there concerning *has-a*, declare the instance variables for this class, calling them ``x`` and ``y``.
-3. Auto-generate the constructor by choosing ``Source``, then ``Generate Constructor using Fields``, then select ``Constructor`` from the pop-up menu.
-4. Choose the fields ``x`` and ``y``, and ``OK`` to generate the constructor.
-5. These fields will be *immutable*, so edit the declarations for ``x`` and ``y`` and add the ``final`` attribute. This ensures that the values of ``x`` and ``y`` can be set only by the constructor.
-6. Now use Eclipse to generate the *getters* for ``x`` and ``y``.
+3. Auto-generate the constructor by right clicking the code and then selecting ``Source Action -> Generate Constructors``
+4. Choose the fields ``x`` and ``y``, then generate the constructor.
+6. Now use VS Code to generate the *getters* for ``x`` and ``y`` by doing another ``Source Action`` and selecting the appropriate option.
 7. In the ``main()`` method, construct and print a ``Point`` or two and verify that things look good.
    
 They should not look so good. When you print a ``Point``, you getan ugly and uninformative ``String``. To get something better, we must override the ``toString()`` method.
 
-8. Use Eclipse similarly to generate a simple ``toString()`` method.
+8. Use VS Code similarly to generate a simple ``toString()`` method.
 
-This, and the subsequent work below, is accomplished also via the ``Source`` menu.
+This, and the subsequent work below, is accomplished also via the ``Source Action`` menu.
 
-9. Now let's use Eclipse to generate ``hashCode()`` and ``equals(Object other)`` methods.
+9. Now let's use VS Code to generate ``hashCode()`` and ``equals(Object other)`` methods.
 
 You must pick the attributes (instance variable names) upon which you wish equality to be based.
 

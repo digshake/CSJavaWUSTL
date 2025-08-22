@@ -8,22 +8,22 @@ Studio Setup and Procedure
 ==========================
 
 1. Form a group of 2-3 students. Make sure you know who your TA is.
-2. Choose one group member to open Eclipse. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
+2. Choose one group member to open VS Code. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
 3. Everyone else, open the studio instructions on your own computer.
 4. Choose one group member to complete the following instructions:
 
-	1. Click `here <https://classroom.github.com/a/FmK1Zy6l>`_
+	1. Click `here <https://classroom.github.com/a/M_MiWHxw>`_
 	2. Go to the bottom of the page, where it says `OR Create a new team`.
 	3. Enter your group's last names and "Studio2" into the text field. Ex: "XiaSmith-Studio2"
 	4. Click the button to create the team.
 5. After the team is created, all other members of your team should complete the following instructions:
 
-	1. Click `here <https://classroom.github.com/a/FmK1Zy6l>`_
+	1. Click `here <https://classroom.github.com/a/M_MiWHxw>`_
 	2. Find the team your groupmate created.
 	3. Join the team. 
 	
 	* If you join the wrong team, you will need to contact one of the instructors or Head TAs to fix it.
-6. Eclipse person: import the studio repository as described in `the software setup <setup.html>`_
+6. VS Code person: import the studio repository as described in `the software setup <setup.html>`_
 
 Problem 1: Gambler's Ruin
 =========================
@@ -61,15 +61,13 @@ Procedure
 
 1. With your repository open create a new class in the ``studio2`` package:
 
-   * Right click Right-click on the package name in which you want to define the new class. In this case, use ``studio2``.
+   * Right click on the package name in which you want to define the new class. In this case, use ``studio2``.
 
-   * Click ``New ...``
-
-   * Choose ``Class``
+   * Select ``New Java File -> Class``
 
    * Pick the name ``Ruin`` for this class. Java style dictates that its classes should begin with a capital letter!
 
-   * Click the check box for ``public static void main(String[] args)`` to have Eclipse automatically create the ``main()`` method for you.
+   * Add in the code for main: ``public static void main(String[] args)`` 
 
 2. Have your program accept the following inputs (If you don’t remember how to do this look at code from a previous studio):
 
@@ -223,8 +221,6 @@ If you have time, pick one or both of the following:
 Demo (get credit for your work)
 ===============================
 
-**Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_. This way the other members of your team will be able to access the code that you worked on.
 
-To get participation credit for your work, talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
-
-*Before leaving check that everyone in your group has a grade recorded in Canvas!*
+To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!

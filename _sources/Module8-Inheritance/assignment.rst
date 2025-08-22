@@ -5,7 +5,7 @@ Assignment 8: Zombies: The Final OBJECTive
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/TsYMRoDh>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/CtZD9v-w>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Zombies... The Final OBJECTive
 =====================
@@ -260,8 +260,6 @@ main(args)
 Assignment Requirements
 =======================
 
-Partial credit is possible and will be based on the number of unit tests that are passed and the degree to which you complete the required update strategies. For full credit:
-
 * All unit tests should pass
 
 * The ``ZombieSimulator`` should run.
@@ -282,6 +280,4 @@ Partial credit is possible and will be based on the number of unit tests that ar
 Submitting your work
 ====================
 
-Get your assignment graded by bringing it to lab on Wednesday or going to office hours and signing up for a demo via `wustl-cse.help <https://wustl-cse.help/>`_.
-
-Confirm that your score is recorded in `Canvas <https://wustl.instructure.com/courses/143742>`_.  Mistakes can happen and you should always confirm credit is recorded before leaving class!
+Assignments are not graded, however a rubric is presented on Canvas which shows the skills that we hope students to learn by completing this assignment. Please consider discussing your work with an instructor or TA, the exams and quizzes are written based on the concepts presented in the homework assignments and assume that students are practicing these skills by completing the homework.

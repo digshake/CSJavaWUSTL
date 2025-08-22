@@ -9,7 +9,7 @@ Studio Setup and Procedure
 
 * All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
 
-* Plan to work on one computer (using Eclipse).
+* Plan to work on one computer (using VS Code).
 
   * Initially, one of you will be in charge of typing at that computer.
 
@@ -17,7 +17,7 @@ Studio Setup and Procedure
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/rI7sSBh2>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/2wq2M39x>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -25,7 +25,7 @@ Studio Setup and Procedure
 
    2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
 
-3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
+3. Finally, one person should import the studio repository into VS Code, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
@@ -40,7 +40,7 @@ Overview
 
 * A rush to implement something fully will be a Bad Idea. The group’s goal this week is to arrive at a design, not an implementation.
 
-* That said, we will be developing stubs in Eclipse to represent the design, with a bit of Javadoc above each class and method to help generate documentation.
+* That said, we will be developing stubs in VS Code to represent the design, with a bit of Javadoc above each class and method to help generate documentation.
 
 * As you design, thank about the **has-a** idea presented in the videos and articulate the **behaviors** you want your object to have.
 
@@ -75,7 +75,7 @@ It is easy to forget the order in which the integers must be passed to ``distanc
 
 * Where necessary, each class should provide methods that get and set its local instance variables.
 
-   Recall Eclipse can generate those for you automatically.
+   Recall VS Code can generate those for you automatically.
 
 It is customary to base the name of such methods consistently on the name of the associated instance variable:
 
@@ -97,9 +97,7 @@ Design Problems
 
 * Pick an object type, read the story, and design and implement a class in your ``studio7`` workspace for the object type.
 
-* Include Javadoc comments in your code, and if possible, generate the Javadoc using Eclipse.
-
-   From the ``Project`` menu choose ``Generate Javadoc...``.
+* Include Javadoc comments in your code
 
 * Write a simple test or two to test your implementation. (I.e., add a ``main()`` that creates some instances of your objects, calls methods to test them, and provide enough information to verify that they are working as expected. If you’ve created description ``toString()`` methods, you can simply print the objects to get a sense of their value)
 
@@ -141,10 +139,7 @@ A hockey player has a name and a jersey number. Most players shoot either right 
 Demo
 =====================
 
-**Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
-
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_. This way the other members of your team will be able to access the code that you worked on.
 
 To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
 
-
-*Before leaving check that everyone in your group has a grade recorded in Canvas!*

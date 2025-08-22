@@ -53,7 +53,7 @@ Exercise : 4.60. Example of animation
 
   * Your code will then paint one frame of the animation
 
-  * ``StdDraw.show(10)`` produces what you have drawn on the screen and waits 10 milliseconds before continuing. Eclipse may draw a line through the show(10) command and underline it in yellow. You can ignore this (it’s a warning that ``show(...)`` may not be available in future updates of the ``StdDraw`` functions. It’s being replaced with another approach).
+  * ``StdDraw.show(10)`` produces what you have drawn on the screen and waits 10 milliseconds before continuing. VS Code may draw a line through the show(10) command and underline it in yellow. You can ignore this (it’s a warning that ``show(...)`` may not be available in future updates of the ``StdDraw`` functions. It’s being replaced with another approach).
 
 By using ``show(..)``, the drawing you do is not actually ``shown`` between calls to show. Instead, the drawing is done in memory, off the screen, which is much faster.
 

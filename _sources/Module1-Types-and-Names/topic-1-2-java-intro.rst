@@ -86,7 +86,7 @@ Here is the template for a simple Java program with a main method:
 
 |CodingEx| **Coding Exercise**: 
 
-Open ``E01HelloExample.java`` in the ``module1`` package of the exercises repository in Eclipse that you loaded on the first day of class. Run this program by finding it in the File explorer, right-clicking it, then selecting ``Run As -> Java Application`` from the menu. 
+Open ``E01HelloExample.java`` in the ``module1`` package of the exercises repository in VS Code that you loaded on the first day of class. Run this program by finding it in the File explorer, right-clicking it, then selecting ``Run As -> Java Application`` from the menu. 
 ``System.out.println("Hi there!");`` prints out the characters between the first ``"`` and the 
 second ``"`` followed by a new line.  
 The ``"Hi there!"`` is called a **string literal**, and it can have zero to many characters 

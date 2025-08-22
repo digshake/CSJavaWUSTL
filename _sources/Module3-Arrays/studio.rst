@@ -8,22 +8,22 @@ Studio Setup and Procedure
 =============================
 
 1. Form a group of 2-3 students. Make sure you know who your TA is.
-2. Choose one group member to open Eclipse. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
+2. Choose one group member to open VS Code. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
 3. Everyone else, open the studio instructions on your own computer.
 4. Choose one group member to complete the following instructions:
 
-	1. Open `this link <https://classroom.github.com/a/zOA117dk>`_ in a new tab.
+	1. Open `this link <https://classroom.github.com/a/6ONHypO2>`_ in a new tab.
 	2. Go to the bottom of the page, where it says `OR Create a new team`.
 	3. Enter your group's last names and "Studio3" into the text field. Ex: "XiaSmith-Studio3"
 	4. Click the button to create the team.
 5. After the team is created, all other members of your team should complete the following instructions:
 
-	1. Open `this link <https://classroom.github.com/a/zOA117dk>`_ in a new tab.
+	1. Open `this link <https://classroom.github.com/a/6ONHypO2>`_ in a new tab.
 	2. Find the team your groupmate created.
 	3. Join the team. 
 	
 	* If you join the wrong team, you will need to contact one of the instructors or Head TAs to fix it.
-6. Eclipse person: import the studio repository as described in `the software setup <setup.html>`_
+6. VS Code person: import the studio repository as described in `the software setup <setup.html>`_
 
 Sieve of Eratosthenes
 =====================
@@ -90,8 +90,6 @@ Compare your work to that of other groups. Are there things that make one approa
 Demo
 =====================
 
-**Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_. This way the other members of your team will be able to access the code that you worked on.
 
 To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
-
-*Before leaving check that everyone in your group has a grade recorded in Canvas!*

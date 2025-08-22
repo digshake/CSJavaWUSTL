@@ -25,29 +25,29 @@ Studio Setup and Procedure
 1. Form a group of 2-3 students. This can be the same group as last week or a new group! Now is the time to switch things around as you see fit.
 2. Find a TA to work with (TAs may be working with 2-3 groups at a time)
 3. If you haven't already, complete the `software setup <software.html>`_.
-4. Choose one group member to open Eclipse. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
+4. Choose one group member to open VS Code. They will be in charge of typing code for the first part of the studio. You will rotate this responsibility throughout the studio, but the initial person will have to be comfortable with others typing on their computer.
 5. Everyone else, open the studio instructions on your own computer.
 6. Choose one group member to complete the following instructions:
 
-	1. Click `here <https://classroom.github.com/a/vAQQggjK>`_
+	1. Click `here <https://classroom.github.com/a/bfLlkjfE>`_
 	2. Go to the bottom of the page, where it says `OR Create a new team`.
 	3. Enter your group's last names and "Studio1" into the text field. Ex: "XiaSmith-Studio1"
 	4. Click the button to create the team.
 7. After the team is created, all other members of your team should complete the following instructions:
 
-	1. Click `here <https://classroom.github.com/a/vAQQggjK>`_
+	1. Click `here <https://classroom.github.com/a/bfLlkjfE>`_
 	2. Find the team your groupmate created.
 	3. Join the team. 
 	
 	* If you join the wrong team, you will need to contact one of the instructors or Head TAs to fix it.
-8. Eclipse person: import the studio repository as described in `the software setup <setup.html>`_
+8. VS Code person: import the studio repository as described in `the software setup <setup.html>`_
 
 Studio 1: Activity
 =====================
 
 You will complete a series of simple Java programs and run each program to ensure it performs its task correctly.
 
-In Eclipse, open ``src/studio1``. Unless stated otherwise, most code in this class will be in a ``src`` folder.
+In VS Code, open ``src/studio1``. Unless stated otherwise, most code in this class will be in a ``src`` folder.
 
 Some of the following exercises are adapted from Princeton University's `COS126 course <http://www.cs.princeton.edu/courses/archive/spring12/cos126/precepts.php>`_, based a textbook by Sedgewick and Wayne.
 
@@ -95,17 +95,15 @@ Choose a new group member to type.
 
 We aren’t giving you the class for this one, but we will instruct you how to create your own from scratch:
 
-1. Right- (control-) click on the ``studio1`` package, select ``New > Class``
+1. Right- (control-) click on the ``studio1`` package, select ``New Java File > Class``
 
-2. Type the name ``Average`` in the ``Name:`` field
+2. Use the name ``Average`` for the new class.
 
-3. Click the box that says ``public static void main(String[] args)``
-
-4. Click the ``Finish button``, which will create the new file
+3. In the new file that was created, insert the code for main (feel free to copy from another file if you want): ``public static void main(String[] args) {``
 
 5. At the top of the ``main`` method, you need to insert the ``Scanner`` code to accept two integers: ``n1`` and ``n2`` .
 
-      Refer to other studio code to see how this is done. Depending on how you add the code referring to the ``Scanner``, Eclipse may flag your code with an error. If so, you can get Eclipse to solve its own problem by mousing over the error (red underline), and using the first suggestion that pops up, namely to import ``Scanner``. Try to use meaningful messages to prompt for values.
+      Refer to other studio code to see how this is done. You will also need to copy the import statement found at the top of the file to use the Scanner. Pay special attention to the ``{ }`` curly braces and how they are used in other code you have worked with so far to make sure everything is in the proper place. If you get stuck, ask a TA for help!
 
       **A not so nice prompt:**
 
@@ -185,6 +183,6 @@ As a group, brainstorm the best data type to represent the following situations:
 Demo (get credit for) your work:
 =====================================
 
-**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_. This way the other members of your team will be able to access the code that you worked on.
 
 To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!

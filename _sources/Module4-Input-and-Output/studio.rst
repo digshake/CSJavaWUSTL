@@ -7,7 +7,7 @@ Studio 4: Flag Day
 Studio Setup and Procedure
 ==========================
 
-You know the drill by now! 2–3 students per group. Here's `the Github link <https://classroom.github.com/a/mpCMGIvL>`_.
+You know the drill by now! 2–3 students per group. Here's `the Github link <https://classroom.github.com/a/th1VXar7>`_.
 
 Overview
 =====================
@@ -116,7 +116,7 @@ Now that you have perfected your flag using the feedback provided it’s time to
 
    * Often methods need additional detail about how to draw outward from the center, like a circle’s radius or or a half-width and half-height for rectangles.
 
-   * Sedgewick library provides several pre-defined colors. If you start to type something like: ``StdDraw``. then eclipse will fill in possibilities after the . which will include the colors at the top of that list.
+   * Sedgewick library provides several pre-defined colors. If you start to type something like: ``StdDraw``. then VS Code will fill in possibilities after the . which will include the colors at the top of that list.
 
 3. Frame your flag by surrounding it by a black rectangle of substantial thickness (an unfilled rectangle).
 
@@ -239,12 +239,9 @@ Below are the steps for this task:
 Demo
 =====================
 
-**Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
-
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_. This way the other members of your team will be able to access the code that you worked on.
 
 To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
 
-
-*Before leaving check that everyone in your group has a grade recorded in Canvas!*
 
 

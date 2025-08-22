@@ -11,7 +11,7 @@ Studio Setup and Procedure
 
 * All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
 
-* Plan to work on one computer (using Eclipse).
+* Plan to work on one computer (using VS Code).
 
   * Initially, one of you will be in charge of typing at that computer.
 
@@ -19,7 +19,7 @@ Studio Setup and Procedure
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/BMNU_Hor>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/GcULJmwb>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -27,7 +27,7 @@ Studio Setup and Procedure
 
    2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
 
-3. Finally, one person should import the studio repository into Eclipse, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
+3. Finally, one person should import the studio repository into VS Code, as described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
@@ -272,16 +272,7 @@ Walk through the recursive execution of ``gcd(48, 14)``. How many recursive call
 Demo
 =====================
 
-**Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
-
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_. This way the other members of your team will be able to access the code that you worked on.
 
 To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
 
-* Explain what a base case is (concept) and show specific base cases in your work.
-  
-* Explain what the recursive step(s)?
-
-* Explain any diagrams you created
-
-
-*Before leaving check that everyone in your group has a grade recorded in Canvas!*

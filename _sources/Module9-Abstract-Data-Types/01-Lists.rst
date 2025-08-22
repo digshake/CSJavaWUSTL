@@ -132,7 +132,7 @@ To add values to our list we simply use the appropriate method::
 
 To get started, open the ``UsingLists`` class. Declare your list and add some things to it, using the code above as a guide. Print out your list after adding some values to it and verify that it looks reasonable.
 
-If Eclipse complains about using ``List`` or ``LinkedList`` then let it help you import the appropriate types. Be sure to use the ones that start with ``java.util`` .
+If VS Code complains about using ``List`` or ``LinkedList`` then let it help you import the appropriate types. Be sure to use the ones that start with ``java.util`` .
 
 Now try the other methods: ``remove()``, ``get()``, etc. Practice them and print out the list to get a feel for how to use these kinds of objects.
 

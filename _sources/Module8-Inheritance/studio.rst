@@ -16,7 +16,7 @@ Studio Setup and Procedure
 
 * All but one member of your group should have this web page open so you can follow along and see the instructions as you work.
 
-* Plan to work on one computer (using Eclipse).
+* Plan to work on one computer (using VS Code).
 
   * Initially, one of you will be in charge of typing at that computer.
 
@@ -24,7 +24,7 @@ Studio Setup and Procedure
 
 **READ THE FOLLOWING FULLY BEFORE PROCEEDING**
 
-1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/C4S6I-Ty>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
+1. Have **one person** in your group create a new team by `clicking here <https://classroom.github.com/a/loFWgVqt>`_ and going to the ``OR Create a new team`` box at the bottom of the page. The team name should include the last names of all your group members. For example, if Xia and Smith are working together, the team name should be something like “XiaSmith”.
 
 2. **After the team is created**, all other members of your team should click on the same link and follow the instructions to join the team.
 
@@ -32,7 +32,7 @@ Studio Setup and Procedure
 
    2. **Be sure everyone else joins the team!** If grades don’t get entered correctly we will use the team to help verify credit for a particular studio.
 
-3. Finally, one person should import the studio repository into Eclipse, as described in Assignment 0’s Add the assignment to Eclipse.
+3. Finally, one person should import the studio repository into VS Code
 
    * All team members will have access to the work pushed to GitHub. Be sure to ``Commit and Push`` at the end of the day so everyone can refer back to the work later as needed.
 
@@ -135,9 +135,6 @@ Run the test suites to check your work and create a Quiz of your own in the main
 Submitting
 ==========
 
-**Commit and Push** your work. Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_.
-
+**Commit and Push your work.** Be sure that any file you worked on is updated on `GitHub <https://github.com/>`_. This way the other members of your team will be able to access the code that you worked on.
 
 To get participation credit for your work talk to the TA you’ve been working with and complete the demo/review process. Be prepared to show them the work that you have done and answer their questions about it!
-
-*Before leaving check that everyone in your group has a grade recorded in Canvas!*
