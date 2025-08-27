@@ -15,16 +15,20 @@ This page will walk you through installing the software that you will need for t
 
 We will be using a language called `Java <https://en.wikipedia.org/wiki/Java_(programming_language)>`_ to create and run code on our computers. Before you can execute Java code, you need to install two pieces of software:
 
+1. The `Java Development Kit (JDK) <https://www.oracle.com/technetwork/java/javase/downloads/>`_. The JDK includes a whole bunch of Java tools that are used to assist in the creation and execution of Java programs. Visit the link above to download the JDK and install it on your computer. 
+
+   * Windows users will likely want the download labelled "x64 Installer." 
+   * Mac users with the newer chipset (M1 or newer) should select "Arm 64 DMG Installer" and Mac users with older machines should select "x64 DMG Installer." 
+
 * Professional software developers use an `Integrated Development Environment (IDE) <http://en.wikipedia.org/wiki/Integrated_development_environment>`_.  As the name describes, it's used to develop computer programs and it integrates several different useful features:
    
    * It includes a smart editor that helps you create and work with computer code.
    * It can work with other programs called `compilers <http://en.wikipedia.org/wiki/Compiler>`_. Compilers translate the program you write into something the computer can run.  The JDK that you installed included a compiler.
    * Other handy features, like support for `debugging assistance <http://en.wikipedia.org/wiki/Debugger>`_.
 
-   We'll be using `VS Code with Java Estensions <https://code.visualstudio.com/docs/java/java-tutorial>`_, a popular IDE that supports programming in Java that can be used with many languages and will be used in many other computer science courses. Do not feel as though you need to complete the entire tutorial (though doing it later would be great practice!). The most important thing for you to do right now is to install the appropriate coding pack for your computer:
-
-   .. image:: resources/lab0/Install_Coding_Pack.png
-
+   We'll be using `VS Code <https://code.visualstudio.com/Download>`_, a popular IDE that supports programming in Java that can be used with many languages and will be used in many other computer science courses. 
+   
+   You will also need to install some Java extensions for VS code. Visit `this tutorial <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack>`_ to install the extensions.
 
 2. Create a GitHub Account
 =====================
@@ -56,7 +60,7 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 =====================
 
 1. Open or go to VS Code.
-2. From the Welcome tab, select "Clone git repository..."
+2. From the Welcome tab, select "Clone git repository..." (If this button is not there, then visit `this link <https://git-scm.com>`_ to install git, and restart VS Code)
 
 .. image:: resources/lab0/Clone_Git_Repository.png
 
