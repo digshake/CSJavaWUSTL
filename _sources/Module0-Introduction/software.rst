@@ -26,9 +26,9 @@ We will be using a language called `Java <https://en.wikipedia.org/wiki/Java_(pr
    * It can work with other programs called `compilers <http://en.wikipedia.org/wiki/Compiler>`_. Compilers translate the program you write into something the computer can run.  The JDK that you installed included a compiler.
    * Other handy features, like support for `debugging assistance <http://en.wikipedia.org/wiki/Debugger>`_.
 
-   We'll be using `VS Code <https://code.visualstudio.com/Download>`_, a popular IDE that supports programming in Java that can be used with many languages and will be used in many other computer science courses. 
+We'll be using `VS Code <https://code.visualstudio.com/Download>`_, a popular IDE that supports programming in Java that can be used with many languages and will be used in many other computer science courses. 
    
-   You will also need to install some Java extensions for VS code. Visit `this tutorial <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack>`_ to install the extensions.
+You will also need to install some Java extensions for VS code. Visit `this link <https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack>`_ to install the extensions.
 
 2. Create a GitHub Account
 =====================
