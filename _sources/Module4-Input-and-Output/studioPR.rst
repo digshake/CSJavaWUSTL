@@ -7,7 +7,7 @@ Studio PR: Peer Review
 Studio Setup and Procedure
 ==========================
 
-You know the drill by now! 2–3 students per group. Here's `the Github link <https://classroom.github.com/a/th1VXar7>`_.
+You know the drill by now! 2–3 students per group. Here's `the Github link <https://classroom.github.com/a/LYiCCXDn>`_.
 
 Peer Review
 ===========
