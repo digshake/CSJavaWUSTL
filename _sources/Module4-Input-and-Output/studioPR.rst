@@ -22,7 +22,7 @@ For this peer review we want you to focus specifically on the style of the code.
     
     * Naming - Variable names should be descriptive. Single letter variable names are bad!
     * Whitespace - Indentation should be proper, and there should not be any excessive blank lines.
-    * Brackets - Opening brackets should immediately follow the code they belong to: `if (true) {`. They should not go on the next line! Closing brackets should be on their own line and line up vertically with the block they are closing.
+    * Brackets - Opening brackets should immediately follow the code they belong to: ``if (true) {``. They should not go on the next line! Closing brackets should be on their own line and line up vertically with the block they are closing.
 
 3. VSCode provides tools to help with this process! Do some googling ("how to rename variables in VSCode") or talk to a TA about this.
 
