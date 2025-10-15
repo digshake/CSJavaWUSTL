@@ -90,7 +90,7 @@ It’s mostly done for you. (*Don’t change it yet*) Read the description and m
 Running distanceBetween() tests
 =====================
 
-Open ``DistanceBetweenTest.java`` in ``test_src/studio5/tests``. This file contains several tests to help demonstrate that ``distanceBetween()`` works as expected. You can run all the tests in the file by right-clicking on the file name, selecting ``Run As > JUnit Test``.
+Open ``DistanceBetweenTest.java`` in ``test_src/studio5/tests``. This file contains several tests to help demonstrate that ``distanceBetween()`` works as expected. You can run all the tests in the file by right-clicking on the file name and selecting ``Run Tests``.
 
 Run it. You should see a new tab in VS Code that should look something like:
 
@@ -267,13 +267,6 @@ The first test in ``ArrayMeanTestSuite`` is ``ArrayMeanMethodDeclarationTest``. 
 If your code didn’t pass all tests update it until it does.
 
 Notice that these tests don’t perform a test with an empty array. Take a few minutes to consider why such a test may not be appropriate here. Discuss with a TA/instructor.
-
-Generating JavaDoc pages
-=====================
-
-  If working with a partner change who is at the keyboard
-
-JavaDoc style comments are used to easily create documentation that goes along with code. If done correctly, the documentation will allow other people to use code without having to read through all the tedious details or having to guess about its behavior.
 
 End of Studio Review
 =====================
