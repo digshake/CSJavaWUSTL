@@ -12,7 +12,7 @@ Assignment Setup
 
 Before starting this assignment it is expected that you have completed the `software setup <software.html>`_ for the course as well as `Studio 0 <studio.html>`_
 
-To create your repository `go here <https://classroom.github.com/a/lpurJI29>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
+To create your repository `go here <https://classroom.github.com/a/hvwaAIe_>`_.  Then follow the same accept/import process described in `the setup instructions <software.html>`_.
 
 Using Java to Control a Robot
 ================
@@ -49,13 +49,13 @@ Now that you understand how to use VS Code to modify and run the program, spend 
 
 Follow the instructions from `studio 0 <studio.html>`_ to commit and push your work.
 
-After doing `Commit and Push` always check your work on GitHub.  Go to `the course page on GitHub <https://github.com/wustlcse131sp23>`_, select the respository for the assignment, and then review the individual files.  
+After doing `Commit and Push` always check your work on GitHub.  Go to `the course page on GitHub <https://github.com/CSE1301SP26>`_, select the respository for the assignment, and then review the individual files.  
 
 3. Course Information
 ================
 
-Review the course site on `Canvas <https://wustl.instructure.com/courses/158279>`_.  Make sure you review:
+Review the course site on `Canvas <https://wustl.instructure.com/courses/165446>`_.  Make sure you review:
 
-1. `Course Policies <https://wustl.instructure.com/courses/158279/pages/course-policies>`_
-2. Know where to go to find `Office Hours <https://wustl.instructure.com/courses/158279/pages/office-hours>`_, which will be posted by the second week of class.
-3. Know how to `browse the content and prepare for modules <https://wustl.instructure.com/courses/158279>`_.
+1. `Course Policies <https://wustl.instructure.com/courses/165446/pages/course-policies>`_
+2. Know where to go to find `Office Hours <https://wustl.instructure.com/courses/165446/pages/office-hours>`_, which will be posted by the second week of class.
+3. Know how to `browse the content and prepare for modules <https://wustl.instructure.com/courses/165446>`_.

@@ -35,12 +35,17 @@ You will also need to install some Java extensions for VS code. Visit `this link
 
 We will be using software called `Git <http://git-scm.com/>`_ for "version control".  `Version control systems (VCS) <https://en.wikipedia.org/wiki/Version_control>`_ are a way of life in the modern software-development industry.  They track how team members have changed a project, and they are particularly useful for collaborative projects, where multiple developers work concurrently on the same body of code.
 
+	* Windows users should use the above link to download and install Git.
+	* Mac users will need to install Git a little differently. First, you will need to open the "Terminal" program (using spotlight). Once the terminal has opened, type in "git" (without the quotes) and press enter. This should prompt you to install the "XCode Command Line Tools." Once these have finished installing, you can close the Terminal.
+	
+**After installing Git, be sure to restart VSCode** or the following steps may not work.	
+
 We use the site `GitHub <https://github.com>`_ to distribute and collect course work.  GitHub is a place that hosts git repositories.  You need to create a (free) account.  Please visit `GitHub <https://github.com>`_ and sign up for an account.  Please use your WUSTL email address, although you can add multiple e-mail addresses.  If you already have an account, please be sure to add your WUSTL email. `These directions <https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/adding-an-email-address-to-your-github-account>`_ describe how to add additional email addresses.
 
 3. Accepting the exercises
 =====================
 
-For each major type of course work you will need to generate a repository on GitHub.  You'll do so by clicking on a link and "accepting" an assignment.  Click `HERE <https://classroom.github.com/a/nLhi-Aek>`_ to accept the repository containing the first batch of course exercises ***and follow along with the instructions below***.
+For each major type of course work you will need to generate a repository on GitHub.  You'll do so by clicking on a link and "accepting" an assignment.  Click `HERE <https://classroom.github.com/a/Ej6487Tu>`_ to accept the repository containing the first batch of course exercises ***and follow along with the instructions below***.
 
 2. Select the button to accept the exercises:
 
@@ -60,7 +65,7 @@ You've now created an exercises repository and have the URI.  You'll need to do 
 =====================
 
 1. Open or go to VS Code.
-2. From the Welcome tab, select "Clone git repository..." (If this button is not there, then visit `this link <https://git-scm.com>`_ to install git, and restart VS Code)
+2. From the Welcome tab, select "Clone git repository..." (If this button is not there, please revisit the above instructions (in section 2) to install Git)
 
 .. image:: resources/lab0/Clone_Git_Repository.png
 
