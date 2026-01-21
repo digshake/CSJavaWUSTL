@@ -5,7 +5,7 @@ Assignment 9: Snake
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/OVd3mXTC>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/nGGicsyR>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Overview
 =====================

@@ -5,7 +5,7 @@ Assignment 5: Zombies: A METHOD to their Madness
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/Gp2QwQ4S>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/40EN6qsn>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Zombies
 =====================

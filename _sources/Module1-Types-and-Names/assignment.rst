@@ -5,7 +5,7 @@ Assignment 1: Grade Calculator
 Assignment Setup
 ================
 
-To create your repository, `go here <https://classroom.github.com/a/slDXZGJE>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository, `go here <https://classroom.github.com/a/vD1pgcKN>`_ and follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Grade Calculator
 ================
@@ -62,17 +62,19 @@ First, the information (no need to take action yet).
 
 These are the inputs that you should ask for from the user, plus the names of the variables you should store that information in:
 
-	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-	| Variable               | Value                                                                                                                    |
-	+========================+==========================================================================================================================+
-	| name                   | The name of the student taking this course, as a String                                                                  |
-	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-	| studiosAttended        | The total number of studio sessions attended, as a value between 0 and 8                                                 |
-	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-	| averageQuizGrade       | The average grade on all quizzes after the two lowest quiz grades have been dropped, as a percentage between 0 and 100   |
-	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
-	| averageExamGrade       | The average grade on all exams, as a percentage between 0 and 100                                                        |
-	+------------------------+--------------------------------------------------------------------------------------------------------------------------+
+	+---------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+	| Variable                  | Value                                                                                                                            |
+	+===========================+==================================================================================================================================+
+	| name                      | The name of the student taking this course, as a String                                                                          |
+	+---------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+	| studiosAttended           | The total number of studio sessions attended, as a value between 0 and 8                                                         |
+	+---------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+	| averageLectureQuizGrade   | The average grade on all lecture quizzes after the two lowest quiz grades have been dropped, as a percentage between 0 and 100   |
+	+---------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+	| averageAssignmentQuizGrade| The average grade on all lecture quizzes after the two lowest quiz grades have been dropped, as a percentage between 0 and 100   |
+	+---------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+	| averageExamGrade          | The average grade on all exams after the lowest exam grade has been dropped, as a percentage between 0 and 100                   |
+	+---------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 This is an example of what your program should display when it is run:
 
@@ -80,17 +82,21 @@ This is an example of what your program should display when it is run:
 
 ``Number of studios attended: 7``
 
-``Weighted studio grade (out of 15): 13.13%``
+``Weighted studio grade (out of 10): 8.75%``
 
-``Average quiz grade: 97.3``
+``Average lecture quiz grade: 97.3``
 
-``Weighted quiz grade (out of 25): 24.33%``
+``Weighted lecture quiz grade (out of 20): 19.46%``
+
+``Average assignment quiz grade: 87.635``
+
+``Weighted lecture quiz grade (out of 10): 8.76%``
 
 ``Average exam grade: 93.5``
 
 ``Weighted exam grade (out of 60): 56.1%``
 
-``Total Grade: 93.6%``
+``Total Grade: 93.07%``
 
 How do we write this program? Let's start one step at a time. What's the simplest, easily checkable change you can make?
 
@@ -106,7 +112,7 @@ Here are a few issues we anticipate you will come across. Read the bullet point 
 
 * Making sure users don't put in invalid values: 150% is not a valid average assignment grade. In the future, we'll learn how to force programs to only accept valid inputs. For now, just assume the user will always put in valid inputs.
 
-* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/158279/pages/course-policies>`_ for the weighting on different components of the grade.
+* Weights: Check out the `course policies page <https://wustl.instructure.com/courses/165446/assignments/syllabus>`_ for the weighting on different components of the grade.
 
 * Rounding: You must round the weighted grade percentages to two digits after the decimal point so that they get printed with the right number of decimal places. In order to round, you may use the math operations we learned (``+``, ``-``, ``*``, ``/``) and/or ``Math.round()`` and nothing else. Think about what information ``Math.round()`` "loses" and how you would need to change the input so it only loses the information you want to get rid of.
 

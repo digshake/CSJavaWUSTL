@@ -5,7 +5,7 @@ Assignment 3: Array Puzzles
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/9ClrUQIj>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/MR8dthFZ>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Array Puzzles
 =====================

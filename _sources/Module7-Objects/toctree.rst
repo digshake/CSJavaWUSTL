@@ -4,7 +4,7 @@ Module 7: Writing Classes
 
  In this unit, you will learn to write your own classes and objects.  
  
- To get the exercise repository for chapters 7-9, click `here <https://classroom.github.com/a/Y3MN5zJm>`_ .
+ To get the exercise repository for chapters 7-9, click `here <https://classroom.github.com/a/l-PG1kWb>`_ .
 .. toctree::
    :maxdepth: 3
    

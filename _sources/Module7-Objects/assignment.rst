@@ -5,7 +5,7 @@ Assignment 7: Students and Courses
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/NLoEG7U3>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/3tCNja1n>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Questions to ask if you get stuck
 =================================

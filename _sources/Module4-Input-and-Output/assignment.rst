@@ -12,7 +12,7 @@ Vicky Prisco, '25
 Assignment Setup
 =====================
 
-To create your repository go `here <https://classroom.github.com/a/LNpR5KuR>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
+To create your repository go `here <https://classroom.github.com/a/Iu9Pnjlw>`_. Then follow the same accept/import process described in `the setup instructions <../Module0-Introduction/software.html>`_.
 
 Background
 =====================
