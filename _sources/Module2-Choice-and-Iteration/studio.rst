@@ -18,7 +18,7 @@ Studio Setup and Procedure
 	4. Click the button to create the team.
 5. After the team is created, all other members of your team should complete the following instructions:
 
-	1. Click `here <https://classroom.github.com/a/zlNMsSHYt a>`_
+	1. Click `here <https://classroom.github.com/a/zlNMsSHY>`_
 	2. Find the team your groupmate created.
 	3. Join the team. 
 	
