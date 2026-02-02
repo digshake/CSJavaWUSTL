@@ -1,7 +1,7 @@
 Exam 3 Prep
 :::::::::::::::::::::::::::::::::::::::::::
 
-To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/p_2oHEqQ>`_
+To get the repository for this batch of extensions, `click here <https://classroom.github.com/a/pJ_bI2R5>`_
 
 .. toctree::
    :caption: Exam 3 Prep
