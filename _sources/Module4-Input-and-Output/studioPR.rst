@@ -7,16 +7,18 @@ Studio PR: Peer Review
 Studio Setup and Procedure
 ==========================
 
-You know the drill by now! Here's `the Github link <https://classroom.github.com/a/9wvgobxL>`_.
+You know the drill by now! Here's `the Github link <https://classroom.github.com/a/hWnCTNEj>`_.
 
 Peer Review
 ===========
+
+Take a few moments to familiarize yourself with the game. You can use the A key to move left, the D key to move right and the space bar to fire.
 
 For this studio we will go through an exercise called Peer Review. Like many disciplines, computing often requires many people to work together to solve large, complex problems. Humans are prone to mistakes and biases, however, so by performing regular peer reviews we gain the perspective of others on our code which may catch problems that were otherwise missed. The act of peer review is very common in industry and professional programmers are regularly expected to have their code reviewed by their peers as well as to review their peers' code submissions.
 
 For this peer review we want you to focus specifically on the style of the code. While there is some flexibility in how you can write your code, keeping your code files clean and consistent will make it easier for others to understand what your code is doing.
 
-In particular, we want you to focus on the clean coding guidelines that were presented in class on Monday. Be sure to run the code after every change you make to ensure that the code is still working properly!
+In particular, we want you to focus on the clean coding guidelines that were presented in class on Monday. **Be sure to run the code after every change you make to ensure that the code is still working properly!**
 
 1. Start with the file called ``Entity.java``. This is a base class that will be inherited from by ``Projectile``, ``Enemy``, and ``Player``. Review the contents of the class, then focus in on the following areas:
     
